@@ -1,0 +1,53 @@
+\chapterimage{blank_fig}
+\chapter*{Introduzione}
+\vspace{-1.0cm}
+\begin{flushright}
+\textit{
+- Che cosa ti fa andare avanti, Oscar? \\
+- Continuo come ho cominciato... per la bellezza del gesto. \\
+- La bellezza... si dice che sia nell'occhio di chi guarda. \\
+- E se non rimane più nessuno a guardare?
+}
+\end{flushright}
+\vspace{+1.0cm}
+\minitoc
+
+Questi appunti nascono dalla necessità di fornire un inquadramento generale e gli strumenti matematici indispensabili per un approccio maturo e consapevole alla Fluidodinamica, alla Meccanica dei mezzi continui, e alla Fisica in generale.
+\vspace{0.5cm}
+
+\textbf{
+Questi appunti sono in continua evoluzione. Questo significa che possono essere presenti sviste o errori, di qualsiasi natura, e che la loro segnalazione è molto apprezzata.}
+\vspace{0.5cm}
+
+Un fenomeno fisico non dipende dal sistema di coordinate che viene utilizzato per descrivere il fenomeno. Le leggi della fisica hanno carattere \textbf{tensoriale} e i tensori sono gli oggetti matematici adatti alla formulazione delle leggi fisiche, garantendo l'invarianza delle equazioni rispetto alla base vettoriale o al sistema di coordinate usati per descrivere il fenomeno fisico.
+
+Sotto opportune ipotesi spesso verificate, un fluido può essere rappresentato come un mezzo continuo, il cui stato (velocità, variabili termodinamiche) è funzione sia della coordinata spaziale, sia del tempo. I principi fisici fondamentali (conservazione della massa, bilancio della quantità di moto, bilancio di energia totale) devono valere \textit{localmente} in ogni punto del continuo, e vengono rappresentati matematicamente da \textbf{equazioni differenziali alle derivate parziali} (PDE), con le condizioni iniziali e al contorno necessarie. Le incognite delle PDE che traducono i principi fisici fondamentali sono \textbf{campi} (di velocità $\bm{u}(\bm{r},t)$, di pressione $P(\bm{r},t)$, \dots), cioè funzioni dello spazio e del tempo.
+%
+Prima di affontrare lo studio della Fluidodinamica, sarà quindi necessario richiamare gli operatori gradiente, divergenza, rotore, laplaciano che compaiono nelle equazioni differenziali che descrivono il moto dei fluidi, ed estendere la loro applicazione a campi tensoriali di ordine arbitrario.
+
+A differenza di un materiale solido, le particelle materiali (le particelle che si muovono insieme al mezzo continuo) sono soggette a grandi spostamenti. Verranno introdotte quindi la descrizione del fenomeno fisico dal \textbf{punto di vista lagrangiano} (adatta per i solidi, seguendo l'evoluzione dei singoli punti materiali) e dal punto di vista \textbf{euleriano} (maggiormente adatta per i fluidi, descrivendo l'evoluzione dei campi di velocità, pressione, \dots, avendo fissato la coordinata spaziale, ad esempio introducendo il concetto di volume di controllo fisso). A seconda della convenienza, entrambe questi punti di vista verranno utilizzati durante il corso per descrivere la natura ``sfuggente'' di un fluido. Sarà quindi necessario comprendere entrambi gli approcci ed essere in grado di passare da uno all'altro. Verrà inoltre fornito un approccio generale che permetta di descrivere il problema fisico da un punto di vista \textbf{arbitrario}, che ha come casi particolari le descrizioni lagrangiana ed euleriana.
+
+A complicare ulteriormente il problema, le equazioni alle derivate parziali che governano la dinamica dei fluidi sono \textbf{non lineari}.
+
+\vspace{0.5cm}
+Da un confronto diretto, si possono subito elencare alcune differenze con alcuni corsi universitari affrontati in precedenza:
+\begin{itemize}
+ \item Meccanica razionale: l'oggetto principale del corso è stato lo studio dei corpi rigidi, per i quali è possibile riassumere la cinematica e la dinamica con grandezze ``globali'', che riguardano tutto il corpo, come ad esempio la velocità del baricentro, la velocità angolare del corpo, la sua massa, il suo tensore di inerzia. Viene utilizzata quasi esclusivamente una descrizione lagrangiana del problema, seguendo il moto del corpo nella sua evoluzione. I principi fisici che governano il moto di un sistema sono le equazioni cardinali della dinamica, ossia il bilancio della quantità di moto e del momento della quantità di moto. Le equazioni che governano la dinamica di un corpo solido sono equazioni differenziali ordinarie, nelle quali compaiono funzioni dipendenti dal tempo, ma non dallo spazio.
+ \item Fisica tecnica: l'oggetto principale di studio della termodinamica è stato lo studio di sistemi in equilibrio, in uno stato stazionario, utilizzando a volte una descrizione euleriana del problema, basata sui bilanci di massa ed energia interna per un volume di controllo fisso.
+ \item Meccanica strutturale: lo studio della statica strutturale durante il corso di Scienze delle Costruzioni è stato il primo approccio alla meccanica del continuo che riguardasse bilanci differenziali (validi localmente in tutto il solido) e che permettesse di ricavare localmente lo stato del sistema, in termini di deformazione. Per la prima volta è stata introdotta la natura tensoriale dello sforzo e un legame costitutivo (di natura tensoriale) che legasse lo stato di sforzo presente nel continuo allo stato del continuo stesso. Nell'ambito del corso di Scienze delle Costruzioni, ci si è limitati allo studio della statica del mezzo continuo solido. Le equazioni che governavano il problema erano quindi delle equazioni differenziali alle derivate parziali (derivate spaziali). L'ipotesi di piccoli spostamenti del solido ha permesso di confondere (e non prestare molta attenzione al) la descrizione lagrangiana ed euleriana, studiando il problema statico sulla configurazione indeformata.
+\end{itemize}
+Durante il corso di Fluidodinamica, uno dei primi obiettivi dovrebbe essere quello di utilizzare tutti i principi fisici presentati nei corsi precedenti per ottenere la forma più generale delle equazioni che governano il moto di un mezzo continuo deformabile, e in particolare di un fluido. I bilanci di massa, quantità di moto, momento della quantità di moto ed energia totale (somma di energia interna ed energia cinetica) per un volume arbitrario del mezzo continuo tradurranno il principio fisico della conservazione della massa, le due leggi cardinali della dinamica, il bilancio di energia meccanica e il primo principio della termodinamica, come interpretabile comebilancio dell'energia interna.
+Poiché questi principi fisici dovranno essere validi in ogni punto del dominio, dai bilanci in forma integrale scritti per un volume arbitrario si otterranno i bilanci in forma differenziale, validi localmente punto per punto, nella forma di equazioni differenziali alle derivate parziali.
+Poiché la natura di un fluido è ``sfuggente'' se paragonata a quella di un solido, sarà necessario essere in grado di formulare il problema da un punto di vista arbitraio, che ha come casi particolari la descrizione lagrangiana ed euleriana, ed risucire a passare agevolmente da un tipo di descrizione all'altro.
+Poiché non verrà fatta alcuna ipotesi di stazionarietà e si studierà la dinamica dei fluidi, i bilanci saranno scritti nella loro forma instazionaria, le equazioni differenziali che governano il problema conterranno derivate parziali in tempo e spazio, e avranno l'esigenza di condizioni iniziali e al contorno affinché il problema sia definito. In generale, le incognite del problema saranno campi (scalari, vettoriali, o in generale tensoriali), cioé funzioni dipendenti dallo spazio, oltre che dal tempo.
+\newline \noindent
+Mentre le equazioni di bilancio di un mezzo continuo saranno il punto di partenza per lo studio della Fluidodinamica, essi forniscono la forma generale dei principi fisici dalla quale partire per ricavare in maniera rigorosa i bilanci presentati nei corsi precedenti come caso particolare.
+
+\vspace{0.5cm}
+Nel capitolo \S\ref{sec:richiami} vengono riportati alcuni risultati di calcolo vettoriale, presentati nei corsi di Analisi e richiamati qui poiché necessari a una descrizione consapevole della dinamica di un mezzo continuo, prima di presentare alcuni risultati sulla calcolo della derivata temporale di integrali di linea, superficie e volume, necessari alla descrizione arbitraria dei principi fisici nella forma di bilanci integrali.
+
+I capitoli \S\ref{sec:algebra} e \S\ref{sec:calcolo} sono dedicati a un'introduzione all'algebra e al calcolo tensoriale rispettivamente. Nel capitolo \S\ref{sec:algebra} viene fornita la definizione classica di tensore, come lo strumento matematico adatto a descrivere la natura invariante delle leggi fisiche, insieme ad alcune operazioni tensoriali. Nel capitolo \S\ref{sec:calcolo}, vengono introdotti i campi tensoriali (tensori che dipendono dalla coordinata spaziale) e alcuni operatori differenziali che compaiono nelle equazioni della fisica.
+
+\vspace{0.5cm}
+La forma ridotta dei capitoli \S\ref{sec:algebra} e \S\ref{sec:calcolo} è pensata per fornire un sostegno agli studenti per gli argomenti trattati in aula, nello spazio sempre più angusto dedicato a questa introduzione. Per motivi di sintesi, gli argomenti non potranno essere trattati nella maniera più generale possibile, puntando al miglior compromesso tra tempo a disposizione ed efficacia della presentazione. Verranno sottolineate le ipotesi fatte che pongono dei limiti di validità alla presente introduzione all'algebra e al calcolo tensoriale. All'interno delle ipotesi fatte, si cercherà nascondere il minor numero di dettagli allo scopo di rendere comprensibili e logicamente collegate tutte le sezioni dell'introduzione all'algebra e al calcolo tensoriale.
+A chi fosse interessato, è possibile fornire materiale più dettagliato e ulteriori riferimenti sull'argomento.

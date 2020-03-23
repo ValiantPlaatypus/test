@@ -1,0 +1,64 @@
+%
+\paragraph{Definizione di fluido}
+Un fluido è un materiale che non è in grado di sopportare sforzi di taglio, quando è in quiete o in moto con velocità uniforme in un sistema di riferimento inerziale (invarianza galileiana).
+I fluidi ``ordinari'' sono isotropi, cioè sono indipendenti dall'orientazione nello spazio.
+Un fluido isotropo in quiete è quindi caratterizzato da uno stato di sforzo idrostatico,
+\begin{equation}
+ \mathbb{T} = - p \mathbb{I} ,
+\end{equation}
+avendo indicato con $\mathbb{T}$ il tensore degli sforzi, $p$ la pressione all'interno del fluido e $\mathbb{I}$ il tensore identità. Il vettore sforzo $\bm{t_n}$ \textit{agente sul fluido} (su una superficie di fluido con versore normale $\bm{\hat{n}}$ uscente dal volume fluido) è
+\begin{equation}
+ \bm{t_n} = - p \bm{\hat{n}} .
+\end{equation}
+Per il principio di azione e reazione, lo sforzo agente su una parete solida a contatto con un fluido è di intensità uguale e direzione opposta. La risultante dell forze coincide con l'integrale di superficie del vettore sforzo.
+
+%
+\paragraph{Equazione di equilibrio: forma integrale e differenziale}
+Nella condizione di equilibrio di un fluido in quiete, la risultante delle forze esterne agenti sul fluido è nulla.
+L'equilibrio di un volume di fluido $V$, delimitato dalla superficie $\partial V = S$, soggetto a forze per unità di volume $\bm{f}$ in $V$ e forze per unità di superficie $\bm{t_n}=-p \bm{\hat{n}}$ su $S$
+\begin{equation}
+ \bm{0} = \int_V \bm{f} + \oint_S \bm{t_n} = \int_V \bm{f} - \oint_S p \bm{\hat{n}} .
+\end{equation}
+La condizione appena ottenuta è una condizione integrale, per l'intero volume fluido $V$. Se il campo di pressione $p$ è sufficientemente regolare, è possibile applicare il teorema del gradiente (\ref{thm:grad}) all'integrale di superficie e raccogliere i termini a destra dell'uguale sotto un unico integrale di volume $V$
+\begin{equation}
+ \bm{0} = \int_V \bm{f} - \bm{\nabla} p .
+\end{equation}
+Poiché la condizione di equilibrio è valida indipendentemente dal volume $V$ considerato, l'equazione di equilibrio in forma differenziale
+\begin{equation}\label{eqn:statica:diff}
+ \bm{f} - \bm{\nabla} p = \bm{0} 
+\end{equation}
+viene ottenuta imponendo che il termine sotto segno di integrale sia identicamente nullo.
+
+\paragraph{Legge di Stevino}
+La legge di Stevino viene ricavata dall'integrazione dell'equilibrio in forma differenziale (\ref{eqn:statica:diff}), nel caso in cui le forze di volume siano dovute alla gravità $\bm{f} = \rho \bm{g} = - \rho g \bm{\hat{z}}$, avendo indicato con $\rho$ la densità del fluido e avendo introdotto un sistema di riferimento cartesiano con l'asse $z$ verticale e diretto verso l'alto
+\begin{equation}
+ \bm{\nabla} p + \rho g \bm{\hat{z}} = \bm{0}.
+\end{equation}
+Usando un sistema di riferimento cartesiano, nell'ipotesi di essere sufficientemente vicino alla terra e di poter considerare il campo vettoriale $\bm{g}$ uniforme e diretto verso il basso, è possibile integrare le componenti cartesiane dell'equazione precedente per ottenere il legame tra la densità e la pressione del fluido
+\begin{equation}
+\begin{cases}
+ \partial p / \partial x = \partial p / \partial y = 0 \quad \rightarrow \quad p = p(z) \\
+ \partial p / \partial z = - \rho g .
+\end{cases}
+\end{equation}
+Nell'ipotesi che la densità $\rho$ e la forza di gravità siano costanti, si ottiene la legge di Stevino
+\begin{equation}
+ p(z) + \rho g z = \text{cost.}
+\end{equation}
+
+%
+\paragraph{Legge di Archimede. Forza di galleggiamento}
+Un corpo immerso in fluido riceve dal basso verso l'alto una spinta uguale al peso della massa del fluido spostato. Su un corpo di volume $V_s$, immerso completamente in un fluido di densità $\rho_f$, agisce una forza (di Archimede o di galleggiamento)
+\begin{equation}
+ \bm{F}_{Arch} = - \int_{V_s} \rho_f \bm{g} .
+\end{equation}
+La legge di Archimede vale per un sistema immerso nel campo di gravità $\bm{g}$, uniforme in spazio. Il termine sotto segno di integrale coincide con il gradiente del campo di pressione. Forze di galleggimento nascono su un corpo immerso in un fluido in cui c'è un gradiente di pressione: se il gradiente di pressione è costante all'interno del fluido, la forza di galleggiamento sul corpo è
+\begin{equation}
+ \bm{F}_{gall} = - \int_{V_s} \bm{\nabla} p .
+\end{equation}
+Ad esempio, quando si svolge un esperimento in galleria del vento, nella camera di prova è presente un gradiente di pressione, diretto in direzione $\bm{\hat{x}}$ della corrente. Se in prima approssimazione si considera un gradiente di pressione $\bm{\nabla} = - G_P \bm{\hat{x}}$ costante, si può stimare la forza di galleggiamento $\bm{F}_{gall} = V_s G_P \bm{\hat{x}}$, dovuta al gradiente di pressione in galleria del vento, assente in condizioni di aria libera.
+
+La valutazione di questa azione ``spuria'' sul corpo e la correzione delle misure effettuate rientrano nell'ambito delle \textit{correzioni di galleria} ed è spesso l
+
+
+\vspace{3cm}

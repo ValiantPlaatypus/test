@@ -1,0 +1,76 @@
+\noindent
+\begin{exerciseS}[Similitudine ad alta velocità: missile]
+Un missile vola alla quota di $7000\  m$, dove la densit\`{a} 
+dell'aria \`{e} $\rho = 0.59\  kg/m^3$ e la sua temperatura 
+\`e $T=-30.45^\circ   C$, alla velocit\`{a} costante $V_v=505\  km/h$.
+
+Determinare:
+\begin{itemize}
+  \item il fattore di scala geometrico $\lambda=L_m/L_v$,
+  \item la velocit\`{a} dell'aria $V_m$,
+\end{itemize}
+necessari per riprodurre correttamente i coefficienti aerodinamici 
+del missile in una galleria del vento che operi a condizioni 
+atmosferiche standard ($\rho=1.225\ kg/m^3$, $p=101325\ Pa$,
+$T=15^\circ  C$).
+    
+($V_m =152.8\  m/s$, $\lambda=0.507$)
+\end{exerciseS}
+
+\sol
+%
+\partone
+Similitudine fluidodinamica: numeri di Reynolds e di Mach.
+\begin{equation}
+ Re = \frac{\rho U L}{\mu} \quad , \quad M = \frac{U}{c} \ .
+\end{equation}
+Formula di Sutherland,
+\begin{equation}
+ \mu(T) = \mu_0 \displaystyle\left(\frac{T}{T_0}\right)^{1.5}
+ \frac{C+T_0}{C+T} \ .
+\end{equation}
+%
+\parttwo
+Assumendo che l'aria si comporti come gas ideale, per il quale vale l'equazione di stato $p = \rho R T$, la velocità del suono vale $c = \sqrt{\gamma R T}$, dove $\gamma = c_p / c_v$ è il rapporto dei calori specifici a pressione e volume costante, che vale $\gamma = 1.4$ per un gas biatomico. La costante del gas $R$ è definita come il rapporto tra la costante universale dei gas $\mathscr{R}$ e la massa molare $M_m$, $R = \mathscr{R}/M_m$.
+La massa molare dell'aria secca vale $M_m = 28.96 \ kg / kmol$ e la sua costante $R$ vale
+\begin{equation}
+ R = \dfrac{\mathscr{R}}{M_m} = \dfrac{8314.4 \ J / (kmol \ K)}{28.97 \ kg/kmol} = 287.0 \dfrac{J }{kg \ K} \ .
+\end{equation}
+La velocità del suono nell'aria alle condizioni termodinamiche del problema vale $c = 312.3 \ m/s$. Il numero di Mach caratteristico della corrente è quindi $M=0.45$ e gli effetti di comprimibilità non possono essere trascurati, poichè il numero di Mach è maggiore della valore convenzionale $0.3$ che identifica il limite della validità dell'approssimazione di fluido incomprimibile.
+%
+Per ottenere la similitudine tra problema reale e quello modellato (di dimensioni ridotte) è necessaria la similitudine geometrica e l'uguaglianza dei numeri adimensionali che caratterizzano il problema, il numero di Reynolds $Re$ e il numero di Mach $M$.
+%Se si fa l'ipotesi di gas ideale perfetto, la velocità del suono può essere scritta in funzione della sola variabile termodinamica temperatura $c = \sqrt{\gamma R T}$, con $\gamma$ rapporto dei calori specifici a pressione e volume costanti, $R$ costante universale del gas ($R = \mathscr{R}/M_m$).
+\begin{equation}
+\begin{cases}
+ M_1 = M_2 \\
+ Re_1 = Re_2  
+\end{cases} \ .
+\end{equation}
+Utilizzando l'equazione di stato dei gas perfetti,
+\begin{equation}
+\begin{cases}
+ \dfrac{V_v}{\sqrt{\gamma R T_v}} = \dfrac{V_m}{\sqrt{\gamma R T_m}} \\
+ \dfrac{\rho_v V_v L_v}{\mu(T_v)} = \dfrac{\rho_m V_m L_m}{\mu(T_m)}
+\end{cases}
+\end{equation}
+%
+Risolvendo il sistema, si ottiene l'espressione delle incognite
+\begin{equation}
+% \Rightarrow
+   \begin{cases}
+     V_m = V_v \sqrt{\dfrac{T_m}{T_v}} \\
+     \lambda = \dfrac{L_m}{L_v} = \dfrac{\rho_v}{\rho_m} 
+     \sqrt{\dfrac{T_v}{T_m}} \dfrac{\mu(T_m)}{\mu(T_v)}
+   \end{cases}
+\end{equation}
+%
+Per trovare i valori ancora incogniti della viscosità dinamica si usa la formula di Sutherland: per l'aria i coefficienti sono $T_0 = 288 K$, $C = 110.4 K$.
+Si ottengono i valori numerici $V_m = 152.8 m/s$, $\lambda = 0.507$.
+
+\vspace{0.5cm}
+\textbf{Osservazioni.} Non è sempre possibile imporre l'uguaglianza di $Re$ e $M$. Si pensi ad esempio a un'applicazione in aria in condizioni standard e prove sul modello in galleria ad aria in condizioni standard.
+Per ottenere l'uguaglianza dei numeri di Mach, bisogna avere la stessa velocità caratteristica (poichè la celerità del suono è la stessa tra condizione reale e modello). Avendo uguagliato le velocità caratteristiche ed essendo uguali le variabili termodinamiche $\rho$ e $\mu$, si ottiene l'uguaglianza della dimensione caratteristica del modello. Questo significa che sarebbe necessario avere un modello in scala 1:1 per soddisfare la similitudine utilizzando nella prova sperimentale lo stesso fluido nelle stesse condizioni termodinamiche delle condizioni ``al vero''.
+Per limiti tecnologici e di costi, dovuti alle dimensioni degli apparati sperimentali, spesso è necessario utilizzare un modello in scala dell'originale. Esistono gallerie controllate in pressione per variare lo stato termodinamico dell'aria di prova e gallerie che utilizzando acqua come fluido di prova: entrambe queste scelte comportano complicazioni nel progetto e nell'utilizzo dell'impianto, traducibile spesso in costi elevati.
+%
+\newline
+Allora per quale numero adimensionale o secondo quale combinazione dei numeri adimensionali conviene ottenere la similitudine? ``Arte'', esperienza e alcuni ``espedienti'' sperimentali, che non sono oggetto di questo corso hanno lo scopo di ottenere risultati rappresentativi del problema al vero, anche se la perfetta similitudine non è soddisfatta.

@@ -1,0 +1,68 @@
+ \begin{exerciseS}[Getto: codice numerico adimensionale]
+ Si vuole studiare con la corrente di aria che esce da un ugello verticale
+ di diametro $\tilde{D}=0.01\ m$, nell'intervallo di velocità di riferimento
+ $\tilde{U} \in [1,10] \ m/s$. Si ha a disposizione un codice numerico 
+ che risolve le equazioni in forma adimensionale, in cui non è possibile
+ variare le condizioni al contorno, e una sola griglia di calcolo.
+ Si chiede di:
+ \begin{itemize}
+   \item determinare l'intervallo di numeri di Reynolds $Re$ da inserire
+     nel codice, sapendo che la velocità di riferimento nel codice è $U=1$
+     e il diametro nella griglia vale $D=1$.
+   \item la frequenza $\tilde{f}$ di rilascio di vortici quando
+     $\tilde{U}=1\ m/s$, sapendo che la frequenza estratta dai risultati
+     numerici è $f=0.2$;
+   \item stimare l'errore compiuto dal codice nel trascurare l'effetto
+     della gravità.
+ \end{itemize}
+ \end{exerciseS}
+ 
+\sol
+
+\partone
+Similitudine fluidodinamica. Numeri di Reynolds e Froude. Ordini di
+ grandezza dei termini.
+
+\begin{equation}
+Re = \frac{\rho U L}{\mu} \qquad , \qquad Fr = \dfrac{U}{\sqrt{g L}}
+\end{equation}
+
+\parttwo
+\begin{itemize}
+\item
+Affinchè le simulazioni numeriche siano rappresentative della corrente
+ incomprimibile che si vuole studiare, è necessario che ci sia similitudine
+ fluidodinamica tra i due casi: bisogna imporre l'uguaglianza dei numeri di
+ Reynolds
+ \begin{equation}
+   Re = \dfrac{\tilde{U}\tilde{D}}{\tilde{\nu}} \approx 
+    \dfrac{(1 \div 10) m/s \times 10^{-2}m}{10^{-5}m^2/s} = 
+    10^3 \div 10^4 \ .
+ \end{equation}
+
+\item 
+Se la frequenza adimensionale ottenuta dalla simulazione numerica è $f=0.2$,
+ la frequenza dimensionale viene ottenuta dall'ugualglianza dei numeri di 
+ Strouhal, cioè ``ri-dimensionalizzando'' $f$ con le
+ grandezze di riferimento usate per l'adimensionalizzazione
+ ($U$,$L$,$\rho$). 
+\begin{equation}
+  \dfrac{f D}{U} = \dfrac{\tilde{f} \tilde{D}}{\tilde{U}} \quad \Rightarrow
+  \quad \tilde{f} = f \dfrac{\tilde{U}}{\tilde{D}} 
+  = 0.2 \times \dfrac{1 m/s}{10^{-2} m } = 20 s^{-1} \ .
+\end{equation}
+
+\item
+Per quantificare l'effetto della gravità, si calcola il valore del numero
+ di Froude. Nelle equazioni di Navier-Stokes adimensionali, compare il
+ numero adimensionale $ g D / U^2 = 1 / Fr^2$ davanti ai termini di forze di
+ volume. Più questo numero è ``piccolo'', più gli effetti delle forze di
+ volume sono ridotti.
+ \begin{equation}
+ \begin{cases}
+ U = 1 m/s  & : \qquad 1/Fr^2 \approx 10^{-1} \\
+ U = 10 m/s & : \qquad 1/Fr^2 \approx 10^{-3}
+ \end{cases}
+ \end{equation}
+
+\end{itemize} 

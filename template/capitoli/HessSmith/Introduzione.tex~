@@ -1,0 +1,30 @@
+\begin{itemize}
+
+ \item Ipotesi dei metodi a pannelli.
+
+ \item Metodi diretti e inversi.
+
+ \item Quando, come e perchè i metodi a pannelli:
+  
+  \begin{itemize}
+    
+   \item Problemi aerodinamici, con regioni di separazione limitate: 
+   es. ok per profili e superfici alari a incidenze limitate (corrente attaccata, no stallo).
+   
+   \item Rispetto a soluzioni delle equazioni di NS o Eulero (non viscose), le incognite sono 
+   concentrate sulla superficie del corpo: il numero delle ingocnite è ridotto e non serve una
+   griglia in tutto il dominio fluido. 
+   
+   \item Per problemi 2D non stazionari e per problemi 3D stazionari e non, è necessario 
+   modellare la scia.
+   
+   \item Per problemi aerodinamici 2D stazionari (no scia) e per problemi 2D e 3D con scia imposta
+   il problema da risolvere è lineare.
+      
+   \item Ancora utilizzati in problemi di accoppiamento fluido-struttura (aeroelasticità,...)
+   
+   \item Riferimenti: Katz, Plotkin, Low Speed Aerodynamics; Bisplinghoff, Aeroelasticity.
+  
+  \end{itemize}
+
+\end{itemize}

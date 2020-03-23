@@ -1,0 +1,428 @@
+
+\section{Rappresentazione del termine di derivata temporale nelle equazioni di bilancio}
+Nella forma integrale delle equazioni di bilancio per un volume materiale $V(t)$ che descrivono la dinamica di un mezzo continuo compare la derivata temporale dell'integrale di volume della quantità fisica di interesse,
+\begin{equation}
+ \dfrac{d}{d t} \int_{V(t)} f .
+\end{equation}
+Il volume materiale $V(t)$ si muove con la velocità del mezzo continuo e il teorema di Reynolds \ref{thm:reynolds} permette di rielaborare questo termine ed esprimere questa derivata temporale in termini di integrali svolti su un volume di controllo $V_c$ fisso nello spazio.
+%
+Tramite il teorema di Reynolds \ref{thm:reynolds} lo stesso termine può essere scritto in termini di integrali svolti su un volume generico $v(t)$ in moto arbitario, che risulta solidale nel sistema di coordinate $\bm{\chi}$. Il cambio di coordinate preso in considerazione ora è $\bm{x}(\bm{\chi},t)$, dove $\bm{\chi}$ può essere pensato come il sistema di ``etichettatura'' applicato ai punti del volume $v(t)$. Rispetto al sistema di riferimento fisso $\bm{x}$, le particelle di tale
+ volume sono in moto con velocità 
+\begin{equation}
+  \bm{w} = \dfrac{\partial}{\partial t}\bigg|_{\bm{\chi}} \bm{x}(\bm{\chi},t) .
+\end{equation}
+Il volume $v(t)$ risulta quindi definito dalla sua condizione iniziale e dalla velocità $\bm{w}$ dei punti della sua superficie.
+\noindent
+La derivata sul volume mobile $v(t)$ è
+\begin{equation}
+\begin{aligned}
+  \frac{d}{dt} \int_{v(t)} f dv  & = & \text{(thm Reynolds per $v(t)$)} \\
+                                 & = \int_{v(t)} \frac{\partial }{\partial t}\bigg|_{\bm{x}} f dv + \oint_{\partial v(t)} f\bm{w} \cdot \bm{\hat{n}} ds &
+                                        \text{($+\oint_{\partial v(t)} f\bm{v} \cdot \bm{\hat{n}} -\oint_{\partial v(t)} f\bm{v} \cdot \bm{\hat{n}} $)} \\
+                                 & = \int_{v(t)} \frac{\partial }{\partial t}\bigg|_{\bm{x}} f dv + \oint_{\partial v(t)} f\bm{v} \cdot \bm{\hat{n}} ds 
+                                      - \oint_{\partial v(t)} f(\bm{v}-\bm{w}) \cdot \bm{\hat{n}} ds  & \text{(thm di Reynolds per $V(t)$)}\\
+                                 & = \frac{d}{dt} \int_{V(t)\equiv v(t)} f dV - \oint_{\partial v(t)} f(\bm{v}-\bm{w}) \cdot \bm{\hat{n}} ds , \\
+\end{aligned}
+\end{equation}
+dove è stata usata la formula ricavata in precedenza per $\frac{d}{dt} \int_{V(t)} f dV$.
+
+\noindent
+Quanto scritto vale per qualsiasi volume $v(t)$ in moto generico con velocità $\bm{w}$ della superficie $\partial v(t)$
+ a qualsiasi istante di tempo. Se si considerano il volume di controllo $V_c$
+ (fisso, $\bm{w}=0$) e il volume generico $v(t)$ coincidenti al tempo $t$ con
+ il volume materiale $V(t)$ (in moto con la stessa velocità $\bm{w}=\bm{v}$
+ del continuo), si ricava la regole per trasformare la derivata temporale su un dominio materiale $V(t)$ usata nell'approccio lagrangiano, in termini di integrali svolti sul volume di controllo $V_c$ e sul suo contorno $S_c$, impiegati nella descrizione euleriana del problema, come caso particolare della descrizione euleriana di un volume $v(t)$, 
+\begin{equation}
+\begin{aligned}
+ \frac{d}{dt} \int_{V(t)} f  & =  & \text{(Lagrange)} \\
+    & = \frac{d}{dt} \int_{V_c \equiv V(t)} f  + \oint_{\partial V_c \equiv \partial V(t)} f\bm{v} \cdot \bm{\hat{n}}            & \text{(Eulero)} \\
+    & = \frac{d}{dt} \int_{v(t)\equiv V(t)} f  + \oint_{\partial v(t)\equiv \partial V(t)} f(\bm{v}-\bm{w}) \cdot \bm{\hat{n}}   & \text{(``ALE'')} 
+\end{aligned}
+\end{equation}
+%\frac{d}{dt} \int_{V(t)} f dV & =  & \text{(Lagrange)} \\
+%    & = \frac{d}{dt} \int_{V_c \equiv V(t)} f dV + \oint_{\partial V_c \equiv \partial V(t)} f\bm{v} \cdot \bm{\hat{n}} dS  & \text{(Eulero)} \\
+%    & = \frac{d}{dt} \int_{v(t)\equiv V(t)} f dv + \oint_{\partial v(t)\equiv \partial V(t)} f(\bm{v}-\bm{w}) \cdot \bm{\hat{n}} ds  & \text{(``ALE'')} 
+
+
+\noindent
+Si sono ottenute le tre forme di rappresentazione più comuni per la derivata di integrali su volumi mobili per problemi di meccanica del continuo.
+Quando vengono scritte le equazioni di bilancio (ad esempio massa, quantità di moto, energia \dots) in forma integrale, queste possono essere scritte
+ per
+\begin{itemize}
+ \item un volume materiale, le cui particelle sono in moto con la stessa velocità del continuo (sia esso un fluido, un solido elastico o no, \dots):
+   se la velocità $\bm{v}$ dei punti volume $V(t)$ coincide con quella di punti del continuo, il volume $V(t)$ è un volume materiale.
+ \item un volume di controllo, fisso: $V_c$
+ \item un volume in moto generico: usiamo il volume $v(t)$ i cui punti si muovono con velocità $\bm{w}$ generica.
+\end{itemize}
+
+Quando le equazioni di bilancio vengono scritte riferite ai tre volumi elencati sopra, si definiscono i tre tipi di rappresentazione usati in meccanica
+ del continuo (di nuovo, sia esso un fluido, un solido, \dots)
+
+\begin{itemize}
+ \item rappresentazione \textbf{lagrangiana}: si segue l'evoluzione del continuo seguendo la traiettoria di ogni particella. Il volume mobile nel sistema
+       di riferimneto ``fisso'', si muove con la stessa velocità delle particelle; questa descrizione viene usata frequentemente in meccanica dei solidi,
+       quando gli spostamenti delle particelle sono sufficientemente piccoli e il determinante $J$ della trasformazione è non singolare (e spesso $\approx
+       1$, es. piccole deformazioni).
+ \item rappresentazione \textbf{euleriana}: si segue l'evoluzione del continuo sfruttando il volume di controllo $V_c$ solidale al sistema di 
+       riferimento ``fisso'' e scrivendo le equazioni di bilancio considerando le variazioni dovute alla sola variazione in tempo e ai flussi attraverso
+       la superficie del volume di controllo. Questa descrizione viene frequentemente usata in meccanica dei fluidi, dove spesso gli spostamenti della
+       particelle sono ``molto grandi''. 
+ \item rappresentazione \textbf{arbitraria} (ALE: arbitrary Lagrangian Eulerian): il volume $v(t)$ ha un moto ``generale'', indipendente da quello delle 
+       particelle del continuo: la variazione della quantità è composta dalla sola variazione temporale e dal contributo dei flussi ``relativi'' 
+       attraverso la superficie del volume di controllo (se $\bm{v}$ è la velocità delle particelle e $\bm{w}$ quella della superficie del volume $v(t)$
+       rispetto allo stesso sistema di riferimento, $\bm{v} - \bm{w}$ è la velocità relativa del fluido rispetto al volume $v(t)$).
+       Può essere spesso usata quando il dominio del problema varia nel tempo: si pensi a una simulazione numerica di una corrente attorno a un corpo
+       rigido che subisce degli spostamenti o rotazioni (moderate) nel tempo o una corrente attorno a un'ala deformabile.
+\end{itemize}
+
+\noindent
+Si noti come la rappresentazione ``ALE'' generalizza le altre due. Se il volume $v(t)$ coincide con il volume materiale $V(t)$ si ritorna alla descrizione
+ lagrangiana: allora $\bm{w}=\bm{v}$ e non c'è flusso attraverso la superficie. Se il volume $v(t)$ coincide con il volume materiale $V_c$, allora $\bm{w}
+ =0$ e si ottiene la rappresentazione euleriana.
+
+
+\section{Bilanci integrali}
+I bilanci integrali vengono scritti partendo da un volume materiale $V(t)$ qualsiasi, partendo dai principi della fisica classica
+\begin{itemize}
+  \item conservazione della massa;
+  \item prima e seconda equazione cardinale della dinamica;
+  \item bilancio di energia totale, somma di meccanica ed interna, che include i termini di flusso di calore, e che può essere
+        ricondotto al primo principio della termodinamica.
+\end{itemize}
+
+\subsection{Bilancio di massa}
+ La massa di un volume materiale $V(t)$ è costante nel tempo, poichè il volume materiale è costituito sempre dalle stesse particelle del
+ continuo.
+\begin{equation}
+ \dfrac{d}{dt} \int_{V(t)} \rho = 0
+\end{equation}
+
+\subsection{Prima equazione cardinale e bilancio della quantità di moto}
+La prima equazione cardinale della dinamica lega la quantità di moto $\bm{Q}$ di un sistema alla risultante delle forze esterne $\bm{R}^{ext}$
+ agenti su di esso.
+\begin{equation}
+ \dfrac{d\bm{Q}}{d t} = \bm{R}^{ext}
+\end{equation}
+Separando i contributi di forze di volume e di superficie, il bilancio di quantità di moto per un volume materiale $V(t)$ arbitrario
+\begin{equation}
+ \dfrac{d}{d t} \int_{V(t)} \rho \bm{u} = \oint_{S(t)} \bm{t_n} + \int_{V(t)} \rho \bm{g}
+\end{equation}
+avendo indicato con $\bm{t_n}$ il vettore sforzo agente sulla superficie esterna $S(t)$ del volume materiale e $\bm{g}$ le forze per unità di
+ massa (come ad esempio l'accelerazione di gravità).
+
+\subsection{Seconda equazione cardinale e bilancio del momento della quantità di moto}
+La seconda equazione cardinale della dinamica lega il momento della quantità di moto ${\Gamma}_H$ rispetto a un polo H con il momento risultante
+ delle azioni esterne $\bm{M}^{ext}$ (e con il moto del polo H)
+\begin{equation}
+ \dfrac{d {\Gamma}_H}{dt} = -\dot{\bm{x}}_H \times \bm{Q} + \bm{M}^{ext}
+\end{equation}
+Se si considera un polo H fisso e si indica con $\bm{r}$ il raggio vettore dal polo H ai ``punti fisici'' del volume materiale,
+ il bilancio integrale di momento angolare per un volume materiale (in assenza di coppie esterne) è
+\begin{equation}
+ \dfrac{d}{d t} \int_{V(t)} \bm{r} \times \rho \bm{u} = \oint_{S(t)} \bm{r} \times \bm{t_n} + \int_{V(t)} \rho \bm{r} \times \bm{g}
+\end{equation}
+
+\subsection{Bilancio di energia totale}
+L'energia totale di un sistema è la somma della sua energia interna e cinetica. La mariazione di energia totale è dovuta al lavoro delle forze 
+ agenti sul sistema e ai flussi di calore attraverso la superficie del volume (in assenza di fonti di calori interne al volume). 
+\begin{equation}
+ \dfrac{ d E^{tot}}{d t} = L - Q
+\end{equation}
+dove con $L$ si è indicato il lavoro svolto sul sistema e con $Q$ i flussi di calore uscenti da esso. Per un volume materiale
+\begin{equation}
+ \dfrac{d}{d t} \int_{V(t)} \rho e^{tot} = \oint_{S(t)} \bm{u} \cdot \bm{t_n} + \int_{V(t)} \rho \bm{u} \cdot \bm{g}
+  - \oint_{S(t)} \bm{q} \cdot \bm{\hat{n}}
+\end{equation}
+dove $\bm{q} \cdot \bm{\hat{n}}$ positivo indica un flusso di calore uscente. L'energia totale per unità di massa può essere scritta come
+somma del contributo interno e del contributo cinetico
+\begin{equation}
+ e^t = e + \dfrac{1}{2}|\bm{u}|^2
+\end{equation}
+Introducendo la definizione di entalpia $h = e + Pv = e + P/\rho$ ci si può ricondurre a molti casi analizzati durante il corso di 
+ Fisica Tecnica, partendo ora da unquadro generale sui bilanci integrali: partendo dai bilanci generali, si possono introdurre
+ le ipotesi di sistema chiuso, adiabatico o isolato, annullando i termini di flusso di massa, di flusso di calore o i termini di 
+ energia e calore. Il bilancio di energia per un volume di controllo $V_c$ fisso (vedi sezione successiva), dopo aver scritto
+ il termine di sforzo separando il contributo di pressione da quello di sforzi viscosi $\bm{t_n} = -p\bm{\hat{n}} + \bm{s_n}$, diventa
+\begin{equation}
+\begin{aligned}
+\dfrac{d}{d t} \int_{V_c} \rho e^t & = - \oint_{S_c} \rho e^t \bm{u} \cdot \bm{\hat{n}}
+  - \oint_{S_c} P \bm{u} \cdot \bm{\hat{n}} + \oint_{S_c} \bm{u} \cdot \bm{s_n} + \int_{V_c} \rho \bm{u} \cdot \bm{g}
+  - \oint_{S_c} \bm{q} \cdot \bm{\hat{n}} = & (\rho h^t = \rho(e^t + P/\rho))\\
+ & = - \oint_{S_c} \rho h^t \bm{u} \cdot \bm{\hat{n}}
+   + \oint_{S_c} \bm{u} \cdot \bm{s_n} + \int_{V_c} \rho \bm{u} \cdot \bm{g}
+  - \oint_{S_c} \bm{q} \cdot \bm{\hat{n}}
+\end{aligned}
+\end{equation}
+avendo messo in evidenza il flusso di entalpia totale $h^t$.
+
+\subsection{Bilanci integrali per volumi in moto arbitrario}
+I bilanci integrali per un volume $v(t)$ in moto generico con velocità
+ $\bm{w}$ possono essere ricavati partendo da quelli per un volume $V(t)$
+ materiale, ricavati nella
+ sezione precedente, con l'utilizzo del teorema del trasporto di Reynolds per
+ modificare il termine di derivata temporale. Per un volume $v(t)$, la cui
+ superficie $\partial s(t)$ ha velocità $\bm{w}$
+
+\begin{equation}\label{eqn:bilanciIntegrali:ale}
+ \begin{aligned}
+ & \dfrac{d}{d t} \int_{v(t)} \rho + \oint_{s(t)} \rho (\bm{u} - \bm{w}) \cdot \bm{\hat{n}} = 0  \\
+ & \dfrac{d}{d t} \int_{v(t)} \rho \bm{u} + \oint_{s(t)} \rho \bm{u} (\bm{u} - \bm{w}) \cdot \bm{\hat{n}} =
+     \oint_{s(t)} \bm{t_n} + \int_{v(t)} \rho \bm{g} \\
+ & \dfrac{d}{d t} \int_{v(t)} \bm{r} \times \rho \bm{u} + \oint_{s(t)} \bm{r} \times (\rho \bm{u}) (\bm{u} - \bm{w}) \cdot \bm{\hat{n}} = 
+    \oint_{s(t)} \bm{r} \times \bm{t_n} + \int_{v(t)} \rho \bm{r} \times \bm{g} \\
+ & \dfrac{d}{d t} \int_{v(t)} \rho e^{tot} + \oint_{s(t)} \rho e^t (\bm{u} - \bm{w}) \cdot \bm{\hat{n}}
+  = \oint_{s(t)} \bm{u} \cdot \bm{t_n} + \int_{v(t)} \rho \bm{u} \cdot \bm{g}
+  - \oint_{s(t)} \bm{q} \cdot \bm{\hat{n}}
+ \end{aligned}
+\end{equation}
+
+\noindent
+Per un volume di controllo $V_c$ fisso, $\bm{w}=0$
+\begin{equation}\label{eqn:bilanciIntegrali:eulerian}
+ \begin{aligned}
+ & \dfrac{d}{d t} \int_{V_c} \rho + \oint_{S_c} \rho \bm{u} \cdot \bm{\hat{n}} = 0  \\
+ & \dfrac{d}{d t} \int_{V_c} \rho \bm{u} + \oint_{S_c} \rho \bm{u} \bm{u} \cdot \bm{\hat{n}} =
+     \oint_{S_c} \bm{t_n} + \int_{V_c} \rho \bm{g} \\
+ & \dfrac{d}{d t} \int_{V_c} \bm{r} \times \rho \bm{u} + \oint_{S_c} \bm{r} \times (\rho \bm{u}) \bm{u} \cdot \bm{\hat{n}} = 
+    \oint_{S_c} \bm{r} \times \bm{t_n} + \int_{V_c} \rho \bm{r} \times \bm{g} \\
+ & \dfrac{d}{d t} \int_{V_c} \rho e^t + \oint_{S_c} \rho e^t \bm{u} \cdot \bm{\hat{n}}
+  = \oint_{S_c} \bm{u} \cdot \bm{t_n} + \int_{V_c} \rho \bm{u} \cdot \bm{g}
+  - \oint_{S_c} \bm{q} \cdot \bm{\hat{n}}
+ \end{aligned}
+\end{equation}
+
+
+%\subsection{Operatori differenziali in diversi sistemi di coordinate}
+
+%Le equazioni della fluidodinamica (e non solo) sono relazioni vettoriali (o più in generale
+% hanno carattere tensoriale): le equazioni sono indipendenti dal sistema di riferimento nel
+% quale vengono scritte.
+
+% La scrittura delle equazioni in un sistema di coordinate (cartesiano ortogonale, polare,
+% cilindrico, sferico) è solo un metodo per rappresentare le equazioni. La scelta del sistema
+% di riferimento 'più opportuno' è spesso dettato dalla geometria del problema: ad esempio, un
+% fluido in un tubo cilindrico verrà descritto comodamente scrivendo le equazioni in coordinate
+% cilindriche, invece di utilizzare le coordinate cartesiane. \textit{Il mondo non è fatto
+% a quadretti.}
+
+% Nelle equazioni della fluidodinamica (e non solo) compaiono operatori differenziali, i quali
+% devono essere opportunamente espressi nelle coordinate nelle quali viene descritto il problema.
+% Capita la differenza tra carattere tensoriale delle equazioni e la loro scrittura in un sistema
+% di riferimento 'comodo', viene rivacata la forma in componenti cartesiane e polari degli operatori
+% differenziali, limitandoci per semplicità al caso bidimensionale.
+
+% 
+
+
+%\subsubsection*{Cambiamento di coordinate tra coordinate cartesiane e polari}
+
+%Trasformzaione di coordinate.
+%\begin{equation}
+%  \begin{cases}
+%    x = r \cos \theta \\
+%    y = r \sin \theta
+%  \end{cases}
+%  \qquad
+%  \begin{cases}
+%    r = \sqrt{x^2 + y^2} \\
+%    \tan \theta = \frac{y}{x}
+%  \end{cases}
+%\end{equation}
+
+%Derivate.
+%\begin{equation}
+% \begin{aligned}
+%  \frac{\partial}{\partial x} =\frac{\partial r}{\partial x}\frac{\partial}{\partial r} +
+%                 \frac{\partial \theta}{\partial x}\frac{\partial}{\partial \theta} = 
+%            \frac{x}{\sqrt{x^2+y^2}}\frac{\partial}{\partial r} 
+%              - \frac{y}{x^2+y^2}\frac{\partial}{\partial \theta} =
+%            \cos \theta \frac{\partial}{\partial r} 
+%              - \frac{\sin \theta}{r} \frac{\partial}{\partial \theta} \\ 
+%  \frac{\partial}{\partial y} =\frac{\partial r}{\partial y}\frac{\partial}{\partial r} +
+%                 \frac{\partial \theta}{\partial y}\frac{\partial}{\partial \theta} = 
+%            \frac{y}{\sqrt{x^2+y^2}}\frac{\partial}{\partial r} 
+%              + \frac{x}{x^2+y^2}\frac{\partial}{\partial \theta} =
+%            \sin \theta \frac{\partial}{\partial r} 
+%              + \frac{\cos \theta}{r} \frac{\partial}{\partial \theta} \\           
+% \end{aligned}
+%\end{equation}
+
+%Versori.
+%\begin{equation}
+%  \begin{cases}
+%    \bm{\hat{x}} = \cos \theta \bm{\hat{r}} - \sin \theta \bm{\hat{\theta}} \\
+%    \bm{\hat{y}} = \sin \theta \bm{\hat{r}} + \cos \theta \bm{\hat{\theta}} \\
+%  \end{cases}
+%  \qquad
+%  \begin{cases}
+%    \bm{\hat{r}}      =   \cos \theta \bm{\hat{x}} + \sin \theta \bm{\hat{y}} \\
+%    \bm{\hat{\theta}} = - \sin \theta \bm{\hat{x}} + \cos \theta \bm{\hat{y}} \\
+%  \end{cases}
+%\end{equation}
+
+%Componenti dei vettori.
+%\begin{equation}
+% \bm{u} = u   \bm{\hat{x}} + v \bm{\hat{y}}
+%        = u_r \bm{\hat{r}} + u_\theta \bm{\hat{\theta}}
+%\end{equation}
+
+%Cambio di coordinate: relazione tra le componenti.
+%\begin{equation}
+%  \begin{cases}
+%    u = u_r \cos \theta - u_\theta \sin \theta  \\
+%    v = u_r \sin \theta + u_\theta \cos \theta  \\
+%  \end{cases}
+%  \qquad
+%  \begin{cases}
+%    u_r      =   u \cos \theta  + v \sin \theta \\
+%    u_\theta = - u \sin \theta  + v \cos \theta \\
+%  \end{cases}
+%\end{equation}
+
+%\subsubsection*{Gradiente in coordinate cartesiane}
+
+%\begin{equation}
+% \bm{\nabla}f = \frac{\partial f}{\partial x} \bm{\hat{x}} +
+%                \frac{\partial f}{\partial y} \bm{\hat{y}}
+%\end{equation}
+
+%\subsubsection*{Gradiente in coordinate polari}
+
+%\begin{equation}
+% \bm{\nabla}f = \frac{\partial f}{\partial r} \bm{\hat{r}} +
+%                \frac{1}{r}\frac{\partial f}{\partial \theta} \bm{\hat{\theta}}
+%\end{equation}
+
+%\begin{equation}
+%\begin{aligned}
+%  \bm{\nabla}f & = \frac{\partial f}{\partial x} \bm{\hat{x}} +
+%                \frac{\partial f}{\partial y} \bm{\hat{y}} = \\
+%   & =     \displaystyle \left[ \cos \theta \frac{\partial f}{\partial r} 
+%              - \frac{\sin \theta}{r} \frac{\partial f}{\partial \theta} \right] 
+%              ( \cos \theta \bm{\hat{r}} - \sin \theta \bm{\hat{\theta}} ) + 
+%     \displaystyle \left[ \sin \theta \frac{\partial f}{\partial r} 
+%              + \frac{\cos \theta}{r} \frac{\partial f}{\partial \theta} \right] 
+%              ( \sin \theta \bm{\hat{r}} + \cos \theta \bm{\hat{\theta}} )  \\
+%   & =  \frac{\partial f}{\partial r} \bm{\hat{r}} +
+%                \frac{1}{r}\frac{\partial f}{\partial \theta} \bm{\hat{\theta}}
+%\end{aligned}
+%\end{equation}
+
+%\subsubsection*{Divergenza in coordinate cartesiane}
+
+%\begin{equation}
+%\bm{\nabla} \cdot \bm{u} = \bm{\nabla} \cdot (u   \bm{\hat{x}} + v \bm{\hat{y}}) = 
+% \frac{\partial u}{\partial x} + \frac{\partial v}{\partial y}
+%\end{equation}
+
+%\subsubsection*{Divergenza in coordinate polari}
+
+%\begin{equation}
+%\bm{\nabla} \cdot \bm{u} = \bm{\nabla} \cdot (u_r \bm{\hat{r}} + u_\theta \bm{\hat{\theta}})
+%\end{equation}
+
+%Svolgendo i conti per la derivata $\frac{\partial u}{\partial x}$:
+%\begin{equation}
+%\begin{aligned}
+% \frac{\partial u}{\partial x} 
+%& = \frac{\partial r}{\partial x}\frac{\partial u}{\partial r} +
+%    \frac{\partial \theta}{\partial x}\frac{\partial u}{\partial \theta} = \\
+%& = \cos \theta \frac{\partial}{\partial r} (u_r \cos \theta - u_\theta \sin \theta) - 
+%    \frac{\sin \theta}{r} \frac{\partial }{\partial \theta} (u_r \cos \theta - u_\theta \sin \theta)  \\
+%& = \cos^2 \theta \frac{\partial u_r}{\partial r}
+%     - \sin \theta \cos \theta \frac{\partial u_\theta}{\partial r}
+%     - \frac{\sin \theta \cos \theta}{r} \frac{\partial u_r}{\partial \theta}
+%     + \frac{\sin^2 \theta}{r} u_r
+%     + \frac{\sin^2 \theta}{r} \frac{\partial u_\theta}{\partial \theta}
+%     + \frac{\sin \theta \cos \theta}{r} u_\theta \\
+%\end{aligned}
+%\end{equation}
+
+%Si calcolano in maniera analoga $\frac{\partial v}{\partial y}$ e tutte le altre derivate.
+
+%\begin{equation}
+%\begin{aligned}
+%  \frac{\partial u}{\partial x} = \cos^2 \theta \frac{\partial u_r}{\partial r}
+%     - \sin \theta \cos \theta \frac{\partial u_\theta}{\partial r}
+%     - \frac{\sin \theta \cos \theta}{r} \frac{\partial u_r}{\partial \theta}
+%     + \frac{\sin^2 \theta}{r} u_r
+%     + \frac{\sin^2 \theta}{r} \frac{\partial u_\theta}{\partial \theta}
+%     + \frac{\sin \theta \cos \theta}{r} u_\theta \\
+%  \frac{\partial v}{\partial y} = \sin^2 \theta \frac{\partial u_r}{\partial r}
+%     + \sin \theta \cos \theta \frac{\partial u_\theta}{\partial r}
+%     + \frac{\sin \theta \cos \theta}{r} \frac{\partial u_r}{\partial \theta}
+%     + \frac{\cos^2 \theta}{r} u_r
+%     + \frac{\cos^2 \theta}{r} \frac{\partial u_\theta}{\partial \theta}
+%     - \frac{\sin \theta \cos \theta}{r} u_\theta
+%\end{aligned}
+%\end{equation}
+
+%Sommando, si ottiene:
+
+%\begin{equation}
+%  \bm{\nabla} \cdot \bm{u} = 
+% \frac{\partial u}{\partial x} + \frac{\partial v}{\partial y} =
+%   \frac{\partial u_r}{\partial r} + \frac{u_r}{r} + \frac{1}{r}\frac{\partial u_\theta}{\partial \theta} = 
+%   \frac{1}{r} \frac{\partial (r u_r)}{\partial r} + \frac{1}{r}\frac{\partial u_\theta}{\partial \theta}
+%\end{equation}
+
+
+%\subsubsection*{Rotore in coordinate cartesiane}
+
+%\begin{equation}
+%\bm{\nabla} \times \bm{u} = 
+%\begin{vmatrix}
+%\bm{\hat{x}} & \bm{\hat{y}} & \bm{\hat{z}} \\
+%\frac{\partial }{\partial x} & \frac{\partial }{\partial y} &
+%\frac{\partial }{\partial z} \\
+%u & v & w
+%\end{vmatrix}= 
+%\begin{vmatrix}
+%\bm{\hat{x}} & \bm{\hat{y}} & \bm{\hat{z}} \\
+%\frac{\partial }{\partial x} & \frac{\partial }{\partial y} & 0 \\
+%u & v & 0
+%\end{vmatrix}
+% = 	\bm{\hat{z}} \displaystyle\left[
+%\frac{\partial v}{\partial x} - \frac{\partial u}{\partial y} \right]
+%\end{equation}
+
+%\subsubsection*{Rotore in coordinate polari}
+
+%\begin{equation}
+%\bm{\nabla} \times\bm{u} = \bm{\nabla}\times (u_r \bm{\hat{r}} + u_\theta \bm{\hat{\theta}})
+%\end{equation}
+
+%\begin{equation}
+%\begin{aligned}
+%  \frac{\partial v}{\partial x} = \sin \theta \cos \theta \frac{\partial u_r}{\partial r}
+%     + \cos^2 \theta \frac{\partial u_\theta}{\partial r}
+%     - \frac{\sin^2 \theta}{r} \frac{\partial u_r}{\partial \theta}
+%     - \frac{\sin \theta \cos \theta}{r} u_r
+%     - \frac{\sin \theta \cos \theta}{r} \frac{\partial u_\theta}{\partial \theta}
+%     + \frac{\sin^2 \theta}{r} u_\theta \\
+%  \frac{\partial u}{\partial y} = \sin \theta \cos \theta \frac{\partial u_r}{\partial r}
+%     - \sin^2 \theta  \frac{\partial u_\theta}{\partial r}
+%     + \frac{ \cos^2 \theta}{r} \frac{\partial u_r}{\partial \theta}
+%     - \frac{\cos \theta \sin \theta}{r} u_r
+%     - \frac{\sin \theta \cos \theta}{r} \frac{\partial u_\theta}{\partial \theta}
+%     - \frac{\cos^2 \theta}{r} u_\theta
+%\end{aligned}
+%\end{equation}
+
+%\begin{equation}
+%  \bm{\hat{z}}\cdot\bm{\nabla} \times \bm{u} = \frac{\partial v}{\partial x} - \frac{\partial u}{\partial y} =
+%   \frac{1}{r}  u_\theta + \frac{\partial u_\theta}{\partial r} - \frac{1}{r}\frac{\partial u_r}{\partial \theta} =
+%   \frac{1}{r} \frac{\partial (r u_\theta)}{\partial r} - \frac{1}{r}\frac{\partial u_r}{\partial \theta}
+%\end{equation}
+
+%\vspace{0.5cm}
+%\textit{Osservazioni}. Notare le somiglianze (e le differenze) tra divergenza e rotore in coordinate polari.
+%\begin{equation}
+%\begin{aligned}
+% \bm{\nabla} \cdot \bm{u} = 
+%   \frac{1}{r} \frac{\partial (r u_r)}{\partial r} + \frac{1}{r}\frac{\partial u_\theta}{\partial \theta}\\
+%\bm{\hat{z}}\cdot\bm{\nabla} \times \bm{u} = 
+%  \frac{1}{r} \frac{\partial (r u_\theta)}{\partial r} - \frac{1}{r}\frac{\partial u_r}{\partial \theta}
+%\end{aligned}
+%\end{equation}
+

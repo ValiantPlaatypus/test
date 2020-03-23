@@ -1,0 +1,237 @@
+\begin{exerciseS}[Linee di corrente, traiettorie e linee di fumo: non stazionario]
+ Sia dato il campo di moto
+\begin{equation}
+ \bm{u}(x,y) = 3 \bm{\hat{x}} + 3t \bm{\hat{y}} 
+\end{equation}
+Calcolare l'equazione delle linee di corrente, delle traiettorie e delle linee di fumo (curve di emissione) e disegnarle.
+\end{exerciseS}
+
+
+\sol
+
+\partone Definizione di linee di corrente, traiettorie, linee di fumo, tracce. Soluzione di sistemi di equazioni differenziali.
+
+%\begin{itemize}
+
+%\item
+%Le linee di corrente sono curve $\bm{S}$ tangenti al campo vettoriale $\bm{u}(\bm{r},t)$ in ogni punto dello spazio $\bm{r}$ e per ogni istante temporale $t$. Essendo curve (1 dimensione), possono essere espresse in forma parametrica, come funzioni di un parametro scalare $p$. La 'traduzione' della definizione in formula è quindi:
+%\begin{equation}
+% \frac{d\bm{S}(p)}{dp} = \bm{u}(\bm{S}(p),t)
+%\end{equation}
+%Il vettore tangente ${d\bm{S}(p)}{dp}$ alla curva $\bm{S}(p)$ nel punto ${\bm{S}(p)}$ è parallelo al vettore 
+%velocità $\bm{u}$ nello stesso punto $\bm{S(p)}$, al tempo considerato $t$.
+
+%\item
+%Le traiettorie descrivono il moto della singola particella fluida e sono descritte dall'equazione:
+%\begin{equation}
+%\begin{cases}
+% \frac{d\bm{R}(t)}{dt} = \bm{u}(\bm{R(t)},t) \\
+% \bm{R}(t_0) = \bm{R_0}
+%\end{cases}
+%\end{equation}
+%La traiettoria descritta sopra è quella della particella che all'istante $t_0$ passa per il punto $\bm{R_0}$.
+%Interpretazione della formula: la velocità ${d\bm{R}(t)}/{dt}$ della particella (derivata della posizione della
+%particella $R(t)$ nel tempo) è uguale alla velocità del fluido nella posizione $R(t)$ nella quale si trova la particella all'istante $t$.
+
+%Fissati $t_0$ e $\bm{R_0}$, si osserva la traiettoria della particella al variare del tempo $t$.
+
+%\item
+%Le linee di fumo sono un modo per tracciare tutte le particelle di fluido passate per un determinato punto nello spazio a diversi istanti temporali. La loro equazione è:
+%\begin{equation}
+%\begin{cases}
+% \frac{d\bm{R}(t)}{dt} = \bm{u}(\bm{R},t) \\
+% \bm{R}(\tau) = \bm{\bar{R}}
+%\end{cases}
+%\end{equation}
+%L'equazione è identica all'equazione delle traiettorie.
+%Cambia la variabile che descrive la curva: si considerano fissi il punto di emissione $\bm{\bar{R}}$ e il tempo
+%$t$ al quale viene osservata la curva di emissione; la variabile che descrive la curva di emissione è il tempo
+%$\tau$ al quale le particelle passano da $\bm{\bar{R}}$.
+
+%Nel caso di campi stazionari linee di corrente, traiettorie e linee di fumo coincidono.
+
+%\item
+%Tracce:
+%\begin{equation}
+%\begin{cases}
+% \frac{d\bm{R}(t)}{dt} = \bm{u}(\bm{R},t) \\
+% \bm{R}(\tau) = \bm{\bar{R}}
+%\end{cases}
+%\end{equation}
+%L'equazione è identica all'equazione delle traiettorie e delle curve di emissione.
+%Cambia la variabile che descrive la curva: si considerano fissi il tempo $\tau$ e il tempo
+%$t$ al quale viene osservata la curva di emissione; la variabile che descrive la curva di emissione è la posizione $\bm{\bar{R}}$ dalle quali passano le particelle.
+
+%\end{itemize}
+
+%\textit{Osservazione}. Non c'è nessuna differenza formale tra $\tau$ e $t_0$ e $\bm{R_0}$ e $\bm{\bar{R}}$.
+
+%\clearpage
+
+
+\parttwo
+\begin{itemize}
+\item Linee di corrente.
+\begin{equation}
+ \begin{cases}
+  \frac{dX}{dp} = \lambda(p) 3 \\
+  \frac{dY}{dp} = \lambda(p) 3t \\
+ \end{cases}
+ \quad\Rightarrow\quad
+ \frac{dY}{dX} = t
+ \quad\Rightarrow\quad
+ Y = X t + c
+\end{equation}
+
+\begin{figure}
+\centering
+\begin{minipage}{0.35\textwidth}
+\hspace{-2cm}
+\begin{tikzpicture}
+\begin{axis}[axis lines=middle, domain=-1.2:2.6, xlabel={$x$}, ylabel={$y$} ,
+             xmin = -1.5 , xmax = 2.9, ymin = -1.0 , ymax = 3.2]
+\addplot
+[domain=-1.2:3.2,samples=40,smooth,thick,blue]
+{0};
+\addplot
+[domain=-1.2:3.2,samples=40,smooth,thick,blue]
+{1};
+\addplot
+[domain=-1.2:3.2,samples=40,smooth,thick,blue]
+{2};
+\addplot
+[domain=-1.2:3.2,samples=40,smooth,thick,blue]
+{3};
+%\legend{Linee di corrente a $t=0$}
+\end{axis}
+\end{tikzpicture}
+\end{minipage}
+\hspace{1cm}
+\begin{minipage}{0.35\textwidth}
+\begin{tikzpicture}
+\begin{axis}[axis lines=middle, domain=-1.2:2.6, xlabel={$x$}, ylabel={$y$} ,
+             xmin = -1.5 , xmax = 2.9, ymin = -1.0 , ymax = 3.2]
+\addplot
+[domain=-1.2:3.2,samples=40,smooth,thick,blue]
+{0.5*x};
+\addplot
+[domain=-1.2:3.2,samples=40,smooth,thick,blue]
+{0.5*x + 1};
+\addplot
+[domain=-1.2:3.2,samples=40,smooth,thick,blue]
+{0.5*x + 2};
+\addplot
+[domain=-1.2:1,samples=40,smooth,thick,blue]
+{0.5*x + 3};
+%\legend{Linee di corrente a $t=0.5$}
+\end{axis}
+\end{tikzpicture}
+\end{minipage}
+\caption{Linee di corrente a $t=0.0$ (sinistra) e $t=0.5$ (destra).}
+\end{figure}
+
+
+
+
+
+\item Traiettorie.
+\begin{equation}
+ \begin{cases}
+  \frac{dx}{dt} = 3 \\
+  \frac{dy}{dt} = 3t \\
+  x(t_0) = x_0 , \quad y(t_0) = y_0
+ \end{cases}
+ \quad\Rightarrow\quad
+ \begin{cases}
+  x(t) = x_0 + 3(t-t_0) \\
+  y(t) = y_0 +\frac{3}{2} (t^2 -t_0^2) \\
+ \end{cases}
+\end{equation}
+
+\begin{figure}[h!]
+\centering
+\begin{tikzpicture}
+\begin{axis}[axis lines=middle, domain=-1.2:3.2, xlabel={$x$}, ylabel={$y$} ,
+             xmin = -1.5 , xmax = 3.5, ymin = -1.0 , ymax = 3.5]
+\addplot
+[domain= 0:3,samples=40,smooth,thick,blue]
+{1/6*x^2};
+%\legend{Traiettoria per $\bm{R_0}=\bm{0}$, $t_0 = 0$, $t = t_0:1$}
+\end{axis}
+\end{tikzpicture}
+\caption*{Traiettoria per $\bm{R_0}=\bm{0} , t_0 = 0 , t \in [0,1]$}
+\end{figure}
+
+
+\item Linee di fumo (curve di emissione).
+\begin{equation}
+ \begin{cases}
+  \frac{dx}{dt} = 3 \\
+  \frac{dy}{dt} = 3t \\
+  x(\tau) = x_0 , \quad y(\tau) = y_0
+ \end{cases}
+ \quad\Rightarrow\quad
+ \begin{cases}
+  x(t) = x_0 + 3(t-\tau) \\
+  y(t) = y_0 +\frac{3}{2} (t^2-\tau^2) \\
+ \end{cases}
+\end{equation}
+
+\begin{figure}[h!]
+\centering
+\begin{tikzpicture}
+\begin{axis}[axis lines=middle, domain=-1.2:3.2, xlabel={$x$}, ylabel={$y$} ,
+             xmin = -1.5 , xmax = 3.5, ymin = -1.0 , ymax = 3.5]]
+\addplot
+[domain= 0:3,samples=40,smooth,thick,blue]
+{-1/6*x^2+x};
+%\legend{$\bm{R_0}=\bm{0} , \tau = 0:t , t=1$}
+\end{axis}
+\end{tikzpicture}
+\caption*{Curva di emissione con $\bm{R_0}=\bm{0} , \tau \in [0,t] , t=1$}
+\end{figure}
+
+\item Tracce.
+\begin{equation}
+ \begin{cases}
+  \frac{dx}{dt} = 3 \\
+  \frac{dy}{dt} = 3t \\
+  x(\tau) = x_0 , \quad y(\tau) = y_0
+ \end{cases}
+ \quad\Rightarrow\quad
+ \begin{cases}
+  x(t) = x_0 + 3(t-\tau) \\
+  y(t) = y_0 +\frac{3}{2} (t^2-\tau^2) \\
+ \end{cases}
+\end{equation}
+
+\begin{figure}[h!]
+\centering
+\begin{tikzpicture}
+\begin{axis}[axis lines=middle, domain=-1.2:3.2, xlabel={$x$}, ylabel={$y$} ,
+             xmin = -1.5 , xmax = 3.5, ymin = -1.0 , ymax = 3.5]]
+\addplot[color=blue,mark=x] coordinates{
+         (0.0, 0.0)
+         (0.0, 1.0)};
+\addplot[color=blue,mark=x] coordinates{
+         (0.75, 0.656)
+         (0.75, 1.656)};
+\addplot[color=blue,mark=x] coordinates{
+         (1.5, 1.125)
+         (1.5, 2.125)};
+\addplot[color=blue,mark=x] coordinates{
+         (2.25, 1.406)
+         (2.25, 2.406)};
+\addplot[color=blue,mark=x] coordinates{
+         (3.0, 1.5)
+         (3.0, 2.5)};
+\end{axis}
+\end{tikzpicture}
+\caption*{Tracce uscenti dalla curva $\bm{R_0} = (0,y0), y0 \in [0,1]$; vengono segnate le particelle passanti per tale curva negli istanti di tempo $\tau = 0; 0.25; 0.5; 0.75; 1$; le tracce vengono osservate nell'istante di tempo $t=1$.}
+\end{figure}
+
+
+\href{https://www.youtube.com/watch?v=nuQyKGuXJOs}{Collegamento al video del National Committee sulle visualizzazioni.}
+
+
+\end{itemize}

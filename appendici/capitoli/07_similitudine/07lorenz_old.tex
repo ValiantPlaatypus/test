@@ -1,0 +1,360 @@
+\subsection{Alcuni concetti di stabilità}
+Prima di indagare il sistema di Lorenz vengono introdotti alcuni concetti utili per 
+ studiare la stabilità di un generico sistema dinamico,
+\begin{equation}
+ \dfrac{d \bm{x}}{d t } = \bm{f}(\bm{x}(t),t) \qquad , \qquad \bm{x}(0) = \bm{x}_0 \ .
+\end{equation}
+Alcuni di questi concetti non sono nuovi; tutte queste definizioni verranno usate 
+ (e risulteranno più chiare) nella sezione successiva dedicata al sistema di Lorenz.
+
+\vspace{0.2cm}
+\noindent
+\textbf{Spazio delle fasi e stati di un sistema.}
+ Lo spazio delle fasi è uno spazio nel quale i punti rappresentano i possibili stati del sistema. 
+ Lo stato di un sistema dinamico è identificato dal valore delle sue variabili di stato,
+ ovvero le variabili che lo descrivono in maniera esaustiva da poterne prevederne
+ l'evoluzione.\footnote{Conoscendo lo stato del sistema \textbf{con esattezza}
+ è possibile descrivere l'evoluzione libera del sistema, in assenza di perturbazioni
+ e forze esterne. In fondo a  questa sezione, sarà più chiara la necessità di conoscere
+\textit{con esattezza} lo stato iniziale del sistema, per prevederne l'evoluzione.}
+L'evoluzione libera di un sistema dinamico viene descritta dalle traiettorie nel suo
+ spazio delle fasi.
+
+\vspace{0.2cm}
+\noindent
+\textbf{Equilibri e cicli limite.} Un equilibrio $\overline{\bm{x}}$ del sistema
+ è una soluzione stazionaria delle equazioni del sistema dinamico, cioè 
+\begin{equation}
+ \bm{0} = \bm{f}(\overline{\bm{x}}) \ .
+\end{equation}
+Un ciclo limite di periodo $T$ è una traiettoria periodica del sistema, tale per cui
+\begin{equation}
+ \bm{x}(t+T) = \bm{x}(t) \quad , \quad \forall t \ ,
+\end{equation}
+rappresentata nello spazio delle fasi da un'orbita chiusa (e isolata).
+
+\vspace{0.2cm}
+\noindent
+\textbf{Stabilità alla Lyapunov.}
+Lo studio di stabilità alla Lyapunov riguarda l'evoluzione locale del sistema dinamico
+ con \textbf{condizioni iniziali perturbate}. Qualitativamente, un punto di equilibrio è stabile
+ se, partendo da uno stato ``vicino'' all'equilibrio, lo stato del sistema rimane per
+ sempre ``vicino'' all'equilibrio. Inoltre, l'equilibrio è asinotiticamente stabile se
+ lo stato converge verso il punto di equilibrio, $\bm{x} \rightarrow \bm{\overline{x}}$
+ per $t \rightarrow \infty$.
+\newline
+ La stabilità di Lyapunov di un equilibrio può essere
+ indagata attraverso l'analisi degli autovalori del sistema linearizzato attorno al punto
+ di equilibrio.
+
+\vspace{0.2cm}
+\noindent
+\textbf{Stabilità strutturale.}
+La stabilità strutturale considera l'evoluzione del sistema in seguito a perturbazioni
+ del sistema stesso. Un sistema dinamico è strutturalmente stabile se
+ le traiettorie nel suo spazio delle fasi non cambiano qualitativamente: ad esempio, in un 
+ sistema strutturalmente stabile alla perturbazione di un parametro,
+ non cambiano il numero dei punti di equilibrio e cicli limite.
+
+\subsection{Sistema dinamico di Lorenz}
+In questa sezione si descrive, senza nessuna pretesa di completezza,
+ lo di studio di stabilità del sistema dinamico di Lorenz,
+\begin{equation}
+    \begin{cases}
+      \dot{X} = - \sigma X + \sigma Y \\
+      \dot{Y} = - Y + \rho X - X Z \\
+      \dot{Z} = - \beta Z + X Y \ ,
+    \end{cases}
+\end{equation}
+ come primo esempio di studio di stabilità di un sistema fluidodinamico.
+Si studia la stabilità del sistema di Lorenz al variare del parametro $\rho$,
+ mantenendo costante il valore dei parametri $\sigma$ e $\beta$.
+Lorenz usò come valori $\sigma = 10$ e $\beta = 8/3$.
+ Il numero di Prantdl assume un valore paragonabile a quello dell'acqua alla temperatura
+ di $20^\circ C$, che vale circa $Pr \approx 7$. Il numero di Prandtl per l'aria e altri gas
+ vale circa $0.7$. Il valore $\beta = 8/3$ corrisponde a
+ un numero d'onda fondamentale in direzione $x$ uguale a
+ $\frac{k}{2} = \frac{1}{2} \sqrt{\frac{4}{\beta} - 1} = \frac{\sqrt{2}}{2} =
+ 0.3536$.
+
+\paragraph{Punti di equilibrio}
+I punti di equilibrio del sistema di Lorenz soddisfano le equazioni stazionarie
+\begin{equation}
+    \begin{cases}
+      0 = - \sigma X + \sigma Y  & \rightarrow Y = X \\
+      0 = - Y + \rho X - X Z & \hspace{2.0cm} \searrow \hspace{2.0cm}\rightarrow  X[X^2-(\rho-1)] = 0 \\
+      0 = - \beta Z + X Y  & \hspace{1.0cm} \rightarrow \hspace{1.0cm}  X^2 = \beta Z \hspace{0.5cm} \nearrow 
+    \end{cases}
+\end{equation}
+L'equazione $X(X^2 - \rho) = 0$ ha una sola soluzione reale se $\rho < 1$, tre soluzioni
+ per $\rho \geq 1$. Quindi per valori di $\rho < 1$ esiste un unico punto di equilibrio,
+\begin{equation}
+ \text{\textbf{E1}}: (\overline{X}_1, \overline{Y}_1, \overline{Z}_1) = (0,0,0) \ .
+\end{equation}
+Per valori di $\rho \geq 1$ esistono tre punti di equilibrio,
+\begin{equation}
+\begin{aligned}
+ \text{\textbf{E1}}: &  (\overline{X}_1, \overline{Y}_1, \overline{Z}_1) = (0,0,0) \ , \\
+ \text{\textbf{E2}}: &  (\overline{X}_2, \overline{Y}_2, \overline{Z}_2) =
+ (-\sqrt{\beta(\rho-1)},-\sqrt{\beta(\rho-1)},\rho-1) \ , \\
+ \text{\textbf{E3}}: &  (\overline{X}_3, \overline{Y}_3, \overline{Z}_3) =
+ (+\sqrt{\beta(\rho-1)},+\sqrt{\beta(\rho-1)},\rho-1) \ .
+\end{aligned}
+\end{equation}
+%
+Prima di studiare la stabilità locale ``alla Lyapunov'' dei punti di equilibrio, riprendendo
+ la definizione di \textit{stabilità strutturale}, si scopre che il sistema di Lorenz
+ non è strutturalmente stabile a perturbazioni del valore di $\rho$, quando $\rho = 1$: infatti
+ per $\rho < 1$ esiste un solo punto di equilibrio, per $\rho > 1$ esistono tre punti di equilibrio
+ e di conseguenza le traiettorie nel piano delle fasi subiscono un cambiamento qualitativo.
+
+\paragraph{Stabilità dell'equilibrio E1}
+Si studia la stabilità ``alla Lyapunov'' dell'equilibrio \textbf{E1}: $(0,0,0)$. Linearizzando
+ il sistema non lnieare di Lorenz attorno all'equilibrio \textbf{E1}, si ottiene il sistema
+ linear(izzato)
+\begin{equation}
+ \begin{bmatrix} \delta \dot{x} \\ \delta \dot{y} \\ \delta \dot{z} \end{bmatrix} = 
+ \begin{bmatrix}-\sigma & \sigma & 0 \\ \rho & -1 & 0 \\ 0 & 0 & - \beta \end{bmatrix}  
+ \begin{bmatrix} \delta x \\ \delta y \\ \delta z \end{bmatrix} \quad , \quad
+ \delta \dot{\bm{x}} = \bm{J}|_{\bm{E1}} \, \delta \bm{x}
+\end{equation}
+il cui polinomio caratteristico è
+\begin{equation}
+\begin{aligned}
+ p(\lambda) = det(\bm{J}- \lambda \bm{I}) & = -(\beta+\lambda)[(\sigma+\lambda)(1+\lambda)-\sigma\rho] = \\ 
+  & = -(\beta+\lambda) [ \lambda^2 + (\sigma+1)\lambda + \sigma(1-\rho)] \ . 
+\end{aligned}
+\end{equation}
+Gli autovalori del sistema linearizzato attorno al primo equilibrio sono quindi
+\begin{equation}
+  \lambda^{E1}_1 = - \beta \quad , \quad  
+  \lambda^{E1}_{2,3} = - \dfrac{\sigma+1}{2} \mp \dfrac{\sqrt{(\sigma+1)^2-4\sigma(1-\rho)}}{2} \ . 
+\end{equation}
+Per valori positivi dei parametri, tutti gli autovalori sono reali. Gli autovalori $\lambda^{E1}_1$
+ e $\lambda^{E1}_2$ sono negativi per ogni valore di $\rho$, mentre l'autovalore $\lambda^{E1}_3$
+ cambia segno per $\rho = 1$. L'analisi lineare di stabilità permette di concludere che l'equilibrio
+ \textbf{E1} è linearmente stabile per $\rho<1$ e instabile per $\rho > 1$, mentre non
+ permette di affermare nulla sul caso $\rho = 1$.
+
+\paragraph{Stabilità degli equilibri E2, E3}
+Per valori di $\rho \geq 1$ esistono i due equilibri \textbf{E2}, \textbf{E3}. Si studia
+ la loro stabilità ``alla Lyapunov'' tramite lo studio degli autovalori del sistema linearizzato
+ attorno ai punti di equilibrio,
+\begin{equation}
+ \begin{bmatrix} \delta \dot{x} \\ \delta \dot{y} \\ \delta \dot{z} \end{bmatrix} = 
+ \begin{bmatrix}-\sigma & \sigma & 0 \\ 1 & -1 & \mp \sqrt{\beta(\rho-1)} \\
+ \pm \sqrt{\beta(\rho-1)} & \pm \sqrt{\beta(\rho-1)} & - \beta \end{bmatrix}  
+ \begin{bmatrix} \delta x \\ \delta y \\ \delta z \end{bmatrix} \quad , \quad
+ \delta \dot{\bm{x}} = \bm{J}|_{\bm{E2,3}} \, \delta \bm{x} \ .
+\end{equation}
+Si può dimostrare (con il criterio di Routh-Hurwitz analiticamente, o calcolandone numericamente
+ il valore) che i due punti di equilibrio sono stabili se
+ $\rho < \frac{\sigma(\sigma+\beta+3)}{\sigma-1-\beta} \approx 24.7368$, utilizzando i valori
+ $\sigma = 10$, $\beta = 8/3$.
+
+\paragraph{Biforcazioni, cicli limite e attrattori strani}
+\begin{figure}[t]
+  \centering
+  \begin{tabular}{cc}
+  \begin{overpic}[width=0.40\textwidth]{./fig/bif_pitchfork}
+  \put(-5,85){(a.1)}
+  \put(-5,45){(a.2)}
+  \end{overpic}  \hspace{0.8cm}
+  \begin{overpic}[width=0.45\textwidth]{./fig/bif_hopf}
+  \put(-5,75){(b)}
+  \end{overpic}  \hspace{0.8cm}
+  \end{tabular}
+ \caption{Diagrammi di biforcazione. (a) Biforcazione pitchfrok per $\rho = 1$:
+   (a.1) luogo delle radici dell'equilibrio \textbf{E1} e (a.2) diagramma di biforcazione. 
+  Per $\rho = 1$ l'equilibrio \textbf{E1} diventa instabile e nascono i due equilibri stabili
+  \textbf{E2,3}. (b) Biforcazione di Hopf degli equilibri \textbf{E2,2}:
+  diagramma di biforcazione, rappresentato utilizzando  la forma normale.
+  Per $\varepsilon = 0$, $\rho = 24.7368$, il ciclo limite instabile collassa sull'equilibrio
+  stabile, che diventa instabile.}
+\end{figure}
+L'analisi degli autovalori del sistema linearizzato attorno ai punti di equilibrio permette di 
+ determinarne le caratteristiche locali quando gli autovalori hanno parte reale diversa
+ da zero. In corrispondenza del cambio di stabilità di un punto di equilibrio e/o della 
+ comparsa/scomparsa di punti di equilibrio (ma non solo!), le traiettorie nello spazio delle
+ fasi del sistema subiscono un cambiamento qualitativo: il sistema non è strutturalmente stabile
+ e si verifica una \textbf{biforcazione}.
+\newline
+Per studiare la stabità locale di un equilibrio in presenza di autovalori a parte reale nulla
+ è necessario costruire un'approssimazione non lineare del sistema. Si considera un punto di equilibrio
+ per il quale il sistema linearizzato non ha autovalori instabili, ha $N_s$ autovalori stabili e 
+ $N_c$ autovalori a parte reale nulla e si vuole determinare l'evoluzione del sistema nelle
+ vicinanze del punto di equilibrio.
+Si può dimostrare che la dinamica del sistema $N=N_s+N_c$-dimensionale si riduce velocemente
+ alla dinamica di un sistema $N_c$ dimensionale: le $N_s$ dinamiche asintoticamente stabili
+ associate agli autovalori con parte reale negativa tendono asintoticamente ad annullarsi
+ nell'intorno dell'equilibrio, mentre rimangono solo le dinamiche associate alle $N_c$ 
+ dinamiche marginalmente stabili.
+\newline
+Si può usare un'espansione polinomiale per approssimare il sistema non lineare originale e
+ costruire la \textbf{varietà centrale}, cioè la regione dello spazio delle fasi nella quale
+ si svolgono le dinamiche marginalmente stabili.
+\newline
+\noindent 
+Ad esempio, quando $\rho = 1$ il sistema di Lorenz nell'intorno dell'equilibrio \textbf{E1} (e
+ dei nascenti equilibri \textbf{E2,3}) può essere ricondotto alla dinamica del sistema monodimensionale
+\begin{equation}\label{eqn:lorenz:pitchfork}
+ \dot{a}(t) = f(a(t)) = a(t) [ \alpha \varepsilon - \beta a(t)^2 ] \quad , \quad
+ \text{con } \varepsilon := \rho-1 \ ,
+\end{equation}
+con $\alpha \approx 0.909$ e $\beta \approx 0.170$. Questo sistema coincide alla \textbf{forma
+ normale} della biforcazione, cioè il sistema più semplice in grado di descrivere il cambiamento
+ qualitativo del sistema. Lo studio della forma normale della biforcazione rivela l'esistenza
+ di un unico equilibrio stabile $\overline{a}_1 = 0.0$ per $\epsilon \leq 0$, cioé $\rho \leq 1$.
+ Per $\rho > 1$ l'equilibrio $\overline{a}_1$ diventa instabile e nascono due equilibri stabili
+ $\overline{a}_{2,3} = \mp \sqrt{\alpha \varepsilon / \beta}$.
+L'equazione (\ref{eqn:lorenz:pitchfork}) rappresenta la forma normale di una \textit{biforcazione
+ pitchfork}. Poiché $\beta > 0$, la biforcazione si definisce \textit{supercritica}.
+\newline
+Analogamente, quando $\rho \approx 24.7368$ i due equilibri \textbf{E2,3} cambiano stabilità: u
+ coppia di autovalori complessi coniugati attraversano l'asse immaginario e la loro parte
+ reale diventa positiva. Questo tipo di instabilità strutturale viene definita
+ \textit{biforcazione di Hopf}: cambia la stabilità del punto di equilibrio considerato 
+ e nasce/sparisce un ciclo limite nel suo intorno (il ciclo limite nasce da o riduce al
+ punto di equilibrio).
+L'approssimazione alla varietà centrale del sistema attorno a uno dei due equilibri conduce 
+ al sistema di equazioni
+\begin{equation}\label{eqn:lorenz:hopf}
+\begin{cases}
+ \dot{r}(t) = \alpha_r r \varepsilon - \beta_r r^3 \\
+ \dot{\theta}(t) = \omega + \alpha_i \varepsilon + \beta_i r^2 \ 
+\end{cases} \quad , \quad 
+ \text{con } \varepsilon := \rho-24.7368 \ ,
+\end{equation}
+dove è stata utilizzata la rappresentazione polare complessa $a(t) = r(t) e^{i \theta(t)}$
+ della variabile $a(t)$ che descrive la dinamica del sistema ridotta alla varietà centrale.
+ Il parametro $\omega = 9.6245$ coincide con la parte immaginaria degli autovalori marginalmente
+ stabili e gli altri parametri valgono:
+\begin{equation}
+\begin{aligned}
+ & \alpha_r = 0.0302 \qquad , \qquad \beta_r =-0.003 \\
+ & \alpha_i = 0.1815 \qquad , \qquad \beta_i =-0.028 \ . 
+\end{aligned}
+\end{equation}
+La prima equazione delle (\ref{eqn:lorenz:hopf}) è identica all'equazione che descrive la 
+ biforcazione pitchfork. In questo caso, però, il coefficiente $\beta_r$ è minore di zero. Questo
+ tipo di biforcazione si definisce \textit{subcritica}. Si può facilmente dimostrare che
+ per $\varepsilon < 0$ esistono due (il raggio $r$ di una rappresentazione polare deve
+ essere $\geq 0$) equilibri
+\begin{equation}
+ \overline{\rho}_1 = 0 \quad , \quad \overline{\rho}_2 = \sqrt{-\alpha_r \varepsilon / \beta_r} \ .
+\end{equation}
+Il primo equilibrio dell'equazione in $r$ corrisponde a un punto fisso, poichè il raggio è nullo.
+ Il secondo equilibrio corrisponde al raggio $\overline{\rho}_2$ del ciclo limite
+ esistente per $\varepsilon < 0$.
+Si dimostra quindi che un ciclo limite instabile coesiste con ognuno dei due punti di
+ equilibri stabili \textbf{E2,3} per $\varepsilon < 0$ (cioè $\rho < 24.7368$), almeno
+ in un intervallo finito di valori di $\rho$.
+Quando $\varepsilon = 0$ (cioè $\rho < 24.7368$), il ciclo limite instabile si riduce al punto
+ di equilibrio. Per $\varepsilon > 0$ il punto di equilibrio diventa instabile, mentre
+ scompare il ciclo limite.
+
+\vspace{0.5cm}
+\noindent
+ Rimangono aperte alcune questioni: è possibile descrivere i cicli limite esistenti per (alcuni)
+ valori del parametro $\rho < 24.7368$? Qual è l'evoluzione del sistema per valori
+ di $\rho > 24.7368$? Ha senso utilizzare il modello di Lorenz, un brutale troncamento di
+ un sistema continuo che dà origine a un sistema tridimensionale, per descrivere l'evoluzione
+ del sistema fisico per valori crescenti del numero di Rayleigh $Ra$, e quindi del
+ parametro $\rho$?
+
+\vspace{0.3cm}
+\noindent
+Partendo dall'espressione approssimata del ciclo limite ottenuta dalla forma normale della
+ biforcazione di Hopf per $\rho \lesssim 24.7368$ è possibile calcolare la forma del ciclo limite
+ per valori inferiori del parametro, tramite tecniche di \textbf{continuazione}: negli algoritmi
+ di continuazione la soluzione di un problema, nota per un valore del parametro, viene utilizzata
+ per stimare la guess iniziale dello stesso problema per un valore diverso del parametro. 
+In particolare, per identificare la traiettoria periodica corrispondente a un ciclo limite
+ si può utilizzare una tecnica di \textbf{bilanciamento armonico}: la traiettoria periodica
+ viene scritta come serie di Fourier, della quale è necessario determinare i coefficienti.
+
+\begin{figure}[t]
+  \centering
+  \begin{tabular}{cc}
+  \begin{overpic}[width=0.65\textwidth, trim={0 -10 0 0}, clip]{./fig/ic_dependence_xt_rho+28}
+  \put(0,35){(a)}
+  \end{overpic} % \hspace{0.8cm}
+  \begin{overpic}[width=0.35\textwidth, trim={60 80 40 0}, clip]{./fig/ic_dependence_attractor_rho+28}
+  \put(0,60){(b)}
+% \put(-5,45){(a.2)}
+  \end{overpic}  \hfill
+  \end{tabular}
+\caption{Dinamica caotica del sistema di Lorenz per $\rho = 24.74$: evoluzione del sistema
+ con condizioni iniziali $\bm{x}^{(1)}_0 = (-10,10,1)$, in blu, e $\bm{x}^{(2)}_0 = \bm{x}^{(1)}_0 +
+ 1.0\cdot 10^{-9}$, in arancione.
+ (a) Evoluzione temporale
+ della variabile $X(t)$: partendo da due condizioni iniziali ``vicine'', le due traiettorie
+ del sistema si discostano in maniera ``non banale''. Il sistema dimostra un'evoluzione non 
+ periodica, estremamente sensibile alle condizioni iniziali e quindi caotica.
+ (b) Attrattore di Lorenz nello spazio delle fasi:
+ le traiettorie nello spazio delle fasi rivelano la presenza di un attrattore, ``nelle
+ vicinanze'' del quale si svolge la dinamica asintotica del sistema.}\label{fig:lorenz-chaos}
+\end{figure}
+
+
+ 
+\vspace{0.3cm}
+\noindent
+Per valori di $\rho > 24.7368$ non esistono punti di equilibrio stabili punti di equilibrio
+ stabili e non esistono cicli limite stabili. La dinamica del sistema rimane confinata 
+ in una regione limitata dello spazio delle fasi, senza divergere.
+L'evoluzione del sistema rappresentata in figura (\ref{fig:lorenz-chaos}) dimostra l'elevata
+ sensibilità della soluzione alle condizioni 
+ iniziali e l'assenza di equilibri o dinamiche periodiche stabili, caratteristici di un
+ \textbf{regime caotico}. L'evoluzione di lungo tempo del sistema avviene ``nelle vicinanze''
+ dell'attrattore di Lorenz, del quale si può intuire la forma grazie alle traiettorie
+ rappresentate in figura (\ref{fig:lorenz-chaos})(b).
+\begin{figure}[t]
+  \centering
+  \begin{tabular}{cc}
+  \begin{overpic}[width=0.45\textwidth, trim={60 40 60 0}, clip]{./fig/lorenz_cm001}
+  \put(0,75){(a)}
+  \end{overpic} \hfill 
+  \begin{overpic}[width=0.45\textwidth, trim={60 40 60 0}, clip]{./fig/lorenz_cm002}
+  \put(0,75){(b)}
+  \end{overpic}  \\
+  \begin{overpic}[width=0.45\textwidth, trim={60 40 60 0}, clip]{./fig/lorenz_cm003}
+  \put(0,75){(c)}
+  \end{overpic} \hfill 
+  \begin{overpic}[width=0.45\textwidth, trim={60 40 60 0}, clip]{./fig/lorenz_cm004}
+  \put(0,75){(d)}
+  \end{overpic}  \\
+  \begin{overpic}[width=0.45\textwidth, trim={60 40 60 0}, clip]{./fig/lorenz_cm005}
+  \put(0,75){(e)}
+  \end{overpic} \hfill 
+  \begin{overpic}[width=0.45\textwidth, trim={60 40 60 0}, clip]{./fig/lorenz_cm006}
+  \put(0,75){(f)}
+  \end{overpic}  \\
+  \end{tabular}
+\caption{Evoluzione del sistema di Lorenz per $\rho = 24.7368$ nel piano delle fasi.
+Dinamica caotica, equilibri (\textbf{E1} in azzurro, \textbf{E2} in arancione e
+ \textbf{E3} in verde) e varietà centrali dei due equilibri marginalmente stabili
+ \textbf{E2,3}. La dinamica asintotica del sistema caotica del sistema alterna in
+ maniera irregolare delle oscillazioni attorno ai due equilibri instabili sulle 
+ ``nelle vicinanze'' delle rispettive varietà centrali.}
+\label{fig:lorenz-chaos-cm}
+\end{figure}
+La figura (\ref{fig:lorenz-chaos-cm}) rappresenta la traiettoria del sistema di Lorenz e le
+ \textit{varietà centrali} dei due equilibri $\textbf{E2,3}$ marginalmente stabili 
+ per $\rho = 24.7368$. Qualitativamente, lo stato del sistema viene attratto su queste
+ superfici, lungo le direzioni stabili. Su queste superfici poi, si può osservare la dinamica
+ marginalmente stabile (di dimensione ridotta: per il sistema di Lorenz, di dimensione 2, invece
+ della dimensione 3 del sistema completo) del sistema: lo stato del sistema inizialmente
+ oscilla attorno all' equilibrio \textbf{E2} (ad esempio),
+ prima di essere attratta in maniera ``difficilmente prevedibile''
+ dalla varietà centrale dell'equilibrio \textbf{E3} e iniziare ad oscillare attorno a 
+ quest'ultimo equilibrio.
+
+\vspace{0.3cm}
+\noindent
+L'approssimazione di Lorenz di dimensioni ridotte del sistema fisico continuo (e quindi
+ di dimensione infinita) perde significato all'aumentare del numero di Rayliegh: all'aumentare
+ del numero di Rayleigh infatti si attivano delle dinamiche più complesse, di dimensione
+ maggiore, non descrivibili a un sistema tridimensionale.
+
+

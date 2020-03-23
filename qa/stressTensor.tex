@@ -1,0 +1,119 @@
+
+
+Il tensore degli sforzi $\mathbb{T}$ è un tensore del secondo ordine che descrive lo stato di sforzo all'interno del mezzo continuo e permette di legare il vettore sforzo $\bm{t_n}$ agente su una superficie elementare e il versore normale $\bh{n}$ alla superficie.
+Si considera in un mezzo continuo non polare\footnote{
+ All'interno del mezzo continuo, le particelle adiacenti si scambiano unicamente forze elementari, non momenti.
+}, e si ricava il legame tra i vettori $\bm{t_n}$, $\bh{n}$ dalle condizioni di equilibrio del tetraedro di Cauchy. Siano $\bh{x}$, $\bh{y}$ e $\bh{z}$ i versori di un sistema di riferimento cartesiano centrato nel punto del continuo considerato e $\bm{t_x}$, $\bm{t_y}$ e $\bm{t_z}$ i vettori sforzo agenti sulle facce del tetraedro di area $dS_x$, $dS_y$ e $dS_z$ con le normali orientate come i rispettivi versori della base, come rappresentato in figura \ref{fig:tetraedroCauchy}. Sia $\bm{t_n}$ il vettore sforzo agente sulla faccia ``inclinata'' di area $dS$ del tetraedro di Cauchy, con normale $\bh{n}$.
+
+\begin{figure}[h!]
+\centering
+ \includegraphics[width=0.60\textwidth]{./fig/cauchy}
+\caption{tetraedro di Cauchy}\label{fig:tetraedroCauchy}
+\end{figure}
+
+Il legame tra le aree delle facce del tetraedro è
+\begin{equation}\label{eqn:surfaces}
+ dS = - \dfrac{dS_x}{n_x} = - \dfrac{dS_y}{n_y} = - \dfrac{dS_z}{n_z} ,
+\end{equation}
+avendo indicato con $n_i$ le componenti cartesiane del versore normale $\bh{n}$, tutte negative per come è stato definito il tetraedro.
+Scriviamo il bilancio di massa e di quantità di moto del volume di controllo elementare $dV$ contenuto all'interno del tetraedro di Cauchy. Il bilancio di massa
+\begin{equation}
+ \f{d}{dt} \int_{dV} \rho + \oint_{\partial dV} \rho \bm{u} \cdot \bh{n} = 0 \ ,
+\end{equation}
+diventa
+\begin{equation}\label{eqn:dV:mass}
+\begin{aligned}
+ 0 = & \p{}{t}\big( \rho + O(d\ell) \big) dV
+     + \big( \rho \bm{u} \cdot \bh{x} + O(d\ell) \big) dS_x
+     + \big( \rho \bm{u} \cdot \bh{y} + O(d\ell) \big) dS_y \\
+   & + \big( \rho \bm{u} \cdot \bh{z} + O(d\ell) \big) dS_z
+     + \big( \rho \bm{u} \cdot \bh{n} + O(d\ell) \big) dS \ ,
+\end{aligned}
+\end{equation}
+avendo scritto esplicitamente la dipendenza delle grandezze nel volume e sulle superfici da infinitesimi di ordine $O(d\ell)$, essendo $O(d\ell)$ l'ordine di grandezza delle dimensioni lineari del tetraedro di Cauchy, come ad esempio la lunghezza degli spigoli. Le superfici hanno ordine $O(dS) = O(d\ell^2)$, mentre il volume ha ordine $O(dV) = O(d\ell^3)$. Utilizzando le relazioni (\ref{eqn:surfaces}), facendo tendere $d\ell$ a zero, trascurando gli ifninitesimi di ordine superiore, i termini di ordine $O(d\ell^2)$ si riducono all'identità
+\begin{equation}
+ \bm{u} \cdot \bh{n} = u_x n_x + u_y n_y + u_z \ .
+\end{equation}
+Il bliancio di quantità di moto per il tetraedro di Cauchy
+\begin{equation}
+ \f{d}{dt} \int_V \rho \bm{u} + \oint_{\partial dV} \rho \bm{u} \bm{u} \cdot \bh{n} = \int_{dV} \rho \bm{g} + \oint_{\partial dV} \bm{t_n} \ ,
+\end{equation}
+diventa
+\begin{equation}
+\begin{aligned}
+ & \p{}{t} \big( \rho \bm{u} + O(d\ell) \big)dV +
+ \sum_{i \in \{x,y,z\}} \big( \rho \bm{u} \bm{u} \cdot \bh{x}_i + O(d\ell) \big)dS_i +
+                \big( \rho \bm{u} \bm{u} \cdot \bh{n}   + O(d\ell) \big)dS   = \\
+ & = \big( \rho \bm{g} + o(d\ell) \big) dV +
+     \big( \bm{t_x} + O(d\ell) \big) dS_x +
+     \big( \bm{t_y} + O(d\ell) \big) dS_y + \\
+ & \hspace{4.5cm} + \big( \bm{t_z} + O(d\ell) \big) dS_z +
+     \big( \bm{t_n} + O(d\ell) \big) dS \ .
+\end{aligned}
+\end{equation}
+I termini ``più grandi'' sono infinitesimi di ordine $O(d\ell^2)$.
+Utilizzando il bilancio di massa, non è difficile verificare che i termini di flusso di quantità di moto danno un contributo nullo di ordine $O(d\ell^2)$. I termini di volume sono infinitesimi di ordine $O(d\ell^3)$.
+Facendo tendere $d\ell$ a zero e trascurando tutti gli infinitesimi di ordine superiore a $O(d\ell)$ si ottiene
+\begin{equation}\label{eqn:dV:equil}
+\begin{aligned}
+ \bm{0} & = \bm{t_n} dS + \bm{t_x} dS_x + \bm{t_y} dS_y + \bm{t_z} dS_z = \\
+  & = ( \bm{t_n} - \bm{t_x} n_x - \bm{t_y} n_y - \bm{t_z} n_z ) dS  \qquad \rightarrow \qquad \bm{t_n} = \bm{t_x} n_x + \bm{t_y} n_y + \bm{t_z} n_z \ .
+\end{aligned}
+\end{equation}
+Se si esprimono i vettori utilizzando la base $\{\bh{x}, \, \bh{y}, \, \bh{z} \}$,
+\begin{equation}\label{eqn:t:comp}
+  \bm{t_i} = t_{ix} \bh{x} + t_{iy} \bh{y} + t_{iz} \bh{z} \ ,
+\end{equation}
+si può scrivere la relazione (\ref{eqn:dV:equil}) per trovare la relazione tra il versore $\bh{n}$ e il vettore sforzo $\bm{t_n}$
+\begin{equation}
+\begin{aligned}
+  \bm{t_n} & = \bm{t_x} n_x + \bm{t_y} n_y + \bm{t_z} n_z \\ 
+ & = n_x ( t_{xx} \bm{\hat{x}} + t_{xy} \bm{\hat{y}} +  t_{xz} \bm{\hat{z}} ) % + \\
+   + n_y ( t_{yx} \bm{\hat{x}} + t_{yy} \bm{\hat{y}} +  t_{yz} \bm{\hat{z}} ) % + \\
+   + n_z ( t_{zx} \bm{\hat{x}} + t_{zy} \bm{\hat{y}} +  t_{zz} \bm{\hat{z}} ) = \\
+ & = ( \bh{n} \cdot \bh{x} ) ( t_{xx} \bm{\hat{x}} + t_{xy} \bm{\hat{y}} +  t_{xz} \bm{\hat{z}} )% + \\
+   + ( \bh{n} \cdot \bh{y} ) ( t_{yx} \bm{\hat{x}} + t_{yy} \bm{\hat{y}} +  t_{yz} \bm{\hat{z}} )% + \\
+   + ( \bh{n} \cdot \bh{z} ) ( t_{zx} \bm{\hat{x}} + t_{zy} \bm{\hat{y}} +  t_{zz} \bm{\hat{z}} ) = \\
+%   & = ( \bm{n} \cdot \bm{\hat{x}} ) \bm{t_x} + 
+%       ( \bm{n} \cdot \bm{\hat{y}} ) \bm{t_y} + 
+%       ( \bm{n} \cdot \bm{\hat{z}} ) \bm{t_z} = \\
+    & = \bh{n} \cdot ( t_{xx} \bm{\hat{x}} \otimes \bm{\hat{x}} + 
+                       t_{xy} \bm{\hat{x}} \otimes \bm{\hat{y}} +
+                       t_{xz} \bm{\hat{x}} \otimes \bm{\hat{z}} + \\
+            & \qquad + t_{yx} \bm{\hat{y}} \otimes \bm{\hat{x}} + 
+                       t_{yy} \bm{\hat{y}} \otimes \bm{\hat{y}} +
+                       t_{yz} \bm{\hat{y}} \otimes \bm{\hat{z}} + \\
+            & \qquad + t_{zx} \bm{\hat{z}} \otimes \bm{\hat{x}} + 
+                       t_{zy} \bm{\hat{z}} \otimes \bm{\hat{y}} +
+                       t_{zz} \bm{\hat{z}} \otimes \bm{\hat{z}} ) =
+     \bm{\hat{n}} \cdot \mathbb{T}  \ ,
+\end{aligned}  
+\end{equation}
+avendo utilizzato l'identità $(\bm{a} \cdot \bm{b})\bm{c} = \bm{a} \cdot (\bm{b}\otimes\bm{c})$, per isolare il versore $\bh{n}$ dal tensore degli sforzi $\mathbb{T}$. Avendo utilizzato la definizione (\ref{eqn:t:comp}) delle componenti cartesiane dei vettori dello sforzo agente sulle facce del tetraedro di Cauchy, il primo indice delle componenti del tensore degli sforzi indica la faccia sulla quale agisce lo sforzo, il secondo indice la sua componente cartesiana, cosicché la componente $t_{ij}$ indica la componente cartesiana $j$-esima agente sulla $i$-esima faccia del tetraedro di Cauchy.
+%
+\newline \noindent
+\textbf{Osservazione 1.} Utilizzando le convenzioni scelte in precedenza, il vettore sforzo si ottiene con la relazione
+\begin{equation}
+ \bm{t_n} = \bh{n} \cdot \mathbb{T} \qquad , \qquad t_{n,i} = n_j t_{ji} \ ,
+\end{equation}
+che in generale differisce dall'operazione $\mathbb{T} \cdot \bh{n}$, la cui $i$-esima componente cartesiana è $n_j t_{ij}$.
+%
+\newline \noindent
+\textbf{Osservazione 2.} Se il tensore $\mathbb{S}$ è simmetrico (e quindi le sue componenti con indici misti sono uguali, $S_{ij} = S_{ji}$), la moltiplicazione a sinista o a destra di un vettore tramite il prodotto ``punto'' dà lo stesso risultato,
+\begin{equation}
+ \bm{a} \cdot \mathbb{S} = \mathbb{S} \cdot \bm{a} \qquad , \qquad 
+ a_j S_{ji} = S_{ij} a_j \ .
+\end{equation}
+%
+\newline \noindent
+\textbf{Osservazione 3.} Il tensore degli sforzi per mezzi continui non polari è simmetrico. Questo permette di ottenere la corretta relazione tra versore normale alla superficie e vettore sforzo, anche in seguito ad alcune imprecisioni nell'utilizzo delle operazioni tensoriali, come uno scambio di indici nel tensore degli sforzi.
+%
+\newline \noindent
+\textbf{Osservazione 4.} Non è stata prestata mai attenzione alla posizione degli indici poiché si è lavorato sempre con basi ortonormali, come la base cartesiana.
+%
+\newline \noindent
+\textbf{Osservazione 5.} \'E possibile utilizzare altre convenzioni nella definizione delle componenti dei vettori sforzo agenti sulle facce del tetraedro di Cauchy, che portano a una diversa interpretazione degli indici e alla rappresentazione della relazione di Cauchy.
+
+
+
+

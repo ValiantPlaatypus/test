@@ -1,0 +1,158 @@
+%% Hess-Smith Method
+
+close all
+clear all
+clc
+
+%%
+
+Vinf  = 10;
+alpha = 9 *pi/180;
+
+% NACA 2412
+M  = 2;
+P  = 4;
+SS = 12;
+
+% NACA 23012
+ddd
+
+c = 1;
+nplot = 100;
+n = 50;
+
+[xplot,yplot] = naca4digit(M,P,SS,c,nplot);
+figure
+plot(xplot,yplot),axis equal
+
+[x,y] = naca4digit(M,P,SS,c,n);
+[x,y] = naca5digit(230,12,c,n);
+
+figure
+plot(x,y,'-o'),axis equal
+
+% Grandezze caratteristiche dei pannelli
+len = sqrt((x(2:2*n+1)-x(1:2*n)).^2 + (y(2:2*n+1)-y(1:2*n)).^2);
+sintheta = (y(2:2*n+1)-y(1:2*n))./len;
+costheta = (x(2:2*n+1)-x(1:2*n))./len;
+theta    = atan2(sintheta,costheta);
+% for ii = 1 : 2*n
+%     if theta(ii) < 0
+%         theta(ii) = theta(ii) + 2*pi;
+%     end
+% end
+nvers = [-sintheta; costheta];
+tvers = [ costheta; sintheta];
+
+xc = (x(2:2*n+1)+x(1:2*n))./2;
+yc = (y(2:2*n+1)+y(1:2*n))./2;
+
+% Calcolo di Matrici ausiliari
+x1  = zeros(2*n);
+y1  = zeros(2*n);
+x2  = zeros(2*n);
+y2  = zeros(2*n);
+sij = zeros(2*n);
+sinbij = zeros(2*n);
+cosbij = zeros(2*n);
+bij = zeros(2*n);
+usijstar = zeros(2*n);
+vsijstar = zeros(2*n);
+uvijstar = zeros(2*n);
+vvijstar = zeros(2*n);
+usij = zeros(2*n);
+vsij = zeros(2*n);
+uvij = zeros(2*n);
+vvij = zeros(2*n);
+uvi  = zeros(2*n,1);
+vvi  = zeros(2*n,1);
+
+A = zeros(2*n+1);
+b = zeros(2*n+1,1);
+
+Au = zeros(2*n,2*n+1);
+Av = zeros(2*n,2*n+1);
+
+for ii = 1 : 2*n
+    for jj = 1 : 2*n
+        x1(ii,jj) = xc(ii) - x(jj);    y1(ii,jj) = yc(ii) - y(jj);    r1 = [x1(ii,jj);y1(ii,jj)];
+        x2(ii,jj) = xc(ii) - x(jj+1);  y2(ii,jj) = yc(ii) - y(jj+1);  r2 = [x2(ii,jj);y2(ii,jj)];
+        
+        if ii == jj
+            sij(ii,jj) = 1;
+            bij(ii,jj) = pi;
+        else
+            
+            sij(ii,jj) = norm(r2)/norm(r1);
+            sinbij(ii,jj) = (x1(ii,jj)*y2(ii,jj) - x2(ii,jj)*y1(ii,jj))/ norm(r1) / norm(r2);
+            cosbij(ii,jj) = (x1(ii,jj)*x2(ii,jj) + y1(ii,jj)*y2(ii,jj))/ norm(r1) / norm(r2);
+            bij(ii,jj) = atan2(sinbij(ii,jj),cosbij(ii,jj));
+        end
+        
+        usijstar(ii,jj) = -log(sij(ii,jj))/(2*pi);
+        vsijstar(ii,jj) =  bij(ii,jj)/(2*pi);
+        
+        uvijstar(ii,jj) = -bij(ii,jj)/(2*pi);
+        vvijstar(ii,jj) = -log(sij(ii,jj))/(2*pi);
+        
+        usij(ii,jj) = usijstar(ii,jj)*costheta(jj) - vsijstar(ii,jj)*sintheta(jj);
+        vsij(ii,jj) = usijstar(ii,jj)*sintheta(jj) + vsijstar(ii,jj)*costheta(jj);
+        
+        uvij(ii,jj) = uvijstar(ii,jj)*costheta(jj) - vvijstar(ii,jj)*sintheta(jj);
+        vvij(ii,jj) = uvijstar(ii,jj)*sintheta(jj) + vvijstar(ii,jj)*costheta(jj);
+        
+        A (ii,jj)   = -sintheta(ii)*usij(ii,jj) + costheta(ii)*vsij(ii,jj);
+        Au(ii,jj)   = usij(ii,jj);
+        Av(ii,jj)   = vsij(ii,jj);
+    end
+    uvi(ii) = sum(uvij(ii,:));
+    vvi(ii) = sum(vvij(ii,:));
+    
+    A(ii,2*n+1) = -sintheta(ii)* uvi(ii) + costheta(ii)* vvi(ii);
+    b(ii)       =  sintheta(ii)* Vinf*cos(alpha) - costheta(ii)* Vinf*sin(alpha);
+    
+    Au(ii,2*n+1) = uvi(ii);
+    Av(ii,2*n+1) = vvi(ii);
+end
+A(2*n+1 , 1:2*n) = costheta(1)   .*usij(1,1:2*n)   + sintheta(1)   .*vsij(1,1:2*n) + ...
+                   costheta(2*n) .*usij(2*n,1:2*n) + sintheta(2*n) .*vsij(2*n,1:2*n) ;
+A(2*n+1 , 2*n+1) = costheta(1)   .*uvi(1)   + sintheta(1)   .*vvi(1) + ...
+                   costheta(2*n) .*uvi(2*n) + sintheta(2*n) .*vvi(2*n) ;
+b(2*n+1)         = -(costheta(1)   .*Vinf * cos(alpha)  + sintheta(1)   .*Vinf * sin(alpha) + ...
+                     costheta(2*n) .*Vinf * cos(alpha)  + sintheta(2*n) .*Vinf * sin(alpha));
+
+v = A\b;
+
+
+u = Au * v + Vinf*cos(alpha);
+v = Av * v + Vinf*sin(alpha);
+modu = sqrt(u.^2 + v.^2);
+angolo = atan2(v,u);
+
+uvct = [((1:2*n))' ,u, v, modu, angolo, theta'];
+
+ang = [sintheta' costheta' theta'.*180/pi];
+
+vTi =  u .* costheta' + v .* sintheta';
+vNi = -u .* sintheta' + v .* costheta'; 
+
+% % Ricostruzione velocità tangenziale
+% vTi = zeros(2*n,1);
+% 
+% for ii = 1 : 2*n
+%     vT = Vinf * cos(theta(ii) - alpha);
+%     for jj = 1 : 2*n
+%         vT = vT + v(jj)/(2*pi)*(sin(theta(ii)-theta(jj))*bij(ii,jj) - ...
+%             cos(theta(ii)-theta(jj))*log(sij(ii,jj))) - ...
+%             v(2*n+1)/2*pi * (cos(theta(ii)-theta(jj))*bij(ii,jj) + ...
+%             sin(theta(ii)-theta(jj))*log(sij(ii,jj)));
+%     end
+%     
+%     vTi(ii) = vT;
+% end
+% 
+cP = 1 - vTi.^2 ./Vinf^2;
+
+figure
+plot(xc,cP), axis ij
+

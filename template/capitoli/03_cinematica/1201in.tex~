@@ -1,0 +1,112 @@
+\begin{exerciseS}[Linee di corrente, traiettorie e linee di fumo]
+ Sia dato il campo di moto
+\begin{equation}
+ \bm{u}(x,y) = 2Ax \bm{\hat{x}} - 2Ay \bm{\hat{y}} 
+\end{equation}
+Calcolare l'equazione delle linee di corrente, delle traiettorie e delle linee di fumo (curve di emissione) e disegnarle.
+\end{exerciseS}
+
+
+\sol
+
+\partone Definizione di linee di corrente, traiettorie, linee di fumo, tracce. Soluzione di sistemi di equazioni differenziali.
+
+\begin{itemize}
+
+\item
+Le linee di corrente sono curve $\bm{S}$ tangenti al campo vettoriale $\bm{u}(\bm{r},t)$ in ogni punto dello spazio $\bm{r}$ e per ogni istante temporale $t$. Essendo curve (1 dimensione), possono essere espresse in forma parametrica, come funzioni di un parametro scalare $p$. La 'traduzione' della definizione in formula è quindi:
+\begin{equation}
+ \frac{d\bm{S}(p)}{dp} = \bm{u}(\bm{S}(p),t)
+\end{equation}
+Il vettore tangente ${d\bm{S}(p)}/{dp}$ alla curva $\bm{S}(p)$ nel punto ${\bm{S}(p)}$ è parallelo al vettore 
+velocità $\bm{u}$ nello stesso punto $\bm{S(p)}$, al tempo considerato $t$.
+
+\item
+Le traiettorie descrivono il moto della singola particella fluida e sono descritte dall'equazione:
+\begin{equation}
+\begin{cases}
+ \frac{d\bm{R}(t)}{dt} = \bm{u}(\bm{R(t)},t) \\
+ \bm{R}(t_0) = \bm{R_0}
+\end{cases}
+\end{equation}
+La traiettoria descritta sopra è quella della particella che all'istante $t_0$ passa per il punto $\bm{R_0}$.
+Interpretazione della formula: la velocità ${d\bm{R}(t)}/{dt}$ della particella (derivata della posizione della
+particella $R(t)$ nel tempo) è uguale alla velocità del fluido nella posizione $R(t)$ nella quale si trova la particella all'istante $t$.
+
+Fissati $t_0$ e $\bm{R_0}$, si descrive la traiettoria della particella al variare del tempo $t$.
+
+\item
+Le linee di fumo sono un modo per tracciare tutte le particelle di fluido passate per un determinato punto nello spazio a diversi istanti temporali. La loro equazione è:
+\begin{equation}
+\begin{cases}
+ \frac{d\bm{R}(t)}{dt} = \bm{u}(\bm{R},t) \\
+ \bm{R}(\tau) = \bm{\bar{R}}
+\end{cases}
+\end{equation}
+L'equazione è identica all'equazione delle traiettorie.
+Cambia la variabile che descrive la curva: si considerano fissi il punto di emissione $\bm{\bar{R}}$ e il tempo
+$t$ al quale viene osservata la curva di emissione; la variabile che descrive la curva di emissione è il tempo
+$\tau$ al quale le particelle passano da $\bm{\bar{R}}$.
+
+Nel caso di campi stazionari linee di corrente, traiettorie e linee di fumo coincidono.
+
+\item
+Tracce:
+\begin{equation}
+\begin{cases}
+ \frac{d\bm{R}(t)}{dt} = \bm{u}(\bm{R},t) \\
+ \bm{R}(\tau) = \bm{\bar{R}}
+\end{cases}
+\end{equation}
+L'equazione è identica all'equazione delle traiettorie e delle curve di emissione.
+Cambia la variabile che descrive la curva: si considerano fissi il tempo $\tau$ e il tempo
+$t$ al quale viene osservata la curva di emissione; la variabile che descrive la curva di emissione è la posizione $\bm{\bar{R}}$ dalle quali passano le particelle.
+
+\end{itemize}
+
+\textit{Osservazione}. Non c'è nessuna differenza formale tra $\tau$ e $t_0$ e $\bm{R_0}$ e $\bm{\bar{R}}$.
+
+%\clearpage
+
+\parttwo
+\begin{itemize}
+\item Linee di corrente.
+\begin{equation}
+ \begin{cases}
+  \frac{dX}{dp} = \lambda(p) 2 A X \\
+  \frac{dY}{dp} = - \lambda(p) 2 A Y \\
+ \end{cases}
+ \quad\Rightarrow\quad
+ \frac{dX}{dY} = -\frac{X}{Y}
+ \quad\Rightarrow\quad
+ \ln X = -\ln Y + c 
+ \quad\Rightarrow\quad
+ X Y = c
+\end{equation}
+
+\item Traiettorie.
+\begin{equation}
+ \begin{cases}
+  \frac{dx}{dt} = 2 A x \\
+  \frac{dy}{dt} = -  2 A y \\
+  x(0) = x_0 , \quad y(0) = y_0
+ \end{cases}
+ \quad\Rightarrow\quad
+ \begin{cases}
+  x(t) = x_0 e^{2At} \\
+  y(t) = y_0 e^{-2At} \\
+ \end{cases}
+\end{equation}
+\textit{Osservazione.} Si osserva che moltiplicando tra di loro le componenti delle traiettorie, si ottiene $x(t)y(t) = x_0 y_0 = c$, cioè si ricava quello che già si sapeva (o si dovrebbe sapere!!!) che le traiettorie e le linee di corrente coincidono nel caso di campi stazionari.
+
+\item Linee di fumo.
+
+ ...
+
+\end{itemize}
+
+\textit{Grafici.} Iperboli. Disegrare le traiettorie (con verso dipendente dal valore di $A$).
+
+
+
+

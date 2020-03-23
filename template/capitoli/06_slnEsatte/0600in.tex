@@ -1,0 +1,362 @@
+\section{Introduzione e linee guida per la soluzione dei problemi}
+
+%Vengono fornite delle linee guida per risolvere i problemi sulle soluzioni esatte delle equazioni di Navier-Stokes.
+\'E possibile ricavare alcune soluzioni esatte stazionarie delle equazioni di Navier-Stokes, che descrivono il moto di un fluido viscoso, quando il dominio ha una geometria ``semplice''. In alcuni casi, come la corrente in un canale piano (Newton-Couette), la corrente in un tubo a sezione circolare (Poiseuille), o la corrente nel setto tra due cilindri rotanti (Taylor-Couette), per semplificare le equazioni è possibile sfruttare l'omogeneità del dominio (in qualche direzione) e, per ipotesi, della corrente. Nella maggioranza delle soluzioni esatte, i termini non lineari nelle equazioni si annullano, permettendo di ricavare abbastanza facilmente la soluzione delle equazioni.
+
+In generale, le soluzioni stazionarie esatte presentate in questo capitolo sono significative quando il regime di moto è laminare. Senza entrare molto nel dettaglio, una soluzione stazionaria è una soluzione di equilibrio delle equazioni di Navier-Stokes, per la quale $\partial \bm{u}/\partial t = \bm{0}$. Un regime di moto instazionario può manifestarsi a causa di una ``instabilità intrinseca'' della corrente o a causa di una enorme amplificazione (\textit{ricettività}) di disturbi, anche di intensità minima, sempre presenti in natura\footnote{
+Il regime di moto periodico (e ordinato) che si manifesta nella corrente attorno a un cilindro quando il numero di Reynolds supera un valore critico ($Re_c \approx 46$) è il risultato di una ``instabilità intrinseca'' (\textit{globale}) parametrica del sistema. La soluzione stazionaria stabile esistente per $Re < Re_c$ diventa instabile quando il parametro $Re$ eccede il valore critico e nasce un ciclo limite (stabile) nel piano delle fasi del sistema. Il moto periodico e ordinato del sistema osservato nello sviluppo della \textit{scia di Von Karman} a valle del cilindro, corrisponde alla dinamica del sistema sul ciclo limite.
+\newline
+Mentre la corrente attorno a un corpo tozzo risulta abbastanza insensibile ai disturbi e perturbazioni esterni, altre correnti possono amplificare perturbazioni di intensità ridotta di diversi ordini di grandezza. Alcuni esempi sono uno strato limite, uno strato di mescolamento o un getto. In queste correnti dominate dalla convezione, l'enorme amplificazione può avvenire tramite meccanismi \textit{non-modali}, che caratterizzano di sistemi dinamici lineari stabili non simmetrici.
+}.
+Entrambi i processi che allontanano la corrente dalla condizione di equilibrio vengono innescati o amplificati all'aumentare del numero di Reynolds caratteristico della corrente. Qualitativamente, si può quindi affermare che le soluzioni stazionarie esatte sono rappresentative del fenomeno fisico quando il numero di Reynolds caratteristico assume valori ``sufficientemente bassi'', per i quali non si verificano instabilità intrinseche nella corrente e per i quali le perturbazioni e gli effetti di estremità (ad esempio, all'imbocco di un tubo) vengono smorzati dalla viscosità, rendendo la corrente stazionaria e omogenea.
+
+\begin{remark}
+In questa introduzione non c'è nessuna velleità di una descrizione precisa e completa di quelli che sono gli argomenti di studio della \textit{stabilità fluidodinamica}, ma solamente la necessità di precisare i ``limiti di validità'' delle soluzioni esatte ricavate in questo capitolo.
+\end{remark}
+
+
+% in questo caso si può spesso usare l'omogeneità della corrente rispetto
+% ad alcune coordinate, per semplificare le equazioni. 
+\subsection{Equazioni di Navier-Stokes in coordinate cartesiane e cilindriche}
+Le equazioni di Navier-Stokes vengono scritte nel sistema di coordinate 
+ più adeguato alla descrizione del problema, come ad
+ esempio possono essere le coordinate cartesiane o quelle cilindriche.
+Le equazioni di Navier-Stokes per un fluido incomprimibile
+\begin{equation}
+\begin{cases}
+ \rho \dfrac{\partial \bm{u}}{\partial t}
+ + \rho (\bm{u} \cdot \bm{\nabla}) \bm{u}
+ - \mu \nabla^2 \bm{u} + \bm{\nabla} p = \rho \bm{g} \\
+ \bm{\nabla} \cdot \bm{u} = 0
+\end{cases}
+\end{equation}
+accompagnate dalle condizioni iniziali e dalle condizioni al contorno
+ opportune (e, qualora servissero, dalle condizioni di compatibilità dei 
+ dati), possono essere scritte ad esempio in un sistema di coordinate
+ cartesiane
+\begin{equation}
+\begin{cases}
+  \rho \dfrac{\partial u}{\partial t}
+  + \rho \left( u \dfrac{\partial u}{\partial x}
+  + v  \dfrac{\partial u}{\partial y}
+  + w  \dfrac{\partial u}{\partial z} \right)- \mu \left( 
+  \dfrac{\partial^2 u}{\partial x^2} +
+  \dfrac{\partial^2 u}{\partial y^2} +
+  \dfrac{\partial^2 u}{\partial z^2} \right)
+  + \dfrac{\partial p}{\partial x} = \rho g_x \\
+  \rho \dfrac{\partial v}{\partial t}
+  + \rho \left( u \dfrac{\partial v}{\partial x}
+  + v  \dfrac{\partial v}{\partial y}
+  + w  \dfrac{\partial v}{\partial z} \right)- \mu \left( 
+  \dfrac{\partial^2 v}{\partial x^2} +
+  \dfrac{\partial^2 v}{\partial y^2} +
+  \dfrac{\partial^2 v}{\partial z^2} \right)
+  + \dfrac{\partial p}{\partial y} = \rho g_y \\
+  \rho \dfrac{\partial w}{\partial t} + 
+  \rho \left( u \dfrac{\partial w}{\partial x}
+  + v \dfrac{\partial w}{\partial y} 
+  + w \dfrac{\partial w}{\partial z} \right)- \mu \left( 
+  \dfrac{\partial^2 w}{\partial x^2} +
+  \dfrac{\partial^2 w}{\partial y^2} +
+  \dfrac{\partial^2 w}{\partial z^2} \right)
+  + \dfrac{\partial p}{\partial z} = \rho g_z \\
+  \dfrac{\partial u}{\partial x}
++ \dfrac{\partial v}{\partial y}
++ \dfrac{\partial w}{\partial z} = 0
+\end{cases}
+\end{equation}
+o in un sistema di coordinate cilindriche
+\begin{equation}
+  \begin{cases}
+    \rho \dfrac{\partial u_r}{\partial t}
+    + \rho \left( \bm{u} \cdot \bm{\nabla}u_r - \dfrac{u_\theta^2}{r} \right)
+    - \mu \left(\nabla^2 u_r 
+       - \dfrac{u_r}{r^2} 
+       - \dfrac{2}{r^2}\dfrac{\partial u_\theta}{\partial \theta} \right)  
+       + \dfrac{\partial p}{\partial r} = \rho g_r \\
+    \rho \dfrac{\partial u_\theta}{\partial t}
+    + \rho \left( \bm{u} \cdot \bm{\nabla} u_\theta + \dfrac{u_\theta u_r}{r} \right)
+    - \mu \left(\nabla^2 u_\theta 
+       - \dfrac{u_\theta}{r^2} 
+       + \dfrac{2}{r^2}\dfrac{\partial u_r}{\partial \theta}  \right) 
+    + \dfrac{1}{r} \dfrac{\partial p}{\partial \theta} = \rho g_\theta\\
+    \rho \dfrac{\partial u_z}{\partial t}
+    + \rho \bm{u} \cdot \bm{\nabla} u_z
+    - \mu \nabla^2 u_z
+    + \dfrac{\partial p}{\partial z} = \rho g_z \\
+    \dfrac{1}{r}\dfrac{\partial}{\partial r}\left( r u_r \right) 
+    + \dfrac{1}{r}\dfrac{\partial u_\theta}{\partial \theta} 
+    + \dfrac{\partial u_z}{\partial z} = 0
+  \end{cases}
+  \end{equation}
+ dove
+  \begin{equation}
+  \begin{aligned}
+  & \bm{a} \cdot \bm{\nabla} b = a_r \dfrac{\partial b}{\partial r} 
+     + \dfrac{a_\theta}{r} \dfrac{\partial b}{\partial \theta}  
+     + a_z \dfrac{\partial b}{\partial z} \\
+  & \nabla^2 f = \dfrac{1}{r}\dfrac{\partial}{\partial r}
+                      \left(r \dfrac{\partial f}{\partial r} \right) +
+               \dfrac{1}{r^2} \dfrac{\partial^2 f}{\partial \theta^2} + 
+               \dfrac{\partial^2 f}{\partial z^2} 
+  \end{aligned}
+\end{equation}
+
+\subsection{Esempio in coordinate cartesiane: corrente di Poseuille}
+Nel caso di corrente bidimensionale di Poiseuille  in un canale piano,
+ si usano le equazioni scritte nel sistema di coordinate cartesiane.
+Si sceglie l'asse $x$ orientato lungo il canale e l'asse $y$ perpendicolare
+ alle pareti.
+Si fanno alcune ipotesi:
+\begin{itemize}
+ \item stazionarietà: $\dfrac{\partial}{\partial t} = 0$;
+ \item omogeneità della coordinata $x$: il campo di velocità è indipendente
+ dalla coordinata $x$. La derivata di tutte le componenti della velocità
+ rispetto ad $x$ è nulla: $\dfrac{\partial u_i}{\partial x} = 0$.
+ \'E invece ammissibile che la pressione vari lungo $x$: da un punto di vista fisico,
+ è necessario un gradiente di pressione che equilibri gli sforzi
+ a parete dovuti alla viscosità e che ``spinga'' il fluido nel canale; dal
+ punto di vista matematico, è già stato accennato al ruolo particolare che
+ svolge quel campo indicato con $p$, diverso dalla pressione termodinamica
+ nel caso di fluido incomprimibile; si osservi poi che il campo $p$ non 
+ compare mai nelle equazioni, se non sotto l'operatore di gradiente
+ (o all'interno delle condizioni al contorno, che ``fissano'' un valore di
+ $p$: è già stato sottolineato più volte che spesso il moto di un fluido
+ incomprimibile è indipendente dal valore assoluto del campo $p$, mentre
+ dipende da differenze, o dalle derivate, di $p$!).
+ \item sfruttando la bidimensionalità della corrente, l'omogeneità della
+ coordinata $x$ e il vincolo di incomprimibilità si ottiene:
+ \begin{equation}
+   \underbrace{\dfrac{\partial u}{\partial x}}_{=0} + \dfrac{\partial v}{\partial y} = 0.
+ \end{equation}
+ Questo implica che la componente $v$ della velocità è costante in tutto il canale;
+ sfruttando le condizioni al contorno di adesione a parete $\bm{u} = (u,v) = \bm{0}$
+ è evidente che la costante deve essere nulla: $v = 0$.
+ \item supponiamo qui che, se vengono considerate le forze di volume, esse sono
+ costanti e dirette lungo $-\bm{\hat{y}}$.
+\end{itemize}
+Le equazioni diventano quindi
+\begin{equation}
+\begin{cases}\label{eqn:poiseuille}
+- \mu \left( \dfrac{d^2 u}{d y^2} \right)
+  + \dfrac{\partial p}{\partial x} = 0 \\
+ \dfrac{\partial p}{\partial y} = - \rho g
+\end{cases}
+\end{equation}
+ dove la derivata parziale in $y$ della componente $u$ è stata sostituita dalla
+ derivata ordinaria, poiché la velocità $\bm{u}(y)$ (e quindi tutte le sue componenti)
+ dipende solo dalla coordinata $y$.
+La seconda equazione integrata dà come risultato ($p$ dipende sia da $x$ sia da $y$):
+ \begin{equation}
+  p(x,y) = -\rho g y + f(x)
+ \end{equation}
+Inserita nella prima:
+ \begin{equation}
+ \mu \left( \dfrac{d^2 u}{d y^2} \right) =
+ \dfrac{\partial p}{\partial x} = \dfrac{\partial f}{\partial x}
+ \end{equation}
+Nell'ultima equazione, i termini a sinistra dell'uguale sono funzione solo 
+ della variabile indipendente $y$, quelli a destra dell'uguale solo di $x$:
+ affinché l'uguaglianza possa essere sempre valida, i due termini devono essere costanti;
+ si sceglie di definire questa costante $-G_P$ (con questa $G_P$ assumerà valore positivo).
+Si possono quindi risolvere le due equazioni
+\begin{equation}\label{eqn:poiseuille2}
+\begin{cases}
+  \mu \left( \dfrac{d^2 u}{d y^2} \right) = - G_P \\
+  \dfrac{\partial p}{\partial x} = -G_P
+\end{cases}
+\end{equation}
+ accompagnate dalle opportune condizioni al contorno. Osservando il sistema
+ (\ref{eqn:poiseuille}), nelle equazioni compare la derivata seconda in $y$
+ della componente $u$ della velocità, la derivata prima sia in $x$ sia in $y$
+ di $p$: è ragionevole pensare che servano due condizioni al contorno in $y$
+ per $u$, una condizione al contorno per $p$ in $x$ e una in $y$.
+In particolare, sulle pareti del canale (alto $H$) la velocità del fluido deve
+ essere nulla, per le condizioni al contorno di adesione. Per quando riguarda
+ la pressione, si può fissare il valore in un punto del dominio, ad esempio
+ l'origine degli assi $p(0,0) = p_0$.
+ \begin{equation}
+ \begin{cases}
+  u(x,0) = 0 \\
+  u(x,H) = 0 \\
+  p(0,0) = p_0
+ \end{cases}
+ \end{equation}
+ Le equazioni (\ref{eqn:poiseuille2}) con le condizioni al contorno appena
+ elencate danno come risultato:
+ \begin{equation}
+  \begin{cases}
+    u(y) = -\dfrac{G_P}{2 \mu} y (y - H) \\
+    p(x,y) = p_0 - \rho g y - G_P x
+  \end{cases}
+ \end{equation}
+
+\subsection{Calcolo del vettore sforzo}
+Se vengono chieste azioni (risultanti di forze o momenti) esercitate dal fluido
+ sul solido, è necessario calcolare lo sforzo a parete $\bm{t}_{n,s}$ esercitato
+ sul solido, uguale e contrario allo sforzo esercitato dal solido sul fluido
+ $\bm{t}_{n}$.
+Il vettore sforzo $\bm{t}_n$ su una superficie con giacitura definita dal
+ versore normale $\bm{\hat{n}}$ si può esprimere come il prodotto del versore $\bm{\hat{n}}$ e il tensore degli sforzi $\mathbb{T}$,
+\begin{fBox}
+\begin{equation}\label{eqn:stress_tensor}
+ \bm{t}_n = \bm{\hat{n}} \cdot \mathbb{T} =
+ \bm{\hat{n}} \cdot \big[-p\mathbb{I} + 2\mu\mathbb{D} \big] = 
+  - p\bm{\hat{n}} + \bm{s}_n \ ,
+\end{equation}
+\end{fBox}
+avendo utilizzato la relazione costitutiva $\mathbb{S} = 2 \mu \mathbb{D}$ per un fluido incomprimibile newtoniano, che lega il tensore degli sforzi viscosi $\mathbb{S}$ al tensore velocità di deformazione $\mathbb{D}$ tramite il coefficiente di viscosità dinamica $\mu$. Il vettore $\bm{s_n} = \bm{\hat{n}} \cdot \mathbb{S}$ è il vettore degli sforzi viscosi.
+%
+%Per evitare errori nel calcolo del prodotto tra versore normale $\bm{\hat{n}}$
+% e tensore degli sforzi $\mathbb{T}$ in sistemi di coordiante non cartesiani,
+%
+ \'E possibile trasformare la relazione (\ref{eqn:stress_tensor}) in una relazione che contenga solamente operazioni tra vettori,
+\begin{fBox}
+\begin{equation}\label{eqn:stress_vector}
+ \bm{t}_n = -p \bm{\hat{n}} +
+ \mu \big[2 (\bm{\hat{n}} \cdot \bm{\nabla}) \bm{u} +
+  \bm{\hat{n}} \times (\bm{\nabla} \times \bm{u}) \big]  = 
+  - p\bm{\hat{n}} + \bm{s}_n \ .
+\end{equation}
+\end{fBox}
+Questa espressione può risultare vantaggiosa quando è richiesto il calcolo del vettore degli sforzi in sistemi di coordinate non cartesiani. Mentre esistono molte tabelle che raccolgono l'espressione delle operazioni vettoriali in sistemi di coordinate non cartesiane, sono più rare tabelle che raccolgano la forma in componenti di operazioni tensoriali.
+% più facili da trovare nelle tabelle che raccolgono le componenti delle operazioni vettoriali e tensoriali
+% in diversi sistemi di coordinate
+
+In sistemi di coordinate cartesiane, è facile calcolare il vettore sforzo come prodotto tensoriale tra il versore normale $\bm{\hat{n}}$ e il tensore degli sforzi, le cui componenti sono facili da calcolare 
+%Per \textbf{sistemi di coordinate cartesiani}, è possibile calcolare il prodotto tensoriale
+% tramite il prodotto matrice-vettore tra la matrice delle componenti del tensore
+% degli sforzi e il vettore delle componenti del versore normale.
+%Ad esempio, per la corrente di Poiseuille bidimensionale nel canale piano le componenti
+% del tensore degli sforzi $\mathbb{T}$ possono essere calcolate e raccolte come
+\begin{equation}
+\begin{aligned}
+ \mathbb{T} & = -p\mathbb{I} + 2\mu\mathbb{D} = -p\mathbb{I} + 2\mu \left[ \dfrac{1}{2} \left( \bm{\nabla}\bm{u} +\bm{\nabla}^T \bm{u} \right) \right] \\
+ T_{ij} & = -p \delta_{ij} + 2 \mu D_{ij} = -p \delta_{ij} + 2 \mu \left[ \dfrac{1}{2} \left( \dfrac{\partial u_i}{\partial x_j} + \dfrac{\partial u_j}{\partial x_i} \right) \right] \ .
+ \end{aligned}
+\end{equation}
+ Ad esempio, per una corrente in uno spazio bidimensionale descritto dalle coordinate cartesiane $(x,y)$ le componenti del tensore degli sforzi possono essere raccolte in forma matriciale,
+\begin{equation}
+ \mathbb{T} =
+ -p \begin{bmatrix}
+   1 & 0 \\ 0 & 1
+ \end{bmatrix} +
+ 2 \mu \begin{bmatrix}
+  \dfrac{\partial u}{\partial x} & 
+  \dfrac{1}{2}\bigg(\dfrac{\partial u}{\partial y} + \dfrac{\partial v}{\partial x}\bigg) \\
+  \dfrac{1}{2}\bigg(\dfrac{\partial u}{\partial y} + \dfrac{\partial u}{\partial y}\bigg) &
+  \dfrac{\partial v}{\partial y} & 
+ \end{bmatrix}
+\end{equation}
+% dove il tensore velocità di deformazione è stato indicato con $\mathbb{D}$.
+%
+Sfruttando la simmetria del tensore degli sforzi, $T_{ij} = T_{ji}$, il vettore sforzo $t_i = n_j T_{ji} = T_{ij} n_j$ può essere calcolato come prodotto matrice vettore.
+Come esempio, viene calcolato lo sforzo a parete in un canale piano, nel quale scorre un fluido con un campo di velocità che ha solamente la componente parallela alle pareti che dipende dalla coordinata perpendicolare ad esse, $\bm{u}(\bm{r}) = u(y) \bm{\hat{x}}$.
+Facendo riferimento alla corrente di Poiseuille della sezione precedente, il vettore sforzo agente sul fluido in corrispondenza della parete interiore a $y=0$, si ottiene moltiplicando il versore normale uscente dal fluido $\bm{\hat{n}} = - \bm{\hat{y}}$ per il tensore degli sforzi,
+%Per la corrente in un canale piano, nella quale il campo di velocità ha la forma $\bm{u}(\bm{r}) = u(y) \bm{\hat{x}}$, il vettore sforzo sulla parete inferiore a $y=0$ con normale uscente dal sforzi diventa
+%\begin{equation}
+%   \mathbb{T} =
+%  \begin{bmatrix}
+%   -p & \mu \dfrac{\partial u}{\partial y} \\ \mu \dfrac{\partial u}{\partial y} & -p
+% \end{bmatrix} 
+%\end{equation}
+%Sulla parete inferiore, a $y=0$, la normale uscente dal fluido è $\bm{\hat{n}} = -\bm{\hat{y}}$,
+% la derivata $\partial u/\partial y (x,0) = G_P/(2\mu)$.
+%Il vettore sforzo agente sul fluido è quindi
+\begin{equation}
+\begin{aligned}
+ \begin{bmatrix} t_x \\ t_y \end{bmatrix} & = 
+ \begin{bmatrix}
+   -p & \mu \dfrac{\partial u}{\partial y} \\ \mu \dfrac{\partial u}{\partial y} & -p
+ \end{bmatrix} 
+ \begin{bmatrix} n_x \\ n_y \end{bmatrix} = 
+% \begin{bmatrix}
+%   -p & \mu \dfrac{G_P H}{2\mu} \\ \mu \dfrac{G_P H}{2\mu} & -p
+% \end{bmatrix}
+ \begin{bmatrix}
+   -p & \mu \dfrac{\partial u}{\partial y} \\ \mu \dfrac{\partial u}{\partial y} & -p
+ \end{bmatrix} 
+ \begin{bmatrix} 0 \\ -1 \end{bmatrix} = 
+ \begin{bmatrix} - \mu \dfrac{\partial u}{\partial y} \\ p \end{bmatrix} \\
+ & \qquad \rightarrow \qquad \bm{t_n} =  - \mu \dfrac{\partial u}{\partial y} \bm{\hat{x}} + p \bm{\hat{y}} = - \dfrac{G_P H}{2} \bm{\hat{x}} + p \bm{\hat{y}} \ .
+\end{aligned}
+\end{equation}
+ Lo sforzo sulla parete inferiore è l'opposto $\bm{t}_{n,s} = \frac{G_P H}{2} \bm{\hat{x}} - p \bm{\hat{y}}$. Sulla parete superiore, a $y=H$, la normale uscente dal fluido è $\bm{\hat{n}} = \bm{\hat{y}}$, la derivata $\partial u/\partial y (x,H) = -G_P/(2\mu)$. Svolgendo i conti, come fatto per la parete inferiore, si ottiene che lo sforzo agente sulla parete superiore è $\bm{t}_{n,s} = \frac{G_P H}{2} \bm{\hat{x}} + p \bm{\hat{y}}$.
+
+\paragraph{Equivalenza tra l'espressione tensoriale e vettoriale del vettore sforzo.}
+Per i più curiosi e i più ``matematici'', si dimostra infine l'equivalenza tra (\ref{eqn:stress_tensor}) e (\ref{eqn:stress_vector}). Questa dimostrazione viene fatta  ricorrendo alla notazione indiciale, sfruttando le proprietà di permutazione degli indici del simbolo $\epsilon_{ijk}$ e la proprietà dei simboli $\epsilon_{ijk}$ e $\delta_{a,b}$,
+\begin{equation}
+ \epsilon_{kij}\epsilon_{klm} = \delta_{il}\delta_{jm} - \delta_{im}\delta_{jl} \ .
+\end{equation}
+ La componente $i$-esima di $\bm{\hat{n}} \times \bm{\nabla} \times \bm{u}$ è
+\begin{equation}
+\begin{aligned}
+ \left\{ \bm{\hat{n}} \times \bm{\nabla} \times \bm{u} \right\}_i & =
+ \epsilon_{ijk} n_j \left\{ \bm{\nabla} \times \bm{u} \right\}_k = \\
+  & = \epsilon_{ijk} n_j \epsilon_{klm} \partial_l u_m = \\
+  & = \epsilon_{kij} \epsilon_{klm} n_j \partial_l u_m = \\
+  & = (\delta_{il}\delta_{jm} - \delta_{im}\delta_{jl} ) n_j \partial_l u_m = \\
+  & = n_j \partial_i u_j - n_j \partial_j u_i = \\
+  & = n_j \partial_i u_j + n_j \partial_j u_i - 2 n_j \partial_j u_i = \\
+  & = 2 n_j \dfrac{1}{2}\left(\partial_i u_j + n_j \partial_j u_i \right) - 2 n_j \partial_j u_i = \\
+  & = \left\{2 \bm{\hat{n}} \cdot \mathbb{D} - 2 ( \bm{\hat{n}} \cdot \bm{\nabla} ) \bm{u} \right\}_i
+\end{aligned}
+\end{equation}
+Il contributo viscoso al vettore sforzo è uguale al primo termine a destra 
+ dell'uguale moltiplicato per la viscosità dinamica $\mu$, $\bm{s}_n = 
+ 2 \mu \bm{\hat{n}} \cdot \mathbb{D}$; il vettore sforzo $\bm{t}_n$ è la
+ somma del vettore degli sforzi viscosi $\bm{s}_n$ e del vettore degli
+ sforzi (normali) dovuti alla ``pressione'', $\bm{t}_n = \bm{s}_n 
+ - p \bm{\hat{n}}$. Si ottiene così l'identità desiderata
+ \begin{equation}\label{eqn:stress_tensor-3}
+ \bm{t}_n = \bm{\hat{n}} \cdot \mathbb{T} =
+  \bm{\hat{n}} \cdot \big[-p\mathbb{I} + 2\mu\mathbb{D} \big] = 
+  -p \bm{\hat{n}} +
+ \mu \big[2 (\bm{\hat{n}} \cdot \bm{\nabla}) \bm{u} +
+  \bm{\hat{n}} \times (\bm{\nabla} \times \bm{u}) \big] = 
+  - p\bm{\hat{n}} + \bm{s}_n.
+\end{equation}
+\begin{remark}
+Si ricorda che le identità vettoriali e tensoriali sono indipendenti dal sistema di riferimento in cui vengono scritte le componenti: per la loro dimostrazione si può utilizzare un sistema di coordinate qualsiasi (spesso le coordinate cartesiani sono un sistema di coordinate conveniente, poiché le espressioni delle operazioni e degli operatori differenziali sono semplici da ricordare e utilizzare).
+\end{remark}
+
+\paragraph{Osservazione: vettore sforzo in coordinate cilindriche.} \'E possibile calcolare le componenti del prodotto $\bm{\hat{n}} \cdot \mathbb{T}$ svolgendo un prodotto matrice-vettore anche per sistemi di coordinate non cartesiani. In questo caso, però, la forma delle operazioni vettoriali e tensoriali e le componenti del tensore sono ``non banali''. Per esempio le coordinate cartesiane del gradiente $\bm{\nabla} \bm{v}$ di un campo vettoriale $\bm{v}$ sono uguali a $\partial v_i / \partial x_j$, mentre le componenti in coordinate cilindriche sono raccolte nella seguente matrice $3\times 3$,
+\begin{equation}
+\begin{bmatrix}
+\frac{\partial v_r}{\partial r} & 
+ \frac{1}{r}\left( \frac{\partial v_r}{\partial \theta}-v_\theta \right) &
+ \frac{\partial v_r}{\partial z}   \\
+\frac{\partial v_\theta}{\partial r} & 
+ \frac{1}{r}\left( \frac{\partial v_\theta}{\partial \theta}+v_r \right) & 
+ \frac{\partial v_\theta}{\partial z} \\
+\frac{\partial v_z}{\partial r} &
+ \frac{1}{r}\frac{\partial v_z}{\partial \theta} &
+ \frac{\partial v_z}{\partial z}
+\end{bmatrix} \ ,
+\end{equation}
+se riferite alla base fisica $(\bm{\hat{r}},\bm{\hat{\theta}},\bm{\hat{z}})$.
+Bisogna quindi prestare attenzione nella scrittura delle componenti di tensori e operatori quando si usano sistemi di coordinate non cartesiane.
+Per il calcolo del vettore sforzo si consiglia quindi di usare, la formula ($\ref{eqn:stress_vector}$) che contiene solo operazioni vettoriali, per le quali è più facile trovare tavole che ne raccolgano le espressioni in componenti in diversi sistemi di coordinate.
+
+Per concludere questa sezione, viene ricavata l'espressione del vettore degli sforzi viscosi in coordinate cartesiane come prodotto $2 \mu \bm{\hat{n}} \cdot \mathbb{D}$. Poichè il sistema di coordinate cilindriche (fisiche, riferite alla base $(\bm{\hat{r}},\bm{\hat{\theta}},\bm{\hat{z}})$) è un sistema ortogonale, le componenti del vettore degli sforzi viscosi possono essere calcolate con il prodotto matrice vettore,
+\begin{equation}
+ \begin{bmatrix} t_{r} \\ t_{\theta} \\ t_z \end{bmatrix} = \mu
+ \begin{bmatrix}
+ 2 \frac{\partial v_r}{\partial r} & 
+ \frac{\partial v_\theta}{\partial r} + \frac{1}{r}\left( \frac{\partial v_r}{\partial \theta}-v_\theta \right) &
+ \frac{\partial v_z}{\partial r} + \frac{\partial v_r}{\partial z}   \\
+ sym & 
+ \frac{2}{r}\left( \frac{\partial v_\theta}{\partial \theta}+v_r \right) & 
+ \frac{\partial v_\theta}{\partial z} +  \frac{1}{r}\frac{\partial v_z}{\partial \theta} \\
+ sym &
+ sym &
+ 2 \frac{\partial v_z}{\partial z}
+\end{bmatrix}
+ \begin{bmatrix} n_{r} \\ n_{\theta} \\ n_z \end{bmatrix} \ .
+\end{equation}
+Come esercizio, è possibile utilizzare l'espressione vettoriale (\ref{eqn:stress_vector}) per verificare la validità dell'espressione appena trovata del vettore sforzo in coordinate cilindriche.
+
+
+
+
+

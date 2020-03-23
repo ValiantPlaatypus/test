@@ -1,0 +1,20 @@
+#
+
+Routines needed for Hess-Smith method of a NACA airfoil
+
+1. build_geometry:
+in : naca airfoil, dimensions (chord), position (ref.point,theta,...)
+out: rr, ee, ee_te,
+     elems.ver1, ver2, cen, len, tver, nver
+
+2. compute velocity from unitary line source:
+in : elem, control point
+out: vel
+
+3. compute velocity from unitary line vortex:
+in : elem, control point
+out: vel
+
+2. and 3. need the computation of the expression of the induced velocity:
+- give the formula and let the students prove it
+

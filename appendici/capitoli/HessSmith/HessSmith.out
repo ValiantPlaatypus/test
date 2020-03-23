@@ -1,0 +1,12 @@
+\BOOKMARK [1][-]{section.1}{Introduzione: metodi a pannelli}{}% 1
+\BOOKMARK [1][-]{section.2}{Metodo di Hess-Smith}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{Descrizione geometria}{section.2}% 3
+\BOOKMARK [2][-]{subsection.2.2}{Equazioni: condizioni al contorno e condizione di Kutta}{section.2}% 4
+\BOOKMARK [2][-]{subsection.2.3}{Incognite: distribuzione vortici e sorgenti}{section.2}% 5
+\BOOKMARK [2][-]{subsection.2.4}{Sistema lineare risolvente}{section.2}% 6
+\BOOKMARK [1][-]{section.3}{Breve guida all'implementazione}{}% 7
+\BOOKMARK [2][-]{subsection.3.1}{Calcolo delle quantit\340 geometriche}{section.3}% 8
+\BOOKMARK [2][-]{subsection.3.2}{Velocit\340 indotta dal pannello i-esimo sul pannello j-esimo: calcolo degli integrali}{section.3}% 9
+\BOOKMARK [3][-]{subsubsection.3.2.1}{Sorgenti}{subsection.3.2}% 10
+\BOOKMARK [3][-]{subsubsection.3.2.2}{Vortici}{subsection.3.2}% 11
+\BOOKMARK [2][-]{subsection.3.3}{Matrice di influenza}{section.3}% 12

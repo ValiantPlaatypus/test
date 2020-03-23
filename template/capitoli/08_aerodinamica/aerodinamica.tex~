@@ -1,0 +1,20 @@
+\chapterimage{blank_fig}
+\chapter{Aerodinamica}\index{Aerodinamica}\label{ch:aerodinamica}
+
+\input{./capitoli/08_aerodinamica/0801in}
+\newpage
+\input{./capitoli/08_aerodinamica/08005in}
+\newpage
+\input{./capitoli/08_aerodinamica/0802in}
+\newpage
+\input{./capitoli/08_aerodinamica/0803in}
+\newpage
+\input{./capitoli/08_aerodinamica/0804in}
+\newpage
+% Pistolesi e metodo delle immagini per effetto suolo
+\input{./capitoli/08_aerodinamica/08006in}
+\newpage
+\input{./capitoli/08_aerodinamica/0805in}
+\newpage
+\input{./capitoli/08_aerodinamica/0806in}
+\newpage

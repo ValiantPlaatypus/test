@@ -1,0 +1,70 @@
+\subsection{Coordinate curvilinee ortogonali}\label{ch:tensori:coordinate_ortogonali}
+
+%Dopo aver studiato i tensori in sistemi di coordinate qualsiasi, è giunto il momento di introdurre
+% i sistemi di coordinate ortogonali (quali sono ad esempio le coordinate cartesiane, polari,
+% cilindriche, sferiche) e presentare le semplificazioni possibili.
+
+ Le coordinate curvilinee ortogonali sono n caso particolare di coordinate curvilinee, caratterizzate dalla condizione di ortogonalità tra gli elementi della base $\{ \bm{b}_k \}$. Gli elementi del tensore metrico fuori dalla diagonale (quelli con indici diversi) sono
+ quindi nulli,
+ \begin{equation}
+ \begin{cases}
+   \bm{b}_i \cdot \bm{b}_i = g_{ii} \\
+   \bm{b}_i \cdot \bm{b}_j = 0     , \quad  i \neq j .
+ \end{cases}
+ \end{equation}
+ 
+ \noindent
+ Anche la trasformazione dagli elementi di $\{ \bm{b}_i \}$ a quelli di $\{ \bm{b}^k \}$ si semplifica, diventando
+ \begin{equation}
+  \bm{b}_i = g_{ii} \bm{b}^i  , \quad \bm{b}^i = g^{ii} \bm{b}_i ,
+ \end{equation}
+ dove, in questo caso, non è sottintesa nessuna sommatoria sugli indici ripetuti.
+ Essendo il tensore metrico diagonale, le componenti covarianti sono uguali all'inverso delle componenti contravarianti,
+ \begin{equation}
+  g^{ii} = g_{ii}^{-1} ,
+ \end{equation}
+ dove non è sottintesa nessuna sommatoria sugli indici ripetuti.
+%
+\subsubsection{Componenti contravarianti, covarianti e fisiche.}
+ In generale, le componenti espresse nella base naturale non hanno le dimensioni fisiche della 
+ quantità tensoriale, poichè è possibile che gli elementi della base abbiano una dimensione fisica, come già osservato in precedenza per le coordinate cilindriche.
+ Si pensi al caso di un sistema di coordinate polare $(q^1,q^2) = (r,\theta)$
+ \begin{equation}
+ \begin{aligned}
+  & \left[ \bm{b}_1 \right] = \left[ \frac{\partial \bm{x}}{\partial r} \right] = \frac{L}{L} = 1 \\
+  & \left[ \bm{b}_2 \right] = \left[ \frac{\partial \bm{x}}{\partial \theta} \right] = \frac{L}{1} = L . \\
+ \end{aligned}
+ \end{equation}
+ Mentre il primo elemento della base naturale non ha dimensione fisica, poichè è il risultato di un rapporto (derivata) tra lunghezze,
+ il secondo elemento della base ha la dimensione di una lunghezza, poichè è la derivata di una lunghezza rispetto a un angolo
+ (e l'angolo non ha dimensioni fisiche!).
+ 
+ Questa situazione è ``scomoda'': è sensato desiderare una base formata da vettori privi di ``unità fisiche''. Inoltre
+ è lecito desiderare una base ortonormale. I due problemi vengono risolti definendo i versori della \textbf{base fisica} come
+ \begin{equation}
+  \bm{\hat{b}}_i = \dfrac{\bm{b}_i}{\sqrt{g_{ii}}} \ \ \text{(no sum)} .
+ \end{equation}
+ \'E immediato verificare che questi vettori hanno lunghezza unitaria ricordando che $g_{ii} = \bm{b}_i \cdot \bm{b}_i = |\bm{b}_i|^2$. Facendo lo stesso procedimento sulla base contravariante $\{ \bm{b}^i\}$, si scopre che la base fisica contravariante coincide con quella covariante (e quindi non ha senso fare questa distinzione). Infatti
+  \begin{equation}
+  \bm{\hat{b}}^i = \dfrac{\bm{b}^i}{\sqrt{g^{ii}}} = \sqrt{g_{ii}} \bm{b}^i = \dfrac{\bm{b}_i}{\sqrt{g_{ii}}} = \bm{\hat{b}}_i .
+ \end{equation}
+ 
+ Poichè per coordinate curvilinee ortogonali le basi fisiche coincidono, anche le componenti fisiche ottenute partendo dalle componenti
+ contravarianti coincidono con le componenti fisiche ottenute partendo dalle componenti contravarianti: ha quindi senso parlare di componenti
+ fisiche, senza fare riferimento a covarianza e contravarianza. Le \textbf{componenti fisiche} $\hat{v}_k$ di un vettore $\bm{v}$ vengono ricavate dalle componenti controvarianti e dalle componenti covarianti tramite la radice quadrata degli elementi non nulli della tensore metrico,
+ \begin{equation}
+ \bm{v} = \hat{v}_k \bm{\hat{b}}_k = \begin{cases}
+   v^k \bm{b}_k = v^k \sqrt{g_{kk}} \bm{\hat{b}_k}  \\
+   v_k \bm{b}^k = v_k \sqrt{g^{kk}} \bm{\hat{b}^k}  \\
+ \end{cases} \quad \Rightarrow \quad
+  \hat{v}_k =
+ \begin{cases}  v^k  \sqrt{g_{kk}} = v^k / \sqrt{g^{kk}}  \\ v_k  \sqrt{g^{kk}} = v_k / \sqrt{g_{kk}} .
+ \end{cases}
+ \end{equation}
+% \textbf{
+\begin{remark}
+Ora che sono state introdotte le componenti fisiche in sistemi
+ di coordinate curvilinee ortogonali, \textbf{e solo ora}, è possibile confondere i pedici con gli apici nelle componenti dei tensori.
+\end{remark}
+%}
+ 

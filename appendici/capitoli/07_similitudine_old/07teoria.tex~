@@ -1,0 +1,136 @@
+%
+\section{Teorema di Buckingham}
+Il teorema di Buckingham afferma che un problema descritto da $n$ variabili fisiche, le cui dimensioni fisiche coinvolgono $k$ grandezze fondamentali, può essere espresso in funzione di $n-k$ gruppi adimensionali.
+
+\section{Equazioni di Navier--Stokes incomprimibili in forma adimensionale}
+Nelle equazioni incomprimibili di Navier--Stokes per un fluido a densità costante
+\begin{equation}
+\begin{cases}
+ \rho \dfrac{\partial \bm{u}}{\partial t} + \rho (\bm{u} \cdot \bm{\nabla}) \bm{u} - \mu \Delta \bm{u} + \bm{\nabla} p = \rho \bm{g} \\
+ \bm{\nabla} \cdot \bm{u} = 0 \ ,
+\end{cases}
+\end{equation}
+compaiono 7 variabili fisiche $(\rho,\bm{u},\mu,p,\bm{g};\bm{r},t)$, le 2 variabili indipendenti spaziale $\bm{r}$ e temporale $t$, e le 5 variabili dipendenti rappresentate dalla densità $\rho$, dal campo di velocità $\bm{u}$, dal coefficiente di viscosità dinamica $\mu$, dal campo di pressione $p$ e dal campo di forze di volume $\bm{g}$.
+Le dimensioni fisiche delle 7 variabili possono essere costruite con 3 grandezze fondamentali, la massa $M$, la lunghezza $L$ e il tempo $T$. Ad esempio, le dimensioni fisiche della velocità sono $[\bm{u}] = L \ T^{-1}$ e quelle della densità sono $[\rho] = M \ L^{-3}$. Le dimensioni delle 7 variabili fisiche che compaiono nelle equazioni di Navier--Stokes incomprimibili sono raccolte nella tabella \ref{tab:adim-ns-1}.
+\begin{table}[h]
+\begin{center}
+\begin{tabular}{c ccccccc}
+   & $\bm{r}$ & $t$ & $\rho$ & $\bm{u}$ & $\mu$ & $p$ & $\bm{g}$ \\ 
+ \hline \vspace{-10pt}  \\
+ M & 0 & 0 &  1 &  0 &  1 &  1 &  0 \\
+ L & 1 & 0 & -3 &  1 & -1 & -1 &  1 \\
+ T & 0 & 1 &  0 & -1 & -1 & -2 & -2 \\
+\end{tabular}
+\end{center}
+\caption{Variabili fisiche e grandezze fondamentali.}\label{tab:adim-ns-1}
+\end{table}
+Per poter formare i $7-3 = 4$ gruppi adimensionali che caratterizzano il problema, è necessario scegliere 3 variabili fisiche (o combinazione di queste) che ``contengano in maniera linearmente indipendente'' tutte le 3 grandezze fondamentali del problema. Facendo riferimento alla tabella \ref{tab:adim-ns-1}, le colonne relative alle variabili scelte per l'adimensionalizzazione devono formare dei vettori linearmente indipendenti tra di loro. Ad esempio, due scelte valide delle variabili da usare per l'adimensionalizzazione del problema sono:
+\begin{itemize}
+ \item $(\rho,U,L)$, una densità, una velocità e una lunghezza di riferimento,
+ \item $(\mu,U,L)$, una viscosità, una velocità e una lunghezza di riferimento,
+\end{itemize}
+mentre una scelta non accettabile è una terna $(T,U,L)$ formata da un tempo, una velocità e una lunghezza di riferimento, poichè non è possibile costruire dei gruppi adimensionali con le variabili fisiche che contengono la massa come grandezza fisica, come la densità, la presssione e il coefficiente di viscosità.
+\newline
+Tutte le variabili fisiche vengono espresse come il prodotto di una loro grandezza di riferimento, che contiene le dimensioni fisiche e viene indicata con la tilde, e la loro versione adimensionale, indicata con l'asterisco,
+\begin{equation}
+\begin{aligned}
+\bm{r} & = \tilde{L} \bm{r}^* \quad , \quad t = \tilde{T}\ t^* \quad , \quad \bm{u} = \tilde{U} \bm{u}^* \\
+\rho & = \tilde{\rho} \ \rho^* \quad , \quad \mu = \tilde{\mu} \ \mu^* \quad , \quad 
+p = \tilde{p} \ p^* \quad , \quad \bm{g} = \tilde{g} \ \bm{g}^* \ .
+\end{aligned}
+\end{equation}
+Per le equazioni di Navier--Stokes incomptimibili a proprietà costanti, è possibile scegliere il valore di riferimento della densità e della viscosità dinamica come il valore stesso delle variabili fisiche, $\tilde{\rho} = \rho$, $\tilde{\mu} = \mu$. In questo modo, il loro valore adimensionale è uguale a 1, $\rho^* = \mu^* = 1$. Nel caso del campo di forze di volume dovuto alla gravità, costante e diretto lungo la verticale, è possibile definire il valore di riferimento $\tilde{g} = |\bm{g}|$, cosicché il vettore $\bm{g}^*$ è uguale e contrario al versore $\bm{\hat{z}}$ orientato in direzione verticale. Anche l'operatore \textit{nabla} viene adimensionalizzato, $\bm{\nabla} = \frac{1}{\tilde{L}} \bm{\nabla}^*$.
+Le equazioni di Navier--Stokes possono essere scritte come
+\begin{equation}
+\begin{cases}
+ \dfrac{\rho \tilde{U}}{\tilde{t}} \dfrac{\partial \bm{u}^*}{\partial t^*} + \dfrac{\rho \tilde{U}^2}{\tilde{L}} (\bm{u}^* \cdot \bm{\nabla}^*) \bm{u}^* - \dfrac{\mu \tilde{U}}{\tilde{L}^2} \Delta^* \bm{u}^* + \dfrac{\tilde{p}}{\tilde{L}} \bm{\nabla}^* p^* = -\rho g \bm{\hat{z}} \\
+ \dfrac{\tilde{U}}{\tilde{L}}\bm{\nabla}^* \cdot \bm{u}^* = 0 \ .
+\end{cases}
+\end{equation}
+
+\subsection{Adimensionalizzazione ``ad alti numeri di Reynolds''}
+Se si scelgono $(\tilde{\rho},\tilde{U},\tilde{L})$ come grandezze di riferimento, dividendo l'equazione della quantità di moto per $\tilde{\rho} \tilde{U}^2 / \tilde{L}$ e il vincolo di incomprimibilità per $\tilde{U} / \tilde{L}$,
+\begin{equation}
+\begin{cases}
+ \dfrac{\tilde{L}}{\tilde{U}\tilde{t}} \dfrac{\partial \bm{u}^*}{\partial t^*} + (\bm{u}^* \cdot \bm{\nabla}^*) \bm{u}^* - \dfrac{\mu }{ \rho \tilde{U} \tilde{L} } \Delta^* \bm{u}^* + \dfrac{\tilde{p}}{\rho \tilde{U}^2} \bm{\nabla}^* p^* = -\dfrac{g\tilde{L}}{\tilde{U}^2} \bm{\hat{z}} \\
+ \bm{\nabla}^* \cdot \bm{u}^* = 0 \ ,
+\end{cases}
+\end{equation}
+si possono riconoscere 4 numeri adimensionali:
+\begin{itemize}
+ \item il numero di Strouhal, $St = \frac{\tilde{L}}{\tilde{U}\tilde{t}}$, che rappresenta il rapporto tra una scala dei tempi e la scala dei tempi $\tilde{L}/\tilde{U}$ costruita con la lunghezza e la velocità di riferimento;
+ \item il numero di Reynolds, $Re = \frac{\rho \tilde{U} \tilde{L} }{\mu}$, che rappresenta il rapporto tra gli effetti di inerzia e quelli viscosi;
+ \item il numero di Eulero, $Eu = \frac{\tilde{p}}{\rho \tilde{U}^2}$, che rappresenta il rapporto tra la grandezza di riferimento della pressione e quella di un energia cinetica del fluido;
+ \item il numero di Froude, $Fr = \frac{\tilde{U}^2}{g\tilde{L}}$, che rappresenta il rapporto tra gli effetti di inerzia e quelli dovuti al campo di forze di volume.
+\end{itemize}
+Quando non esiste una scala dei tempi ``indipendente'' dal fenomeno fluidodinamico, è possibile scegliere il valore di riferimento del tempo $\tilde{t} = \tilde{L} / \tilde{U}$, in modo tale da ottenere un numero di Strouhal unitario. Per la natura stessa della ``pressione'' di moltiplicatore di Lagrange introdotto nelle equazioni di Navier--Stokes per imporre il vincolo di incomprimibilità, è frequente che la pressione non abbia una scala indipendente nel regime incomprimibile. \'E possibile quindi scegliere una scala di pressione $\tilde{p} = \rho \tilde{U}^2$, in modo tale da ottenere un numero di Eulero unitario,
+\begin{equation}
+\begin{cases}
+ \dfrac{\partial \bm{u}^*}{\partial t^*} + (\bm{u}^* \cdot \bm{\nabla}^*) \bm{u}^* - \dfrac{1}{Re} \Delta^* \bm{u}^* + \bm{\nabla}^* p^* = -\dfrac{1}{Fr} \bm{\hat{z}} \\
+ \bm{\nabla}^* \cdot \bm{u}^* = 0 \ .
+\end{cases}
+\end{equation}
+Se le grandezze di riferimento sono rappresentative del problema, in modo tale da rendere gli ordini di grandezza delle variabili adimensionali paragonabili tra loro, il valore dei numeri adimensionali permette di valutare l'influenza dei termini. Ad esempio, per valori elevati del numero di Froude l'influenza delle forze di volume è ridotta. Per valori elevati del numero di Reynolds, l'influenza degli effetti viscosi diventa trascurabile nelle regioni del campo di moto nelle quali le derivate spaziali del campo di velocità sono piccole. Per applicazionii tipiche aeronautiche ad alti numeri di Reynolds, gli effetti viscosi saranno quindi trascurabili in gran parte del dominio, ad eccezione delle regioni di strato limite, all'interno delle quali la componente della velocità ``parallela'' alla parete ha una variazione elevata in direzione perpendicolare alla parete stessa.
+Se gli effetti delle forze di volume sono trascurabili ($Fr \rightarrow \infty$), le equazioni di Navier--Stokes incomprimibili per problemi ad alti numeri di Reynolds ($Re \rightarrow \infty$) si riducono alle equazioni di Eulero incomprimibili nelle regioni del dominio in cui gli effetti viscosi sono trascurabili,
+\begin{equation}
+\begin{cases}
+ \dfrac{\partial \bm{u}^*}{\partial t^*} + (\bm{u}^* \cdot \bm{\nabla}^*) \bm{u}^* + \bm{\nabla}^* p^* = \bm{0} \\
+ \bm{\nabla}^* \cdot \bm{u}^* = 0 \ .
+\end{cases}
+\end{equation}
+
+\subsection{Adimensionalizzazione ``a bassi numeri di Reynolds''}
+Se si scelgono $(\tilde{\rho},\tilde{U},\tilde{L})$ come grandezze di riferimento, dividendo l'equazione della quantità di moto per $\tilde{\mu} \tilde{U} / \tilde{L}^2$ e il vincolo di incomprimibilità per $\tilde{U} / \tilde{L}$, le equazioni di Navier--Stokes diventano
+\begin{equation}
+\begin{cases}
+ \dfrac{\rho\tilde{L}^2}{\mu \tilde{t}} \dfrac{\partial \bm{u}^*}{\partial t^*} + \dfrac{\rho \tilde{U} \tilde{L}}{\mu}(\bm{u}^* \cdot \bm{\nabla}^*) \bm{u}^* - \Delta^* \bm{u}^* + \dfrac{\tilde{p}\tilde{L}}{\mu \tilde{U}} \bm{\nabla}^* p^* = -\dfrac{\rho g\tilde{L}^2}{\mu \tilde{U}} \bm{\hat{z}} \\
+ \bm{\nabla}^* \cdot \bm{u}^* = 0 \ .
+\end{cases}
+\end{equation}
+Se gli effetti delle forze di volume sono trascurabili rispetto agli effetti viscosi e non ci sono scale indipendenti di tempo e pressione, le equazioni di Navier--Stokes in forma adimensionale diventano
+\begin{equation}
+\begin{cases}
+ \dfrac{\partial \bm{u}^*}{\partial t^*} + Re (\bm{u}^* \cdot \bm{\nabla}^*) \bm{u}^* - \Delta^* \bm{u}^* + \bm{\nabla}^* p^* = \bm{0} \\
+ \bm{\nabla}^* \cdot \bm{u}^* = 0 \ .
+\end{cases}
+\end{equation}
+Per correnti nelle quali il numero di Reynolds caratteristico tende a zero, note come \textit{creeping flow}, il termine non lineare diventa trascurabile e le equazioni di Navier--Stokes si riducono alle equazioni di Stokes,
+\begin{equation}
+\begin{cases}
+ \dfrac{\partial \bm{u}^*}{\partial t^*} - \Delta^* \bm{u}^* + \bm{\nabla}^* p^* = \bm{0} \\
+ \bm{\nabla}^* \cdot \bm{u}^* = 0 \ .
+\end{cases}
+\end{equation}
+
+\section{Equazione di continuità e numero di Mach}
+La forma adimensionale dell'equazione di continuità permette di valutare i limiti dell'approssimazione di corrente incomprimibile, che soddisfa il vincolo cinematico di incomprimibilità $\bm{\nabla} \cdot \bm{u} = 0$.
+L'equazione della massa viene scritta in forma convettiva,
+\begin{equation}
+ - \bm{\nabla} \cdot \bm{u} = \dfrac{1}{\rho}\dfrac{D \rho}{D t} \ .
+\end{equation}
+Ricordando che lo stato termodinamico di un sistema monocomponente monofase è definito da due variabili termodinamiche, il campo di pressione $p$ viene espresso in funzione del campo di densità $\rho$ e di entropia $s$, come $p(\rho,s)$. Il differenziale di questa relazione,
+\begin{equation}
+ d p = \left(\dfrac{\partial p}{\partial \rho}\right)_s d \rho +
+       \left(\dfrac{\partial p}{\partial s}\right)_{\rho} d s \ ,
+\end{equation}
+può essere utilizzato per esprimere la derivata materiale della densità in funzione delle derivate materiali di pressione ed entropia,
+\begin{equation}
+ \dfrac{D \rho}{D t} = \dfrac{1}{\left(\partial p/\partial \rho\right)_s}\dfrac{D p}{D t} - \dfrac{\left(\partial p/\partial s\right)_{\rho}}{\left(\partial p/\partial \rho\right)_s}\dfrac{D s}{D t} = \dfrac{1}{c^2}\dfrac{D p}{D t} - \dfrac{\left(\partial p/\partial s\right)_{\rho}}{c^2}\dfrac{D s}{D t} \ ,
+\end{equation}
+avendo riconosciuto il quadrato della velocità del suono $c^2 = \left(\frac{\partial p}{\partial \rho}\right)_s$. L'equazione della massa diventa quindi
+\begin{equation}
+  - \bm{\nabla} \cdot \bm{u} = \dfrac{1}{\rho c^2}\dfrac{D p}{D t} - \dfrac{\left(\partial p/\partial s\right)_{\rho}}{\rho c^2}\dfrac{D s}{D t} \ .
+\end{equation}
+Per processi isentropici (o per i quali il secondo termine a destra dell'uguale è trascurabile), l'equazione della massa si riduce a
+\begin{equation}
+  - \bm{\nabla} \cdot \bm{u} = \dfrac{1}{\rho c^2}\dfrac{D p}{D t} \ .
+\end{equation}
+Utilizzando i valori di densità $\tilde{\rho}$, velocità $\tilde{U}$ e lunghezza $\tilde{L}$ caratteristici della corrente per costruire la scala dei tempi $\tilde{t} = \tilde{L}/\tilde{U}$ e per la pressione $\tilde{p} = \tilde{\rho} \tilde{U}^2$, si ottiene l'equazione della massa in forma adimensionale,
+\begin{equation}
+ \bm{\nabla}^* \cdot \bm{u}^* = -  \dfrac{M^2}{\rho^*} \dfrac{D p^*}{D t^*} \ ,
+\end{equation}
+nella quale si è iconosciuto il numero di Mach caratteristico della corrente, $M = \dfrac{\tilde{U}}{c}$, definito come il rapporto tra una velocità caratteristica e la velocità del suono in uno stato termodinamico di riferimento della corrente.
+
+{\color{red}\section{Equazioni di Boussinesq e numeri di Prandtl, Nusselt e Grashof}}
+
+

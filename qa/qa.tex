@@ -1,0 +1,45 @@
+\documentclass[11pt,fleqn]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[italian]{babel}
+
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{bm}
+\usepackage[colorlinks]{hyperref}
+
+\newcommand{\ul}[1]{\underline{#1}}
+\newcommand{\uul}[1]{\ul{\ul{#1}}}
+\newcommand{\p}[2]{\dfrac{\partial{#1}}{\partial{#2}}}
+\newcommand{\f}[2]{\frac{#1}{#2}}
+\newcommand{\bh}[1]{\bm{\hat{#1}}}
+\newcommand{\remark}{}  % Dummy definition
+
+\title{Alcuni chiarimenti su argomenti vari ed eventuali}
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+
+
+\section{Traslazione, rotazione e deformazione e deformazione di un elemento di fluido}
+\input{./traslRotDef.tex}
+
+\section{Legame tra le linee di corrente e le linee di livello della funzione di corrente $\psi$: problema 2D}
+\input{./psi_streamlines.tex}
+\clearpage \newpage
+
+\section{Tensore degli sforzi}
+\input{./stressTensor.tex}
+
+\section{Teoremi di Bernoulli ed equazione della vorticità}
+\input{./../template/capitoli/05_bernoulli/05teoria.tex}
+
+
+
+
+\end{document}

@@ -1,0 +1,57 @@
+\noindent
+\begin{tabular}{c}
+\begin{minipage}[b]{0.95\textwidth}
+\begin{exerciseS}[Corrente attorno al cilindro]
+Una corrente piana con velocit\`{a} asintotica $U_\infty=10\ m/s$ investe un profilo circolare
+di raggio $a=0.1\ m$. Determinare il valore di circolazione $\Gamma$ affinch\'{e} nel 
+punto sulla superficie del cilindro posto a $\theta=\pi/3$ la velocit\`{a} aumenti fino al valore 
+$2U_\infty$ in modulo.
+
+($\Gamma = -1.68\ m^2 / s$, 23.45$\ m^2 / s$)
+\end{exerciseS}
+\end{minipage}
+\end{tabular}
+
+
+\sol
+
+\partone
+  Flusso non viscoso 2D, incomprimibile e irrotazionale attorno al cilindro. Circolazione
+
+\parttwo
+ Una volta scritte (come si ricavano?) le componenti della velocità nel campo di moto, si
+impongono le condizioni richieste dal problema per determinare il valore di circolazione necessario.
+
+\begin{equation}
+\begin{cases}
+  u_r (r,\theta) = U_\infty \displaystyle \left(1 - \frac{a^2}{r^2}\right)\cos{\theta} \\
+  u_\theta (r,\theta) = - U_\infty \displaystyle \left(1 + \frac{a^2}{r^2}\right)\sin{\theta} + \frac{\Gamma}{2\pi r}
+\end{cases}
+\end{equation}
+
+\vspace{0.2cm}
+Si impongono ora le condizioni del problema. Sulla superficie del cilindro la componente radiale è nulla (condizioni al contorno). Quindi:
+
+\begin{equation}
+  |\bm{u}(a,\theta)| = |u_\theta(a,\theta)| = \Big| - 2 U_\infty \sin{\theta} + \frac{\Gamma}{2 \pi a} \Big|
+\end{equation}
+
+E quindi
+\vspace{0.2cm}
+\begin{equation}
+\begin{aligned}
+  2 U_\infty & = \Big| - 2 U_\infty \sin{\frac{\pi}{3}} + \frac{\Gamma}{2 \pi a} \Big| \\
+  \pm 2 U_\infty & = - 2 U_\infty \frac{\sqrt{3}}{2} + \frac{\Gamma}{2 \pi a} \\
+  \\
+  \Rightarrow \Gamma  & = 2 \pi a U_\infty (\sqrt{3} \pm 2)
+\end{aligned}
+\end{equation}
+
+\begin{equation}
+  \Rightarrow \Gamma = 
+  \begin{cases}
+    -1.684 \ m^2/s \\
+    23,449 \ m^2/s
+  \end{cases}
+\end{equation}
+

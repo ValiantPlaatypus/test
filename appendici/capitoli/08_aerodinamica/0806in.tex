@@ -1,0 +1,67 @@
+\noindent
+\begin{tabular}{c}
+\begin{minipage}[b]{0.95\textwidth}
+\begin{exerciseS}[Separazione su parete piana]
+Si assuma che il profilo di velocit\`{a} $u(x,y)$ dello strato limite sulla superficie di un corpo
+sia approssimabile con la seguente legge
+$$
+ u = 1-e^{-y/\sqrt{x}},
+$$
+dove $u$ \`{e} la velocit\`{a} adimensionalizzata rispetto alla velocit\`{a} esterna, $x$ \`{e} la 
+coordinata adimensionale di parete localmente rettilinea e $y$ la coordinata adimensionale in direzione
+normale alla parete stessa. Determinare l'andamento dello spessore di spostamento $\delta$ in funzione 
+della coordinata $x$ lungo la parete. Lo strato limite in questione separa? Se si per quale valore di $x$?
+\vspace{0.5cm}
+
+($\delta(x)=\sqrt{x}$, lo strato limite non separa mai se non nel limite di $x\rightarrow\infty$)
+\end{exerciseS}
+\end{minipage}
+\end{tabular}
+
+
+
+\sol
+
+\partone
+ Separazione. Spessori di strato limite.
+
+\begin{equation}
+  \delta(x) = \int_{0}^{\infty} \left( 1 - \frac{u(y)}{U_e} \right) dy
+\end{equation}
+
+\parttwo
+
+\begin{itemize}
+\item Spessore di spostamento. Il profilo di velocità è già adimensionalizzato sulla "velocità esterna". Utilizzando la definizione di spessore di spostamento, si ottiene:
+\begin{equation}
+\begin{aligned}
+  \delta(x) & = \int_{0}^{\infty} \left( 1 - u(y) \right) dy = \\
+  & = \int_{0}^{\infty} (1 - (1-e^{-y/\sqrt{x}}))dy  = \\
+  & = \int_{0}^{\infty} e^{-y/\sqrt{x}} dy = \\
+  & = -\sqrt{x} [e^{-y/\sqrt{x}}]\big|_{y=0}^{\infty}
+\end{aligned}
+\end{equation}
+
+E quindi: $\delta(x) = \sqrt{x}$.
+
+
+
+\item Separazione. La condizione di separazione è $\frac{\partial u}{\partial y}\big|_{y=0} = 0$.
+
+\begin{equation}
+\begin{aligned}
+  \frac{\partial u}{\partial y}  = 
+  \frac{\partial}{\partial y} \displaystyle \left[   1-e^{-y x^{-1/2}} \right] = 
+   x^{-1/2} e^{-y x^{-1/2}}
+\end{aligned}
+\end{equation}
+
+
+
+Si osserva che $\frac{\partial u}{\partial y}\big|_{y=0}$ non si annulla mai:
+\begin{equation}
+  \displaystyle\frac{\partial u}{\partial y}\displaystyle\Big|_{y=0} = \frac{1}{\sqrt{x}}
+\end{equation}
+
+\end{itemize}
+

@@ -1,0 +1,22 @@
+\chapterimage{blank_fig}
+\chapter{Soluzioni esatte}\index{Soluzioni esatte}\label{ch:slnEsatte}
+
+\input{./capitoli/06_slnEsatte/0600in}
+\newpage
+%
+\input{./capitoli/06_slnEsatte/0604in} % 2d channel (newton-couette)
+\newpage
+\input{./capitoli/06_slnEsatte/0607in} % 2d channel + p meas.
+\newpage
+\input{./capitoli/06_slnEsatte/0603in} % 2d free + gravitation
+\newpage
+\input{./capitoli/06_slnEsatte/0603in} % 2d free + gravitation
+\newpage
+\input{./capitoli/06_slnEsatte/0605in} % 3d poiseuille + p meas.
+\newpage
+\input{./capitoli/06_slnEsatte/0601in} % taylor-couette + p meas.
+\newpage
+\input{./capitoli/06_slnEsatte/0606in} % taylor-couette + torque
+\newpage
+\input{./capitoli/06_slnEsatte/0608in} % rotating vessel
+\newpage

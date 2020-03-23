@@ -1,0 +1,211 @@
+\subsection{Esempio: coordinate cilindriche}\label{ch:coordCyl}
+Questo paragrafo viene dedicato alle coordinate cilindriche, un sistema di coordiante ortogonali. Vengono calcolate le espressioni delle coordinate degli operatori applicati a campi tensoriali che verranno incontrati nella scrittura delle equazioni di bilancio, come ad esempio le equazioni di Navier--Stokes per fluidi incomprimibili introdotte alla fine del paragrafo.
+
+Lo spazio tridimensionale viene descritto in coordinate cilindriche dalle tre coordinate
+ $(q^1,q^2,q^3) = (r,\theta,z)$. L'elemento di lunghezza $ds$ ha la forma
+\begin{equation}
+ ds^2 = g_{ij} dq^i dq^j = dr^2 + r^2 d\theta^2 + dz^2
+\end{equation}
+
+\subsubsection{Tensore metrico.}
+Il sistema di coordinate cilindriche è ortogonale. Il tensore metrico è diagonale $g_{ij} = 0, \ i\ne j$.
+In particolare, dall'elemento di lunghezza si ricavano le componenti del tensore metrico
+\begin{equation}
+\begin{aligned}
+  g_{11} = 1 ,& \quad g_{22} = q^{(1)^2}     ,& \quad g_{33} = 1 & \qquad \text{(componenti covarianti)} \\
+  g^{11} = 1 ,& \quad g^{22} = 1 / q^{(1)^2} ,& \quad g^{33} = 1 & \qquad \text{(componenti contravarianti)}
+\end{aligned}
+\end{equation}
+
+\subsubsection{Vettore posizione e base naturale.}
+Rispetto alla base cartesiana $(\bm{\hat{x}},\bm{\hat{y}},\bm{\hat{z}})$, il vettore posizione $\bm{x}$ è
+\begin{equation}
+ \bm{x} = q^1 \cos(q^2) \bm{\hat{x}} + q^1 \sin(q^2) \bm{\hat{y}} + q^3  \bm{\hat{z}}
+\end{equation}
+I vettori della base naturale sono definiti $\bm{b}_i = \frac{\partial \bm{x}}{\partial q^i}$. La base 
+ reciproca si ottiene da $\bm{b}^i = g^{ik}\bm{b}_k$
+\begin{equation}
+ \begin{cases}
+   \bm{b}_1 =      \cos q^2 \bm{\hat{x}} +     \sin q^2 \bm{\hat{y}} \\
+   \bm{b}_2 = -q^1 \sin q^2 \bm{\hat{x}} + q^1 \cos q^2 \bm{\hat{y}} \\
+   \bm{b}_3 = \bm{\hat{z}}
+ \end{cases}
+ \qquad
+ \begin{cases}
+   \bm{b}^1 = \bm{b}_1 \\ \bm{b}^2 = g^{22} \bm{b}_2 \\ \bm{b}^3 = \bm{b}_3 \\
+ \end{cases}
+\end{equation}
+
+\subsubsection{Componenti contravarianti, covarianti e fisiche.}
+ I vettori $\bm{b}_1$, $\bm{b}_3$, $\bm{b}^1$, $\bm{b}^3$ delle basi naturale e reciproca sono privi di dimensioni fisiche, mentre il vettore $\bm{b}_2$ ha la dimensione di una lunghezza (la coordinata $q^1$ coincide con il raggio $r$) e il vettore $\bm{b}^2$ ha la dimensione dell'inverso di 
+ una lunghezza. \'E quindi necessario definire ula base fisica e le componenti fisiche di un vettore (in maniera analoga si definiranno le componenti fisiche di un tensore di ordine qualsiasi).
+ Utilizzando il valore delle componenti del tensore metrico trovate e la (\ref{eqn:baseFisica}), la base fisica nel sistema di coordiante cilindriche è
+ \begin{equation}
+ \left\{
+ \begin{aligned}
+  \bm{\hat{r}}     & = \bm{\hat{b}}^1 && = \bm{b}^1                 && =  \cos q^2 \bm{\hat{x}} +     \sin q^2 \bm{\hat{y}} \\
+  \bm{\hat{\theta}}& = \bm{\hat{b}}^2 && = \bm{b}^2/{\sqrt{g^{22}}} && = -\sin q^2 \bm{\hat{x}} +     \cos q^2 \bm{\hat{y}} \\
+  \bm{\hat{z}}     & = \bm{\hat{b}}^3 && = \bm{b}^3                 && =  \bm{\hat{z}} .
+ \end{aligned}
+ \right.
+ \end{equation}
+
+\subsubsection{Simboli di Christoffel.}
+ Si può verificare tramite calcolo diretto che gli unici simboli di Christoffel del secondo tipo diversi da zero sono
+ \begin{equation}
+  \Gamma_{21}^2 = \Gamma_{12}^2 = 1 / q^1  , \quad \Gamma_{22}^1 = -q^1 .
+ \end{equation}
+ 
+\subsubsection{Gradiente di uno scalare.}
+ Utilizzando la forma in componenti del gradiente, il legame tra componenti contravarianti, covarianti e fisiche, si può
+ scrivere il gradiente di un campo scalare in componenti contravarianti, covarianti e fisiche.
+ \begin{equation}
+ \begin{aligned}
+  \text{grad} f & = \frac{\partial f}{\partial r} \bm{b}^1 + \frac{\partial f}{\partial \theta} \bm{b}^2 + \frac{\partial f}{\partial z} \bm{b}^3 = \\ 
+      & = \frac{\partial f}{\partial r} \bm{b}_1 + \frac{1}{r^2}\frac{\partial f}{\partial \theta} \bm{b}_2 + \frac{\partial f}{\partial z} \bm{b}_3 = \\
+      & = \frac{\partial f}{\partial r} \bm{\hat{r}} + \frac{1}{r}\frac{\partial f}{\partial \theta} \bm{\hat{\theta}}
+         + \frac{\partial f}{\partial z} \bm{\hat{z}}
+ \end{aligned}
+ \end{equation}
+
+\subsubsection{Divergenza di un vettore.}
+ Si riporta qui l'espressione della divergenza di un campo vettoriale, già calcolata in \S\ref{ch:operatoriDiff}
+ \begin{equation}
+ \begin{aligned}
+  \bm{\nabla} \cdot \bm{v} & = \frac{\partial v^i}{\partial q^i} + \Gamma_{il}^i v^l = \\
+                    & = \frac{\partial v^1}{\partial q^1} + \frac{\partial v^2}{\partial q^2} + \frac{\partial v^3}{\partial q^3}
+                       + \Gamma_{12}^2 v^1 = \\
+                    & = \frac{\partial v_r}{\partial r} + \frac{1}{r}\frac{\partial v_\theta}{\partial \theta} + \frac{\partial v_z}{\partial z}
+                       + \frac{1}{r} v_r \\
+                    & = \frac{1}{r}\dfrac{\partial (r v_r)}{\partial r} + \frac{1}{r}\frac{\partial v_\theta}{\partial \theta} +
+                        \frac{\partial v_z}{\partial z} .
+ \end{aligned}
+ \end{equation}
+ 
+\subsubsection{Gradiente di un vettore.}
+Si riporta qui l'espressione della gradiente di un campo vettoriale, già calcolata in \S\ref{ch:operatoriDiff}
+\begin{equation}
+\begin{aligned}
+    \bm{\nabla} \bm{v} & = \left[ \dfrac{\partial v^i}{\partial q^k} + \Gamma_{lk}^i v^l \right] \bm{b}^k \otimes \bm{b}_i = \\
+     & = \frac{\partial v^1}{\partial q^1}                                   \bm{b}^1 \otimes \bm{b}_1   + 
+        \left( \frac{\partial v^1}{\partial q^2} + \Gamma_{22}^1 v^2 \right) \bm{b}^2 \otimes \bm{b}_1   + 
+        \frac{\partial v^1}{\partial q^3}                                    \bm{b}^3 \otimes \bm{b}_1   + \\
+     & + \left( \frac{\partial v^2}{\partial q^1} + \Gamma_{21}^2 v^2 \right)\bm{b}^1 \otimes \bm{b}_2   + 
+        \left( \frac{\partial v^2}{\partial q^2} + \Gamma_{12}^2 v^1 \right) \bm{b}^2 \otimes \bm{b}_2   + 
+        \frac{\partial v^2}{\partial q^3}                                    \bm{b}^3 \otimes \bm{b}_2   + \\
+     & + \frac{\partial v^3}{\partial q^1}                                   \bm{b}^1 \otimes \bm{b}_3   + 
+        \frac{\partial v^3}{\partial q^2}                                    \bm{b}^2 \otimes \bm{b}_3   + 
+        \frac{\partial v^3}{\partial q^3}                                    \bm{b}^3 \otimes \bm{b}_3   = \\
+     & = \frac{\partial v_r}{\partial r}                                           \bm{\hat{r}}      \otimes \bm{\hat{r}}       + 
+        \frac{1}{r}\left( \frac{\partial v_r}{\partial \theta} - v_\theta \right)  \bm{\hat{\theta}} \otimes \bm{\hat{r}}       + 
+        \frac{\partial v_r}{\partial z}                                            \bm{\hat{z}}      \otimes \bm{\hat{r}}       + \\
+     & +  \frac{\partial v_\theta}{\partial r}                                     \bm{\hat{r}}      \otimes \bm{\hat{\theta}}  + 
+        \frac{1}{r}\left( \frac{\partial v_\theta}{\partial \theta} +  v_r \right) \bm{\hat{\theta}} \otimes \bm{\hat{\theta}}  + 
+        \frac{\partial v_\theta}{\partial z}                                       \bm{\hat{z}}      \otimes \bm{\hat{\theta}}  + \\
+     & + \frac{\partial v_z}{\partial r}                                           \bm{\hat{r}}      \otimes \bm{\hat{z}}       + 
+        \frac{1}{r}\frac{\partial v_z}{\partial \theta}                            \bm{\hat{\theta}} \otimes \bm{\hat{z}}       + 
+        \frac{\partial v_z}{\partial z}                                            \bm{\hat{z}}      \otimes \bm{\hat{z}}        ,
+\end{aligned}
+\end{equation}
+%%% \begin{equation}
+%%% \begin{aligned}
+%%%     \bm{\nabla} \bm{v} & = \left[ \dfrac{\partial v^i}{\partial q^k} + \Gamma_{lk}^i v^l \right] \bm{b}_i \otimes \bm{b}^k = \\
+%%%      & = \frac{\partial v^1}{\partial q^1}                                   \bm{b}_1 \otimes \bm{b}^1   + 
+%%%         \left( \frac{\partial v^1}{\partial q^2} + \Gamma_{22}^1 v^2 \right) \bm{b}_1 \otimes \bm{b}^2   + 
+%%%         \frac{\partial v^1}{\partial q^3}                                    \bm{b}_1 \otimes \bm{b}^3   + \\
+%%%      & + \left( \frac{\partial v^2}{\partial q^1} + \Gamma_{21}^2 v^2 \right)\bm{b}_2 \otimes \bm{b}^1   + 
+%%%         \left( \frac{\partial v^2}{\partial q^2} + \Gamma_{12}^2 v^1 \right) \bm{b}_2 \otimes \bm{b}^2   + 
+%%%         \frac{\partial v^2}{\partial q^3}                                    \bm{b}_2 \otimes \bm{b}^3   + \\
+%%%      & + \frac{\partial v^3}{\partial q^1}                                   \bm{b}_3 \otimes \bm{b}^1   + 
+%%%         \frac{\partial v^3}{\partial q^2}                                    \bm{b}_3 \otimes \bm{b}^2   + 
+%%%         \frac{\partial v^3}{\partial q^3}                                    \bm{b}_3 \otimes \bm{b}^3   = \\
+%%%      & = \frac{\partial v_r}{\partial r}                                     \bm{\hat{r}} \otimes \bm{\hat{r}}   + 
+%%%         \frac{1}{r}\left( \frac{\partial v_r}{\partial \theta} - v_\theta \right) \bm{\hat{r}} \otimes \bm{\hat{\theta}}  + 
+%%%         \frac{\partial v_r}{\partial z}                                     \bm{\hat{r}} \otimes \bm{\hat{z}}  + \\
+%%%      & +  \frac{\partial v_\theta}{\partial r}                              \bm{\hat{\theta}} \otimes \bm{\hat{r}}  + 
+%%%         \frac{1}{r}\left( \frac{\partial v_\theta}{\partial \theta} +  v_r \right) \bm{\hat{\theta}} \otimes \bm{\hat{\theta}}  + 
+%%%         \frac{\partial v_\theta}{\partial z}                                \bm{\hat{\theta}} \otimes \bm{\hat{z}}  + \\
+%%%      & + \frac{\partial v_z}{\partial r}                                    \bm{\hat{z}} \otimes \bm{\hat{r}} + 
+%%%         \frac{1}{r}\frac{\partial v_z}{\partial \theta}                     \bm{\hat{z}} \otimes \bm{\hat{\theta}}  + 
+%%%         \frac{\partial v_z}{\partial z}                                     \bm{\hat{z}} \otimes \bm{\hat{z}}  ,
+%%% \end{aligned}
+%%% \end{equation}
+ 
+ \subsubsection{Laplaciano.} 
+ La forma in componenti dell'operatore laplaciano di un vettore si ottiene partendo dalla definizione
+ $\Delta \bm{v} = \text{div(grad $\bm{v}$)}$. Il gradiente è stato appena scritto in componenti miste; per poter utilizzare la
+ formula in componenti contravarianti di un tensore, è quindi necessario prima trasformare (tramite il tensore metrico) le componenti
+ miste in contravarianti: viene scritto esplicitamente solo il termine $g^{22}$ poiché è l'unico elemento diagonale diverso da uno e
+ viene eseguito il calcolo solo per la prima componente, per motivi di sintesi
+ \begin{equation}
+ \begin{aligned}
+  \Delta \bm{v} = &\bm{b}_1 \left\{ \frac{\partial}{\partial q^1}\frac{\partial v^1}{\partial q^1} +
+               \frac{\partial}{\partial q^2} \left[ g^{22}\left( \frac{\partial v^1}{\partial q^2} + \Gamma_{22}^1 v^2 \right) \right] +
+               \frac{\partial}{\partial q^3}\frac{\partial v^1}{\partial q^3} + 
+               g^{22}\Gamma_{22}^1  \left( \frac{\partial v^2}{\partial q^2} + \Gamma_{12}^2 v^1 \right) +
+               \Gamma_{21}^2 \frac{\partial v^1}{\partial q^2} \right\} \\
+               & + \bm{b}_2 \left\{ \dots \right\} + \bm{b}_3 \left\{ \dots \right\} = \\
+               & = \dots  = \\
+               & = \left[ \Delta u_r - \frac{u_r}{r^2} - \frac{2}{r^2} \frac{\partial u_\theta}{\partial \theta}\right]\bm{\hat{r}} + \\
+               & \quad + \left[ \Delta u_\theta + \frac{2}{r^2} \frac{\partial u_r}{\partial \theta} - \frac{u_\theta}{r^2} \right]\bm{\hat{\theta}}+ \\
+               & \quad + \left[ \Delta u_z  \right]\bm{\hat{z}}
+ \end{aligned}
+ \end{equation}
+ dove con $\Delta f$ è stato indicato il laplaciano di uno scalare
+ \begin{equation}
+   \Delta f = \frac{1}{r}\frac{\partial}{\partial r}\left( r \frac{\partial f}{\partial r}\right) +
+               \frac{1}{r^2} \frac{\partial^2 f}{\partial \theta^2} + \frac{\partial^2 f}{\partial z^2}
+ \end{equation}
+ 
+ \subsubsection{Termine advettivo.}
+ \begin{equation}
+  \begin{aligned}
+   (\bm{a} \cdot \bm{\nabla}) \bm{v} = & \left[ \frac{\partial v^i}{\partial q^j} +\Gamma_{lj}^i v^l \right] a^j \bm{b}_i = \\
+     & = \left[  a^k \frac{\partial v^1}{\partial q^k} + a^2 \Gamma_{22}^1 v^2 \right] \bm{b}_1 + 
+       \left[  a^k \frac{\partial v^2}{\partial q^k} + a^1 \Gamma_{12}^1 v^2 + a^2 \Gamma_{21}^1 v^1 \right] \bm{b}_2 + 
+       \left[  a^k \frac{\partial v^3}{\partial q^k} \right] \bm{b}_3 = \\
+     & = \dots =  \\
+     & = \left[ a_r \frac{\partial v_r}{\partial r} + \frac{a_\theta}{r}\frac{\partial v_r}{\partial \theta} +
+                a_r \frac{\partial v_r}{\partial r} - \frac{a_\theta v_\theta}{r}\right] \bm{\hat{r}} + \\
+       & \quad  + \left[ a_r \frac{\partial v_\theta}{\partial r} + \frac{a_\theta}{r}\frac{\partial v_\theta}{\partial \theta} +
+                a_r \frac{\partial v_\theta}{\partial r} + \frac{a_\theta v_r}{r}\right] \bm{\hat{\theta}} + \\
+       & \quad  + \left[ a_r \frac{\partial v_z}{\partial r} + \frac{a_\theta}{r}\frac{\partial v_z}{\partial \theta} +
+                a_r \frac{\partial v_z}{\partial r} \right] \bm{\hat{z}}  
+  \end{aligned}
+ \end{equation}
+ 
+ 
+ \subsubsection{Equazioni di Navier-Stokes}
+ Utilizzando l'espressione in coordinate cilindriche degli operatori ricavate nel paragrafo precedente, è ora possibile
+ scrivere le equazioni di Navier-Stokes in coordinate cilindriche.
+ 
+\begin{equation}
+\begin{cases}
+ \dfrac{\partial \bm{u}}{\partial t} + \left( \bm{u} \cdot \bm{\nabla} \right) \bm{u} - \dfrac{1}{Re} \Delta \bm{u} + \bm{\nabla} p = \bm{f} \\
+ \bm{\nabla} \cdot \bm{u} = 0
+\end{cases}
+\end{equation}
+
+\begin{equation}
+\begin{cases}
+ \dfrac{\partial u_r}{\partial t}      + \left( u_r \dfrac{\partial u_r}{\partial r} + \dfrac{u_\theta}{r}\dfrac{\partial u_r}{\partial \theta} +
+                u_r \dfrac{\partial u_r}{\partial r} - \dfrac{u_\theta^2}{r} \right) - \dfrac{1}{Re} \left[ 
+                \Delta u_r - \dfrac{u_r}{r^2} - \dfrac{2}{r^2} \dfrac{\partial u_\theta}{\partial \theta}  \right] 
+                + \dfrac{\partial p}{\partial r} = f_r   \\
+ \dfrac{\partial u_\theta}{\partial t} + \left( u_r \dfrac{\partial u_\theta}{\partial r} + \dfrac{u_\theta}{r}\dfrac{\partial u_\theta}{\partial \theta} +
+                u_r \dfrac{\partial u_\theta}{\partial r} + \dfrac{u_\theta u_r}{r} \right) - \dfrac{1}{Re} \left[ 
+                \Delta u_\theta + \dfrac{2}{r^2} \dfrac{\partial u_r}{\partial \theta} - \dfrac{u_\theta}{r^2}  \right] 
+                + \dfrac{1}{r}\dfrac{\partial p}{\partial \theta}= f_\theta \\
+ \dfrac{\partial u_z}{\partial t}      + \left( u_r \dfrac{\partial u_z}{\partial r} + \dfrac{u_\theta}{r}\dfrac{\partial u_z}{\partial \theta} +
+                u_r \dfrac{\partial u_z}{\partial r} \right) - \dfrac{1}{Re}  \Delta u_z  + \dfrac{\partial p}{\partial z} = f_z \\
+ \dfrac{1}{r}\dfrac{\partial (r u_r)}{\partial r} + \dfrac{1}{r}\dfrac{\partial u_\theta}{\partial \theta} +
+                        \dfrac{\partial u_z}{\partial z} = 0
+\end{cases}
+\end{equation} 
+dove si è usato il laplaciano di un campo scalare, definito in precedenza. Per inciso, si ricorda che le equazioni hanno bisogno
+ di condizioni iniziali (poichè sono evolutive nel tempo), di condizioni al contorno (poichè compaiono derivate spaziali) e,
+ quando necessario, di condizioni di compatibilità, tra condizioni iniziali e al contorno.
+
+ 
+ 
+ 

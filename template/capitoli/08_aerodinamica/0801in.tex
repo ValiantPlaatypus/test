@@ -1,0 +1,89 @@
+\noindent
+\begin{tabular}{c}
+\begin{minipage}[b]{0.95\textwidth}
+\begin{exerciseS}[Potenziale cinetico e funzione di corrente]
+Si consideri la corrente a potenziale piana e stazionaria descritta in un sistema
+di riferimento Cartesiano $(x,y)$ dalla funzione potenziale cinetico $\phi(x,y)$:
+$$
+ \phi(x,y) = 5(x^2-y^2) + 2x-4y.
+$$
+Si richiede di:
+\begin{itemize}
+ \item derivare l'espressione analitica delle componenti in $x$ e in $y$ del campo di velocit\`{a};
+ \item verificare che la corrente sia incomprimibile e irrotazionale;
+ \item derivare l'espressione analitica della funzione di corrente $\psi(x,y)$;
+ \item calcolare la portata volumetrica per unit\`{a} di apertura $q$ che scorre attraverso il 
+       segmento congiungente l'origine del piano con il punto di coordinate $(1,1)$;
+\end{itemize}
+\vspace{0.2cm}
+($u_x=10x+2$, $u_y=-10y-4$, $\psi(x,y)=10xy+2y+4x + const.$, $q=16$)
+\end{exerciseS}
+\end{minipage}
+\end{tabular}
+
+
+\sol
+
+\partone
+  Legame tra potenziale e velocità. Funzione di corrente per problemi 2D incomprimibili.
+\begin{equation}
+  \bm{u} = \bm{\nabla} \phi \quad
+  \begin{cases}
+  \begin{aligned}
+   & u_x  =  \frac{\partial \phi}{\partial x}  = \frac{\partial \psi}{\partial y} \\
+   & u_y  =  \frac{\partial \phi}{\partial y}  = - \frac{\partial \psi}{\partial x}
+  \end{aligned}
+  \end{cases}
+\end{equation}
+
+\parttwo
+
+\begin{itemize}
+
+\item Calcolo delle componenti della velocità.
+\begin{equation}
+  \begin{cases}
+    u_x = \frac{\partial \phi}{\partial x} = 10 x + 2 \\
+    u_y = \frac{\partial \phi}{\partial y} = -10 y - 4
+  \end{cases}
+\end{equation}
+
+\item Verificare che la corrente sia incomprimibile e irrotazionale.
+  \begin{itemize}
+    \item Irrotazionalità ($\nabla \times \bm{u} = 0$). Verifica tramite l'identità vettoriale $\nabla \times \nabla \phi = 0$, oppure con il calcolo diretto.
+    \begin{equation}
+    \begin{aligned}
+      & \nabla \times \bm{u} = \nabla \times (\nabla \phi) = 0 \\
+      & \nabla \times \bm{u} = \nabla \times ( (10x+2)\hat{\bm{x}} + (-10y-4)\hat{\bm{y}} ) = 
+      \displaystyle \left(\frac{\partial u_y}{\partial x} - \frac{\partial u_x}{\partial y} \right)\hat{\bm{z}} = 0
+    \end{aligned}
+    \end{equation}
+        
+    \item Incomprimibilità ($\nabla \cdot \bm{u} = 0$). Dal calcolo diretto $\partial^2 \phi /\partial x^2 + \partial^2 \phi /\partial y^2=10-10=0$.
+    
+  \end{itemize}
+  
+  \item La corrente è incomprimibile, quindi si può definire la funzione di corrente. Usando la definizione della funzione di corrente, integrando, si ottiene:
+  
+  \begin{equation}
+  \begin{aligned}
+    &\frac{\partial \psi}{\partial y} = u_x   &\quad \Rightarrow \quad \psi = 10xy+2y+f(x)\\
+    &\frac{\partial \psi}{\partial x} = -u_y  &\quad \Rightarrow \quad \psi = 10xy+4x+g(y)
+  \end{aligned}
+  \end{equation}
+  
+  \begin{equation}
+    \psi = 10 xy + 2y + 4x + c
+  \end{equation}
+  
+  \item Calcolo della portata.
+  \begin{equation}
+    Q = \int_{\gamma} \bm{u} \cdot \hat{\bm{n}} = \int_{\gamma} (u_x n_x + u_y n_y) = 
+    \int_{\gamma} (u_x t_y - u_y t_x) = 
+    \int_{\gamma} \displaystyle\left(\frac{\partial \psi}{\partial x} t_x + \frac{\partial \psi}{\partial y} t_y\right) = 
+    \psi(1,1) - \psi(0,0) = 16
+  \end{equation}
+
+\end{itemize}
+
+

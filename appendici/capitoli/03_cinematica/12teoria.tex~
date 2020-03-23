@@ -1,0 +1,358 @@
+La cinematica è la parte della meccanica che studia il moto di sistemi, indipendentemente dalle cause che lo generano, a differenza della dinamica. Prima di ricavare le equazioni che descrivono la dinamica di un fluido, sembra quindi opportuno concentrarsi sulla sua cinematica.
+
+La cinematica e la dinamica dei mezzi continui, come ad esempio i solidi o i fluidi, possono essere descritte con un approccio lagrangiano o euleriano. La \textbf{descrizione lagrangiana}, utilizzata spesso in meccanica dei solidi, consiste nel seguire nello spazio il moto delle singole particelle del mezzo continuo. La \textbf{descrizione euleriana}, utilizzata spesso in meccanica dei fluidi, consiste nel descrivere l'evoluzione del mezzo continuo utilizzando come variabili indipendenti sia la variabile spaziale $\bm{r}$ sia la variabile temporale $t$.
+
+
+\section{Descrizione integrale lagrangiana ed euleriana}
+
+In una descrizione \textit{integrale} del fenomeno, l'approccio lagrangiano segue l'evoluzione di un \textbf{volume materiale}, i cui punti si muovono in maniera solidale con il mezzo continuo. In un approccio euleriano invece viene introdotto un \textbf{volume di controllo}, fisso nello spazio, e i flussi delle quantità meccaniche  (massa, quantità di moto, energia, \dots) contribuiscono ai bilancio delle quantità meccaniche relative al volume di controllo considerato. Queste due descrizioni sono casi particolari di un approccio generale al problema, definito \textit{ALE} (arbitrario lagrangiano-euleriano), che descrive l'evoluzione di un volume in moto arbitrario.
+\newline
+Le tre diverse descrizioni del problema possono essere messe in relazione tra di loro, tramite le formule di Leibniz, che forniscono l'espressione della derivata temporale di integrali su domini dipendenti dal tempo. Si riporta qui, senza dimostrazione, il \textbf{teorema del trasporto di Reynolds}
+\begin{fBox}
+\begin{equation}
+ \dfrac{d}{d t} \int_{V(t)} f = \int_{V(t)} \dfrac{\partial f}{\partial t} +
+  \oint_{S(t)} f\bm{v} \cdot \bm{\hat{n}} \ , 
+\end{equation}
+\end{fBox}
+ che fornisce l'espressione della derivata temporale dell'integrale della funzione $f(\bm{x},t)$ (che può essere scalare, vettoriale o in generale tensoriale) nel volume mobile $V(t) \ni \bm{x}$, la cui frontiera $S(t)$ si muove con velocità $\bm{v}(\bm{x}_s,t)$, $\bm{x}_s \in S(t)$. La normale $\bm{\hat{n}}$ alla superficie $S(t)$ è uscente dal volume $V(t)$. 
+%\newline 
+Si rimanda all'appendice ``Richiami di analisi'' per la dimostrazione del teorema e per le formule della derivata temporale di flussi e circuitazioni su domini dipendenti dal tempo.
+\newline
+Siano ora
+\begin{itemize}
+ \item $V(t)$ un volume materiale, la cui frontiera si muove con la velocità del fluido $\bm{v}=\bm{u}$
+ \item $V_c$ un volume di controllo, la cui frontiera è fissa nello spazio, $\bm{v}=\bm{0}$
+ \item $v(t)$ un volume in moto arbitrario, la cui frontiera si muove con velocità generica $\bm{v}$.
+\end{itemize}
+Come si vedrà nel capitolo sui ``Bilanci integrali'', il bilancio integrale di una quantità meccanica $f$ in un volume materiale $V(t)$ descrive la variazione nel tempo dell'integrale $\int_{V(t)} f$. Il teorema di Reynolds applicato all'integrale svolto su un volume materiale $V(t)$ e all'integrale svolto sul volume in moto generico $v(t)$, coincidente con $V(t)$ all'istante di tempo $t$ considerato,
+\begin{equation}
+\begin{aligned}
+  \dfrac{d}{d t} \int_{V(t)} f & = \int_{V(t)} \dfrac{\partial f}{\partial t} +
+  \oint_{S(t)} f\bm{u} \cdot \bm{\hat{n}}  \\
+  \dfrac{d}{d t} \int_{v(t)\equiv V(t)} f & = \int_{v(t)\equiv V(t)} \dfrac{\partial f}{\partial t} +
+  \oint_{s(t)\equiv S(t)} f\bm{v} \cdot \bm{\hat{n}}  \ , \\
+\end{aligned}
+\end{equation}
+permette di ricavare il legame tra la descrizione lagrangiana e una descrizione arbitraria del problema. Confrontando le ultime due espressioni, si ottiene
+\begin{fBox}
+\begin{equation}
+ \dfrac{d}{d t} \int_{V(t)} f = \dfrac{d}{d t} \int_{v(t)\equiv V(t)} f +
+ \oint_{s(t)\equiv S(t)} f (\bm{u} - \bm{v}) \cdot \bm{\hat{n}} \ . 
+\end{equation}
+\end{fBox}
+Dalla formula scritta per il volume arbitrario $v(t)$, si ricava il legame tra a descrizione lagrangiana e la descrizione euleriana del problema, considerando il volume arbitrario coincidente con un volume di controllo $V_c$ fisso, per il quale $\bm{v}=\bm{0}$,
+\begin{fBox}
+\begin{equation}
+ \dfrac{d}{d t} \int_{V(t)} f = \dfrac{d}{d t} \int_{V_c\equiv V(t)} f +
+ \oint_{S_c\equiv S(t)} f \bm{u} \cdot \bm{\hat{n}} \ .
+\end{equation}
+\end{fBox}
+
+\section{Descrizione puntuale lagrangiana ed euleriana}
+
+% fissare un volume di controllo e descrivere la variazione delle quantità meccaniche al suo interno, tenendo in considerazione i flussi della quantità meccanica attraverso le pareti fisse del volume di controllo.
+%\'E possibile descrivere l'evoluzione delle quantità meccaniche di particelle e volumi in moto arbitrario, come si vedrà in \S.
+
+In una descrizione \textit{puntuale} del fenomeno, vengono introdotti due sistemi di coordinate: uno è solidale con il mezzo continuo dipendente dal tempo, mentre l'altro è fisso. 
+Si può pensare al sistema di riferimento solidale con il continuo come un' ``etichetta'' che viene applicata a ogni \textbf{punto materiale} del mezzo continuo stesso. Un sistema di riferimento fisso, invece, è indipendente dal moto del mezzo continuo, come ad esempio un sistema di coordinate cartesiane, la cui origine e i cui assi sono fissi nel tempo.
+%
+Mentre il mezzo continuo evolve nel tempo (trasla, ruota, si deforma \dots), un punto materiale ha coordinate costanti $\bm{x_0}$ rispetto al sistema di riferimento ``solidale al volume'', cioè che si muove e si deforma insieme al volume: questa coordinata, detta lagrangiana, può essere pensata come l'``etichetta'' assegnata al punto materiale del continuo. Le coordinate euleriane $\bm{x}(\bm{x_0},t)$ del punto materiale con coordinate lagrangiane $\bm{x_0}$, ne descrivono il moto nel sistema di riferimento fisso e in generale sono una funzione del tempo
+%
+\begin{remark}
+ Il sistema di riferimento solidale al corpo dipende dal tempo, mentre le coordinate lagrangiane $\bm{x_0}$ di un punto materiale sono costanti.
+ Il sistema di riferimento fisso è indipendente dal tempo, mentre le coordinate euleriane $\bm{x}$ di un punto materiale del volume (quindi con $\bm{x_0}$ costante) sono dipendenti dal tempo.
+\end{remark}
+% 
+Assumendo che all'istante $t=0$ i due sistemi di coordinate coincidano, e che quindi coincidano anche le coordinate euleriane e lagrangiane $\bm{x}(\bm{x_0},0) = \bm{x_0}$, le coordinate lagrangiane $\bm{x_0}$ rappresentano la configurazione (iniziale) di riferimento della configurazione attuale $\bm{x}(\bm{x_0},t)$. La trasformazione $\bm{x}(\bm{x_0},t)$ descrive l'evoluzione nel tempo $t$ dei punti $\bm{x}(0) = \bm{x_0}$ appartenenti al volume $V_0 = V(0)$, all'istante iniziale. La velocità $\bm{u}(\bm{x},t)$ del mezzo continuo nel punto $\bm{x}(\bm{x_0},t)$, per definizione di punto materiale, coincide con la velocità $\bm{u_0}(\bm{x_0},t)$ del punto etichettato con $\bm{x_0}$: questa è la derivata nel tempo della sua posizione $\bm{x}$, cioè con la derivata nel tempo della mappa $\bm{x}(\bm{x_0},t)$ a coordinata lagrangiana (che identifica la particella) costante,
+ \begin{equation}
+  \bm{u_0}(\bm{x_0},t) = \dfrac{\partial \bm{x}}{\partial t}\bigg|_{\bm{x_0}}(\bm{x_0},t) =: \dfrac{d \bm{x}}{d t}(\bm{x_0},t) =: \dfrac{D\bm{x}}{D t}(\bm{x_0},t) \ ,
+ \end{equation}
+dove è stato introdotto il simbolo $D/Dt$ di \textbf{derivata materiale} che rappresenta l'evoluzione della quantità alla quale è applicata, seguendo il moto del mezzo continuo: la derivata materiale rappresenta la variazione nel tempo della quantità ``sentita'' dalle singole particelle materiali.
+%
+ Nella descrizione euleriana del problema, i campi sono funzioni delle variabili indipendenti spazio $\bm{x}$ e tempo $t$. Data una funzione $f(\bm{x},t)$ (scalare, vettoriale, tensoriale), viene indicata con
+ \begin{equation}
+ \dfrac{\partial f}{\partial t} = \dfrac{\partial f}{\partial t}\bigg|_{\bm{x}}(\bm{x},t) \ ,
+ \end{equation}
+ la derivata parziale rispetto al tempo, che rappresenta la variazione della quantità $f(\bm{x},t)$ nel punto fisso $\bm{x}$ dello spazio, che coordinata euleriana costante.
+
+%Si riporta poi per completezza e per dare un'interpretazione anche la definizione di $\dfrac{d f}{d t}$, già usata sopra nella
+% definizione della velocità di un punto del volume
+% \begin{equation}
+%  \dfrac{d f}{d t} = \dfrac{\partial f}{\partial t}\bigg|_{\bm{x_0}}
+% \end{equation}
+%che viene svolta a $\bm{x_0}$ costante: questa derivata temporale è quella che consente di considerare la variazione
+% della funzione $f$, percepita dal punto etichettato $\bm{x_0}$ che evolve con il volume.
+%%
+\'E possibile trovare il legame tra le due derivate utilizzando la \textit{regola di derivazione di funzioni composte} e la funzione $\bm{x}(\bm{x_0},t)$ che descrive il moto dei punti materiali del sistema.
+Data una funzione $f(\bm{x},t)$ (rappresentazione euleriana), viene definita $f_0(\bm{x_0},t)$ come la funzione composta $f_0 = f \circ \bm{x}$ (descrizione lagrangiana). Ipotizzando poi che si possano esprimere le coordinate lagrangiane come funzione di quelle euleriane, $\bm{x_0}(\bm{x},t)$, è possibile scrivere
+\begin{equation}
+ f(\bm{x},t) = f(\bm{x}(\bm{x_0},t),t) = f_0(\bm{x}_0,t) = f_0(\bm{x_0}(\bm{x},t),t) \ .
+\end{equation}
+Utilizzando la regola di derivazione per le funzioni composte, si ottiene il legame cercato,
+\begin{equation}\label{eqn:cin:lagr-eul}
+\begin{aligned}
+ \dfrac{D f}{D t}(\bm{x},t) & = \dfrac{\partial f}{\partial t}\bigg|_{\bm{x_0}} = \dfrac{\partial}{\partial t}\bigg|_{\bm{x_0}} f(\bm{x}(\bm{x_0},t),t) =  \\ 
+  & = \dfrac{\partial f}{\partial \bm{x}}\bigg|_{t} \cdot \dfrac{\partial \bm{x}}{\partial t}\bigg|_{\bm{x_0}} 
+  + \dfrac{\partial f}{\partial t}\bigg|_{\bm{x}} = 
+  \dfrac{\partial f}{\partial t} +  
+  \dfrac{\partial x_i}{\partial t}\bigg|_{\bm{x_0}} \dfrac{\partial f}{\partial x_i}\bigg|_{t}  = 
+  \dfrac{\partial f}{\partial t} + \bm{u} \cdot \bm{\nabla} f \ ,
+\end{aligned}
+\end{equation}
+dove si è indicato con $\bm{u}(\bm{x},t) = \dfrac{\partial \bm{x}}{\partial t}\bigg|_{\bm{x_0}} (\bm{x_0}(\bm{x},t),t)$ il campo di velocità riferito a una descrizione euleriana del problema e si è riconosciuto l'operatore $\bm{\nabla}$ nell'ultimo passaggio. Infine è possibile ``rimuovere'' la funzione $f$ per ottenere la relazione tra la forma delle due derivate, valida per funzioni scalari, vettoriali, tensoriali,
+\begin{fBox}
+\begin{equation}\label{eqn:cin:lagr-eul}
+ \dfrac{D \rule{1.5ex}{.4pt}}{D t} := \dfrac{d \rule{1.5ex}{.4pt}}{d t} := \dfrac{\partial \rule{1.5ex}{.4pt}}{\partial t}\bigg|_{\bm{x_0}} = \dfrac{\partial \rule{1.5ex}{.4pt}}{\partial t} + \bm{u} \cdot \bm{\nabla} \rule{1.5ex}{.4pt} \ .
+\end{equation}
+\end{fBox}
+
+Come esempio, applichiamo la regola (\ref{eqn:cin:lagr-eul}) per ricavare la forma euleriana e lagrangiana del campo di velocità e di accelerazione delle particelle del continuo. Il campo di velocità $\bm{u}(\bm{x},t)$ si ottiene dalla derivata materiale della trasformazione $\bm{x}(x_0,t)$,
+\begin{equation}
+ \bm{u}(\bm{x},t) = \dfrac{D \bm{x}}{D t} = \underbrace{\dfrac{\partial \bm{x}}{\partial t}\bigg|_{\bm{x}} }_{=0} + \bm{u_0}(\bm{x_0},t) \cdot \underbrace{ \bm{\nabla} \bm{x} }_{=\mathbb{I}} =
+ \bm{u_0}(\bm{x_0},t) \ .
+\end{equation}
+In questo caso, non è stato ottenuto nulla di nuovo. Il campo di accelerazione nella descrizione euleriana del fenomeno viene ottenuto calcolando l'accelerazione delle particelle materiali con la derivata materiale alla velocità. Per componenti, l'accelerazione della particella materiale identificata con $\bm{x_0}$ è
+\begin{equation}
+ a_{i}(\bm{x},t) = \dfrac{D u_{i}}{D t} = 
+ \dfrac{\partial u_i}{\partial t} + u_{k} \dfrac{\partial u_i}{\partial x_k} \ .
+\end{equation}
+Introducendo l'operatore advettivo $\bm{v}\cdot \bm{\nabla}$, è possibile scrivere il campo di accelerazione (che comparirà nel bilancio della quantità di moto) in forma vettoriale
+\begin{equation}
+ \bm{a}(\bm{x},t) = \dfrac{D \bm{u}}{D t}(\bm{x},t) = \dfrac{\partial \bm{u}}{\partial t}(\bm{x},t) + (\bm{u}(\bm{x},t) \cdot \bm{\nabla}) \bm{u}(\bm{x},t) \ ,
+\end{equation}
+dove sono stati esplicitati gli argomenti $(\bm{x},t)$ delle funzioni, per evidenziare la rappresentazione euleriana. 
+
+\begin{remark}
+ Una volta compresa la differenza tra le due descrizioni del problema, non è necessario esprimere in maniera esplicita gli argomenti delle funzioni. Da qui in avanti, verrà privilegiata una descrizione euleriana, per campi, del problema.
+\end{remark}
+%
+In alcuni casi, come ad esempio problemi che riguardano lo studio di correnti attorno a corpi mobili, può essere conveniente utilizzare una rappresentazione arbitraria del problema, descrivendo il fenomeno seguendo l'evoluzione delle grandezza meccaniche su punti, ``etichettati'' dalla coordinata arbitraria $\bm{\chi}$, il cui moto è descritto in coordinate euleriane dalla funzione $\bm{x}(\bm{\chi},t)$. Seguendo lo stesso procedimento svolto per le particelle materiali, la velocità $\bm{v}$ di questi punti in moto arbitrario è uguale alla derivata parziale
+\begin{equation}
+ \bm{v} = \dfrac{\partial \bm{x}}{\partial t} \bigg|_{\bm{\chi}} \ ,
+\end{equation}
+svolta a coordinata $\bm{\chi}$ costante. Ancora seguendo lo stesso procedimento svolto in precedenza, è possibile ricavare la relazione tra la rappresentazione arbitraria e quella euleriana,
+\begin{fBox}
+\begin{equation}\label{eqn:cin:ale-eul}
+ \dfrac{\partial \rule{1.5ex}{.4pt}}{\partial t} \bigg|_{\bm{\chi}} = \dfrac{\partial \rule{1.5ex}{.4pt}}{\partial t} \bigg|_{\bm{x}} + \bm{v} \cdot \bm{\nabla} \rule{1.5ex}{.4pt} \ .
+\end{equation}
+\end{fBox}
+e, confrontando la (\ref{eqn:cin:lagr-eul}) e la (\ref{eqn:cin:ale-eul}), la relazione tra la rappresentazione arbitraria e quella lagrangiana,
+\begin{fBox}
+\begin{equation}
+  \dfrac{\partial \rule{1.5ex}{.4pt}}{\partial t} \bigg|_{\bm{x_0}} = \dfrac{\partial \rule{1.5ex}{.4pt}}{\partial t} \bigg|_{\bm{\chi}} + (\bm{u} - \bm{v}) \cdot \bm{\nabla} \rule{1.5ex}{.4pt} \ .
+\end{equation}
+
+\section{Velocità di traslazione, rotazione e deformazione}
+In questa sezione viene studiato il moto di un segmento materiale, che segue il moto del mezzo continuo. Viene introdotto il tensore gradiente di velocità $\bm{\nabla}\bm{u}$, con $\bm{u}(\bm{x},t)$ il campo di velocità. Questo tensore viene prima scritto come somma della sua parte antisimmetrica $\mathbb{W}$ e della sua parte simmetrica $\mathbb{D}$, la quale può essere a sua volta scomposta nella parte idrostatica e nella parte deviatorica $\mathbb{D}^d$. Viene infine descritta la natura di questi tensori grazie alla loro influenza sul moto di segmento materiale. 
+
+Il segmento materiale viene identificato dal vettore $\Delta\bm{x_{12}}(t) = \bm{x_2}(t) - \bm{x_1}(t)$, i cui estremi sono i punti di coordinate $\bm{x_1}(t)$ e $\bm{x_2}(t)$. Indicando con $\bm{u_1}(t) = \bm{u}(\bm{x_1}(t),t)$ e $\bm{u_2}(t) = \bm{u}(\bm{x_2}(t),t)$ loro velocità, è possibile ricavare l'evoluzione temporale del segmento materiale,
+\begin{equation}
+ \Delta\bm{x_{12}}(t+\Delta t) = \Delta\bm{x_{12}}(t) + \left( \bm{u_2}(t) - \bm{u_1}(t) \right) \Delta t + o(\Delta t) \ .
+\end{equation}
+Tornando alla descrizione euleriana del problema, è possibile scrivere la differenza di velocità introducendo il tensore gradiente di velocità,
+\begin{equation}
+\begin{aligned}
+ \bm{u_2}(t) - \bm{u_1}(t) & = \bm{u}(\bm{x_2}(t),t) - \bm{u}(\bm{x_1}(t),t) = \\
+ & = \bm{u}\left(\bm{x_1}(t)+\Delta\bm{x_{12}}(t),t\right) - \bm{u}\left(\bm{x_1}(t),t\right) = \\
+ & = \bm{u}\left(\bm{x_1}(t),t\right) + \bm{\nabla}\bm{u}\left(\bm{x_1}(t),t\right) \cdot \Delta\bm{x_{12}}(t) - \bm{u}\left(\bm{x_1}(t),t\right) + o(|\Delta\bm{x_{12}}(t)|) = \\
+ & = \bm{\nabla}\bm{u}\left(\bm{x_1}(t),t\right) \cdot \Delta\bm{x_{12}}(t) + o(|\Delta\bm{x_{12}}(t)|) \ . \\
+ \end{aligned}
+\end{equation}
+Riarrangiando i termini si può scrivere,
+\begin{equation}\label{eqn:cin:material-segm}
+ \Delta\bm{x_{12}}(t+\Delta t) = \Delta\bm{x_{12}}(t) + 
+ \big[ \bm{\nabla}\bm{u}\left(\bm{x_1}(t),t\right) \cdot \Delta\bm{x_{12}}(t) + o(|\Delta\bm{x_{12}}(t)|) \big] \Delta t + o(\Delta t) \ .
+\end{equation}
+e facendo tendere a zero $\Delta t$, si ricava
+\begin{equation}
+ \dfrac{d \Delta\bm{x_{12}}}{d t}(t) = \bm{\nabla}\bm{u}\left(\bm{x_1}(t),t\right) \cdot \Delta\bm{x_{12}}(t) + o(|\Delta\bm{x_{12}}(t)|) \ .
+\end{equation}
+%
+Nell'ipotesi che i termini $o(|\Delta \bm{x_{12}}(t)|)$ siano trascurabili, la velocità $\bm{u_2}$ del punto $\bm{x_2}$ differisce dalla velocità $\bm{u_1}$ del punto $\bm{x_1}$ del termine $d \Delta\bm{x_{12}}/d t$ che rappresenta le eventuali rotazioni rigide e le deformazioni del mezzo continuo,
+\begin{equation}\label{eqn:cin:relative-vel-1}
+ \bm{u_2}(t) = \bm{u_1}(t) + \bm{\nabla}\bm{u}\left(\bm{x_1}(t),t\right) \cdot \Delta\bm{x_{12}}(t) \ .
+\end{equation}
+ 
+\subsection{Tensore gradiente di velocità}
+ Il tensore gradiente di velocità può essere scritto come somma $\bm{\nabla}\bm{u} = \mathbb{D} + \mathbb{W}$ della sua parte simmetrica $\mathbb{D}$, il \textbf{tensore velocità di deformazione}, e della su parte antisimmetrica $\mathbb{W}$, il \textbf{tensore di spin},
+ \begin{equation}
+  \mathbb{D} = \dfrac{1}{2}\left(\bm{\nabla} \bm{u} + \bm{\nabla}^T \bm{u}\right)
+  \quad , \quad 
+  \mathbb{W} = \dfrac{1}{2}\left(\bm{\nabla} \bm{u} - \bm{\nabla}^T \bm{u}\right) \ ,
+ \end{equation}
+ i quali possono essere scritti in componenti, in un sistema di coordinate cartesiane come 
+ \begin{equation}
+  D_{ij} = \dfrac{1}{2}\left[ \dfrac{\partial u_i}{\partial x_j} + \dfrac{\partial u_j}{\partial x_i} \right] \quad , \quad 
+  W_{ij} = \dfrac{1}{2}\left[ \dfrac{\partial u_i}{\partial x_j} - \dfrac{\partial u_j}{\partial x_i} \right] \ .
+ \end{equation}
+ Il tensore velocità di deformazione può essere poi scomposto nella sua parte idrostatica e nella sua parte deviatorica $\mathbb{D}^d$,
+ \begin{equation}
+ \begin{aligned}
+  \mathbb{D} & = \dfrac{1}{3} \text{tr}(\mathbb{D}) \mathbb{I} + \mathbb{D}^d \quad , \quad
+   \mathbb{D}^d = \mathbb{D} - \dfrac{1}{3} \text{tr}(\mathbb{D}) \mathbb{I} \ ,
+ \end{aligned}
+ \end{equation}
+ dove la traccia $\text{tr}(\mathbb{D})$ è uguale alla divergenza del campo di velocità $\bm{\nabla} \cdot \bm{u}$.
+ \newline
+ Il tensore di spin è un tensore antisimmetrico del secondo ordine. Nello spazio tridimensionale ha solo tre componenti indipendenti, che contengono le componenti del vettore vorticità $\bm{\omega} = \bm{\nabla} \times \bm{u}$. Ad esempio, utilizzando un sistema di coordinate cartesiane, è possibile scrivere il tensore di spin come
+ \begin{equation}
+  \mathbb{W} = \dfrac{1}{2}\begin{bmatrix}
+   0 & -\omega_z & \omega_y \\
+   \omega_z & 0 & -\omega_x \\
+   -\omega_y & \omega_x & 0 \\   
+  \end{bmatrix} = \dfrac{1}{2}\text{Spin}(\bm{\omega}) \ .
+ \end{equation}
+ L'operazione $\mathbb{W} \cdot \bm{v}$ tra il tensore antisimmetrico $\mathbb{W}=\text{Spin}(\bm{\Omega})$ e un vettore $\bm{v}$ qualsiasi coincide con l'operazione $\bm{\Omega} \times \bm{v}$.
+Introducendo la scomposizione di $\bm{\nabla} \bm{u}$ nella formula (\ref{eqn:cin:relative-vel-1}), si ricava
+\begin{equation}
+\begin{aligned}
+ \bm{u_2}(t) & = \bm{u_1}(t) + \dfrac{1}{2}\bm{\omega}(\bm{x_1}(t),t) \times (\bm{x_2}(t) - \bm{x_1}(t) ) +  & \text{(atto di moto rigido)} \\ 
+& + \mathbb{D}(\bm{x_1}(t),t) \cdot (\bm{x_2}(t) - \bm{x_1}(t)) \ . & \text{(deformazione)}
+ %& + \left[ \dfrac{1}{3} \text{tr}(\mathbb{D}) \mathbb{I} +  \mathbb{D}^d \right] \cdot (\bm{x_2}(t) - \bm{x_1}(t)) \ . & \text{(deformazione)}
+\end{aligned}
+\end{equation}
+Da questa formula si possono riconoscere i contributi alla velocità $\bm{u_2}$ di ``traslazione'' (la velocità del punto $\bm{x_1}$), di rotazione con velocità angolare $\bm{\Omega} = \frac{1}{2} \bm{\omega}$ e di deformazione, $\mathbb{D} \cdot \Delta\bm{x_{12}}$.
+
+\subsection{Derivate temporali di oggetti materiali}
+In questa sezione vengono descritti gli effetti dei singoli termini nei quali può essere scomposto il gradiente di velocità tramite i loro effetti sull'evoluzione di un segmento materiale $\bm{v}$ o di una combinazione di segmenti materiali ``elementari'' (come ad esempio il prodotto scalare o il triplo prodotto)	, per i quali i termini di ordine $o(|\bm{v}|)$ sono considerati trascurabili.
+
+\paragraph{Vettore materiale.}
+Scrivendo il vettore $\bm{v}$ come prodotto del suo modulo $v$ per il versore $\bm{\hat{n}}$ che ne identifica la direzione, $\bm{v} = v \bm{\hat{n}}$, è possibile esprimerne la derivata nel tempo come,
+\begin{equation}\label{eqn:cin:dvvec}
+ \dfrac{d \bm{v}}{dt} = \dfrac{dv}{dt}\bm{\hat{n}} + v \dfrac{d \bm{\hat{n}}}{d t} \ .
+\end{equation}
+
+\paragraph{Vettore materiale: modulo.}
+Utilizzando l'identità $\bm{\dot{\hat{n}}} \cdot \bm{\hat{n}} = 0$\footnote{
+ Poichè $\bm{\hat{n}}$ è un versore, $|\bm{\hat{n}}|^2 = \bm{\hat{n}}\cdot\bm{\hat{n}} = 1$. La derivata nel tempo di quest'ultima espressione diventa $0 = \bm{\dot{\hat{n}}} \cdot \bm{\hat{n}} + \bm{\hat{n}} \cdot \bm{\dot{\hat{n}}} = 2 \bm{\dot{\hat{n}}} \cdot \bm{\hat{n}}$, da cui si ricava l'identità desiderata.
+}, moltiplicando scalarmente per $\bm{\hat{n}}$ l'ultima espressione, si ricava la derivata nel tempo del modulo $v$ del vettore $\bm{v}$,
+\begin{equation}\label{eqn:cin:dvmod}
+ \dfrac{d v}{d t} = \bm{\hat{n}} \cdot \dfrac{d \bm{v}}{dt} 
+ - \underbrace{v \dfrac{d\bm{\hat{n}}}{dt}\cdot\bm{\hat{n}}}_{=0} = \bm{\hat{n}} \cdot \left[ \mathbb{D} + \mathbb{W} \right] \cdot \bm{v} = 
+ \bm{\hat{n}} \cdot \mathbb{D} \cdot \bm{\hat{n}} v \ ,
+\end{equation}
+avendo introdotto la scomposizione $\bm{\nabla} \bm{u} = \mathbb{D} + \mathbb{W}$ nella formula (\ref{eqn:cin:material-segm}) applicata al vettore materiale $\bm{v}$ e utilizzato l'identità $\bm{\hat{n}} \cdot \mathbb{W} \cdot \bm{\hat{n}} = 0$, poiché $\mathbb{W}$ è antisimmetrica.
+Poichè il tensore velocità di deformazione è simmetrico, esiste una base di vettori ortonormali $\{\bm{\hat{p}_1},\bm{\hat{p}_2},\bm{\hat{p}_3}\}$ che permettono di scrivere la decomposizione spettrale di $\mathbb{D}$,
+\begin{equation}
+ \mathbb{D} = \lambda_1 \bm{\hat{p}_1} \otimes \bm{\hat{p}_1} +
+              \lambda_2 \bm{\hat{p}_2} \otimes \bm{\hat{p}_2} +
+              \lambda_3 \bm{\hat{p}_3} \otimes \bm{\hat{p}_3} \ .
+\end{equation}
+I vettori $\bm{\hat{p}_i}$ sono gli autovettori del tensore $\mathbb{D}$ che ne rappresentano le \textit{direzioni principali}, mentre gli scalari $\lambda_i$ sono gli autovalori associati, tali che $\mathbb{D} \cdot \bm{\hat{p}_i} = \lambda_i \bm{\hat{p_i}}$. \'E quindi possibile scrivere la derivata nel tempo del modulo $v$ del vettore materiale $\bm{v}$ come
+\begin{equation}
+ \dfrac{1}{v} \dfrac{d v}{d t} = \lambda_1 n_1^2 +  \lambda_2 n_2^2 +  \lambda_3 n_3^2 \ ,
+\end{equation}
+avendo indicato con $n_i = \bm{\hat{n}} \cdot \bm{\hat{p}_i}$ le proiezioni del versore $\bm{\hat{n}}$ sugli autovettori del tensore $\mathbb{D}$.
+%
+
+\paragraph{Vettore materiale: direzione.}
+Combinando la (\ref{eqn:cin:dvvec}) e la (\ref{eqn:cin:dvmod}), è possibile ricavare la derivata nel tempo della direzione $\bm{\hat{n}}$ del vettore materiale $\bm{v}$,
+\begin{equation}
+\begin{aligned}
+ \dfrac{d \bm{\hat{n}}}{d t} = \dfrac{1}{v}\dfrac{d\bm{v}}{dt} - \dfrac{1}{v} \bm{\hat{n}} \dfrac{d v}{d t}  & = [ \mathbb{D} + \mathbb{W} ] \cdot \bm{\hat{n}} - \bm{\hat{n}} \bm{\hat{n}} \cdot \mathbb{D} \cdot \bm{\hat{n}} = \\
+   & =  [ \mathbb{I} - \bm{\hat{n}} \otimes \bm{\hat{n}} ] \cdot \mathbb{D} \cdot \bm{\hat{n}} + \mathbb{W} \cdot \bm{\hat{n}} = \\
+   & = [ \mathbb{I} - \bm{\hat{n}} \otimes \bm{\hat{n}} ] \cdot \mathbb{D} \cdot \bm{\hat{n}} + \dfrac{1}{2} \bm{\omega} \times \bm{\hat{n}} \ .
+\end{aligned}
+\end{equation}
+Il tensore $\mathbb{P} := \mathbb{I} - \bm{\hat{n}} \otimes \bm{\hat{n}}$ è il proiettore ortogoanle in direzione perpendicolare a $\bm{\hat{n}}$, che ha nucleo generato da $\bm{\hat{n}}$, cioè $\mathbb{P} \cdot \bm{\hat{n}} = \bm{0}$. Introducendo la scomposizione del tensore $\mathbb{D}$ nella sua parte idrostatica e deviatorica, è possibile dimostrare che la parte idrostatica non influenza la derivata del versore $\bm{\hat{n}}$ 
+\begin{equation}
+ \dfrac{d \bm{\hat{n}}}{d t} = [ \mathbb{I} - \bm{\hat{n}} \otimes \bm{\hat{n}} ] \cdot \mathbb{D}^d \cdot \bm{\hat{n}} + \dfrac{1}{2} \bm{\omega} \times \bm{\hat{n}} \ ,
+\end{equation}
+ poiché $\mathbb{P} \cdot \mathbb{I} \cdot \bm{\hat{n}} = \mathbb{P} \cdot \bm{\hat{n}} = \bm{0}$. In generale quindi la direzione di un vettore materiale dipende dalle rotazioni, rappresentate dal termine $\frac{1}{2} \bm{\omega} \times \bm{\hat{n}}$ e dalla parte deviatorica del tensore velocità di deformazione. Questo ultimo contributo può essere nullo in alcuni casi, come ad esempio
+ \begin{itemize}
+  \item quando lo stato di deformazione è ``idrostatico'', per il quale $\mathbb{D}^d = 0$,
+  \item quando il vettore $\bm{v}$ appartenente al nucleo di $\mathbb{D}^d$, $\mathbb{D}^d \cdot \bm{v} = \bm{0}$, orientato cioè in una direzione che non subisce una deformazione deviatorica,
+  \item quando il vettore $\bm{v}$ è allineato con una delle direzioni principali $\bm{\hat{p}_i}$ di $\bm{D}^d$: in questo caso, il vettore $\mathbb{D} \cdot \bm{\hat{n}}$ è allineato con $\bm{\hat{n}}$, poichè $\mathbb{D} \cdot \bm{\hat{n}} = \lambda_i \bm{\hat{n}}$, e quindi appartiene al nucleo del proiettore $\mathbb{P}$, cioè $\mathbb{P} \cdot (\mathbb{D} \cdot \bm{\hat{n}}) = \bm{0}$.
+ \end{itemize}
+ 
+\paragraph{Angolo tra vettori materiali.}
+Calcolando la derivata materiale del prodotto scalare tra due vettori materiali $\bm{v}$ e $\bm{w}$, è possibile verificare che il tensore di spin $\mathbb{W}$ rappresenta una rotazione rigida, non modificando né i moduli dei singoli vettori materiali, né l'angolo compreso tra di essi. Infatti la derivata 
+\begin{equation}
+\begin{aligned}
+ \dfrac{d}{dt} (\bm{v} \cdot \bm{w}) & = \dfrac{d\bm{v}}{dt} \cdot \bm{w} + \bm{v} \cdot \dfrac{d\bm{w}}{dt} = \\
+  & = \bm{w} \cdot \mathbb{D} \cdot \bm{v} + \dfrac{1}{2} \bm{w} \cdot \bm{\omega} \times \bm{v} + 
+   \bm{v} \cdot \mathbb{D} \cdot \bm{w} + \dfrac{1}{2} \bm{v} \cdot \bm{\omega} \times \bm{w} = \\
+   & = 2 \bm{w} \cdot \mathbb{D} \cdot \bm{v} \ ,
+\end{aligned}
+\end{equation}
+avendo utilizzato la simmetria del tensore velocità di deformazione $\mathbb{D}$ e l'identità vettoriale $\bm{c} \cdot \bm{a} \times \bm{b} = - \bm{b} \cdot \bm{a} \times \bm{c}$.
+\newline
+La derivata del coseno dell'angolo formato dai vettori materiali $\bm{v} = v \bm{\hat{n}_v}$, $\bm{w} = w \bm{\hat{n}_w}$ dipende solamente dalla parte deviatorica del tensore velocità di deformazione,
+\begin{equation}
+\begin{aligned}
+ \dfrac{d \cos \theta_{vw}}{dt} & = \dfrac{d}{d t} \dfrac{\bm{v} \cdot \bm{w}}{|\bm{v}||\bm{w}|} = \\
+  & = 2 \bm{\hat{n}_w} \cdot \mathbb{D}^d \bm{\hat{n}_v} - \bm{\hat{n}_v} \cdot \bm{\hat{n}_w} (\bm{\hat{n}_v} \cdot \mathbb{D}^d \cdot \bm{\hat{n}_v} + \bm{\hat{n}_w} \cdot \mathbb{D}^d \cdot \bm{\hat{n}_w} ) = \\
+  & = 2 (1 - \bm{\hat{n}_v} \cdot \bm{\hat{n}_w}) \bm{\hat{n}_w} \cdot \mathbb{D}^d \bm{\hat{n}_v} - \bm{\hat{n}_v} \cdot \bm{\hat{n}_w} (\bm{\hat{n}_v} - \bm{\hat{n}_w}) \cdot \mathbb{D}^d \cdot (\bm{\hat{n}_v} - \bm{\hat{n}_w}) \ .
+\end{aligned}
+\end{equation}
+
+\paragraph{Volume generato da vettori materiali.}
+Infine, è possibile dimostrare che la derivata del volume materiale (elementare, per il quale i termini $o(|\Delta \bm{x}|)$ siano trascurabili) $V = \bm{a} \times \bm{b} \cdot \bm{c}$ del parallelepipedo formato dai tre vettori materiali $\bm{a}$, $\bm{b}$, $\bm{c}$ vale 
+\begin{equation}
+ \dfrac{d V}{d t} = (\bm{\nabla} \cdot \bm{u}) V \ .
+\end{equation}
+La divergenza del campo di velocità rappresenta quindi la derivata nel tempo di un volume materiale relativa al volume materiale stesso. Il \textbf{vincolo cinematico di incomprimibilità} impone che l'estensione di un volume materiale non vari nel tempo, $dV/dt = 0$, ed è quindi equivalente alla condizione di solenoidalità del campo di velocità, $\bm{\nabla} \cdot \bm{u} = 0$.
+
+%\subsection{Vincolo di incomprimibilità}
+
+\section{Curve caratteristiche}
+Per descrivere il moto di un fluido vengono definite quattro famiglie di curve: le linee di corrente, le traiettorie, le curve di emissione (o linee di fumo) e le tracce. Viene data una definizione matematica di queste curve, che possono essere ottenute durante le attività sperimentali tramite delle tecniche di visualizzazione del campo di moto, come mostrato nel seguente video,
+%
+\noindent
+\vspace{0.3cm}
+\href{https://www.youtube.com/watch?v=nuQyKGuXJOs}{Stanford 1963 - Flow Visualization}. \newline
+\texttt{https://www.youtube.com/watch?v=nuQyKGuXJOs}, nel caso non funzionasse il collegamento sopra a uno degli storici video del National Committee.
+%
+\vspace{0.3cm}
+
+Come già anticipato, secondo la descrizione euleriana del moto di un mezzo continuo, il campo di velocità è rappresentato dalla funzione vettoriale $\bm{u}$ i cui argomenti indipendenti sono la coordinata spaziale $\bm{r}$ e quella temporale $t$, $\bm{u}(\bm{r},t)$. Vengono ora definite le quattro curve caratteristiche elencate sopra:
+\begin{itemize}
+\item
+Le \textbf{linee di corrente} sono curve $\bm{S}$ tangenti al campo vettoriale $\bm{u}(\bm{r},t)$ in ogni punto dello spazio $\bm{r}$, all'istante temporale $t$ considerato. Essendo curve (dimensione=1), possono essere espresse in forma parametrica come funzioni di un parametro scalare $p$, $\bm{S}(p)$. La ``traduzione matematica'' della definizione è quindi
+\begin{equation}\label{eqn:cinematica:ldc}
+ \frac{d\bm{S}}{dp}(p) = \lambda(p) \bm{u}(\bm{S}(p),t) \ ,
+\end{equation}
+cioè il vettore tangente ${d\bm{S}(p)}/{dp}$ alla curva $\bm{S}(p)$, nel punto identificato dal valore del parametro $p$, è parallelo al vettore velocità $\bm{u}$ calcolato nello stesso punto $\bm{S}(p)$, al tempo considerato $t$.
+La funzione $\lambda(p)$ dipende dalla parametrizzazione utilizzata e non influisce sulla forma della linea di corrente. L'equazione (\ref{eqn:cinematica:ldc}) rappresenta tutte le linee di corrente: per ottenere la linea di corrente passante per un punto, è necessario imporre questa condizione come condizione al contorno.
+
+\item
+Una \textbf{traiettoria} descrive il moto di una singola particella materiale, la cui velocità è uguale a quella del fluido, nella posizione in cui si trova e all'istante di tempo ``attuale''. La traiettoria di una particella è descritta dall curva $\bm{R}(t)$, parametrizzata con il tempo $t$, che soddisfa il seguente problema differenziale 
+\begin{equation}
+\begin{cases}
+ \dfrac{d\bm{R}}{dt}(t) = \bm{u}(\bm{R}(t),t) \\
+ \bm{R}(t_0) = \bm{R_0} \ .
+\end{cases}
+\end{equation}
+L'equazione differenziale traduce la definizione di particella materiale: la velocità della particella materiale $\bm{v}(t) = d \bm{R} / dt (t)$ è uguale alla velocità del fluido nello stesso punto allo stesso istante di tempo, $\bm{u}(\bm{R}(t),t)$.
+La condizione iniziale identifica tra tutte le traiettorie delle infinite particelle materiali, quella della particella che all'istante $t_0$ passa per il punto $\bm{R_0}$.\newline
+Fissati i ``parametri'' $t_0$ e $\bm{R_0}$ che identificano la particella desiderata, la sua traiettoria è descritta dalla curva $\bm{R}(t;t_0,\bm{R_0})$, funzione del tempo ``attuale'' $t$.
+
+\item
+Una \textbf{linea di fumo} è il luogo dei punti descritto dalla posizione al tempo $t$ (fissato) di tutte le particelle materiali passate per un punto (fissato) nello spazio, $\bm{R_0}$, negli istanti di tempo $t_0$ precedenti a $t$, $t_0 < t$.
+\begin{equation}
+\begin{cases}
+ \dfrac{d\bm{R}}{dt}(t) = \bm{u}(\bm{R}(t),t) \\
+ \bm{R}(t_0) = \bm{R_0} \ .
+\end{cases}
+\end{equation}
+Il problema è identico a quello delle traiettorie.
+Cambia però il ruolo di $t$, $t_0$, $\bm{R_0}$: la linea di fumo al ``tempo di osservazione'' $t$ formata da tutte le particelle passanti da $\bm{R_0}$ a istanti temporali $t_0$, con $t_0<t$, è una descritta dalla curva $\bm{R}(t_0;t,\bm{R_0})$, funzione dell'istante $t_0$.
+
+
+
+\item
+ Una \textbf{traccia} è il luogo dei punti descritto dalla posizione al tempo $t$ (fissato) di tutte le particelle materiali che si trovavano su una curva $\bm{R_0}(p)$ al tempo $t_0$ (fissato).  
+\begin{equation}
+\begin{cases}
+ \dfrac{d\bm{R}}{dt}(t) = \bm{u}(\bm{R}(t),t) \\
+ \bm{R}(t_0) = \bm{R_0} \ .
+\end{cases}
+\end{equation}
+Ancora una volta il problema è identico a quello delle traiettorie ma cambia il ruolo di $t$, $t_0$, $\bm{R_0}$: fissati i parametri $t_0$ e $t$ che identificano rispettivamente l'istante di tempo in cui le particelle materiali desiderate si trovano sulla curva $\bm{R_0}$ e l'istante di tempo in cui la curva viene osservata, la traccia è una funzione dell luogo dei punti ``iniziale'' $\bm{R_0}$, $\bm{R}(\bm{R_0};t,t_0)$. 
+
+\end{itemize}
+
+\vspace{0.5cm}
+\paragraph{Osservazione 1.} Nel caso di campi stazionari, cioè indipendenti dal tempo, $\bm{u}(\bm{r},t) = \bm{u}^{(staz)}(\bm{r})$,  linee di corrente, traiettorie e linee di fumo coincidono.
+
+\vspace{3cm}

@@ -1,0 +1,127 @@
+\noindent
+\begin{exerciseS}[Equazione integrale di Von Karman]
+Dati $\rho = 1.225 kg/m^3$, $\nu = 10^{-5} m^2/s$ e velocità esterna $U(x) = 1.45 m/s$, utilizzando le formule per il profilo di velocità e sforzo a parete per lo strato limite turbolento, calcolare lo spessore $\delta(x)$ dello strato limite.
+\begin{equation}
+  \frac{u(x,y)}{U(x)} = 
+  \begin{cases}
+    \displaystyle\left( \frac{y}{\delta(x)} \right)^{\frac{1}{7}} &  \qquad y \le \delta(x) \\
+    1 &  \qquad y > \delta(x)
+  \end{cases}
+\end{equation}
+\begin{equation}
+  \tau_w = 0.0225 \rho U^2 \displaystyle \left( \frac{\nu}{U \delta} \right) ^ {\frac{1}{4}}
+\end{equation}
+
+\end{exerciseS}
+
+\sol
+
+\partone Spessori di strato limite. Rapporto di forma. Coefficiente di attrito. Equazione integrale di Von Karman.
+\begin{equation}
+  c_f = \frac{\tau_w}{\frac{1}{2}\rho U^2 }
+\end{equation}
+
+\begin{equation}\label{eqn:VK}
+  \frac{d \delta_2}{dx} + \frac{\delta_2}{U(x)}\frac{d U(x)}{dx} (2+H) = \frac{c_f}{2}
+\end{equation}
+
+\parttwo Si calcolano gli spessori di strato limite $\delta_1$ e $\delta_2$, il raporto di forma $H$ e il coefficiente di attrico $c_f$; poi si inseriscono nell'equazione integrale di Von Karman.
+Poichè la velocità esterna non varia in x, il secondo termine si annulla.
+
+Gli spessori di strato limite e il rapporto di forma hanno valore $\delta_1 = \frac{1}{8}\delta$,
+ $\delta_2 = \frac{7}{72}\delta$, $H = \frac{9}{7}$.
+
+Il coefficiente di attrito vale:
+\begin{equation}
+\begin{aligned}
+  c_f & = \frac{\tau_w}{\frac{1}{2}\rho U^2 } = \\
+  & = \frac{2}{\rho U^2} 0.0225 \rho U^2 
+  \displaystyle \left( \frac{\nu}{U \delta} \right)^{\frac{1}{4}} = \\
+      & = 0.045 \displaystyle \left( \frac{\nu}{U \delta} \right)^{\frac{1}{4}}
+\end{aligned}
+\end{equation}
+
+Inserendo nell'equazione di Von Karman:
+
+\begin{equation}
+ \frac{d \delta_2}{dx}  = \frac{c_f}{2} \qquad\Rightarrow \qquad
+  \frac{7}{72}\frac{d \delta(x)}{d x} = 0.0225 \displaystyle \left( \frac{\nu}{U \delta} \right)^{\frac{1}{4}}
+\end{equation}
+
+Integrando tra 0 e x, avendo imposto $\delta(0) = 0$, si ottiene:
+
+\begin{equation}
+  \delta(x) = 0.0225 \frac{90}{7} \displaystyle \left( \frac{\nu}{U } \right)^{\frac{1}{4}} x^{\frac{4}{5}}
+\end{equation}
+
+\vspace{3.0cm}
+\paragraph{Dalle equazioni di Prantdl per lo strato limite all'equazione
+ integrale di VK.} L'equazione integrale di VK (\ref{eqn:VK}) viene ricavata
+ integrando in $y$ tra $0$ e $\infty$ la componente $x$ della quantità di
+ moto delle equazioni di Prandtl per lo strato limite
+\begin{equation}\label{eqn:VKint}
+ \underbrace{\int_{y=0}^{\infty} u \dfrac{\partial u}{\partial x} dy}_{(a)} +
+ \underbrace{\int_{y=0}^{\infty} v \dfrac{\partial u}{\partial y} dy}_{(b)} -
+ \underbrace{\int_{y=0}^{\infty} \nu \dfrac{\partial^2 u}{\partial y^2} dy}_{(c)} -
+ \underbrace{\int_{y=0}^{\infty} U U'(x)dy}_{(d)} = 0
+\end{equation}
+dove è stata indicata con $U(x)$ la velocità della corrente esterna allo strato 
+ limite. Si calcolano ora i termini (c), (b). Da (c) si ricava un termine 
+ nel quale compare lo sforzo tangenziale a parete $\tau_w$
+ \begin{equation}\label{eqn:VKc}
+  - \int_{y=0}^{\infty} \nu \dfrac{\partial^2 u}{\partial y^2}(x,y) dy = 
+  - \nu \left[ \dfrac{\partial u}{\partial y}  \right]\Bigg|_{y=0}^{\infty} =
+    \nu \dfrac{\partial u}{\partial y} (x,0) = \dfrac{\tau_w(x)}{\rho}
+ \end{equation}
+Il termine (b) richiede un po' di lavoro e attenzione in più (IxP indica l'integrazione per parti).
+\begin{equation}\label{eqn:VKb}
+\begin{aligned}
+% \int_{y=0}^{\infty} v (x,y) \dfrac{\partial u}{\partial y}(x,y) dy 
+%  & = \qquad & \qquad \left( v(x,y) = \int_{\xi=0}^{y} \dfrac{\partial v}{\partial y}(x,\xi) d\xi \right) \\
+%  & \qquad & = 
+ & \int_{y=0}^{\infty} v (x,y) \dfrac{\partial u}{\partial y}(x,y) dy =
+      & \qquad \left(\text{IxP}: \int_{0}^{\infty} v \dfrac{\partial u}{\partial y} = \left[ v u \right]\Bigg|_{y=0}^{\infty} - \int_{0}^{\infty} \dfrac{\partial v}{\partial y} u \right) \\
+ & \quad = v(x,\infty) u(x,\infty) - \underbrace{v(x,0) u(x,0)}_{=0} - \int_{0}^{\infty} \dfrac{\partial v}{\partial y} u =  & 
+   \qquad \left( u(x,\infty) = U(x) ; \dfrac{\partial v}{\partial y} = -\dfrac{\partial u}{\partial x}\quad \right) \\
+ & \quad = v(x,\infty) U(x) + \int_{y=0}^{\infty}  \dfrac{\partial u}{\partial x} u = 
+ & \qquad \left( v(x,\infty) = \int_{y=0}^{\infty} \dfrac{\partial v}{\partial y}(x,y) dy =-\int_{y=0}^{\infty} \dfrac{\partial u}{\partial x}(x,y) dy\right) \\
+ & \quad =-\int_{y=0}^{\infty} U(x) \dfrac{\partial u}{\partial x} dy + \int_{y=0}^{\infty}  \dfrac{\partial u}{\partial x}(x,y) u(x,y) dy & \\ 
+\end{aligned}
+\end{equation}
+Inserendo le espressioni (\ref{eqn:VKc}), (\ref{eqn:VKb}) nell'equazione
+ (\ref{eqn:VKint}), si ottiene:
+ \begin{equation}
+  \begin{aligned} 
+  0 & = \int_{0}^{\infty} \left[ 2 u \dfrac{\partial u}{\partial x} -  U \dfrac{\partial u}{\partial x} - U \dfrac{d U}{d x} \right] dy + \dfrac{\tau_w}{\rho} = \\
+    & = \int_{0}^{\infty} \left[ \dfrac{\partial u^2}{\partial x}
+        - \dfrac{\partial (U u)}{\partial x} + u \dfrac{d U}{d x} - u \dfrac{d U}{d x} \right] dy + \dfrac{\tau_w}{\rho} = \\
+    & = \int_{0}^{\infty}  \dfrac{\partial}{\partial x} \left[ u^2 - U u \right] dy
+    - \dfrac{dU}{dx} \int_{0}^{\infty} \left[ U - u \right]dy + \dfrac{\tau_w}{\rho} = \\
+   & = \dfrac{d}{d x} \int_{0}^{\infty}   \left[ u^2 - U u \right] dy
+    - \dfrac{dU}{dx} \int_{0}^{\infty} \left[ U - u \right]dy + \dfrac{\tau_w}{\rho} = \\
+   & = - \dfrac{d}{d x} \left( U^2(x) \int_{0}^{\infty}  \dfrac{u}{U}  \left[ 1 -  \dfrac{u}{U} \right] dy \right)
+    - \dfrac{dU}{dx} U \int_{0}^{\infty} \left[ 1 - \dfrac{u}{U} \right] dy + \dfrac{\tau_w}{\rho} = \\
+   & = - \dfrac{d}{d x} \left[ U^2(x) \delta_2(x) \right] - U (x)U' (x)\delta_1(x)+ \dfrac{\tau_w(x)}{\rho} \\
+  \end{aligned}
+ \end{equation}
+ Riassumendo,
+ \begin{equation}
+  \dfrac{d}{d x} \left[ U^2(x) \delta_2(x) \right] + U (x)U' (x)\delta_1(x) = \dfrac{\tau_w(x)}{\rho}
+ \end{equation}
+ Infine espandendo i termini, ricordando la definizione di rapporto di forma $H = \delta_1 / \delta_2$, coefficiente di attrito $c_f = \dfrac{\tau_w}{\frac{1}{2}\rho U^2}$
+ \begin{equation}
+ \begin{aligned}
+  & 2 U U' \delta_2 + U^2 \delta'_2 + U U' \delta_1(x) = \dfrac{\tau_w(x)}{\rho} \\
+  & [ 2 \delta_2 + \delta_1] U U' + U^2 \delta'_2 = \dfrac{\tau_w(x)}{\rho} \\
+  & [ 2 + H ]\delta_2 \dfrac{U'}{U}  + \delta'_2 = \dfrac{\tau_w}{\rho U^2} = \dfrac{c_f}{2}
+ \end{aligned}
+ \end{equation}
+
+
+
+
+
+
+
+
+

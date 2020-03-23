@@ -1,0 +1,112 @@
+\section{Bilanci integrali}
+I bilanci integrali vengono scritti partendo da un volume materiale $V(t)$ qualsiasi, partendo dai principi della fisica classica
+\begin{itemize}
+  \item conservazione della massa;
+  \item prima e seconda equazione cardinale della dinamica;
+  \item bilancio di energia totale, somma di meccanica ed interna, che include i termini di flusso di calore, e che può essere
+        ricondotto al primo principio della termodinamica.
+\end{itemize}
+I bilanci integrali devono essere validi per ogni volume materiale $V(t)$. Utilizzando i teoremi della divergenza e del gradiente, è possibile trasformare i termini di superfici in integrali di volume. Poiché i bilanci integrali traducono dei principi fisici che devono essere validi per ogni volume $V(t)$, da questi è possibile ricavare i bilanci in forma differenziale, che governano la dinamica locale del mezzo continuo. Prima di arrivare ai bilanci in forma differenziale, che descrivono la dinamica del mezzo continuo punto per punto, i bilanci integrali saranno utilizzati per valutare l'interazione tra un fluido e un corpo solido. Ad esempio, il bilancio della quantità di moto di un volume fluido verrà utilizzato per valutare la risultante delle forze esercitate dal fluido su un corpo solido, il bilancio del momento della quantità di moto verrà utilizzato per valutare la risultante dei momenti esercitati dal fluido sul solido, mentre il bilancio di energia totale verrà utilizzato per valutare la potenza o il lavoro delle forze (come risultato di un'integrazione in tempo) scambiato tra il fluido e un corpo solido.
+
+\subsection{Bilancio di massa}
+ La massa di un volume materiale $V(t)$ è costante nel tempo, poichè il volume materiale è costituito sempre dalle stesse particelle del
+ continuo.
+\begin{equation}
+ \dfrac{d}{dt} \int_{V(t)} \rho = 0
+\end{equation}
+
+\subsection{Prima equazione cardinale e bilancio della quantità di moto}
+La prima equazione cardinale della dinamica lega la quantità di moto $\bm{Q}$ di un sistema alla risultante delle forze esterne $\bm{R}^{ext}$
+ agenti su di esso.
+\begin{equation}
+ \dfrac{d\bm{Q}}{d t} = \bm{R}^{ext}
+\end{equation}
+Separando i contributi di forze di volume e di superficie, il bilancio di quantità di moto per un volume materiale $V(t)$ arbitrario
+\begin{equation}
+ \dfrac{d}{d t} \int_{V(t)} \rho \bm{u} = \oint_{S(t)} \bm{t_n} + \int_{V(t)} \rho \bm{g}
+\end{equation}
+avendo indicato con $\bm{t_n}$ il vettore sforzo agente sulla superficie esterna $S(t)$ del volume materiale e $\bm{g}$ le forze per unità di
+ massa (come ad esempio l'accelerazione di gravità).
+
+\subsection{Seconda equazione cardinale e bilancio del momento della quantità di moto}
+La seconda equazione cardinale della dinamica lega il momento della quantità di moto ${\Gamma}_H$ rispetto a un polo H con il momento risultante
+ delle azioni esterne $\bm{M}^{ext}$ (e con il moto del polo H)
+\begin{equation}
+ \dfrac{d {\Gamma}_H}{dt} = -\dot{\bm{x}}_H \times \bm{Q} + \bm{M}^{ext}
+\end{equation}
+Se si considera un polo H fisso e si indica con $\bm{r}$ il raggio vettore dal polo H ai ``punti fisici'' del volume materiale,
+ il bilancio integrale di momento angolare per un volume materiale (in assenza di coppie esterne) è
+\begin{equation}
+ \dfrac{d}{d t} \int_{V(t)} \bm{r} \times \rho \bm{u} = \oint_{S(t)} \bm{r} \times \bm{t_n} + \int_{V(t)} \rho \bm{r} \times \bm{g}
+\end{equation}
+
+\subsection{Bilancio di energia totale}
+L'energia totale di un sistema è la somma della sua energia interna e cinetica. La mariazione di energia totale è dovuta al lavoro delle forze 
+ agenti sul sistema e ai flussi di calore attraverso la superficie del volume (in assenza di fonti di calori interne al volume). 
+\begin{equation}
+ \dfrac{ d E^{tot}}{d t} = L - Q
+\end{equation}
+dove con $L$ si è indicato il lavoro svolto sul sistema e con $Q$ i flussi di calore uscenti da esso. Per un volume materiale
+\begin{equation}
+ \dfrac{d}{d t} \int_{V(t)} \rho e^{tot} = \oint_{S(t)} \bm{u} \cdot \bm{t_n} + \int_{V(t)} \rho \bm{u} \cdot \bm{g}
+  - \oint_{S(t)} \bm{q} \cdot \bm{\hat{n}}
+\end{equation}
+dove $\bm{q} \cdot \bm{\hat{n}}$ positivo indica un flusso di calore uscente. L'energia totale per unità di massa può essere scritta come
+somma del contributo interno e del contributo cinetico
+\begin{equation}
+ e^t = e + \dfrac{1}{2}|\bm{u}|^2
+\end{equation}
+Introducendo la definizione di entalpia $h = e + Pv = e + P/\rho$ ci si può ricondurre a molti casi analizzati durante il corso di 
+ Fisica Tecnica, partendo ora da unquadro generale sui bilanci integrali: partendo dai bilanci generali, si possono introdurre
+ le ipotesi di sistema chiuso, adiabatico o isolato, annullando i termini di flusso di massa, di flusso di calore o i termini di 
+ energia e calore. Il bilancio di energia per un volume di controllo $V_c$ fisso (vedi sezione successiva), dopo aver scritto
+ il termine di sforzo separando il contributo di pressione da quello di sforzi viscosi $\bm{t_n} = -p\bm{\hat{n}} + \bm{s_n}$, diventa
+\begin{equation}
+\begin{aligned}
+\dfrac{d}{d t} \int_{V_c} \rho e^t & = - \oint_{S_c} \rho e^t \bm{u} \cdot \bm{\hat{n}}
+  - \oint_{S_c} P \bm{u} \cdot \bm{\hat{n}} + \oint_{S_c} \bm{u} \cdot \bm{s_n} + \int_{V_c} \rho \bm{u} \cdot \bm{g}
+  - \oint_{S_c} \bm{q} \cdot \bm{\hat{n}} = & (\rho h^t = \rho(e^t + P/\rho))\\
+ & = - \oint_{S_c} \rho h^t \bm{u} \cdot \bm{\hat{n}}
+   + \oint_{S_c} \bm{u} \cdot \bm{s_n} + \int_{V_c} \rho \bm{u} \cdot \bm{g}
+  - \oint_{S_c} \bm{q} \cdot \bm{\hat{n}}
+\end{aligned}
+\end{equation}
+avendo messo in evidenza il flusso di entalpia totale $h^t$.
+
+\subsection{Bilanci integrali per volumi in moto arbitrario}
+I bilanci integrali per un volume $v(t)$ in moto generico con velocità
+ $\bm{w}$ possono essere ricavati partendo da quelli per un volume $V(t)$
+ materiale, ricavati nella
+ sezione precedente, con l'utilizzo del teorema del trasporto di Reynolds per
+ modificare il termine di derivata temporale. Per un volume $v(t)$, la cui
+ superficie $\partial s(t)$ ha velocità $\bm{w}$
+
+\begin{equation}\label{eqn:bilanciIntegrali:ale}
+ \begin{aligned}
+ & \dfrac{d}{d t} \int_{v(t)} \rho + \oint_{s(t)} \rho (\bm{u} - \bm{w}) \cdot \bm{\hat{n}} = 0  \\
+ & \dfrac{d}{d t} \int_{v(t)} \rho \bm{u} + \oint_{s(t)} \rho \bm{u} (\bm{u} - \bm{w}) \cdot \bm{\hat{n}} =
+     \oint_{s(t)} \bm{t_n} + \int_{v(t)} \rho \bm{g} \\
+ & \dfrac{d}{d t} \int_{v(t)} \bm{r} \times \rho \bm{u} + \oint_{s(t)} \bm{r} \times (\rho \bm{u}) (\bm{u} - \bm{w}) \cdot \bm{\hat{n}} = 
+    \oint_{s(t)} \bm{r} \times \bm{t_n} + \int_{v(t)} \rho \bm{r} \times \bm{g} \\
+ & \dfrac{d}{d t} \int_{v(t)} \rho e^{tot} + \oint_{s(t)} \rho e^t (\bm{u} - \bm{w}) \cdot \bm{\hat{n}}
+  = \oint_{s(t)} \bm{u} \cdot \bm{t_n} + \int_{v(t)} \rho \bm{u} \cdot \bm{g}
+  - \oint_{s(t)} \bm{q} \cdot \bm{\hat{n}}
+ \end{aligned}
+\end{equation}
+
+\noindent
+Per un volume di controllo $V_c$ fisso, $\bm{w}=0$
+\begin{equation}\label{eqn:bilanciIntegrali:eulerian}
+ \begin{aligned}
+ & \dfrac{d}{d t} \int_{V_c} \rho + \oint_{S_c} \rho \bm{u} \cdot \bm{\hat{n}} = 0  \\
+ & \dfrac{d}{d t} \int_{V_c} \rho \bm{u} + \oint_{S_c} \rho \bm{u} \bm{u} \cdot \bm{\hat{n}} =
+     \oint_{S_c} \bm{t_n} + \int_{V_c} \rho \bm{g} \\
+ & \dfrac{d}{d t} \int_{V_c} \bm{r} \times \rho \bm{u} + \oint_{S_c} \bm{r} \times (\rho \bm{u}) \bm{u} \cdot \bm{\hat{n}} = 
+    \oint_{S_c} \bm{r} \times \bm{t_n} + \int_{V_c} \rho \bm{r} \times \bm{g} \\
+ & \dfrac{d}{d t} \int_{V_c} \rho e^t + \oint_{S_c} \rho e^t \bm{u} \cdot \bm{\hat{n}}
+  = \oint_{S_c} \bm{u} \cdot \bm{t_n} + \int_{V_c} \rho \bm{u} \cdot \bm{g}
+  - \oint_{S_c} \bm{q} \cdot \bm{\hat{n}}
+ \end{aligned}
+\end{equation}
+
+

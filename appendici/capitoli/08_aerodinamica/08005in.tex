@@ -1,0 +1,92 @@
+\noindent
+\begin{tabular}{c}
+\begin{minipage}[b]{0.95\textwidth}
+\begin{exerciseS}[Doppietta]
+Trovare il campo di moto generato da una doppietta.
+Sovrapporre ad esso una corente uniforme con lìvelocità asintotica lungo x, per trovare la corrente attorno al cilindro: stabilire il legame tra l'intensità della doppietta, la velocità asintotica e il raggio del cilindro.
+\end{exerciseS}
+\end{minipage}
+\end{tabular}
+
+
+\sol
+
+\partone
+  Soluzioni elementari dell'equazione di Laplace. 
+  Sovrapposizione di soluzioni elementari. Doppietta. Corrente attorno
+  al cilindro.
+
+\parttwo
+  Dopo aver ricordato la definizione di doppietta, si calcolano il campo di moto e il potenziale cinetico da essa generato. Fatto questo, si sommano gli effetti della corrente indisturbata e si trovano le condizioni in cui esiste un raggio $a$ (il raggio del cilindro) per il quale si annulla la velocità normale per ogni $\theta \in [0, 2\pi]$.
+
+\begin{itemize}
+\item Definizione di doppietta ed equazioni. Per $d$ finito:
+
+  \begin{equation}
+  \begin{aligned}
+    \phi & = \phi^+ + \phi^- = \\
+    & = \frac{q}{2\pi}\ln{\sqrt{\displaystyle\left( x - \frac{d}{2} \right)^2 + y^2}} - 
+    \frac{q}{2\pi}\ln{\sqrt{\displaystyle\left( x + \frac{d}{2} \right)^2 + y^2}} = \\
+    & = \frac{q}{4\pi}\ln{\frac{( x - d/2 )^2 + y^2}{( x + d/2 )^2 + y^2}}
+  \end{aligned}
+  \end{equation}
+Facendo tendere $ d \to 0$ in modo tale che $qd = \mu$ sia finito e diverso da zero, sfruttando $\ln(1+x)\sim x$ per $x \to 0$:
+\begin{equation}
+  \frac{q}{4\pi}\ln{\frac{( x - d/2 )^2 + y^2}{( x + d/2 )^2 + y^2}} = 
+  \frac{q}{4\pi}\ln\displaystyle\left[1- \frac{2xd}{( x + d/2 )^2 + y^2}\right] \sim
+  -\frac{qd}{2\pi}\frac{x}{(x^2 + y^2)}
+\end{equation}
+Quindi, il potenziale cinetico della doppietta espresso in coordinate cartesiane e cilindriche è:
+\begin{equation}
+  \phi = -\frac{\mu}{2\pi}\frac{x}{(x^2 + y^2)} = -\frac{\mu}{2\pi r}\cos \theta
+\end{equation}
+Le componenti cartesiane della velocità sono:
+\begin{equation}
+ \begin{cases}
+  u = \frac{\partial \phi}{\partial x} = \frac{\mu}{2\pi}\frac{x^2 - y^2}{(x^2 + y^2)^2} =  \frac{\mu}{2\pi}\frac{\cos^2 \theta - \sin^2 \theta}{r^2} = \frac{\mu}{2\pi}\frac{\cos(2\theta)}{r^2} \\
+  v = \frac{\partial \phi}{\partial y} = \frac{\mu}{2\pi}\frac{2xy}{(x^2 + y^2)^2} =  \frac{\mu}{2\pi}\frac{2\cos \theta \sin \theta}{r^2} = \frac{\mu}{2\pi}\frac{\sin(2\theta)}{r^2} \\
+ \end{cases}
+\end{equation}
+Quelle cilindriche:
+\begin{equation}
+ \begin{cases}
+  u_r = u \cos\theta + v \sin\theta = 
+  \frac{\mu}{2\pi r^2}[\cos(2\theta)\cos\theta + 
+  \sin(2\theta)\sin\theta ] = 
+  \frac{\mu}{2\pi r^2} \cos\theta\\
+  u_\theta = -u \sin\theta + v \cos\theta = 
+  \frac{\mu}{2\pi r^2}[- \cos(2\theta)\sin\theta + 
+  \sin(2\theta)\cos\theta] = 
+  \frac{\mu}{2\pi r^2} \sin\theta\\
+ \end{cases}
+\end{equation}
+
+\item
+Si svovrappone alla soluzione appena trovata, quella della corrente uniforme
+
+\begin{equation}
+  \begin{cases}
+    u_r = \displaystyle\left( U_\infty + \frac{\mu}{2\pi r^2} \right)\cos\theta \\
+    u_\theta = \displaystyle\left( - U_\infty + \frac{\mu}{2\pi r^2} \right)\sin\theta \\
+  \end{cases}
+\end{equation}
+
+\item 
+Si impongono le condizioni al contorno $u_r(a,\theta) = 0, \theta \in [0, 2\pi]$, per trovare il legame
+tra il raggio del cilindro $a$, la velocità asintotica $U_\infty$ e l'intensità della doppietta $\mu$.
+\begin{equation}
+  0 = u_r(a,\theta) =  \displaystyle\left( U_\infty + \frac{\mu}{2\pi a^2} \right)\cos\theta
+  \Rightarrow \frac{\mu}{2\pi} = - a^2 U_\infty 
+\end{equation}
+
+\item
+Si ricostruisce infine la soluzione (alla quale è immediato sommare un eventuale vortice nel centro del cilindro) del flusso potenziale all'esterno del cilindro:
+
+\begin{equation}
+  \begin{cases}
+    u_r = U_\infty \displaystyle\left(1 - \frac{a^2}{r^2}  \right)\cos\theta \\
+    u_\theta = - U_\infty \displaystyle\left(1 + \frac{a^2}{r^2}  \right)\sin\theta \\
+  \end{cases}
+\end{equation}
+\end{itemize}
+

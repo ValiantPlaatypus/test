@@ -1,0 +1,53 @@
+function [x,y] = naca5digit(ddd,SS,c,n)
+
+t = SS / 100;
+
+xv = linspace(0,c,n+1);
+xv = c/2 .*(1-cos(pi.*xv./c));
+
+switch ddd
+
+   case 210
+     q = 0.0580;
+     k = 361.4;
+     
+   case 220
+     q = 0.1260;
+     k = 51.64;
+     
+   case 230
+     q = 0.2025;
+     k = 15.957;
+     
+   case 240
+     q = 0.2900;
+     k = 6.643; 
+     
+   case 250
+     q = 0.3910;
+     k = 3.230;
+     
+   otherwise
+     error('Errore nella chiamata a linea_media_5d: la linea media richiesta non esiste.')
+end
+
+
+% Spessore
+ytfcn = @(x) 5.*t.*c.*(0.2969.*(x./c).^0.5 - 0.1260.*(x./c) ...
+    - 0.3516.*(x./c).^2 + 0.2843.*(x./c).^3 - 0.1036.*(x./c).^4);
+
+yt = ytfcn(xv);
+
+% Linea Media
+yc = zeros(size(xv));
+
+for ii = 1 : n+1
+    if xv(ii) <= q*c
+        yc(ii) = c*(m/p^2 *(xv(ii)/c) * (2*p - (xv(ii)/c)));
+    else
+        yc(ii) = c*(m/(1-p)^2 * (1 + (2*p - (xv(ii)/c))*(xv(ii)/c) -2*p));
+    end
+end
+
+
+

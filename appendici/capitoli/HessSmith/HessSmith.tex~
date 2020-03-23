@@ -1,0 +1,94 @@
+\documentclass[pdftex,10pt,a4paper]{article} %definisce come compilare, la grandezza del carattere di testo e della pagina, e lo stile del documento
+\author{}
+\title{LATEX}
+
+%\usepackage[latin1]{inputenc} %definisce i caratteri con cui � scritto il testo, in questo caso latini
+
+\usepackage[utf8x]{inputenc}
+
+\usepackage[italian]{babel} %definisce la lingua principale del documento
+\usepackage[pdftex]{graphicx} %serve per introdurre immagini
+\DeclareGraphicsExtensions{.pdf,.png,.jpg,.mps,.eps} %estensione delle immagini permesse
+\usepackage{amsmath} % pacchetto per formule e caratteri matematici
+\usepackage{mathrsfs}
+\usepackage{bm}
+\usepackage{icomma} % pacchetto per limitare lo spazio standard posto dopo la virgola in caso che la virgola sia tra cifre
+\usepackage{amsfonts} % amplia i caratteri matematici disponibili
+\usepackage{amssymb} % amplia i simboli matematici
+\makeindex %crea l'indice
+\usepackage{indentfirst} % rientra la prima riga dei paragrafi
+
+\usepackage{picinpar} % permette di inserire immagini nel paragrafo
+\usepackage{setspace} %permette di modificare l'interlinea
+%\usepackage{enumitem}
+\singlespacing %interlinea 1,5. Per interlinea singola: \singlespacing Per interlinea doppia: \doublespacing per interlinea diversa \linespread{numero} con numero fattore di scala
+
+\usepackage{epstopdf}  % converts .eps to .pdf for pdflatex
+
+\usepackage{multicol}
+%\usepackage{lipsum}
+\usepackage[margin={2.5cm,2.5cm}]{geometry}
+
+\usepackage{booktabs} %consente i comandi del tipo toprule nelle tabelle
+\usepackage{longtable} %consente di spezzare le tabelle troppo lunghe per una sola pagina
+\usepackage[printonlyused, withpage]{acronym} % pacchetto per gestire gli acronimi
+%\usepackage{subfigure}
+\usepackage{subfig} %pacchetto per affiancare le figure
+%\usepackage{siunitx} %Pacchetto per l'uso delle unit� di misura del SI
+\usepackage{fancyhdr} % pacchetto per le testatine delle pagine
+%\usepackage{fancybox} % pacchetto per la gestione di box
+\setlength{\headheight}{24pt} %modifica l'altezza delle testatine
+\usepackage{rotating}
+%
+\usepackage[square,numbers,sort&compress]{natbib} % pacchetto per la bibliografia
+\usepackage{cite}
+
+%\usepackage[autostyle,italian=guillemets]{csquotes}
+%\usepackage[backend=bibtex,hyperref]{biblatex}
+%\addbibresource{Bibliografia.bib}
+
+\usepackage{hyperref} % permette collegamenti ipertestuali nel documento-da inserire come ultimo pacchetto
+%\hypersetup{pdffitwindow=false,pdftitle = {Analisi del segnale del grasso in NMR},pdfsubject = {Rilassometria}, pdfkeywords = {segnale, grasso}, pdfauthor = {Elena Pierpaoli},colorlinks=false,} %crea l'header file del pdf
+
+\usepackage{float}
+\usepackage{morefloats}
+
+%-__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-__-
+
+
+\title{Metodo di Hess-Smith}
+%\author{D. Montagnani}
+
+\pagestyle{myheadings}
+%\markright{\textit{D. Montagnani}, Velocimetria a immagini di particelle \hfill }
+\markright{Metodo di Hess-Smith \hfill }
+
+\begin{document}
+
+\maketitle
+
+%\begin{multicols}{2}
+
+\tableofcontents
+
+\vspace{1.5cm}
+%\newpage
+
+\section{Introduzione: metodi a pannelli}
+\label{cap.00}
+\input{Introduzione}
+
+\section{Metodo di Hess-Smith}
+\label{cap.01}
+\input{Metodo}
+
+\section{Breve guida all'implementazione}
+
+
+\newpage
+
+\appendix
+
+
+
+\end{document}

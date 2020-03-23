@@ -1,0 +1,157 @@
+
+I bilanci integrali consentono di valutare le azioni integrali (forze, momenti, potenza) scambiati tra un fluido e un corpo a contatto con esso, senza conoscere nel dettaglio il campo di moto del fluido di interesse, ma valutando il flusso netto delle quantità meccaniche di interesse (massa, quantità di moto, momento della quantità di moto, energia, entalpia e calore) attraverso la superficie di contorno del volume fluido di interesse.
+%
+Il contorno del dominio fluido $v(t)$ viene suddiviso nella parte a contatto con il corpo di interesse $s_{f,s}(t)$ e nella parte rimanente $s_{f,free}(t) = \partial v(t) \backslash s_{f,s}(t)$.
+
+\paragraph{Bilancio della quantità di moto e risultante delle forze.}
+La risultante delle forze agenti sul corpo\footnote{La risultante delle forze delle azioni scambiate con il fluido. A questa andranno sommate le forze di volume, come ad esempio il peso del corpo stesso.} sarà uguale all'integrale del vettore sforzo agente sulla superficie $s_{s,f}(t)$,
+\begin{equation}
+ \bm{R}^s = \oint_{s_{s,f}(t)} \bm{t}_{n,s} \ ,
+\end{equation}
+avendo indicato con $s_{s,f}(t)$ la superficie del solido con normale uscente dalla superficie solida ed entrante nel solido e con $\bm{t}_{n,s}$ il vettore sforzo agente sul solido, uguale e contrario allo sforzo agente sul fluido nello stesso punto, $\bm{t}_{n,s} = - \bm{t}_n$, per il principio di azione e reazione (terzo principio della dinamica). Non è stato aggiunto il pedice $f$ al vettore sforzo agente sul fluido, poiché siamo in un corso di fluidodinamica e il soggetto è il fluido, quando è sottointeso.
+Si può riconoscere la risultante $\bm{R}^s$ all'interno del bilancio integrale della quantità di moto per il volume fluido $v(t)$,
+\begin{equation}
+\begin{aligned}
+ \dfrac{d}{dt} \displaystyle\int_{v(t)} \rho \bm{u} + \oint_{\partial v(t)} \rho \bm{u} (\bm{u}-\bm{v}) \cdot \bm{\hat{n}}= \int_{v(t)} \bm{f} + \oint_{\partial v(t)} \bm{t_n} \ .
+\end{aligned}
+\end{equation}
+Si analizzano i termini di superficie, considerando separatamente i contributi delle superfici $s_{f,s}$ e $s_{f,free}$. Se il solido ha una superficie impermeabile al fluido e non c'è flusso di massa, la velocità del fluido e del solido sono uguali, $\bm{u} = \bm{v}$, sulla superficie $s_{f,s}$. Di conseguenza rimane solo il contributo del flusso della quantità di moto attraverso la superficie $s_{f,free}$, mentre il termine di flusso attraverso $s_{f,s}$ è nullo.
+L'integrale sul contorno $\partial v(t)$ del vettore sforzo può essere suddiviso nella somma dell'integrale svolto sulla superficie a contatto con il solido e sulla superficie libera,
+\begin{equation}
+\begin{aligned}
+ \oint_{\partial v(t)} \bm{t_n} & = 
+ \oint_{s_{f,s}(t)} \bm{t_n} + \oint_{s_{f,free}(t)} \bm{t_n} = \\
+ & = - \oint_{s_{s,f}(t)} \bm{t}_{n,s} + \oint_{s_{f,free}(t)} \bm{t_n} =
+ -\bm{R}^s + \oint_{s_{f,free}(t)} \bm{t_n} \ .
+\end{aligned}
+\end{equation}
+Spesso sulla superficie libera $s_{f,free}(t)$ possono essere trascurati gli sforzi viscosi: in questo caso, il vettore sforzo si riduce al solo effetto della pressione $\bm{t_n} = -p \bm{\hat{n}}$.
+
+Ritornando al bilancio della quantità di moto, si può scrivere
+\begin{equation}
+ \bm{R}^s = - \int_{s_{f,free}} \rho \bm{u} (\bm{u}-\bm{v}) \cdot \bm{\hat{n}}
+ - \int_{s_{f,free}(t)} \bm{t_n}
+ - \int_{v(t)} \bm{f} - \dfrac{d}{dt} \int_{v(t)} \rho \bm{u}
+\end{equation}
+Nel caso in cui il problema sia stazionario e che le forze di volume nel fluido siano trascurabili, gli ultimi due termini is annullano. Se poi si possono trascurare gli sforzi viscosi su $s_{f,free}$, la superficie $s_{s,free}$ è una superficie chiusa (si pensi alla superficie ``all'infinito'' attorno a un corpo, come esempio) e la pressione è costante su questa superficie chiusa, l'integrale degli sforzi su $s_{f,free}$ è anch'esso nullo, poiché
+\begin{equation}
+ \oint_{s_{f,free}(t)} \bm{t_n} = - \oint_{s_{f,free}(t)} p \bm{\hat{n}} = - p \oint_{s_{f,free}(t)} \bm{\hat{n}} \equiv 0 \ ,
+\end{equation}
+e la risultante delle forze agenti sul solido si riduce a
+\begin{equation}
+ \bm{R}^s = - \int_{s_{f,free}} \rho \bm{u} (\bm{u}-\bm{v}) \cdot \bm{\hat{n}} \ .
+\end{equation}
+
+\paragraph{Bilancio del momento della quantità di moto e risultante dei momenti.}
+Riproponendo un ragionamento analogo, dal bilancio del momento della quantità di moto si può ricavare la risultante dei momenti agenti su un corpo,
+\begin{equation}
+ \bm{M} = \oint_{s_{s,f}} \bm{r} \times \bm{t}_{n,s} \ .
+\end{equation}
+ Nel caso semplificato in cui il problema sia stazionario, le forze di volume sono trascurabili, gli sforzi viscosi sono trascurabili sulla superficie $s_{f,free}(t)$ chiusa, sulla quale agisce una pressione costante, la risultante dei momenti agenti sul solido si riduce a
+\begin{equation}
+ \bm{M}^s = - \int_{s_{f,free}} \rho \bm{r} \times \bm{u} (\bm{u}-\bm{v}) \cdot \bm{\hat{n}} \ ,
+\end{equation}
+dove $\bm{r}$ è il raggio vettore tra i punti sulla superficie $s_{f,free}(t)$ e il polo rispetto al quale si calcolano i momenti.
+
+\paragraph{Bilancio dell'energia totale.}
+Tramite il bilancio dell'energia totale si può ricavare la potenza fornita (o assorbita) da un corpo al fluido, e/o il calore scambiato con esso. Gli esercizi che utilizzeranno il bilancio di energia totale ricorderanno alcuni esercizi di Fisica Tecnica. Lo scopo di questi esercizi è quello di proporre un punto di vista più maturo a tali problemi, partendo ai bilanci integrali nella loro forma più generale e opportunamente semplificati considerando grandezze uniformi sulle sezioni (o equivalenti grandezze medie) e ipotesi sullo scambio di calore tra il fluido e l'esterno. Verranno analizzati sistemi aperti e chiusi, nella speranza di fornire un approccio di validità generale a problemi già trattati durante il corso di Fisica Tecnica, senza alcuna pretesa di coprire tutti gli argomenti e i dettagli trattati in quel corso, ma piuttosto consentire una visione del problema generale che coinvolga scambi di massa, lavoro e calore del sistema con l'esterno, facilmente specializzabile a casi particolari, che riduca al minimo lo sforzo mnemonico richiesto da molti casi particolari, apparentemente scorrelati l'uno dall'altro, a vantaggio di una maggiore ``sensibilità'' sul fenomeno fisico.
+
+Sfruttando la suddivisione della superficie del volume fluido $\partial v = s_{f,free} \cup s_{f,s}$, si può riscrivere il bilancio dell'energia totale,
+\begin{equation}
+ \dfrac{d}{dt} \displaystyle\int_{v(t)} \rho e^t + \oint_{\partial v(t)} \rho e^t (\bm{u}-\bm{v}) \cdot \bm{\hat{n}}= \int_{v(t)} \bm{f} \cdot \bm{u} + \oint_{\partial v(t)} \bm{t_n} \cdot \bm{u} - \oint_{\partial v(t)} \bm{q} \cdot \bm{\hat{n}} + \int_{v(t)} \rho r \ .
+\end{equation}
+riconoscendo la potenza
+\begin{equation}
+ W = \oint_{s_{f,s}} \bm{t_n} \cdot \bm{u} \ ,
+\end{equation}
+ fornita da un corpo solido al fluido,
+\begin{equation}
+\begin{aligned}
+ \dfrac{d}{dt} \displaystyle\int_{v(t)} \rho e^t & + \oint_{\partial v(t)} \rho e^t (\bm{u}-\bm{v}) \cdot \bm{\hat{n}} = \\
+  & = \int_{v(t)} \bm{f} \cdot \bm{u} + \oint_{s_{f,free}(t)} \bm{t_n} \cdot \bm{u} + W - \oint_{\partial v(t)} \bm{q} \cdot \bm{\hat{n}} + \int_{v(t)} \rho r \ .
+\end{aligned}
+\end{equation}
+Se non c'è flusso di massa attraverso la superficie solida, $\bm{u} = \bm{v}$ su $s_{f,s}$. Se la superficie libera $s_{f,free}$ del volume di controllo è fissa, $\bm{v}= \bm{0}$ su $s_{f,free}$. Separando il contributo degli sforzi di pressione da quelli viscosi, $\bm{t_n} = -p\bm{\hat{n}} + \bm{s_n}$ sulla superficie $s_{s,free}$, il bilancio dell'energia totale diventa,
+\begin{equation}
+\begin{aligned}
+ \dfrac{d}{dt} \displaystyle\int_{v(t)} \rho e^t & + \oint_{s_{f,free}(t)} \rho h^t \bm{u} \cdot \bm{\hat{n}} = \\
+  & = \int_{v(t)} \bm{f} \cdot \bm{u} + \oint_{s_{f,free}(t)} \bm{s_n} \cdot \bm{u} + W - \oint_{\partial v(t)} \bm{q} \cdot \bm{\hat{n}} + \int_{v(t)} \rho r \ ,
+\end{aligned}
+\end{equation}
+avendo introdotto l'entalpia totale $h^t = e^t + \frac{p}{\rho} = e + \frac{p}{\rho} + \frac{|\bm{u}|^2}{2}$.
+%
+Se si trascurano la potenza degli sforzi viscosi su $s_{s,free}$ e la potenza delle forze di volume $\bm{f}$, il bilancio dell'energia totale del fluido contenuto nel volume $v(t)$ diventa
+\begin{equation}
+ \dfrac{d}{dt} \displaystyle\int_{v(t)} \rho e^t + \oint_{s_{f,free}(t)} \rho h^t \bm{u} \cdot \bm{\hat{n}}
+ \, = \,
+  W - \oint_{\partial v(t)} \bm{q} \cdot \bm{\hat{n}} + \int_{v(t)} \rho r \ .
+\end{equation}
+
+\paragraph{Sistemi chiusi}
+Per un sistema aperto in cui sono soddisfatte le ipotesi già elencate, si può scrivere
+\begin{equation}
+ \dfrac{d}{dt} \displaystyle\int_{v(t)} \rho e^t = - \oint_{s_{f,free}(t)} \rho h^t \bm{u} \cdot \bm{\hat{n}}
+  + W - \oint_{\partial v(t)} \bm{q} \cdot \bm{\hat{n}} + \int_{v(t)} \rho r \ ,
+\end{equation}
+e sinteticamente
+\begin{equation}
+  \dfrac{d E^t}{d t} = \Phi_{h^t} + W + \dot{Q} \ ,
+\end{equation}
+avendo definito l'energia totale interna $E^t$ al volume $v(t)$ studiato, il flusso netto di entalpia totale $\Phi_{h^t}$ attraverso la superficie $s_{s,free}$, e il flusso di calore $\dot{Q}$ fornito al fluido contenuto all'interno di $v(t)$,
+\begin{equation}
+\begin{aligned}
+  E & = \int_{v(t)} \rho e \\
+  \Phi_{h^t} & = \int_{s_{f,free}} \rho h^t \bm{u} \cdot \bm{\hat{n}}
+               = \int_{s_{f,free}} \rho \left( e + \dfrac{p}{\rho} + \dfrac{|\bm{u}|^2}{2} \right) \bm{u} \cdot \bm{\hat{n}} \\
+ \dot{Q} & = - \oint_{\partial v(t)} \bm{q} \cdot \bm{\hat{n}} + \int_{v(t)} \rho r \ . 
+\end{aligned}
+\end{equation}
+
+\paragraph{Sistemi chiusi}
+Per un sistema chiuso (nessuno scambio di massa con l'esterno) in cui i termini cinetici sono trascurabili, $e^t = e$, il bilancio di energia diventa sintenticamente,
+\begin{equation}
+%\dfrac{d}{dt} \displaystyle\int_{v(t)} \rho e 
+%\, = \,
+% W - \oint_{\partial v(t)} \bm{q} \cdot \bm{\hat{n}} + \int_{v(t)} \rho r
+%\qquad \rightarrow \qquad
+ \dfrac{d E}{dt} = W + \dot{Q} \ ,
+\end{equation}
+avendo definito $E = \displaystyle\int_{v(t)} \rho e$, come l'energia interna del fluido contenuto nel volume $v(t)$.
+Questa formula corrisponde al primo principio della Termodinamica, formulato in termini di potenza e non di energia, in cui è stata utilizzata la convenzione di potenza delle forze positiva e flusso di calore positivo se fornito al fluido.\footnote{In Termodinamica, che studia sistemi in equilibrio, il primo principio è formulato in termini di energia come,
+\begin{equation}
+ \Delta E = Q - L \ ,
+\end{equation}
+in cui la variazione di energia $\Delta E$ tra due stati termodinamici del sistema corrisponde alla differenza del calore $Q$ fornito al sistema e al lavoro $L$ svolto \textbf{dal} sistema.
+}
+
+% Affrontare i problemi partendo dalla forma generale dei bilanci dovrebbe consentire lo studio di sistemi con scambio di massa, lavoro e flussi di calore
+
+% 
+% I bilanci integrali di massa e quantità di moto consentono di calcolare le azioni integrali (forze e momenti) scambiati tra un fluido e un corpo. Per studiare l'interazione \textit{integrale} di un fluido con un corpo fermo (in un sistema di riferimento inerziale) è conveniente usare una descrizione euleriana del problema.
+% %, per la quale i bilanci delle quantità meccaniche in un volume di controllo $V_c$ fisso sono,
+% %\begin{equation}
+% % \begin{cases}
+% %   \dfrac{d}{d t} \displaystyle\int_{V_c} \rho + \oint_{S_c} \rho \bm{u} \cdot \bm{\hat{n}} = 0 \\
+% %   \dfrac{d}{d t} \displaystyle\int_{V_c} \rho  \bm{u}+ \oint_{S_c} \rho \bm{u} \bm{u} \cdot \bm{\hat{n}} = \int_{V_c} \bm{f} + \oint_{S_c} \bm{t_n} \\
+% %   \dfrac{d}{d t} \displaystyle\int_{V_c} \rho \bm{r} \times \bm{u}+ \oint_{S_c} \rho \bm{r} \times \bm{u} \bm{u} \cdot \bm{\hat{n}} = \int_{V_c} \bm{r} \times \bm{f} + \oint_{S_c} \bm{r} \times \bm{t_n} \\
+% %   \dfrac{d}{d t} \displaystyle\int_{V_c} \rho  e^t+ \oint_{S_c} \rho e^t \bm{u} \cdot \bm{\hat{n}} = \int_{V_c} \bm{f} \cdot \bm{u} + \oint_{S_c} \bm{t_n} \cdot \bm{u} - \oint_{S_c} \bm{q} \cdot \bm{\hat{n}} \ .
+% % \end{cases}
+% %\end{equation}
+% I bilancio integrale può essere utilizzato per calcolare delle grandezze fisiche integrali incognite:
+% \begin{itemize}
+%  \item flussi di massa (portate massiche) dal bilancio di massa;
+%  \item risultanti di forze dal bilancio di quantità di moto;
+%  \item risultanti di momenti dal bilancio del momento della quantità di moto;
+%  \item potenze dal bilancio dell'energia.
+% \end{itemize}
+% Per esempio, nel caso stazionario in cui la pressione del fluido è uniforme sulla superficie esterna $S_f$ del volume di controllo e le forze di volume sono trascurabili, la risultante delle forze e dei momenti agenti su un corpo solido valgono
+% \begin{equation}
+% \begin{cases}
+%  \bm{R} = -\displaystyle\oint_{S_f} \rho \bm{u} \bm{u} \cdot \bm{\hat{n}} \\
+%  \bm{M} = -\displaystyle\oint_{S_f} \rho \bm{r} \times \bm{u} \bm{u} \cdot \bm{\hat{n}}  \ ,
+% \end{cases}
+% \end{equation}
+% avendo indicato con $\bm{r}$ il raggio tra il punto nel fluido e il polo, rispetto al quale è calcolato il momento.
+% Per casi più generali, in cui la pressione non è uniforme, si rimanda allo svolgimento degli esercizi.
+% 
+

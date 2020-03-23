@@ -1,0 +1,170 @@
+\newpage
+\section{Descrizione lagrangiana e descrizione euleriana}\label{ch:lagrEul}
+%In questa sezione viene ricavata la regola di derivazione in tempo di integrali di funzioni definiti su 
+% ``domini mobili'', cioè dipendenti dal tempo. Sia $V(t)$ un dominio dipendente dal tempo, $S(t) = \partial V(t)$
+% il suo bordo, $\bm{v}$ la velocità del bordo del dominio (in generale è una funzione del tempo e dello
+% spazio, potendo assumere in generale valori diversi in ogni punto della superficie $S(t)$).
+ 
+La dinamica dei mezzi continui, ad esempio i solidi o i fluidi, può essere descritta con un approccio lagrangiano o euleriano. La \textbf{descrizione lagrangiana}, utilizzata spesso in meccanica dei solidi, consiste nel seguire il moto nello spazio delle singole particelle del mezzo continuo. La \textbf{descrizione euleriana}, utilizzata spesso in meccanica dei fluidi, consiste nel fissare un volume di controllo e descrivere la variazione delle quantità meccaniche al suo interno, tenendo in considerazione i flussi della quantità meccnica attraverso le pareti fisse del volume di controllo.
+\'E possibile descrivere l'evoluzione delle quantità meccaniche di particelle e volumi in moto arbitrario, come si vedrà in \S.
+
+Si introducono due sistemi di coordinate: uno è solidale con il mezzo continuo che occupa il volume $V(t)$ dipendente dal tempo, mentre l'altro è fisso. 
+Si può pensare al sistema di riferimento solidale con il continuo come un' ``etichetta'' che viene applicata a ogni \textbf{punto materiale} del mezzo continuo che occupa il volume $V(t)$. Un sistema di riferimento fisso è indipendente dal moto del mezzo continuo, come ad esempio il sistema di coordinate cartesiane, la cui origine e i cui assi sono fissi nel tempo.
+%
+Mentre il volume $V(t)$ cambia nel tempo (trasla, ruota, si deforma \dots), un punto del volume $V(t)$ ha coordinate costanti $\bm{x_0}$ rispetto al sistema di riferimento solidale al volume, cioè che si muove e si deforma insieme al volume: questa coordinata, detta lagrangiana, può essere pensata come l'``etichetta'' assegnata al punto materiale del continuo. La coordinata euleriana $\bm{x}(\bm{x_0},t)$, relativa al sistema di riferimento fisso, descrive il moto del punto.
+%
+\begin{remark}
+ Il sistema di riferimento solidale al corpo,dipende dal tempo mentre le coordinate $\bm{x_0}$ di un punto del volume sono costanti.
+ Il sistema di riferimento è indipendente dal tempo, mentre le coordinate $\bm{x}$ di un punto materiale del volume (quindi con $\bm{x_0}$ costante) sono dipendenti dal tempo.
+\end{remark}
+% 
+Assumendo che all'istante $t=0$ i due sistemi coincidano (e quindi $\bm{x}(\bm{x_0},0) = \bm{x_0}$), si può pensare alle coordinate $\bm{x_0}$ come una configurazione di riferimento della configurazione attuale $\bm{x}$. La trasformazione $\bm{x}(\bm{x_0},t)$ descrive l'evoluzione dei punti $\bm{x_0}$ del volume $V_0 = V(0)$ nel tempo $t$. La velocità del punto etichettato con $\bm{x_0}$ (cioè quello passante in $\bm{x}=\bm{x_0}$ in $t=0$) nel sistema di riferimento fisso è
+ \begin{equation}
+  \bm{v}(\bm{x_0},t) = \dfrac{\partial \bm{x}}{\partial t}\bigg|_{\bm{x_0}} =: \dfrac{d \bm{x}}{d t}
+ \end{equation}
+%
+ Sia $f(\bm{x},t)$ una funzione (scalare, vettoriale, tensoriale) dipendente sia dallo spazio, sia dal tempo, si indica con
+ $\frac{\partial f}{\partial t}$ la derivata parziale rispetto al tempo, che tiene conto delle variazioni del
+ valore di $f$ in punto $\bm{x}$ costante.
+ \begin{equation}
+  \dfrac{\partial f}{\partial t} = \dfrac{\partial f}{\partial t}\bigg|_{\bm{x}}
+ \end{equation}
+Si riporta poi per completezza e per dare un'interpretazione anche la definizione di $\dfrac{d f}{d t}$, già usata sopra nella
+ definizione della velocità di un punto del volume
+ \begin{equation}
+  \dfrac{d f}{d t} = \dfrac{\partial f}{\partial t}\bigg|_{\bm{x_0}}
+ \end{equation}
+che viene svolta a $\bm{x_0}$ costante: questa derivata temporale è quella che consente di considerare la variazione
+ della funzione $f$, percepita dal punto etichettato $\bm{x_0}$ che evolve con il volume.
+%
+Non è difficile trovare il legame tra le due derivate utilizzando semplicemente la legge di derivazione di funzioni composte.
+Data una funzione $f(\bm{x},t)$, si definisce $f_0(\bm{x_0},t)$ come la funzione composta $f_0 = f \circ x$.
+\begin{equation}
+ f(\bm{x},t) = f(\bm{x}(\bm{x_0},t),t) = f_0(\bm{x}_0,t) = f_0(\bm{x_0}(\bm{x},t),t)
+\end{equation}
+Si può quindi scrivere
+\begin{equation}
+ \dfrac{d f}{d t} = \dfrac{\partial}{\partial t}\bigg|_{\bm{x_0}} f(\bm{x}(\bm{x_0},t),t) = 
+  \dfrac{\partial f}{\partial \bm{x}}\bigg|_{t} \cdot \dfrac{\partial \bm{x}}{\partial t}\bigg|_{\bm{x_0}} 
+  + \dfrac{\partial f}{\partial t}\bigg|_{\bm{x}} = 
+  \dfrac{\partial f}{\partial t} + \bm{v} \cdot \bm{\nabla} f  
+\end{equation}
+dove si è riconsociuto l'operatore $\bm{\nabla}$ nell'ultimo passaggio. Si può infine ``rimuovere'' la funzione $f$
+ per ottenere la relazione tra la forma delle due derivate, valida per funzioni scalari, vettoriali, tensoriali
+\begin{equation}
+ \dfrac{d \rule{1.5ex}{.4pt}}{d t} = \dfrac{\partial \rule{1.5ex}{.4pt}}{\partial t} + \bm{v} \cdot \bm{\nabla} \rule{1.5ex}{.4pt}
+\end{equation}
+
+%\newpage
+%Sia $V(t)$ un volume dipendente dal tempo, $\partial V$ il contorno di $V(t)$,
+%$\bm{\hat{n}}$ la normale uscente dal volume $V(t)$, $\bm{v}$ la velocità 
+%della superficie del volume. Il teorema di Reynolds fornisce la formula per
+%la derivata dell'integrale di una funzione $f(\bm{x},t)$ svolto su $V(t)$.
+%\begin{teorema}[Reynolds]
+%\begin{empheq}[box=%
+%\fbox]{align*}
+%  \frac{d}{dt}\int_{V(t)} f = 
+%  \int_{V(t)} \frac{\partial f}{\partial t} + 
+%  \oint_{\partial V(t)} f \bm{v} \cdot \bm{\hat{n}}
+%\end{empheq}
+%\end{teorema}
+
+%\paragraph{Interpretazione.} La variazione dell'integrale di una quantità svolto
+%su un dominio mobile è formata da due contributi: l'integrale di volume 
+%contenente la derivata parziale rispetto al tempo tiene conto della variazione
+%nel tempo della funzione $f(\bm{x},t)$ all'interno del volume: se il volume 
+%$V(t)$ è fisso nello spazio, cioè $\bm{v}=0$, il termine di superficie si 
+%annulla e rimane solo il termine di volume; l'integrale
+%di superficie tiene conto del movimento del volume: se $f$ è indipendente dal
+% tempo il termine di superficie è l'unico che rimane. 
+% Le regioni della superficie $\partial V$ con $\bm{v}\cdot \bm{\hat{n}}$ sono
+% quelle che contribuiscono a un aumento del volume di $V$: se $f>0$ in tutto lo
+% spazio, le regioni che fanno aumentare il volume, fanno aumentare anche il
+% valore dell'integrale (aumenta il volume sul quale viene calcolato l'integrale
+% di una quantità positiva e quindi aumenta il valore dell'integrale).
+
+%\begin{proof}
+%La dimostrazione si ottiene usando ripetutamente la trasformazione di coordinate $\bm{x}(\bm{x_0},t)$ e la
+%regola di  
+%trasformazione dei domini di integrazione, la derivazione di funzioni composte, e la formula per la derivata di un determinante.
+%% Si definiscono la configurazione di riferimento $\bm{x_0}$ e la configurazione
+%% attuale $\bm{x}(\bm{x_0},t)$.
+% Si definiscono il gradiente della trasformazione $\bm{x}(\bm{x}_0,t)$
+%$\bm{F} = \frac{\partial \bm{x}(\bm{x_0},t)}{\partial \bm{x_0}}$ e il suo determinante 
+%$J = \det \bm{F}$. % $J(\bm{x_0},t) = \det \bm{F}$.
+%% $\bm{F}(\bm{x_0},t) = \frac{\partial \bm{x}(\bm{x_0},t)}{\partial \bm{x_0}}$
+%%La velocità con la quale si muove un punto solidale
+%% al sistema di coordinate di riferimento rispetto al sistema di coordinate
+%% fisso è
+%%\begin{equation}
+%%  \bm{v}(\bm{x},t) = \bm{v_0}(\bm{x_0},t) = \dfrac{\partial}{\partial t}\bigg|_{\bm{x_0}} \bm{x}(\bm{x_0},t) =: \dfrac{d}{d t} \bm{x}(\bm{x_0},t)
+%%\end{equation}
+%%dove si è definito l'operatore
+%%\begin{equation}
+%% \dfrac{d}{d t} := \dfrac{\partial}{\partial t}\bigg|_{\bm{x_0}}
+%%\end{equation}
+
+%Al volume di integrazione $V(t)$ espresso nel sistema di coordinate 
+% $\bm{x}$ e dipendente dal tempo (dominio mobile in un sistema di 
+% riferimento fisso), corrisponde il volume $V_0$ indipendente dal tempo
+% se rappresentato nel sistema di coordinate $\bm{x}_0$. Il primo passo è
+% quindi quello di cambiare le variabili di integrazione da $\bm{x} \in V(t)$ a
+% $\bm{x_0} \in V_0$: questo consente di ottenere un integrale su un volume
+% costante $V_0$ e di portare sotto segno di integrale la derivata temporale.
+% 
+
+%\begin{equation}
+%\begin{aligned}
+%  \frac{d}{dt} \int_{V(t)} f dV & =  
+%  \frac{d}{dt} \int_{V_0}  f_0 J  dV_0 = & (dV = J dV_0, \text{$V_0$ ind. da t}) \\
+%  & = \int_{V_0} \left\{ \frac{\partial}{\partial t}\bigg|_{\bm{x}_0}(f_0 J)  \right\} dV_0 = & \text{(der. di prodotto)} \\
+%  & = \int_{V_0} \left\{ J \frac{\partial }{\partial t}\bigg|_{\bm{x}_0} f_0  + f_0 \frac{\partial }{\partial t}\bigg|_{\bm{x}_0}J \right\} dV_0 = 
+%     & \left( \frac{d J}{d t} = J \bm{\nabla_x} \cdot \bm{v} \right) \\
+%  & = \int_{V_0} \left\{ J \frac{\partial }{\partial t}\bigg|_{\bm{x}_0} f_0  + f_0 J \bm{\nabla_x} \cdot \bm{v}\right\} dV_0 = 
+%     & \left( J dV_0 = dV, \frac{d }{d t} = \frac{\partial}{\partial t}\bigg|_{\bm{x}} + \bm{v} \cdot \bm{\nabla_x} \right) \\
+%  & = \int_{V(t)} \left\{ \frac{\partial}{\partial t}\bigg|_{\bm{x}} f + \bm{v} \cdot \bm{\nabla_x}f + f \bm {\nabla_x} \cdot \bm{v} \right\} dV = 
+%     & \left( \bm{\nabla} \cdot ( a\bm{v} ) = a \bm{\nabla} \cdot \bm{v} + \bm{v} \cdot \bm{\nabla}a \right) \\
+%  & = \int_{V(t)} \left\{ \frac{\partial f}{\partial t} + \bm{\nabla_x} \cdot ({f\bm{v}})\right\} dV = & \text{(thm divergenza)} \\
+%  & = \int_{V(t)} \frac{\partial f}{\partial t} dV + \oint_{\partial V(t)} f\bm{v} \cdot \bm{\hat{n}} dS
+%\end{aligned}
+%\end{equation}
+%\end{proof}
+
+%\noindent
+%\textbf{Osservazione.} Nella dimostrazione riportata sopra, vi sono richiesti due ``atti di fede'', uno piccolo, uno più significativo.
+%\begin{itemize}
+% \item Vale l'identità vettoriale $\bm{\nabla} \cdot ( a\bm{v} ) = a \bm{\nabla} \cdot \bm{v} + \bm{v} \cdot \bm{\nabla}a$: anche 
+%    se non è stata dimostrata, la sua dimostrazione non è complicata e ci si può accorgere della somiglianza con la legge di 
+%    derivazione del prodotto di due funzioni scalari $(fg)' = f'g + fg'$. Si fornisce la dimostrazione
+%    \begin{equation}
+%     \bm{\nabla} \cdot ( a\bm{v} ) = (a v_i)_{/i} = a_{/i} v_i + a v_{i/i} =
+%     \bm{\nabla}a \cdot \bm{v} + a \bm{\nabla} \cdot \bm{v}
+%    \end{equation}
+% \item La formula della derivata temporale del determinante $J$
+%   \begin{equation}
+%     \frac{d J}{d t} = J \bm{\nabla} \cdot \bm{v}
+%   \end{equation}
+%  è ``l'atto di fede'' più significativo, necessario per non riportare qui dimostrazioni più complicate. I curiosi possono iniziare con il
+%  cercare ``formula di Jacobi''.
+%\end{itemize}
+
+%\paragraph{Confronto con l'integrazione su domini monodimensionali.} Quanto ricavato sopra per volumi, può essere confrontato con la 
+%formula per la derivata di integrali monodimensionali su intervalli $I = (a(t), b(t))$ dipendenti dal tempo.
+%\begin{equation}
+%\begin{aligned}
+%  \frac{d}{dt} \int_{a(t)}^{b(t)} f(x,t) dx & = ... \\
+%  & = \int_{a(t)}^{b(t)} \frac{\partial f}{\partial t} dx + f(b(t),t) \frac{d b}{dt} - f(a(t),t) \frac{d a}{dt}
+%\end{aligned}
+%\end{equation}
+%Il primo addendo corrisponde all'integrale sul volume della derivata parziale, gli altri due ai termini di superficie: si noti
+% che la ``velocità'' dei punti $a(t)$, $b(t)$ che costituiscono gli estremi del dominio è rispettivamente $da/dt$, $db/dt$;
+% i versori``normali'' uscenti dall'intervallo valgono $-1$ in $x=a$, $1$ in $x=b$.
+
+
+%%\textit{Rappresentazione euleriana, lagrangiana, ...}
+
+%%\newpage
+
+%% --------------------------------------------------------------------------------------------------
+
+

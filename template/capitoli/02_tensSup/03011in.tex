@@ -1,0 +1,96 @@
+\subsection{Legge di Young-Laplace in 2D.}
+ Si scrive l'equilibrio
+ dell'interfaccia e si proietta poi nella direzione normale e tangente alla superficie.
+Per semplicità si considera il caso in due dimensioni. Viene considerato il caso $\gamma$
+non sia costante, ma vari lungo la superficie. La superficie, nell'intorno di un punto,
+ viene approssimata come in figura.
+
+Si considera un elemento di superficie infinitesimo di dimensioni $\Delta x$. Anche 
+l'angolo $\Delta \theta$ è 'piccolo' ($\cos \Delta \theta \sim 1$, $\sin \Delta\theta \sim 
+\Delta\theta$, la dimensione dell'elemento di superficie è approssimabile con la sua proiezione su 
+un piano normale a $\bm{\hat{n}}$, ...). Con $R$ viene indicato il raggio di curvatura della
+superficie.
+
+Si scrive l'equilibrio.
+\begin{equation}
+  \bm{t_a} \Delta x + \bm{t_b} \Delta x + \bm{\gamma} + \bm{\gamma + \Delta \gamma} = 0
+\end{equation}
+
+Proiettando nelle direzioni normale e tangente alla superficie, 
+
+\begin{equation}
+ \begin{aligned}
+  ( {t_a}_n + {t_b}_n )\Delta x + \gamma \sin \frac{\Delta\theta}{2}
+      + (\gamma + \Delta \gamma) \sin \frac{\Delta\theta}{2} = 0 \\
+  ( {t_a}_t + {t_b}_t )\Delta x - \gamma \cos \frac{\Delta\theta}{2}
+      + (\gamma + \Delta \gamma) \cos\frac{\Delta \theta}{2} = 0
+ \end{aligned}
+\end{equation}
+
+Inserendo i valori approssimati di $\sin \Delta \theta$ e $\cos \Delta \theta$, trascurando i termini di ordine superiore ($\Delta \gamma \Delta \theta$):
+
+\begin{equation}
+ \begin{aligned}
+  & ( {t_a}_n + {t_b}_n )\Delta x + 2 \gamma \frac{\Delta \theta}{2} = 0 \\
+  & ( {t_a}_t + {t_b}_t )\Delta x + \Delta \gamma = 0
+ \end{aligned}
+\end{equation}
+
+Se si può confondere la coordinata che descrive la superficie con la coordinata $x$, si può 
+approssimare $\Delta \gamma \sim \frac{\partial \gamma}{\partial x} \Delta x$.
+Usando la relazione $\frac{\Delta x}{2} \sim R \frac{\Delta \theta}{2}$ e semplificando 
+l'elemento $\Delta x$:
+
+\begin{equation}\label{eqn:equil_young_laplace}
+\begin{aligned}
+ & ( {t_a}_n + {t_b}_n ) + \frac{\gamma}{R} = 0 \\
+ & ( {t_a}_t + {t_b}_t ) + \frac{\partial \gamma}{\partial x} = 0
+\end{aligned}
+\end{equation}
+
+Nel caso in cui si consideri un problema di statica, lo sforzo \textbf{sul} 
+ fluido è dovuto solo al contributo di pressione, che agisce in direzione
+ normale alla superficie: 
+ $\bm{t}_a = -P_a \bm{\hat{n}_a}$,  $\bm{t}_b = -P_b \bm{\hat{n}_b}$. Lo
+ sforzo che il fluido esercita sulla superficie di interfaccia è uguale
+ in modulo e opposto in direzione. Le due
+  normali sono tra di loro opposte: si sceglie di definire la normale
+  $\bm{\hat{n}} = \bm{\hat{n}_a} = -\bm{\hat{n}_b}$. Di conseguenza, le
+  componenti degli sforzi agenti sulla superficie di interfaccia, proiettati
+  lungo $\bm{\hat{n}}$ e un versore tangente sono: ${{t_a}_n} = P_a$, 
+  ${{t_b}_n} = - P_b$, ${{t_a}_t} = 0$, ${{t_b}_n} = 0$.
+ Se $\gamma$ è costante (la tensione superficiale può avere gradienti non 
+ nulli a causa di gradienti di temperatura o di concentrazione),
+  l'equilibrio in direzione tangente è identicamente soddisfatto.
+
+\begin{equation}
+   P_a - P_b + \frac{\gamma}{R} = 0 \qquad 
+  \Rightarrow  \qquad 
+   P_b - P_a = \frac{\gamma}{R}
+\end{equation}
+
+\begin{tabular}{cc}
+\begin{minipage}{0.63\textwidth}
+\textit{Estensione al caso 3D.} Per estendere la dimostrazione al caso 3D, nel
+quale la superficie è 2D, si procede in modo analogo a quanto fatto per il caso 2D con 
+superficie 1D. Va considerata la curvatura di una superficie e non di una curva 
+(esistono due raggi di curvatura...); chi è interessato cerchi informazioni su ``geometria differenziale'', in particolare geometria differenziale
+ delle superfici. Un primo riferimento, è disponibile in rete
+ seguendo il collegamento
+\href{http://alpha.math.uga.edu/~shifrin/ShifrinDiffGeo.pdf}
+ {Differential Geometry, Shiffrin}.
+
+La formula che si ottiene, nel caso statico con $\gamma$ costante, è la seguente:
+\begin{equation}
+  p_b - p_a = \gamma \displaystyle\left( \frac{1}{R_1} + \frac{1}{R_2} \right) = 2 \gamma H
+\end{equation}
+ dove con $H$ si è indicata la curvatura media.
+\href{https://www.youtube.com/watch?v=Oz54Auev9eU}{Collegamento alle barchette che sfruttano la tensione superficiale come mezzo di propulsione.}
+\end{minipage}
+&
+\begin{minipage}{0.35\textwidth}
+  \begin{center}
+    \includegraphics[width=0.95\textwidth]{./fig/laplaceYoung2Ddim.eps}
+  \end{center}
+\end{minipage}
+\end{tabular}

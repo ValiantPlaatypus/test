@@ -1,0 +1,314 @@
+In questo capitolo vengono introdotti i bilanci di alcune quantità meccaniche per un mezzo continuo. I bilanci in forma integrale permettono di descrivere l'evoluzione complessiva (integrale) di un sistema e vengono ricavati partendo da alcuni principi fondamentali della meccanica classica: la conservazione della massa, l'equazioni cardinali della dinamica, il primo principio della termodinamica o bilancio dell'energia. Vengono scritti prima per un volume materiale e poi per volumi di controllo o volumi in moto generico, utilizzando il teorema del trasporto di Reynolds.
+
+\noindent
+Dai bilanci in forma integrale, sotto ipotesi di sufficiente regolarità dei campi, vengono poi ricavati i bilanci in forma differenziale, che permettono di descrivere l'evoluzione locale (puntuale) di un sistema. La forma lagrangiana del bilanci di massa, di quantità di moto e della vorticità verrà utilizzata per meglio apprezzare il significato del vincolo di incomprimibilità, il ruolo della pressione (e degli sforzi in generale) nella dinamica di un fluido e intuire l'influenza del campo di velocità sul campo di vorticità.
+
+\noindent
+Successivamente, dai bilanci integrali vengono ricavate le relazioni di salto delle quantità meccaniche. Queste relazioni possono essere utilizzate per trovare determinare lo stato di un sistema formato da due sotto-sistemi, all'interno dei quali i campi sono regolari, ma che sono separati da una frontiera, attraverso la quale i campi non sono regolari: alcuni esempi di queste sono le superfici ``di scorrimento'' in fluidi non viscosi, attraverso le quali è discontinua la componente tangenziale della velocità, o le onde d'urto che possono formarsi in correnti comprimibili di fluidi non viscosi.
+
+\noindent
+Infine, viene fornita una breve introduzione agli esercizi sui bilanci integrali, che costituisce una prima linea guida al loro svolgimento.
+
+%In fondo alla sezione viene data una lettura ``non convenzionale'' di alcuni bilanci e vengono ricavate le relazioni di salto delle grandezze meccaniche attraverso superfici di discontinuità, dove le equazioni in forma differenziale non sono valide. La scrittura in forma lagrangiana dei bilanci di massa, di quantità di moto e di vorticità permette di apprezzare il concetto di incomprimibilità, intuire il ruolo della pressione (e dello sforzo) nel determinare la traiettoria di una particella fluida e intuire il legame tra evoluzione della vorticità e del campo di velocità.
+% Le relazioni di salto verranno usate nel capitolo successivo per ricavare le grandezze attraverso superfici di discontinuità \textit{di contatto}, ma risultano valide anche attraverso le discontinuità (onde d'urto) che si formano nel campo di moto quando gli effetti viscosi sono trascurabili.
+
+
+\section{Bilanci in forma integrale}
+
+Vengono ricavati i bilanci integrali per un volume materiale $V(t)$ partendo dai principi fondamentali della meccanica classica. Successivamente si ricavano i bilanci per un volumi in moto arbitrario $v(t)$ e, come caso particolare, volumi di controllo $V_c$.
+
+\subsection{Bilancio di massa}
+La massa di un volume materiale è uguale all'integrale sul volume della densità $\rho$. Per il \textbf{principio di conservazione della massa}, la massa di un sistema chiuso (che non ha scambi di materia con l'esterno), come ad esempio un volume materiale $V(t)$, rimane costante e quindi la sua derivata nel tempo deve essere uguale a zero,
+\begin{fBox}
+\begin{equation}
+ \dfrac{d}{dt} \int_{V(t)} \rho = 0 \ .
+\end{equation}
+\end{fBox}
+
+\subsection{Bilancio della quantità di moto}
+La quantità di moto di un volume materiale è uguale all'integrale sul volume della quantità di moto per unità di volume $\rho \bm{u}$, dove $\bm{u}$ è la velocità delle particelle materiali.
+Per la \textbf{prima equazione cardinale della dinamica}, la derivata nel tempo della quantità di moto di un sistema è uguale alla risultante delle forze esterne agenti sul sistema,
+\begin{fBox}
+\begin{equation}
+ \dfrac{d}{dt} \int_{V(t)} \rho \bm{u} = \int_{V(t)} \bm{f} + \oint_{S(t)} \bm{t_n} \ , 
+\end{equation}
+\end{fBox}
+dove $\int_{V(t)} \bm{f}$ rappresenta la risultante delle forze esterne di volume e $\oint_{S(t)} \bm{t_n}$ la risultante delle forze esterne di superficie, avendo indicato con $\bm{f}$ il campo di forze per unità di volume e $\bm{t_n}$ il vettore sforzo agente sulla supreficie esterna $S(t)$ del volume $V(t)$. Il teorema di Cauchy nella meccanica del continuo, permette di esprimere il vettore sforzo $\bm{t_n}$ in funzione del tensore degli sforzi $\mathbb{T}$ e la normale alla superficie $\bm{\hat{n}}$, come $\bm{t_n} = \bm{\hat{n}} \cdot \mathbb{T}$.
+
+\subsection{Bilancio del momento quantità di moto}
+
+Il momento della quantità di moto di un volume materiale è uguale all'integrale sul volume del momento della quantità di moto per unità di volume $\rho \bm{r} \times \bm{u}$, dove $\bm{r}$ è il vettore che congiunge il polo con i punti del volume materiale.
+Per la \textbf{seconda equazione cardinale della dinamica}, la derivata nel tempo del momento della quantità di moto di un sistema, rispetto a un polo fisso, è uguale alla risultante momenti esterni sul sistema,
+\begin{fBox}
+\begin{equation}
+ \dfrac{d}{dt} \int_{V(t)} \rho \bm{r} \times \bm{u} = \int_{V(t)} \bm{r} \times \bm{f} + \oint_{S(t)} \bm{r} \times \bm{t_n} \ , 
+\end{equation}
+\end{fBox}
+nell'ipotesi che non ci siano momenti esterni per unità di volume e che il materiale non sia polare (due elementi di materiale adiacenti non si scambiano momenti ma solo forze).
+
+\subsection{Bilancio dell'energia totale}
+
+L'energia totale di un volume materiale è uguale all'integrale sul volume della sua energia interna per unità di volume $\rho e$ e della sua energia cinetica per unità di volume $\rho |\bm{u}|^2/2$. Combinando il \textbf{primo principio della termodinamica} (che riguarda solo sistemi in equilibrio) con il \textbf{teorema dell'energia cinetica} (che non include il contributo di energia interna), la derivata nel tempo dell'energia totale del sistema di un sistema è uguale alla differenza tra la potenza delle forze agenti sul sistema e i flussi di calore uscenti da esso,
+\begin{fBox}
+\begin{equation}
+ \dfrac{d}{dt} \int_{V(t)} \rho e^t = \int_{V(t)} \bm{f} \cdot \bm{u} + \oint_{S(t)} \bm{t_n} \cdot \bm{u} - \oint_{S(t)} \bm{q} \cdot \bm{\hat{n}} \ , 
+\end{equation}
+\end{fBox}
+avendo indicato con $\bm{q}$ il flusso di calore uscente dal volume materiale $V(t)$ \'E stata fatta l'ipotesi che non ci siano fonti di calore per unità di massa $r$, che verrebbero rappresentate da un termine $\int_{V(t)} \rho r$ a destra dell'uguale.
+
+\subsection{Bilanci integrali per volumi in moto arbitrario}
+Utilizzando il teorema del trasporto di Reynolds, è possibile esprimere la derivata nel tempo dell'integrale di un campo $f$ su un volume materiale $V(t)$ come somma della derivata nel tempo dell'integrale dello stesso campo $f$ su un volume arbitrario $v(t)$ e al flusso della quantità $f$ attraverso la frontiera $s(t)=\partial v(t)$ di $v(t)$, dovuto alla velocità relativa $\bm{u} - \bm{v}$ tra le particelle materiali e la superficie $s(t)$,
+%\begin{fBox}
+\begin{equation}
+  \dfrac{d}{d t} \int_{V(t)} f = \dfrac{d}{d t} \int_{v(t)\equiv V(t)} f +
+ \oint_{s(t)\equiv S(t)} f (\bm{u} - \bm{v}) \cdot \bm{\hat{n}} \ .
+\end{equation}
+%\end{fBox}
+
+\noindent
+I bilanci integrali riferiti a un volume arbitrario $v(t)$, la cui superficie $s(t)$ si muove con velocità $\bm{v}$, risultano
+\begin{equation}
+\begin{cases}
+ \dfrac{d}{dt} \displaystyle\int_{v(t)} \rho + \oint_{s(t)} \rho (\bm{u}-\bm{v}) \cdot \bm{\hat{n}}= 0  \\
+ \dfrac{d}{dt} \displaystyle\int_{v(t)} \rho \bm{u} + \oint_{s(t)} \rho \bm{u} (\bm{u} - \bm{v}) \cdot \bm{\hat{n}} = \int_{v(t)} \bm{f} + \oint_{s(t)} \bm{t_n}  \\
+ \dfrac{d}{dt} \displaystyle\int_{v(t)} \rho \bm{r} \times \bm{u} + \oint_{s(t)} \rho \bm{r} \times \bm{u} (\bm{u}-\bm{v}) \cdot \bm{\hat{n}}= \int_{v(t)} \bm{r} \times \bm{f} + \oint_{s(t)} \bm{r} \times \bm{t_n} \\
+ \dfrac{d}{dt} \displaystyle\int_{v(t)} \rho e^t + \oint_{s(t)} \rho e^t (\bm{u}-\bm{v}) \cdot \bm{\hat{n}}= \int_{v(t)} \bm{f} \cdot \bm{u} + \oint_{s(t)} \bm{t_n} \cdot \bm{u} - \oint_{s(t)} \bm{q} \cdot \bm{\hat{n}} \ .
+\end{cases}
+\end{equation}
+
+\subsection{Bilanci integrali per volumi di controllo fissi}
+
+Come caso particolare dei bilanci integrali riferiti a un volume arbitrario $v(t)$,  i bilanci integrali riferiti a un volume di controllo fisso $V_c$ risultano
+\begin{equation}
+ \begin{cases}
+   \dfrac{d}{d t} \displaystyle\int_{V_c} \rho + \oint_{S_c} \rho \bm{u} \cdot \bm{\hat{n}} = 0 \\
+   \dfrac{d}{d t} \displaystyle\int_{V_c} \rho  \bm{u}+ \oint_{S_c} \rho \bm{u} \bm{u} \cdot \bm{\hat{n}} = \int_{V_c} \bm{f} + \oint_{S_c} \bm{t_n} \\
+   \dfrac{d}{d t} \displaystyle\int_{V_c} \rho \bm{r} \times \bm{u}+ \oint_{S_c} \rho \bm{r} \times \bm{u} \bm{u} \cdot \bm{\hat{n}} = \int_{V_c} \bm{r} \times \bm{f} + \oint_{S_c} \bm{r} \times \bm{t_n} \\
+   \dfrac{d}{d t} \displaystyle\int_{V_c} \rho e^t + \oint_{S_c} \rho e^t \bm{u} \cdot \bm{\hat{n}} = \int_{V_c} \bm{f} \cdot \bm{u} + \oint_{S_c} \bm{t_n} \cdot \bm{u} - \oint_{S_c} \bm{q} \cdot \bm{\hat{n}} \ .
+ \end{cases}
+\end{equation}
+
+
+\section{Bilanci in forma differenziale}
+
+Sotto le ipotesi di sufficiente regolarità dei campi che compaiono negli integrali di superficie, è possibile trasformare gli integrali di superficie in integrali di volume, applicando il teorema della divergenza o il lemma del teorema di Green
+\begin{equation}
+  \oint_{S} f n_i = \int_V f_{/i} \ ,
+\end{equation}
+ avendo indicato con $f_{/i}$ la derivata parziale rispetto alla coordinata cartesiana $x_i$ e con $n_i$ la proiezione lungo $x_i$ della normale uscente dalla superficie $S=\partial V$.
+Una volta scritti tutti i termini come integrali di volume, sullo stesso volume $V$, è possibile sfruttare l'arbitrarietà del volume $V$ per ricavare i bilanci in forma differenziale.
+In questa sezione, si partirà dai bilanci in forma integrale scritti per un volume di controllo fisso $V=V_c$, per il quale vale
+\begin{equation}
+ \dfrac{d}{d t} \int_V f = \int_V \dfrac{\partial f}{\partial t} \ ,
+\end{equation}
+secondo il teorema del trasporto di Reynolds.
+
+\subsection{Bilancio di massa}
+Usando il teorema del trasporto di Reynolds per volumi di controllo fissi e applicando il teorema della divergenza al termine di flusso, si può scrivere
+\begin{equation}
+ \dfrac{d}{d t} \displaystyle\int_{V} \rho + \oint_{S} \rho \bm{u} \cdot \bm{\hat{n}} = \int_V \left[ \dfrac{\partial \rho}{\partial t} + \bm{\nabla} \cdot (\rho \bm{u})\right] = 0 \ .
+\end{equation}
+Sfruttando l'arbitrarietà del bilancio integrale dal volume considerato e imponendo che l'integranda sia nulla, si ricava la \textit{forma conservativa} del bilancio differenziale di massa,
+\begin{fBox}
+\begin{equation}
+  \dfrac{\partial \rho}{\partial t} + \bm{\nabla} \cdot (\rho \bm{u}) = 0 
+\end{equation}
+\end{fBox}
+Sviluppando la divergenza $\bm{\nabla} \cdot (\rho \bm{u}) = \rho \bm{\nabla} \cdot \bm{u} + \bm{u} \cdot \bm{\nabla} \rho$, e riconoscendo l'espressione della derivata materiale, si ottiene la \textit{forma convettiva} del bilancio differenziale di massa,
+\begin{fBox}
+\begin{equation}
+\begin{aligned}
+ \dfrac{\partial \rho}{\partial t} + \bm{u} \cdot \bm{\nabla} \rho &+ \rho \bm{\nabla} \cdot \bm{u} = 0 \\ 
+ \dfrac{D \rho}{D t} = &- \rho \bm{\nabla} \cdot \bm{u} \ .
+\end{aligned}
+\end{equation}
+\end{fBox}
+Il vincolo cinematico di incomprimibilità $\bm{\nabla} \cdot \bm{u} = 0$ equivale al vincolo ``fisico'' che impone che la densità delle singole particelle materiali rimanga costante, $D\rho/Dt = 0$.
+
+\subsection{Bilancio di quantità di moto}
+\'E possibile trasformare in un integrale di volume la risultante degli sforzi di superficie, utilizzando il teorema di Cauchy per i mezzi continui, 
+\begin{equation}
+  \bm{t_n} = \bm{\hat{n}} \cdot \mathbb{T} \quad , \quad 
+  t_i = n_j T_{ji} \ ,
+\end{equation}
+dove $\bm{t_n}$ è il vettore sforzo, $\bm{\hat{n}}$ la normale alla superficie e $\mathbb{T}$ il tensore degli sforzi.
+La risultante degli sforzi di superficie diventa, usando un po' di libertà nel passare dalla notazione astratta a quella indiciale,
+\begin{equation}
+ \oint_S \bm{t_n} = \oint_S t_i = \oint_S n_j T_{ji} =
+  \int_V T_{ji/j} = \int_V \bm{\nabla} \cdot \mathbb{T} \ .
+\end{equation}
+Usando il teorema del trasporto di Reynolds per volumi di controllo fissi e applicando il teorema della divergenza al termine di flusso,
+\begin{equation}
+ \oint_S \big\{ \rho \bm{u} \bm{u} \cdot \bm{\hat{n}} \big\}_i = \oint_S \rho u_i u_j n_j = \int_V (\rho u_i u_j)_{/j} = \int_{V} \bm{\nabla} \cdot ( \rho \bm{u} \otimes \bm{u} ) \ ,
+\end{equation}
+si può scrivere il bilancio di quantità di moto 
+\begin{equation}
+  \displaystyle\int_{V} \dfrac{\partial(\rho \bm{u})}{\partial t}  + \int_{V} \bm{\nabla} \cdot ( \rho \bm{u} \otimes \bm{u} ) = \int_{V} \left[ \bm{f} +  \bm{\nabla} \cdot \mathbb{T} \right] \ .
+\end{equation}
+Sfruttando l'arbitrarietà del bilancio integrale dal volume considerato e imponendo che l'integranda sia nulla, si ricava la \textit{forma conservativa} del bilancio differenziale di quantità di moto,
+\begin{fBox}
+\begin{equation}
+ \dfrac{\partial(\rho \bm{u})}{\partial t}  + \bm{\nabla} \cdot ( \rho \bm{u} \otimes \bm{u} - \mathbb{T} ) = \bm{f} \ .
+\end{equation}
+\end{fBox}
+Sviluppando i termini 
+\begin{equation}
+\begin{aligned}
+ \dfrac{\partial (\rho \bm{u})}{\partial t} = \rho \dfrac{\partial \bm{u}}{\partial t} + \bm{u} \dfrac{\partial \rho}{\partial t} \quad & , \quad 
+ \dfrac{\partial (\rho u_i)}{\partial t} = \rho \dfrac{\partial u_i}{\partial t} + u_i \dfrac{\partial \rho}{\partial t} \\
+ \bm{\nabla} \cdot ( \rho \bm{u} \otimes \bm{u} ) = \rho (\bm{u} \cdot \bm{\nabla}) \bm{u} + \bm{u} \bm{\nabla} \cdot (\rho \bm{u}) \quad & , \quad 
+ ( \rho u_i u_j )_{/j} = \rho u_j u_{i/j} + u_i (\rho u_j)_{/j} 
+  \ ,
+\end{aligned}
+\end{equation} 
+ riconoscendo che $\bm{u} \cdot (\partial \rho/\partial t + \bm{\nabla} \cdot (\rho \bm{u}))=0$ come conseguenza della conservazione della massa, si ottiene la \textit{forma convettiva} dell'equazione della quantità di moto
+\begin{fBox}
+ \begin{equation}
+  \begin{aligned}
+   \rho \dfrac{\partial\bm{u}}{\partial t}  +  \rho (\bm{u}  \cdot \bm{\nabla} ) \bm{u}& = \bm{f} + \bm{\nabla} \cdot \mathbb{T}  \\ 
+   \rho \dfrac{D \bm{u}}{D t} & = \bm{f} + \bm{\nabla} \cdot \mathbb{T} \ . \\ 
+  \end{aligned}
+ \end{equation}
+\end{fBox}
+
+\subsection{Bilancio del momento della quantità di moto}
+Il bilancio del momento della quantità di moto per un mezzo continuo non polare è equivalente alla condizione di simmetria del tensore degli sforzi
+\begin{equation}
+ \mathbb{T}^T = \mathbb{T} \quad , \quad T_{ij} = T_{ji} \ .
+\end{equation}
+
+\subsection{Bilancio dell'energia totale}
+Usando un po' di libertà nel passare dalla notazione astratta a quella indiciale, la potenza degli sforzi di superficie diventa
+\begin{equation}
+\begin{aligned}
+ \oint_S \bm{t_n} \cdot \bm{u} = \oint_S t_i u_i = \oint_S n_j T_{ji} u_i & =
+  \int_V (T_{ji} u_i)_{/j}= \int_V \bm{\nabla} \cdot ( \mathbb{T} \cdot \bm{u}) \\
+  & = \int_V (T_{ij/j} u_i + T_{ij} u_{j/i}) = \int_V \big( (\bm{\nabla} \cdot \mathbb{T}) \cdot \bm{u} + \mathbb{T} : \bm{\nabla} \bm{u} \big) \ , 
+\end{aligned} 
+\end{equation}
+avendo utilizzato la simmetria del tensore degli sforzi, $T_{ij/j} = \{ \bm{\nabla} \cdot \mathbb{T}^T \}_i = \{ \bm{\nabla} \cdot \mathbb{T} \}_i$. Applicando il teorema della divergenza, il termine di flusso di calore viene scritto come
+\begin{equation}
+ \oint_S \bm{q} \cdot \bm{\hat{n}} = \int_V \bm{\nabla} \cdot \bm{q} \ .
+\end{equation}
+La \textit{forma conservativa} del bilancio differenziale di energia totale diventa quindi
+\begin{fBox}
+\begin{equation}
+ \dfrac{\partial (\rho e^t)}{\partial t} + \bm{\nabla} \cdot (\rho e^t \bm{u} - \mathbb{T} \cdot \bm{u} - \bm{q}) = \bm{f} \cdot \bm{u} \ .
+\end{equation}
+\end{fBox}
+Sviluppando la derivata temporale e il termine $\bm{\nabla} \cdot (\rho e^t \bm{u}) = \rho \bm{u} \cdot \bm{\nabla} e^t + e^t \bm{\nabla} \cdot (\rho \bm{u})$, riconoscendo che $e^t (\partial \rho/\partial t + \bm{\nabla} \cdot (\rho \bm{u}))=0$ come conseguenza della conservazione della massa, si ottiene la \textit{forma convettiva} dell'equazione dell'energia totale,
+\begin{fBox}
+ \begin{equation}
+  \begin{aligned}
+   \rho \dfrac{\partial e^t}{\partial t}  +  \rho \bm{u}  \cdot  \bm{\nabla} e^t & = \bm{f} \cdot \bm{u} + \bm{\nabla} \cdot ( \mathbb{T} \cdot \bm{u} ) - \bm{\nabla} \cdot \bm{q} \\ 
+   \rho \dfrac{D e^t}{D t} & =  \bm{f} \cdot \bm{u} + \bm{\nabla} \cdot ( \mathbb{T} \cdot \bm{u} ) - \bm{\nabla} \cdot \bm{q}  \ . \\ 
+  \end{aligned}
+ \end{equation}
+\end{fBox}
+
+\subsection{Chiusura del problema}
+Affinché il sistema di equazioni differenziali alle derivate parziali formato dai bilanci di massa, quantità di moto ed energia totale, con le condizioni iniziali e al contorno adeguate, sono necessarie l'equazione di stato del materiale che ne descriva le proprietà termodinamiche\footnote{Si ricorda che lo stato termodinamico di un sistema monofase è definito da due variabili termodinamiche indipendenti.} e i legami costitutivi che esprimano il tensore degli sforzi e il flusso di calore come funzioni dello stato dinamico e termodinamico del sistema.
+Per un fluido, il tensore degli sforzi viscosi $\mathbb{T}$ può essere scritto come la somma del contributo idrostatico dovuto alla pressione $p$ e il tensore degli sforzi viscosi $\mathbb{S}$, funzione delle derivate spaziali del campo di velocità. Un fluido che ha un \textit{legame costitutivo lineare} tra il tensore degli sforzi viscosi e il gradiente di velocità $\bm{\nabla} \bm{u}$, viene definito \textbf{fluido newtoniano}. Per un fluido newtoniano isotropo, il legame costitutivo che definisce il tensore degli sforzi è
+\begin{equation}
+ \mathbb{T} = -p \mathbb{I} + 2 \mu \mathbb{D} + \lambda (\bm{\nabla} \cdot \bm{u}) \mathbb{I} \ ,
+\end{equation}
+dove $\mu$ e $\lambda$ sono rispettivamente il coefficiente di viscosità dinamica e il secondo coefficiente di viscosità, $p$ è  la pressione (``termodinamica''), $\mathbb{D}$ il tensore velocità di deformazione. In generale, sia la pressione $p$ sia i coefficienti di viscosità dipendono dallo stato termodinamico del sistema. \newline
+Il flusso di calore $\bm{q}$ per conduzione può essere descritto dalla \textbf{legge di Fourier}, che lo mette in relazione con il gradiente della temepratura tramite il coefficiente di conduzione termica $k$, in generale funzione dello stato termodinamico del sistema,
+\begin{equation}
+ \bm{q} = - k \bm{\nabla} T \ .
+\end{equation}
+L'introduzione di queste leggi costitutive nelle equazioni di bilancio, aggiunge nuove incognite  al sistema, per le quali non abbiamo ricavato un'equazione dinamica. Sono quindi indispensabili la legge di stato che fornisca le relazioni necessarie,
+\begin{equation}
+ \begin{aligned}
+  p = p(\rho,e) \quad , & \quad \mu = \mu(\rho,e) \\
+  T = T(\rho,e) \quad , & \quad \lambda = \lambda(\rho,e) \\
+  & \quad k = k(\rho,e) \ ,
+ \end{aligned}
+\end{equation}
+avendo scelto le variabili termodinamiche delle quali è nota l'equazione dinamica come due variabili termodinamiche indipendenti: la densità $\rho$ e l'energia interna $e$. Ve
+
+
+\subsection{Altre equazioni di bilancio}
+Combinando i bilanci delle quantità meccaniche ottenuti partendo dai principi fondamentali della fisica, si possono ottenere le equazioni di bilanci di altre quantità, come ad esempio l'energia cinetica $\rho|\bm{u}|^2/2$, l'energia interna $e$, e la vorticità $\bm{\omega} = \nabla \times \bm{u}$.
+\paragraph{Equazione dell'energia cinetica} Moltiplicando scalarmente il bilancio della quantità di moto per il vettore velocità $\bm{u}$, si può scrivere l'equazione di bilancio dell'energia cinetica. In forma conservativa,
+\begin{fBox}
+\begin{equation}
+ \dfrac{\partial}{\partial t}\dfrac{\rho|\bm{u}|^2}{2}  + \bm{\nabla} \cdot \left( \rho \bm{u} \dfrac{|\bm{u}|^2}{2} \right) = \bm{f} \cdot \bm{u} + \bm{u} \cdot ( \bm{\nabla} \cdot \mathbb{T} ) \ ,
+\end{equation}
+\end{fBox}
+in forma convettiva,
+\begin{fBox}
+ \begin{equation}
+  \begin{aligned}
+   \rho \dfrac{\partial}{\partial t} \dfrac{|\bm{u}|^2}{2} +  \rho \bm{u}  \cdot \bm{\nabla} \dfrac{|\bm{u}|^2}{2} & = \bm{f} \cdot \bm{u} + \bm{u} \cdot (\bm{\nabla} \cdot \mathbb{T} ) \\ 
+   \rho \dfrac{D }{D t}\dfrac{|\bm{u}|^2}{2} & = \bm{f}\cdot \bm{u} + \bm{u} \cdot ( \bm{\nabla} \cdot \mathbb{T} ) \ . \\ 
+  \end{aligned}
+ \end{equation}
+\end{fBox}
+
+\paragraph{Equazione dell'energia interna} Dalla differenza del bilancio dell'energia totale e dell'energia cinetica, si ottiene il bilancio dell'energia interna.
+In forma conservativa,
+\begin{fBox}
+\begin{equation}
+ \dfrac{\partial (\rho e)}{\partial t} + \bm{\nabla} \cdot (\rho e \bm{u}) = \mathbb{T}:\bm{\nabla}\bm{u} + \bm{\nabla} \cdot \bm{q} \ .
+\end{equation}
+\end{fBox}
+in forma convettiva,
+\begin{fBox}
+ \begin{equation}
+  \begin{aligned}
+   \rho \dfrac{\partial e}{\partial t} +  \rho \bm{u}  \cdot \bm{\nabla}e & =  \mathbb{T}:\bm{\nabla}\bm{u} + \bm{\nabla} \cdot \bm{q} \\ 
+   \rho \dfrac{D e}{D t} & =  \mathbb{T}:\bm{\nabla}\bm{u} + \bm{\nabla} \cdot \bm{q} \ . \\ 
+  \end{aligned}
+ \end{equation}
+\end{fBox}
+
+
+\paragraph{Equazione della vorticità} Applicando l'operatore di rotore al bilancio della quantità di moto, si ottiene l'equazione dinamica della vorticità. Per un fluido newtoniano (con coefficienti di viscosità costanti e uniformi),
+\begin{fBox}
+\begin{equation}
+\begin{aligned}
+ \dfrac{\partial \bm{\omega}}{\partial t} + (\bm{u} \cdot \bm{\nabla} ) \bm{\omega} & =
+  (\bm{\omega} \cdot \bm{\nabla}) \bm{u} - \bm{\omega} (\bm{\nabla} \cdot \bm{u}) +
+  \nu \Delta \bm{\omega} + \dfrac{\bm{\nabla} \rho \times \bm{\nabla} p}{\rho^2} \\
+   \dfrac{D \bm{\omega}}{D t}  & =
+  (\bm{\omega} \cdot \bm{\nabla}) \bm{u} - \bm{\omega} (\bm{\nabla} \cdot \bm{u}) +
+  \nu \Delta \bm{\omega} + \dfrac{\bm{\nabla} \rho \times \bm{\nabla} p}{\rho^2} \ ,
+ \end{aligned}
+\end{equation}
+\end{fBox}
+dove è stata introdotta la viscosità cinematica del fluido, $\nu = \mu / \rho$.
+
+
+\section{Relazioni di salto}
+
+
+\section{Introduzione agli esercizi}
+I bilanci integrali di massa e quantità di moto consentono di calcolare le azioni integrali (forze e momenti) scambiati tra un fluido e un corpo. Per studiare l'interazione \textit{integrale} di un fluido con un corpo fermo (in un sistema di riferimento inerziale) è conveniente usare una descrizione euleriana del problema.
+%, per la quale i bilanci delle quantità meccaniche in un volume di controllo $V_c$ fisso sono,
+%\begin{equation}
+% \begin{cases}
+%   \dfrac{d}{d t} \displaystyle\int_{V_c} \rho + \oint_{S_c} \rho \bm{u} \cdot \bm{\hat{n}} = 0 \\
+%   \dfrac{d}{d t} \displaystyle\int_{V_c} \rho  \bm{u}+ \oint_{S_c} \rho \bm{u} \bm{u} \cdot \bm{\hat{n}} = \int_{V_c} \bm{f} + \oint_{S_c} \bm{t_n} \\
+%   \dfrac{d}{d t} \displaystyle\int_{V_c} \rho \bm{r} \times \bm{u}+ \oint_{S_c} \rho \bm{r} \times \bm{u} \bm{u} \cdot \bm{\hat{n}} = \int_{V_c} \bm{r} \times \bm{f} + \oint_{S_c} \bm{r} \times \bm{t_n} \\
+%   \dfrac{d}{d t} \displaystyle\int_{V_c} \rho  e^t+ \oint_{S_c} \rho e^t \bm{u} \cdot \bm{\hat{n}} = \int_{V_c} \bm{f} \cdot \bm{u} + \oint_{S_c} \bm{t_n} \cdot \bm{u} - \oint_{S_c} \bm{q} \cdot \bm{\hat{n}} \ .
+% \end{cases}
+%\end{equation}
+Ogni bilancio integrale può essere utilizzato per calcolare delle grandezze fisiche integrali incognite:
+\begin{itemize}
+ \item flussi di massa (portate massiche) dal bilancio di massa;
+ \item risultanti di forze dal bilancio di quantità di moto;
+ \item risultanti di momenti dal bilancio del momento della quantità di moto;
+ \item potenze dal bilancio dell'energia.
+\end{itemize}
+Per esempio, nel caso stazionario in cui la pressione del fluido è uniforme sulla superficie esterna $S_f$ del volume di controllo e le forze di volume sono trascurabili, la risultante delle forze e dei momenti agenti su un corpo solido valgono
+\begin{equation}
+\begin{cases}
+ \bm{R} = -\displaystyle\oint_{S_f} \rho \bm{u} \bm{u} \cdot \bm{\hat{n}} \\
+ \bm{M} = -\displaystyle\oint_{S_f} \rho \bm{r} \times \bm{u} \bm{u} \cdot \bm{\hat{n}}  \ ,
+\end{cases}
+\end{equation}
+avendo indicato con $\bm{r}$ il raggio tra il punto nel fluido e il polo, rispetto al quale è calcolato il momento.
+Per casi più generali, in cui la pressione non è uniforme, si rimanda allo svolgimento degli esercizi.
+
+

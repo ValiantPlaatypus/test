@@ -1,0 +1,45 @@
+\noindent
+\begin{tabular}{c}
+\begin{minipage}[b]{0.95\textwidth}
+\begin{exerciseS}[Corrente attorno al cilindro]
+Una corrente piana con velocit\`{a} asintotica orizzontale (parallela all'asse x) $U_\infty=1$ viene perturbata introducendo 
+nell'origine del piano un vortice in modo tale da accelerare la corrente nel semipiano superiore e rallentarla 
+in quello inferiore per valori positivi di $\Gamma$. Determinare la circolazione necessaria ad ottenere una differenza di componente x della velocit\`{a} pari a 1 
+tra i due punti di coordinate (polari) $R=1$ e $\theta=\pm\pi/2$. 
+($\Gamma = -\pi$)
+\end{exerciseS}
+\end{minipage}
+\end{tabular}
+
+\sol
+
+\partone
+ Flusso non viscoso 2D, incomprimibile e irrotazionale. Circolazione. Corrente indisturbata. Vortice. Sovrapposizione delle cause e degli effetti.
+
+\parttwo
+ Una volta scritte (come si ricavano?) le componenti della velocità nel campo di moto, si
+impongono le condizioni richieste dal problema per determinare il valore di circolazione necessario.
+
+\begin{equation}
+\begin{cases}
+  u_r (r,\theta) = U_\infty \cos{\theta} \\
+  u_\theta (r,\theta) = - U_\infty \sin{\theta} + \frac{\Gamma}{2\pi r}
+\end{cases}
+\end{equation}
+
+\vspace{0.2cm}
+Si impongono ora le condizioni del problema. Per $\theta_1 = \pi/2$ e $\theta_2 = -\pi/2$, la componente radiale è nulla.
+
+\begin{equation}
+  \begin{cases}
+    u_{\theta}(R,\theta_1) = -U_\infty + \frac{\Gamma}{2\pi R} \\
+    u_{\theta}(R,\theta_2) = U_\infty + \frac{\Gamma}{2\pi R}
+  \end{cases}
+\end{equation}
+
+Si vuole determinare la differenza delle componenti in direzione x $u_x(R,\theta_1) - u_x(R,\theta_2)$; questa è uguale a $-(u_\theta(R,\theta_1) + u_\theta(R,\theta_2))$. Quindi, per $R=1$:
+
+\begin{equation}
+  -\frac{\Gamma}{\pi} = 1 \quad \Rightarrow \quad \Gamma = -\pi
+\end{equation}
+

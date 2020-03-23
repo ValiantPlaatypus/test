@@ -1,0 +1,63 @@
+\documentclass[11pt,fleqn]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[italian]{babel}
+
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{bm}
+
+\newcommand{\ul}[1]{\underline{#1}}
+\newcommand{\uul}[1]{\ul{\ul{#1}}}
+\newcommand{\p}[2]{\dfrac{\partial{#1}}{\partial{#2}}}
+\newcommand{\f}[2]{\frac{#1}{#2}}
+
+\begin{document}
+
+Viene fornito del materiale dettagliato, in assenza di notizie e previsioni certe, sulla durata dell'interruzione delle lezioni. Il materiale copre gli argomenti delle prime esercitazioni riguardanti un ripasso di alcuni argomenti già visti (e forse dimenticati) nei corsi di Analisi e la loro applicazione nell'ambito del corso di Fluidodinamica. Il materiale è volutamente abbondante, non per caricare lo studente di dimostrazioni ``inutili'' ma per fornire un riferimento durante lo studio: in questo senso, alcune parti del documento sono pensate per essere consultate, per soddisfare qualche curiosità di dettaglio, e non per essere studiate. Verranno evidenziate con un \textbf{grassetto gli argomenti che vengono considerati necessari per un approccio consapevole agli argomenti del corso}.
+
+Gli argomenti contenuti nel materiale fornito saranno trattati regolarmente durante le prime esercitazioni, se la durata dell'interruzione delle attività didattiche sarà breve da non compromettere lo svolgimento regolare del corso.
+
+Il materiale viene fornito in anticipo, per garantire allo studente una prima lettura autonoma, non tanto dei richiami di analisi, quanto dell'introduzione ai tensori, che facilmente risulterà un argomento nuovo rispetto a quanto visto nei corsi precedenti.
+
+\section*{Obiettivo del materiale fornito e come utilizzarlo}
+Il materiale fornito è composto da due documenti:
+\begin{itemize}
+  \item il documento ``Richiami di analisi e introduzione all'algebra e al calcolo tensoriale'' è logicamente diviso in due parti: i richiami di analisi e l'introudzione ai tensori;
+  \item un ``pizzino'' manoscritto degli appunti personali che ricalca gli argomenti della prima esercitazione. Il foglio è suddiviso qualitativamente ``per lavagne'' ed ha lo scopo di fornire una linea guida schematica all'introduzione all'algebra tensoriale, al netto di una scansione del foglio ai limiti della decenza.
+\end{itemize}
+%
+Di seguito, delle indicazioni sullo scopo e sull'utilizzo del documento principale.
+
+\subsection*{Richiami di analisi}
+La prima parte inizia con il lemma di Green, altri lemmi, utilizzati per dimostrare il teorema della divergenza, del rotore e il teorema del gradiente (esiste anche quello), dei quali non è richiesto di conoscere le dimostrazioni. \'E quindi necessario ricordarsi le definizioni degli \textbf{operatori di gradiente, divergenza e rotore}. Risulterà comunque utile ricordarsi il lemma 1.1.2,
+\begin{equation}
+  \int_V \dfrac{\partial f}{\partial x_i} = \oint_{\partial V} f n_i \ ,
+\end{equation}
+poiché alla base del \textbf{teorema della divergenza e del gradiente}, che verranno utilizzati nella prima parte del corso per ricavare i bilanci delle quantità fisiche in forma differenziale, partendo dalla forma integrale.
+
+Si prosegue poi con la definizione di un \textbf{campo conservativo} e vengono riprese le definizioni di \textbf{circuitazione di un campo vettoriale} e di \textbf{domini semplicmente connessi e non}. Questi strumenti verranno utilizzati durante l'introduzione all'Aerodinamica. Per dare un esempio della loro rilevanza, la portanza generata da un profilo aerodinamico bidimensionale è legata alla circuitazione del campo di velocità calcolato su un contorno chiuso che circonda il profilo.
+
+Le sezioni successive presentano alcuni teoremi che riguardano il calcolo della derivata temporale di quantità integrali e la loro applicazione ai bilanci delle quantità meccaniche per un mezzo continuo. Questi argomenti verranno trattati a lezione nella parte iniziale del corso. Il materiale è fornito come riferimento e non sarà oggetto delle prime esercitazioni.
+
+\subsection*{Introduzione all'algebra e al calcolo tensoriale}
+\subsubsection*{Introduzione all'algebra tensoriale}
+Questa parte è pensata per introdurre la definizione di tensore, fornendo alcuni dettagli matematici nascosti nei corsi precedenti. Questa introduzione non ha nessuna pretesa di una descrizione completa dell'argomento, ma si propone di raggiungere un buon compromesso tra il dettaglio matematico (ai fini della descrizione del fenomeno fisico) e la semplicità della trattazione.
+
+L'obiettivo fondamentale di questa sezione è comprendere che un \textbf{fenomeno fisico è invariante rispetto alla base o al sistema di riferimento} utilizzato per descriverlo, e che \textbf{i tensori sono gli oggetti matematici che descrivono il carattere invariante del fenomeno fisico}.
+
+Da questo presupposto, parte l'introduzione all'algebra tensoriale. All'inizio viene illustrata l'invarianza dei vettori (che non sono altro che tensori di ordine 1), per poi introdurre i tensori come \textbf{insieme di numeri che seguono delle precise regole di trasformazione in seguito a un cambio di base, per garantire l'invarianza del tensore stesso}: cambia la base e di conseguenza cambieranno le componenti (seguendo una trasformazione inversa), per garantire che l'oggetto sia invariante.
+
+Una volta introdotta la definizione di tensore, verranno introdotte alcune operazioni, come ad esempio somma, prodotti, contrazione, il cui risultato è nuovamente un tensore.
+
+\subsubsection*{Introduzione al calcolo tensoriale}
+Dopo aver imparato cos'è un tensore e imparato le operazioni algebriche, si introdurranno i campi tensoriali, cioè tensori che dipendono dalla coordinata spaziale. Si reinterpreteranno gli operatori differenziali di gradiente, divergenza, \dots nell'ambito del calcolo tensoriale.
+
+\vspace{0.5cm}
+\noindent
+Ma si spera che a questo punto le lezioni siano riprese \dots
+
+
+\end{document}

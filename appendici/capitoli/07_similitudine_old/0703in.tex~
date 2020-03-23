@@ -1,0 +1,104 @@
+\noindent
+\begin{exerciseS}[Similitudine a bassa velocità: sottomarino]
+La velocit\`{a} di pattugliamento di un sottomarino vale $V_v = 2.5\ m/s$.
+Considerando che il sottomarino si muova in acqua in condizioni standard, a quale velocit\`{a}
+deve essere provato un modello in scala $\lambda = 1/10$, avendo a disposizione
+rispettivamente:
+\begin{itemize}
+  \item una galleria ad acqua in condizioni standard,
+  \item una galleria ad aria a pressione di $10 \ bar$ e temperatura di 
+        $30^\circ  C$?
+\end{itemize}
+
+Se la resistenza al vero vale $D_v=6000\ N$, quanto vale la resistenza sui
+modelli in scala nei due casi?
+
+(Galleria ad aria: $V_m = 35.17\  m/s$, $D_m = 136.1\ N$. 
+ Galleria ad acqua: $V_m = 25\  m/s$, $D_m = 6000\ N$.)
+\end{exerciseS}
+
+\sol
+
+\partone
+Similitudine fluidodinamica per correnti incomprimibili, numero di Reynolds,\vspace{-0.5cm}
+\begin{equation}
+ Re = \frac{\rho U L}{\mu} \ .
+\end{equation}
+Formula di Sutherland per la viscosità dinamica \textbf{dei gas},
+\begin{equation}
+ \mu(T) = \mu_0 \displaystyle\left(\frac{T}{T_0}\right)^{1.5}
+ \frac{C+T_0}{C+T} \ .
+\end{equation}
+Azioni agenti sul modello e coefficienti di forza.
+
+\vspace{0.5cm}
+\parttwo
+La velocità sul modello si trova tramite l'uguaglianza dei numeri di Reynolds,
+\begin{equation}
+ \frac{\rho_v U_v L_v}{\mu_v} = \frac{\rho_m U_m L_m}{\mu_m} \quad 
+ \rightarrow \quad U_m = U_v \frac{\rho_v L_v}{\rho_m L_m} \ .
+ \frac{\mu_m}{\mu_v}
+\end{equation}
+Per trovare la viscosità dell'aria viene utilizzata la formula di Sutherland (per l'aria i coefficienti sono $T_0 = 288 K$, $C = 110.4 K$, $\mu_0 = 18.27 \mu Pa s$). Il coefficienti di viscosità dinamica dell'acqua in condizioni standard è dell'ordine di $10^{-3} \ kg / (m \ s)$.
+%
+\newline
+La forza agente aerodinamica agente sul corpo, la cui superficie esterna è indicata con $S$, è la risultante degli sforzi di superficie esterna del corpo ${S_b}$,
+\begin{equation}
+\begin{aligned}
+ \bm{F} = \oint_S \bm{t}_{\bm{n}} =  \oint_S -p \bm{\hat{n}} + \mu [\bm{\nabla} \bm{u} + \bm{\nabla}^{T} \bm{u}] \cdot \bm{\hat{n}} 
+\end{aligned}
+\end{equation}
+Vengono scelte la densità caratteristica del fluido $\rho$, una velocità caratteristica della corrente $U$ e una lunghezza caratteristica del problema $L$, per definire la scala della pressione $P = \rho U^2$. Raccogliendo le dimensioni fisiche fuori dal segno di integrale è quindi possibile scrivere,
+\begin{equation}
+\begin{aligned} 
+ \bm{F} & =  \oint_{S_b} -P p^*\bm{\hat{n}} + \frac{\mu U}{L} [\bm{\nabla}^*
+  \bm{u}^* + \bm{\nabla}^{*T} \bm{u}^*] \bm{\hat{n}} = 
+  & \qquad \text{($P = \rho U^2$, $dS = L^2 dS^*$)} \\
+ & = \rho U^2 L^2 \oint_{S_b^*} - p^*\bm{\hat{n}} + \frac{1}{Re} [\bm{\nabla}^*
+  \bm{u}^* + \bm{\nabla}^{*T} \bm{u}^*] \bm{\hat{n}} = \\
+ & = \dfrac{1}{2}\rho U^2 S \bm{c}_{\bm{F}}(Re) \ ,
+\end{aligned}
+\end{equation}
+avendo introdotto il coefficiente di forza $\bm{c}_{\bm{F}}$, 
+\begin{equation}
+ \bm{c}_{\bm{F}} = 2 \dfrac{L^2}{S} \oint_{S_b^*} - p^*\bm{\hat{n}} + \frac{1}{Re} [\bm{\nabla}^* \bm{u}^* + \bm{\nabla}^{*T} \bm{u}^*] \bm{\hat{n}}
+\end{equation}
+che può dipendere dalle variabili fisiche solo attraverso i numeri adimensionali del problema (in questo caso solo da $Re$, per problemi comprimibili anche da $M$) e che rappresenta la forza agente sul corpo adimensionalizzata con la pressione dinamica $\frac{1}{2}\rho U^2$ e con una supreficie di riferimento del corpo $S$. La superficie di riferimento $S$ scala con $L^2$ ($S = a L^2$, $a$ costante).
+\newline
+Si può scrivere la risultante delle forze sul modello e al vero come
+\begin{equation}
+ \begin{cases}
+  \bm{F}_m = \dfrac{1}{2}\rho_m U_m^2 S_m^2 \bm{c_F}(Re_m) \\
+  \bm{F}_v = \dfrac{1}{2}\rho_v U_v^2 S_v^2 \bm{c_F}(Re_v) \ .
+ \end{cases}
+\end{equation}
+Poichè è soddisfatta la similitudine fluidodinamica, i valori dei coefficienti di forza del modello e ``al vero'' sono uguali. Si può quindi scrivere
+\begin{equation}
+ \bm{F}_m = \dfrac{\rho_m}{\rho_v} \left( \dfrac{U_m}{U_v} \right)^2
+  \left( \dfrac{S_m}{S_v} \right) \bm{F}_v = 
+ \dfrac{\rho_m}{\rho_v} \left( \dfrac{U_m}{U_v} \right)^2
+  \left( \dfrac{L_m}{L_v} \right)^2 \bm{F}_v = 
+ \dfrac{\rho_m}{\rho_v} \left( \dfrac{U_m}{U_v} \right)^2
+  \lambda^2 \bm{F}_v \ ,
+\end{equation}
+Nel caso della galleria ad acqua, nella quale il fluido è lo stesso e nello stesso stato termodinamico della situazione reale ($\rho_m = \rho_v$, $\mu_m = \mu_v$), l'uguaglianza dei numeri di Reynolds si semplifica in
+\begin{equation}
+ \dfrac{\rho_m U_m L_m}{\mu_m} = \dfrac{\rho_v U_v L_v}{\mu_v} \quad \rightarrow \quad
+  U_m L_m = U_v L_v \ .
+\end{equation}
+Quindi, in questo caso la forza agente sul modello di galleria coincide con la forza agente sul corpo nella situazione reale,
+\begin{equation}
+ \bm{F}^{H_2O}_m = \bm{F}_v \ .
+\end{equation}
+%%%%%%
+%Nel caso della galleria ad acqua, le densità e le viscosità sono uguali; avendo imposto l'uguaglianza del numero di Reynolds, $U_m L_m = U_v L_m$, quindi la forza agente sul modello è uguale a quella agente sul corpo vero.
+
+%Nel caso della galleria ad aria, la forza agente sul modello si ricava come:
+%\begin{equation}
+% \begin{cases}
+%  \bm{F}_a = \rho_a U_m^2 L_m^2 \oint_{S^*} ...\\
+%  \bm{F}_v = \rho   U^2   L^2   \oint_{S^*} ...
+% \end{cases}
+% \Rightarrow \quad
+% \bm{F}_a = \bm{F}_v \frac{\rho_a U_m^2}{\rho U_v^2} \lambda^2
+%\end{equation}

@@ -1,0 +1,17 @@
+\chapterimage{blank_fig}
+\chapter{Statica}\index{Statica}
+
+\input{./capitoli/01_statica/02teoria}
+
+\input{./capitoli/01_statica/0201in}
+\newpage
+\input{./capitoli/01_statica/0202in}
+\newpage
+\input{./capitoli/01_statica/0203in}
+\newpage
+\input{./capitoli/01_statica/0204in}
+\newpage
+\input{./capitoli/01_statica/0205in}
+\newpage
+\input{./capitoli/01_statica/0206in}
+\newpage

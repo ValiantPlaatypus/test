@@ -1,0 +1,14 @@
+\chapterimage{blank_fig}
+\chapter{Cinematica}\index{Cinematica}
+
+\input{./capitoli/03_cinematica/12teoria}
+\clearpage
+
+\input{./capitoli/03_cinematica/1201in}
+\clearpage
+\input{./capitoli/03_cinematica/1202in}
+\clearpage
+\input{./capitoli/03_cinematica/1203in}
+\clearpage
+\input{./capitoli/03_cinematica/1204in}
+\clearpage

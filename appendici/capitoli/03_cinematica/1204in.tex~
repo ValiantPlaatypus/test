@@ -1,0 +1,140 @@
+\begin{exerciseS}[Linee di corrente, traiettorie, linee di fumo: non stazionario]
+ Sia dato il campo di moto
+\begin{equation}
+ \bm{u}(x,y,z) = 3y \bm{\hat{x}} - 3x \bm{\hat{y}} +t\bm{\hat{z}}
+\end{equation}
+Calcolare l'equazione delle linee di corrente, delle traiettorie e delle linee di fumo (curve di emissione) e disegnarle.
+\end{exerciseS}
+
+
+\sol
+
+\partone Definizione di linee di corrente, traiettorie, linee di fumo, tracce. Soluzione di sistemi di equazioni differenziali.
+
+\begin{itemize}
+
+\item
+Le linee di corrente sono curve $\bm{S}$ tangenti al campo vettoriale $\bm{u}(\bm{r},t)$ in ogni punto dello spazio $\bm{r}$ e per ogni istante temporale $t$. Essendo curve (1 dimensione), possono essere espresse in forma parametrica, come funzioni di un parametro scalare $p$. La 'traduzione' della definizione in formula è quindi:
+\begin{equation}
+ \frac{d\bm{S}(p)}{dp} = \bm{u}(\bm{S}(p),t)
+\end{equation}
+Il vettore tangente ${d\bm{S}(p)}{dp}$ alla curva $\bm{S}(p)$ nel punto ${\bm{S}(p)}$ è parallelo al vettore 
+velocità $\bm{u}$ nello stesso punto $\bm{S(p)}$, al tempo considerato $t$.
+
+\item
+Le traiettorie descrivono il moto della singola particella fluida e sono descritte dall'equazione:
+\begin{equation}
+\begin{cases}
+ \frac{d\bm{R}(t)}{dt} = \bm{u}(\bm{R(t)},t) \\
+ \bm{R}(t_0) = \bm{R_0}
+\end{cases}
+\end{equation}
+La traiettoria descritta sopra è quella della particella che all'istante $t_0$ passa per il punto $\bm{R_0}$.
+Interpretazione della formula: la velocità ${d\bm{R}(t)}/{dt}$ della particella (derivata della posizione della
+particella $R(t)$ nel tempo) è uguale alla velocità del fluido nella posizione $R(t)$ nella quale si trova la particella all'istante $t$.
+
+Fissati $t_0$ e $\bm{R_0}$, si osserva la traiettoria della particella al variare del tempo $t$.
+
+\item
+Le linee di fumo sono un modo per tracciare tutte le particelle di fluido passate per un determinato punto nello spazio a diversi istanti temporali. La loro equazione è:
+\begin{equation}
+\begin{cases}
+ \frac{d\bm{R}(t)}{dt} = \bm{u}(\bm{R},t) \\
+ \bm{R}(\tau) = \bm{\bar{R}}
+\end{cases}
+\end{equation}
+L'equazione è identica all'equazione delle traiettorie.
+Cambia la variabile che descrive la curva: si considerano fissi il punto di emissione $\bm{\bar{R}}$ e il tempo
+$t$ al quale viene osservata la curva di emissione; la variabile che descrive la curva di emissione è il tempo
+$\tau$ al quale le particelle passano da $\bm{\bar{R}}$.
+
+Nel caso di campi stazionari linee di corrente, traiettorie e linee di fumo coincidono.
+
+\item
+Tracce:
+\begin{equation}
+\begin{cases}
+ \frac{d\bm{R}(t)}{dt} = \bm{u}(\bm{R},t) \\
+ \bm{R}(\tau) = \bm{\bar{R}}
+\end{cases}
+\end{equation}
+L'equazione è identica all'equazione delle traiettorie e delle curve di emissione.
+Cambia la variabile che descrive la curva: si considerano fissi il tempo $\tau$ e il tempo
+$t$ al quale viene osservata la curva di emissione; la variabile che descrive la curva di emissione è la posizione $\bm{\bar{R}}$ dalle quali passano le particelle.
+
+\end{itemize}
+
+\textit{Osservazione}. Non c'è nessuna differenza formale tra $\tau$ e $t_0$ e $\bm{R_0}$ e $\bm{\bar{R}}$.
+
+\clearpage
+
+\parttwo
+\begin{itemize}
+\item Linee di corrente.
+\begin{equation}
+ \begin{cases}
+  \frac{dX}{dp} = \lambda(p) 3Y \\
+  \frac{dY}{dp} = -\lambda(p) 3X \\
+  \frac{dZ}{dP} = \lambda(p) t
+ \end{cases}
+ \quad\Rightarrow\quad
+ ...
+ \quad\Rightarrow\quad
+ \begin{cases}
+  X(p) = R \cos(p) \\
+  Y(p) = R \sin(p) \\
+  Z(p) = Z_0 + t p
+ \end{cases} \text{se $\lambda(p) = \frac{1}{3}$}
+\end{equation}
+
+\item Traiettorie.
+\begin{equation}
+ \begin{cases}
+  \frac{dx}{dt} = 3y \\
+  \frac{dy}{dt} = -3x \\
+  \frac{dz}{dt} = t \\
+  x(0) = x_0 , \quad y(0) = y_0 , \quad z(0) = z_0
+ \end{cases}
+ \quad\Rightarrow\quad
+ \begin{cases}
+  \frac{dx}{dt} = 3y \\
+  \frac{d^2y}{dt^2} + 9 y = 0 \\
+  z(t) = \frac{t^2}{2} + C
+ \end{cases}
+ \quad\Rightarrow\quad
+ \begin{cases}
+  x(t) = A \cos(3t) + B \sin(3t) \\
+  y(t) = - A \sin(3t) + B \cos(3t) \\
+  z(t) = \frac{t^2}{2} + C
+ \end{cases}
+\end{equation}
+Inserendo le condizioni iniziali si ottiene
+\begin{equation}
+ \begin{cases}
+  x(t) = x_0 \cos(3t) + y_0 \sin(3t) \\
+  y(t) = - x_0 \sin(3t) + y_0 \cos(3t) \\
+  z(t) = \frac{t^2}{2} + z_0
+ \end{cases}
+\end{equation}
+
+\textit{Osservazione.} Ottenere $y$ in funzione di $x$ e confrontare con le linee di corrente. Commentare...
+
+\item Linee di fumo.
+Inserendo nelle soluzioni generali trovate per le traiettoire, le condizioni 
+\begin{equation}
+ \begin{cases}
+  x(\tau) = x_0 \\ y(\tau) = y_0 \\ z(\tau) = z_0
+ \end{cases}
+\end{equation}
+si ottengono le linee di fumo
+\begin{equation}
+\begin{cases}
+  x(t) = x_0 \cos(3(t-\tau)) + y_0 \sin(3(t-\tau)) \\
+  y(t) = - x_0 \sin(3(t-\tau)) + y_0 \cos(3(t-\tau)) \\
+  z(t) = \frac{t^2-\tau^2}{2} + z_0
+\end{cases}
+\end{equation}
+
+
+
+\end{itemize}

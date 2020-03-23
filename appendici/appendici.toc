@@ -1,0 +1,77 @@
+\select@language {italian}
+\select@language {italian}
+\contentsline {chapter}{\numberline {1}Richiami di analisi}{9}{chapter.1}
+\contentsline {section}{\numberline {1.1}Teoremi della divergenza, del gradiente e del rotore}{10}{section.1.1}
+\contentsline {subsection}{\numberline {1.1.1}Lemma di Green}{10}{subsection.1.1.1}
+\contentsline {paragraph}{Domini non semplici e non semplicemente connessi.}{11}{section*.3}
+\contentsline {subsection}{\numberline {1.1.2}Due utili lemmi}{12}{subsection.1.1.2}
+\contentsline {subsection}{\numberline {1.1.3}Teorema della divergenza, del gradiente e del rotore}{13}{subsection.1.1.3}
+\contentsline {section}{\numberline {1.2}Campi vettoriali conservativi}{16}{section.1.2}
+\contentsline {section}{\numberline {1.3}Derivata temporale di integrali su domini dipendenti dal tempo: formule di Leibniz}{21}{section.1.3}
+\contentsline {section}{\numberline {1.4}Descrizione lagrangiana, euleriana e arbitraria}{25}{section.1.4}
+\contentsline {subsection}{\numberline {1.4.1}Descrizione locale nel problema differenziale}{25}{subsection.1.4.1}
+\contentsline {subsubsection}{Descrizione arbitraria}{25}{section*.11}
+\contentsline {subsubsection}{Descrizione lagrangiana ed euleriana}{26}{section*.12}
+\contentsline {subsection}{\numberline {1.4.2}Descrizione globale nel problema integrale}{27}{subsection.1.4.2}
+\contentsline {section}{\numberline {1.5}Bilanci integrali}{28}{section.1.5}
+\contentsline {subsection}{\numberline {1.5.1}Bilancio di massa}{29}{subsection.1.5.1}
+\contentsline {subsection}{\numberline {1.5.2}Prima equazione cardinale e bilancio della quantit\IeC {\`a} di moto}{29}{subsection.1.5.2}
+\contentsline {subsection}{\numberline {1.5.3}Seconda equazione cardinale e bilancio del momento della quantit\IeC {\`a} di moto}{29}{subsection.1.5.3}
+\contentsline {subsection}{\numberline {1.5.4}Bilancio di energia totale}{29}{subsection.1.5.4}
+\contentsline {subsection}{\numberline {1.5.5}Bilanci integrali per volumi in moto arbitrario}{30}{subsection.1.5.5}
+\contentsline {chapter}{\numberline {2}Introduzione all'algebra tensoriale}{31}{chapter.2}
+\contentsline {paragraph}{Argomenti della sezione.}{32}{section*.13}
+\contentsline {section}{\numberline {2.1}Richiami di algebra lineare}{33}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Cambio di base e regole di trasformazione: covarianza e contravarianza.}{34}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2}Vettori e basi ortornomali}{35}{subsection.2.1.2}
+\contentsline {subsubsection}{Trasformazione dei vettori di due basi ortonormali}{35}{section*.14}
+\contentsline {section}{\numberline {2.2}Algebra multilineare}{36}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Prodotto tensoriale tra vettori}{36}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Base prodotto e componenti di un tensore}{37}{subsection.2.2.2}
+\contentsline {paragraph}{Base covariante, mista e natura degli indici.}{37}{section*.15}
+\contentsline {subsection}{\numberline {2.2.3}Alcune operazioni tensoriali (I): somma e moltiplicazione per uno scalare.}{38}{subsection.2.2.3}
+\contentsline {subsection}{\numberline {2.2.4}Prodotto tensoriale tra tensori}{38}{subsection.2.2.4}
+\contentsline {subsection}{\numberline {2.2.5}Cambio di base e regola di trasformazione delle componenti: definizione ``classica'' di tensore.}{38}{subsection.2.2.5}
+\contentsline {subsection}{\numberline {2.2.6}Alcune operazioni tensoriali (II)}{39}{subsection.2.2.6}
+\contentsline {subsubsection}{Contrazione.}{39}{section*.16}
+\contentsline {subsubsection}{``Dot'' product.}{40}{section*.17}
+\contentsline {subsubsection}{Doppio ``Dot'' product.}{40}{section*.18}
+\contentsline {subsection}{\numberline {2.2.7}Alcuni esempi}{41}{subsection.2.2.7}
+\contentsline {subsection}{\numberline {2.2.8}Cosa non \IeC {\`e} stato detto}{46}{subsection.2.2.8}
+\contentsline {subsubsection}{Riferimenti.}{46}{section*.21}
+\contentsline {subsubsection}{Cosa \IeC {\`e} utile ripassare.}{46}{section*.22}
+\contentsline {chapter}{\numberline {3}Introduzione al calcolo tensoriale}{47}{chapter.3}
+\contentsline {section}{\numberline {3.1}Calcolo vettoriale e tensoriale in coordinate curvilinee}{47}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Tensore metrico.}{49}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}Simboli di Christoffel.}{51}{subsection.3.1.2}
+\contentsline {section}{\numberline {3.2}Operatori differenziali}{52}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Gradiente}{52}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Divergenza}{55}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}Operatore di advezione}{57}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.4}Rotore}{58}{subsection.3.2.4}
+\contentsline {subsection}{\numberline {3.2.5}Laplaciano}{59}{subsection.3.2.5}
+\contentsline {section}{\numberline {3.3}Coordinate curvilinee ortogonali}{59}{section.3.3}
+\contentsline {subsubsection}{Componenti contravarianti, covarianti e fisiche.}{60}{section*.24}
+\contentsline {subsection}{\numberline {3.3.1}Esempio: coordinate cilindriche}{60}{subsection.3.3.1}
+\contentsline {subsubsection}{Tensore metrico.}{61}{section*.25}
+\contentsline {subsubsection}{Vettore posizione e base naturale.}{61}{section*.26}
+\contentsline {subsubsection}{Componenti contravarianti, covarianti e fisiche.}{61}{section*.27}
+\contentsline {subsubsection}{Simboli di Christoffel.}{61}{section*.28}
+\contentsline {subsubsection}{Gradiente di uno scalare.}{61}{section*.29}
+\contentsline {subsubsection}{Divergenza di un vettore.}{62}{section*.30}
+\contentsline {subsubsection}{Gradiente di un vettore.}{62}{section*.31}
+\contentsline {subsubsection}{Laplaciano.}{62}{section*.32}
+\contentsline {subsubsection}{Termine advettivo.}{63}{section*.33}
+\contentsline {subsubsection}{Equazioni di Navier-Stokes}{63}{section*.34}
+\contentsline {chapter}{\numberline {A}Argomenti del corso -- esercizi}{65}{appendix.Alph1}
+\contentsline {section}{\numberline {A.1}Statica}{65}{section.Alph1.1}
+\contentsline {section}{\numberline {A.2}Tensione superficiale}{65}{section.Alph1.2}
+\contentsline {section}{\numberline {A.3}Cinematica}{65}{section.Alph1.3}
+\contentsline {section}{\numberline {A.4}Bilanci}{65}{section.Alph1.4}
+\contentsline {section}{\numberline {A.5}Teorema di Bernoulli}{65}{section.Alph1.5}
+\contentsline {section}{\numberline {A.6}Soluzioni esatte}{65}{section.Alph1.6}
+\contentsline {section}{\numberline {A.7}Similitudine}{65}{section.Alph1.7}
+\contentsline {section}{\numberline {A.8}Aerodinamica}{65}{section.Alph1.8}
+\contentsline {section}{\numberline {A.9}Strato limite}{65}{section.Alph1.9}
+\contentsline {section}{\numberline {A.10}Stabilit\IeC {\`a} fluidodinamica e turbolenza}{65}{section.Alph1.10}
+\contentsfinish 

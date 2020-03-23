@@ -1,0 +1,32 @@
+\def \flagSect{0} % 1    : numerazione
+		  % else : niente
+%\newcommand{\taitol}[1]  % stile titolo
+%{
+%%{\textit{#1}}
+%{#1}
+%}
+\def \soluzione{Soluzione}
+\def \partePrima{Concetti. }
+\def \parteSeconda{Svolgimento. }
+%\def \parteTerza{}
+\newcommand{\sol}{\subsubsection*{\soluzione}}
+\newcommand{\partone}{\ \ \ \ \ \textbf{\partePrima}}
+\newcommand{\parttwo}{\vspace{0.2cm}\textbf{\parteSeconda}}
+
+\ifnum\flagSect=1
+\newtheorem{exerciseS}{Esercizio}%[section]
+\else
+\newtheorem*{exerciseS}{Esercizio}
+\fi
+
+\newtheorem*{teorema}{Teorema}
+\newtheorem*{lemma}{Lemma}
+
+% ###########################################################
+%\input{logicNumb}
+%\newcommand{\sectionIf}[2]
+%{
+%   \ifthenelse{\equal{#1}{1}}
+%              {\subsection{#2}}{\subsection*{#2}}
+%}
+% ###########################################################

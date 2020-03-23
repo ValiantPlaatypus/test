@@ -1,0 +1,104 @@
+function [ xc , yc , u , v ] = control_volume ( x , y , U , alpha , a )
+
+% x , y : contains the points delimiting the panels
+% a     : contains the solution [ q_1,...,q_2n,gam ]
+%         of the linear sys of the Hess-Smith method
+
+% Build the box --------------
+xb0 = -3.1 ; xb1 = 3.4 ; nx = 10  ; 
+yb0 = -3.1 ; yb1 = 3.1 ; ny = 10  ; 
+dxb = (xb1-xb0) / nx ;
+dyb = (yb1-yb0) / ny ;
+
+xc = [ ones(1,ny)*xb0 , (xb0: dxb:xb1-dxb) , ...
+       ones(1,ny)*xb1 , (xb1:-dxb:xb0+dxb) ] ;
+yc = [ (yb0: dyb:yb1-dyb) , ones(1,nx)*yb1 , ...
+       (yb1:-dyb:yb0+dyb) , ones(1,ny)*yb0 , ] ;
+% rrv = [xc;yc]' 
+
+n    = (length(x)-1)/2 ;
+n_pt =  length(xc);
+
+% Build matrices Axx ----------
+len = sqrt((x(2:2*n+1)-x(1:2*n)).^2 + (y(2:2*n+1)-y(1:2*n)).^2);
+% Versori normale e tangente
+sintheta = (y(2:2*n+1)-y(1:2*n))./len;
+costheta = (x(2:2*n+1)-x(1:2*n))./len;
+theta    = atan2(sintheta,costheta);
+nvers = [-sintheta; costheta];
+tvers = [ costheta; sintheta];
+
+x1       = zeros(2*n_pt,2*n); y1       = zeros(2*n_pt,2*n);
+x2       = zeros(2*n_pt,2*n); y2       = zeros(2*n_pt,2*n);
+sij      = zeros(2*n_pt,2*n); bij      = zeros(2*n_pt,2*n);
+sinbij   = zeros(2*n_pt,2*n); cosbij   = zeros(2*n_pt,2*n);
+usijstar = zeros(2*n_pt,2*n); vsijstar = zeros(2*n_pt,2*n);
+uvijstar = zeros(2*n_pt,2*n); vvijstar = zeros(2*n_pt,2*n);
+usij = zeros(2*n)  ; vsij = zeros(2*n);
+uvij = zeros(2*n)  ; vvij = zeros(2*n);
+uvi  = zeros(2*n,1); vvi  = zeros(2*n,1);
+
+A = zeros(n_pt,2*n+1);
+
+Au = zeros(n_pt,2*n+1);
+Av = zeros(n_pt,2*n+1);
+
+for ii = 1 : n_pt
+    for jj = 1 : 2*n
+        x1(ii,jj) = xc(ii) - x(jj);    y1(ii,jj) = yc(ii) - y(jj);    r1 = [x1(ii,jj);y1(ii,jj)];
+        x2(ii,jj) = xc(ii) - x(jj+1);  y2(ii,jj) = yc(ii) - y(jj+1);  r2 = [x2(ii,jj);y2(ii,jj)];
+        
+%       if ii == jj
+%           sij(ii,jj) = 1;
+%           bij(ii,jj) = pi;
+%       else
+            sij(ii,jj) = norm(r2)/norm(r1);
+            sinbij(ii,jj) = (x1(ii,jj)*y2(ii,jj) - x2(ii,jj)*y1(ii,jj))/ norm(r1) / norm(r2);
+            cosbij(ii,jj) = (x1(ii,jj)*x2(ii,jj) + y1(ii,jj)*y2(ii,jj))/ norm(r1) / norm(r2);
+            bij(ii,jj) = atan2(sinbij(ii,jj),cosbij(ii,jj));
+%       end
+        
+        usijstar(ii,jj) = -log(sij(ii,jj))/(2*pi);
+        vsijstar(ii,jj) =  bij(ii,jj)/(2*pi);
+        
+        uvijstar(ii,jj) = -bij(ii,jj)/(2*pi);
+        vvijstar(ii,jj) = -log(sij(ii,jj))/(2*pi);
+        
+        usij(ii,jj) = usijstar(ii,jj)*costheta(jj) - vsijstar(ii,jj)*sintheta(jj);
+        vsij(ii,jj) = usijstar(ii,jj)*sintheta(jj) + vsijstar(ii,jj)*costheta(jj);
+        
+        uvij(ii,jj) = uvijstar(ii,jj)*costheta(jj) - vvijstar(ii,jj)*sintheta(jj);
+        vvij(ii,jj) = uvijstar(ii,jj)*sintheta(jj) + vvijstar(ii,jj)*costheta(jj);
+        
+%       A (ii,jj)   = -sintheta(ii)*usij(ii,jj) + costheta(ii)*vsij(ii,jj);
+        Au(ii,jj)   = usij(ii,jj);
+        Av(ii,jj)   = vsij(ii,jj);
+    end
+    uvi(ii) = sum(uvij(ii,:));
+    vvi(ii) = sum(vvij(ii,:));
+    
+%   A(ii,2*n+1) = -sintheta(ii)* uvi(ii) + costheta(jj)* vvi(ii);
+    
+    Au(ii,2*n+1) = uvi(ii);
+    Av(ii,2*n+1) = vvi(ii);
+end
+
+u = 1.0* Au * a   +   U *cos(alpha);   % x-component
+v = 1.0* Av * a   +   U *sin(alpha);   % y-component
+
+% size(x)
+% size(y)
+% size(u)
+% size(v)
+% [xc',yc',u,v]
+
+% figure
+% quiver(xc,yc,u,v)
+
+
+
+
+
+
+
+

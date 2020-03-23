@@ -1,0 +1,41 @@
+\chapterimage{blank_fig}
+\chapter{Bilanci}\index{Bilanci}\label{ch:bilanci}
+
+\input{./capitoli/04_bilanci/04teoria}
+\newpage
+
+% Esercizi
+\input{./capitoli/04_bilanci/0406in}
+\newpage
+\input{./capitoli/04_bilanci/0407in}
+
+\newpage
+\input{./capitoli/04_bilanci/0402in} % cilindro
+
+%\newpage
+%\input{./capitoli/04_bilanci/0401in} % difetto di scia
+%%\newpage
+%\input{./capitoli/04_bilanci/0401SciaExp}
+
+
+\newpage
+\input{./capitoli/04_bilanci/0409in}
+\newpage
+\input{./capitoli/04_bilanci/0403in}
+\newpage
+\input{./capitoli/04_bilanci/0404in}
+\newpage
+\input{./capitoli/04_bilanci/0405in}
+\newpage
+
+
+\newpage
+\input{./capitoli/04_bilanci/0408in} % profili in schiera
+
+%% Equazioni di bilancio
+%\input{./capitoli/04_bilanci/0410in}
+%\newpage
+%% Relazioni di salto
+%\input{./capitoli/04_bilanci/0411in}
+%\newpage
+

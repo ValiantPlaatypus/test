@@ -1,0 +1,23 @@
+import time
+import numpy as np
+import matplotlib
+matplotlib.use('TkAgg') # do this before importing pylab
+
+import matplotlib.pyplot as plt
+fig = plt.figure()
+ax = fig.add_subplot(111)
+
+def animate():
+    tstart = time.time()                   # for profiling
+    data=np.random.randn(10,10)
+    im=plt.imshow(data)
+
+    for i in np.arange(1,200):
+        data=np.random.randn(10,10)
+        im.set_data(data)
+        fig.canvas.draw()                         # redraw the canvas
+    print 'FPS:' , 200/(time.time()-tstart)
+
+win = fig.canvas.manager.window
+fig.canvas.manager.window.after(100, animate)
+plt.show()

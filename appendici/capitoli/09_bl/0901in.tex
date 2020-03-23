@@ -1,0 +1,52 @@
+\noindent
+\begin{exerciseS}[Spessori di strato limite: strato limite laminare]
+Dato il profilo di velocità, determinare il rapporto di forma $H$.
+\begin{equation}
+  u(x,y) = 
+  \begin{cases}
+    U(x) \displaystyle\left( 2 \frac{y}{\delta(x)} - \frac{y^2}{\delta^2(x)} \right) &  \qquad y \le \delta(x) \\
+    U(x) &  \qquad y > \delta(x)
+  \end{cases}
+\end{equation}
+
+($H = 5/2$)
+\end{exerciseS}
+
+\sol
+
+\partone Spessori di strato limite. Rapporto di forma $H = \delta_1 / \delta_2$.
+
+\begin{equation}
+\begin{aligned}
+   \delta_1(x) & = \int_{0}^\infty \displaystyle \left( 1 - \frac{u(x,y)}{U(x)} \right) dy \\
+   \delta_2(x) & = \int_{0}^\infty \frac{u(x,y)}{U(x)} \displaystyle \left( 1 - \frac{u(x,y)}{U(x)} \right) dy
+\end{aligned}
+\end{equation}
+
+\parttwo L'esercizio viene risolto calcolando prima gli integrali nelle definizioni degli spessori di strato limite
+e poi il loro rapporto.
+
+Lo spessore di spostamento:
+\begin{equation}
+\begin{aligned}
+  \delta_1 & = \int_{0}^\infty \displaystyle \left( 1 - \frac{u(x,y)}{U(x)} \right) dy  = \\
+           & = \int_{0}^{\delta(x)} \displaystyle \left( 1 - \frac{u(x,y)}{U(x)} \right) dy +
+           \underbrace{\int_{\delta(x)}^\infty \displaystyle \left( 1 - \frac{u(x,y)}{U(x)} \right) dy}_{=0}  =\\
+           & = \int_{0}^{\delta(x)} \displaystyle \left( 1 - 2 \frac{y}{\delta(x)} + \frac{y^2}{\delta^2(x)} \right) dy = \\
+           & = \frac{1}{3}\delta(x)
+\end{aligned}
+\end{equation}
+
+Lo spessore di quantità di moto:
+\begin{equation}
+\begin{aligned}
+  \delta_2 & = \int_{0}^\infty \frac{u(x,y)}{U(x)} \displaystyle \left( 1 - \frac{u(x,y)}{U(x)} \right) dy \\
+           & = \int_{0}^{\delta(x)} \frac{u(x,y)}{U(x)}\displaystyle \left( 1 - \frac{u(x,y)}{U(x)} \right) dy +
+           \underbrace{\int_{\delta(x)}^\infty \frac{u(x,y)}{U(x)}\displaystyle \left( 1 - \frac{u(x,y)}{U(x)} \right) dy}_{=0}  =\\
+           & = \frac{2}{15}\delta(x)
+\end{aligned}
+\end{equation}
+
+Il rapporto di forma vale quindi $H = 5/2 $.
+
+

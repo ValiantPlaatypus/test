@@ -1,0 +1,54 @@
+Il metodo di Hess-Smith è un metodo indiretto a pannelli.
+Il potenziale della corrente è la somma del potenziale della corrente asintotica, della distribuzione di
+sorgenti e della distribuzione di vortici. 
+
+\subsection{Descrizione geometria}
+
+Discretizzazione geometria (pannellizzazione).
+
+\subsection{Equazioni: condizioni al contorno e condizione di Kutta}
+
+Se il corpo è discretizzato in N pannelli, N equazioni del sistema descrivono la condizione 
+al contorno di non penetrazione in N punti del profilo (es. centri dei pannelli).
+
+\begin{equation}
+ \bm{u} \cdot \bm{\hat{n}} = 0 \qquad \text{on S}
+\end{equation}
+
+Per corpi portanti 2D, deve essere imposta la condizione di Kutta al fine di eliminare la singolarità del problema:
+questa singolarità è legata alla non unicità della soluzione per l'equazione di Laplace nel caso di dominio non
+semplicemente connesso.
+
+\begin{equation}
+ \bm{u_{d_{TE}}} \cdot \bm{\hat{t}} = \bm{u_{v_{TE}}} \cdot \bm{\hat{t}}
+\end{equation}
+
+In totale quindi il sistema è composto da $N+1$ equazioni.
+
+\subsection{Incognite: distribuzione vortici e sorgenti}
+
+Il potenziale è la somma del potenziale della corrente asintotica, della distribuzione di
+sorgenti e della distribuzione di vortici. Nel metodo di Hess-Smith si assume che l'intensità della
+distribuzione di sorgenti e vortici sia costante su ogni pannello. In questo caso si avrebbero $2N$ incognite:
+viene quindi fatta l'ipotesi che l'intensità dei vortici $\gamma$ sia costante su tutti i pannelli.
+
+Le incognite sono quindi $N+1$: le N intensità della distribuzione di sorgenti sui pannelli $q_i, i=1:N$ e 
+l'intensità dei vortici $\gamma$.
+
+\begin{equation}
+  \phi = \phi_\infty + \phi_V + \phi_S
+\end{equation}
+Con:
+\begin{equation}
+ \begin{aligned}
+  & \phi_\infty = V_\infty \cos{\alpha} x + V_\infty \sin{\alpha} y \\
+  & \phi_V =  \oint_{S} \gamma \frac{\theta}{2 \pi} ds \\
+  & \phi_S =  \oint_{S} q \frac{\ln{r}}{2 \pi} ds \\
+ \end{aligned}
+\end{equation}
+
+\subsection{Sistema lineare risolvente}
+
+bla bla
+
+

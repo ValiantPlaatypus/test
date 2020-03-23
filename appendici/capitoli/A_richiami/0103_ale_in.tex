@@ -1,0 +1,148 @@
+
+\section{Descrizione lagrangiana, euleriana e arbitraria}
+
+\subsection{Descrizione locale nel problema differenziale}
+Nel problema differenziale, la descrizione lagrangiana del fenomeno fisico consiste nel valutare la variazione temporale delle grandezze fisiche associate alle singole \textit{particelle materiali}, definite come i punti che si muovono in maniera solidale al mezzo continuo. La descrizione euleriana consiste nel valutare la variazione temporale delle grandezze fisiche in punti fissi nello spazio fisico. Una descrizione arbitraria consiste nella valutazione della variazione delle grandezze fisiche in una punto dello spazio fisico che ha una posizione arbitraria, indipendente dal movimento del mezzo continuo. Le descrizioni lagrangiana ed euleriana del problema possono essere considerate come dei casi particolari della descrizione arbitraria, in cui il punto dello spazio nel quale si valutano le grandezze fisiche si muove solidale al mezzo continuo o è fermo, rispettivamente.
+
+Per passare agevolmente da una descrizione all'altra, sarà sufficiente un uso appropriato della regola di derivazione di funzioni composte.
+
+\subsubsection{Descrizione arbitraria}
+Sia $\bm{r}$ la coordinata spaziale che identifica la posizione di un punto nel dominio, rispetto a un sistema di riferimento ``in quiete''. Sia $\bm{r}_{i}$ l'``etichetta'' (coordinata) associata a un punto $P_i$ che si muove nel dominio.
+La posizione $\bm{r}$ di uno dei punti $P_i$ ``etichettati'' con la coordinata $\bm{r}_{i}$ sarà funzione dell'etichetta (ogni punto sarà in una posizione differente, in generale) e del tempo (ogni punto si muove nel dominio, in generale),
+\begin{equation}\label{eqn:pos}
+    \bm{r}(t; P_i) = \bm{r}(\bm{r}_{i}, t) \ .
+\end{equation}
+La velocità del punto $P_i$ coinciderà con la derivata nel tempo della posizione nello spazio del punto $P_i$. La derivata temporale va svolta quindi a ``etichetta'' costante,
+\begin{equation}\label{eqn:vel}
+    \bm{v}_i(t) := \bm{v}(t; P_i) = \frac{\partial \bm{r}}{\partial t}\bigg|_{\bm{r}_{i}}(\bm{r}_{i}, t) \ .
+\end{equation}
+Per trovare il legame tra le possibili differenti descrizioni del problema fisico, si vuole studiare l'evoluzione di una funzione $f$, che dipende sia dal tempo sia dallo spazio. Usando il legame (\ref{eqn:pos}) tra la coordinata $\bm{r}$ di un punto e la sua ``etichetta'' $\bm{r}_i$, si può esplicitare la dipendenza del campo $f$ da entrambe le coordinate,
+\begin{equation}
+    f(\bm{r}, t) = f\left( \bm{r} (\bm{r}_i,t), \, t\right) 
+    = f_i\left(\bm{r}_i, t\right) = f_i\left( \bm{r}_i (\bm{r}, t), t \right) \ ,
+\end{equation}
+mettendo in evidenza la differenza tra le funzioni $f$ e la $f_i$ che rappresentano lo stesso campo, usando variabili indipendenti differenti. Usando la derivazione di funzioni composte, è possibile ricavare il legame tra le derivate temporali svolte a coordinata spaziale costante e svolte seguendo il punto $P_i$, a ``etichetta''-coordinata $\bm{r}_i$ costante,
+\begin{equation}
+\begin{aligned}
+    \frac{\partial f}{\partial t}\bigg|_{\bm{r}_i} \hspace{-0.2cm}(\bm{r}(\bm{r}_i,t), t)  & = 
+    \frac{\partial \bm{r}}{\partial t}\bigg|_{\bm{r}_i} \hspace{-0.2cm}(\bm{r}_i,t) \cdot \frac{\partial f}{\partial \bm{r}}\bigg|_t \hspace{-0.1cm}(\bm{r}(\bm{r}_i,t), t) +
+    \frac{\partial f}{\partial t}\bigg|_{\bm{r}}\hspace{-0.1cm}(\bm{r}(\bm{r}_i,t), t) \\ \\
+    \rightarrow \quad 
+    \frac{\partial f}{\partial t}\bigg|_{\bm{r}_i} \hspace{-0.2cm}(\bm{r}(\bm{r}_i,t), t) & = \bm{v}(\bm{r}_i, t) \cdot \bm{\nabla} f(\bm{r}, \, t) + \frac{\partial f}{\partial t}\bigg|_{\bm{r}}\hspace{-0.1cm}(\bm{r}, t) \ ,
+\end{aligned}
+\end{equation}
+dove le coordinate $\bm{r}$ e $\bm{r}_i$ del punto sono legate dalla relazione (\ref{eqn:pos}). Rimuovendo l'indicazione di derivata parziale svolta a coordinata spaziale $\bm{r}$ costante e sottintendendo la dipendenza dalle variabili dipendenti, si può alleggerire la notazione,
+\begin{equation}\label{eqn:arbit}
+      \frac{\partial f}{\partial t}\bigg|_{\bm{r}_i} = \frac{\partial f}{\partial t} + \bm{v}_i \cdot \bm{\nabla} f \ .
+\end{equation}
+La relazione (\ref{eqn:arbit}) esprime la variazione della quantità $f$ seguendo la traiettoria del punto $P_i$ in funzione de:
+\begin{itemize}
+    \item la derivata temporale del campo $f$, a coordinata spaziale $\bm{r}$ fissa, nel punto occupato da $P_i$ all'instante considerato $\bm{r}(\bm{r_i}, \, t)$;
+    \item la velocità $\bm{v}_i$ del punto $P_i$ all'istante considerato
+    \item il gradiente $\bm{\nabla} f$ del campo considerato, nel punto del dominio considerato, di coordinata $\bm{r}(\bm{r_i}, \, t)$
+\end{itemize}
+In questa formula si possono distinguere due contributi differenti. Il primo contributo rappresenta la variazione della quantità $f$ ``vista'' dal punto $P_i$ a causa di una variazione temporale del campo $f$ nel punto cosiderato. Il secondo contributo, rappresenta la variazione della quantità $f$ ``vista'' dal punto $P$ a causa del suo movimento in una diversa regione del dominio. Questo secondo termine assomiglia alla definizione di derivata direzionale, ma differisce da esso in quanto è il vettore velocità (che in generale non è unitario) ad essere moltiplicato scalarmente per il gradiente del campo $f$. Inoltre, poiché la velocità ha dimensioni fisiche $L/t$, il termine $\bm{v}_i \cdot \bm{\nabla} f$ ha dimensioni fisiche $[f]/t$ e può quindi essere interpretato come una ``derivata derezionale temporale'', che dipende dalla variazione spaziale del campo $f$ tramite il suo gradiente e dalla direzione e dal modulo della velocità $\bm{v}_i$ del punto $P_i$.
+
+\subsubsection{Descrizione lagrangiana ed euleriana}
+Se il punto $P_i$ si muove seguendo il mezzo continuo, esso è associato a una \textit{particella materiale}, etichettata come $\bm{r}^0_i$. La velocità $\bm{v}^0_i$ del punto materiale $P_i$ coincide con la velocità $\bm{u}$ del mezzo continuo nel punto considerato $\bm{r}(\bm{r}^0_i, t)$,
+\begin{equation}
+  \bm{v}^0_i(t) = \dfrac{\partial \bm{r}}{\partial t}\bigg|_{\bm{r}^0_i} (\bm{r}^0_i, t) = \bm{u}(\bm{r}, t)
+\end{equation}
+e la variazione temporale di una quantità $f$ ``vista'' dalla particella materiale può essere espressa come,
+\begin{equation}\label{eqn:derMat:1}
+    \frac{\partial f}{\partial t}\bigg|_{\bm{r}_0} = \frac{\partial f}{\partial t} + \bm{u} \cdot \bm{\nabla} f \ .
+\end{equation}
+Una volta che si è compresa l'origine dell'espressione (\ref{eqn:derMat:1}) e il suo legame con la regola di derivazione di funzioni composte, si può definire l'operatore di  \textbf{derivata materiale},
+\begin{equation}\label{eqn:derMat}
+  \frac{D \_}{D t} := \frac{\partial \_}{\partial t}\bigg|_{\bm{r_0}} =
+  \frac{\partial \_}{\partial t} + \bm{u} \cdot \bm{\nabla} \_
+\end{equation}
+che rappresenta la variazione temporale della quantità alla quale è applicato, seguendo il moto di una particella materiale.
+%
+Mentre la definizione (\ref{eqn:derMat}) di derivata materiale rappresenta il legame tra la descrizione lagragiana e la descrizione euleriana, si può ottenere il legame con la descrizione arbitraria utilizzando la relazione (\ref{eqn:arbit}) tra la descrizione arbitraria e quella euleriana,
+\begin{equation}
+\begin{aligned}
+    \frac{\partial \_}{\partial t}\bigg|_{\bm{r_0}} & =
+  \frac{\partial \_}{\partial t} + \bm{u} \cdot \bm{\nabla} \_ \\
+  & =
+  \frac{\partial \_}{\partial t}\bigg|_{\bm{r}_i} + \left( \bm{u} - \bm{v}_i \right) \cdot \bm{\nabla} \_ \ ,
+\end{aligned}
+\end{equation}
+avendo indicato con $\bm{u}$ la velocità del mezzo continuo e con $\bm{v}_i$ al velocità del punto $P_i$ in moto arbitrario. \'E facile notare che la descrizione lagrangiana e quella euleriana siano un caso particolare di quella arbitraria. Nella descrizione lagrangiana, il punto $P_i$ è un punto materiale, le ``etichette''-coordinate $\bm{r}_i$ e $\bm{r}_0$ coincidono, così come la velocità del punto $P_i$ con la velocità del mezzo continuo nel punto $P_i$, $\bm{u}(\bm{r}_i, t) = \bm{v}_i (t)$. Nella descrizione euleriana, il punto $P_i$ è fermo, la coordinata $\bm{r}_i$ conicide con la coordinata $\bm{r}$ del sistema ``in quiete'' e la sua velocità è quindi $\bm{v}_i = 0$.
+
+\subsection{Descrizione globale nel problema integrale}
+Nel problema integrale, la descrizione lagrangiana del fenomeno fisico consiste nel valutare la variazione temporale dell'integrale di una grandezza fisica contenuta all'interno di un \textit{volume materiale}, definito come un volume costituito da particelle materiali. La descrizione euleriana consiste nel valutare la variazione temporale dell'integrale di una grandezza fisica contenuta all'interno di un \textit{volume di controllo} fisso nello spazio. La descrizione arbitraria consiste nella valutazione della variazione temporale dell'integrale della grandezza fisica contenuta all'interno di un volume che si muove nel dominio con un moto arbitrario. Di nuovo, le descrizioni lagrangiana ed euleriana possono essere considerate come dei casi particolari della descrizione arbitraria, in cui il volume arbitrario è un volume materiale o un volume di controllo fisso, rispettivamente.
+
+Per passare agevolmente da una descrizione all'altra, sarà sufficiente un uso appropriato del teorema del trasporto di Reynolds,
+\begin{equation}\label{eqn:rey:volArb}
+    \dfrac{d}{dt} \int_{v(t)} f = \int_{v(t)} \dfrac{\partial f}{\partial t} +
+     \oint_{\partial v(t)} f \, \bm{v} \cdot \bm{\hat{n}} \ ,
+\end{equation}
+dove $v(t)$ è un volume mobile arbitrario, il cui contorno $\partial v(t)$ si muove con velocità $\bm{v}$. Ovviamente, sia la funzione $f$, sia la velocità $\bm{v}$ dei punti del contorno, sia il versore $\bm{\hat{n}}$ normale alla superficie $\partial v(t)$ in generale dipendono dallo spazio e dal tempo.
+%
+Se si applica il teorema di Reynolds a un volume materiale $V(t)$, si può scrivere
+\begin{equation}\label{eqn:rey:volMat}
+    \dfrac{d}{dt} \int_{V(t)} f = \int_{V(t)} \dfrac{\partial f}{\partial t} +
+     \oint_{\partial V(t)} f \, \bm{u} \cdot \bm{\hat{n}} \ ,
+\end{equation}
+avendo indicato con $\bm{u}$ la velocità del mezzo continuo.
+%
+Se si applica il teorema di Reynolds a un volume di controllo fisso $V$, si può scrivere
+\begin{equation}\label{eqn:rey:volCon}
+    \dfrac{d}{dt} \int_{V} f = \int_{V} \dfrac{\partial f}{\partial t} \ ,
+\end{equation}
+poichè la velocità del contorno del volume fisso è nulla.
+
+Per ottenere il legame tra le diverse descrizioni del problema, occorre confrontare le espressioni ricavate in precedenza e applicarle a due volumi di ``natura'' diversa, coincidenti nell'istante considerato. Così facendo per la descrizione lagrangiana ed euleriana, si considerano un volume materiale $V(t)$ e un volume di controllo $V$ concidenti all'istante $t$ considerato, $V(t) \equiv V$. Nonostante i due volumi coincidano all'istante considerato, in generale non coincidono negli istanti di tempo successivi, essendo $V(t)$ un volume materiale in moto con il mezzo continuo e $V$ un volume di controllo fisso.
+Si può quindi scrivere il teorema di Reynolds (\ref{eqn:rey:volMat}) per il volume materiale $V(t)$,
+\begin{equation}\label{eqn:int:lagr_eul}
+\begin{aligned}
+    \dfrac{d}{dt} \int_{V(t)\equiv V} f & = \int_{V(t)\equiv V} \dfrac{\partial f}{\partial t} +
+     \oint_{\partial V(t)\equiv \partial V} f \, \bm{u} \cdot \bm{\hat{n}} = \\
+     & = \dfrac{d}{dt} \int_{V \equiv V(t)} f +
+     \oint_{\partial V\equiv \partial V(t)} f \, \bm{u} \cdot \bm{\hat{n}} \ ,
+\end{aligned}
+\end{equation}
+avendo utilizzato il teorema di Reynolds (\ref{eqn:rey:volCon}) per il volume di controllo fisso $V$ per manipolare il primo termine a destra dell'uguale. Utilizzando le espressioni (\ref{eqn:rey:volArb}) e (\ref{eqn:rey:volMat}) del teorema di Reynolds per un volume materiale $V(t)$ e un volume arbitrario $v(t)$ si ottiene il legame tra le due descrizioni,
+\begin{equation}\label{eqn:int:lagr_arb}
+\begin{aligned}
+    \dfrac{d}{dt} \int_{V(t)\equiv v(t)} f & = \int_{V(t)\equiv v(t)} \dfrac{\partial f}{\partial t} +
+      \oint_{\partial V(t)\equiv \partial v(t)} f \, \bm{u} \cdot \bm{\hat{n}} = \\
+      & = \dfrac{d}{dt} \int_{v(t) \equiv V(t)} f 
+   - \oint_{\partial v(t) \equiv \partial V(t)} f \, \bm{v} \cdot \bm{\hat{n}}
+   + \oint_{\partial v(t) \equiv \partial V(t)} f \, \bm{u} \cdot \bm{\hat{n}} = \\
+      & = \dfrac{d}{dt} \int_{v(t) \equiv V(t)} f +
+     \oint_{\partial v(t) \equiv \partial V(t)} f \, (\bm{u}-\bm{v}) \cdot \bm{\hat{n}} \ .
+\end{aligned}
+\end{equation}
+Osservando l'espressione (\ref{eqn:int:lagr_arb}) è immediato verificare che la descrizione lagrangiana e la descrizione euleriana sono ancora una volta un caso particolare della descrizione arbitraria. Nella descrizione lagrangiana, il volume arbirario $v(t)$ è il volume materiale $V(t)$ e la velocità del suo contorno è uguale alla velocità del mezzo continuo, $\bm{v} = \bm{u}$, annullando l'integrale di superficie e ottenendo l'identità
+\begin{equation}
+    \dfrac{d}{dt} \int_{V(t)} f = \dfrac{d}{dt} \int_{V(t)} f \ .
+\end{equation}
+Nella descrizione euleriana, il volume arbitrario $v(t)$ è un volume di controllo fisso $V$ e la velocità del suo contorno è nulla, $\bm{v} = \bm{0}$, ottenendo l'espressione (\ref{eqn:int:lagr_eul}).
+Le formule che permettono di passare da un descrizione all'arbitria sono quindi,
+\begin{equation}
+\begin{aligned}
+    \dfrac{d}{dt} \int_{V(t)} f & = \dfrac{d}{dt} \int_{V \equiv V(t)} f +
+     \oint_{\partial V\equiv \partial V(t)} f \, \bm{u} \cdot \bm{\hat{n}} \\
+     & = \dfrac{d}{dt} \int_{v(t) \equiv V(t)} f +
+     \oint_{\partial v(t) \equiv \partial V(t)} f \, (\bm{u}-\bm{v}) \cdot \bm{\hat{n}} \ .
+\end{aligned}
+\end{equation}
+
+% ==========================================================================================
+% \section{Esercizi misti}
+% 
+% \paragraph{Esercizio cinematica: irrigatore armonico.} 
+% $\bm{u} = u_0 \bm{\hat{x}} + v_0 \sin\left( \omega (t - x/u_0 \right) \bm{\hat{y}}$. Calcolare linee di corrente, traiettorie e linee di fumo.
+% 
+% \paragraph{Rampa e molla torsionale.} 
+% \begin{figure}
+%     \centering
+%     \includegraphics[width=0.9\textwidth]{ramp.pdf}
+%     \caption{Caption}
+%     \label{fig:my_label}
+% \end{figure}
+% 
+% \end{document}
+

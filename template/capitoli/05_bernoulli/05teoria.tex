@@ -1,0 +1,52 @@
+Per fluidi incomprimibili o barotropici (per i quali la pressione è funzione solo della densità), il teorema di Bernoulli si ottiene dal bilancio della quantità di moto. Si elencano qui tre forme del teorema di Bernoulli, ognuna caratterizzata da diverse ipotesi.
+%
+Tramite l'identità vettoriale
+\begin{equation}
+  \bm{\nabla} (\bm{a} \cdot \bm{b}) = (\bm{a} \cdot \bm{\nabla}) \bm{b} +  (\bm{b} \cdot \bm{\nabla}) \bm{a} + \bm{a} \times (\bm{\nabla} \times \bm{b}) + \bm{b} \times (\bm{\nabla} \times \bm{a}),
+\end{equation}
+applicata al termine convettivo $(\bm{u} \cdot \bm{\nabla}) \bm{u}$, è possible ottenere la forma del Crocco dell'equazione della quantità di moto
+\begin{equation}\label{eqn:bilanci:crocco}
+\begin{aligned}
+ & \p{\bm{u}}{t} + (\bm{u} \cdot \bm{\nabla}) \bm{u} - \nu \Delta \bm{u} + \bm{\nabla} P = \bm{g}  & \\ &  &  \bigg( (\bm{u} \cdot \bm{\nabla})\bm{u} = \bm{\nabla} \f{\bm{u} \cdot \bm{u}}{2} + (\bm{\nabla} \times \bm{u}) \times \bm{u} \bigg) \\
+ & \rightarrow \p{\bm{u}}{t} + \bm{\nabla} \frac{|\bm{u}|^2}{2} + \bm{\omega} \times \bm{u} - \nu \Delta \bm{u} + \bm{\nabla} P = \bm{g} , & \\
+\end{aligned}
+\end{equation}
+avendo indicato con $P$ il potenziale termodinamico, $P = $ che si riduce al rapporto $p/\rho$ nel caso di densità costante e con $\bm{g}$ le forze per unità di massa.
+\paragraph{Prima forma del teorema di Bernoulli}
+Nel caso di fluido non viscoso, incomprimibile o barotropico, in regime stazionario ($\partial / \partial t \equiv 0$), con forze di massa conservative $\bm{g} = -\bm{\nabla} \chi$, il trinomio di Bernoulli $|\bm{u}|^2/2 + P + \chi$ è costante lungo le linee di corrente e le linee vorticose, cioè
+\begin{equation}
+ \bm{\hat{t}} \cdot \bm{\nabla} \left( \frac{|\bm{u}|^2}{2} + P + \chi \right) = 0 ,
+\end{equation}
+con $\bm{\hat{t}}$ versore tangente alle linee di corrente o alle linee vorticose. Infatti, il termine $\bm{\omega} \times \bm{u}$ nell'equazione della quantità di moto nella forma di Crocco (\ref{eqn:bilanci:crocco}) è perpendicolare in ogni punto del dominio alle linee di corrente ($\bm{\hat{t}}$ parallelo al campo di velocità $\bm{u}$) e alle linee vorticose ($\bm{\hat{t}}$ parallelo al campo di vorticità $\bm{\omega}$): moltiplicando scalarmente l'equazione (\ref{eqn:bilanci:crocco}) scritta per un fluido non viscoso ($\nu = 0$) per il versore $\bm{\hat{t}}$ , il prodotto scalare $\bm{\hat{t}} \cdot (\bm{\omega} \times \bm{u})$ è identicamente nullo.
+\paragraph{Seconda forma del teorema di Bernoulli}
+Nella corrente irrotazionale ($\bm{\omega} = \bm{0}$) di un fluido non viscoso, incomprimibile o barotropico, in regime stazionario, con forze di massa conservative $\bm{g} = -\bm{\nabla} \chi$, il trinomio di Bernoulli $|\bm{u}|^2/2 + P + \chi$ è costante in tutto il dominio, cioè
+\begin{equation}
+ \bm{\nabla} \left( \frac{|\bm{u}|^2}{2} + P + \chi \right) = 0  \quad \rightarrow \quad 
+  \frac{|\bm{\nabla} \phi|^2}{2} + P + \chi = C.
+\end{equation}
+\paragraph{Terza forma del teorema di Bernoulli}
+Nella corrente irrotazionale ($\bm{\omega} = \bm{0}$) di un fluido non viscoso, incomprimibile o barotropico, in un dominio semplicemente connesso (nel quale è quindi possibile definire il potenziale cinetico $\phi$, t.c. $\bm{u} = \nabla \phi$, con forze di massa conservative $\bm{g} = -\bm{\nabla} \chi$, il quadrinomio di Bernoulli $\partial \phi / \partial t + |\bm{u}|^2/2 + P + \chi$ è uniforme (costante in spazio, in generale \textbf{non} in tempo) in tutto il dominio, cioè
+\begin{equation}
+ \bm{\nabla} \left(\p{\phi}{t} + \frac{|\bm{\nabla} \phi|^2}{2} + P + \chi \right) = 0  \quad \rightarrow \quad 
+ \p{\phi}{t} + \frac{|\bm{\nabla} \phi|^2}{2} + P + \chi = C(t).
+\end{equation}
+
+\paragraph{Teoremi di Bernoulli per fluidi viscosi incomprimibili}
+Mentre la prima forma del teorema di Bernoulli non è valida se non viene fatta l'ipotesi di fluido non viscoso\footnote{Moltiplicando scalarmente l'equazione (\ref{eqn:bilanci:crocco}) per il versore $\bm{\hat{t}}$, il termine $\bm{\hat{t}}\cdot \nu \Delta \bm{u}$ non si annulla. Rimane quindi
+\begin{equation}
+ \bm{\hat{t}} \cdot \bm{\nabla} \left( \frac{|\bm{u}|^2}{2} + P + \chi \right) - \nu \bm{\hat{t}} \cdot \Delta \bm{u} = 0 
+\end{equation}
+}, la seconda e la terza forma sono ancora valide per fluidi viscosi incomprimibili. Infatti, usando l'identità vettoriale
+\begin{equation}
+ \Delta \bm{u} = \bm{\nabla} (\bm{\nabla}\cdot \bm{u})
+  - \bm{\nabla} \times (\bm{\nabla} \times \bm{u}) ,
+\end{equation}
+si scopre che il laplaciano del campo di velocità per correnti irrotazionali ($\bm{\nabla} \times \bm{u} = \bm{0}$) di fluidi incomprimibili ($\bm{\nabla} \cdot \bm{u} = 0$) è nullo.
+%
+\begin{remark}
+L'ipotesi di fluido non viscoso non è direttamente necessaria per la seconda e la terza forma del teorema di Bernoulli, ma lo diventa tramite l'ipotesi di corrente irrotazionale. Sotto opportune ipotesi sulla corrente asintotica, verificate in molti casi di interesse aeronautico, si dimostra che (quasi) tutto il campo di moto è  irrotazionale solo se viene fatta l'ipotesi di fluido non viscoso. Questo modello viene utilizzato per studiare correnti di interesse aeronautico, nelle quali gli effetti della viscosità sono (quasi ovunque) trascurabili: un esempio è la corrente, uniforme a monte, che investe un corpo aerodinamico a bassi angoli di incidenza (corpo affusolato, attorno al quale non si verifichino separazioni) per alti numeri di Reynolds: in queste correnti, le zone vorticose sono confinate in regioni di spessore sottile (strato limite sulla superficie dei corpi solidi e scie libere).
+\end{remark}
+
+
+
+

@@ -1,0 +1,547 @@
+Prima di addentrarsi nell'introduzione ai tensori (e quindi all'algebra multilineare) occorre 
+ avere abbastanza chiari i concetti di algebra lineare, che riguarda lo studio degli spazi 
+ vettoriali. \'E impensabile riportare qui un riassunto soddisfacente di algebra lineare: lo
+ scopo della prima sezione è richiamare alcune definizioni, come ad esempio quella di spazio 
+ vettoriale e di funzione lineare, e di ricordare che la struttura di spazio vettoriale non è
+ esclusiva di una rappresentazione ``a freccina'' dei vettori, ma è una struttura del tutto generale.
+
+\subsection{Prima di iniziare}
+
+ Uno \textbf{spazio vettoriale} è una struttura algebrica composta da un campo $K$, da un insieme $V$
+ di elementi e dalle due operazioni di somma e moltiplicazione per uno scalare, rispetto alle quali l'insieme
+ $V$ deve essere chiuso (presi qualsiasi elementi di $V$, le due operazioni agenti su di essi devono avere
+ come risultato un elemento di $V$). Il campo $K$ può essere ad esempio il campo dei numeri reali o quello dei
+ numeri complessi; gli elementi di $K$ vengono definiti \textit{scalari}. Gli elementi di $V$ sono i \textit{vettori}.
+ Le due operazioni di somma e moltiplicazione per uno scalare devono soddifare proprietà che qui non verranno
+ riportate.
+ 
+ Prima di riportare un esempio, si ricorda la definizione di \textbf{funzione lineare}. Una funzione $f$ è lineare se
+ è additiva e omogenea, cioè se
+ \begin{equation}
+  \begin{cases}
+   f(a+b) = f(a) + f(b) \\
+   f(\alpha a) = \alpha f(a)
+  \end{cases}
+ \end{equation}
+ Forse non è così scontato che la funzione $y(x) = m x + q$ NON rappresenta un legame lineare tra $x$ e $y$ (la funzione
+ è affine, non lineare).
+ 
+ Si riporta quindi un esempio di spazio vettoriale ``non convenzionale'': l'insieme delle funzioni lineari $f: \mathbb{R}^n \rightarrow
+  \mathbb{R}$. Una funzione lineare di $n$ variabili può essere definita come:
+  \begin{equation}
+   f(\bm{x}) = a_1 x_1 + \dots a_n x_n
+  \end{equation}
+  L'insieme delle funzioni lineari forma uno spazio vettoriale quando vengono definite le operazioni
+  di somma e moltiplicazione per uno scalare come
+ \begin{equation}
+  \begin{cases}
+   (f+g)(\bm{x})    = f(\bm{x}) + g(\bm{x}) \\
+   f(\alpha \bm{x}) = \alpha f(\bm{x})
+  \end{cases}
+ \end{equation}
+ 
+ \begin{esercizio}
+  Si verifichi che l'insieme delle funzioni lineari $f: \mathbb{R}^n \rightarrow
+  \mathbb{R}$ è chiuso rispetto alle due operazioni. Inoltre si verifichi che la dimensione dello spazio è $n$.
+  (Hint: quanti sono i coefficienti necessari e sufficienti a definire tutti gli elementi dello spazio?)
+  \end{esercizio}
+\newpage
+
+Le equazioni che descrivono i fenomeni fisici hanno carattere tensoriale,
+ cioè sono indipendenti dal sistema di coordinate nelle quali vengono scritte.
+\'E importante capire la natura tensoriale delle leggi fisiche, capirne
+ l'indipendenza dal sistema di coordinate ed essere in grado di scrivere
+ correttamente le componenti nei sistemi di coordinate che sono più vantaggiosi
+ per una descrizione semplice del fenomeno fisico e per la soluzione di problemi.
+
+\vspace{0.2cm}
+In questo capitolo verrà usata la notazione di Einstein: è sottointesa la sommatoria
+ sugli indici ripetuti in una espressione. Per chiarezza
+\begin{equation}
+ a_k b_k = \displaystyle\sum_k a_k b_k
+\end{equation}
+
+\subsection{Prime definizioni}
+
+ Sia $\mathcal{V}$ uno spazio vettoriale, sia $\bm{v}$ un elemento di $\mathcal{V}$
+ e $\{ \bm{b}_k \}_{k=1:N}$ una base di $\mathcal{V}$; è quindi possibile scrivere
+ l'elemento $\bm{v}$ in componenti rispetto alla base $\{ \bm{b}_k \}$
+\begin{equation}
+  \bm{v} = v^k \bm{b}_k
+\end{equation}
+ Le componenti $v^k$ di $\bm{v}$ sono definite \textbf{componenti contravarianti} del vettore $\bm{v}$.
+ 
+ Si definisce $\mathcal{V}^*$ \textbf{spazio duale} di $\mathcal{V}$, come lo spazio vettoriale
+ (indicato anche come $\mathscr{L}(\mathcal{V},K)$)
+ formato da tutte le funzioni lineari da $\mathcal{V}$ a un campo $K$, come può essere
+ ad esempio il campo dei numeri reali $\mathbb{R}$.
+ Un elemento $\bm{f} \in \mathcal{V}^*$ è quindi una funzione $\bm{f}: \mathcal{V} \rightarrow K $ che
+ prende un elemento $\bm{u} \in \mathcal{V}$ e resistuisce un valore in $K$. A volte si usa indicare
+\begin{equation}
+  \bm{f}(\bm{u}) = \langle \bm{f} , \bm{u} \rangle
+\end{equation}
+ Viene definita la base duale della base $\{ \bm{b}_k \}_{k=1:N}$ di $\mathcal{V}$: la
+ \textbf{base duale} $\{ \bm{b}^k \}_{k=1:N}$ è una base dello spazio $\mathcal{V}^*$ definita come:
+\begin{equation}
+  \bm{b}^i (\bm{b}_k) = \langle \bm{b}^i , \bm{b}_k \rangle = \delta_k^i
+\end{equation}
+ dove con $\delta_k^i$ è stata indicata la delta di Kronecker, uguale a $1$ quando gli indici sono
+ uguali, uguale a $0$ altrimenti.
+ Si può scrivere l'elemento $\bm{v}^* \in \mathcal{V}^*$ in componenti rispetto alla base $\{ \bm{b}^k \}$
+\begin{equation}
+  \bm{v}^* = v_k \bm{b}^k
+\end{equation}
+ Le componenti $v_k$ di $\bm{v}^*$ sono definite \textbf{componenti covarianti} del covettore $\bm{v}^*$.
+ 
+ \paragraph{Osservazioni.} 
+ La base $\{ \bm{b}_k \}_{k=1:N}$ di $\mathcal{V}$ in generale non è ortogonale. 
+  In generale, gli spazi $\mathcal{V}$ e $\mathcal{V}^*$ sono tra di
+ loro distinti e quindi gli elementi di questi spazi non sono tra di loro sommabili, 
+ \textit{come pere e mele}. 
+  Risulta fondamentale prestare attenzione alla posizione degli indici e dei pedici.
+  In seguito, dopo aver ristretto la trattazione generale a casi più particolari, si ridurrà l'esigenza di prestare attenzione 
+  alla posizione degli indici: un esempio di situazione in cui è possibile ``fare meno attenzione'' alla posizione
+  degli indici è costituito dalle \underline{componenti fisiche} di tensori espressi in sistemi di \underline{coordinate 
+  curvilinee ortogonali}.
+  
+  \paragraph{Cambio di base e regole di trasformazione: covarianza e contravarianza.}
+  I termini covariante o contravariante sono riferiti alla legge di trasformazione di un ``oggetto'' (componente o elemento di una base),
+  se confrontata con la legge di trasformazione degli elementi della base $\{ \bm{b}_k \}_{k=1:N}$ di $\mathcal{V}$.
+  Si noti che gli apici sono riservati agli ``oggetti'' contravarianti (le componenti $v^k$ del vettore
+  $\bm{v}$ e gli elementi della base duale $\{ \bm{b}^k \}_{k=1:N}$ di $\mathcal{V}^*$), mentre i pedici sono riservati 
+  agli elementi covarianti (le componenti $v_k$ del covettore $\bm{v}$ e gli elementi della base $\{ \bm{b}_k \}_{k=1:N}$ di $\mathcal{V}$)
+  
+  Due basi $\{ \bm{b}_k \}_{k=1:N}$
+ e $\{ \bm{\hat{b}}_k \}_{k=1:N}$ di $\mathcal{V}$ sono legate dalla trasformazione
+\begin{equation}
+  \bm{b}_k = \hat{T}^q_k \bm{\hat{b}}_q \quad , \quad \bm{\hat{b}}_k = {T}^q_k \bm{b}_q
+\end{equation}
+ dove è stata indicata con $\hat{T}$ la trasformazione inversa di $T$ ($\hat{T} = T^{-1}$).
+
+ \noindent
+ Le rispettive basi duali $\{ \bm{b}^k \}_{k=1:N}$ e $\{ \bm{\hat{b}}^k \}_{k=1:N}$ di $\mathcal{V}$ sono legate
+ dalla trasformazione inversa\footnote{
+ Inserendo la trasformazione riportata, si verifica che
+ \begin{equation}
+ \bm{\hat{b}}^i (\bm{\hat{b}}_k) = \bm{\hat{b}}^i (T^q_k \bm{b}_q) = T^q_k \bm{\hat{b}}^i (\bm{b}_q) =
+  \hat{T}^i_l T^q_k \bm{b}^l (\bm{b}_q) = \hat{T}^i_l T^q_k \delta^l_q =  \hat{T}^i_l T^l_k = \delta^i_k
+ \end{equation}
+ }, mostrando quindi una natura contravariante alla quale vengono riservati gli apici:
+ \begin{equation}
+  \bm{b}^k = T^k_q \bm{\hat{b}}^q \quad , \quad \bm{\hat{b}}^k = \hat{T}^k_q \bm{b}^q 
+ \end{equation}
+ 
+ \noindent
+ Le componenti degli elementi (vettori) $\bm{v}$ dello spazio $\mathcal{V}$ si trasformano secondo la trasformazione inversa degli elementi della base
+ $\{ \bm{b}_k \}_{k=1:N}$ di $\mathcal{V}$, mostrando carattere contravariante al quale sono associati gli apici;
+ da questo il nome \textbf{componenti contravarianti}.
+ \begin{equation}
+  \bm{v} = v^q \bm{b}_q = v^q \hat{T}^k_q \bm{\hat{b}}_k = \hat{v}^k \bm{\hat{b}}_k 
+  \qquad  \Rightarrow \qquad
+  \begin{cases}
+     \hat{v}^k = \hat{T}^k_q v^q \\
+     v^k       = T^k_q \hat{v}^q \\
+  \end{cases}
+ \end{equation}
+ Allo stesso modo le componenti degli elementi (covettori) $\bm{v^*}$ dello spazio $\mathcal{V^*}$ si trasformano con la stessa trasformazione degli elementi
+  della base
+ $\{ \bm{b}_k \}_{k=1:N}$ di $\mathcal{V}$, mostrando carattere covariante al quale sono associati i pedici;
+  da questo il nome \textbf{componenti covarianti}.
+ \begin{equation}
+  \bm{v^*} = v^*_q \bm{b}^q = v^*_q T^q_k \bm{\hat{b}}^k = \hat{v}^*_k \bm{\hat{b}}^k 
+  \qquad  \Rightarrow \qquad
+  \begin{cases}
+     \hat{v}^*_k = T^q_k v^*_q \\
+     v^*_k       = \hat{T}^q_k \hat{v}^*_q \\
+  \end{cases}
+ \end{equation}
+ 
+
+% Definizione di secondo spazio duale V**, isomorfismo canonico tra V e V**: conseguenze pratiche ...
+%    ...
+
+
+% Definizione di tensore come funzione multilineare (p,q)
+ \paragraph{Tensori come funzioni multilineari.} Un tensore di ordine $(p,q)$ su $\mathcal{V}$ è una funzione
+ (p+q)-lineare
+\begin{equation}
+   T : \underbrace{\mathcal{V}^* \times \dots \times \mathcal{V}^*}_{\text{p volte}} \times
+       \underbrace{\mathcal{V}   \times \dots \times \mathcal{V}  }_{\text{q volte}} \rightarrow K
+\end{equation}
+ 
+ Si indica con $\mathcal{T}^p_q(\mathcal{V})$ lo spazio vettoriale dei tensori di ordine $(p,q)$ 
+ (con moltiplicazione per uno scalare e somma definiti in seguito). %, operazioni rispetto alle quali uno spazio vettoriale deve essere chiuso) 
+ Un tensore di ordine $(0,0)$ è uno scalare, $(1,0)$ un vettore (in questa dispensa ci sarà
+ solo un breve cenno all'isomorfismo canonico tra 
+ $\mathcal{V}$ e il secondo spazio duale $\mathcal{V}^{**}$, che permette di identificare gli elementi di
+ $\mathcal{V}^{**}$ e $\mathcal{V}$), $(0,1)$ un covettore. Inoltre un tensore di ordine
+ $(p,0)$ è un tensore puro contravariante, un tensore di ordine $(0,q)$ è un tensore puro
+ covariante, un tensore di ordine $(p,q)$ è un tensore misto.
+ 
+ \subsection{Alcune operazioni tensoriali (I)}
+ 
+ \paragraph{Somma e moltiplicazione per uno scalare.} Queste due operazioni e la chiusura dello spazio
+ $\mathcal{T}^p_q$ rispetto ad esse\footnote{In parole povere, uno spazio vettoriale V è chiuso rispetto
+ a un'operazione se l'operazione su ogni elemento di V restituisce un elemento di V.} sono condizioni
+ necessarie alla struttura di spazio vettoriale. La somma di due tensori $\bm{A},\bm{B} \in \mathcal{T}^p_q(\mathcal{V})$
+ e la moltiplicazione di $\bm{A}$ per uno scalare $\alpha \in K$ sono definite come
+\begin{equation}
+ (\bm{A}+\bm{B})(\bm{v}^1,\dots,\bm{v}^p,\bm{v}_1,\dots,\bm{v}_q) = 
+   \bm{A} (\bm{v}^1,\dots,\bm{v}^p,\bm{v}_1,\dots,\bm{v}_q) +
+   \bm{B} (\bm{v}^1,\dots,\bm{v}^p,\bm{v}_1,\dots,\bm{v}_q)
+\end{equation}
+ e
+\begin{equation}
+ ( \alpha \bm{A} ) (\bm{v}^1,\dots,\bm{v}^p,\bm{v}_1,\dots,\bm{v}_q) = 
+   \alpha \bm{A}   (\bm{v}^1,\dots,\bm{v}^p,\bm{v}_1,\dots,\bm{v}_q)
+\end{equation}
+ 
+ \paragraph{Prodotto tensoriale.} Dati p vettori $\bm{v}_1,\dots,\bm{v}_p \in \mathcal{V}$ e q covettori
+ $\bm{v}^1,\dots,\bm{v}^q \in \mathcal{V}^*$ si definisce il prodotto vettoriale
+ $\bm{v}_1 \otimes \dots \otimes \bm{v}_p \otimes \bm{v}^1 \otimes \dots \otimes \bm{v}^q \in \mathcal{T}^p_q
+ (\mathcal{V})$ come
+\begin{equation}
+  \bm{v}_1 \otimes \dots \otimes \bm{v}_p \otimes \bm{v}^1 \otimes \dots \otimes \bm{v}^q 
+  (\bm{u}^1,\dots,\bm{u}^p,\bm{u}_1,\dots,\bm{u}_q) = 
+  \langle \bm{u}^1 ,\bm{v}_1 \rangle \dots \langle \bm{u}^p ,\bm{v}_p \rangle
+  \langle \bm{v}^1 ,\bm{u}_1 \rangle \dots \langle \bm{v}^q ,\bm{u}_q \rangle
+\end{equation}
+ per ogni $\bm{u}^1,\dots,\bm{u}^p \in \mathcal{V}^*$, $\bm{u}_1,\dots,\bm{u}_q \in \mathcal{V}$.
+ 
+ \noindent
+ Per due tensori $\bm{A} \in \mathcal{T}^p_q(\mathcal{V})$, $\bm{B} \in \mathcal{T}^r_s(\mathcal{V})$
+ il prodotto $\bm{A} \otimes \bm{B} \in \mathcal{T}^{p+r}_{q+s}(\mathcal{V})$ è definito come
+\begin{equation}
+ (\bm{A}\otimes\bm{B})(\bm{v}^1,\dots,\bm{v}^{p+r},\bm{v}_1,\dots,\bm{v}_{q+s}) = 
+   \bm{A} (\bm{v}^1,\dots,\bm{v}^p,\bm{v}_1,\dots,\bm{v}_q)
+   \bm{B} (\bm{v}^{p+1},\dots,\bm{v}^{p+r},\bm{v}_{q+1},\dots,\bm{v}_{q+s})
+\end{equation}
+
+ \noindent
+ Il prodotto tensoriale NON è commutativo! $\bm{A} \otimes \bm{B} \neq \bm{B} \otimes \bm{A}$.
+
+  \subsection{Spazio dei tensori di ordine (p,q) $\mathcal{T}^p_q(\mathcal{V})$}
+ 
+ L'insieme dei tensori di ordine (p,q) costituisce uno spazio vettoriale, indicato con $\mathcal{T}^p_q(\mathcal{V})$,
+ una volta definite le operazioni chiuse di somma e di moltiplicazione per uno scalare.
+ 
+ \paragraph{Dimensioni e base prodotto di $\mathcal{T}^p_q(\mathcal{V})$.} Se lo spazio $\mathcal{V}$
+ ha dimensione $N$, la dimensione dello spazio $\mathcal{T}^p_q(\mathcal{V})$ è $N^{p+q}$.
+ La base $\{ \bm{b}_k \}_{k=1:N}$ di $\mathcal{V}$ e la duale $\{ \bm{b}^k \}_{k=1:N}$ di $\mathcal{V}^*$
+ inducono una \textbf{base prodotto} di $\mathcal{T}^p_q(\mathcal{V})$, definita come
+\begin{equation}
+  \left\{ \bm{b}_{i_1} \otimes \dots \otimes \bm{b}_{i_p} \otimes \bm{b}^{j_1} \otimes \dots \otimes \bm{b}^{j_q}   \right\}_{
+  i_1,\dots,i_p,j_1,\dots,j_q = 1 : N}
+\end{equation}
+
+\noindent
+ Rispetto alla base prodotto un tensore $\bm{A} \in \mathcal{T}^p_q(\mathcal{V})$ viene scritto come
+ \begin{equation}
+  \bm{A} = A^{i_1 \dots i_p}_{\ \ \ j_1 \dots j_q} \bm{b}_{i_1} \otimes \dots \otimes \bm{b}_{i_p} \otimes
+     \bm{b}^{j_1} \otimes \dots \otimes \bm{b}^{j_q}
+ \end{equation}
+ dove $A^{i_1 \dots i_p}_{\ \ \ j_1 \dots j_q}$ sono le componenti del tensore $\bm{A}$ rispetto alla base prodotto.
+ Si dimostra\footnote{Infatti
+ \begin{equation}
+ \begin{aligned}
+   \bm{A}(\bm{b}^{k_1},\dots,\bm{b}^{k_p},\bm{b}_{l_1},\dots,\bm{b}_{l_q}) & =
+     A^{i_1 \dots i_p}_{\ \ \ j_1 \dots j_q} \langle \bm{b}^{k_1}, \bm{b}_{i_1} \rangle  \dots \langle \bm{b}^{j_q}, \bm{b}_{l_q} \rangle = \\
+     & = A^{i_1 \dots i_p}_{\ \ \ j_1 \dots j_q} \delta^{k_1}_{i_1} \dots \delta^{j_q}_{l_q} = A^{k_1 \dots k_p}_{\ \ \ l_1 \dots l_q}
+ \end{aligned}
+ \end{equation}
+ } che le componenti $A^{i_1 \dots i_p}_{\ \ \ j_1 \dots j_q}$ sono
+ \begin{equation}
+   A^{i_1 \dots i_p}_{\ \ \ j_1 \dots j_q} = \bm{A}(\bm{b}^{i_1},\dots,\bm{b}^{i_p},\bm{b}_{j_1},\dots,\bm{b}_{j_q})
+ \end{equation}
+ 
+%  le componenti di un tensore $\bm{A} \in \mathcal{T}^p_q(\mathcal{V})$ sono $N^(p+q)$ scalari 
+% definiti come
+%\begin{equation}
+%  A^{i_1 \dots i_p}_{\ \ \ j_1 \dots j_q} = \bm{A}(\bm{b}^{i_1},\dots,\bm{b}^{i_p},\bm{b}_{j_1},\dots,\bm{b}_{j_q})
+%\end{equation}
+% e il tensore $\bm{A}$ può esere scritto in componenti come
+%\begin{equation}
+%  \bm{A} = A^{i_1 \dots i_p}_{\ \ \ j_1 \dots j_q} \bm{b}_{i_1} \otimes \dots \otimes \bm{b}_{i_p} \otimes
+%   \bm{b}^{j_1} \otimes \dots \otimes \bm{b}^{j_q}
+%\end{equation}
+
+
+ \paragraph{Cambio di base e regola di trasformazione delle componenti: definizione ``classica'' di tensore.} 
+ 
+% Due basi $\{ \bm{b}_k \}_{k=1:N}$
+% e $\{ \bm{\hat{b}}_k \}_{k=1:N}$ di $\mathcal{V}$ sono legate dalla trasformazione
+%\begin{equation}
+%  \bm{b}_k = \hat{T}^q_k \bm{\hat{b}}_q \quad , \quad \bm{\hat{b}}_k = {T}^q_k \bm{b}_q
+%\end{equation}
+% dove è stata indicata con $\hat{T}$ la trasformazione inversa di $T$ ($\hat{T} = T^{-1}$).
+
+% \noindent
+% Le rispettive basi duali $\{ \bm{b}^k \}_{k=1:N}$ e $\{ \bm{\hat{b}}^k \}_{k=1:N}$ di $\mathcal{V}$ sono legate
+% dalla trasformazione inversa\footnote{
+% Inserendo la trasformazione riportata, si verifica che
+% \begin{equation}
+% \bm{\hat{b}}^i (\bm{\hat{b}}_k) = \bm{\hat{b}}^i (T^q_k \bm{b}_q) = T^q_k \bm{\hat{b}}^i (\bm{b}_q) =
+%  \hat{T}^i_l T^q_k \bm{b}^l (\bm{b}_q) = \hat{T}^i_l T^q_k \delta^l_q =  \hat{T}^i_l T^l_k = \delta^i_k
+% \end{equation}
+% }:
+% \begin{equation}
+%  \bm{b}^k = T^k_q \bm{\hat{b}}^q \quad , \quad \bm{\hat{b}}^k = {T}^k_q \bm{b}^q 
+% \end{equation}
+% 
+% \noindent
+% Le componenti dello spazio $\mathcal{V}$ si trasformano con la trasformazione inversa degli elementi della base
+% $\{ \bm{b}_k \}_{k=1:N}$ di $\mathcal{V}$: da questo il nome \textbf{componenti contravarianti}.
+% \begin{equation}
+%  \bm{v} = v^q \bm{b}_q = v^q \hat{T}^k_q \bm{\hat{b}}_k = \hat{v}^k \bm{\hat{b}}_k 
+%  \qquad  \Rightarrow \qquad
+%  \begin{cases}
+%     \hat{v}^k = \hat{T}^k_q v^q \\
+%     v^k       = T^k_q \hat{v}^q \\
+%  \end{cases}
+% \end{equation}
+% Allo stesso modo le componenti dello spazio $\mathcal{V^*}$ si trasformano con la stessa trasformazione degli elementi della base
+% $\{ \bm{b}_k \}_{k=1:N}$ di $\mathcal{V}$: da questo il nome \textbf{componenti covarianti}.
+% \begin{equation}
+%  \bm{v^*} = v^*_q \bm{b}^q = v^*_q T^q_k \bm{\hat{b}}^k = \hat{v}^*_k \bm{\hat{b}}^k 
+%  \qquad  \Rightarrow \qquad
+%  \begin{cases}
+%     \hat{v}^*_k = T^q_k v^*_q \\
+%     v^*_k       = \hat{T}^q_k \hat{v}^*_q \\
+%  \end{cases}
+% \end{equation}
+% 
+ 
+ \noindent
+ Aiutandosi con la legge di trasformazione degli elementi della base $\{ \bm{b}_k \}_{k=1:N}$ di $\mathcal{V}$ 
+ e della base duale $\{ \bm{b}^k \}_{k=1:N}$ di $\mathcal{V}^*$, si può verificare\footnote{
+ Per ricavare la regola di trasformazione della base prodotto è sufficiente applicare a tutti gli elementi $\bm{b}_{i_\alpha}$ e 
+ $\bm{b}^{j_\alpha}$ le regole di trasformazione viste in precedenza
+ \begin{equation}
+   \begin{cases}
+     \bm{b}_k = \hat{T}^q_k \bm{\hat{b}}_q \\ \bm{\hat{b}}_k = T^q_k \bm{b}_q
+   \end{cases} \qquad \qquad
+   \begin{cases}
+     \bm{b}^k = T^k_q \bm{\hat{b}}^q \\ \bm{\hat{b}}^k = \hat{T}^k_q \bm{b}^q
+   \end{cases}
+ \end{equation}
+ Usando la multilinearità del prodotto vettoriale
+ \begin{equation}
+ \begin{aligned}
+  \bm{\hat{b}}_{i_1} \otimes \dots \otimes \bm{\hat{b}}_{i_p} \otimes
+   \bm{\hat{b}}^{j_1} \otimes \dots \otimes \bm{\hat{b}}^{j_q} = &
+  ( T^{k_1}_{i_1}\bm{b}_{k_1} ) \otimes \dots \otimes ( T^{k_p}_{i_p}\bm{b}_{k_p}) \otimes
+  ( \hat{T}^{j_1}_{l_1} \bm{b}^{l_1} ) \otimes \dots \otimes ( \dots \hat{T}^{j_p}_{l_p} \bm{b}^{l_q} ) = \\
+  = & T^{k_1}_{i_1}\dots T^{k_p}_{i_p}\hat{T}^{j_1}_{l_1}\dots \hat{T}^{j_p}_{l_p}
+   \bm{b}_{k_1} \otimes \dots \otimes \bm{b}_{k_p} \otimes
+   \bm{b}^{l_1} \otimes \dots \otimes \bm{b}^{l_q} \\
+ \end{aligned}
+ \end{equation}
+ }
+  che la base prodotto dello spazio $\mathcal{T}^p_q(\mathcal{V})$ si trasforma secondo
+\begin{equation}
+\begin{aligned}
+ &  \bm{\hat{b}}_{i_1} \otimes \dots \otimes \bm{\hat{b}}_{i_p} \otimes
+   \bm{\hat{b}}^{j_1} \otimes \dots \otimes \bm{\hat{b}}^{j_q} = 
+  T^{k_1}_{i_1}\dots T^{k_p}_{i_p}\hat{T}^{j_1}_{l_1}\dots \hat{T}^{j_p}_{l_p}
+  \bm{b}_{k_1} \otimes \dots \otimes \bm{b}_{k_p} \otimes
+   \bm{b}^{l_1} \otimes \dots \otimes \bm{b}^{l_q} \\
+  &  \bm{b}_{i_1} \otimes \dots \otimes \bm{b}_{i_p} \otimes
+   \bm{b}^{j_1} \otimes \dots \otimes \bm{b}^{j_q} = 
+  \hat{T}^{k_1}_{i_1}\dots \hat{T}^{k_p}_{i_p} T ^{j_1}_{l_1}\dots T^{j_p}_{l_p}
+  \bm{\hat{b}}_{k_1} \otimes \dots \otimes \bm{\hat{b}}_{k_p} \otimes
+   \bm{\hat{b}}^{l_1} \otimes \dots \otimes \bm{\hat{b}}^{l_q}
+\end{aligned}
+\end{equation}
+ e le componenti di un tensore $\bm{A} \in \mathcal{T}^p_q(\mathcal{V})$ rispetto alle due basi sono legate da\footnote{
+ Le componenti si trasformano con la legge inversa agli elementi della base. Il tensore $\bm{A}$ espresso in componenti nelle due
+ basi prodotto è
+ \begin{equation}
+ \bm{A} = 
+ \begin{cases}
+   A^{i_1 \dots i_p}_{\ \ \ j_1 \dots j_q} \bm{b}_{i_1} \otimes \dots \otimes \bm{b}_{i_p} \otimes
+     \bm{b}^{j_1} \otimes \dots \otimes \bm{b}^{j_q} \\
+  \hat{A}^{i_1 \dots i_p}_{\ \ \ j_1 \dots j_q} \bm{\hat{b}}_{i_1} \otimes \dots \otimes \bm{\hat{b}}_{i_p} \otimes
+     \bm{\hat{b}}^{j_1} \otimes \dots \otimes \bm{\hat{b}}^{j_q}
+ \end{cases}
+ \end{equation}
+ La legge di trasformazione delle componenti si ricava grazie alla legge di trasformazione della base prodotto
+ \begin{equation}
+ \begin{aligned}
+  \bm{A} & =  A^{i_1 \dots i_p}_{\ \ \ j_1 \dots j_q} \bm{b}_{i_1} \otimes \dots \otimes \bm{b}_{i_p} \otimes
+     \bm{b}^{j_1} \otimes \dots \otimes \bm{b}^{j_q} = \\
+   & = A^{i_1 \dots i_p}_{\ \ \ j_1 \dots j_q} 
+     \hat{T}^{k_1}_{i_1}\dots \hat{T}^{k_p}_{i_p} T ^{j_1}_{l_1}\dots T^{j_p}_{l_p}
+     \bm{\hat{b}}_{k_1} \otimes \dots \otimes \bm{\hat{b}}_{k_p} \otimes
+     \bm{\hat{b}}^{l_1} \otimes \dots \otimes \bm{\hat{b}}^{l_q}= \\ 
+   & = \hat{A}^{k_1 \dots k_p}_{\ \ \ l_1 \dots l_q} \bm{\hat{b}}_{k_1} \otimes \dots \otimes \bm{\hat{b}}_{k_p} \otimes
+     \bm{\hat{b}}^{l_1} \otimes \dots \otimes \bm{\hat{b}}^{l_q}
+ \end{aligned}
+ \end{equation}
+ }
+\begin{equation}
+\begin{aligned}
+ &  \hat{A}^{k_1 \dots k_p}_{\ \ \ l_1 \dots l_q} = 
+  \hat{T}^{k_1}_{i_1}\dots \hat{T}^{k_p}_{i_p} T^{j_1}_{l_1} \dots T^{j_p}_{l_p}
+  A^{i_1 \dots i_p}_{\ \ \ j_1 \dots j_q} \\
+ &  A^{i_1 \dots i_p}_{\ \ \ j_1 \dots j_q} = 
+  T^{i_1}_{k_1}\dots T^{i_p}_{k_p} \hat{T}^{l_1}_{j_1} \dots \hat{T}^{l_p}_{j_p}
+  \hat{A}^{k_1 \dots k_p}_{\ \ \ l_1 \dots l_q} \\
+\end{aligned}
+\end{equation}
+ 
+
+
+ \subsection{Alcune operazioni tensoriali (II)}
+
+ \paragraph{Contrazione.} L'operazione di contrazione $\bm{C}^k_l$ agente su un tensore 
+ $\bm{A}$ di ordine $(p,q)$ ($i<p$, $k<q$) ha come risultato un tensore di ordine $(p-1,q-1)$. In componenti si ottiene
+ \begin{equation}
+ \begin{aligned}
+  \bm{C}^k_{l}\bm{A} & = \bm{C}^k_{l} A^{i_1 \dots i_p}_{\ \ \ j_1 \dots j_q} \bm{b}_{i_1} \otimes \dots \otimes \bm{b}_{i_p} \otimes
+   \bm{b}^{j_1} \otimes \dots \otimes \bm{b}^{j_q} = \\
+   & = A^{i_1 \dots i_{k-1} t i_{k+1} \dots i_p}_{\ \ \ \ \ j_1 \dots j_{l-1} t j_{l+1} \dots j_q} 
+   \bm{b}_{i_1} \otimes \dots \otimes \bm{b}_{i_{k-1}} \otimes \bm{b}_{i_{k+1}} \otimes \dots \otimes \bm{b}_{i_p} \otimes
+   \bm{b}^{j_1} \otimes \dots \otimes \bm{b}^{j_{l-1}} \otimes \bm{b}^{j_{l+1}} \otimes \dots \otimes \bm{b}^{j_q}
+ \end{aligned}
+ \end{equation}
+ Affinché il risultato della contrazione di due indici di un tensore dia come risultato un altro tensore,
+ è necessario che la contrazione avvenga tra un indice contravariante e uno covariante.
+ 
+ \paragraph{``Dot'' product.} Siano $\bm{A} \in \mathcal{T}^p_q(\mathcal{V})$, $\bm{B} \in \mathcal{T}^r_s(\mathcal{V})$, il
+ prodotto ``dot'' $\bm{A} \cdot \bm{B}$ è un tensore di ordine $(p+r-1,q+s-1)$, definito tramite il prodotto tensoriale e una contrazione.
+ In particolare si definisce
+ \begin{equation}
+  \bm{A} \cdot \bm{B} = \bm{C}^{p+1}_{q} (\bm{A} \otimes \bm{B})
+ \end{equation}
+ 
+ \noindent
+ Il prodotto ``dot'' NON è commutativo ($\bm{A} \cdot \bm{B} \neq \bm{B} \cdot \bm{A}$)
+ Il prodotto ``dot'' NON è un prodotto interno (in generale non restituisce uno scalare).
+ 
+ \paragraph{Doppio ``Dot'' product.}
+ Siano $\bm{A} \in \mathcal{T}^p_q(\mathcal{V})$, $\bm{B} \in \mathcal{T}^r_s(\mathcal{V})$, il
+ prodotto ``dot'' $\bm{A} : \bm{B}$ è un tensore di ordine $(p+r-2,q+s-2)$ definito tramite il prodotto tensoriale e una doppia contrazione.
+  In particolare si definisce
+ \begin{equation}
+  \bm{A} : \bm{B} = \bm{C}^{p+1,p+2}_{q-1,q} (\bm{A} \otimes \bm{B})
+ \end{equation}
+ 
+ 
+% \paragraph{Invarianti.} \dots
+ 
+ 
+
+
+% Tensori in uno spazio con prodotto interno
+ \subsection{Tensori su uno spazio $\mathcal{V}$ dotato di prodotto interno}
+ Per uno spazio vettoriale $\mathcal{V}$ dotato di prodotto interno, una volta scelto e fissato il prodotto
+ interno, esiste un \textbf{isomorfismo} tra gli spazi $\mathcal{V}$ e $\mathcal{V}^*$ che permette di identificare
+ gli elementi di $\mathcal{V}$ con quelli di $\mathcal{V}^*$.
+ Viene definito l'isomorfismo $\bm{G}: \mathcal{V} \rightarrow \mathcal{V}^*$ tale che
+ \begin{equation}
+   \langle \bm{G}\bm{v}, \bm{w} \rangle = \bm{v} \cdot \bm{w} \qquad \forall \bm{v},\bm{w} \in \mathcal{V}
+ \end{equation}
+ 
+ Solo a questo punto, e prestando ancora comunque molta attenzione alla posizione degli indici, è lecito 
+ considerare gli elementi di $\mathcal{V}^*$ come elementi di $\mathcal{V}$. Ad esempio, la base duale
+ di $\mathcal{V}^*$ corrisponde alla \textbf{base reciproca} $\{ \bm{b}^k \}_{k=1:N}$ di $\mathcal{V}$
+\begin{equation}
+  \bm{b}^i \cdot \bm{b}_k  = \delta_k^i
+\end{equation}
+ 
+
+ \paragraph{Osservazioni.} Come già osservato, la base $\{ \bm{b}_k \}$ in generale non è
+ ortogonale, né tantomeno ortonormale. Questo in generale complica la scrittura in componenti di un vettore.
+ Come vedremo in seguito, ci viene in aiuto la base reciproca.
+ 
+ Anche se è possibile identificare $\mathcal{V}^*$ con $\mathcal{V}$, è fondamentale non confondere
+ le componenti contravarianti (indice come apice) e covarianti (pedice) di vettori e tensori.
+ In un'equazione vettoriale o tensoriale (come le leggi fisiche) scritte in componenti, è possibile sommare 
+ senza ulteriori trasformazioni termini che hanno gli stessi indici contravarianti e covarianti. 
+% Per essere chiari,
+% la somma di due tensori $\bm{A} + \bm{B} = \bm{C}$ può essere scritta in com
+% \begin{equation}
+%&   A^{ij}_{k} + B^{ij}_k  = C^{ij}_k \\
+% \end{equation}
+% mentre $A^{ij}_k + B^{i}_{jk} = C^{ij}_k$.
+ 
+ \paragraph{Cosa non è stato detto. Riferimenti.} Viene solo accennata l'esistenza di un 
+ \textit{secondo spazio duale} $\mathcal{V}^{**}$, come il duale del duale.
+ Si dimostra che esiste un \textit{isomorfismo} (canonico) tra lo spazio $\mathcal{V}$ e $\mathcal{V}^{**}$,
+ cioè che è possibile identificare univocamente ogni elemento di $\mathcal{V}^{**}$ con
+ un elemento di $\mathcal{V}$ e viceversa ed è quindi possibile confondere questi due spazi.
+ Il testo di Bowen e Wang, \textit{Introduction to vectors and tensors. Linear and multilinear
+ algebra} può essere considerato un valido e completo riferimento, anche per il futuro.
+ Questo testo è estremamente completo, di lettura non sempre agevole e contiene sicuramente molto più
+ di quanto sia indispensabile presentare in una prima e breve introduzione ai tensori, come è questa.
+ Il testo può essere comunque un buon riferimento per il futuro, qualora aveste questa necessità.
+ Se i collegamenti sono ancora validi, i due volumi sono disponibili in rete. 
+ 
+ \href{http://oaktrust.library.tamu.edu/bitstream/handle/1969.1/2502/IntroductionToVectorsAndTensorsVol1.pdf}
+ {Vol. 1: Linear and Multilinear Algebra}
+ 
+ \href{http://oaktrust.library.tamu.edu/bitstream/handle/1969.1/3609/IntroductionToVectorsAndTensorsVol2.pdf}
+ {Vol. 2: Vector and Tensor Analysis}
+ 
+% http://www.mat.unimi.it/users/carati/didattica/dispense/tensori.pdf
+ 
+ 
+ \paragraph{Cosa è utile ripassare.} Forse questa è una buona occasione per ripassare
+ alcuni concetti, tra i quali quello di spazio vettoriale (definizione e proprietà, dimensione e base, \dots),
+ prodotto interno, linearità (e la differenza con l'essere ``affine''), e in generale rispoleverare e approfondire
+ la propria conoscenza di algebra lineare (o almeno intuirne l'importanza e l'alta probabilità di 
+ imbattercisi nel futuro).
+% Può essere educativo iniziare ad avere una visione ``più astratta'' di questi oggetti, legata
+% maggiormente alle definizioni rispetto a una rappresentazione più concreta (un vettore non è solo
+% una ``freccia'', ma si scopre che anche una funzione può essere un elemento di un particolare spazio vettoriale \dots)
+ 
+% \subsubsection{Definizione come applicazione multilineare.}
+% 
+% \paragraph{Definizione classica.}
+% 
+
+% \paragraph{Coordinate rispetto a una base}
+% Base e base duale...
+% \paragraph{Covarianza e controvarianza}
+% \paragraph{Cambiamento di base}
+
+% \paragraph{Equivalenza delle due definizioni.}
+% 
+
+
+%\subsection{Operazioni elementari}
+% \paragraph{Somma e moltiplicazione per uno scalare}
+%  Struttura di spazio vettoriale \dots
+% \paragraph{Composizione}
+% 
+% \paragraph{Trasposto}
+% 
+% \paragraph{Contrazione}
+% 
+% \paragraph{Invarianti}
+%  Determinante, traccia, \dots
+
+%\subsection{Campi tensoriali e coordinate curvilinee}
+% \paragraph{Metrica.}
+%\begin{itemize}
+%  \item Tensore metrico e $A_i = g_{ij} A^j$.
+%  \item $g_{ij}$ in sistemi di riferimento diversi.
+%  \item $ds^2 = g_{ij} dx^i dx^j$
+%\end{itemize}
+
+% \paragraph{Base naturale}
+%  Vettori tangenti alle linee coordinate.
+%  
+%  \noindent
+%  Componenti:
+%\begin{itemize}
+%  \item Componenti controvarianti
+%  \item Componenti covarianti
+%  \item Componenti fisiche
+%\end{itemize}
+% 
+
+ 
+
+
+

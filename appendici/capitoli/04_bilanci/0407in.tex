@@ -1,0 +1,68 @@
+\noindent
+\begin{tabular}{cc}
+\begin{minipage}{0.95\textwidth}
+\begin{exerciseS}[Bilancio di massa: riempimento bombola]
+Si sta riempiendo una bombola per immersioni subacquee.
+Sapendo che la pompa aspira aria a pressione ambiente di 
+$1.01\times10^5\ Pa$ e alla temperatura di $293\ K$
+in un condotto di sezione $1\ cm^2$ in cui la velocit\`a media \`e di 
+$0.5\ m/s$ e che non ci sono perdite nel sistema di pompaggio,
+determinare la rapidit\`a di variazione della massa d'aria e della sua 
+densit\`a all'interno della bombola, sapendo che il volume della bombola
+\`e pari a $0.02 \  m^3$.
+
+($\frac{dM}{dt} = 6.01 \times 10^{-5}\ kg/s, \frac{d \rho}{d t} = 3.00 \times 10^{-3}\ kg/(m^3 s)$).
+\end{exerciseS}
+\end{minipage}
+\end{tabular}
+
+\sol
+
+\partone Bilancio integrale della massa. Legge dei gas perfetti.
+
+\parttwo
+Sono date la pressione $p$ e la temperatura $T$ all'uscita della pompa.
+\'E nota l'area $S$ della sezione e la velocità media $U$ su quella
+ sezione. 
+% Se si suppone che il gas sia un gas ideale perfetto, si può ricavare la densità come $\rho = \frac{p}{R T}$. Si può quindi calcolare il flusso di massa $\dot{m}$.
+%
+Si trova la variazione di massa all'interno della bombola grazie al bilancio integrale di massa nel volume della bombola $V$ (volume di controllo, fisso),
+\begin{equation}
+ \dfrac{d M}{d t} = \dfrac{d}{d t} \int_V \rho = -\oint_S \rho \bm{u} \cdot \bm{u} =
+ \rho_{in} S_{in} U \ ,
+\end{equation}
+dove si è indicato con $M$ la massa totale, $S_{in}$ l'area della sezione del tubo utilizzato per riempire la bombola e $\rho_{in}$, la densità sulla sezione di ingresso, dove sono note la pressione $P_{in}$ e la temperatura $T_{in}$. Ipotizzando che valga la legge di stato dei gas perfetti, la densità sulla sezione di ingresso vale
+\begin{equation}
+ \rho_{in} = \dfrac{P_{in}}{R T_{in}} \ ,
+\end{equation}
+dove $R=287 J/(kg\ K)$ è la costante dei gas per l'aria. La derivata nel tempo della massa d'aria nella bombola vale quindi
+\begin{equation}
+  \frac{d M}{d t} = 6.0 \cdot 10^{-5} \dfrac{kg}{s} \ .
+\end{equation}
+%
+Supponendo che la densità dell'aria si uniforme all'interno della bombola, si può calcolare la sua derivata nel tempo, 
+\begin{equation}
+ \dfrac{d \rho}{d t} = \dfrac{1}{V} \dfrac{d}{dt} \int_V \rho = 2.0 \cdot 10^{-3} \dfrac{kg}{m^3 s} \ .
+\end{equation}
+
+
+%\begin{equation}
+%  \dot{m} = \rho S U
+%\end{equation}
+
+%La derivata della massa contenuta nella bombola è uguale al flusso entrante nella bombola, uguale al flusso uscente dalla pompa (nell'ipotesi che non ci siano perdite).
+
+%\begin{equation}
+% \frac{d M}{d t} = \rho S U  \quad \Rightarrow \quad
+%  \frac{d M}{d t} = 6.0 \cdot 10^{-5} kg/ s
+%\end{equation}
+
+%Per calcolare la derivata della densità all'interno della bombola, si 
+%osserva che il volume della bombola non cambia. La derivata della 
+%massa è $\frac{d M}{d t} = \frac{d (\rho V)}{d t} = V \frac{d \rho}
+%{d t}$.
+
+%\begin{equation}
+% \frac{d \rho}{d t} = \frac{\rho U S}{V} \quad \Rightarrow \quad
+%  \frac{d \rho}{d t} = 2.0 \cdot 10^{-3} kg/(m^3 s)
+%\end{equation}

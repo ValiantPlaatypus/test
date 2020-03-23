@@ -6,7 +6,10 @@ So far, the notes are available in Italian only.
 
 ## Contents
 ### Notes
-This repo contains three main documents: "Notes about Fluid Mechanics", "Review of Mathematical Analysis and Introduction to Tensor Algebra and Calculus", "Questions and Answers".
+This repo contains three main documents: 
+- "Notes about Fluid Mechanics";
+- "Review of Mathematical Analysis and Introduction to Tensor Algebra and Calculus";
+- "Questions and Answers".
 
 ### Programs
 This repo contains some programs and scripts about:

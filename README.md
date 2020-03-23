@@ -6,9 +6,13 @@ So far, the notes are available in Italian only.
 
 ## Contents
 ### Notes
+This repo contains three main documents: "Notes about Fluid Mechanics", "Review of Mathematical Analysis and Introduction to Tensor Algebra and Calculus", "Questions and Answers".
 
 ### Programs
-
+This repo contains some programs and scripts about:
+- Archimedes' principle and buoyant force: equilibrium and stability
+- Flow around a 2D airfoil, with panel method: panel method; integration of integral boundary layer equations; force evaluation with control volume methods; uncertainty estimation of the computed loads.
+- Integration of the Lorenz's dynamical equations and relation with the solution of Boussinesq equations for natural convection.
 
 ## Contributions
 Contributions of different nature would be really appreciated, as

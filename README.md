@@ -15,7 +15,7 @@ This repo contains three main documents:
 This repo contains some programs and scripts about:
 - Archimedes' principle and buoyant force: equilibrium and stability
 - Flow around a 2D airfoil, with panel method: panel method; integration of integral boundary layer equations; force evaluation with control volume methods; uncertainty estimation of the computed loads.
-- Integration of the Lorenz's dynamical equations and relation with the solution of Boussinesq equations for natural convection.
+- Integration of the Lorenz's dynamical system, as a reduced model of the Boussinesq equations for natural convection.
 
 ## Contributions
 Contributions of different nature would be really appreciated, as

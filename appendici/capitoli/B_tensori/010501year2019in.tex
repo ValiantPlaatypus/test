@@ -193,7 +193,7 @@ Nel caso di basi ortonormali, e solo in questo caso, non è indispensabile disti
 }
 
 \subsubsection{Trasformazione dei vettori di due basi ortonormali}
-Le componenti delle trasformazione lineare $\hat{T}$ e della sua inversa $T$ che legano i vettori delle due basi ortonormali $\{\bm{b}_k\}$ e $\{\bm{b}^k\}$ tramite le formule (\ref{eqn:b2b:t}) hanno l'espressione
+Le componenti delle trasformazione lineare $\hat{T}$ e della sua inversa $T$ che legano i vettori delle due basi ortonormali $\{\bm{b}_k\}$ e $\{\bm{\hat{b}}_k\}$ tramite le formule (\ref{eqn:b2b:t}) hanno l'espressione
 \begin{fBox}
 \begin{equation}
 {\color{blue}
@@ -416,7 +416,7 @@ avendo sostituito solo il primo vettore della base prodotto e, di conseguenza, c
  
  \subsection{Cambio di base e regola di trasformazione delle componenti: definizione ``classica'' di tensore.} 
 %
- Aiutandosi con la legge di trasformazione (\ref{eqn:b2b:t}) degli elementi della base $\{ \bm{b}_k \}_{k=1:N}$ di $\mathcal{V}$ e della base reciproca $\{ \bm{b}^k \}_{k=1:N}$ di $\mathcal{V}^*$, si può verificare  che la base prodotto (covariante) dello spazio $\mathcal{T}^r(\mathcal{V})$ si trasforma secondo
+ Aiutandosi con la legge di trasformazione (\ref{eqn:b2b:t}) degli elementi della base $\{ \bm{b}_k \}_{k=1:N}$ di $\mathcal{V}$ e della base reciproca $\{ \bm{\hat{b}}_k \}_{k=1:N}$ di $\mathcal{V}^*$, si può verificare  che la base prodotto (covariante) dello spazio $\mathcal{T}^r(\mathcal{V})$ si trasforma secondo
 \begin{fBox}
 \begin{equation}\label{eqn:bp2bp:t}
 \begin{aligned}
@@ -508,7 +508,7 @@ Si fornisce un esempio dell'operazione di contrazione (\ref{eqn:defContrazione})
  \begin{equation}
   \bm{A} \cdot \bm{B} = \bm{C}^{r}_{r+1} (\bm{A} \otimes \bm{B}) .
  \end{equation}
-Si fa un esempio di prodotto ``punto'' tra due tensori $\bm{A} \in \mathcal{T}^3$, $\bm{B} \in \mathcal{T}^2$, espressi in componenti rispetto alla base ortonormale $\{\bm{k}\}_{k=1:N}$,
+Si fa un esempio di prodotto ``punto'' tra due tensori $\bm{A} \in \mathcal{T}^3$, $\bm{B} \in \mathcal{T}^2$, espressi in componenti rispetto alla base ortonormale $\{\bm{b}_k\}_{k=1:N}$,
  \begin{equation}
  \begin{aligned}
   \bm{A} \cdot \bm{B} & = (A^{ijk} \bm{b}_i \otimes \bm{b}_j \otimes \bm{b}_k) \cdot (B_{mn} \bm{b}^m \otimes \bm{b}^n) = \\

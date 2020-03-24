@@ -1,5 +1,5 @@
-\select@language {italian}
-\select@language {italian}
+\babel@toc {italian}{}
+\babel@toc {italian}{}
 \contentsline {chapter}{\numberline {1}Richiami di analisi}{9}{chapter.1}
 \contentsline {section}{\numberline {1.1}Teoremi della divergenza, del gradiente e del rotore}{10}{section.1.1}
 \contentsline {subsection}{\numberline {1.1.1}Lemma di Green}{10}{subsection.1.1.1}

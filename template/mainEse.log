@@ -1,15 +1,15 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.10.12)  26 FEB 2020 15:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.6.22)  24 MAR 2020 22:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **mainEse
 (./mainEse.tex
-LaTeX2e <2016/02/01>
-Babel <3.9q> and hyphenation patterns for 81 language(s) loaded.
+LaTeX2e <2017-04-15>
+Babel <3.18> and hyphenation patterns for 8 language(s) loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/base/book.cls
 Document Class: book 2014/09/29 v1.4h Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/fleqn.clo
-File: fleqn.clo 2015/03/31 v1.1i Standard LaTeX option (flush left equations)
+File: fleqn.clo 2016/12/29 v1.2a Standard LaTeX option (flush left equations)
 \mathindent=\dimen102
 Applying: [2015/01/01] Make \[ robust on input line 50.
 LaTeX Info: Redefining \[ on input line 51.
@@ -42,11 +42,10 @@ Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks14
 )
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
-Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
-Package ifpdf Info: pdfTeX in PDF mode is detected.
+Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
 )
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifvtex.sty
-Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
+Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
 Package ifvtex Info: VTeX not detected.
 )
 (/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
@@ -66,36 +65,28 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@dimlist=\toks15
 )
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
-Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2016/01/03 v1.0q Standard LaTeX Graphics (DPC,SPQR)
+Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
-File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
-Package graphics Info: Driver file: pdftex.def on input line 95.
+Package graphics Info: Driver file: pdftex.def on input line 99.
 
-(/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
-File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
-
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
-Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
-)
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
-Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
-)
-\Gread@gobject=\count91
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen112
 \Gin@req@width=\dimen113
 )
 (/usr/share/texlive/texmf-dist/tex/latex/lipsum/lipsum.sty
 Package: lipsum 2014/07/27 v1.3 150 paragraphs of Lorem Ipsum dummy text
-\c@lips@count=\count92
+\c@lips@count=\count91
 )
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
@@ -139,10 +130,10 @@ ex
 \pgf@yc=\dimen123
 \w@pgf@writea=\write3
 \r@pgf@reada=\read1
-\c@pgf@counta=\count93
-\c@pgf@countb=\count94
-\c@pgf@countc=\count95
-\c@pgf@countd=\count96
+\c@pgf@counta=\count92
+\c@pgf@countb=\count93
+\c@pgf@countc=\count94
+\c@pgf@countd=\count95
 \t@pgf@toka=\toks20
 \t@pgf@tokb=\toks21
 \t@pgf@tokc=\toks22
@@ -161,28 +152,28 @@ File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.
 tex
 File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
-\pgfsyssoftpath@smallbuffer@items=\count97
-\pgfsyssoftpath@bigbuffer@items=\count98
+\pgfsyssoftpath@smallbuffer@items=\count96
+\pgfsyssoftpath@bigbuffer@items=\count97
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.
 tex
 File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
 )) (/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
-Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
 
-(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
-File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 225.
-Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
-Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
-Package xcolor Info: Model `RGB' extended on input line 1353.
-Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
-Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
-Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
-Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
-Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
-Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
 Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
@@ -192,7 +183,7 @@ Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
 \pgfmath@dimen=\dimen124
-\pgfmath@count=\count99
+\pgfmath@count=\count98
 \pgfmath@box=\box27
 \pgfmath@toks=\toks23
 \pgfmath@stack@operand=\toks24
@@ -216,7 +207,7 @@ tex)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerari
 thmetics.code.tex)))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count100
+\c@pgfmathroundto@lastzeros=\count99
 ))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.te
 x
@@ -254,7 +245,7 @@ File: pgfcorescopes.code.tex 2015/05/08  (rcs-revision 1.46)
 \pgfpic=\box28
 \pgf@hbox=\box29
 \pgf@layerbox@main=\box30
-\pgf@picture@serial@count=\count101
+\pgf@picture@serial@count=\count100
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.c
 ode.tex
@@ -287,7 +278,7 @@ File: pgfcorearrows.code.tex 2015/05/14  (rcs-revision 1.43)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
 File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
 \pgf@max=\dimen148
-\pgf@sys@shading@range@num=\count102
+\pgf@sys@shading@range@num=\count101
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
 File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
@@ -344,7 +335,7 @@ Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers
 .code.tex
 File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
-\pgf@plot@mark@count=\count103
+\pgf@plot@mark@count=\count102
 \pgfplotmarksize=\dimen153
 )
 \tikz@lastx=\dimen154
@@ -357,34 +348,42 @@ File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
 \tikz@figbox@bg=\box34
 \tikz@tempbox=\box35
 \tikz@tempbox@bg=\box36
-\tikztreelevel=\count104
-\tikznumberofchildren=\count105
-\tikznumberofcurrentchild=\count106
-\tikz@fig@count=\count107
+\tikztreelevel=\count103
+\tikznumberofchildren=\count104
+\tikznumberofcurrentchild=\count105
+\tikz@fig@count=\count106
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
 File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
-\pgfmatrixcurrentrow=\count108
-\pgfmatrixcurrentcolumn=\count109
-\pgf@matrix@numberofcolumns=\count110
+\pgfmatrixcurrentrow=\count107
+\pgfmatrixcurrentcolumn=\count108
+\pgf@matrix@numberofcolumns=\count109
 )
-\tikz@expandcount=\count111
+\tikz@expandcount=\count110
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
 zlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.1a (rcs-revision 1.2)
 )))
 (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2016/02/24 3.9q The Babel package
+Package: babel 2018/02/14 3.18 The Babel package
 
+(/usr/share/texlive/texmf-dist/tex/generic/babel/switch.def
+File: switch.def 2018/02/14 3.18 Babel switching mechanism
+)
 (/usr/share/texlive/texmf-dist/tex/generic/babel-english/english.ldf
-Language: english 2012/08/20 v3.3p English support from the babel system
+Language: english 2017/06/06 v3.3r English support from the babel system
 
 (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
-File: babel.def 2016/02/24 3.9q Babel common definitions
-\babel@savecnt=\count112
+File: babel.def 2018/02/14 3.18 Babel common definitions
+\babel@savecnt=\count111
 \U@D=\dimen160
+
+(/usr/share/texlive/texmf-dist/tex/generic/babel/txtbabel.def)
+\bbl@dirlevel=\count112
 )
+\l@british = a dialect from \language\l@english 
+\l@UKenglish = a dialect from \language\l@english 
 \l@canadian = a dialect from \language\l@american 
 \l@australian = a dialect from \language\l@british 
 \l@newzealand = a dialect from \language\l@british 
@@ -396,7 +395,7 @@ Language: italian 2015/03/26 v1.3n Italian support from the babel system
 \it@ISOcompliance=\count115
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
-Package: etoolbox 2015/08/02 v2.2a e-TeX tools for LaTeX (JAW)
+Package: etoolbox 2018/02/11 v2.5e e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count116
 )
 (/usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty
@@ -408,7 +407,7 @@ Package: enumitem 2011/09/28 v3.5.2 Customized lists
 \enitdp@description=\count117
 )
 (/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty
-Package: booktabs 2005/04/14 v1.61803 publication quality tables
+Package: booktabs 2016/04/27 v1.618033 publication quality tables
 \heavyrulewidth=\dimen162
 \lightrulewidth=\dimen163
 \cmidrulewidth=\dimen164
@@ -431,7 +430,7 @@ Package: booktabs 2005/04/14 v1.61803 publication quality tables
 Package: avant 2005/04/12 PSNFSS-v9.2a (SPQR) 
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tools/bm.sty
-Package: bm 2014/10/28 v1.1c Bold Symbol Support (DPC/FMi)
+Package: bm 2017/01/16 v1.2c Bold Symbol Support (DPC/FMi)
 \symboldoperators=\mathgroup4
 \symboldletters=\mathgroup5
 \symboldsymbols=\mathgroup6
@@ -439,25 +438,25 @@ LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 141.
 LaTeX Info: Redefining \bm on input line 207.
 )
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype.sty
-Package: microtype 2013/05/23 v2.5a Micro-typographical refinements (RS)
+Package: microtype 2018/01/14 v2.7a Micro-typographical refinements (RS)
 \MT@toks=\toks29
 \MT@count=\count122
-LaTeX Info: Redefining \textls on input line 766.
+LaTeX Info: Redefining \textls on input line 793.
 \MT@outer@kern=\dimen175
-LaTeX Info: Redefining \textmicrotypecontext on input line 1285.
+LaTeX Info: Redefining \textmicrotypecontext on input line 1339.
 \MT@listname@count=\count123
 
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype-pdftex.def
-File: microtype-pdftex.def 2013/05/23 v2.5a Definitions specific to pdftex (RS)
+File: microtype-pdftex.def 2018/01/14 v2.7a Definitions specific to pdftex (RS)
 
-LaTeX Info: Redefining \lsstyle on input line 915.
-LaTeX Info: Redefining \lslig on input line 915.
+LaTeX Info: Redefining \lsstyle on input line 913.
+LaTeX Info: Redefining \lslig on input line 913.
 \MT@outer@space=\skip44
 )
 Package microtype Info: Loading configuration file microtype.cfg.
 
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype.cfg
-File: microtype.cfg 2013/05/23 v2.5a microtype main configuration file (RS)
+File: microtype.cfg 2018/01/14 v2.7a microtype main configuration file (RS)
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2015/03/17 v1.2c Input encoding file
@@ -479,10 +478,10 @@ File: uni-global.def 2013/05/13 UCS: Unicode global data
 \uc@temptokena=\toks34
 )
 (/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
-Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
+Package: fontenc 2017/04/05 v2.0i Standard LaTeX package
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/t1enc.def
-File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
+File: t1enc.def 2017/04/05 v2.0i Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
 ))
 (/usr/share/texmf/tex/latex/lm/lmodern.sty
@@ -553,18 +552,20 @@ Package: titletoc 2011/12/15 v1.6 TOC entries
 \ttl@leftsep=\dimen178
 )
 (/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
-\fancy@headwidth=\skip50
-\f@ncyO@elh=\skip51
-\f@ncyO@erh=\skip52
-\f@ncyO@olh=\skip53
-\f@ncyO@orh=\skip54
-\f@ncyO@elf=\skip55
-\f@ncyO@erf=\skip56
-\f@ncyO@olf=\skip57
-\f@ncyO@orf=\skip58
+Package: fancyhdr 2017/06/30 v3.9a Extensive control of page headers and footer
+s
+\f@nch@headwidth=\skip50
+\f@nch@O@elh=\skip51
+\f@nch@O@erh=\skip52
+\f@nch@O@olh=\skip53
+\f@nch@O@orh=\skip54
+\f@nch@O@elf=\skip55
+\f@nch@O@erf=\skip56
+\f@nch@O@olf=\skip57
+\f@nch@O@orf=\skip58
 )
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
-Package: amsmath 2016/03/03 v2.15a AMS math features
+Package: amsmath 2017/09/02 v2.17a AMS math features
 \@mathmargin=\skip59
 
 For additional information on amsmath, use the `?' option.
@@ -582,23 +583,23 @@ LaTeX Info: Redefining \boldsymbol on input line 28.
 \pmbraise@=\dimen180
 )
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
-Package: amsopn 1999/12/14 v2.01 operator names
+Package: amsopn 2016/03/08 v2.02 operator names
 )
 \inf@bad=\count129
-LaTeX Info: Redefining \frac on input line 199.
+LaTeX Info: Redefining \frac on input line 213.
 \uproot@=\count130
 \leftroot@=\count131
-LaTeX Info: Redefining \overline on input line 297.
+LaTeX Info: Redefining \overline on input line 375.
 \classnum@=\count132
 \DOTSCASE@=\count133
-LaTeX Info: Redefining \ldots on input line 394.
-LaTeX Info: Redefining \dots on input line 397.
-LaTeX Info: Redefining \cdots on input line 518.
+LaTeX Info: Redefining \ldots on input line 472.
+LaTeX Info: Redefining \dots on input line 475.
+LaTeX Info: Redefining \cdots on input line 596.
 \Mathstrutbox@=\box38
 \strutbox@=\box39
 \big@size=\dimen181
-LaTeX Font Info:    Redeclaring font encoding OML on input line 630.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 631.
+LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
 \macc@depth=\count134
 \c@MaxMatrixCols=\count135
 \dotsspace@=\muskip10
@@ -619,8 +620,8 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 631.
 \multlinegap=\skip60
 \multlinetaggap=\skip61
 \mathdisplay@stack=\toks39
-LaTeX Info: Redefining \[ on input line 2735.
-LaTeX Info: Redefining \] on input line 2736.
+LaTeX Info: Redefining \[ on input line 2817.
+LaTeX Info: Redefining \] on input line 2818.
 )
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
@@ -633,7 +634,7 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 )
 (/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty
-Package: amsthm 2015/03/04 v2.20.2
+Package: amsthm 2017/10/31 v2.20.4
 \thm@style=\toks40
 \thm@bodyfont=\toks41
 \thm@headfont=\toks42
@@ -659,16 +660,22 @@ Package: amsthm 2015/03/04 v2.20.2
 Package: mdframed 2013/07/01 1.9b: mdframed
 
 (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
-Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
-Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
 
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
-Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
 
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty
-Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
 )
 Package etexcmds Info: Could not find \expanded.
@@ -678,37 +685,22 @@ Package etexcmds Info: Could not find \expanded.
 )))
 (/usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
 (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
-Package: expl3 2016/01/19 v6377 L3 programming layer (loader) 
+Package: expl3 2018/02/21 L3 programming layer (loader) 
 
 (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3-code.tex
-Package: expl3 2016/01/19 v6377 L3 programming layer (code)
-L3 Module: l3bootstrap 2016/01/01 v6339 L3 Bootstrap code
-L3 Module: l3names 2015/12/21 v6328 L3 Namespace for primitives
-L3 Module: l3basics 2015/11/22 v6315 L3 Basic definitions
-L3 Module: l3expan 2015/09/10 v5983 L3 Argument expansion
-L3 Module: l3tl 2015/09/29 v6121 L3 Token lists
-L3 Module: l3str 2016/01/03 v6357 L3 Strings
-L3 Module: l3seq 2015/08/05 v5777 L3 Sequences and stacks
-L3 Module: l3int 2016/01/05 v6366 L3 Integers
+Package: expl3 2018/02/21 L3 programming layer (code)
 \c_max_int=\count151
 \l_tmpa_int=\count152
 \l_tmpb_int=\count153
 \g_tmpa_int=\count154
 \g_tmpb_int=\count155
-L3 Module: l3quark 2015/08/17 v5855 L3 Quarks
-L3 Module: l3prg 2015/11/01 v6216 L3 Control structures
-\g__prg_map_int=\count156
-L3 Module: l3clist 2015/09/02 v5901 L3 Comma separated lists
-L3 Module: l3token 2015/11/11 v6249 L3 Experimental token manipulation
-L3 Module: l3prop 2016/01/05 v6366 L3 Property lists
-L3 Module: l3msg 2015/09/28 v6113 L3 Messages
-L3 Module: l3file 2015/12/03 v6317 L3 File and I/O operations
-\l_iow_line_count_int=\count157
-\l__iow_target_count_int=\count158
-\l__iow_current_line_int=\count159
-\l__iow_current_word_int=\count160
-\l__iow_current_indentation_int=\count161
-L3 Module: l3skip 2016/01/05 v6366 L3 Dimensions and skips
+\g__intarray_font_int=\count156
+\g__prg_map_int=\count157
+\c_log_iow=\count158
+\l_iow_line_count_int=\count159
+\l__iow_line_target_int=\count160
+\l__iow_one_indent_int=\count161
+\l__iow_indent_int=\count162
 \c_zero_dim=\dimen188
 \c_max_dim=\dimen189
 \l_tmpa_dim=\dimen190
@@ -727,10 +719,7 @@ L3 Module: l3skip 2016/01/05 v6366 L3 Dimensions and skips
 \l_tmpb_muskip=\muskip14
 \g_tmpa_muskip=\muskip15
 \g_tmpb_muskip=\muskip16
-L3 Module: l3keys 2015/11/17 v6284 L3 Key-value interfaces
-\g__keyval_level_int=\count162
 \l_keys_choice_int=\count163
-L3 Module: l3fp 2015/08/25 v5890 L3 Floating points
 \c__fp_leading_shift_int=\count164
 \c__fp_middle_shift_int=\count165
 \c__fp_trailing_shift_int=\count166
@@ -740,44 +729,100 @@ L3 Module: l3fp 2015/08/25 v5890 L3 Floating points
 \c__fp_Bigg_leading_shift_int=\count170
 \c__fp_Bigg_middle_shift_int=\count171
 \c__fp_Bigg_trailing_shift_int=\count172
-L3 Module: l3box 2015/08/09 v5822 L3 Experimental boxes
+\c__fp_rand_size_int=\count173
+\c__fp_rand_four_int=\count174
+\c__fp_rand_eight_int=\count175
+\l__sort_length_int=\count176
+\l__sort_min_int=\count177
+\l__sort_top_int=\count178
+\l__sort_max_int=\count179
+\l__sort_true_max_int=\count180
+\l__sort_block_int=\count181
+\l__sort_begin_int=\count182
+\l__sort_end_int=\count183
+\l__sort_A_int=\count184
+\l__sort_B_int=\count185
+\l__sort_C_int=\count186
+\l__tl_build_start_index_int=\count187
+\l__tl_build_index_int=\count188
+\l__tl_analysis_normal_int=\count189
+\l__tl_analysis_index_int=\count190
+\l__tl_analysis_nesting_int=\count191
+\l__tl_analysis_type_int=\count192
+\l__regex_internal_a_int=\count193
+\l__regex_internal_b_int=\count194
+\l__regex_internal_c_int=\count195
+\l__regex_balance_int=\count196
+\l__regex_group_level_int=\count197
+\l__regex_mode_int=\count198
+\c__regex_cs_in_class_mode_int=\count199
+\c__regex_cs_mode_int=\count266
+\l__regex_catcodes_int=\count267
+\l__regex_default_catcodes_int=\count268
+\c__regex_catcode_D_int=\count269
+\c__regex_catcode_S_int=\count270
+\c__regex_catcode_L_int=\count271
+\c__regex_catcode_O_int=\count272
+\c__regex_catcode_A_int=\count273
+\c__regex_all_catcodes_int=\count274
+\l__regex_show_lines_int=\count275
+\l__regex_min_state_int=\count276
+\l__regex_max_state_int=\count277
+\l__regex_left_state_int=\count278
+\l__regex_right_state_int=\count279
+\l__regex_capturing_group_int=\count280
+\l__regex_min_pos_int=\count281
+\l__regex_max_pos_int=\count282
+\l__regex_curr_pos_int=\count283
+\l__regex_start_pos_int=\count284
+\l__regex_success_pos_int=\count285
+\l__regex_curr_char_int=\count286
+\l__regex_curr_catcode_int=\count287
+\l__regex_last_char_int=\count288
+\l__regex_case_changed_char_int=\count289
+\l__regex_curr_state_int=\count290
+\l__regex_step_int=\count291
+\l__regex_min_active_int=\count292
+\l__regex_max_active_int=\count293
+\l__regex_replacement_csnames_int=\count294
+\l__regex_match_count_int=\count295
+\l__regex_min_submatch_int=\count296
+\l__regex_submatch_int=\count297
+\l__regex_zeroth_submatch_int=\count298
+\g__regex_trace_regex_int=\count299
 \c_empty_box=\box40
 \l_tmpa_box=\box41
 \l_tmpb_box=\box42
 \g_tmpa_box=\box43
 \g_tmpb_box=\box44
-L3 Module: l3coffins 2015/08/06 v5789 L3 Coffin code layer
-\l__coffin_internal_box=\box45
-\l__coffin_internal_dim=\dimen194
-\l__coffin_offset_x_dim=\dimen195
-\l__coffin_offset_y_dim=\dimen196
-\l__coffin_x_dim=\dimen197
-\l__coffin_y_dim=\dimen198
-\l__coffin_x_prime_dim=\dimen199
-\l__coffin_y_prime_dim=\dimen256
-\c_empty_coffin=\box46
-\l__coffin_aligned_coffin=\box47
-\l__coffin_aligned_internal_coffin=\box48
-\l_tmpa_coffin=\box49
-\l_tmpb_coffin=\box50
-\l__coffin_display_coffin=\box51
-\l__coffin_display_coord_coffin=\box52
-\l__coffin_display_pole_coffin=\box53
-\l__coffin_display_offset_dim=\dimen257
-\l__coffin_display_x_dim=\dimen258
-\l__coffin_display_y_dim=\dimen259
-L3 Module: l3color 2014/08/23 v5354 L3 Experimental color support
-L3 Module: l3sys 2015/09/25 v6087 L3 Experimental system/runtime functions
-L3 Module: l3candidates 2016/01/14 v6376 L3 Experimental additions to l3kernel
-\l__box_top_dim=\dimen260
-\l__box_bottom_dim=\dimen261
-\l__box_left_dim=\dimen262
-\l__box_right_dim=\dimen263
-\l__box_top_new_dim=\dimen264
-\l__box_bottom_new_dim=\dimen265
-\l__box_left_new_dim=\dimen266
-\l__box_right_new_dim=\dimen267
-\l__box_internal_box=\box54
+\l__box_top_dim=\dimen194
+\l__box_bottom_dim=\dimen195
+\l__box_left_dim=\dimen196
+\l__box_right_dim=\dimen197
+\l__box_top_new_dim=\dimen198
+\l__box_bottom_new_dim=\dimen199
+\l__box_left_new_dim=\dimen256
+\l__box_right_new_dim=\dimen257
+\l__box_internal_box=\box45
+\l__coffin_internal_box=\box46
+\l__coffin_internal_dim=\dimen258
+\l__coffin_offset_x_dim=\dimen259
+\l__coffin_offset_y_dim=\dimen260
+\l__coffin_x_dim=\dimen261
+\l__coffin_y_dim=\dimen262
+\l__coffin_x_prime_dim=\dimen263
+\l__coffin_y_prime_dim=\dimen264
+\c_empty_coffin=\box47
+\l__coffin_aligned_coffin=\box48
+\l__coffin_aligned_internal_coffin=\box49
+\l_tmpa_coffin=\box50
+\l_tmpb_coffin=\box51
+\l__coffin_display_coffin=\box52
+\l__coffin_display_coord_coffin=\box53
+\l__coffin_display_pole_coffin=\box54
+\l__coffin_display_offset_dim=\dimen265
+\l__coffin_display_x_dim=\dimen266
+\l__coffin_display_y_dim=\dimen267
 \l__coffin_bounding_shift_dim=\dimen268
 \l__coffin_left_corner_dim=\dimen269
 \l__coffin_right_corner_dim=\dimen270
@@ -785,30 +830,30 @@ L3 Module: l3candidates 2016/01/14 v6376 L3 Experimental additions to l3kernel
 \l__coffin_top_corner_dim=\dimen272
 \l__coffin_scaled_total_height_dim=\dimen273
 \l__coffin_scaled_width_dim=\dimen274
-L3 Module: l3luatex 2015/11/11 v6250 L3 Experimental LuaTeX-specific functions
 )
 (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3pdfmode.def
-File: l3pdfmode.def 2015/11/11 v6250 L3 Experimental driver: PDF mode
-\l__driver_color_stack_int=\count173
+File: l3pdfmode.def 2017/03/18 v L3 Experimental driver: PDF mode
+\l__driver_color_stack_int=\count300
+\l__driver_tmp_box=\box55
 ))
-Package: xparse 2016/01/19 v6377 L3 Experimental document command parser
-\l__xparse_current_arg_int=\count174
-\l__xparse_m_args_int=\count175
-\l__xparse_mandatory_args_int=\count176
-\l__xparse_processor_int=\count177
-\l__xparse_v_nesting_int=\count178
+Package: xparse 2018/02/21 L3 Experimental document command parser
+\l__xparse_current_arg_int=\count301
+\g__xparse_grabber_int=\count302
+\l__xparse_m_args_int=\count303
+\l__xparse_mandatory_args_int=\count304
+\l__xparse_v_nesting_int=\count305
 )
 (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/zref-abspage.sty
-Package: zref-abspage 2012/04/04 v2.24 Module abspage for zref (HO)
+Package: zref-abspage 2016/05/21 v2.26 Module abspage for zref (HO)
 
 (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/zref-base.sty
-Package: zref-base 2012/04/04 v2.24 Module base for zref (HO)
+Package: zref-base 2016/05/21 v2.26 Module base for zref (HO)
 
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
-Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
 )
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
-Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+Package: pdftexcmds 2018/01/21 v0.26 Utility functions of pdfTeX for LuaTeX (HO
 )
 Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
@@ -816,23 +861,23 @@ Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
 )
 (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/auxhook.sty
-Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
+Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
 )
 Package zref Info: New property list: main on input line 759.
 Package zref Info: New property: default on input line 760.
 Package zref Info: New property: page on input line 761.
 )
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/atbegshi.sty
-Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
+Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
 )
-\c@abspage=\count179
+\c@abspage=\count306
 Package zref Info: New property: abspage on input line 62.
 )
 (/usr/share/texlive/texmf-dist/tex/latex/needspace/needspace.sty
 Package: needspace 2010/09/12 v1.3d reserve vertical space
 )
 \mdf@templength=\skip71
-\c@mdf@globalstyle@cnt=\count180
+\c@mdf@globalstyle@cnt=\count307
 \mdf@skipabove@length=\skip72
 \mdf@skipbelow@length=\skip73
 \mdf@leftmargin@length=\skip74
@@ -876,11 +921,11 @@ Package: needspace 2010/09/12 v1.3d reserve vertical space
 (/usr/share/texlive/texmf-dist/tex/latex/mdframed/md-frame-0.mdf
 File: md-frame-0.mdf 2013/07/01\ 1.9b: md-frame-0
 )
-\mdf@frametitlebox=\box55
-\mdf@footnotebox=\box56
-\mdf@splitbox@one=\box57
-\mdf@splitbox@two=\box58
-\mdf@splitbox@save=\box59
+\mdf@frametitlebox=\box56
+\mdf@footnotebox=\box57
+\mdf@splitbox@one=\box58
+\mdf@splitbox@two=\box59
+\mdf@splitbox@save=\box60
 \mdfsplitboxwidth=\skip111
 \mdfsplitboxtotalwidth=\skip112
 \mdfsplitboxheight=\skip113
@@ -908,7 +953,7 @@ File: md-frame-0.mdf 2013/07/01\ 1.9b: md-frame-0
 \mdf@horizontalspaceofbox=\skip135
 \mdfsubtitleheight=\skip136
 \mdfsubsubtitleheight=\skip137
-\c@mdfcountframes=\count181
+\c@mdfcountframes=\count308
 
 ****** mdframed patching \endmdf@trivlist
 
@@ -924,104 +969,103 @@ File: md-frame-0.mdf 2013/07/01\ 1.9b: md-frame-0
 . 
 . Defining command \mdtheorem with sig. ' O{} m o m o ' on line 701.
 .................................................
-\mdf@envdepth=\count182
-\c@mdf@env@i=\count183
-\c@mdf@env@ii=\count184
-\c@mdf@zref@counter=\count185
+\mdf@envdepth=\count309
+\c@mdf@env@i=\count310
+\c@mdf@env@ii=\count311
+\c@mdf@zref@counter=\count312
 Package zref Info: New property: mdf@pagevalue on input line 895.
 )
 \esp=\skip138
 \ecart=\skip139
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
-Package: hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
+Package: hyperref 2018/02/06 v6.86b Hypertext links for LaTeX
 
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
-Package: hobsub-hyperref 2012/05/28 v1.13 Bundle oberdiek, subset hyperref (HO)
+Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
 
 
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
-Package: hobsub-generic 2012/05/28 v1.13 Bundle oberdiek, subset generic (HO)
-Package: hobsub 2012/05/28 v1.13 Construct package bundles (HO)
+Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
 Package hobsub Info: Skipping package `infwarerr' (already loaded).
 Package hobsub Info: Skipping package `ltxcmds' (already loaded).
 Package hobsub Info: Skipping package `ifluatex' (already loaded).
 Package hobsub Info: Skipping package `ifvtex' (already loaded).
-Package: intcalc 2007/09/27 v1.1 Expandable calculations with integers (HO)
+Package: intcalc 2016/05/16 v1.2 Expandable calculations with integers (HO)
 Package hobsub Info: Skipping package `ifpdf' (already loaded).
 Package hobsub Info: Skipping package `etexcmds' (already loaded).
 Package hobsub Info: Skipping package `kvsetkeys' (already loaded).
 Package hobsub Info: Skipping package `kvdefinekeys' (already loaded).
 Package hobsub Info: Skipping package `pdftexcmds' (already loaded).
-Package: pdfescape 2011/11/25 v1.13 Implements pdfTeX's escape features (HO)
-Package: bigintcalc 2012/04/08 v1.3 Expandable calculations on big integers (HO
+Package: pdfescape 2016/05/16 v1.14 Implements pdfTeX's escape features (HO)
+Package: bigintcalc 2016/05/16 v1.4 Expandable calculations on big integers (HO
 )
-Package: bitset 2011/01/30 v1.1 Handle bit-vector datatype (HO)
-Package: uniquecounter 2011/01/30 v1.2 Provide unlimited unique counter (HO)
+Package: bitset 2016/05/16 v1.2 Handle bit-vector datatype (HO)
+Package: uniquecounter 2016/05/16 v1.3 Provide unlimited unique counter (HO)
 )
 Package hobsub Info: Skipping package `hobsub' (already loaded).
-Package: letltxmacro 2010/09/02 v1.4 Let assignment for LaTeX macros (HO)
-Package: hopatch 2012/05/28 v1.2 Wrapper for package hooks (HO)
-Package: xcolor-patch 2011/01/30 xcolor patch
-Package: atveryend 2011/06/30 v1.8 Hooks at the very end of document (HO)
+Package: letltxmacro 2016/05/16 v1.5 Let assignment for LaTeX macros (HO)
+Package: hopatch 2016/05/16 v1.3 Wrapper for package hooks (HO)
+Package: xcolor-patch 2016/05/16 xcolor patch
+Package: atveryend 2016/05/16 v1.9 Hooks at the very end of document (HO)
 Package hobsub Info: Skipping package `atbegshi' (already loaded).
-Package: refcount 2011/10/16 v3.4 Data extraction from label references (HO)
-Package: hycolor 2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
+Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
+Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
 )
 \@linkdim=\dimen275
-\Hy@linkcounter=\count186
-\Hy@pagecounter=\count187
+\Hy@linkcounter=\count313
+\Hy@pagecounter=\count314
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
-File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
+File: pd1enc.def 2018/02/06 v6.86b Hyperref: PDFDocEncoding definition (HO)
 )
-\Hy@SavedSpaceFactor=\count188
+\Hy@SavedSpaceFactor=\count315
 
 (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
-Package hyperref Info: Hyper figures OFF on input line 4443.
-Package hyperref Info: Link nesting OFF on input line 4448.
-Package hyperref Info: Hyper index ON on input line 4451.
-Package hyperref Info: Plain pages OFF on input line 4458.
-Package hyperref Info: Backreferencing OFF on input line 4463.
+Package hyperref Info: Hyper figures OFF on input line 4509.
+Package hyperref Info: Link nesting OFF on input line 4514.
+Package hyperref Info: Hyper index ON on input line 4517.
+Package hyperref Info: Plain pages OFF on input line 4524.
+Package hyperref Info: Backreferencing OFF on input line 4529.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
-Package hyperref Info: Bookmarks ON on input line 4688.
-\c@Hy@tempcnt=\count189
+Package hyperref Info: Bookmarks ON on input line 4762.
+\c@Hy@tempcnt=\count316
 
 (/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-LaTeX Info: Redefining \url on input line 5041.
+LaTeX Info: Redefining \url on input line 5115.
 \XeTeXLinkMargin=\dimen276
-\Fld@menulength=\count190
+\Fld@menulength=\count317
 \Field@Width=\dimen277
 \Fld@charsize=\dimen278
-Package hyperref Info: Hyper figures OFF on input line 6295.
-Package hyperref Info: Link nesting OFF on input line 6300.
-Package hyperref Info: Hyper index ON on input line 6303.
-Package hyperref Info: backreferencing OFF on input line 6310.
-Package hyperref Info: Link coloring OFF on input line 6315.
-Package hyperref Info: Link coloring with OCG OFF on input line 6320.
-Package hyperref Info: PDF/A mode OFF on input line 6325.
-LaTeX Info: Redefining \ref on input line 6365.
-LaTeX Info: Redefining \pageref on input line 6369.
-\Hy@abspage=\count191
-\c@Item=\count192
-\c@Hfootnote=\count193
+Package hyperref Info: Hyper figures OFF on input line 6369.
+Package hyperref Info: Link nesting OFF on input line 6374.
+Package hyperref Info: Hyper index ON on input line 6377.
+Package hyperref Info: backreferencing OFF on input line 6384.
+Package hyperref Info: Link coloring OFF on input line 6389.
+Package hyperref Info: Link coloring with OCG OFF on input line 6394.
+Package hyperref Info: PDF/A mode OFF on input line 6399.
+LaTeX Info: Redefining \ref on input line 6439.
+LaTeX Info: Redefining \pageref on input line 6443.
+\Hy@abspage=\count318
+\c@Item=\count319
+\c@Hfootnote=\count320
 )
-
-Package hyperref Message: Driver (autodetected): hpdftex.
+Package hyperref Info: Driver (autodetected): hpdftex.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
-File: hpdftex.def 2012/11/06 v6.83m Hyperref driver for pdfTeX
-\HyAnn@Count=\count194
-\Fld@listcount=\count195
-\c@bookmark@seq@number=\count196
+File: hpdftex.def 2018/02/06 v6.86b Hyperref driver for pdfTeX
+\HyAnn@Count=\count321
+\Fld@listcount=\count322
+\c@bookmark@seq@number=\count323
 
 (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
-Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
+Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 )
@@ -1047,17 +1091,17 @@ Package hyperref Warning: Option `bookmarks' has already been used,
 
 Package hyperref Info: Option `bookmarksopen' set `false' on input line 523.
 (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/bookmark.sty
-Package: bookmark 2011/12/02 v1.24 PDF bookmarks (HO)
+Package: bookmark 2016/05/17 v1.26 PDF bookmarks (HO)
 
 (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/bkm-pdftex.def
-File: bkm-pdftex.def 2011/12/02 v1.24 bookmark driver for pdfTeX (HO)
-\BKM@id=\count197
+File: bkm-pdftex.def 2016/05/17 v1.26 bookmark driver for pdfTeX (HO)
+\BKM@id=\count324
 )))
 (/usr/share/texlive/texmf-dist/tex/latex/wrapfig/wrapfig.sty
 \wrapoverhang=\dimen279
 \WF@size=\dimen280
-\c@WF@wrappedlines=\count198
-\WF@box=\box60
+\c@WF@wrappedlines=\count325
+\WF@box=\box61
 \WF@everypar=\toks46
 Package: wrapfig 2003/01/31  v 3.6
 )
@@ -1068,7 +1112,7 @@ Package: subfig 2005/06/28 ver: 1.3 subfig package
 Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
 
 (/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
-Package: caption3 2016/02/04 v1.7-139 caption3 kernel (AR)
+Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 67.
 \captionmargin=\dimen281
 \captionmargin@=\dimen282
@@ -1078,21 +1122,21 @@ Package caption3 Info: TeX engine: e-TeX on input line 67.
 \caption@parindent=\dimen286
 \caption@hangindent=\dimen287
 )
-\c@ContinuedFloat=\count199
+\c@ContinuedFloat=\count326
 Package caption Info: hyperref package is loaded.
 Package caption Info: wrapfig package is loaded.
 )
-\c@KVtest=\count266
+\c@KVtest=\count327
 \sf@farskip=\skip141
 \sf@captopadj=\dimen288
 \sf@capskip=\skip142
 \sf@nearskip=\skip143
-\c@subfigure=\count267
-\c@subfigure@save=\count268
-\c@lofdepth=\count269
-\c@subtable=\count270
-\c@subtable@save=\count271
-\c@lotdepth=\count272
+\c@subfigure=\count328
+\c@subfigure@save=\count329
+\c@lofdepth=\count330
+\c@subtable=\count331
+\c@subtable@save=\count332
+\c@lotdepth=\count333
 \sf@top=\skip144
 \sf@bottom=\skip145
 )
@@ -1105,7 +1149,7 @@ Package: gensymb 2003/07/02 v1.0 (WaS)
 )
 (/usr/share/texlive/texmf-dist/tex/latex/pgfplots/pgfplots.sty
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.revision.tex)
-Package: pgfplots 2016/01/06 v1.13 Data Visualization (1.13)
+Package: pgfplots 2017/06/05 v1.15 Data Visualization (1.15)
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.code.tex
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotscore.code.tex
@@ -1113,8 +1157,8 @@ Package: pgfplots 2016/01/06 v1.13 Data Visualization (1.13)
 \t@pgfplots@tokb=\toks48
 \t@pgfplots@tokc=\toks49
 \pgfplots@tmpa=\dimen289
-\c@pgfplots@coordindex=\count273
-\c@pgfplots@scanlineindex=\count274
+\c@pgfplots@coordindex=\count334
+\c@pgfplots@scanlineindex=\count335
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/sys/pgfplotssysgeneric.code
 .tex))
@@ -1130,7 +1174,7 @@ Package pgfplots: loading complementary arithmetics for your pgf version...
 gfsupp_pgflibraryfpu.code.tex)
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldp
 gfsupp_pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count275
+\c@pgfmathroundto@lastzeros=\count336
 ))
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.code.tex
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotslists
@@ -1139,13 +1183,13 @@ tructure.code.tex)
 tructureext.code.tex)
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsarray
 .code.tex
-\c@pgfplotsarray@tmp=\count276
+\c@pgfplotsarray@tmp=\count337
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsmatri
 x.code.tex)
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/numtable/pgfplotstableshare
 d.code.tex
-\c@pgfplotstable@counta=\count277
+\c@pgfplotstable@counta=\count338
 \t@pgfplotstable@a=\toks50
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsdeque
@@ -1158,7 +1202,7 @@ de.tex))
 .tex)
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/libs/pgflibrarypgfplots.sur
 fshading.code.tex
-\c@pgfplotslibrarysurf@no=\count278
+\c@pgfplotslibrarysurf@no=\count339
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/sys/pgflibrarypgfplots.surf
 shading.pgfsys-pdftex.def)))
@@ -1190,11 +1234,11 @@ e.tex
 \pgfdecoratedinputsegmentcompleteddistance=\dimen292
 \pgfdecoratedinputsegmentremainingdistance=\dimen293
 \pgf@decorate@distancetomove=\dimen294
-\pgf@decorate@repeatstate=\count279
+\pgf@decorate@repeatstate=\count340
 \pgfdecorationsegmentamplitude=\dimen295
 \pgfdecorationsegmentlength=\dimen296
 )
-\tikz@lib@dec@box=\box61
+\tikz@lib@dec@box=\box62
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
 zlibrarydecorations.pathmorphing.code.tex
@@ -1204,7 +1248,7 @@ decorations.pathmorphing.code.tex))
 zlibrarydecorations.pathreplacing.code.tex
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrary
 decorations.pathreplacing.code.tex))
-\pgfplots@numplots=\count280
+\pgfplots@numplots=\count341
 \pgfplots@xmin@reg=\dimen297
 \pgfplots@xmax@reg=\dimen298
 \pgfplots@ymin@reg=\dimen299
@@ -1220,7 +1264,7 @@ File: tikzlibraryplotmarks.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
 de.tex
 File: pgflibraryplotmarks.code.tex 2015/08/03 v3.0.1a (rcs-revision 1.14)
 ))) (/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcolorbox.sty
-Package: tcolorbox 2016/02/29 version 3.90 text color boxes
+Package: tcolorbox 2018/01/12 version 4.12 text color boxes
 
 (/usr/share/texlive/texmf-dist/tex/latex/tools/verbatim.sty
 Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
@@ -1234,22 +1278,22 @@ Package: environ 2014/05/04 v0.3 A new way to define environments
 (/usr/share/texlive/texmf-dist/tex/latex/trimspaces/trimspaces.sty
 Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 ))
-\tcb@titlebox=\box62
-\tcb@upperbox=\box63
-\tcb@lowerbox=\box64
-\tcb@phantombox=\box65
-\c@tcbbreakpart=\count281
-\c@tcblayer=\count282
-\tcolorbox@number=\count283
-\tcb@temp=\box66
+\tcb@titlebox=\box63
+\tcb@upperbox=\box64
+\tcb@lowerbox=\box65
+\tcb@phantombox=\box66
+\c@tcbbreakpart=\count342
+\c@tcblayer=\count343
+\tcolorbox@number=\count344
 \tcb@temp=\box67
 \tcb@temp=\box68
 \tcb@temp=\box69
+\tcb@temp=\box70
 \tcb@out=\write5
 \tcb@record@out=\write6
 )
 (/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pdfpages.sty
-Package: pdfpages 2015/09/18 v0.5d Insert pages of external PDF documents (AM)
+Package: pdfpages 2017/10/31 v0.5l Insert pages of external PDF documents (AM)
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
@@ -1261,38 +1305,36 @@ Package: eso-pic 2015/07/21 v2.0g eso-pic (RN)
 \AM@pageheight=\dimen304
 
 (/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pppdftex.def
-File: pppdftex.def 2015/09/18 v0.5d Pdfpages driver for pdfTeX (AM)
+File: pppdftex.def 2017/10/31 v0.5l Pdfpages driver for pdfTeX (AM)
 )
-\AM@pagebox=\box70
-\AM@toc@title=\toks53
-\c@AM@survey=\count284
-\AM@templatesizebox=\box71
+\AM@pagebox=\box71
+\AM@global@opts=\toks53
+\AM@toc@title=\toks54
+\c@AM@survey=\count345
+\AM@templatesizebox=\box72
 )
 (/usr/share/texlive/texmf-dist/tex/latex/overpic/overpic.sty
-Package: overpic 2010/09/13 v0.53  Overwriting graphics
+Package: overpic 2017/10/06 1.0 picture overlays
 
-Package: overpic v0.53 <2010/09/13> (RN)
 (/usr/share/texlive/texmf-dist/tex/latex/eepic/epic.sty
 Enhancements to Picture Environment. Version 1.2 - Released June 1, 1986
-\@@multicnt=\count285
-\d@lta=\count286
+\@@multicnt=\count346
+\d@lta=\count347
 \@delta=\dimen305
 \@@delta=\dimen306
-\@gridcnt=\count287
-\@joinkind=\count288
+\@gridcnt=\count348
+\@joinkind=\count349
 \@dotgap=\dimen307
 \@ddotgap=\dimen308
-\@x@diff=\count289
-\@y@diff=\count290
+\@x@diff=\count350
+\@y@diff=\count351
 \x@diff=\dimen309
 \y@diff=\dimen310
-\@dotbox=\box72
-\num@segments=\count291
-\num@segmentsi=\count292
+\@dotbox=\box73
+\num@segments=\count352
+\num@segmentsi=\count353
 \@datafile=\read3
-)
-overpic: relative positioning in percent
-) (/usr/share/texlive/texmf-dist/tex/latex/minitoc/minitoc.sty
+)) (/usr/share/texlive/texmf-dist/tex/latex/minitoc/minitoc.sty
 Package: minitoc 2015/07/13 v61 Package minitoc
 
 (/usr/share/texlive/texmf-dist/tex/latex/minitoc/mtcmess.sty
@@ -1309,9 +1351,9 @@ Package minitoc Info: I0023
 (minitoc)             part level macros available.
 Package minitoc Info: I0003
 (minitoc)             chapter level macros available.
-\mtc@toks=\toks54
-\mtc@strutbox=\box73
-\mtc@hstrutbox=\box74
+\mtc@toks=\toks55
+\mtc@strutbox=\box74
+\mtc@hstrutbox=\box75
 Package minitoc Info: I0002
 (minitoc)             Autoconfiguration of extensions.
 \openout7 = `mainEse.mtc0'.
@@ -1328,10 +1370,10 @@ Package minitoc Info: I0031
 
 \openout7 = `mainEse.mtc0'.
 
-\c@mtc=\count293
-\c@minitocdepth=\count294
-\c@ptc=\count295
-\c@parttocdepth=\count296
+\c@mtc=\count354
+\c@minitocdepth=\count355
+\c@ptc=\count356
+\c@parttocdepth=\count357
 \ptcindent=\skip148
 Package minitoc Info: I0010
 (minitoc)             The english language is selected.
@@ -1343,56 +1385,26 @@ File: english.mld 2006/01/13
 (/usr/share/texlive/texmf-dist/tex/latex/minitoc/english.mld
 File: english.mld 2006/01/13
 )) (./mainEse.aux
-(./capitoli/01_statica/statica.aux) (./capitoli/02_tensSup/tensSup.aux)
-(./capitoli/03_cinematica/cinematica.aux
-
-LaTeX Warning: Label `eqn:cin:lagr-eul' multiply defined.
-
-
-LaTeX Warning: Label `eqn:ese:trai' multiply defined.
-
-) (./capitoli/04_bilanci/bilanci.aux) (./capitoli/05_bernoulli/bernoulli.aux)
-(./capitoli/06_slnEsatte/slnEsatte.aux)
-(./capitoli/07_similitudine/similitudine.aux)
-(./capitoli/08_aerodinamica/aerodinamica.aux) (./capitoli/09_bl/bl.aux)
-(./capitoli/10_turbolenza/turbolenza.aux
-
-LaTeX Warning: Label `fig:lorenz-equil' multiply defined.
-
-
-LaTeX Warning: Label `fig:lorenz-eig' multiply defined.
-
-
-LaTeX Warning: Label `fig:lorenz-chaos' multiply defined.
-
-
-LaTeX Warning: Label `eqn:lorenz:pitchfork' multiply defined.
-
-
-LaTeX Warning: Label `eqn:lorenz:hopf' multiply defined.
-
-
-LaTeX Warning: Label `fig:lorenz-chaos-cm' multiply defined.
-
-))
+(./capitoli/07_similitudine/similitudine.aux))
 \openout1 = `mainEse.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 101.
-LaTeX Font Info:    ... okay on input line 101.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 101.
-LaTeX Font Info:    ... okay on input line 101.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 101.
-LaTeX Font Info:    ... okay on input line 101.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 101.
-LaTeX Font Info:    ... okay on input line 101.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 101.
-LaTeX Font Info:    ... okay on input line 101.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 101.
-LaTeX Font Info:    ... okay on input line 101.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 101.
-LaTeX Font Info:    ... okay on input line 101.
-LaTeX Font Info:    Try loading font information for T1+lmr on input line 101.
- (/usr/share/texmf/tex/latex/lm/t1lmr.fd
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 112.
+LaTeX Font Info:    ... okay on input line 112.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 112.
+LaTeX Font Info:    ... okay on input line 112.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 112.
+LaTeX Font Info:    ... okay on input line 112.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 112.
+LaTeX Font Info:    ... okay on input line 112.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 112.
+LaTeX Font Info:    ... okay on input line 112.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 112.
+LaTeX Font Info:    ... okay on input line 112.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 112.
+LaTeX Font Info:    ... okay on input line 112.
+LaTeX Font Info:    Try loading font information for T1+lmr on input line 112.
+
+(/usr/share/texmf/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 *geometry* driver: auto-detecting
@@ -1429,38 +1441,40 @@ File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count297
+\scratchcounter=\count358
 \scratchdimen=\dimen311
-\scratchbox=\box75
-\nofMPsegments=\count298
-\nofMParguments=\count299
-\everyMPshowfont=\toks55
-\MPscratchCnt=\count300
+\scratchbox=\box76
+\nofMPsegments=\count359
+\nofMParguments=\count360
+\everyMPshowfont=\toks56
+\MPscratchCnt=\count361
 \MPscratchDim=\dimen312
-\MPnumerator=\count301
-\makeMPintoPDFobject=\count302
-\everyMPtoPDFconversion=\toks56
+\MPnumerator=\count362
+\makeMPintoPDFobject=\count363
+\everyMPtoPDFconversion=\toks57
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
-Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
 (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
-Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
 )
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+38.
 Package grfext Info: Graphics extension search list:
-(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
 G,.JBIG2,.JB2,.eps]
-(grfext)             \AppendGraphicsExtensions on input line 452.
+(grfext)             \AppendGraphicsExtensions on input line 456.
 
 (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 ABD: EveryShipout initializing macros
-LaTeX Info: Redefining \it@ocap on input line 101.
-LaTeX Info: Redefining \it@ccap on input line 101.
-LaTeX Info: Redefining \microtypecontext on input line 101.
+LaTeX Info: Redefining \it@ocap on input line 112.
+LaTeX Info: Redefining \it@ccap on input line 112.
+LaTeX Info: Redefining \microtypecontext on input line 112.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -1478,52 +1492,52 @@ File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman
 (/usr/share/texlive/texmf-dist/tex/latex/ucs/ucsencs.def
 File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
 )
-\AtBeginShipoutBox=\box76
-Package hyperref Info: Link coloring ON on input line 101.
+\AtBeginShipoutBox=\box77
+Package hyperref Info: Link coloring ON on input line 112.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
-Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
+Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
-Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
+Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count303
+\c@section@level=\count364
 )
-LaTeX Info: Redefining \ref on input line 101.
-LaTeX Info: Redefining \pageref on input line 101.
-LaTeX Info: Redefining \nameref on input line 101.
+LaTeX Info: Redefining \ref on input line 112.
+LaTeX Info: Redefining \pageref on input line 112.
+LaTeX Info: Redefining \nameref on input line 112.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Info: Redefining \celsius on input line 101.
-Package gensymb Info: Faking symbols for \degree and \celsius on input line 101
+LaTeX Info: Redefining \celsius on input line 112.
+Package gensymb Info: Faking symbols for \degree and \celsius on input line 112
 .
 
 
 Package gensymb Warning: Not defining \perthousand.
 
-LaTeX Info: Redefining \ohm on input line 101.
-Package gensymb Info: Using \Omega for \ohm on input line 101.
+LaTeX Info: Redefining \ohm on input line 112.
+Package gensymb Info: Using \Omega for \ohm on input line 112.
 
 Package gensymb Warning: Not defining \micro.
 
 Package pgfplots notification 'compat/show suggested version=true': you might b
-enefit from \pgfplotsset{compat=1.13} (current compat level: 1.9).
+enefit from \pgfplotsset{compat=1.15} (current compat level: 1.9).
 
 (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/pdflscape.sty
-Package: pdflscape 2008/08/11 v0.10 Display of landscape pages in PDF (HO)
+Package: pdflscape 2016/05/14 v0.11 Display of landscape pages in PDF (HO)
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty
 Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 )
-Package pdflscape Info: Auto-detected driver: pdftex on input line 80.
+Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 )
-\c@minilofdepth=\count304
-\c@minilotdepth=\count305
-\c@partlofdepth=\count306
-\c@partlotdepth=\count307
-\c@sectlofdepth=\count308
-\c@sectlotdepth=\count309
+\c@minilofdepth=\count365
+\c@minilotdepth=\count366
+\c@partlofdepth=\count367
+\c@partlotdepth=\count368
+\c@sectlofdepth=\count369
+\c@sectlotdepth=\count370
 Package minitoc(hints) Info: I0049
 (minitoc(hints))             ==> You requested the hints option. 
 (minitoc(hints))             Some hints are eventually given below.
@@ -1554,46 +1568,46 @@ Package minitoc(hints) Warning: W0023
 (minitoc(hints))                --- It may be the consequence 
 (minitoc(hints))                of loading the ``hyperref'' package.
 
-LaTeX Font Info:    Try loading font information for T1+lmss on input line 111.
+LaTeX Font Info:    Try loading font information for T1+lmss on input line 122.
 
 (/usr/share/texmf/tex/latex/lm/t1lmss.fd
 File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-Package microtype Info: Loading generic settings for font family
+Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmss' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 114.
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 125.
 
 
 (/usr/share/texmf/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 114.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 125.
 
 
 (/usr/share/texmf/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 114
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 125
 .
 
 (/usr/share/texmf/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 114
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 125
 .
 
 (/usr/share/texmf/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <24.88> on input line 114.
+(Font)              <24.88> on input line 125.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <20.74> on input line 114.
+(Font)              <20.74> on input line 125.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <17.28> on input line 114.
-LaTeX Font Info:    Try loading font information for U+msa on input line 114.
+(Font)              <17.28> on input line 125.
+LaTeX Font Info:    Try loading font information for U+msa on input line 125.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -1601,7 +1615,7 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 114.
+LaTeX Font Info:    Try loading font information for U+msb on input line 125.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -1609,2901 +1623,307 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 114.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 125.
 
 (/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 ) [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    Try loading font information for OMS+lmr on input line 127.
+LaTeX Font Info:    Try loading font information for OMS+lmr on input line 138.
 
  (/usr/share/texmf/tex/latex/lm/omslmr.fd
 File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 127.
+(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 138.
 
-Underfull \hbox (badness 10000) in paragraph at lines 127--128
+Underfull \hbox (badness 10000) in paragraph at lines 138--139
 
  []
 
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 133.
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 144.
 
 (/usr/share/texmf/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-Package microtype Info: Loading generic settings for font family
+Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 133.
+(Font)              <10.95> on input line 144.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 133.
+(Font)              <8> on input line 144.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 133.
+(Font)              <6> on input line 144.
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/lmr/m/sc/10.95'.
 (microtype)             Ignoring protrusion settings for this character.
 
-Underfull \hbox (badness 10000) in paragraph at lines 133--134
+Underfull \hbox (badness 10000) in paragraph at lines 144--145
 
  []
 
 Package minitoc Info: I0024
-(minitoc)             PREPARING MINITOCS FROM mainEse.toc on input line 153.
+(minitoc)             PREPARING MINITOCS FROM mainEse.toc on input line 164.
 Package minitoc Info: I0033
 (minitoc)             Writing mainEse.mtc1.
 \openout7 = `mainEse.mtc1'.
 
-Package minitoc Info: I0033
-(minitoc)             Writing mainEse.mtc2.
-\openout7 = `mainEse.mtc2'.
-
-Package minitoc Info: I0033
-(minitoc)             Writing mainEse.mtc3.
-\openout7 = `mainEse.mtc3'.
-
-Package minitoc Info: I0033
-(minitoc)             Writing mainEse.mtc4.
-\openout7 = `mainEse.mtc4'.
-
-Package minitoc Info: I0033
-(minitoc)             Writing mainEse.mtc5.
-\openout7 = `mainEse.mtc5'.
-
-Package minitoc Info: I0033
-(minitoc)             Writing mainEse.mtc6.
-\openout7 = `mainEse.mtc6'.
-
-Package minitoc Info: I0033
-(minitoc)             Writing mainEse.mtc7.
-\openout7 = `mainEse.mtc7'.
-
-Package minitoc Info: I0033
-(minitoc)             Writing mainEse.mtc8.
-\openout7 = `mainEse.mtc8'.
-
-Package minitoc Info: I0033
-(minitoc)             Writing mainEse.mtc9.
-\openout7 = `mainEse.mtc9'.
-
-Package minitoc Info: I0033
-(minitoc)             Writing mainEse.mtc10.
-\openout7 = `mainEse.mtc10'.
-
-[2] <Pictures/blank_fig.pdf, id=23, 923.45pt x 461.725pt>
+[2]
+<Pictures/blank_fig.pdf, id=23, 923.45pt x 461.725pt>
 File: Pictures/blank_fig.pdf Graphic file (type pdf)
-
 <use Pictures/blank_fig.pdf>
-Package pdftex.def Info: Pictures/blank_fig.pdf used on input line 154.
+Package pdftex.def Info: Pictures/blank_fig.pdf  used on input line 165.
 (pdftex.def)             Requested size: 597.50787pt x 298.7509pt.
  (./mainEse.toc
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <12> on input line 3.
-
-Underfull \vbox (badness 2197) has occurred while \output is active []
-
- [3
-
- <./Pictures/blank_fig.pdf>] [4])
+)
 \tf@toc=\write8
 \openout8 = `mainEse.toc'.
 
- [5] [6
+ [3
+
+ <./Pictures/blank_fig.pdf>] [4
 
 ]
-\c@ttl@toc@default=\count310
+\c@ttl@toc@default=\count371
  (./mainEse.ptc
-Underfull \hbox (badness 2591) in paragraph at lines 97--97
+Underfull \hbox (badness 2591) in paragraph at lines 7--7
 []|| [][][]\T1/lmss/m/n/10 (+20) Equazioni di Navier--Stokes in-com-pri-mi-bi-l
 i in for-ma
  []
 
-) [7] [8]
-\openout2 = `./capitoli/01_statica/statica.aux'.
-
- (./capitoli/01_statica/statica.tex
-Capitolo 1.
-File: Pictures/blank_fig.pdf Graphic file (type pdf)
-<use Pictures/blank_fig.pdf>
-Package pdftex.def Info: Pictures/blank_fig.pdf used on input line 2.
-(pdftex.def)             Requested size: 597.50787pt x 298.7509pt.
- (./capitoli/01_statica/02teoria.tex
-(/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-0.def
-File: uni-0.def 2013/05/13 UCS: Unicode data U+0000..U+00FF
-) [9
-
-
-]
-
-LaTeX Warning: Reference `thm:grad' on page 10 undefined on input line 36.
-
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 63.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 63.
-[10]
-Underfull \hbox (badness 10000) in paragraph at lines 71--74
-
- []
-
-Package mdframed Info: mdframed works in twoside mode on input line 74.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 74.
-Package mdframed Info: mdframed works in twoside mode on input line 77.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 77.
-[11] <./fig/archimede_01.pdf, id=415, 340.57288pt x 254.36238pt>
-File: ./fig/archimede_01.pdf Graphic file (type pdf)
-
-<use ./fig/archimede_01.pdf>
-Package pdftex.def Info: ./fig/archimede_01.pdf used on input line 108.
-(pdftex.def)             Requested size: 213.39568pt x 159.37975pt.
-
-
-LaTeX Warning: Reference `thm:grad' on page 12 undefined on input line 130.
-
-[12 <./fig/archimede_01.pdf>]) [13] (./capitoli/01_statica/0201in.tex
-Package mdframed Info: mdframed works in twoside mode on input line 5.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 5.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 14.
-Package epstopdf Info: Source file: <./fig/recipientesfera.eps>
-(epstopdf)                    date: 2018-12-13 21:59:13
-(epstopdf)                    size: 4876 bytes
-(epstopdf)             Output file: <./fig/recipientesfera-eps-converted-to.pdf
->
-(epstopdf)                    date: 2018-12-13 21:59:13
-(epstopdf)                    size: 4738 bytes
-(epstopdf)             Command: <repstopdf --outfile=./fig/recipientesfera-eps-
-converted-to.pdf ./fig/recipientesfera.eps>
-(epstopdf)             \includegraphics on input line 19.
-Package epstopdf Info: Output file is already uptodate.
-
-<./fig/recipientesfera-eps-converted-to.pdf, id=461, 193.72375pt x 176.66pt>
-File: ./fig/recipientesfera-eps-converted-to.pdf Graphic file (type pdf)
-
-<use ./fig/recipientesfera-eps-converted-to.pdf>
-Package pdftex.def Info: ./fig/recipientesfera-eps-converted-to.pdf used on inp
-ut line 19.
-(pdftex.def)             Requested size: 134.4407pt x 122.59908pt.
-
-Overfull \hbox (2.66563pt too wide) in paragraph at lines 1--23
-[] 
- []
-
-[14 <./fig/recipientesfera-eps-converted-to.pdf>] [15]) [16]
-(./capitoli/01_statica/0202in.tex
-Package mdframed Info: mdframed works in twoside mode on input line 6.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 6.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 16.
-Package epstopdf Info: Source file: <./fig/recipientiariaolio.eps>
-(epstopdf)                    date: 2018-12-13 21:59:13
-(epstopdf)                    size: 14669 bytes
-(epstopdf)             Output file: <./fig/recipientiariaolio-eps-converted-to.
-pdf>
-(epstopdf)                    date: 2019-03-01 15:07:14
-(epstopdf)                    size: 5957 bytes
-(epstopdf)             Command: <repstopdf --outfile=./fig/recipientiariaolio-e
-ps-converted-to.pdf ./fig/recipientiariaolio.eps>
-(epstopdf)             \includegraphics on input line 21.
-Package epstopdf Info: Output file is already uptodate.
-
-
-pdfTeX warning: pdflatex (file ./fig/recipientiariaolio-eps-converted-to.pdf): 
-PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-
-<./fig/recipientiariaolio-eps-converted-to.pdf, id=487, 379.4175pt x 222.8325pt
->
-File: ./fig/recipientiariaolio-eps-converted-to.pdf Graphic file (type pdf)
- <use ./fig/recipientiariaolio-eps-converted-to.pdf>
-Package pdftex.def Info: ./fig/recipientiariaolio-eps-converted-to.pdf used on 
-input line 21.
-(pdftex.def)             Requested size: 134.4407pt x 78.95818pt.
-
-Overfull \hbox (2.66563pt too wide) in paragraph at lines 2--25
-[] 
- []
-
-) [17 <./fig/recipientiariaolio-eps-converted-to.pdf>]
-(./capitoli/01_statica/0203in.tex
-Package mdframed Info: mdframed works in twoside mode on input line 6.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 6.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 18.
-Package epstopdf Info: Source file: <./fig/diga2.eps>
-(epstopdf)                    date: 2018-12-13 21:59:13
-(epstopdf)                    size: 81281 bytes
-(epstopdf)             Output file: <./fig/diga2-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-12-13 21:59:13
-(epstopdf)                    size: 26027 bytes
-(epstopdf)             Command: <repstopdf --outfile=./fig/diga2-eps-converted-
-to.pdf ./fig/diga2.eps>
-(epstopdf)             \includegraphics on input line 23.
-Package epstopdf Info: Output file is already uptodate.
-
-<./fig/diga2-eps-converted-to.pdf, id=505, 403.5075pt x 347.2975pt>
-File: ./fig/diga2-eps-converted-to.pdf Graphic file (type pdf)
-
-<use ./fig/diga2-eps-converted-to.pdf>
-Package pdftex.def Info: ./fig/diga2-eps-converted-to.pdf used on input line 23
-.
-(pdftex.def)             Requested size: 134.4407pt x 115.71078pt.
-
-Overfull \hbox (2.66563pt too wide) in paragraph at lines 2--27
-[] 
- []
-
-[18 <./fig/diga2-eps-converted-to.pdf>]) [19] (./capitoli/01_statica/0204in.tex
-Package mdframed Info: mdframed works in twoside mode on input line 6.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 6.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 14.
-Package epstopdf Info: Source file: <./fig/tubimultipli.eps>
-(epstopdf)                    date: 2018-12-13 21:59:13
-(epstopdf)                    size: 9324 bytes
-(epstopdf)             Output file: <./fig/tubimultipli-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-12-13 21:59:13
-(epstopdf)                    size: 6477 bytes
-(epstopdf)             Command: <repstopdf --outfile=./fig/tubimultipli-eps-con
-verted-to.pdf ./fig/tubimultipli.eps>
-(epstopdf)             \includegraphics on input line 19.
-Package epstopdf Info: Output file is already uptodate.
-<./fig/tubimultipli-eps-converted-to.pdf, id=539, 287.0725pt x 319.1925pt>
-File: ./fig/tubimultipli-eps-converted-to.pdf Graphic file (type pdf)
-
-<use ./fig/tubimultipli-eps-converted-to.pdf>
-Package pdftex.def Info: ./fig/tubimultipli-eps-converted-to.pdf used on input 
-line 19.
-(pdftex.def)             Requested size: 134.4407pt x 149.48474pt.
-
-Overfull \hbox (2.66563pt too wide) in paragraph at lines 2--23
-[] 
- []
-
-) [20 <./fig/tubimultipli-eps-converted-to.pdf>]
-(./capitoli/01_statica/0205in.tex
-Package mdframed Info: mdframed works in twoside mode on input line 6.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 6.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 21.
-Package epstopdf Info: Source file: <./fig/leva_idraulica1.eps>
-(epstopdf)                    date: 2018-12-13 21:59:12
-(epstopdf)                    size: 15770 bytes
-(epstopdf)             Output file: <./fig/leva_idraulica1-eps-converted-to.pdf
->
-(epstopdf)                    date: 2018-12-13 21:59:12
-(epstopdf)                    size: 7467 bytes
-(epstopdf)             Command: <repstopdf --outfile=./fig/leva_idraulica1-eps-
-converted-to.pdf ./fig/leva_idraulica1.eps>
-(epstopdf)             \includegraphics on input line 26.
-Package epstopdf Info: Output file is already uptodate.
-
-<./fig/leva_idraulica1-eps-converted-to.pdf, id=552, 499.8675pt x 409.53pt>
-File: ./fig/leva_idraulica1-eps-converted-to.pdf Graphic file (type pdf)
-
-<use ./fig/leva_idraulica1-eps-converted-to.pdf>
-Package pdftex.def Info: ./fig/leva_idraulica1-eps-converted-to.pdf used on inp
-ut line 26.
-(pdftex.def)             Requested size: 134.4407pt x 110.1434pt.
-
-Overfull \hbox (2.66563pt too wide) in paragraph at lines 2--30
-[] 
- []
-
-) [21 <./fig/leva_idraulica1-eps-converted-to.pdf>]
-(./capitoli/01_statica/0206in.tex
-Package mdframed Info: mdframed works in twoside mode on input line 6.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 6.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 16.
-Package epstopdf Info: Source file: <./fig/manometro.eps>
-(epstopdf)                    date: 2018-12-13 21:59:12
-(epstopdf)                    size: 5811 bytes
-(epstopdf)             Output file: <./fig/manometro-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-12-13 21:59:13
-(epstopdf)                    size: 5013 bytes
-(epstopdf)             Command: <repstopdf --outfile=./fig/manometro-eps-conver
-ted-to.pdf ./fig/manometro.eps>
-(epstopdf)             \includegraphics on input line 22.
-Package epstopdf Info: Output file is already uptodate.
-
-<./fig/manometro-eps-converted-to.pdf, id=577, 404.51125pt x 544.0325pt>
-File: ./fig/manometro-eps-converted-to.pdf Graphic file (type pdf)
-
-<use ./fig/manometro-eps-converted-to.pdf>
-Package pdftex.def Info: ./fig/manometro-eps-converted-to.pdf used on input lin
-e 22.
-(pdftex.def)             Requested size: 115.23404pt x 154.97615pt.
- [22 <./fig/manometro-eps-converted-to.pdf>]) [23]) [24
-
-
-]
-\openout2 = `./capitoli/02_tensSup/tensSup.aux'.
-
- (./capitoli/02_tensSup/tensSup.tex
-Capitolo 2.
-File: Pictures/blank_fig.pdf Graphic file (type pdf)
-<use Pictures/blank_fig.pdf>
-Package pdftex.def Info: Pictures/blank_fig.pdf used on input line 2.
-(pdftex.def)             Requested size: 597.50787pt x 298.7509pt.
- (./capitoli/02_tensSup/03teoria.tex
-Package epstopdf Info: Source file: <./fig/laplaceYoung2Ddim.eps>
-(epstopdf)                    date: 2018-12-13 21:59:12
-(epstopdf)                    size: 37498 bytes
-(epstopdf)             Output file: <./fig/laplaceYoung2Ddim-eps-converted-to.p
-df>
-(epstopdf)                    date: 2018-12-13 21:59:13
-(epstopdf)                    size: 13808 bytes
-(epstopdf)             Command: <repstopdf --outfile=./fig/laplaceYoung2Ddim-ep
-s-converted-to.pdf ./fig/laplaceYoung2Ddim.eps>
-(epstopdf)             \includegraphics on input line 12.
-Package epstopdf Info: Output file is already uptodate.
-
-<./fig/laplaceYoung2Ddim-eps-converted-to.pdf, id=605, 376.40625pt x 393.47pt>
-File: ./fig/laplaceYoung2Ddim-eps-converted-to.pdf Graphic file (type pdf)
-
-<use ./fig/laplaceYoung2Ddim-eps-converted-to.pdf>
-Package pdftex.def Info: ./fig/laplaceYoung2Ddim-eps-converted-to.pdf used on i
-nput line 12.
-(pdftex.def)             Requested size: 162.1777pt x 169.531pt.
-
-Overfull \hbox (2.43332pt too wide) in paragraph at lines 2--15
-$[]$ $[]$ 
- []
-
-
-Underfull \vbox (badness 5681) has occurred while \output is active []
-
- [25
-
-
- <./fig/laplaceYoung2Ddim-eps-converted-to.pdf>]) [26]
-(./capitoli/02_tensSup/0301in.tex
-Package mdframed Info: mdframed works in twoside mode on input line 4.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 4.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 17.
-Package epstopdf Info: Source file: <./fig/cap01.eps>
-(epstopdf)                    date: 2018-12-13 21:59:13
-(epstopdf)                    size: 20090 bytes
-(epstopdf)             Output file: <./fig/cap01-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-12-13 21:59:13
-(epstopdf)                    size: 8195 bytes
-(epstopdf)             Command: <repstopdf --outfile=./fig/cap01-eps-converted-
-to.pdf ./fig/cap01.eps>
-(epstopdf)             \includegraphics on input line 22.
-Package epstopdf Info: Output file is already uptodate.
-
-<./fig/cap01-eps-converted-to.pdf, id=628, 348.30125pt x 324.21124pt>
-File: ./fig/cap01-eps-converted-to.pdf Graphic file (type pdf)
-
-<use ./fig/cap01-eps-converted-to.pdf>
-Package pdftex.def Info: ./fig/cap01-eps-converted-to.pdf used on input line 22
-.
-(pdftex.def)             Requested size: 119.5041pt x 111.23956pt.
-
-Overfull \hbox (23.99998pt too wide) in paragraph at lines 1--26
-[] 
- []
-
-<./fig/menisco.jpg, id=629, 361.35pt x 250.9375pt>
-File: ./fig/menisco.jpg Graphic file (type jpg)
- <use ./fig/menisco.jpg>
-Package pdftex.def Info: ./fig/menisco.jpg used on input line 91.
-(pdftex.def)             Requested size: 136.57635pt x 94.84415pt.
-Package epstopdf Info: Source file: <./fig/cap02.eps>
-(epstopdf)                    date: 2018-12-13 21:59:13
-(epstopdf)                    size: 18351 bytes
-(epstopdf)             Output file: <./fig/cap02-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-12-13 21:59:13
-(epstopdf)                    size: 8183 bytes
-(epstopdf)             Command: <repstopdf --outfile=./fig/cap02-eps-converted-
-to.pdf ./fig/cap02.eps>
-(epstopdf)             \includegraphics on input line 95.
-Package epstopdf Info: Output file is already uptodate.
-
-<./fig/cap02-eps-converted-to.pdf, id=630, 342.27875pt x 184.69pt>
-File: ./fig/cap02-eps-converted-to.pdf Graphic file (type pdf)
-
-<use ./fig/cap02-eps-converted-to.pdf>
-Package pdftex.def Info: ./fig/cap02-eps-converted-to.pdf used on input line 95
-.
-(pdftex.def)             Requested size: 136.57635pt x 73.69713pt.
-Package epstopdf Info: Source file: <./fig/equil.eps>
-(epstopdf)                    date: 2018-12-13 21:59:12
-(epstopdf)                    size: 67933 bytes
-(epstopdf)             Output file: <./fig/equil-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-12-13 21:59:12
-(epstopdf)                    size: 19903 bytes
-(epstopdf)             Command: <repstopdf --outfile=./fig/equil-eps-converted-
-to.pdf ./fig/equil.eps>
-(epstopdf)             \includegraphics on input line 100.
-Package epstopdf Info: Output file is already uptodate.
-
-<./fig/equil-eps-converted-to.pdf, id=631, 541.02126pt x 413.545pt>
-File: ./fig/equil-eps-converted-to.pdf Graphic file (type pdf)
-
-<use ./fig/equil-eps-converted-to.pdf>
-Package pdftex.def Info: ./fig/equil-eps-converted-to.pdf used on input line 10
-0.
-(pdftex.def)             Requested size: 128.0387pt x 97.86458pt.
-) [27
-
- <./fig/cap01-eps-converted-to.pdf>] [28 <./fig/menisco.jpg> <./fig/cap02-eps-c
-onverted-to.pdf> <./fig/equil-eps-converted-to.pdf>] (./capitoli/02_tensSup/030
-2in.tex
-Package mdframed Info: mdframed works in twoside mode on input line 4.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 4.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 9.
-Package epstopdf Info: Source file: <./fig/Plates4.eps>
-(epstopdf)                    date: 2018-12-13 21:59:13
-(epstopdf)                    size: 8546 bytes
-(epstopdf)             Output file: <./fig/Plates4-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-12-13 21:59:13
-(epstopdf)                    size: 4811 bytes
-(epstopdf)             Command: <repstopdf --outfile=./fig/Plates4-eps-converte
-d-to.pdf ./fig/Plates4.eps>
-(epstopdf)             \includegraphics on input line 14.
-Package epstopdf Info: Output file is already uptodate.
-
-<./fig/Plates4-eps-converted-to.pdf, id=659, 254.9525pt x 296.10625pt>
-File: ./fig/Plates4-eps-converted-to.pdf Graphic file (type pdf)
-
-<use ./fig/Plates4-eps-converted-to.pdf>
-Package pdftex.def Info: ./fig/Plates4-eps-converted-to.pdf used on input line 
-14.
-(pdftex.def)             Requested size: 126.97354pt x 147.4699pt.
-
-Overfull \hbox (2.66563pt too wide) in paragraph at lines 1--18
-[] 
- []
-
-Package epstopdf Info: Source file: <./fig/sup01.eps>
-(epstopdf)                    date: 2018-12-13 21:59:13
-(epstopdf)                    size: 38195 bytes
-(epstopdf)             Output file: <./fig/sup01-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-12-13 21:59:13
-(epstopdf)                    size: 14616 bytes
-(epstopdf)             Command: <repstopdf --outfile=./fig/sup01-eps-converted-
-to.pdf ./fig/sup01.eps>
-(epstopdf)             \includegraphics on input line 55.
-Package epstopdf Info: Output file is already uptodate.
-<./fig/sup01-eps-converted-to.pdf, id=660, 389.455pt x 286.06876pt>
-File: ./fig/sup01-eps-converted-to.pdf Graphic file (type pdf)
-
-<use ./fig/sup01-eps-converted-to.pdf>
-Package pdftex.def Info: ./fig/sup01-eps-converted-to.pdf used on input line 55
-.
-(pdftex.def)             Requested size: 213.39568pt x 156.74464pt.
-) [29
-
- <./fig/Plates4-eps-converted-to.pdf> <./fig/sup01-eps-converted-to.pdf>]) [30
-
-
-
-]
-\openout2 = `./capitoli/03_cinematica/cinematica.aux'.
-
-
-(./capitoli/03_cinematica/cinematica.tex
-Capitolo 3.
-File: Pictures/blank_fig.pdf Graphic file (type pdf)
-<use Pictures/blank_fig.pdf>
-Package pdftex.def Info: Pictures/blank_fig.pdf used on input line 2.
-(pdftex.def)             Requested size: 597.50787pt x 298.7509pt.
- (./capitoli/03_cinematica/12teoria.tex
-Package mdframed Info: mdframed works in twoside mode on input line 12.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 12.
- [31
-
-
-]
-Package mdframed Info: mdframed works in twoside mode on input line 38.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 38.
-Package mdframed Info: mdframed works in twoside mode on input line 45.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 45.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 62.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 62.
-
-[32]
-Package mdframed Info: mdframed works in twoside mode on input line 104.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 104.
-Package mdframed Info: Not enough space on this page on input line 107.
- [33]
-Package mdframed Info: Not enough space on this page on input line 107.
-Package mdframed Info: mdframed works in twoside mode on input line 135.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 135.
-Package mdframed Info: mdframed works in twoside mode on input line 141.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 141.
-Package mdframed Info: Not enough space on this page on input line 144.
- [34]
-Package mdframed Info: Not enough space on this page on input line 144.
- [35] [36] [37] [38]) [39] (./capitoli/03_cinematica/1202in.tex
-Package mdframed Info: mdframed works in twoside mode on input line 1.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 1.
-pdfTeX warning (ext4): destination with the same identifier (name{numExer.1}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.2  S
-      ia dato il campo di moto
-Package mdframed Info: Not enough space on this page on input line 7.
-Missing character: There is no ] in font nullfont!
-
-Overfull \hbox (67.361pt too wide) in paragraph at lines 122--123
-[][] 
- []
-
-Missing character: There is no ] in font nullfont!
-
-Overfull \hbox (67.361pt too wide) in paragraph at lines 150--151
-[][] 
- []
-
-[40
-
-]
-Missing character: There is no ] in font nullfont!
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[41]
-Missing character: There is no ] in font nullfont!
-
-Overfull \hbox (3.3449pt too wide) in paragraph at lines 294--295
-[][] 
- []
-
-Missing character: There is no ] in font nullfont!
-
-Overfull \hbox (3.3449pt too wide) in paragraph at lines 316--317
-[][] 
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-) [42] [43] (./capitoli/03_cinematica/1201in.tex
-Package mdframed Info: mdframed works in twoside mode on input line 1.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 1.
-pdfTeX warning (ext4): destination with the same identifier (name{numExer.2}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.2  S
-      ia dato il campo di moto
-Package mdframed Info: Not enough space on this page on input line 7.
- [44
-
-]) [45]
-(./capitoli/03_cinematica/1204in_hints.tex
-Package mdframed Info: mdframed works in twoside mode on input line 1.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 1.
-Package mdframed Info: Not enough space on this page on input line 7.
-) [46
-
-]
-(./capitoli/03_cinematica/1203in_hints.tex
-Package mdframed Info: mdframed works in twoside mode on input line 1.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 1.
-Package mdframed Info: Not enough space on this page on input line 9.
-) [47
-
-]) [48
-
-
-
-]
-\openout2 = `./capitoli/04_bilanci/bilanci.aux'.
-
-
-(./capitoli/04_bilanci/bilanci.tex
-Capitolo 4.
-File: Pictures/blank_fig.pdf Graphic file (type pdf)
-<use Pictures/blank_fig.pdf>
-Package pdftex.def Info: Pictures/blank_fig.pdf used on input line 2.
-(pdftex.def)             Requested size: 597.50787pt x 298.7509pt.
- (./capitoli/04_bilanci/04teoria.tex [49
-
-
-]
-Package mdframed Info: mdframed works in twoside mode on input line 25.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 25.
-Package mdframed Info: mdframed works in twoside mode on input line 34.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 34.
-Package mdframed Info: mdframed works in twoside mode on input line 45.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 45.
-Package mdframed Info: mdframed works in twoside mode on input line 55.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 55.
-Package mdframed Info: Not enough space on this page on input line 58.
- [50]
-Package mdframed Info: Not enough space on this page on input line 58.
-
-[51]
-Package mdframed Info: mdframed works in twoside mode on input line 115.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 115.
-Package mdframed Info: mdframed works in twoside mode on input line 121.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 121.
- [52]
-Package mdframed Info: mdframed works in twoside mode on input line 152.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 152.
-Package mdframed Info: mdframed works in twoside mode on input line 168.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 168.
-Package mdframed Info: mdframed works in twoside mode on input line 197.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 197.
-Package mdframed Info: Not enough space on this page on input line 200.
- [53]
-Package mdframed Info: Not enough space on this page on input line 200.
-Package mdframed Info: mdframed works in twoside mode on input line 203.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 203.
- [54]
-Package mdframed Info: mdframed works in twoside mode on input line 237.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 237.
-Package mdframed Info: mdframed works in twoside mode on input line 243.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 243.
-Package mdframed Info: mdframed works in twoside mode on input line 254.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 254.
-Package mdframed Info: mdframed works in twoside mode on input line 260.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 260.
-Package mdframed Info: mdframed works in twoside mode on input line 270.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 270.
-
-Underfull \vbox (badness 6173) has occurred while \output is active []
-
- [55]
-Package mdframed Info: mdframed works in twoside mode on input line 313.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 313.
-
-[56] (./capitoli/04_bilanci/0411in.tex
-Package epstopdf Info: Source file: <./fig/elem_velocity.eps>
-(epstopdf)                    date: 2018-12-13 21:59:12
-(epstopdf)                    size: 28583 bytes
-(epstopdf)             Output file: <./fig/elem_velocity-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-12-13 21:59:12
-(epstopdf)                    size: 12257 bytes
-(epstopdf)             Command: <repstopdf --outfile=./fig/elem_velocity-eps-co
-nverted-to.pdf ./fig/elem_velocity.eps>
-(epstopdf)             \includegraphics on input line 27.
-Package epstopdf Info: Output file is already uptodate.
-
-<./fig/elem_velocity-eps-converted-to.pdf, id=944, 400.49625pt x 416.55624pt>
-File: ./fig/elem_velocity-eps-converted-to.pdf Graphic file (type pdf)
-
-<use ./fig/elem_velocity-eps-converted-to.pdf>
-Package pdftex.def Info: ./fig/elem_velocity-eps-converted-to.pdf used on input
- line 27.
-(pdftex.def)             Requested size: 128.0387pt x 133.1736pt.
-Package epstopdf Info: Source file: <./fig/elem_stress.eps>
-(epstopdf)                    date: 2018-12-13 21:59:13
-(epstopdf)                    size: 28736 bytes
-(epstopdf)             Output file: <./fig/elem_stress-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-12-13 21:59:13
-(epstopdf)                    size: 11829 bytes
-(epstopdf)             Command: <repstopdf --outfile=./fig/elem_stress-eps-conv
-erted-to.pdf ./fig/elem_stress.eps>
-(epstopdf)             \includegraphics on input line 29.
-Package epstopdf Info: Output file is already uptodate.
-
-<./fig/elem_stress-eps-converted-to.pdf, id=945, 338.26375pt x 339.2675pt>
-File: ./fig/elem_stress-eps-converted-to.pdf Graphic file (type pdf)
-
-<use ./fig/elem_stress-eps-converted-to.pdf>
-Package pdftex.def Info: ./fig/elem_stress-eps-converted-to.pdf used on input l
-ine 29.
-(pdftex.def)             Requested size: 128.0387pt x 128.42084pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[57] [58 <./fig/elem_velocity-eps-converted-to.pdf> <./fig/elem_stress-eps-conv
-erted-to.pdf>])) [59] (./capitoli/04_bilanci/0410in.tex [60] [61]
-Package epstopdf Info: Source file: <./fig/frenet.eps>
-(epstopdf)                    date: 2018-12-13 21:59:13
-(epstopdf)                    size: 59107 bytes
-(epstopdf)             Output file: <./fig/frenet-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-12-13 21:59:13
-(epstopdf)                    size: 20428 bytes
-(epstopdf)             Command: <repstopdf --outfile=./fig/frenet-eps-converted
--to.pdf ./fig/frenet.eps>
-(epstopdf)             \includegraphics on input line 229.
-Package epstopdf Info: Output file is already uptodate.
-
-<./fig/frenet-eps-converted-to.pdf, id=1008, 377.41pt x 442.65375pt>
-File: ./fig/frenet-eps-converted-to.pdf Graphic file (type pdf)
-
-<use ./fig/frenet-eps-converted-to.pdf>
-Package pdftex.def Info: ./fig/frenet-eps-converted-to.pdf used on input line 2
-29.
-(pdftex.def)             Requested size: 170.71393pt x 200.22575pt.
-
-Overfull \hbox (2.43332pt too wide) in paragraph at lines 200--259
-$[]$  $[]$
- []
-
-[62 <./fig/frenet-eps-converted-to.pdf>]) [63]
-(./capitoli/04_bilanci/0412in.tex [64] [65]) [66] [67]
-(./capitoli/04_bilanci/0406in.tex
-Package mdframed Info: mdframed works in twoside mode on input line 4.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 4.
-pdfTeX warning (ext4): destination with the same identifier (name{numExer.1}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.5 S
-     i consideri  una rete idraulica come quella rappresentata in figura.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 30.
-Package epstopdf Info: Source file: <./fig/rete.eps>
-(epstopdf)                    date: 2018-12-13 21:59:13
-(epstopdf)                    size: 7773 bytes
-(epstopdf)             Output file: <./fig/rete-eps-converted-to.pdf>
-(epstopdf)                    date: 2019-03-01 15:07:16
-(epstopdf)                    size: 6376 bytes
-(epstopdf)             Command: <repstopdf --outfile=./fig/rete-eps-converted-t
-o.pdf ./fig/rete.eps>
-(epstopdf)             \includegraphics on input line 35.
-Package epstopdf Info: Output file is already uptodate.
-
-
-pdfTeX warning: pdflatex (file ./fig/rete-eps-converted-to.pdf): PDF inclusion:
- found PDF version <1.7>, but at most version <1.5> allowed
-<./fig/rete-eps-converted-to.pdf, id=1080, 292.09125pt x 346.29375pt>
-File: ./fig/rete-eps-converted-to.pdf Graphic file (type pdf)
-
-<use ./fig/rete-eps-converted-to.pdf>
-Package pdftex.def Info: ./fig/rete-eps-converted-to.pdf used on input line 35.
-
-(pdftex.def)             Requested size: 134.4407pt x 159.39217pt.
-
-Overfull \hbox (23.99998pt too wide) in paragraph at lines 1--39
-[] 
- []
-
-) [68
-
- <./fig/rete-eps-converted-to.pdf>] (./capitoli/04_bilanci/0407in.tex
-Package mdframed Info: mdframed works in twoside mode on input line 4.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 4.
-pdfTeX warning (ext4): destination with the same identifier (name{numExer.2}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.5 S
-     i sta riempiendo una bombola per immersioni subacquee.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 15.
-) [69]
-(./capitoli/04_bilanci/0402in.tex
-Package mdframed Info: mdframed works in twoside mode on input line 5.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 5.
-pdfTeX warning (ext4): destination with the same identifier (name{numExer.3}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.6 U
-     n getto d'acqua ($\rho=999\ kg/m^3$) stazionario, piano e orizzontale
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 22.
-Package epstopdf Info: Source file: <./fig/coanda.eps>
-(epstopdf)                    date: 2018-12-13 21:59:12
-(epstopdf)                    size: 5893 bytes
-(epstopdf)             Output file: <./fig/coanda-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-12-13 21:59:12
-(epstopdf)                    size: 6536 bytes
-(epstopdf)             Command: <repstopdf --outfile=./fig/coanda-eps-converted
--to.pdf ./fig/coanda.eps>
-(epstopdf)             \includegraphics on input line 27.
-Package epstopdf Info: Output file is already uptodate.
-
-<./fig/coanda-eps-converted-to.pdf, id=1104, 355.3275pt x 543.02875pt>
-File: ./fig/coanda-eps-converted-to.pdf Graphic file (type pdf)
-
-<use ./fig/coanda-eps-converted-to.pdf>
-Package pdftex.def Info: ./fig/coanda-eps-converted-to.pdf used on input line 2
-7.
-(pdftex.def)             Requested size: 134.4407pt x 205.46646pt.
-
-Overfull \hbox (2.66563pt too wide) in paragraph at lines 2--31
-[] 
- []
-
-[70 <./fig/coanda-eps-converted-to.pdf>]
-Overfull \hbox (58.77895pt too wide) detected at line 105
-  $[] []$  
- []
-
-[71]) [72] (./capitoli/04_bilanci/0409in.tex
-Package mdframed Info: mdframed works in twoside mode on input line 5.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 5.
-pdfTeX warning (ext4): destination with the same identifier (name{numExer.4}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.6 U
-     n getto d'acqua ($\rho=999\ kg/m^3 $) stazionario, piano e verticale
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 21.
-Package epstopdf Info: Source file: <./fig/gettoPiattello.eps>
-(epstopdf)                    date: 2018-12-13 21:59:13
-(epstopdf)                    size: 22693 bytes
-(epstopdf)             Output file: <./fig/gettoPiattello-eps-converted-to.pdf>
-
-(epstopdf)                    date: 2018-12-13 21:59:13
-(epstopdf)                    size: 8955 bytes
-(epstopdf)             Command: <repstopdf --outfile=./fig/gettoPiattello-eps-c
-onverted-to.pdf ./fig/gettoPiattello.eps>
-(epstopdf)             \includegraphics on input line 26.
-Package epstopdf Info: Output file is already uptodate.
-
-<./fig/gettoPiattello-eps-converted-to.pdf, id=1136, 377.41pt x 264.99pt>
-File: ./fig/gettoPiattello-eps-converted-to.pdf Graphic file (type pdf)
-
-<use ./fig/gettoPiattello-eps-converted-to.pdf>
-Package pdftex.def Info: ./fig/gettoPiattello-eps-converted-to.pdf used on inpu
-t line 26.
-(pdftex.def)             Requested size: 134.4407pt x 94.39355pt.
-
-Overfull \hbox (2.66563pt too wide) in paragraph at lines 2--30
-[] 
- []
-
-[73 <./fig/gettoPiattello-eps-converted-to.pdf>]) [74] [75]
-(./capitoli/04_bilanci/0403in.tex
-Package mdframed Info: mdframed works in twoside mode on input line 4.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 4.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 22.
-Package epstopdf Info: Source file: <./fig/motore_a_getto.eps>
-(epstopdf)                    date: 2018-12-13 21:59:13
-(epstopdf)                    size: 6140 bytes
-(epstopdf)             Output file: <./fig/motore_a_getto-eps-converted-to.pdf>
-
-(epstopdf)                    date: 2019-03-01 15:07:16
-(epstopdf)                    size: 5985 bytes
-(epstopdf)             Command: <repstopdf --outfile=./fig/motore_a_getto-eps-c
-onverted-to.pdf ./fig/motore_a_getto.eps>
-(epstopdf)             \includegraphics on input line 27.
-Package epstopdf Info: Output file is already uptodate.
-
-
-pdfTeX warning: pdflatex (file ./fig/motore_a_getto-eps-converted-to.pdf): PDF 
-inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<./fig/motore_a_getto-eps-converted-to.pdf, id=1160, 315.1775pt x 142.5325pt>
-File: ./fig/motore_a_getto-eps-converted-to.pdf Graphic file (type pdf)
-
-<use ./fig/motore_a_getto-eps-converted-to.pdf>
-Package pdftex.def Info: ./fig/motore_a_getto-eps-converted-to.pdf used on inpu
-t line 27.
-(pdftex.def)             Requested size: 134.4407pt x 60.79842pt.
-
-Overfull \hbox (2.66563pt too wide) in paragraph at lines 1--31
-[] 
- []
-
-
-Overfull \hbox (10.44711pt too wide) detected at line 73
-  $[] []$  
- []
-
-[76 <./fig/motore_a_getto-eps-converted-to.pdf>]) [77]
-(./capitoli/04_bilanci/0404in.tex
-Package mdframed Info: mdframed works in twoside mode on input line 4.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 4.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 14.
-Package epstopdf Info: Source file: <./fig/gomito_01.eps>
-(epstopdf)                    date: 2018-12-13 21:59:13
-(epstopdf)                    size: 5700 bytes
-(epstopdf)             Output file: <./fig/gomito_01-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-12-13 21:59:13
-(epstopdf)                    size: 7019 bytes
-(epstopdf)             Command: <repstopdf --outfile=./fig/gomito_01-eps-conver
-ted-to.pdf ./fig/gomito_01.eps>
-(epstopdf)             \includegraphics on input line 19.
-Package epstopdf Info: Output file is already uptodate.
-
-<./fig/gomito_01-eps-converted-to.pdf, id=1188, 254.9525pt x 229.85875pt>
-File: ./fig/gomito_01-eps-converted-to.pdf Graphic file (type pdf)
-
-<use ./fig/gomito_01-eps-converted-to.pdf>
-Package pdftex.def Info: ./fig/gomito_01-eps-converted-to.pdf used on input lin
-e 19.
-(pdftex.def)             Requested size: 104.56525pt x 94.27425pt.
-
-Overfull \hbox (2.66563pt too wide) in paragraph at lines 1--23
-[] 
- []
-
-) [78 <./fig/gomito_01-eps-converted-to.pdf>] (./capitoli/04_bilanci/0405in.tex
-Package mdframed Info: mdframed works in twoside mode on input line 5.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 5.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 18.
-Package epstopdf Info: Source file: <./fig/gomito_galleria.eps>
-(epstopdf)                    date: 2018-12-13 21:59:12
-(epstopdf)                    size: 7730 bytes
-(epstopdf)             Output file: <./fig/gomito_galleria-eps-converted-to.pdf
->
-(epstopdf)                    date: 2018-12-13 21:59:13
-(epstopdf)                    size: 7365 bytes
-(epstopdf)             Command: <repstopdf --outfile=./fig/gomito_galleria-eps-
-converted-to.pdf ./fig/gomito_galleria.eps>
-(epstopdf)             \includegraphics on input line 23.
-Package epstopdf Info: Output file is already uptodate.
-
-<./fig/gomito_galleria-eps-converted-to.pdf, id=1208, 179.67125pt x 258.9675pt>
-File: ./fig/gomito_galleria-eps-converted-to.pdf Graphic file (type pdf)
-<use ./fig/gomito_galleria-eps-converted-to.pdf>
-Package pdftex.def Info: ./fig/gomito_galleria-eps-converted-to.pdf used on inp
-ut line 23.
-(pdftex.def)             Requested size: 89.62865pt x 129.18704pt.
-
-Overfull \hbox (2.66563pt too wide) in paragraph at lines 2--27
-[] 
- []
-
-[79 <./fig/gomito_galleria-eps-converted-to.pdf>]) [80]
-(./capitoli/04_bilanci/0408in.tex
-Package mdframed Info: mdframed works in twoside mode on input line 4.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 4.
-
-Underfull \hbox (badness 6775) in paragraph at lines 16--17
-[]\T1/lmr/m/n/10.95 (+20) (Risultati: $\OML/lmm/m/it/10.95 ^^L \OT1/lmr/m/n/10.
-95 (+20) = []\OML/lmm/m/it/10.95 ; \OML/cmm/b/it/10.95 F \OT1/lmr/m/n/10.95 (+2
-0) =
- []
-
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 17.
-Package epstopdf Info: Source file: <./fig/wings.eps>
-(epstopdf)                    date: 2018-12-13 21:59:13
-(epstopdf)                    size: 40460 bytes
-(epstopdf)             Output file: <./fig/wings-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-12-13 21:59:13
-(epstopdf)                    size: 13424 bytes
-(epstopdf)             Command: <repstopdf --outfile=./fig/wings-eps-converted-
-to.pdf ./fig/wings.eps>
-(epstopdf)             \includegraphics on input line 22.
-Package epstopdf Info: Output file is already uptodate.
-<./fig/wings-eps-converted-to.pdf, id=1234, 478.78876pt x 368.37625pt>
-File: ./fig/wings-eps-converted-to.pdf Graphic file (type pdf)
-
-<use ./fig/wings-eps-converted-to.pdf>
-Package pdftex.def Info: ./fig/wings-eps-converted-to.pdf used on input line 22
-.
-(pdftex.def)             Requested size: 202.72523pt x 155.97606pt.
-
-Overfull \hbox (2.65912pt too wide) in paragraph at lines 1--26
-[] 
- []
-
-) [81 <./fig/wings-eps-converted-to.pdf>] (./capitoli/04_bilanci/0401in.tex
-Package mdframed Info: mdframed works in twoside mode on input line 4.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 4.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 21.
-Package epstopdf Info: Source file: <./fig/airfoil.eps>
-(epstopdf)                    date: 2018-12-13 21:59:13
-(epstopdf)                    size: 45853 bytes
-(epstopdf)             Output file: <./fig/airfoil-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-12-13 21:59:13
-(epstopdf)                    size: 11442 bytes
-(epstopdf)             Command: <repstopdf --outfile=./fig/airfoil-eps-converte
-d-to.pdf ./fig/airfoil.eps>
-(epstopdf)             \includegraphics on input line 26.
-Package epstopdf Info: Output file is already uptodate.
-
-<./fig/airfoil-eps-converted-to.pdf, id=1243, 520.94624pt x 310.15875pt>
-File: ./fig/airfoil-eps-converted-to.pdf Graphic file (type pdf)
-
-<use ./fig/airfoil-eps-converted-to.pdf>
-Package pdftex.def Info: ./fig/airfoil-eps-converted-to.pdf used on input line 
-26.
-(pdftex.def)             Requested size: 134.4407pt x 80.04306pt.
-
-Overfull \hbox (2.66563pt too wide) in paragraph at lines 1--30
-[] 
- []
-
-[82 <./fig/airfoil-eps-converted-to.pdf>] [83])
-(./capitoli/04_bilanci/0401SciaExp.tex [84]
-Underfull \hbox (badness 10000) in paragraph at lines 55--59
-
- []
-
-[85]
-Underfull \hbox (badness 10000) in paragraph at lines 78--80
-
- []
-
-
-Overfull \hbox (1.67227pt too wide) detected at line 113
- $[] []$  
- []
-
-[86] [87] [88] <./fig/base-functions.pdf, id=1340, 419.33841pt x 116.31947pt>
-File: ./fig/base-functions.pdf Graphic file (type pdf)
-
-<use ./fig/base-functions.pdf>
-Package pdftex.def Info: ./fig/base-functions.pdf used on input line 269.
-(pdftex.def)             Requested size: 234.73654pt x 65.1136pt.
-
-<./fig/base-functions-ref.pdf, id=1341, 246.15225pt x 153.32666pt>
-File: ./fig/base-functions-ref.pdf Graphic file (type pdf)
-
-<use ./fig/base-functions-ref.pdf>
-Package pdftex.def Info: ./fig/base-functions-ref.pdf used on input line 270.
-(pdftex.def)             Requested size: 128.0387pt x 79.75604pt.
- [89] [90 <./fig/base-functions.pdf> <./fig/base-functions-ref.pdf
-
-pdfTeX warning: pdflatex (file ./fig/base-functions-ref.pdf): PDF inclusion: mu
-ltiple pdfs with page group included in a single page
->]) [91] (./capitoli/04_bilanci/04e01in.tex
-Package mdframed Info: mdframed works in twoside mode on input line 4.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 4.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 6.
-
-<./fig/wt.pdf, id=1374, 597.50786pt x 298.75392pt>
-File: ./fig/wt.pdf Graphic file (type pdf)
- <use ./fig/wt.pdf>
-Package pdftex.def Info: ./fig/wt.pdf used on input line 10.
-(pdftex.def)             Requested size: 384.1096pt x 192.0543pt.
- [92 <./fig/wt.pdf>] [93]) [94] (./capitoli/04_bilanci/04e02in.tex
-Package mdframed Info: mdframed works in twoside mode on input line 4.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 4.
-
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 9.
-
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 16.
-<./fig/otto_cycle.pdf, id=1411, 287.37285pt x 287.37285pt>
-File: ./fig/otto_cycle.pdf Graphic file (type pdf)
-
-<use ./fig/otto_cycle.pdf>
-Package pdftex.def Info: ./fig/otto_cycle.pdf used on input line 21.
-(pdftex.def)             Requested size: 192.0548pt x 192.06084pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [95]
-[96 <./fig/otto_cycle.pdf>] [97] [98]) [99] (./capitoli/04_bilanci/04e03in.tex
-Package mdframed Info: mdframed works in twoside mode on input line 4.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 4.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 20.
-
-<./fig/jet_engine.pdf, id=1456, 514.99487pt x 202.01457pt>
-File: ./fig/jet_engine.pdf Graphic file (type pdf)
-
-<use ./fig/jet_engine.pdf>
-Package pdftex.def Info: ./fig/jet_engine.pdf used on input line 25.
-(pdftex.def)             Requested size: 405.45047pt x 159.05031pt.
- [100 <./fig/jet_engine.pdf>] [101] [102])) [103]
-[104
-
-
-]
-\openout2 = `./capitoli/05_bernoulli/bernoulli.aux'.
-
- (./capitoli/05_bernoulli/bernoulli.tex
-Capitolo 5.
-File: Pictures/blank_fig.pdf Graphic file (type pdf)
-<use Pictures/blank_fig.pdf>
-Package pdftex.def Info: Pictures/blank_fig.pdf used on input line 2.
-(pdftex.def)             Requested size: 597.50787pt x 298.7509pt.
- (./capitoli/05_bernoulli/05teoria.tex [105
-
-
-])
-[106] (./capitoli/05_bernoulli/0503in.tex
-Package mdframed Info: mdframed works in twoside mode on input line 4.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 4.
-pdfTeX warning (ext4): destination with the same identifier (name{numExer.1}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.5 D
-     eterminare la portata d'acqua che scorre all'interno del tubo di Venturi
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 16.
-Package epstopdf Info: Source file: <./fig/venturi.eps>
-(epstopdf)                    date: 2018-12-13 21:59:12
-(epstopdf)                    size: 6682 bytes
-(epstopdf)             Output file: <./fig/venturi-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-12-13 21:59:12
-(epstopdf)                    size: 7232 bytes
-(epstopdf)             Command: <repstopdf --outfile=./fig/venturi-eps-converte
-d-to.pdf ./fig/venturi.eps>
-(epstopdf)             \includegraphics on input line 21.
-Package epstopdf Info: Output file is already uptodate.
-
-<./fig/venturi-eps-converted-to.pdf, id=1533, 671.50874pt x 628.3475pt>
-File: ./fig/venturi-eps-converted-to.pdf Graphic file (type pdf)
-
-<use ./fig/venturi-eps-converted-to.pdf>
-Package pdftex.def Info: ./fig/venturi-eps-converted-to.pdf used on input line 
-21.
-(pdftex.def)             Requested size: 134.4407pt x 125.79192pt.
-
-Overfull \hbox (2.66563pt too wide) in paragraph at lines 1--25
-[] 
- []
-
-[107 <./fig/venturi-eps-converted-to.pdf>]
-Package epstopdf Info: Source file: <./fig/venturiDomain.eps>
-(epstopdf)                    date: 2018-12-13 21:59:12
-(epstopdf)                    size: 40213 bytes
-(epstopdf)             Output file: <./fig/venturiDomain-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-12-13 21:59:12
-(epstopdf)                    size: 16966 bytes
-(epstopdf)             Command: <repstopdf --outfile=./fig/venturiDomain-eps-co
-nverted-to.pdf ./fig/venturiDomain.eps>
-(epstopdf)             \includegraphics on input line 57.
-Package epstopdf Info: Output file is already uptodate.
-
-<./fig/venturiDomain-eps-converted-to.pdf, id=1548, 669.50125pt x 622.325pt>
-File: ./fig/venturiDomain-eps-converted-to.pdf Graphic file (type pdf)
-
-<use ./fig/venturiDomain-eps-converted-to.pdf>
-Package pdftex.def Info: ./fig/venturiDomain-eps-converted-to.pdf used on input
- line 57.
-(pdftex.def)             Requested size: 170.71393pt x 158.68602pt.
-Package epstopdf Info: Source file: <./fig/Discont.eps>
-(epstopdf)                    date: 2018-12-13 21:59:13
-(epstopdf)                    size: 20756 bytes
-(epstopdf)             Output file: <./fig/Discont-eps-converted-to.pdf>
-(epstopdf)                    date: 2019-03-01 15:07:17
-(epstopdf)                    size: 9414 bytes
-(epstopdf)             Command: <repstopdf --outfile=./fig/Discont-eps-converte
-d-to.pdf ./fig/Discont.eps>
-(epstopdf)             \includegraphics on input line 59.
-Package epstopdf Info: Output file is already uptodate.
-
-
-pdfTeX warning: pdflatex (file ./fig/Discont-eps-converted-to.pdf): PDF inclusi
-on: found PDF version <1.7>, but at most version <1.5> allowed
-<./fig/Discont-eps-converted-to.pdf, id=1549, 351.3125pt x 325.215pt>
-File: ./fig/Discont-eps-converted-to.pdf Graphic file (type pdf)
-
-<use ./fig/Discont-eps-converted-to.pdf>
-Package pdftex.def Info: ./fig/Discont-eps-converted-to.pdf used on input line 
-59.
-(pdftex.def)             Requested size: 170.71393pt x 158.03674pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [108 <./fig/venturiDomain-eps-converted-to.pdf> <./fig/Discont-eps-converted-t
-o.pdf>])
-[109] (./capitoli/05_bernoulli/0501in.tex
-Package mdframed Info: mdframed works in twoside mode on input line 4.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 4.
-pdfTeX warning (ext4): destination with the same identifier (name{numExer.2}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.5 S
-     i consideri il serbatoio rappresentato in figura, $D=2\ m$,
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 13.
-Package epstopdf Info: Source file: <./fig/serbatoio.eps>
-(epstopdf)                    date: 2018-12-13 21:59:13
-(epstopdf)                    size: 17044 bytes
-(epstopdf)             Output file: <./fig/serbatoio-eps-converted-to.pdf>
-(epstopdf)                    date: 2019-03-01 15:07:17
-(epstopdf)                    size: 6443 bytes
-(epstopdf)             Command: <repstopdf --outfile=./fig/serbatoio-eps-conver
-ted-to.pdf ./fig/serbatoio.eps>
-(epstopdf)             \includegraphics on input line 18.
-Package epstopdf Info: Output file is already uptodate.
-
-
-pdfTeX warning: pdflatex (file ./fig/serbatoio-eps-converted-to.pdf): PDF inclu
-sion: found PDF version <1.7>, but at most version <1.5> allowed
-<./fig/serbatoio-eps-converted-to.pdf, id=1585, 456.70625pt x 365.365pt>
-File: ./fig/serbatoio-eps-converted-to.pdf Graphic file (type pdf)
-
-<use ./fig/serbatoio-eps-converted-to.pdf>
-Package pdftex.def Info: ./fig/serbatoio-eps-converted-to.pdf used on input lin
-e 18.
-(pdftex.def)             Requested size: 134.4407pt x 107.54758pt.
-
-Overfull \hbox (2.66563pt too wide) in paragraph at lines 1--22
-[] 
- []
-
-) [110 <./fig/serbatoio-eps-converted-to.pdf>]
-(./capitoli/05_bernoulli/0502in.tex
-Package mdframed Info: mdframed works in twoside mode on input line 4.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 4.
-pdfTeX warning (ext4): destination with the same identifier (name{numExer.3}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.5 S
-     i consideri il flusso d'acqua, $\overline{\rho}=999\ kg/m^3$,
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 17.
-Package epstopdf Info: Source file: <./fig/canale.eps>
-(epstopdf)                    date: 2018-12-13 21:59:12
-(epstopdf)                    size: 5043 bytes
-(epstopdf)             Output file: <./fig/canale-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-12-13 21:59:13
-(epstopdf)                    size: 5493 bytes
-(epstopdf)             Command: <repstopdf --outfile=./fig/canale-eps-converted
--to.pdf ./fig/canale.eps>
-(epstopdf)             \includegraphics on input line 22.
-Package epstopdf Info: Output file is already uptodate.
-
-<./fig/canale-eps-converted-to.pdf, id=1605, 379.4175pt x 116.435pt>
-File: ./fig/canale-eps-converted-to.pdf Graphic file (type pdf)
-
-<use ./fig/canale-eps-converted-to.pdf>
-Package pdftex.def Info: ./fig/canale-eps-converted-to.pdf used on input line 2
-2.
-(pdftex.def)             Requested size: 134.4407pt x 41.25742pt.
-
-Overfull \hbox (2.66563pt too wide) in paragraph at lines 1--26
-[] 
- []
-
-[111 <./fig/canale-eps-converted-to.pdf>] [112]) [113]
-(./capitoli/05_bernoulli/0504in.tex
-Package mdframed Info: mdframed works in twoside mode on input line 4.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 4.
-pdfTeX warning (ext4): destination with the same identifier (name{numExer.4}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.5 D
-     ato il condotto a sezione circolare rappresentato in figura,
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 15.
-Package epstopdf Info: Source file: <./fig/condottocircolare.eps>
-(epstopdf)                    date: 2018-12-13 21:59:13
-(epstopdf)                    size: 5131 bytes
-(epstopdf)             Output file: <./fig/condottocircolare-eps-converted-to.p
-df>
-(epstopdf)                    date: 2019-03-01 15:07:18
-(epstopdf)                    size: 5811 bytes
-(epstopdf)             Command: <repstopdf --outfile=./fig/condottocircolare-ep
-s-converted-to.pdf ./fig/condottocircolare.eps>
-(epstopdf)             \includegraphics on input line 20.
-Package epstopdf Info: Output file is already uptodate.
-
-
-pdfTeX warning: pdflatex (file ./fig/condottocircolare-eps-converted-to.pdf): P
-DF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-
-<./fig/condottocircolare-eps-converted-to.pdf, id=1642, 343.2825pt x 211.79124p
-t>
-File: ./fig/condottocircolare-eps-converted-to.pdf Graphic file (type pdf)
- <use ./fig/condottocircolare-eps-converted-to.pdf>
-Package pdftex.def Info: ./fig/condottocircolare-eps-converted-to.pdf used on i
-nput line 20.
-(pdftex.def)             Requested size: 134.4407pt x 82.94403pt.
-
-Overfull \hbox (2.66563pt too wide) in paragraph at lines 1--24
-[] 
- []
-
-Package epstopdf Info: Source file: <./fig/Canale01.eps>
-(epstopdf)                    date: 2018-12-13 21:59:12
-(epstopdf)                    size: 46827 bytes
-(epstopdf)             Output file: <./fig/Canale01-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-12-13 21:59:12
-(epstopdf)                    size: 18734 bytes
-(epstopdf)             Command: <repstopdf --outfile=./fig/Canale01-eps-convert
-ed-to.pdf ./fig/Canale01.eps>
-(epstopdf)             \includegraphics on input line 42.
-Package epstopdf Info: Output file is already uptodate.
-<./fig/Canale01-eps-converted-to.pdf, id=1643, 396.48125pt x 280.04625pt>
-File: ./fig/Canale01-eps-converted-to.pdf Graphic file (type pdf)
-
-<use ./fig/Canale01-eps-converted-to.pdf>
-Package pdftex.def Info: ./fig/Canale01-eps-converted-to.pdf used on input line
- 42.
-(pdftex.def)             Requested size: 149.37958pt x 105.51276pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [114 <./fig/condottocircolare-eps-converted-to.pdf> <./fig/Canale01-eps-conver
-ted-to.pdf>]) [115] (./capitoli/05_bernoulli/0506in.tex
-Package mdframed Info: mdframed works in twoside mode on input line 4.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 4.
-pdfTeX warning (ext4): destination with the same identifier (name{numExer.5}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.5 S
-     i consideri un getto stazionario, assialsimmetrico, d'acqua in
-Underfull \hbox (badness 6173) in paragraph at lines 11--12
-[]\T1/lmr/m/n/10.95 (+20) la cur-va-tu-ra del-le li-nee di flus-so sia
- []
-
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 21.
-Package epstopdf Info: Source file: <./fig/getto_vert.eps>
-(epstopdf)                    date: 2018-12-13 21:59:13
-(epstopdf)                    size: 4962 bytes
-(epstopdf)             Output file: <./fig/getto_vert-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-12-13 21:59:13
-(epstopdf)                    size: 4448 bytes
-(epstopdf)             Command: <repstopdf --outfile=./fig/getto_vert-eps-conve
-rted-to.pdf ./fig/getto_vert.eps>
-(epstopdf)             \includegraphics on input line 26.
-Package epstopdf Info: Output file is already uptodate.
-<./fig/getto_vert-eps-converted-to.pdf, id=1671, 189.70876pt x 357.335pt>
-File: ./fig/getto_vert-eps-converted-to.pdf Graphic file (type pdf)
-
-<use ./fig/getto_vert-eps-converted-to.pdf>
-Package pdftex.def Info: ./fig/getto_vert-eps-converted-to.pdf used on input li
-ne 26.
-(pdftex.def)             Requested size: 89.62865pt x 168.82532pt.
-
-Overfull \hbox (2.66563pt too wide) in paragraph at lines 1--30
-[] 
- []
-
-) [116 <./fig/getto_vert-eps-converted-to.pdf>]
-(./capitoli/05_bernoulli/0507in.tex
-Package mdframed Info: mdframed works in twoside mode on input line 2.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 2.
-pdfTeX warning (ext4): destination with the same identifier (name{numExer.6}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.3   I
-       n un gioco d'acqua ($\rho=999\ kg/m^3$), un disco di diametro $D=35\ ...
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 18.
-<./fig/jet.png, id=1684, 401.5pt x 466.74374pt>
-File: ./fig/jet.png Graphic file (type png)
- <use ./fig/jet.png>
-Package pdftex.def Info: ./fig/jet.png used on input line 24.
-(pdftex.def)             Requested size: 213.39568pt x 248.07806pt.
-
-Overfull \hbox (30.40248pt too wide) in paragraph at lines 1--26
-[]$[]$   $[]$ 
- []
-
-) [117 <./fig/jet.png>] (./capitoli/05_bernoulli/0508in.tex
-Package mdframed Info: mdframed works in twoside mode on input line 2.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 2.
-pdfTeX warning (ext4): destination with the same identifier (name{numExer.7}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.3  U
-      n getto di acqua ($\rho = 1000 \ kg/m^3$) colpisce una lamina
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 22.
-Package epstopdf Info: Source file: <./fig/jet_angle.eps>
-(epstopdf)                    date: 2018-12-13 21:59:12
-(epstopdf)                    size: 39702 bytes
-(epstopdf)             Output file: <./fig/jet_angle-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-12-13 21:59:13
-(epstopdf)                    size: 14558 bytes
-(epstopdf)             Command: <repstopdf --outfile=./fig/jet_angle-eps-conver
-ted-to.pdf ./fig/jet_angle.eps>
-(epstopdf)             \includegraphics on input line 28.
-Package epstopdf Info: Output file is already uptodate.
-
-<./fig/jet_angle-eps-converted-to.pdf, id=1692, 356.33125pt x 388.45125pt>
-File: ./fig/jet_angle-eps-converted-to.pdf Graphic file (type pdf)
-
-<use ./fig/jet_angle-eps-converted-to.pdf>
-Package pdftex.def Info: ./fig/jet_angle-eps-converted-to.pdf used on input lin
-e 28.
-(pdftex.def)             Requested size: 213.39568pt x 232.62799pt.
-
-Overfull \hbox (30.40248pt too wide) in paragraph at lines 1--30
-[]$[]$   $[]$ 
- []
-
-) [118 <./fig/jet_angle-eps-converted-to.pdf>])
-\openout2 = `./capitoli/06_slnEsatte/slnEsatte.aux'.
-
-
-(./capitoli/06_slnEsatte/slnEsatte.tex
-Capitolo 6.
-File: Pictures/blank_fig.pdf Graphic file (type pdf)
-<use Pictures/blank_fig.pdf>
-Package pdftex.def Info: Pictures/blank_fig.pdf used on input line 2.
-(pdftex.def)             Requested size: 597.50787pt x 298.7509pt.
- (./capitoli/06_slnEsatte/0600in.tex [119
-
-
-
-
-] [120]
-[121]
-Package mdframed Info: mdframed works in twoside mode on input line 202.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 202.
-Package mdframed Info: mdframed works in twoside mode on input line 215.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 215.
- [122] [123]) [124] (./capitoli/06_slnEsatte/0604in.tex
-Package mdframed Info: mdframed works in twoside mode on input line 4.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 4.
-pdfTeX warning (ext4): destination with the same identifier (name{numExer.1}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.5 I
-     n un canale piano, di lunghezza e apertura infinita,
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 15.
-
-<./fig/slnEsatte-newton-couette.pdf, id=1762, 597.50786pt x 845.04686pt>
-File: ./fig/slnEsatte-newton-couette.pdf Graphic file (type pdf)
-
-<use ./fig/slnEsatte-newton-couette.pdf>
-Package pdftex.def Info: ./fig/slnEsatte-newton-couette.pdf used on input line 
-20.
-(pdftex.def)             Requested size: 134.4407pt x 98.2183pt.
-
-Overfull \hbox (2.66563pt too wide) in paragraph at lines 1--24
-[] 
- []
-
-
-Underfull \vbox (badness 2617) has occurred while \output is active []
-
- [125 <./fig/slnEsatte-newton-couette.pdf>]) [126] (./capitoli/06_slnEsatte/060
-7in.tex
-Package mdframed Info: mdframed works in twoside mode on input line 4.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 4.
-pdfTeX warning (ext4): destination with the same identifier (name{numExer.2}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.5  U
-      na corrente di Poiseuille di acqua ($\rho = 1000 / kg/m^3$, $\mu =
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 20.
-Package epstopdf Info: Source file: <./fig/manometro_Poiseuille.eps>
-(epstopdf)                    date: 2018-12-13 21:59:13
-(epstopdf)                    size: 26967 bytes
-(epstopdf)             Output file: <./fig/manometro_Poiseuille-eps-converted-t
-o.pdf>
-(epstopdf)                    date: 2018-12-13 21:59:13
-(epstopdf)                    size: 12706 bytes
-(epstopdf)             Command: <repstopdf --outfile=./fig/manometro_Poiseuille
--eps-converted-to.pdf ./fig/manometro_Poiseuille.eps>
-(epstopdf)             \includegraphics on input line 25.
-Package epstopdf Info: Output file is already uptodate.
-
-<./fig/manometro_Poiseuille-eps-converted-to.pdf, id=1780, 361.35pt x 234.8775p
-t>
-File: ./fig/manometro_Poiseuille-eps-converted-to.pdf Graphic file (type pdf)
- <use ./fig/manometro_Poiseuille-eps-converted-to.pdf>
-Package pdftex.def Info: ./fig/manometro_Poiseuille-eps-converted-to.pdf used o
-n input line 25.
-(pdftex.def)             Requested size: 192.0548pt x 124.8357pt.
-
-Overfull \hbox (27.8358pt too wide) in paragraph at lines 1--29
-[] 
- []
-
-[127 <./fig/manometro_Poiseuille-eps-converted-to.pdf>]) [128]
-(./capitoli/06_slnEsatte/0609in.tex
-Package mdframed Info: mdframed works in twoside mode on input line 4.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 4.
-pdfTeX warning (ext4): destination with the same identifier (name{numExer.3}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.5 S
-     i consideri una corrente d'acqua a pelo libero, laminare e stazionaria,...
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 10.
-<./fig/slnEsatte-scivolo.pdf, id=1807, 225.93095pt x 128.41759pt>
-File: ./fig/slnEsatte-scivolo.pdf Graphic file (type pdf)
-
-<use ./fig/slnEsatte-scivolo.pdf>
-Package pdftex.def Info: ./fig/slnEsatte-scivolo.pdf used on input line 14.
-(pdftex.def)             Requested size: 134.4407pt x 76.41624pt.
- [129 <./fig/slnEsatte-scivolo.pdf>]) [130]
-(./capitoli/06_slnEsatte/0603in.tex
-Package mdframed Info: mdframed works in twoside mode on input line 4.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 4.
-pdfTeX warning (ext4): destination with the same identifier (name{numExer.4}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.5 S
-     i consideri una corrente d'acqua a pelo libero, laminare e stazionaria,...
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 29.
-
-Underfull \vbox (badness 1062) has occurred while \output is active []
-
- [131]
-[132]) [133] (./capitoli/06_slnEsatte/0605in.tex
-Package mdframed Info: mdframed works in twoside mode on input line 4.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 4.
-pdfTeX warning (ext4): destination with the same identifier (name{numExer.5}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.5 U
-     n manometro a mercurio ($\rho_{hg} = 13610 \  kg/m^3$)
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 18.
-
-<./fig/slnEsatte-poiseuille.pdf, id=1858, 236.47086pt x 196.3586pt>
-File: ./fig/slnEsatte-poiseuille.pdf Graphic file (type pdf)
-
-<use ./fig/slnEsatte-poiseuille.pdf>
-Package pdftex.def Info: ./fig/slnEsatte-poiseuille.pdf used on input line 23.
-(pdftex.def)             Requested size: 134.4407pt x 111.63492pt.
-
-Overfull \hbox (2.66563pt too wide) in paragraph at lines 1--27
-[] 
- []
-
-[134 <./fig/slnEsatte-poiseuille.pdf>] [135]) [136]
-(./capitoli/06_slnEsatte/0601in.tex
-Package mdframed Info: mdframed works in twoside mode on input line 4.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 4.
-pdfTeX warning (ext4): destination with the same identifier (name{numExer.6}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.5 S
-     i consideri la corrente piana fra due cilindri coassiali rotanti.
-Overfull \hbox (55.8769pt too wide) in paragraph at lines 17--22
-\OML/lmm/m/it/10.95 P\OT1/lmr/m/n/10.95 (-20) (\OML/lmm/m/it/10.95 r\OT1/lmr/m/
-n/10.95 (-20) ) = \OML/lmm/m/it/10.95 P[] \OMS/lmsy/m/n/10.95 ^^@ \OML/lmm/m/it
-/10.95 ^^Z []$\T1/lmr/m/n/10.95 (-20) , 
- []
-
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 22.
-<./fig/slnEsatte-taylor-couette-2.pdf, id=1889, 293.4559pt x 286.31825pt>
-File: ./fig/slnEsatte-taylor-couette-2.pdf Graphic file (type pdf)
-
-<use ./fig/slnEsatte-taylor-couette-2.pdf>
-Package pdftex.def Info: ./fig/slnEsatte-taylor-couette-2.pdf used on input lin
-e 27.
-(pdftex.def)             Requested size: 134.4407pt x 131.17062pt.
-
-Overfull \hbox (2.66563pt too wide) in paragraph at lines 1--31
-[] 
- []
-
-[137 <./fig/slnEsatte-taylor-couette-2.pdf>]) [138]
-(./capitoli/06_slnEsatte/0606in.tex
-Package mdframed Info: mdframed works in twoside mode on input line 4.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 4.
-pdfTeX warning (ext4): destination with the same identifier (name{numExer.7}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.5 S
-     i consideri la corrente piana di un fluido di densità $\rho$ fra due c...
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 9.
-<./fig/slnEsatte-taylor-couette.pdf, id=1911, 318.49167pt x 286.31825pt>
-File: ./fig/slnEsatte-taylor-couette.pdf Graphic file (type pdf)
-
-<use ./fig/slnEsatte-taylor-couette.pdf>
-Package pdftex.def Info: ./fig/slnEsatte-taylor-couette.pdf used on input line 
-14.
-(pdftex.def)             Requested size: 141.91014pt x 127.57504pt.
-
-Overfull \hbox (2.66563pt too wide) in paragraph at lines 1--18
-[] 
- []
-
-[139 <./fig/slnEsatte-taylor-couette.pdf>]) [140]
-(./capitoli/06_slnEsatte/0608in.tex
-Package mdframed Info: mdframed works in twoside mode on input line 4.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 4.
-pdfTeX warning (ext4): destination with the same identifier (name{numExer.8}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.5 U
-     n contenitore cilindrico (raggio $R$, altezza $H$) è riempito fino ad una
-(/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-32.def
-File: uni-32.def 2013/05/13 UCS: Unicode data U+2000..U+20FF
-)
-Underfull \hbox (badness 2503) in paragraph at lines 10--11
-[]\T1/lmr/m/n/10.95 (+20) la for-ma che as-su-me il li-qui-do
- []
-
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 18.
-<./fig/vessel.pdf, id=1934, 368.03217pt x 204.765pt>
-File: ./fig/vessel.pdf Graphic file (type pdf)
- <use ./fig/vessel.pdf>
-Package pdftex.def Info: ./fig/vessel.pdf used on input line 23.
-(pdftex.def)             Requested size: 192.0548pt x 106.85333pt.
-
-Overfull \hbox (27.8358pt too wide) in paragraph at lines 1--27
-[] 
- []
-
-[141 <./fig/vessel.pdf>]) [142])
+) [5] [6]
 \openout2 = `./capitoli/07_similitudine/similitudine.aux'.
 
  (./capitoli/07_similitudine/similitudine.tex
-Capitolo 7.
+Capitolo 1.
 File: Pictures/blank_fig.pdf Graphic file (type pdf)
 <use Pictures/blank_fig.pdf>
-Package pdftex.def Info: Pictures/blank_fig.pdf used on input line 2.
+Package pdftex.def Info: Pictures/blank_fig.pdf  used on input line 2.
 (pdftex.def)             Requested size: 597.50787pt x 298.7509pt.
- (./capitoli/07_similitudine/07teoria.tex [143
+(./capitoli/07_similitudine/07teoria.tex
+(/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-0.def
+File: uni-0.def 2013/05/13 UCS: Unicode data U+0000..U+00FF
+) [7
 
 
-
-
-]
-[144] [145] [146] [147] [148] [149] [150] [151] [152] [153] [154] [155]
-(./capitoli/07_similitudine/07lorenz.tex [156] [157]
-<./fig/eq_rho+1_01.pdf, id=2149, 650.43pt x 361.35pt>
+] [8] [9]
+(./capitoli/07_similitudine/07nonInertial.tex [10]) [11] [12] [13] [14]
+[15] [16] [17] [18] [19] [20] (./capitoli/07_similitudine/07lorenz.tex
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <9> on input line 19.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 19.
+ [21]
+[22]
+<./fig/eq_rho+1_01.pdf, id=322, 650.43pt x 361.35pt>
 File: ./fig/eq_rho+1_01.pdf Graphic file (type pdf)
-
 <use ./fig/eq_rho+1_01.pdf>
-Package pdftex.def Info: ./fig/eq_rho+1_01.pdf used on input line 155.
+Package pdftex.def Info: ./fig/eq_rho+1_01.pdf  used on input line 155.
 (pdftex.def)             Requested size: 192.0548pt x 126.16562pt.
-
-<./fig/eq_rho+1_1.pdf, id=2151, 650.43pt x 361.35pt>
+<./fig/eq_rho+1_1.pdf, id=324, 650.43pt x 361.35pt>
 File: ./fig/eq_rho+1_1.pdf Graphic file (type pdf)
-
 <use ./fig/eq_rho+1_1.pdf>
-Package pdftex.def Info: ./fig/eq_rho+1_1.pdf used on input line 159.
+Package pdftex.def Info: ./fig/eq_rho+1_1.pdf  used on input line 159.
 (pdftex.def)             Requested size: 192.0548pt x 126.16562pt.
-
-<./fig/eq_rho+1_5.pdf, id=2153, 650.43pt x 361.35pt>
+<./fig/eq_rho+1_5.pdf, id=326, 650.43pt x 361.35pt>
 File: ./fig/eq_rho+1_5.pdf Graphic file (type pdf)
-
 <use ./fig/eq_rho+1_5.pdf>
-Package pdftex.def Info: ./fig/eq_rho+1_5.pdf used on input line 162.
+Package pdftex.def Info: ./fig/eq_rho+1_5.pdf  used on input line 162.
 (pdftex.def)             Requested size: 192.0548pt x 126.16562pt.
-
-<./fig/eq_rho+5_0.pdf, id=2155, 650.43pt x 361.35pt>
+<./fig/eq_rho+5_0.pdf, id=328, 650.43pt x 361.35pt>
 File: ./fig/eq_rho+5_0.pdf Graphic file (type pdf)
-
 <use ./fig/eq_rho+5_0.pdf>
-Package pdftex.def Info: ./fig/eq_rho+5_0.pdf used on input line 166.
+Package pdftex.def Info: ./fig/eq_rho+5_0.pdf  used on input line 166.
 (pdftex.def)             Requested size: 192.0548pt x 126.16562pt.
-
-<./fig/eq_rho+15_0.pdf, id=2157, 650.43pt x 361.35pt>
+<./fig/eq_rho+15_0.pdf, id=330, 650.43pt x 361.35pt>
 File: ./fig/eq_rho+15_0.pdf Graphic file (type pdf)
-
 <use ./fig/eq_rho+15_0.pdf>
-Package pdftex.def Info: ./fig/eq_rho+15_0.pdf used on input line 169.
+Package pdftex.def Info: ./fig/eq_rho+15_0.pdf  used on input line 169.
 (pdftex.def)             Requested size: 192.0548pt x 126.16562pt.
-
-<./fig/eq_rho+24_7.pdf, id=2159, 650.43pt x 361.35pt>
+<./fig/eq_rho+24_7.pdf, id=332, 650.43pt x 361.35pt>
 File: ./fig/eq_rho+24_7.pdf Graphic file (type pdf)
-
 <use ./fig/eq_rho+24_7.pdf>
-Package pdftex.def Info: ./fig/eq_rho+24_7.pdf used on input line 173.
+Package pdftex.def Info: ./fig/eq_rho+24_7.pdf  used on input line 173.
 (pdftex.def)             Requested size: 192.0548pt x 126.16562pt.
- [158 <./fig/eq_rho+1_01.pdf> <./fig/eq_rho+1_1.pdf> <./fig/eq_rho+1_5.pdf> <./
-fig/eq_rho+5_0.pdf> <./fig/eq_rho+15_0.pdf> <./fig/eq_rho+24_7.pdf>] <./fig/bif
-_pitchfork.pdf, id=2288, 428.5611pt x 433.62pt>
+ [23 <./fig/eq_rho+1_01.pdf> <./fig/eq_rho+1_1.pdf> <./fig/eq_rho+1_5.pdf> <./f
+ig/eq_rho+5_0.pdf> <./fig/eq_rho+15_0.pdf> <./fig/eq_rho+24_7.pdf>]
+<./fig/bif_pitchfork.pdf, id=460, 428.5611pt x 433.62pt>
 File: ./fig/bif_pitchfork.pdf Graphic file (type pdf)
-
 <use ./fig/bif_pitchfork.pdf>
-Package pdftex.def Info: ./fig/bif_pitchfork.pdf used on input line 224.
+Package pdftex.def Info: ./fig/bif_pitchfork.pdf  used on input line 224.
 (pdftex.def)             Requested size: 170.71393pt x 172.73035pt.
-
-<./fig/bif_hopf.pdf, id=2289, 392.42609pt x 346.89601pt>
+<./fig/bif_hopf.pdf, id=461, 392.42609pt x 346.89601pt>
 File: ./fig/bif_hopf.pdf Graphic file (type pdf)
-
 <use ./fig/bif_hopf.pdf>
-Package pdftex.def Info: ./fig/bif_hopf.pdf used on input line 228.
+Package pdftex.def Info: ./fig/bif_hopf.pdf  used on input line 228.
 (pdftex.def)             Requested size: 192.0548pt x 169.7688pt.
 
 Overfull \hbox (3.01285pt too wide) in paragraph at lines 223--238
  [][] 
  []
 
-[159 <./fig/bif_pitchfork.pdf> <./fig/bif_hopf.pdf
+[24 <./fig/bif_pitchfork.pdf> <./fig/bif_hopf.pdf
 
 pdfTeX warning: pdflatex (file ./fig/bif_hopf.pdf): PDF inclusion: multiple pdf
 s with page group included in a single page
->] <./fig/ic_dependence_xt_rho+28.pdf, id=2348, 744.38098pt x 286.9119pt>
+>]
+<./fig/ic_dependence_xt_rho+28.pdf, id=520, 744.38098pt x 286.9119pt>
 File: ./fig/ic_dependence_xt_rho+28.pdf Graphic file (type pdf)
-
 <use ./fig/ic_dependence_xt_rho+28.pdf>
-Package pdftex.def Info: ./fig/ic_dependence_xt_rho+28.pdf used on input line 2
-60.
+Package pdftex.def Info: ./fig/ic_dependence_xt_rho+28.pdf  used on input line 
+260.
 (pdftex.def)             Requested size: 277.41176pt x 110.66249pt.
-
-<./fig/ic_dependence_attractor_rho+28.pdf, id=2350, 477.70471pt x 490.7133pt>
+<./fig/ic_dependence_attractor_rho+28.pdf, id=522, 477.70471pt x 490.7133pt>
 File: ./fig/ic_dependence_attractor_rho+28.pdf Graphic file (type pdf)
-
 <use ./fig/ic_dependence_attractor_rho+28.pdf>
-Package pdftex.def Info: ./fig/ic_dependence_attractor_rho+28.pdf used on input
- line 263.
+Package pdftex.def Info: ./fig/ic_dependence_attractor_rho+28.pdf  used on inpu
+t line 263.
 (pdftex.def)             Requested size: 149.37958pt x 162.47148pt.
 
 Overfull \hbox (17.76814pt too wide) in paragraph at lines 259--277
  [][] 
  []
 
-[160 <./fig/ic_dependence_xt_rho+28.pdf> <./fig/ic_dependence_attractor_rho+28.
-pdf>] <./fig/lorenz_cm001.pdf, id=2397, 665.47203pt x 601.23204pt>
+[25 <./fig/ic_dependence_xt_rho+28.pdf> <./fig/ic_dependence_attractor_rho+28.p
+df>]
+<./fig/lorenz_cm001.pdf, id=570, 665.47203pt x 601.23204pt>
 File: ./fig/lorenz_cm001.pdf Graphic file (type pdf)
-
 <use ./fig/lorenz_cm001.pdf>
-Package pdftex.def Info: ./fig/lorenz_cm001.pdf used on input line 364.
+Package pdftex.def Info: ./fig/lorenz_cm001.pdf  used on input line 364.
 (pdftex.def)             Requested size: 192.0548pt x 197.70863pt.
-
-<./fig/lorenz_cm002.pdf, id=2399, 665.47203pt x 601.23204pt>
+<./fig/lorenz_cm002.pdf, id=572, 665.47203pt x 601.23204pt>
 File: ./fig/lorenz_cm002.pdf Graphic file (type pdf)
-
 <use ./fig/lorenz_cm002.pdf>
-Package pdftex.def Info: ./fig/lorenz_cm002.pdf used on input line 367.
+Package pdftex.def Info: ./fig/lorenz_cm002.pdf  used on input line 367.
 (pdftex.def)             Requested size: 192.0548pt x 197.70863pt.
-
-<./fig/lorenz_cm003.pdf, id=2401, 665.47203pt x 601.23204pt>
+<./fig/lorenz_cm003.pdf, id=574, 665.47203pt x 601.23204pt>
 File: ./fig/lorenz_cm003.pdf Graphic file (type pdf)
-
 <use ./fig/lorenz_cm003.pdf>
-Package pdftex.def Info: ./fig/lorenz_cm003.pdf used on input line 370.
+Package pdftex.def Info: ./fig/lorenz_cm003.pdf  used on input line 370.
 (pdftex.def)             Requested size: 192.0548pt x 197.70863pt.
-
-<./fig/lorenz_cm004.pdf, id=2403, 665.47203pt x 601.23204pt>
+<./fig/lorenz_cm004.pdf, id=576, 665.47203pt x 601.23204pt>
 File: ./fig/lorenz_cm004.pdf Graphic file (type pdf)
-
 <use ./fig/lorenz_cm004.pdf>
-Package pdftex.def Info: ./fig/lorenz_cm004.pdf used on input line 373.
+Package pdftex.def Info: ./fig/lorenz_cm004.pdf  used on input line 373.
 (pdftex.def)             Requested size: 192.0548pt x 197.70863pt.
-
-<./fig/lorenz_cm005.pdf, id=2405, 665.47203pt x 601.23204pt>
+<./fig/lorenz_cm005.pdf, id=578, 665.47203pt x 601.23204pt>
 File: ./fig/lorenz_cm005.pdf Graphic file (type pdf)
-
 <use ./fig/lorenz_cm005.pdf>
-Package pdftex.def Info: ./fig/lorenz_cm005.pdf used on input line 376.
+Package pdftex.def Info: ./fig/lorenz_cm005.pdf  used on input line 376.
 (pdftex.def)             Requested size: 192.0548pt x 197.70863pt.
-
-<./fig/lorenz_cm006.pdf, id=2407, 665.47203pt x 601.23204pt>
+<./fig/lorenz_cm006.pdf, id=580, 665.47203pt x 601.23204pt>
 File: ./fig/lorenz_cm006.pdf Graphic file (type pdf)
-
 <use ./fig/lorenz_cm006.pdf>
-Package pdftex.def Info: ./fig/lorenz_cm006.pdf used on input line 379.
+Package pdftex.def Info: ./fig/lorenz_cm006.pdf  used on input line 379.
 (pdftex.def)             Requested size: 192.0548pt x 197.70863pt.
 
 
 LaTeX Warning: Float too large for page by 9.03418pt on input line 390.
 
-[161] [162 <./fig/lorenz_cm001.pdf> <./fig/lorenz_cm002.pdf> <./fig/lorenz_cm00
-3.pdf> <./fig/lorenz_cm004.pdf> <./fig/lorenz_cm005.pdf> <./fig/lorenz_cm006.pd
-f>]) [163
+[26] [27 <./fig/lorenz_cm001.pdf> <./fig/lorenz_cm002.pdf> <./fig/lorenz_cm003.
+pdf> <./fig/lorenz_cm004.pdf> <./fig/lorenz_cm005.pdf> <./fig/lorenz_cm006.pdf>
+]) [28
 
 ]) (./capitoli/07_similitudine/0701in.tex
 Package mdframed Info: mdframed works in twoside mode on input line 2.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 2.
-pdfTeX warning (ext4): destination with the same identifier (name{numExer.1}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.3 U
-     n missile vola alla quota di $7000\  m$, dove la densit\`{a} [164
+ [29
 
-])
-[165] (./capitoli/07_similitudine/0702in.tex
+]) [30]
+(./capitoli/07_similitudine/0702in.tex
 Package mdframed Info: mdframed works in twoside mode on input line 2.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 2.
-pdfTeX warning (ext4): destination with the same identifier (name{numExer.2}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.3 U
-     n aeromobile vola nell'alta atmosfera a velocit\`{a} costante $V_v=252\...
-) [166] [167] (./capitoli/07_similitudine/0703in.tex
+) [31] [32]
+(./capitoli/07_similitudine/0703in.tex
 Package mdframed Info: mdframed works in twoside mode on input line 2.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 2.
-pdfTeX warning (ext4): destination with the same identifier (name{numExer.3}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.3 L
-     a velocit\`{a} di pattugliamento di un sottomarino vale $V_v = 2.5\ m/s$.
-[168]) [169] (./capitoli/07_similitudine/0704in.tex
+ [33]) [34]
+(./capitoli/07_similitudine/0704in.tex
 Package mdframed Info: mdframed works in twoside mode on input line 1.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 1.
-pdfTeX warning (ext4): destination with the same identifier (name{numExer.4}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.2  S
-      i vuole studiare con la corrente di aria che esce da un ugello verticale
 Package mdframed Info: Not enough space on this page on input line 18.
-) [170] (./capitoli/07_similitudine/0706in.tex
+) [35]
+(./capitoli/07_similitudine/0706in.tex
 Package mdframed Info: mdframed works in twoside mode on input line 2.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 2.
-pdfTeX warning (ext4): destination with the same identifier (name{numExer.5}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.3   S
-       i deve progettare un condotto che trasporti un fluido con densità
 Package mdframed Info: mdframed inside a box 
  mdframed uses option nobreak mdframed on input line 20.
 Package epstopdf Info: Source file: <./fig/pipe.eps>
-(epstopdf)                    date: 2018-12-13 21:59:12
+(epstopdf)                    date: 2020-03-23 17:00:24
 (epstopdf)                    size: 18761 bytes
 (epstopdf)             Output file: <./fig/pipe-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-12-13 21:59:13
+(epstopdf)                    date: 2020-03-23 17:00:24
 (epstopdf)                    size: 8239 bytes
 (epstopdf)             Command: <repstopdf --outfile=./fig/pipe-eps-converted-t
 o.pdf ./fig/pipe.eps>
 (epstopdf)             \includegraphics on input line 26.
 Package epstopdf Info: Output file is already uptodate.
-
-<./fig/pipe-eps-converted-to.pdf, id=2531, 379.4175pt x 320.19624pt>
+<./fig/pipe-eps-converted-to.pdf, id=704, 379.4175pt x 320.19624pt>
 File: ./fig/pipe-eps-converted-to.pdf Graphic file (type pdf)
-
 <use ./fig/pipe-eps-converted-to.pdf>
-Package pdftex.def Info: ./fig/pipe-eps-converted-to.pdf used on input line 26.
-
+Package pdftex.def Info: ./fig/pipe-eps-converted-to.pdf  used on input line 26
+.
 (pdftex.def)             Requested size: 213.39568pt x 180.0904pt.
 
 Overfull \hbox (30.40248pt too wide) in paragraph at lines 1--28
 []$[]$   $[]$ 
  []
 
-[171 <./fig/pipe-eps-converted-to.pdf>] [172]
-<./fig/MoodyChart.jpg, id=2557, 1027.84pt x 701.62125pt>
+[36 <./fig/pipe-eps-converted-to.pdf>] [37]
+<./fig/MoodyChart.jpg, id=732, 1027.84pt x 701.62125pt>
 File: ./fig/MoodyChart.jpg Graphic file (type jpg)
-
 <use ./fig/MoodyChart.jpg>
-Package pdftex.def Info: ./fig/MoodyChart.jpg used on input line 158.
+Package pdftex.def Info: ./fig/MoodyChart.jpg  used on input line 158.
 (pdftex.def)             Requested size: 426.79135pt x 291.33868pt.
 
 Overfull \hbox (17.0pt too wide) in paragraph at lines 156--160
 []$[]$ 
  []
 
-) [173 <./fig/MoodyChart.jpg>] (./capitoli/07_similitudine/0707in.tex
+) [38 <./fig/MoodyChart.jpg>] (./capitoli/07_similitudine/0707in.tex
 Package mdframed Info: mdframed works in twoside mode on input line 2.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 2.
-pdfTeX warning (ext4): destination with the same identifier (name{numExer.6}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.3  L
-      'obiettivo di una prova in galleria è lo studio del campo di moto
 Package mdframed Info: mdframed inside a box 
  mdframed uses option nobreak mdframed on input line 25.
 Package epstopdf Info: Source file: <./fig/helicopter.eps>
-(epstopdf)                    date: 2018-12-13 21:59:12
+(epstopdf)                    date: 2020-03-23 17:00:24
 (epstopdf)                    size: 31513 bytes
 (epstopdf)             Output file: <./fig/helicopter-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-12-13 21:59:12
+(epstopdf)                    date: 2020-03-23 17:00:24
 (epstopdf)                    size: 11943 bytes
 (epstopdf)             Command: <repstopdf --outfile=./fig/helicopter-eps-conve
 rted-to.pdf ./fig/helicopter.eps>
 (epstopdf)             \includegraphics on input line 31.
 Package epstopdf Info: Output file is already uptodate.
-
-<./fig/helicopter-eps-converted-to.pdf, id=2563, 436.63126pt x 513.92pt>
+<./fig/helicopter-eps-converted-to.pdf, id=738, 436.63126pt x 513.92pt>
 File: ./fig/helicopter-eps-converted-to.pdf Graphic file (type pdf)
-
 <use ./fig/helicopter-eps-converted-to.pdf>
-Package pdftex.def Info: ./fig/helicopter-eps-converted-to.pdf used on input li
-ne 31.
+Package pdftex.def Info: ./fig/helicopter-eps-converted-to.pdf  used on input l
+ine 31.
 (pdftex.def)             Requested size: 213.39568pt x 251.17212pt.
 
 Overfull \hbox (30.40248pt too wide) in paragraph at lines 1--33
 []$[]$   $[]$ 
  []
 
-[174 <./fig/helicopter-eps-converted-to.pdf>]) [175]) [176
-
-
-]
-\openout2 = `./capitoli/08_aerodinamica/aerodinamica.aux'.
-
-
-(./capitoli/08_aerodinamica/aerodinamica.tex
-Capitolo 8.
-File: Pictures/blank_fig.pdf Graphic file (type pdf)
-<use Pictures/blank_fig.pdf>
-Package pdftex.def Info: Pictures/blank_fig.pdf used on input line 2.
-(pdftex.def)             Requested size: 597.50787pt x 298.7509pt.
- (./capitoli/08_aerodinamica/08teoria.tex [177
-
-
-]
-
-LaTeX Font Warning: Command \small invalid in math mode on input line 24.
-
-
-LaTeX Font Warning: Command \small invalid in math mode on input line 24.
-
-
-Overfull \hbox (28.92445pt too wide) detected at line 30
- $[] [] []$  
- []
-
-) [178] (./capitoli/08_aerodinamica/0807in.tex
-Package mdframed Info: mdframed works in twoside mode on input line 3.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 3.
-pdfTeX warning (ext4): destination with the same identifier (name{numExer.1}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.4   U
-       n flusso incomprimibile, irrotazionale, bidimensionale
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 22.
-Package epstopdf Info: Source file: <./fig/piano2.eps>
-(epstopdf)                    date: 2019-05-04 16:44:25
-(epstopdf)                    size: 34470 bytes
-(epstopdf)             Output file: <./fig/piano2-eps-converted-to.pdf>
-(epstopdf)                    date: 2019-05-04 16:45:34
-(epstopdf)                    size: 13540 bytes
-(epstopdf)             Command: <repstopdf --outfile=./fig/piano2-eps-converted
--to.pdf ./fig/piano2.eps>
-(epstopdf)             \includegraphics on input line 26.
-Package epstopdf Info: Output file is already uptodate.
-
-<./fig/piano2-eps-converted-to.pdf, id=2600, 271.0125pt x 235.88126pt>
-File: ./fig/piano2-eps-converted-to.pdf Graphic file (type pdf)
-
-<use ./fig/piano2-eps-converted-to.pdf>
-Package pdftex.def Info: ./fig/piano2-eps-converted-to.pdf used on input line 2
-6.
-(pdftex.def)             Requested size: 149.37958pt x 130.01942pt.
-
-Overfull \hbox (11.31563pt too wide) in paragraph at lines 1--30
-[][] 
- []
-
-[179 <./fig/piano2-eps-converted-to.pdf>]) [180]
-(./capitoli/08_aerodinamica/0801in.tex
-Package mdframed Info: mdframed works in twoside mode on input line 4.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 4.
-pdfTeX warning (ext4): destination with the same identifier (name{numExer.2}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.5 S
-     i consideri la corrente a potenziale piana e stazionaria descritta in u...
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 20.
-
-Overfull \hbox (18.49927pt too wide) detected at line 85
-  $\OML/lmm/m/it/10.95 Q \OT1/lmr/m/n/10.95 = [][] \OML/cmm/b/it/10.95 u \OMS/l
-msy/m/n/10.95 ^^A [] \OT1/lmr/m/n/10.95 = [][](\OML/lmm/m/it/10.95 u[]n[] \OT1/
-lmr/m/n/10.95 + \OML/lmm/m/it/10.95 u[]n[]\OT1/lmr/m/n/10.95 ) = [][](\OML/lmm/
-m/it/10.95 u[]t[] \OMS/lmsy/m/n/10.95 ^^@ \OML/lmm/m/it/10.95 u[]t[]\OT1/lmr/m/
-n/10.95 ) = [][] [] = \OML/lmm/m/it/10.95  \OT1/lmr/m/n/10.95 (1\OML/lmm/m/it/1
-0.95 ; \OT1/lmr/m/n/10.95 1) \OMS/lmsy/m/n/10.95 ^^@ \OML/lmm/m/it/10.95  \OT1/
-lmr/m/n/10.95 (0\OML/lmm/m/it/10.95 ; \OT1/lmr/m/n/10.95 0) = 16$  
- []
-
-[181]) [182] (./capitoli/08_aerodinamica/08005in.tex
-Package mdframed Info: mdframed works in twoside mode on input line 4.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 4.
-pdfTeX warning (ext4): destination with the same identifier (name{numExer.3}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.5 T
-     rovare il campo di moto generato da una doppietta.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 7.
- [183]) [184]
-(./capitoli/08_aerodinamica/0802in.tex
-Package mdframed Info: mdframed works in twoside mode on input line 4.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 4.
-pdfTeX warning (ext4): destination with the same identifier (name{numExer.4}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.5 U
-     na corrente piana con velocit\`{a} asintotica $U_\infty=10\ m/s$ invest...
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 11.
-) [185] (./capitoli/08_aerodinamica/0803in.tex
-Package mdframed Info: mdframed works in twoside mode on input line 4.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 4.
-pdfTeX warning (ext4): destination with the same identifier (name{numExer.5}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.5 U
-     na corrente piana con velocit\`{a} asintotica orizzontale (parallela al...
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 10.
-) [186] (./capitoli/08_aerodinamica/0804in.tex
-Package mdframed Info: mdframed works in twoside mode on input line 4.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 4.
-pdfTeX warning (ext4): destination with the same identifier (name{numExer.6}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.5   S
-       i consideri la copertura rigida di un campo da calcio avente sezione ...
-
-Underfull \hbox (badness 6876) in paragraph at lines 11--12
-[]\T1/lmr/m/n/10.95 (+20) la di-stri-bu-zio-ne del-la pres-sio-ne
- []
-
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 17.
-<./fig/Cyl.png, id=2664, 490.83376pt x 324.21124pt>
-File: ./fig/Cyl.png Graphic file (type png)
- <use ./fig/Cyl.png>
-Package pdftex.def Info: ./fig/Cyl.png used on input line 22.
-(pdftex.def)             Requested size: 224.06937pt x 148.0061pt.
-
-Overfull \hbox (74.68979pt too wide) in paragraph at lines 22--23
- [] 
- []
-
-
-Underfull \vbox (badness 4205) has occurred while \output is active []
-
- [187 <./fig/Cyl.png>]) [188] (./capitoli/08_aerodinamica/08006in.tex
-Package mdframed Info: mdframed works in twoside mode on input line 2.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 2.
-pdfTeX warning (ext4): destination with the same identifier (name{numExer.7}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.3 I
-     l metodo di Pistolesi è un primo metodo rudimentale per la modellazion...
-Package mdframed Info: Not enough space on this page on input line 11.
-[189]
-Package mdframed Info: mdframed works in twoside mode on input line 54.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 54.
-pdfTeX warning (ext4): destination with the same identifier (name{numExer.8}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.55 U
-      sare il metodo di Pistolesi per ottenere delle informazioni qualitativ...
-Package mdframed Info: Not enough space on this page on input line 61.
-
-Overfull \hbox (20.16078pt too wide) in paragraph at lines 102--103
- [] 
- []
-
-
-Overfull \hbox (15.39355pt too wide) in paragraph at lines 72--106
-[][] 
- []
-
-[190
-
-]
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 146.
-
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 156.
-
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 157.
-
-
-Overfull \hbox (14.81415pt too wide) in paragraph at lines 164--164
-[]          \T1/lmtt/m/n/10.95 +------------------------[] 
- []
-
-
-Overfull \hbox (6.19106pt too wide) in paragraph at lines 165--165
-[]          \T1/lmtt/m/n/10.95 | theta  |   cL  |  cL0[] 
- []
-
-
-Overfull \hbox (11.93977pt too wide) in paragraph at lines 166--166
-[]\T1/lmtt/m/n/10.95 ----------+--------+-------+-------[] 
- []
-
-
-Overfull \hbox (10.65367pt too wide) in paragraph at lines 167--167
-[]\T1/lmtt/m/n/10.95 airfoil 1 |  -0.5$[]$ | 1.099 | 0.184[] 
- []
-
-
-Overfull \hbox (10.94112pt too wide) in paragraph at lines 168--168
-[]\T1/lmtt/m/n/10.95 airfoil 2 |  12.0$[]$ | 0.975 | 1.656[] 
- []
-
-
-Overfull \hbox (11.93977pt too wide) in paragraph at lines 169--169
-[]\T1/lmtt/m/n/10.95 ----------+--------+-------+-------[] 
- []
-
-LaTeX Font Info:    Try loading font information for OT1+lmtt on input line 172
-.
-(/usr/share/texmf/tex/latex/lm/ot1lmtt.fd
-File: ot1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-Package microtype Info: Loading generic settings for font family
-(microtype)             `lmtt' (encoding: OT1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
-
-<./fig/Aileron.pdf, id=2694, 614.295pt x 794.97pt>
-File: ./fig/Aileron.pdf Graphic file (type pdf)
- <use ./fig/Aileron.pdf>
-Package pdftex.def Info: ./fig/Aileron.pdf used on input line 189.
-(pdftex.def)             Requested size: 231.10973pt x 222.05513pt.
-
-Overfull \hbox (41.00002pt too wide) in paragraph at lines 160--193
-[][] 
- []
-
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 195.
-
-<./fig/vanes.pdf, id=2696, 614.295pt x 794.97pt>
-File: ./fig/vanes.pdf Graphic file (type pdf)
- <use ./fig/vanes.pdf>
-Package pdftex.def Info: ./fig/vanes.pdf used on input line 201.
-(pdftex.def)             Requested size: 256.07741pt x 212.78767pt.
-)
-[191 <./fig/Aileron.pdf> <./fig/vanes.pdf>] [192]
-(./capitoli/08_aerodinamica/0805in.tex
-Package mdframed Info: mdframed works in twoside mode on input line 31.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 31.
-pdfTeX warning (ext4): destination with the same identifier (name{numExer.9}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.32 S
-      i assuma che il profilo di velocit\`{a} $u(x,y)$ dello strato limite s...
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 41.
-Package epstopdf Info: Source file: <./fig/Ese75contour.eps>
-(epstopdf)                    date: 2018-12-13 21:59:12
-(epstopdf)                    size: 1334983 bytes
-(epstopdf)             Output file: <./fig/Ese75contour-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-12-13 21:59:12
-(epstopdf)                    size: 133150 bytes
-(epstopdf)             Command: <repstopdf --outfile=./fig/Ese75contour-eps-con
-verted-to.pdf ./fig/Ese75contour.eps>
-(epstopdf)             \includegraphics on input line 66.
-Package epstopdf Info: Output file is already uptodate.
-<./fig/Ese75contour-eps-converted-to.pdf, id=2716, 902.37125pt x 289.08pt>
-File: ./fig/Ese75contour-eps-converted-to.pdf Graphic file (type pdf)
-
-<use ./fig/Ese75contour-eps-converted-to.pdf>
-Package pdftex.def Info: ./fig/Ese75contour-eps-converted-to.pdf used on input 
-line 66.
-(pdftex.def)             Requested size: 384.1096pt x 66.70291pt.
-Package epstopdf Info: Source file: <./fig/Ese75quiver.eps>
-(epstopdf)                    date: 2018-12-13 21:59:12
-(epstopdf)                    size: 1396464 bytes
-(epstopdf)             Output file: <./fig/Ese75quiver-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-12-13 21:59:13
-(epstopdf)                    size: 111269 bytes
-(epstopdf)             Command: <repstopdf --outfile=./fig/Ese75quiver-eps-conv
-erted-to.pdf ./fig/Ese75quiver.eps>
-(epstopdf)             \includegraphics on input line 72.
-Package epstopdf Info: Output file is already uptodate.
-
-<./fig/Ese75quiver-eps-converted-to.pdf, id=2718, 848.16875pt x 426.59375pt>
-File: ./fig/Ese75quiver-eps-converted-to.pdf Graphic file (type pdf)
-
-<use ./fig/Ese75quiver-eps-converted-to.pdf>
-Package pdftex.def Info: ./fig/Ese75quiver-eps-converted-to.pdf used on input l
-ine 72.
-(pdftex.def)             Requested size: 384.1096pt x 82.77704pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-Package epstopdf Info: Source file: <./fig/Ese75u.eps>
-(epstopdf)                    date: 2018-12-13 21:59:12
-(epstopdf)                    size: 181266 bytes
-(epstopdf)             Output file: <./fig/Ese75u-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-12-13 21:59:13
-(epstopdf)                    size: 22710 bytes
-(epstopdf)             Command: <repstopdf --outfile=./fig/Ese75u-eps-converted
--to.pdf ./fig/Ese75u.eps>
-(epstopdf)             \includegraphics on input line 78.
-Package epstopdf Info: Output file is already uptodate.
-<./fig/Ese75u-eps-converted-to.pdf, id=2720, 817.0525pt x 497.86pt>
-File: ./fig/Ese75u-eps-converted-to.pdf Graphic file (type pdf)
-
-<use ./fig/Ese75u-eps-converted-to.pdf>
-Package pdftex.def Info: ./fig/Ese75u-eps-converted-to.pdf used on input line 7
-8.
-(pdftex.def)             Requested size: 384.1096pt x 79.04391pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[193 <./fig/Ese75contour-eps-converted-to.pdf>]) [194 <./fig/Ese75quiver-eps-co
-nverted-to.pdf> <./fig/Ese75u-eps-converted-to.pdf>]
-(./capitoli/08_aerodinamica/0806in.tex
-Package mdframed Info: mdframed works in twoside mode on input line 4.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 4.
-pdfTeX warning (ext4): destination with the same identifier (name{numExer.10}) 
-has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.5 S
-     i assuma che il profilo di velocit\`{a} $u(x,y)$ dello strato limite su...
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 17.
-) [195] (./capitoli/08_aerodinamica/0810in_lineSource.tex
-Package mdframed Info: mdframed works in twoside mode on input line 1.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 1.
-pdfTeX warning (ext4): destination with the same identifier (name{numExer.11}) 
-has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.2  U
-      tilizzando l'espressione dela velocità indotta da una sorgente puntif...
-Package mdframed Info: Not enough space on this page on input line 12.
-<./fig/pointSource.pdf, id=2768, 474.57881pt x 407.6472pt>
-File: ./fig/pointSource.pdf Graphic file (type pdf)
-
-<use ./fig/pointSource.pdf>
-Package pdftex.def Info: ./fig/pointSource.pdf used on input line 17.
-(pdftex.def)             Requested size: 170.71393pt x 146.64091pt.
-
-<./fig/lineSource.pdf, id=2769, 576.16475pt x 433.35791pt>
-File: ./fig/lineSource.pdf Graphic file (type pdf)
-
-<use ./fig/lineSource.pdf>
-Package pdftex.def Info: ./fig/lineSource.pdf used on input line 18.
-(pdftex.def)             Requested size: 213.39568pt x 160.50522pt.
- [196 <./fig/pointSource.pdf> <./fig/lineSource.pdf
-
-pdfTeX warning: pdflatex (file ./fig/lineSource.pdf): PDF inclusion: multiple p
-dfs with page group included in a single page
->]) [197] (./capitoli/08_aerodinamica/0810in_lineVortex.tex
-Package mdframed Info: mdframed works in twoside mode on input line 1.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 1.
-pdfTeX warning (ext4): destination with the same identifier (name{numExer.12}) 
-has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.2  U
-      tilizzando l'espressione dela velocità indotta da un vortice irrotazi...
-Package mdframed Info: Not enough space on this page on input line 12.
-<./fig/pointVortex.pdf, id=2804, 429.892pt x 405.43582pt>
-File: ./fig/pointVortex.pdf Graphic file (type pdf)
-
-<use ./fig/pointVortex.pdf>
-Package pdftex.def Info: ./fig/pointVortex.pdf used on input line 17.
-(pdftex.def)             Requested size: 170.71393pt x 161.00221pt.
-
-<./fig/lineVortex.pdf, id=2805, 576.16469pt x 433.35791pt>
-File: ./fig/lineVortex.pdf Graphic file (type pdf)
-
-<use ./fig/lineVortex.pdf>
-Package pdftex.def Info: ./fig/lineVortex.pdf used on input line 18.
-(pdftex.def)             Requested size: 213.39568pt x 160.50522pt.
-) [198 <./fig/pointVortex.pdf> <./fig/lineVortex.pdf
-
-pdfTeX warning: pdflatex (file ./fig/lineVortex.pdf): PDF inclusion: multiple p
-dfs with page group included in a single page
->] (./capitoli/08_aerodinamica/0810in_hessSmith.tex
-Underfull \hbox (badness 10000) in paragraph at lines 11--13
-\T1/lmtt/m/n/10.95 [ rr, ee, ii_te, elems, nelems, npoints ] = build_geometry(
- []
-
-[199]
-Overfull \hbox (27.57176pt too wide) detected at line 107
- $\OT1/lmr/m/n/10.95 0 = [] \OMS/lmsy/m/n/10.95 ^^A \OML/cmm/b/it/10.95 U[] \OT
-1/lmr/m/n/10.95 + [] \OMS/lmsy/m/n/10.95 ^^A \OML/cmm/b/it/10.95 U[] \OT1/lmr/m
-/n/10.95 + [] [] \OML/lmm/m/it/10.95 ^^[[] \OT1/lmr/m/n/10.95 + [] [] \OML/lmm/
-m/it/10.95 ^^M :$  
- []
-
-[200]
-Overfull \hbox (13.62439pt too wide) in paragraph at lines 163--164
-\T1/lmr/m/n/10.95 (-20) Si pos-so-no uti-liz-za-re le fun-zio-ni $[]$, $[]$,
- []
-
-[201] [202]
-Overfull \hbox (12.66667pt too wide) in paragraph at lines 223--223
-[]      \T1/lmtt/m/n/10.95 % === Accumulate vortex AIC in the b.c. block of the
- matrix A ===[] 
- []
-
-
-Overfull \hbox (6.91794pt too wide) in paragraph at lines 227--227
-[]      \T1/lmtt/m/n/10.95 % as before, fill sources block, accumulate vortex c
-ontributions[] 
- []
-
-
-Overfull \hbox (8.64255pt too wide) in paragraph at lines 270--270
-[]\T1/lmtt/m/n/10.95 b(nelems+ia) = - ( elems( i_te_1 ).tver + elems( i_te_2 ).
-tver )' * ...[] 
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [203]
-[204]
-<./capitoli/08_aerodinamica/build_geometry.pdf, id=2873, 600.35315pt x 847.8921
-4pt>
-File: ./capitoli/08_aerodinamica/build_geometry.pdf Graphic file (type pdf)
- <use ./capitoli/08_aerodinamica/build_geometry.pdf>
-Package pdftex.def Info: ./capitoli/08_aerodinamica/build_geometry.pdf used on 
-input line 303.
-(pdftex.def)             Requested size: 600.35168pt x 847.89006pt.
-File: ./capitoli/08_aerodinamica/build_geometry.pdf Graphic file (type pdf)
-
-<use ./capitoli/08_aerodinamica/build_geometry.pdf>
-Package pdftex.def Info: ./capitoli/08_aerodinamica/build_geometry.pdf used on 
-input line 303.
-(pdftex.def)             Requested size: 600.35168pt x 847.89006pt.
-
-<./capitoli/08_aerodinamica/build_geometry.pdf, id=2876, page=1, 600.35315pt x 
-847.89214pt>
-File: ./capitoli/08_aerodinamica/build_geometry.pdf Graphic file (type pdf)
- <use ./capitoli/08_aerodinamica/build_geometry.pdf, page 1>
-Package pdftex.def Info: ./capitoli/08_aerodinamica/build_geometry.pdf, page1 u
-sed on input line 303.
-(pdftex.def)             Requested size: 426.79135pt x 602.77095pt.
-File: ./capitoli/08_aerodinamica/build_geometry.pdf Graphic file (type pdf)
-
-<use ./capitoli/08_aerodinamica/build_geometry.pdf, page 1>
-Package pdftex.def Info: ./capitoli/08_aerodinamica/build_geometry.pdf, page1 u
-sed on input line 303.
-(pdftex.def)             Requested size: 842.04599pt x 1189.24033pt.
-File: ./capitoli/08_aerodinamica/build_geometry.pdf Graphic file (type pdf)
-
-<use ./capitoli/08_aerodinamica/build_geometry.pdf, page 1>
-Package pdftex.def Info: ./capitoli/08_aerodinamica/build_geometry.pdf, page1 u
-sed on input line 303.
-(pdftex.def)             Requested size: 842.04599pt x 1189.24033pt.
-File: ./capitoli/08_aerodinamica/build_geometry.pdf Graphic file (type pdf)
-
-<use ./capitoli/08_aerodinamica/build_geometry.pdf, page 1>
-Package pdftex.def Info: ./capitoli/08_aerodinamica/build_geometry.pdf, page1 u
-sed on input line 303.
-(pdftex.def)             Requested size: 842.04599pt x 1189.24033pt.
-File: ./capitoli/08_aerodinamica/build_geometry.pdf Graphic file (type pdf)
-
-<use ./capitoli/08_aerodinamica/build_geometry.pdf, page 1>
-Package pdftex.def Info: ./capitoli/08_aerodinamica/build_geometry.pdf, page1 u
-sed on input line 303.
-(pdftex.def)             Requested size: 842.04599pt x 1189.24033pt.
- [205 <./capitoli/08_aerodinamica/build_geometry.pdf>])) [206
-
-
-]
-\openout2 = `./capitoli/09_bl/bl.aux'.
-
- (./capitoli/09_bl/bl.tex
-Capitolo 9.
-File: Pictures/blank_fig.pdf Graphic file (type pdf)
-<use Pictures/blank_fig.pdf>
-Package pdftex.def Info: Pictures/blank_fig.pdf used on input line 2.
-(pdftex.def)             Requested size: 597.50787pt x 298.7509pt.
- (./capitoli/09_bl/0901in.tex
-Package mdframed Info: mdframed works in twoside mode on input line 2.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 2.
-pdfTeX warning (ext4): destination with the same identifier (name{numExer.1}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.3 D
-     ato il profilo di velocità, determinare il rapporto di forma $H$.
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [207
-
-
-])
-[208] (./capitoli/09_bl/0902in.tex
-Package mdframed Info: mdframed works in twoside mode on input line 2.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 2.
-pdfTeX warning (ext4): destination with the same identifier (name{numExer.2}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.3 D
-     ato il profilo di velocità, determinare il rapporto di forma $H$.)
-[209] (./capitoli/09_bl/0903in.tex
-Package mdframed Info: mdframed works in twoside mode on input line 2.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 2.
-pdfTeX warning (ext4): destination with the same identifier (name{numExer.3}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.3 D
-     ati $\rho = 1.225 kg/m^3$, $\nu = 10^{-5} m^2/s$ e velocità esterna $U...
-[210]
-Overfull \hbox (87.04167pt too wide) detected at line 90
- $[] []$  
- []
-
-[211]) [212] (./capitoli/09_bl/0904in.tex
-Package mdframed Info: mdframed works in twoside mode on input line 2.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 2.
-pdfTeX warning (ext4): destination with the same identifier (name{numExer.4}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.3 P
-     artendo dalle equazioni di Prandtl per lo strato limite bidimensionale ...
-[213] [214]
-Package epstopdf Info: Source file: <./fig/BlasiusShooting/g.eps>
-(epstopdf)                    date: 2018-12-13 21:59:12
-(epstopdf)                    size: 100748 bytes
-(epstopdf)             Output file: <./fig/BlasiusShooting/g-eps-converted-to.p
-df>
-(epstopdf)                    date: 2018-12-13 21:59:12
-(epstopdf)                    size: 7960 bytes
-(epstopdf)             Command: <repstopdf --outfile=./fig/BlasiusShooting/g-ep
-s-converted-to.pdf ./fig/BlasiusShooting/g.eps>
-(epstopdf)             \includegraphics on input line 157.
-Package epstopdf Info: Output file is already uptodate.
-
-<./fig/BlasiusShooting/g-eps-converted-to.pdf, id=2970, 385.44pt x 289.08pt>
-File: ./fig/BlasiusShooting/g-eps-converted-to.pdf Graphic file (type pdf)
-
-<use ./fig/BlasiusShooting/g-eps-converted-to.pdf>
-Package pdftex.def Info: ./fig/BlasiusShooting/g-eps-converted-to.pdf used on i
-nput line 157.
-(pdftex.def)             Requested size: 132.30428pt x 99.22543pt.
-Package epstopdf Info: Source file: <./fig/BlasiusShooting/dg.eps>
-(epstopdf)                    date: 2018-12-13 21:59:12
-(epstopdf)                    size: 99111 bytes
-(epstopdf)             Output file: <./fig/BlasiusShooting/dg-eps-converted-to.
-pdf>
-(epstopdf)                    date: 2018-12-13 21:59:12
-(epstopdf)                    size: 7546 bytes
-(epstopdf)             Command: <repstopdf --outfile=./fig/BlasiusShooting/dg-e
-ps-converted-to.pdf ./fig/BlasiusShooting/dg.eps>
-(epstopdf)             \includegraphics on input line 161.
-Package epstopdf Info: Output file is already uptodate.
-
-<./fig/BlasiusShooting/dg-eps-converted-to.pdf, id=2971, 385.44pt x 289.08pt>
-File: ./fig/BlasiusShooting/dg-eps-converted-to.pdf Graphic file (type pdf)
-
-<use ./fig/BlasiusShooting/dg-eps-converted-to.pdf>
-Package pdftex.def Info: ./fig/BlasiusShooting/dg-eps-converted-to.pdf used on 
-input line 161.
-(pdftex.def)             Requested size: 132.30428pt x 99.22543pt.
-Package epstopdf Info: Source file: <./fig/BlasiusShooting/ddg.eps>
-(epstopdf)                    date: 2018-12-13 21:59:12
-(epstopdf)                    size: 99828 bytes
-(epstopdf)             Output file: <./fig/BlasiusShooting/ddg-eps-converted-to
-.pdf>
-(epstopdf)                    date: 2018-12-13 21:59:12
-(epstopdf)                    size: 7625 bytes
-(epstopdf)             Command: <repstopdf --outfile=./fig/BlasiusShooting/ddg-
-eps-converted-to.pdf ./fig/BlasiusShooting/ddg.eps>
-(epstopdf)             \includegraphics on input line 165.
-Package epstopdf Info: Output file is already uptodate.
-
-<./fig/BlasiusShooting/ddg-eps-converted-to.pdf, id=2972, 385.44pt x 289.08pt>
-File: ./fig/BlasiusShooting/ddg-eps-converted-to.pdf Graphic file (type pdf)
-
-<use ./fig/BlasiusShooting/ddg-eps-converted-to.pdf>
-Package pdftex.def Info: ./fig/BlasiusShooting/ddg-eps-converted-to.pdf used on
- input line 165.
-(pdftex.def)             Requested size: 132.30428pt x 99.22543pt.
- [215 <./fig/BlasiusShooting/g-eps-converted-to.pdf> <./fig/BlasiusShooting/dg-
-eps-converted-to.pdf> <./fig/BlasiusShooting/ddg-eps-converted-to.pdf>]) [216]
-(./capitoli/09_bl/0905in.tex
-Package mdframed Info: mdframed works in twoside mode on input line 2.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 2.
-pdfTeX warning (ext4): destination with the same identifier (name{numExer.5}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.3     U
-         na lamina piana molto sottile viene investita parallelamente su ent...
-) [217] (./capitoli/09_bl/0906in.tex
-Package mdframed Info: mdframed works in twoside mode on input line 2.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 2.
-pdfTeX warning (ext4): destination with the same identifier (name{numExer.6}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.3   N
-       ella figura accanto una lastra piana di corda $c=30\ cm$, apertura $b...
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 26.
-<./fig/sheet.png, id=3024, 473.77pt x 403.5075pt>
-File: ./fig/sheet.png Graphic file (type png)
- <use ./fig/sheet.png>
-Package pdftex.def Info: ./fig/sheet.png used on input line 32.
-(pdftex.def)             Requested size: 234.73654pt x 199.92462pt.
-
-Overfull \hbox (30.40247pt too wide) in paragraph at lines 1--34
-[]$[]$   $[]$ 
- []
-
-[218 <./fig/sheet.png>]) [219]) [220
-
-
-]
-\openout2 = `./capitoli/10_turbolenza/turbolenza.aux'.
-
- (./capitoli/10_turbolenza/turbolenza.tex
-Capitolo 10.
-File: Pictures/blank_fig.pdf Graphic file (type pdf)
-<use Pictures/blank_fig.pdf>
-Package pdftex.def Info: Pictures/blank_fig.pdf used on input line 2.
-(pdftex.def)             Requested size: 597.50787pt x 298.7509pt.
- (./capitoli/10_turbolenza/10stabilita.tex
-Underfull \hbox (badness 10000) in paragraph at lines 13--23
-
- []
-
-[221
-
-
-]
-Underfull \vbox (badness 2856) has occurred while \output is active []
-
- [222]
-[223]
-File: ./fig/eq_rho+1_01.pdf Graphic file (type pdf)
- <use ./fig/eq_rho+1_01.pdf>
-Package pdftex.def Info: ./fig/eq_rho+1_01.pdf used on input line 151.
-(pdftex.def)             Requested size: 192.0548pt x 126.16562pt.
-File: ./fig/eq_rho+1_1.pdf Graphic file (type pdf)
- <use ./fig/eq_rho+1_1.pdf>
-Package pdftex.def Info: ./fig/eq_rho+1_1.pdf used on input line 155.
-(pdftex.def)             Requested size: 192.0548pt x 126.16562pt.
-File: ./fig/eq_rho+1_5.pdf Graphic file (type pdf)
-
-<use ./fig/eq_rho+1_5.pdf>
-Package pdftex.def Info: ./fig/eq_rho+1_5.pdf used on input line 158.
-(pdftex.def)             Requested size: 192.0548pt x 126.16562pt.
-File: ./fig/eq_rho+5_0.pdf Graphic file (type pdf)
- <use ./fig/eq_rho+5_0.pdf>
-Package pdftex.def Info: ./fig/eq_rho+5_0.pdf used on input line 162.
-(pdftex.def)             Requested size: 192.0548pt x 126.16562pt.
-File: ./fig/eq_rho+15_0.pdf Graphic file (type pdf)
-
-<use ./fig/eq_rho+15_0.pdf>
-Package pdftex.def Info: ./fig/eq_rho+15_0.pdf used on input line 165.
-(pdftex.def)             Requested size: 192.0548pt x 126.16562pt.
-File: ./fig/eq_rho+24_7.pdf Graphic file (type pdf)
- <use ./fig/eq_rho+24_7.pdf>
-Package pdftex.def Info: ./fig/eq_rho+24_7.pdf used on input line 169.
-(pdftex.def)             Requested size: 192.0548pt x 126.16562pt.
-
-<./fig/eq1_rho+24p7_heat_flux.png, id=3079, 433.62pt x 433.62pt>
-File: ./fig/eq1_rho+24p7_heat_flux.png Graphic file (type png)
-
-<use ./fig/eq1_rho+24p7_heat_flux.png>
-Package pdftex.def Info: ./fig/eq1_rho+24p7_heat_flux.png used on input line 23
-6.
-(pdftex.def)             Requested size: 192.0548pt x 206.38847pt.
-
-<./fig/eq2_rho+24p7_heat_flux_manyl.pdf, id=3082, 433.62pt x 433.62pt>
-File: ./fig/eq2_rho+24p7_heat_flux_manyl.pdf Graphic file (type pdf)
-
-<use ./fig/eq2_rho+24p7_heat_flux_manyl.pdf>
-Package pdftex.def Info: ./fig/eq2_rho+24p7_heat_flux_manyl.pdf used on input l
-ine 239.
-(pdftex.def)             Requested size: 192.0548pt x 206.38847pt.
-
-Overfull \hbox (4.84181pt too wide) in paragraph at lines 235--250
- [][] 
- []
-
-[224] [225]
-File: ./fig/bif_pitchfork.pdf Graphic file (type pdf)
- <use ./fig/bif_pitchfork.pdf>
-Package pdftex.def Info: ./fig/bif_pitchfork.pdf used on input line 283.
-(pdftex.def)             Requested size: 170.71393pt x 172.73035pt.
-File: ./fig/bif_hopf.pdf Graphic file (type pdf)
- <use ./fig/bif_hopf.pdf>
-Package pdftex.def Info: ./fig/bif_hopf.pdf used on input line 287.
-(pdftex.def)             Requested size: 192.0548pt x 169.7688pt.
-
-Overfull \hbox (3.01285pt too wide) in paragraph at lines 282--297
- [][] 
- []
-
-[226 <./fig/eq1_rho+24p7_heat_flux.png> <./fig/eq2_rho+24p7_heat_flux_manyl.pdf
->]
-Underfull \vbox (badness 1043) has occurred while \output is active []
-
- [227]
-File: ./fig/ic_dependence_xt_rho+28.pdf Graphic file (type pdf)
-
-<use ./fig/ic_dependence_xt_rho+28.pdf>
-Package pdftex.def Info: ./fig/ic_dependence_xt_rho+28.pdf used on input line 3
-47.
-(pdftex.def)             Requested size: 277.41176pt x 103.18123pt.
-File: ./fig/ic_dependence_attractor_rho+28.pdf Graphic file (type pdf)
-
-<use ./fig/ic_dependence_attractor_rho+28.pdf>
-Package pdftex.def Info: ./fig/ic_dependence_attractor_rho+28.pdf used on input
- line 350.
-(pdftex.def)             Requested size: 149.37958pt x 146.57715pt.
-
-Overfull \hbox (19.2985pt too wide) in paragraph at lines 346--364
- [][] 
- []
-
-[228]
-File: ./fig/lorenz_cm001.pdf Graphic file (type pdf)
- <use ./fig/lorenz_cm001.pdf>
-Package pdftex.def Info: ./fig/lorenz_cm001.pdf used on input line 408.
-(pdftex.def)             Requested size: 192.0548pt x 197.70863pt.
-File: ./fig/lorenz_cm002.pdf Graphic file (type pdf)
- <use ./fig/lorenz_cm002.pdf>
-Package pdftex.def Info: ./fig/lorenz_cm002.pdf used on input line 411.
-(pdftex.def)             Requested size: 192.0548pt x 197.70863pt.
-File: ./fig/lorenz_cm003.pdf Graphic file (type pdf)
-
-<use ./fig/lorenz_cm003.pdf>
-Package pdftex.def Info: ./fig/lorenz_cm003.pdf used on input line 414.
-(pdftex.def)             Requested size: 192.0548pt x 197.70863pt.
-File: ./fig/lorenz_cm004.pdf Graphic file (type pdf)
- <use ./fig/lorenz_cm004.pdf>
-Package pdftex.def Info: ./fig/lorenz_cm004.pdf used on input line 417.
-(pdftex.def)             Requested size: 192.0548pt x 197.70863pt.
-File: ./fig/lorenz_cm005.pdf Graphic file (type pdf)
-
-<use ./fig/lorenz_cm005.pdf>
-Package pdftex.def Info: ./fig/lorenz_cm005.pdf used on input line 420.
-(pdftex.def)             Requested size: 192.0548pt x 197.70863pt.
-File: ./fig/lorenz_cm006.pdf Graphic file (type pdf)
- <use ./fig/lorenz_cm006.pdf>
-Package pdftex.def Info: ./fig/lorenz_cm006.pdf used on input line 423.
-(pdftex.def)             Requested size: 192.0548pt x 197.70863pt.
-
-
-LaTeX Warning: Float too large for page by 9.03418pt on input line 434.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[229] [230]) [231
-
-] (./capitoli/10_turbolenza/1001in.tex
-Package mdframed Info: mdframed works in twoside mode on input line 2.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 2.
-pdfTeX warning (ext4): destination with the same identifier (name{numExer.1}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.3   C
-       alcolare la soluzione in similitudine per un getto turbolento piano.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 5.
-
-<./fig/turbulentJet.png, id=3188, 803.0pt x 486.81876pt>
-File: ./fig/turbulentJet.png Graphic file (type png)
-
-<use ./fig/turbulentJet.png>
-Package pdftex.def Info: ./fig/turbulentJet.png used on input line 20.
-(pdftex.def)             Requested size: 192.0548pt x 116.43033pt.
-
-Overfull \hbox (30.40247pt too wide) in paragraph at lines 1--22
-[]$[]$   $[]$ 
- []
-
-
-Underfull \vbox (badness 2035) has occurred while \output is active []
-
- [232 <./fig/turbulentJet.png>] [233] [234] [235] [236]) [237]) [238
-
-
-]
+[39 <./fig/helicopter-eps-converted-to.pdf>]) [40])
 \tf@ptc=\write9
 \openout9 = `mainEse.ptc'.
 
@@ -4523,73 +1943,49 @@ Package minitoc(hints) Warning: W0024
 (minitoc(hints))                Some hints have been written 
 (minitoc(hints))                in the mainEse.log file.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 262.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 262.
-(./mainEse.aux (./capitoli/01_statica/statica.aux)
-(./capitoli/02_tensSup/tensSup.aux) (./capitoli/03_cinematica/cinematica.aux)
-(./capitoli/04_bilanci/bilanci.aux) (./capitoli/05_bernoulli/bernoulli.aux)
-(./capitoli/06_slnEsatte/slnEsatte.aux)
-(./capitoli/07_similitudine/similitudine.aux)
-(./capitoli/08_aerodinamica/aerodinamica.aux) (./capitoli/09_bl/bl.aux)
-(./capitoli/10_turbolenza/turbolenza.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 262.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 262.
-
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: There were multiply-defined labels.
-
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 273.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 273.
+(./mainEse.aux (./capitoli/07_similitudine/similitudine.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 273.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 273.
  ) 
 Here is how much of TeX's memory you used:
- 47463 strings out of 493029
- 1018755 string characters out of 6136233
- 1351583 words of memory out of 5000000
- 47924 multiletter control sequences out of 15000+600000
- 219951 words of font info for 353 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 75i,25n,105p,10506b,2360s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-rmtt.enc}{/usr/share/texmf/fonts/enc/
-dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/sha
-re/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-m
-athsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}</usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy8.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cmextra/cmbsy9.pfb></usr/share/texlive/texmf
--dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmbx6.pfb></usr/share/texlive/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmbx7.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmbx8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmbx9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmmib10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmext
-ra/cmmib6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextr
-a/cmmib8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra
-/cmmib9.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texm
-f/fonts/type1/public/lm/lmbx8.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx9
-.pfb></usr/share/texmf/fonts/type1/public/lm/lmcsc10.pfb></usr/share/texmf/font
-s/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb
-></usr/share/texmf/fonts/type1/public/lm/lmmi5.pfb></usr/share/texmf/fonts/type
-1/public/lm/lmmi6.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi7.pfb></usr/s
-hare/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public
-/lm/lmmi9.pfb></usr/share/texmf/fonts/type1/public/lm/lmmib10.pfb></usr/share/t
-exmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lm
-r6.pfb></usr/share/texmf/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf/fonts
-/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr9.pfb></us
-r/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/pu
-blic/lm/lmri9.pfb></usr/share/texmf/fonts/type1/public/lm/lmss10.pfb></usr/shar
-e/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public
-/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy6.pfb></usr/share/te
-xmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/public/lm/lms
-y9.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb></usr/share/texlive/t
-exmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/te
-xmf-dist/fonts/type1/public/amsfonts/symbols/msam7.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf
--dist/fonts/type1/public/rsfs/rsfs10.pfb>
-Output written on mainEse.pdf (238 pages, 5623637 bytes).
+ 46374 strings out of 494839
+ 1011886 string characters out of 6178684
+ 1334335 words of memory out of 5000000
+ 48260 multiletter control sequences out of 15000+600000
+ 701136 words of font info for 247 fonts, out of 8000000 for 9000
+ 59 hyphenation exceptions out of 8191
+ 62i,15n,96p,10506b,1230s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dv
+ips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/s
+hare/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm
+-mathex.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy
+10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
+></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/
+share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb></usr/share/
+texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/
+lmbx9.pfb></usr/share/texmf/fonts/type1/public/lm/lmcsc10.pfb></usr/share/texmf
+/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi1
+0.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi6.pfb></usr/share/texmf/fonts
+/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmmib10.pfb>
+</usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1
+/public/lm/lmr6.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/shar
+e/texmf/fonts/type1/public/lm/lmr9.pfb></usr/share/texmf/fonts/type1/public/lm/
+lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmri9.pfb></usr/share/texmf/
+fonts/type1/public/lm/lmss10.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx
+10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fon
+ts/type1/public/lm/lmsy6.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb>
+</usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb></usr/share/texlive/texmf-di
+st/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/symbols/msam7.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/f
+onts/type1/public/rsfs/rsfs10.pfb>
+Output written on mainEse.pdf (40 pages, 3804938 bytes).
 PDF statistics:
- 3774 PDF objects out of 4296 (max. 8388607)
- 2990 compressed objects within 30 object streams
- 1311 named destinations out of 1440 (max. 500000)
- 63394 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 927 PDF objects out of 1000 (max. 8388607)
+ 658 compressed objects within 7 object streams
+ 224 named destinations out of 1000 (max. 500000)
+ 49405 words of extra memory for PDF output out of 51595 (max. 10000000)
 

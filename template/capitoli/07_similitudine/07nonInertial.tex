@@ -1,0 +1,31 @@
+
+\subsubsection{Equazioni di Navier--Stokes}
+\begin{equation}
+\begin{cases}
+ \rho \Dt{\vel} = \g - \grad p + \mu \lapl \vel \\
+ \dive \vel = 0 \ ,
+\end{cases}
+\end{equation}
+dove l'operatore di derivata materiale applicata al campo di velocità coincide con il campo di accelerazione delle particelle,
+\begin{equation}
+ \acc = \Dt{\vel} = \pt{\vel} + ( \vel \cdot \grad ) \vel \ .
+\end{equation}
+
+\subsubsection{Cinematica relativa}
+Sia dato un sistema di riferimento ortonormale inerziale $I$ e un sistema di riferimento non inerziale $J$, con origine $O_I$ e $O_J$ rispettivamente. La velocità e l'accelerazione di $O_J$ definite nel sistema di riferimento inerziale sono $\vel_{O_J}$, $\acc_{O_J}$, mentre vengono indicate con $\bm{\Omega}_{J/I}$ e $\bm{\alpha}_{J/I}$ la velocità e l'accelerazione angolare del sistema di riferimento $J$ rispetto al sistema $I$. Si può esprimere la posizione di un punto $P$ nel sistema di riferimento $I$ come
+\begin{equation}
+ \pos = \pos_{O_J} + \pos^J \ ,
+\end{equation}
+avendo indicato \dots
+Dalla derivata temporale della posizione di $P$, si ottiene la velocità
+\begin{equation}
+ \vel = \vel_{O_J} + \vel^J + \bm{\Omega}_{J/I} \times \pos^J \ ,
+\end{equation}
+avendo indicato \dots
+Dalla derivata temporale della velocità di $P$, si ottiene l'accelerazione
+\begin{equation}
+ \acc = \acc_{O_J} + \acc^J + \bm{\alpha}_{J/I} \times \pos^J + 2~\bm{\Omega}_{J/I} \times \vel^J + 
+   \bm{\Omega}_{J/I} \times \left( \bm{\Omega}_{J/I} \times \pos^J \right) \ ,
+\end{equation}
+avendo indicato \dots
+

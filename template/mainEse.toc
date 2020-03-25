@@ -10,22 +10,25 @@
 \contentsline {section}{\numberline {1.4}Equazioni di Navier--Stokes in sistemi di riferimento non inerziali}{10}{section.1.4}
 \contentsline {subsubsection}{Equazioni di Navier--Stokes}{10}{section*.3}
 \contentsline {subsubsection}{Cinematica relativa}{11}{section*.4}
-\contentsline {section}{\numberline {1.5}Equazioni di Boussinesq e numeri di Prandtl, Rayleigh e Grashof}{11}{section.1.5}
-\contentsline {subsection}{\numberline {1.5.1}Equazioni di Boussinesq}{11}{subsection.1.5.1}
-\contentsline {subsection}{\numberline {1.5.2}Equazioni di Boussinesq: problema bidimensionale tra due superfici piane}{12}{subsection.1.5.2}
-\contentsline {paragraph}{Condizioni al contorno}{12}{section*.5}
-\contentsline {paragraph}{Soluzione stazionaria non convettiva}{12}{section*.6}
-\contentsline {paragraph}{Equazione delle fluttuazioni}{12}{section*.7}
-\contentsline {subsection}{\numberline {1.5.3}Equazioni di Boussinesq in forma adimensionale}{13}{subsection.1.5.3}
-\contentsline {subsection}{\numberline {1.5.4}Equazione della vorticit\IeC {\`a} e funzione di corrente nell'approssimazione di Boussinesq}{16}{subsection.1.5.4}
-\contentsline {subsection}{\numberline {1.5.5}Approssimazione di Fourier--Galerkin del problema di Boussinesq}{17}{subsection.1.5.5}
-\contentsline {subsection}{\numberline {1.5.6}Dal problema di Boussinesq al modello di Lorenz}{17}{subsection.1.5.6}
-\contentsline {subsection}{\numberline {1.5.7}Alcuni concetti di stabilit\IeC {\`a}}{21}{subsection.1.5.7}
-\contentsline {subsection}{\numberline {1.5.8}Sistema dinamico di Lorenz}{21}{subsection.1.5.8}
-\contentsline {paragraph}{Punti di equilibrio}{22}{section*.9}
-\contentsline {paragraph}{Stabilit\IeC {\`a} dell'equilibrio E1}{24}{section*.11}
-\contentsline {paragraph}{Stabilit\IeC {\`a} degli equilibri E2, E3}{24}{section*.13}
-\contentsline {paragraph}{Biforcazioni, cicli limite e attrattori strani}{25}{section*.15}
-\contentsline {paragraph}{Diagramma di Moody.}{37}{section*.22}
+\contentsline {subsubsection}{Equazioni di Navier--Stokes in un sistema di riferimento non inerziale}{11}{section*.5}
+\contentsline {subsubsection}{Alcune osservazioni sulla natura tensoriale delle equazioni}{12}{section*.6}
+\contentsline {subsection}{\numberline {1.4.1}Equazioni in forma adimensionale}{13}{subsection.1.4.1}
+\contentsline {section}{\numberline {1.5}Equazioni di Boussinesq e numeri di Prandtl, Rayleigh e Grashof}{13}{section.1.5}
+\contentsline {subsection}{\numberline {1.5.1}Equazioni di Boussinesq}{13}{subsection.1.5.1}
+\contentsline {subsection}{\numberline {1.5.2}Equazioni di Boussinesq: problema bidimensionale tra due superfici piane}{14}{subsection.1.5.2}
+\contentsline {paragraph}{Condizioni al contorno}{14}{section*.7}
+\contentsline {paragraph}{Soluzione stazionaria non convettiva}{15}{section*.8}
+\contentsline {paragraph}{Equazione delle fluttuazioni}{15}{section*.9}
+\contentsline {subsection}{\numberline {1.5.3}Equazioni di Boussinesq in forma adimensionale}{16}{subsection.1.5.3}
+\contentsline {subsection}{\numberline {1.5.4}Equazione della vorticit\IeC {\`a} e funzione di corrente nell'approssimazione di Boussinesq}{19}{subsection.1.5.4}
+\contentsline {subsection}{\numberline {1.5.5}Approssimazione di Fourier--Galerkin del problema di Boussinesq}{19}{subsection.1.5.5}
+\contentsline {subsection}{\numberline {1.5.6}Dal problema di Boussinesq al modello di Lorenz}{20}{subsection.1.5.6}
+\contentsline {subsection}{\numberline {1.5.7}Alcuni concetti di stabilit\IeC {\`a}}{23}{subsection.1.5.7}
+\contentsline {subsection}{\numberline {1.5.8}Sistema dinamico di Lorenz}{23}{subsection.1.5.8}
+\contentsline {paragraph}{Punti di equilibrio}{24}{section*.11}
+\contentsline {paragraph}{Stabilit\IeC {\`a} dell'equilibrio E1}{26}{section*.13}
+\contentsline {paragraph}{Stabilit\IeC {\`a} degli equilibri E2, E3}{26}{section*.15}
+\contentsline {paragraph}{Biforcazioni, cicli limite e attrattori strani}{27}{section*.17}
+\contentsline {paragraph}{Diagramma di Moody.}{39}{section*.24}
 \contentsline {xpart}{Esercizi}{7}{part.1}
 \contentsfinish 

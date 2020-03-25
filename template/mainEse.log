@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.6.22)  24 MAR 2020 22:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.6.22)  25 MAR 2020 15:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1712,52 +1712,52 @@ File: uni-0.def 2013/05/13 UCS: Unicode data U+0000..U+00FF
 
 
 ] [8] [9]
-(./capitoli/07_similitudine/07nonInertial.tex [10]) [11] [12] [13] [14]
-[15] [16] [17] [18] [19] [20] (./capitoli/07_similitudine/07lorenz.tex
+(./capitoli/07_similitudine/07nonInertial.tex
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 19.
+(Font)              <9> on input line 5.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 19.
- [21]
-[22]
-<./fig/eq_rho+1_01.pdf, id=322, 650.43pt x 361.35pt>
+(Font)              <5> on input line 5.
+ [10] [11] [12]) [13] [14]
+[15] [16] [17] [18] [19] [20] [21] [22]
+(./capitoli/07_similitudine/07lorenz.tex [23] [24]
+<./fig/eq_rho+1_01.pdf, id=361, 650.43pt x 361.35pt>
 File: ./fig/eq_rho+1_01.pdf Graphic file (type pdf)
 <use ./fig/eq_rho+1_01.pdf>
 Package pdftex.def Info: ./fig/eq_rho+1_01.pdf  used on input line 155.
 (pdftex.def)             Requested size: 192.0548pt x 126.16562pt.
-<./fig/eq_rho+1_1.pdf, id=324, 650.43pt x 361.35pt>
+<./fig/eq_rho+1_1.pdf, id=363, 650.43pt x 361.35pt>
 File: ./fig/eq_rho+1_1.pdf Graphic file (type pdf)
 <use ./fig/eq_rho+1_1.pdf>
 Package pdftex.def Info: ./fig/eq_rho+1_1.pdf  used on input line 159.
 (pdftex.def)             Requested size: 192.0548pt x 126.16562pt.
-<./fig/eq_rho+1_5.pdf, id=326, 650.43pt x 361.35pt>
+<./fig/eq_rho+1_5.pdf, id=365, 650.43pt x 361.35pt>
 File: ./fig/eq_rho+1_5.pdf Graphic file (type pdf)
 <use ./fig/eq_rho+1_5.pdf>
 Package pdftex.def Info: ./fig/eq_rho+1_5.pdf  used on input line 162.
 (pdftex.def)             Requested size: 192.0548pt x 126.16562pt.
-<./fig/eq_rho+5_0.pdf, id=328, 650.43pt x 361.35pt>
+<./fig/eq_rho+5_0.pdf, id=367, 650.43pt x 361.35pt>
 File: ./fig/eq_rho+5_0.pdf Graphic file (type pdf)
 <use ./fig/eq_rho+5_0.pdf>
 Package pdftex.def Info: ./fig/eq_rho+5_0.pdf  used on input line 166.
 (pdftex.def)             Requested size: 192.0548pt x 126.16562pt.
-<./fig/eq_rho+15_0.pdf, id=330, 650.43pt x 361.35pt>
+<./fig/eq_rho+15_0.pdf, id=369, 650.43pt x 361.35pt>
 File: ./fig/eq_rho+15_0.pdf Graphic file (type pdf)
 <use ./fig/eq_rho+15_0.pdf>
 Package pdftex.def Info: ./fig/eq_rho+15_0.pdf  used on input line 169.
 (pdftex.def)             Requested size: 192.0548pt x 126.16562pt.
-<./fig/eq_rho+24_7.pdf, id=332, 650.43pt x 361.35pt>
+<./fig/eq_rho+24_7.pdf, id=371, 650.43pt x 361.35pt>
 File: ./fig/eq_rho+24_7.pdf Graphic file (type pdf)
 <use ./fig/eq_rho+24_7.pdf>
 Package pdftex.def Info: ./fig/eq_rho+24_7.pdf  used on input line 173.
 (pdftex.def)             Requested size: 192.0548pt x 126.16562pt.
- [23 <./fig/eq_rho+1_01.pdf> <./fig/eq_rho+1_1.pdf> <./fig/eq_rho+1_5.pdf> <./f
+ [25 <./fig/eq_rho+1_01.pdf> <./fig/eq_rho+1_1.pdf> <./fig/eq_rho+1_5.pdf> <./f
 ig/eq_rho+5_0.pdf> <./fig/eq_rho+15_0.pdf> <./fig/eq_rho+24_7.pdf>]
-<./fig/bif_pitchfork.pdf, id=460, 428.5611pt x 433.62pt>
+<./fig/bif_pitchfork.pdf, id=501, 428.5611pt x 433.62pt>
 File: ./fig/bif_pitchfork.pdf Graphic file (type pdf)
 <use ./fig/bif_pitchfork.pdf>
 Package pdftex.def Info: ./fig/bif_pitchfork.pdf  used on input line 224.
 (pdftex.def)             Requested size: 170.71393pt x 172.73035pt.
-<./fig/bif_hopf.pdf, id=461, 392.42609pt x 346.89601pt>
+<./fig/bif_hopf.pdf, id=502, 392.42609pt x 346.89601pt>
 File: ./fig/bif_hopf.pdf Graphic file (type pdf)
 <use ./fig/bif_hopf.pdf>
 Package pdftex.def Info: ./fig/bif_hopf.pdf  used on input line 228.
@@ -1767,18 +1767,18 @@ Overfull \hbox (3.01285pt too wide) in paragraph at lines 223--238
  [][] 
  []
 
-[24 <./fig/bif_pitchfork.pdf> <./fig/bif_hopf.pdf
+[26 <./fig/bif_pitchfork.pdf> <./fig/bif_hopf.pdf
 
 pdfTeX warning: pdflatex (file ./fig/bif_hopf.pdf): PDF inclusion: multiple pdf
 s with page group included in a single page
 >]
-<./fig/ic_dependence_xt_rho+28.pdf, id=520, 744.38098pt x 286.9119pt>
+<./fig/ic_dependence_xt_rho+28.pdf, id=560, 744.38098pt x 286.9119pt>
 File: ./fig/ic_dependence_xt_rho+28.pdf Graphic file (type pdf)
 <use ./fig/ic_dependence_xt_rho+28.pdf>
 Package pdftex.def Info: ./fig/ic_dependence_xt_rho+28.pdf  used on input line 
 260.
 (pdftex.def)             Requested size: 277.41176pt x 110.66249pt.
-<./fig/ic_dependence_attractor_rho+28.pdf, id=522, 477.70471pt x 490.7133pt>
+<./fig/ic_dependence_attractor_rho+28.pdf, id=562, 477.70471pt x 490.7133pt>
 File: ./fig/ic_dependence_attractor_rho+28.pdf Graphic file (type pdf)
 <use ./fig/ic_dependence_attractor_rho+28.pdf>
 Package pdftex.def Info: ./fig/ic_dependence_attractor_rho+28.pdf  used on inpu
@@ -1789,34 +1789,34 @@ Overfull \hbox (17.76814pt too wide) in paragraph at lines 259--277
  [][] 
  []
 
-[25 <./fig/ic_dependence_xt_rho+28.pdf> <./fig/ic_dependence_attractor_rho+28.p
+[27 <./fig/ic_dependence_xt_rho+28.pdf> <./fig/ic_dependence_attractor_rho+28.p
 df>]
-<./fig/lorenz_cm001.pdf, id=570, 665.47203pt x 601.23204pt>
+<./fig/lorenz_cm001.pdf, id=609, 665.47203pt x 601.23204pt>
 File: ./fig/lorenz_cm001.pdf Graphic file (type pdf)
 <use ./fig/lorenz_cm001.pdf>
 Package pdftex.def Info: ./fig/lorenz_cm001.pdf  used on input line 364.
 (pdftex.def)             Requested size: 192.0548pt x 197.70863pt.
-<./fig/lorenz_cm002.pdf, id=572, 665.47203pt x 601.23204pt>
+<./fig/lorenz_cm002.pdf, id=611, 665.47203pt x 601.23204pt>
 File: ./fig/lorenz_cm002.pdf Graphic file (type pdf)
 <use ./fig/lorenz_cm002.pdf>
 Package pdftex.def Info: ./fig/lorenz_cm002.pdf  used on input line 367.
 (pdftex.def)             Requested size: 192.0548pt x 197.70863pt.
-<./fig/lorenz_cm003.pdf, id=574, 665.47203pt x 601.23204pt>
+<./fig/lorenz_cm003.pdf, id=613, 665.47203pt x 601.23204pt>
 File: ./fig/lorenz_cm003.pdf Graphic file (type pdf)
 <use ./fig/lorenz_cm003.pdf>
 Package pdftex.def Info: ./fig/lorenz_cm003.pdf  used on input line 370.
 (pdftex.def)             Requested size: 192.0548pt x 197.70863pt.
-<./fig/lorenz_cm004.pdf, id=576, 665.47203pt x 601.23204pt>
+<./fig/lorenz_cm004.pdf, id=615, 665.47203pt x 601.23204pt>
 File: ./fig/lorenz_cm004.pdf Graphic file (type pdf)
 <use ./fig/lorenz_cm004.pdf>
 Package pdftex.def Info: ./fig/lorenz_cm004.pdf  used on input line 373.
 (pdftex.def)             Requested size: 192.0548pt x 197.70863pt.
-<./fig/lorenz_cm005.pdf, id=578, 665.47203pt x 601.23204pt>
+<./fig/lorenz_cm005.pdf, id=617, 665.47203pt x 601.23204pt>
 File: ./fig/lorenz_cm005.pdf Graphic file (type pdf)
 <use ./fig/lorenz_cm005.pdf>
 Package pdftex.def Info: ./fig/lorenz_cm005.pdf  used on input line 376.
 (pdftex.def)             Requested size: 192.0548pt x 197.70863pt.
-<./fig/lorenz_cm006.pdf, id=580, 665.47203pt x 601.23204pt>
+<./fig/lorenz_cm006.pdf, id=619, 665.47203pt x 601.23204pt>
 File: ./fig/lorenz_cm006.pdf Graphic file (type pdf)
 <use ./fig/lorenz_cm006.pdf>
 Package pdftex.def Info: ./fig/lorenz_cm006.pdf  used on input line 379.
@@ -1825,37 +1825,37 @@ Package pdftex.def Info: ./fig/lorenz_cm006.pdf  used on input line 379.
 
 LaTeX Warning: Float too large for page by 9.03418pt on input line 390.
 
-[26] [27 <./fig/lorenz_cm001.pdf> <./fig/lorenz_cm002.pdf> <./fig/lorenz_cm003.
+[28] [29 <./fig/lorenz_cm001.pdf> <./fig/lorenz_cm002.pdf> <./fig/lorenz_cm003.
 pdf> <./fig/lorenz_cm004.pdf> <./fig/lorenz_cm005.pdf> <./fig/lorenz_cm006.pdf>
-]) [28
+]) [30
 
 ]) (./capitoli/07_similitudine/0701in.tex
 Package mdframed Info: mdframed works in twoside mode on input line 2.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 2.
- [29
+ [31
 
-]) [30]
+]) [32]
 (./capitoli/07_similitudine/0702in.tex
 Package mdframed Info: mdframed works in twoside mode on input line 2.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 2.
-) [31] [32]
+) [33] [34]
 (./capitoli/07_similitudine/0703in.tex
 Package mdframed Info: mdframed works in twoside mode on input line 2.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 2.
- [33]) [34]
+ [35]) [36]
 (./capitoli/07_similitudine/0704in.tex
 Package mdframed Info: mdframed works in twoside mode on input line 1.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 1.
 Package mdframed Info: Not enough space on this page on input line 18.
-) [35]
+) [37]
 (./capitoli/07_similitudine/0706in.tex
 Package mdframed Info: mdframed works in twoside mode on input line 2.
 Package mdframed Info: mdframed detected package amsthm 
@@ -1873,7 +1873,7 @@ Package epstopdf Info: Source file: <./fig/pipe.eps>
 o.pdf ./fig/pipe.eps>
 (epstopdf)             \includegraphics on input line 26.
 Package epstopdf Info: Output file is already uptodate.
-<./fig/pipe-eps-converted-to.pdf, id=704, 379.4175pt x 320.19624pt>
+<./fig/pipe-eps-converted-to.pdf, id=744, 379.4175pt x 320.19624pt>
 File: ./fig/pipe-eps-converted-to.pdf Graphic file (type pdf)
 <use ./fig/pipe-eps-converted-to.pdf>
 Package pdftex.def Info: ./fig/pipe-eps-converted-to.pdf  used on input line 26
@@ -1884,8 +1884,8 @@ Overfull \hbox (30.40248pt too wide) in paragraph at lines 1--28
 []$[]$   $[]$ 
  []
 
-[36 <./fig/pipe-eps-converted-to.pdf>] [37]
-<./fig/MoodyChart.jpg, id=732, 1027.84pt x 701.62125pt>
+[38 <./fig/pipe-eps-converted-to.pdf>] [39]
+<./fig/MoodyChart.jpg, id=771, 1027.84pt x 701.62125pt>
 File: ./fig/MoodyChart.jpg Graphic file (type jpg)
 <use ./fig/MoodyChart.jpg>
 Package pdftex.def Info: ./fig/MoodyChart.jpg  used on input line 158.
@@ -1895,7 +1895,7 @@ Overfull \hbox (17.0pt too wide) in paragraph at lines 156--160
 []$[]$ 
  []
 
-) [38 <./fig/MoodyChart.jpg>] (./capitoli/07_similitudine/0707in.tex
+) [40 <./fig/MoodyChart.jpg>] (./capitoli/07_similitudine/0707in.tex
 Package mdframed Info: mdframed works in twoside mode on input line 2.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
@@ -1912,7 +1912,7 @@ Package epstopdf Info: Source file: <./fig/helicopter.eps>
 rted-to.pdf ./fig/helicopter.eps>
 (epstopdf)             \includegraphics on input line 31.
 Package epstopdf Info: Output file is already uptodate.
-<./fig/helicopter-eps-converted-to.pdf, id=738, 436.63126pt x 513.92pt>
+<./fig/helicopter-eps-converted-to.pdf, id=777, 436.63126pt x 513.92pt>
 File: ./fig/helicopter-eps-converted-to.pdf Graphic file (type pdf)
 <use ./fig/helicopter-eps-converted-to.pdf>
 Package pdftex.def Info: ./fig/helicopter-eps-converted-to.pdf  used on input l
@@ -1923,7 +1923,7 @@ Overfull \hbox (30.40248pt too wide) in paragraph at lines 1--33
 []$[]$   $[]$ 
  []
 
-[39 <./fig/helicopter-eps-converted-to.pdf>]) [40])
+[41 <./fig/helicopter-eps-converted-to.pdf>]) [42])
 \tf@ptc=\write9
 \openout9 = `mainEse.ptc'.
 
@@ -1950,42 +1950,46 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 273.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 273.
  ) 
 Here is how much of TeX's memory you used:
- 46374 strings out of 494839
- 1011886 string characters out of 6178684
- 1334335 words of memory out of 5000000
- 48260 multiletter control sequences out of 15000+600000
- 701136 words of font info for 247 fonts, out of 8000000 for 9000
+ 46416 strings out of 494839
+ 1012388 string characters out of 6178684
+ 1331496 words of memory out of 5000000
+ 48263 multiletter control sequences out of 15000+600000
+ 702002 words of font info for 257 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
- 62i,15n,96p,10506b,1230s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,16n,96p,10506b,1230s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dv
 ips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/s
 hare/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm
 -mathex.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy
-10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
-></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/
-share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/share
-/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb></usr/share/
-texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/
-lmbx9.pfb></usr/share/texmf/fonts/type1/public/lm/lmcsc10.pfb></usr/share/texmf
-/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi1
-0.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi6.pfb></usr/share/texmf/fonts
-/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmmib10.pfb>
-</usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1
-/public/lm/lmr6.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/shar
-e/texmf/fonts/type1/public/lm/lmr9.pfb></usr/share/texmf/fonts/type1/public/lm/
-lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmri9.pfb></usr/share/texmf/
-fonts/type1/public/lm/lmss10.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx
-10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fon
-ts/type1/public/lm/lmsy6.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb>
-</usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb></usr/share/texlive/texmf-di
-st/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/amsfonts/symbols/msam7.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/f
-onts/type1/public/rsfs/rsfs10.pfb>
-Output written on mainEse.pdf (40 pages, 3804938 bytes).
+10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy
+9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/s
+hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/te
+xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/share/texlive
+/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb></usr/share/texlive/
+texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib9.pfb></usr/share/texmf/fon
+ts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx9.pfb
+></usr/share/texmf/fonts/type1/public/lm/lmcsc10.pfb></usr/share/texmf/fonts/ty
+pe1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb></u
+sr/share/texmf/fonts/type1/public/lm/lmmi6.pfb></usr/share/texmf/fonts/type1/pu
+blic/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi9.pfb></usr/share
+/texmf/fonts/type1/public/lm/lmmib10.pfb></usr/share/texmf/fonts/type1/public/l
+m/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf/
+fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr9.pfb
+></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/typ
+e1/public/lm/lmri9.pfb></usr/share/texmf/fonts/type1/public/lm/lmss10.pfb></usr
+/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/p
+ublic/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy6.pfb></usr/sha
+re/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/public/l
+m/lmsy9.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/symbols/msam7.pfb></usr/share/texlive
+/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texlive/
+texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb>
+Output written on mainEse.pdf (42 pages, 3851925 bytes).
 PDF statistics:
- 927 PDF objects out of 1000 (max. 8388607)
- 658 compressed objects within 7 object streams
- 224 named destinations out of 1000 (max. 500000)
+ 986 PDF objects out of 1000 (max. 8388607)
+ 708 compressed objects within 8 object streams
+ 243 named destinations out of 1000 (max. 500000)
  49405 words of extra memory for PDF output out of 51595 (max. 10000000)
 

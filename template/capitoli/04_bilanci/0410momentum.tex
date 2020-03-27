@@ -130,6 +130,21 @@ Se $\bm{r}$ e $t$ sono spazio e tempo, la velocità e l'accelerazione di un
      \bm{\nabla} \cdot \mathbb{T} + \bm{f} \right) \\
  \end{cases}
 \end{equation}
+L'analisi per componenti locali dell'equazione della quantità di moto permette di riconoscere che:
+\end{minipage}
+\hfill
+\begin{minipage}{0.40\textwidth}
+\begin{center}
+   \includegraphics[width=1.0\textwidth]{./fig/frenet.eps}
+\end{center}
+\end{minipage}
+\begin{itemize}
+ \item la proiezione del termine forzante lungo la tangente alla traiettoria è la responsabile dell'accelerazione tangenziale della particella materiale;
+ \item la proiezione del termine forzante lungo la normale alla traiettoria è la responsabile dell'accelerazione centripeta della particella maetriale e, di conseguenza, della curvatura della traiettoria;
+ \item la proiezione della forzante lungo la direzione binormale è nulla.
+\end{itemize}
+
+\noindent
 In assenza di forze di volume ($\bm{f}=0$) e sforzi viscosi
 ($\mathbb{T}=\mathbb{S}-p\mathbb{I}=-p\mathbb{I}$):
 \begin{equation}
@@ -139,28 +154,19 @@ In assenza di forze di volume ($\bm{f}=0$) e sforzi viscosi
   0                  = - \bm{\hat{b}} \cdot \bm{\nabla} p \\
  \end{cases}
 \end{equation}
-\end{minipage}
-\hfill
-\begin{minipage}{0.40\textwidth}
-\begin{center}
-   \includegraphics[width=1.0\textwidth]{./fig/frenet.eps}
-\end{center}
-\end{minipage}
 %
-Un'analisi della componente normale permette di ricavare, \textbf{sotto le
- ipotesi fatte}, il legame tra la curvatura delle traiettorie delle
- particelle fluide e il gradiente del campo di pressione.
-Il termine a sinistra dell'uguale è positivo poichè prodotto di quantità
- positive: la curvatura di una linea è non negativa per come è definita, la
- densità è positiva, il modulo di un vettore è anch'esso non negativo.
-Il prodotto scalare tra la normale e il gradiente della pressione
- (derivata direzionale della pressione in direzione $\bm{\hat{n}}$) deve
- quindi essere negativo. La pressione quindi diminuisce, andando verso
- il centro del cerchio osculatore.
-Sempre dalla seconda equazione è immediato notare che il legame tra la
- curvatura della traiettoria è proporzionale alla componente del gradiente
- di pressione lungo il versore normale. La componente tangente fa aumentare 
- il modulo della velocità, mentre la componente binormale deve essere nulla.
+e quindi:
+\begin{itemize}
+ \item l'accelerazione tangenziale è proporzionale alla proiezione del gradiente di pressione in direzione tangente alla tratiettoria;
+ \item l'accelerazione centripeta, $v^2/r = v^2 k$, è proporzionale alla proiezione del gradiente di pressione in direzione normale alla tratiettoria. Il termine $\rho v^2 k$ è sempre positivo poichè prodotto di quantità positive: la curvatura di una linea è non negativa per come è definita, la densità è positiva, il modulo di un vettore è anch'esso non negativo. Il prodotto scalare tra la normale e il gradiente della pressione (derivata direzionale della pressione in direzione $\bm{\hat{n}}$) deve quindi essere negativo. La pressione quindi diminuisce, andando verso il centro del cerchio osculatore. Sempre dalla seconda equazione è immediato notare che la curvatura della traiettoria è proporzionale alla componente del gradiente di pressione lungo il versore normale;
+ \item la proiezione del gradiente di pressione in direzione binormale a una traiettoria è nullo.
+\end{itemize}
+% Un'analisi della componente normale permette di ricavare, \textbf{sotto le
+%  ipotesi fatte}, il legame tra la curvatura delle traiettorie delle
+%  particelle fluide e il gradiente del campo di pressione.
+% Il termine a sinistra dell'uguale è positivo
+% La componente tangente fa aumentare 
+%  il modulo della velocità, mentre la componente binormale deve essere nulla.
 %Essendo il versore $\bm{\hat{n}}$ diretto verso il centro del cerchio
 % osculatore (in parole povere è diretta verso l'interno della curva),
 % la curvatura $k$ positiva, segue che la pressione deve diminuire lungo 

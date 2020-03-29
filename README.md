@@ -4,6 +4,15 @@ This repo contains some personal material (notes and some programs) prepared dur
 
 So far, the notes are available in Italian only.
 
+## Compiling .tex files
+Each of the three main folders contains a compi*.sh file. These files are bash scripts (they must be exectuable!) that drive the compilation of the .pdf documents. Each of these .sh files expect the main .tex file (the one that contains \begin{document} ...) as the only argument, for the compilation of the documents on a Linux platform. As an example, running
+
+ ./compi_orange mainEse
+ 
+in template directory should produce the file mainEse.pdf. The main *.tex files in ./qa and ./appendici are qa.tex and appendici.tex, respectively.
+
+For users relying on a Latex editor (Texmaker, ...), import main *.tex and run the compilation on this file.
+
 ## Contents
 ### Notes
 This repo contains three main documents: 

@@ -10,7 +10,7 @@ close all ; clear all ; clc
 deg2rad = pi/180 ;
 
 % Viscous corrections
-viscous_corrections = false ; % Thwaites(laminar)+Head(turbulent) b.l. computation
+viscous_corrections = true; false ; % Thwaites(laminar)+Head(turbulent) b.l. computation
 
 % === Free-stream conditions ===
 freeStream.P        = 0.0   ;          % free-stream pressure
@@ -18,7 +18,9 @@ freeStream.rho      = 1.225 ;          % free-stream density
 freeStream.v        = 10.0  ;          %             velocity absolute value
 freeStream.alpha    = 2.0 * deg2rad ;  %             velocity direction
 freeStream.vvec     = freeStream.v * [ cos(freeStream.alpha) ; sin(freeStream.alpha) ] ;
-freeStream.dyn_visc = 1.8e-5 ;         % free-stream dynamic viscosity
+Re_c1 = 5.e+6;
+freeStream.dyn_visc = freeStream.rho * freeStream.v / Re_c1 ;         % free-stream dynamic viscosity
+% freeStream.dyn_visc = 1.8e-5 ;         % free-stream dynamic viscosity
 freeStream.kin_visc = ...              % free-stream kinematic viscosity
                       freeStream.dyn_visc / freeStream.rho ;
 

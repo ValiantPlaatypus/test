@@ -1,0 +1,96 @@
+\noindent
+\begin{tabular}{cc}
+\begin{minipage}{0.95\textwidth}
+\begin{exerciseS}[Irrigatore rotante]
+Viene dato l'irrigatore rappresentato in figura, del quale sono note le sue dimensioni geometriche, $R_0$, $R_1$, $\ell$, $h$. L'irrigatore è libero di ruotrare attorno all'asse $z$. Si conosce la densità del fluido $\rho$ e la velocità ``di ingresso'' $U_0$ uniforme sulla sezione $S_0$. Supponendo
+\begin{itemize}
+ \item la pressione uniforme sulle sezioni $S_0$, $S_1$, $S_2$ e uguale alla pressione atmosferica dell'aria attorno all'irrigatore
+ \item la \textbf{velocità relativa} rispetto al moto dell'irrigatore uniforme sulle sezioni $S_1$, $S_2$,
+ \item gli effetti gravitazionali trascurabili
+\end{itemize}
+ viene chiesto di calcolare la velocità $V$ e la velocità di rotazione dell'irrigatore $\Omega$, a regime.
+\end{exerciseS}
+\end{minipage}
+\end{tabular}
+
+\sol
+
+\partone
+
+\parttwo
+Si scrivono i bilanci integrali di massa e momento della quantità di moto per il volume fluido $V_t$ contenuto all'interno dell'irrigatore, delimitato dalla parete interna dell'irrigatore $S_{f,s}$, dalla sezione di ingresso $S_0$ e dalle due di uscita $S_1$, $S_2$. Si introducono due sistemi di riferimento cartesiani, uno inerziale, $\left\{ \bm{\hat{x}}, \bm{\hat{y}}, \bm{\hat{z}} \right\}$, l'altro solidale con l'irrigatore, $\left\{ \bm{\hat{X}}, \bm{\hat{Y}}, \bm{\hat{Z}} \right\}$, con l'asse $Z$ coincidente con l'asse $z$.
+%
+\newline
+\noindent
+Il bilancio di massa per un volume $V_t$,
+\begin{equation}
+ \dfrac{d}{dt} \int_{V_t} \rho + \oint_{\partial V_t} \rho \left(\bm{u} - \bm{b} \right) \cdot \bm{\hat{n}} = 0 \ ,
+\end{equation}
+viene semplificato
+\begin{itemize}
+\item utilizzando l'ipotesi di stazionarietà\footnote{
+ Dovrebbe essere chiaro che il concetto di ``stazionarietà'' dipende dal tipo di descrizione adottata per rappresentare il problema, euleriana, lagrangiana o arbitraria. Come esempio, in questo esercizio utilizziamo una descrizione arbitraria, utilizzando un volume di controllo che ruota insieme all'irrigatore. Per un osservatore inerziale il problema a regime non è stazionario, ma periodico. Per un'osservatore non inerziale solidale con l'irrigatore, le quantità del problema non variano con il tempo e quindi a lui il problema a regime risulta stazionario;
+}
+del problema
+\item riconoscendo che la superficie $S_{s,f}$ non dà contributo al bilancio, poiché la velocità del fluido sul contorno solido deve essere uguale alla velocità del corpo, per la condizione al contorno di \textbf{adesione}: $\bm{u} = \bm{b}$ in ogni punto di $S_{s,f}$. Anche se fosse stato utilizzato un modello non viscoso per rappresentare il problema, sarebbe valida la condizione al contorno di \textbf{non penetrazione}: $\bm{u} \cdot \bm{\hat{n}} = \bm{b} \cdot \bm{\hat{n}}$ su tutti i punti di $S_{s,f}$; 
+\item la velocità della superficie $S_0$ è nulla, $\bm{b} = \bm{0}$ su $S_0$ e quindi la velocità relativa coincide con la velocità assoluta $\bm{U_0} = U_0 \bm{\hat{z}}$, dato del problema;
+\item per i dati del problema, la velocità relativa del fluido sulle sezioni $S_1$, $S_2$ è uniforme:
+$\bm{u}-\bm{b} = V \bm{\hat{X}}$ su $S_1$, $\bm{u}-\bm{b} = -V \bm{\hat{X}}$ su $S_2$
+\end{itemize}
+Dal bilancio di massa si trova quindi il modulo della velocità relativa della corrente sulle sezioni $S_1$, $S_2$,
+\begin{equation}
+ 0 = - \rho U_0 \pi R_0^2 + 2 \rho V \pi R_1^2 \qquad \rightarrow \qquad
+  V = \dfrac{1}{2} \left(\dfrac{R_0}{R_1}\right)^2 U_0 \ .
+\end{equation}
+
+Il bilancio del momento della quantità di moto per il volume fluido $V_t$,
+\begin{equation}
+ \dfrac{d}{dt} \int_{V_t} \rho \bm{r} \times \bm{u} +
+ \int_{\partial V_t} \rho \bm{r} \times \bm{u} \left( \bm{u} - \bm{b} \right) \cdot \bm{\hat{n}} =
+ \int_{V_t} \rho \bm{r} \times \bm{g} + \int_{\partial V_t} \bm{r} \times \bm{t_n} \ .
+\end{equation}
+Senza riportare i dettagli {\color{red} (TODO: riportare i dettagli)} usando l'ipotesi che gli effetti gravitazionali trascurabili e che la pressione sia uniforme sulle superfici $S_0$, $S_1$, $S_2$ e uguale alla pressione atmosferica attorno al'irrigatore, il bilancio del momento di quantità di moto diventa
+\begin{equation}
+ \bm{M}^s = - \dfrac{d}{dt} \int_{V_t} \rho \bm{r} \times \bm{u} - \oint_{\partial V_t} \rho \bm{r} \times \bm{u} \left( \bm{u} - \bm{b} \right) \cdot \bm{\hat{n}} \ , 
+\end{equation}
+avendo messo in evidenza la risultante dei momenti $\bm{M}^s$ agenti sul solido, rispetto all'origine dei sistemi di riferimento. Il contributo della superficie laterale $S_{s,f}$ è nullo, poiché è nullo il termine $(\bm{u}-\bm{b}) \cdot \bm{\hat{n}}$; il contributo della superficie $S_0$ è nullo per simmetria. Si può dimostrare {\color{red} (TODO: riportare i dettagli)} che il termine con la derivata temporale non genera un momento attorno all'asse $z$ di rotazione dell'irrigatore, e scrivere
+\begin{equation}
+\begin{aligned}
+  M^s_z & = - \bm{\hat{z}} \cdot \oint_{\partial V_t} \rho \bm{r} \times \bm{u} \left( \bm{u} - \bm{b} \right) \cdot \bm{\hat{n}} = {\color{red} (...)} \\
+   & = - 2 \, \bm{\hat{z}} \cdot \oint_{S_1} \rho \bm{r} \times \bm{u} \left( \bm{u} - \bm{b} \right) \cdot \bm{\hat{n}} \ ,
+\end{aligned}
+\end{equation}
+avendo riconosciuto che i contributi al momento delle superfici $S_1$ e $S_2$ sono uguali. Calcoliamo ora il termine di superficie, esprimendo tutti i termini nel sistema di coordinate solidale con l'irrigatore,
+\begin{equation}
+\begin{aligned}
+ \bm{b} = \bm{\Omega} \times \bm{r} & = \Omega \bm{\hat{Z}} \times \left( X \bm{\hat{X}} + Y \bm{\hat{Y}} + Z \bm{\hat{Z}}  \right) = -\Omega Y \bm{\hat{X}} + \Omega X \bm{\hat{Y}} \\
+ \left( \bm{u} - \bm{b} \right) \cdot \bm{\hat{n}} = \bm{u}_{rel} \cdot \bm{\hat{n}} & =  V \bm{\hat{X}} \cdot \bm{\hat{X}} = V \\
+ \bm{r} \times \bm{u} = \bm{r} \times (\bm{u}_{rel} + \bm{b} ) & = \left( X \bm{\hat{X}} + Y \bm{\hat{Y}} + Z \bm{\hat{Z}} \right) \times \left[ \left(V-\Omega Y\right)\bm{\hat{X}} + \Omega X \bm{\hat{Y}} \right] = \\
+  & = - \Omega X Z \bm{\hat{X}} + \left( V - \Omega Y \right) Z \bm{\hat{Y}} + 
+  \left[ \Omega \left( X^2 + Y^2 \right) - V \, Y \right] \bm{\hat{Z}} \ , 
+\end{aligned}
+\end{equation}
+e usando un sistema di coordinate polari con origine nel centro della sezione circolare $S_1$,
+\begin{equation}
+\begin{cases}
+ X = h \\
+ Y = \ell + r \cos\theta \\
+ Z = r \sin\theta \\
+\end{cases}
+\end{equation}
+\begin{equation}
+\begin{aligned}
+ - \dfrac{M_z^s}{2} & = \bm{\hat{z}} \cdot \oint_{S_1} \rho \bm{r} \times \bm{u} \left( \bm{u} - \bm{b} \right) \cdot \bm{\hat{n}} = \\
+  & = \rho \int_{\theta=0}^{2\pi}\int_{r=0}^{R_1}
+    \left[ \Omega\left( h^2 + (\ell + r \cos\theta)^2 \right) - V \left( \ell + r \cos \theta \right)  \right] \, V \,  r \, dr \, d\theta = \\
+  & = \rho \left[ \Omega \left( h^2 + \ell^2 \right) - V \ell \right] \, V \, 2 \pi \dfrac{R_1^2}{2} +
+   \Omega \, V \, \dfrac{R^4}{4}\, \pi = \\
+ & = \pi R_1^2 \rho \, V \left[ \Omega \left( h^2 + \ell^2 + \dfrac{R_1^2}{4} \right) - V \ell \right] \ .
+\end{aligned}
+\end{equation}
+A regime, la componente $z$ della risultante dei momenti deve essere nulla e la velocità angolare deve essere uguale a
+\begin{equation}
+ \Omega = \dfrac{\ell}{h^2 + \ell^2 + \dfrac{R_1^2}{4}} V
+ \qquad \rightarrow \qquad
+ \Omega = \dfrac{1}{2}\dfrac{\ell}{h^2 + \ell^2 + \dfrac{R_1^2}{4}} \left( \dfrac{R_0}{R_1} \right)^2 \, U_0 \ .
+\end{equation}

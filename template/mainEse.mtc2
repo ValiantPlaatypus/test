@@ -1,3 +1,45 @@
-{\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode Legge di Young-Laplace.}{\reset@font\mtcPfont 25}{section*.10}}
-{\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode Legge di Young-Laplace in due dimensioni.}{\reset@font\mtcPfont 25}{section*.11}}
-{\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode Estensione al caso 3D.}{\reset@font\mtcPfont 26}{section*.12}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.1}Bilanci in forma integrale}{\reset@font\mtcSfont 15}{section.2.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.1.1}Bilancio di massa}{\reset@font\mtcSSfont 16}{subsection.2.1.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.1.2}Bilancio della quantit\IeC {\`a} di moto}{\reset@font\mtcSSfont 16}{subsection.2.1.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.1.3}Bilancio del momento quantit\IeC {\`a} di moto}{\reset@font\mtcSSfont 16}{subsection.2.1.3}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.1.4}Bilancio dell'energia totale}{\reset@font\mtcSSfont 16}{subsection.2.1.4}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.1.5}Bilanci integrali per volumi in moto arbitrario}{\reset@font\mtcSSfont 17}{subsection.2.1.5}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.1.6}Bilanci integrali per volumi di controllo fissi}{\reset@font\mtcSSfont 17}{subsection.2.1.6}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.2}Bilanci in forma differenziale}{\reset@font\mtcSfont 17}{section.2.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.2.1}Bilancio di massa}{\reset@font\mtcSSfont 18}{subsection.2.2.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.2.2}Bilancio di quantit\IeC {\`a} di moto}{\reset@font\mtcSSfont 18}{subsection.2.2.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.2.3}Bilancio del momento della quantit\IeC {\`a} di moto}{\reset@font\mtcSSfont 19}{subsection.2.2.3}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.2.4}Bilancio dell'energia totale}{\reset@font\mtcSSfont 19}{subsection.2.2.4}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.2.5}Chiusura del problema}{\reset@font\mtcSSfont 20}{subsection.2.2.5}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.2.6}Altre equazioni di bilancio}{\reset@font\mtcSSfont 21}{subsection.2.2.6}}
+{\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode Equazione dell'energia cinetica}{\reset@font\mtcPfont 21}{section*.9}}
+{\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode Equazione dell'energia interna}{\reset@font\mtcPfont 21}{section*.10}}
+{\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode Equazione della vorticit\IeC {\`a}}{\reset@font\mtcPfont 21}{section*.11}}
+{\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode Equazione dell'entropia}{\reset@font\mtcPfont 22}{section*.12}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.3}Relazioni di salto}{\reset@font\mtcSfont 23}{section.2.3}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.3.1}Bilancio di massa}{\reset@font\mtcSSfont 23}{subsection.2.3.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.3.2}Bilancio di quantit\IeC {\`a} di moto}{\reset@font\mtcSSfont 24}{subsection.2.3.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.3.3}Bilancio di energia}{\reset@font\mtcSSfont 25}{subsection.2.3.3}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.4}Approfondimenti su alcuni bilanci}{\reset@font\mtcSfont 26}{section.2.4}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.4.1}Continuit\IeC {\`a}}{\reset@font\mtcSSfont 26}{subsection.2.4.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.4.2}Quantit\IeC {\`a} di moto}{\reset@font\mtcSSfont 27}{subsection.2.4.2}}
+{\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode Richiami di geometria delle curve nello spazio.}{\reset@font\mtcPfont 27}{section*.14}}
+{\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode Ritorno al bilancio della quantit\IeC {\`a} di moto.}{\reset@font\mtcPfont 28}{section*.15}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.4.3}Vorticit\IeC {\`a}}{\reset@font\mtcSSfont 29}{subsection.2.4.3}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.5}Introduzione agli esercizi}{\reset@font\mtcSfont 30}{section.2.5}}
+{\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode Bilancio della quantit\IeC {\`a} di moto e risultante delle forze.}{\reset@font\mtcPfont 30}{section*.16}}
+{\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode Bilancio del momento della quantit\IeC {\`a} di moto e risultante dei momenti.}{\reset@font\mtcPfont 31}{section*.17}}
+{\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode Bilancio dell'energia totale.}{\reset@font\mtcPfont 31}{section*.18}}
+{\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode Sistemi aperti}{\reset@font\mtcPfont 32}{section*.19}}
+{\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode Sistemi chiusi}{\reset@font\mtcPfont 32}{section*.20}}
+{\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode Risultante delle forze: bilancio di quantit\IeC {\`a} di moto di un volume di controllo .}{\reset@font\mtcPfont 50}{section*.31}}
+{\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode Risultante delle forze: discretizzazione.}{\reset@font\mtcPfont 51}{section*.32}}
+{\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode Sensitivit\IeC {\`a} della risultante al campo di velocit\IeC {\`a}.}{\reset@font\mtcPfont 52}{section*.33}}
+{\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode Sensitivit\IeC {\`a} della risultante alle misure di velocit\IeC {\`a}.}{\reset@font\mtcPfont 53}{section*.34}}
+{\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode Sensitivit\IeC {\`a} della risultante alle misure di velocit\IeC {\`a}: discretizzazione.}{\reset@font\mtcPfont 53}{section*.35}}
+{\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode Osservazione 1.}{\reset@font\mtcPfont 54}{section*.36}}
+{\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode Osservazione 2.}{\reset@font\mtcPfont 54}{section*.37}}
+{\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode Incertezza sulla risultante dall'incertezza sulla misura di velocit\IeC {\`a}.}{\reset@font\mtcPfont 54}{section*.38}}
+{\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode Cenni sugli elementi finiti.}{\reset@font\mtcPfont 55}{section*.39}}
+{\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode Formula della spinta.}{\reset@font\mtcPfont 69}{section*.48}}
+{\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode Analisi del motore.}{\reset@font\mtcPfont 69}{section*.49}}

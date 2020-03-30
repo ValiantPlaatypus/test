@@ -1,156 +1,55 @@
 \babel@toc {italian}{}
 \babel@toc {italian}{}
-\contentsline {part}{\@mypartnumtocformat {I}{Esercizi}}{7}{part.1}
-\contentsline {chapter}{\numberline {1}Statica}{9}{chapter.1}
-\contentsline {section}{\numberline {1.1}Definizione di fluido}{9}{section.1.1}
-\contentsline {section}{\numberline {1.2}Equazione di equilibrio: forma integrale e differenziale}{9}{section.1.2}
-\contentsline {section}{\numberline {1.3}Legge di Stevino}{10}{section.1.3}
-\contentsline {section}{\numberline {1.4}Galleggiamento di un corpo immerso in un fluido}{11}{section.1.4}
-\contentsline {subsection}{\numberline {1.4.1}Risultante delle forze: legge di Archimede}{12}{subsection.1.4.1}
-\contentsline {subsection}{\numberline {1.4.2}Punto di applicazione}{13}{subsection.1.4.2}
-\contentsline {subsection}{\numberline {1.4.3}Stabilit\IeC {\`a} statica dell'equilibrio}{13}{subsection.1.4.3}
-\contentsline {section}{\numberline {1.5}Esercizi}{14}{section.1.5}
-\contentsline {paragraph}{Osservazione.}{22}{section*.9}
-\contentsline {xpart}{Esercizi}{9}{part.1}
-\contentsline {chapter}{\numberline {2}Tensione superficiale}{25}{chapter.2}
-\contentsline {paragraph}{Legge di Young-Laplace.}{25}{section*.10}
-\contentsline {paragraph}{Legge di Young-Laplace in due dimensioni.}{25}{section*.11}
-\contentsline {paragraph}{Estensione al caso 3D.}{26}{section*.12}
-\contentsline {chapter}{\numberline {3}Cinematica}{31}{chapter.3}
-\contentsline {section}{\numberline {3.1}Descrizione integrale lagrangiana ed euleriana}{31}{section.3.1}
-\contentsline {section}{\numberline {3.2}Descrizione puntuale lagrangiana ed euleriana}{32}{section.3.2}
-\contentsline {section}{\numberline {3.3}Velocit\IeC {\`a} di traslazione, rotazione e deformazione}{35}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Tensore gradiente di velocit\IeC {\`a}}{35}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}Derivate temporali di oggetti materiali}{36}{subsection.3.3.2}
-\contentsline {paragraph}{Vettore materiale.}{36}{section*.16}
-\contentsline {paragraph}{Vettore materiale: modulo.}{36}{section*.17}
-\contentsline {paragraph}{Vettore materiale: direzione.}{37}{section*.18}
-\contentsline {paragraph}{Angolo tra vettori materiali.}{37}{section*.19}
-\contentsline {paragraph}{Volume generato da vettori materiali.}{38}{section*.20}
-\contentsline {section}{\numberline {3.4}Curve caratteristiche}{38}{section.3.4}
-\contentsline {paragraph}{Osservazione 1.}{39}{section*.21}
-\contentsline {paragraph}{Osservazione.}{44}{section*.28}
-\contentsline {chapter}{\numberline {4}Bilanci}{49}{chapter.4}
-\contentsline {section}{\numberline {4.1}Bilanci in forma integrale}{49}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Bilancio di massa}{50}{subsection.4.1.1}
-\contentsline {subsection}{\numberline {4.1.2}Bilancio della quantit\IeC {\`a} di moto}{50}{subsection.4.1.2}
-\contentsline {subsection}{\numberline {4.1.3}Bilancio del momento quantit\IeC {\`a} di moto}{50}{subsection.4.1.3}
-\contentsline {subsection}{\numberline {4.1.4}Bilancio dell'energia totale}{50}{subsection.4.1.4}
-\contentsline {subsection}{\numberline {4.1.5}Bilanci integrali per volumi in moto arbitrario}{51}{subsection.4.1.5}
-\contentsline {subsection}{\numberline {4.1.6}Bilanci integrali per volumi di controllo fissi}{51}{subsection.4.1.6}
-\contentsline {section}{\numberline {4.2}Bilanci in forma differenziale}{51}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Bilancio di massa}{52}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}Bilancio di quantit\IeC {\`a} di moto}{52}{subsection.4.2.2}
-\contentsline {subsection}{\numberline {4.2.3}Bilancio del momento della quantit\IeC {\`a} di moto}{53}{subsection.4.2.3}
-\contentsline {subsection}{\numberline {4.2.4}Bilancio dell'energia totale}{53}{subsection.4.2.4}
-\contentsline {subsection}{\numberline {4.2.5}Chiusura del problema}{54}{subsection.4.2.5}
-\contentsline {subsection}{\numberline {4.2.6}Altre equazioni di bilancio}{55}{subsection.4.2.6}
-\contentsline {paragraph}{Equazione dell'energia cinetica}{55}{section*.29}
-\contentsline {paragraph}{Equazione dell'energia interna}{55}{section*.30}
-\contentsline {paragraph}{Equazione della vorticit\IeC {\`a}}{55}{section*.31}
-\contentsline {paragraph}{Equazione dell'entropia}{56}{section*.32}
-\contentsline {section}{\numberline {4.3}Relazioni di salto}{57}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}Bilancio di massa}{57}{subsection.4.3.1}
-\contentsline {subsection}{\numberline {4.3.2}Bilancio di quantit\IeC {\`a} di moto}{58}{subsection.4.3.2}
-\contentsline {subsection}{\numberline {4.3.3}Bilancio di energia}{59}{subsection.4.3.3}
-\contentsline {section}{\numberline {4.4}Approfondimenti su alcuni bilanci}{60}{section.4.4}
-\contentsline {subsection}{\numberline {4.4.1}Continuit\IeC {\`a}}{60}{subsection.4.4.1}
-\contentsline {subsection}{\numberline {4.4.2}Quantit\IeC {\`a} di moto}{61}{subsection.4.4.2}
-\contentsline {paragraph}{Richiami di geometria delle curve nello spazio.}{61}{section*.34}
-\contentsline {paragraph}{Ritorno al bilancio della quantit\IeC {\`a} di moto.}{62}{section*.35}
-\contentsline {subsection}{\numberline {4.4.3}Vorticit\IeC {\`a}}{63}{subsection.4.4.3}
-\contentsline {section}{\numberline {4.5}Introduzione agli esercizi}{64}{section.4.5}
-\contentsline {paragraph}{Bilancio della quantit\IeC {\`a} di moto e risultante delle forze.}{64}{section*.36}
-\contentsline {paragraph}{Bilancio del momento della quantit\IeC {\`a} di moto e risultante dei momenti.}{65}{section*.37}
-\contentsline {paragraph}{Bilancio dell'energia totale.}{65}{section*.38}
-\contentsline {paragraph}{Sistemi aperti}{66}{section*.39}
-\contentsline {paragraph}{Sistemi chiusi}{66}{section*.40}
-\contentsline {paragraph}{Risultante delle forze: bilancio di quantit\IeC {\`a} di moto di un volume di controllo .}{84}{section*.51}
-\contentsline {paragraph}{Risultante delle forze: discretizzazione.}{85}{section*.52}
-\contentsline {paragraph}{Sensitivit\IeC {\`a} della risultante al campo di velocit\IeC {\`a}.}{86}{section*.53}
-\contentsline {paragraph}{Sensitivit\IeC {\`a} della risultante alle misure di velocit\IeC {\`a}.}{87}{section*.54}
-\contentsline {paragraph}{Sensitivit\IeC {\`a} della risultante alle misure di velocit\IeC {\`a}: discretizzazione.}{87}{section*.55}
-\contentsline {paragraph}{Osservazione 1.}{88}{section*.56}
-\contentsline {paragraph}{Osservazione 2.}{88}{section*.57}
-\contentsline {paragraph}{Incertezza sulla risultante dall'incertezza sulla misura di velocit\IeC {\`a}.}{88}{section*.58}
-\contentsline {paragraph}{Cenni sugli elementi finiti.}{89}{section*.59}
-\contentsline {paragraph}{Formula della spinta.}{103}{section*.68}
-\contentsline {paragraph}{Analisi del motore.}{103}{section*.69}
-\contentsline {chapter}{\numberline {5}Teorema di Bernoulli}{107}{chapter.5}
-\contentsline {paragraph}{Prima forma del teorema di Bernoulli}{107}{section*.70}
-\contentsline {paragraph}{Seconda forma del teorema di Bernoulli}{108}{section*.71}
-\contentsline {paragraph}{Terza forma del teorema di Bernoulli}{108}{section*.72}
-\contentsline {paragraph}{Teoremi di Bernoulli per fluidi viscosi incomprimibili}{108}{section*.73}
-\contentsline {paragraph}{Parte 1.}{113}{section*.78}
-\contentsline {paragraph}{Parte 2.}{114}{section*.79}
-\contentsline {paragraph}{Cosa non \IeC {\`e} stato detto.}{115}{section*.80}
-\contentsline {chapter}{\numberline {6}Soluzioni esatte}{121}{chapter.6}
-\contentsline {section}{\numberline {6.1}Introduzione e linee guida per la soluzione dei problemi}{121}{section.6.1}
-\contentsline {subsection}{\numberline {6.1.1}Equazioni di Navier-Stokes in coordinate cartesiane e cilindriche}{122}{subsection.6.1.1}
-\contentsline {subsection}{\numberline {6.1.2}Esempio in coordinate cartesiane: corrente di Poseuille}{122}{subsection.6.1.2}
-\contentsline {subsection}{\numberline {6.1.3}Calcolo del vettore sforzo}{124}{subsection.6.1.3}
-\contentsline {paragraph}{Equivalenza tra l'espressione tensoriale e vettoriale del vettore sforzo.}{125}{section*.85}
-\contentsline {paragraph}{Osservazione: vettore sforzo in coordinate cilindriche.}{126}{section*.86}
-\contentsline {chapter}{\numberline {7}Similitudine}{145}{chapter.7}
-\contentsline {section}{\numberline {7.1}Teorema di Buckingham}{145}{section.7.1}
-\contentsline {section}{\numberline {7.2}Equazioni di Navier--Stokes incomprimibili in forma adimensionale}{145}{section.7.2}
-\contentsline {subsection}{\numberline {7.2.1}Adimensionalizzazione ``ad alti numeri di Reynolds''}{146}{subsection.7.2.1}
-\contentsline {subsection}{\numberline {7.2.2}Adimensionalizzazione ``a bassi numeri di Reynolds''}{147}{subsection.7.2.2}
-\contentsline {section}{\numberline {7.3}Equazione di continuit\IeC {\`a} e numero di Mach}{148}{section.7.3}
-\contentsline {section}{\numberline {7.4}Equazioni di Navier--Stokes in sistemi di riferimento non inerziali}{148}{section.7.4}
-\contentsline {subsubsection}{Equazioni di Navier--Stokes}{148}{section*.96}
-\contentsline {subsubsection}{Cinematica relativa}{149}{section*.97}
-\contentsline {subsubsection}{Equazioni di Navier--Stokes in un sistema di riferimento non inerziale}{149}{section*.98}
-\contentsline {subsubsection}{Alcune osservazioni sulla natura tensoriale delle equazioni}{150}{section*.99}
-\contentsline {subsection}{\numberline {7.4.1}Equazioni in forma adimensionale}{151}{subsection.7.4.1}
-\contentsline {section}{\numberline {7.5}Equazioni di Boussinesq e numeri di Prandtl, Rayleigh e Grashof}{151}{section.7.5}
-\contentsline {subsection}{\numberline {7.5.1}Equazioni di Boussinesq}{151}{subsection.7.5.1}
-\contentsline {subsection}{\numberline {7.5.2}Equazioni di Boussinesq: problema bidimensionale tra due superfici piane}{152}{subsection.7.5.2}
-\contentsline {paragraph}{Condizioni al contorno}{152}{section*.100}
-\contentsline {paragraph}{Soluzione stazionaria non convettiva}{153}{section*.101}
-\contentsline {paragraph}{Equazione delle fluttuazioni}{153}{section*.102}
-\contentsline {subsection}{\numberline {7.5.3}Equazioni di Boussinesq in forma adimensionale}{154}{subsection.7.5.3}
-\contentsline {subsection}{\numberline {7.5.4}Equazione della vorticit\IeC {\`a} e funzione di corrente nell'approssimazione di Boussinesq}{157}{subsection.7.5.4}
-\contentsline {subsection}{\numberline {7.5.5}Approssimazione di Fourier--Galerkin del problema di Boussinesq}{157}{subsection.7.5.5}
-\contentsline {subsection}{\numberline {7.5.6}Dal problema di Boussinesq al modello di Lorenz}{158}{subsection.7.5.6}
-\contentsline {subsection}{\numberline {7.5.7}Alcuni concetti di stabilit\IeC {\`a}}{161}{subsection.7.5.7}
-\contentsline {subsection}{\numberline {7.5.8}Sistema dinamico di Lorenz}{161}{subsection.7.5.8}
-\contentsline {paragraph}{Punti di equilibrio}{162}{section*.104}
-\contentsline {paragraph}{Stabilit\IeC {\`a} dell'equilibrio E1}{164}{section*.106}
-\contentsline {paragraph}{Stabilit\IeC {\`a} degli equilibri E2, E3}{164}{section*.108}
-\contentsline {paragraph}{Biforcazioni, cicli limite e attrattori strani}{165}{section*.110}
-\contentsline {paragraph}{Diagramma di Moody.}{177}{section*.117}
-\contentsline {chapter}{\numberline {8}Aerodinamica}{181}{chapter.8}
-\contentsline {paragraph}{Confronto con i risultati ottenuti con il metodo di Hess Smith: effetto suolo.}{194}{section*.126}
-\contentsline {paragraph}{Confronto con i risultati ottenuti con il metodo di Hess Smith: due profili.}{194}{section*.127}
-\contentsline {subsection}{\numberline {8.0.1}Condizione necessaria di incipiente separazione}{197}{subsection.8.0.1}
-\contentsline {section}{\numberline {8.1}Metodo di Hess-Smith}{203}{section.8.1}
-\contentsline {subsection}{\numberline {8.1.1}Descrizione della geometria}{203}{subsection.8.1.1}
-\contentsline {subsection}{\numberline {8.1.2}Principio di sovrapposizione delle cause e degli effetti: campo di velocit\IeC {\`a}}{203}{subsection.8.1.2}
-\contentsline {subsection}{\numberline {8.1.3}Metodo di Hess-Smith}{204}{subsection.8.1.3}
-\contentsline {subsection}{\numberline {8.1.4}Sistema lineare: condizioni al contorno}{204}{subsection.8.1.4}
-\contentsline {subsection}{\numberline {8.1.5}Sistema lineare: condizione di Kutta}{204}{subsection.8.1.5}
-\contentsline {subsection}{\numberline {8.1.6}Sistema lineare in forma matriciale}{205}{subsection.8.1.6}
-\contentsline {subsection}{\numberline {8.1.7}Ricostruzione delle grandezze fisiche}{205}{subsection.8.1.7}
-\contentsline {chapter}{\numberline {9}Strato limite}{211}{chapter.9}
-\contentsline {paragraph}{Dalle equazioni di Prantdl per lo strato limite all'equazione integrale di VK.}{215}{section*.138}
-\contentsline {paragraph}{Dalle equazioni di Prandtl al modello di Blasius.}{217}{section*.140}
-\contentsline {paragraph}{Sforzo viscoso a parete.}{218}{section*.141}
-\contentsline {paragraph}{Spessori integrali dello strato limite.}{218}{section*.142}
-\contentsline {paragraph}{Soluzione numerica: shooting method.}{219}{section*.144}
-\contentsline {paragraph}{Resistenza minima, ad area $A$ fissata.}{221}{section*.146}
-\contentsline {paragraph}{Commento.}{221}{section*.147}
-\contentsline {chapter}{\numberline {10}Stabilit\IeC {\`a} fluidodinamica e turbolenza}{225}{chapter.10}
-\contentsline {section}{\numberline {10.1}Stabilit\IeC {\`a} idrodinamica}{225}{section.10.1}
-\contentsline {subsection}{\numberline {10.1.1}Fallimento dell'analisi modale: correnti amplificatrici di disturbi}{226}{subsection.10.1.1}
-\contentsline {paragraph}{Approccio variazionale e metodi dell'aggiunto}{227}{section*.149}
-\contentsline {paragraph}{Analisi di sensitivit\IeC {\`a}}{227}{section*.150}
-\contentsline {paragraph}{Tecniche di controllo}{227}{section*.151}
-\contentsline {subsection}{\numberline {10.1.2}Sistemi dipendenti da un parametro e stabilit\IeC {\`a} strutturale}{227}{subsection.10.1.2}
-\contentsline {subsubsection}{Sistema dinamico di Lorenz}{228}{section*.152}
-\contentsline {paragraph}{Punti di equilibrio}{228}{section*.153}
-\contentsline {paragraph}{Stabilit\IeC {\`a} dell'equilibrio E1}{231}{section*.157}
-\contentsline {paragraph}{Stabilit\IeC {\`a} degli equilibri E2, E3}{232}{section*.158}
-\contentsline {paragraph}{Biforcazioni, cicli limite e attrattori strani}{232}{section*.160}
-\contentsline {subsection}{\numberline {10.1.3}\dots }{235}{subsection.10.1.3}
+\contentsline {part}{\@mypartnumtocformat {I}{Esercizi}}{5}{part.1}
+\contentsline {chapter}{\numberline {1}Tensione superficiale}{7}{chapter.1}
+\contentsline {paragraph}{Legge di Young-Laplace.}{7}{section*.2}
+\contentsline {paragraph}{Legge di Young-Laplace in due dimensioni.}{7}{section*.3}
+\contentsline {paragraph}{Estensione al caso 3D.}{8}{section*.4}
+\contentsline {xpart}{Esercizi}{7}{part.1}
+\contentsline {chapter}{\numberline {2}Bilanci}{15}{chapter.2}
+\contentsline {section}{\numberline {2.1}Bilanci in forma integrale}{15}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Bilancio di massa}{16}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2}Bilancio della quantit\IeC {\`a} di moto}{16}{subsection.2.1.2}
+\contentsline {subsection}{\numberline {2.1.3}Bilancio del momento quantit\IeC {\`a} di moto}{16}{subsection.2.1.3}
+\contentsline {subsection}{\numberline {2.1.4}Bilancio dell'energia totale}{16}{subsection.2.1.4}
+\contentsline {subsection}{\numberline {2.1.5}Bilanci integrali per volumi in moto arbitrario}{17}{subsection.2.1.5}
+\contentsline {subsection}{\numberline {2.1.6}Bilanci integrali per volumi di controllo fissi}{17}{subsection.2.1.6}
+\contentsline {section}{\numberline {2.2}Bilanci in forma differenziale}{17}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Bilancio di massa}{18}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Bilancio di quantit\IeC {\`a} di moto}{18}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.3}Bilancio del momento della quantit\IeC {\`a} di moto}{19}{subsection.2.2.3}
+\contentsline {subsection}{\numberline {2.2.4}Bilancio dell'energia totale}{19}{subsection.2.2.4}
+\contentsline {subsection}{\numberline {2.2.5}Chiusura del problema}{20}{subsection.2.2.5}
+\contentsline {subsection}{\numberline {2.2.6}Altre equazioni di bilancio}{21}{subsection.2.2.6}
+\contentsline {paragraph}{Equazione dell'energia cinetica}{21}{section*.9}
+\contentsline {paragraph}{Equazione dell'energia interna}{21}{section*.10}
+\contentsline {paragraph}{Equazione della vorticit\IeC {\`a}}{21}{section*.11}
+\contentsline {paragraph}{Equazione dell'entropia}{22}{section*.12}
+\contentsline {section}{\numberline {2.3}Relazioni di salto}{23}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Bilancio di massa}{23}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Bilancio di quantit\IeC {\`a} di moto}{24}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.3}Bilancio di energia}{25}{subsection.2.3.3}
+\contentsline {section}{\numberline {2.4}Approfondimenti su alcuni bilanci}{26}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}Continuit\IeC {\`a}}{26}{subsection.2.4.1}
+\contentsline {subsection}{\numberline {2.4.2}Quantit\IeC {\`a} di moto}{27}{subsection.2.4.2}
+\contentsline {paragraph}{Richiami di geometria delle curve nello spazio.}{27}{section*.14}
+\contentsline {paragraph}{Ritorno al bilancio della quantit\IeC {\`a} di moto.}{28}{section*.15}
+\contentsline {subsection}{\numberline {2.4.3}Vorticit\IeC {\`a}}{29}{subsection.2.4.3}
+\contentsline {section}{\numberline {2.5}Introduzione agli esercizi}{30}{section.2.5}
+\contentsline {paragraph}{Bilancio della quantit\IeC {\`a} di moto e risultante delle forze.}{30}{section*.16}
+\contentsline {paragraph}{Bilancio del momento della quantit\IeC {\`a} di moto e risultante dei momenti.}{31}{section*.17}
+\contentsline {paragraph}{Bilancio dell'energia totale.}{31}{section*.18}
+\contentsline {paragraph}{Sistemi aperti}{32}{section*.19}
+\contentsline {paragraph}{Sistemi chiusi}{32}{section*.20}
+\contentsline {paragraph}{Risultante delle forze: bilancio di quantit\IeC {\`a} di moto di un volume di controllo .}{50}{section*.31}
+\contentsline {paragraph}{Risultante delle forze: discretizzazione.}{51}{section*.32}
+\contentsline {paragraph}{Sensitivit\IeC {\`a} della risultante al campo di velocit\IeC {\`a}.}{52}{section*.33}
+\contentsline {paragraph}{Sensitivit\IeC {\`a} della risultante alle misure di velocit\IeC {\`a}.}{53}{section*.34}
+\contentsline {paragraph}{Sensitivit\IeC {\`a} della risultante alle misure di velocit\IeC {\`a}: discretizzazione.}{53}{section*.35}
+\contentsline {paragraph}{Osservazione 1.}{54}{section*.36}
+\contentsline {paragraph}{Osservazione 2.}{54}{section*.37}
+\contentsline {paragraph}{Incertezza sulla risultante dall'incertezza sulla misura di velocit\IeC {\`a}.}{54}{section*.38}
+\contentsline {paragraph}{Cenni sugli elementi finiti.}{55}{section*.39}
+\contentsline {paragraph}{Formula della spinta.}{69}{section*.48}
+\contentsline {paragraph}{Analisi del motore.}{69}{section*.49}
 \contentsfinish 

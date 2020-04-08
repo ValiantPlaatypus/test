@@ -23,8 +23,11 @@ Si studia la galleria a circuito aperto rappresentata in figura utilizzando i bi
 e il bilancio dell'energia cinetica,
 \begin{equation}
 \begin{aligned}
- & \dfrac{d}{dt} \int_V \rho \dfrac{|\bm{u}|^2}{2} = - \oint_{S} \rho \dfrac{|\bm{u}|^2}{2} \bm{u} \cdot \bm{\hat{n}} + \oint_S \bm{t_n} \cdot \bm{u} - \int_V \bm{\nabla} \bm{u} : \mathbb{T} + \int_V \rho \bm{g} \\
- & \hspace{1.0cm} \rightarrow \hspace{1.0cm} 
+ \dfrac{d}{dt} \int_V \rho \dfrac{|\bm{u}|^2}{2} & = - \oint_{S} \rho \dfrac{|\bm{u}|^2}{2} \bm{u} \cdot \bm{\hat{n}} + \oint_S \bm{t_n} \cdot \bm{u} - \int_V \bm{\nabla} \bm{u} : \mathbb{T} + \int_V \rho \bm{g} \\
+                                                 & = - \oint_{S} \rho \dfrac{|\bm{u}|^2}{2} \bm{u} \cdot \bm{\hat{n}} + \oint_S \bm{t_n} \cdot \bm{u} + 
+ \underbrace{\int_V  p \, \bm{\nabla} \cdot \bm{u}}_{=0 \text{, se} \bm{\nabla} \cdot \bm{u} = 0}
+ - \underbrace{ \int_V 2 \mu \mathbb{D} : \mathbb{D}}_{=0 \text{, se} \mu = 0} + \int_V \rho \bm{g} \\
+ \hspace{1.0cm} \rightarrow \hspace{1.0cm}  &
  - \oint_{S} \rho \dfrac{|\bm{u}|^2}{2} \bm{u} \cdot \bm{\hat{n}} + \oint_S \bm{t_n} \cdot \bm{u} = 0 \ . 
 \end{aligned}
 \end{equation}

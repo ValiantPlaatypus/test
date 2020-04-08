@@ -16,6 +16,8 @@ Il legame tra le aree delle facce del tetraedro è
  dS = - \dfrac{dS_x}{n_x} = - \dfrac{dS_y}{n_y} = - \dfrac{dS_z}{n_z} ,
 \end{equation}
 avendo indicato con $n_i$ le componenti cartesiane del versore normale $\bh{n}$, tutte negative per come è stato definito il tetraedro.
+
+\paragraph{Bilancio di massa.}
 Scriviamo il bilancio di massa e di quantità di moto del volume di controllo elementare $dV$ contenuto all'interno del tetraedro di Cauchy. Il bilancio di massa
 \begin{equation}
  \f{d}{dt} \int_{dV} \rho + \oint_{\partial dV} \rho \bm{u} \cdot \bh{n} = 0 \ ,
@@ -34,6 +36,8 @@ avendo scritto esplicitamente la dipendenza delle grandezze nel volume e sulle s
 \begin{equation}
  \bm{u} \cdot \bh{n} = u_x n_x + u_y n_y + u_z \ .
 \end{equation}
+
+\paragraph{Bilancio della quantità di moto.}
 Il bliancio di quantità di moto per il tetraedro di Cauchy
 \begin{equation}
  \f{d}{dt} \int_V \rho \bm{u} + \oint_{\partial dV} \rho \bm{u} \bm{u} \cdot \bh{n} = \int_{dV} \rho \bm{g} + \oint_{\partial dV} \bm{t_n} \ ,
@@ -114,6 +118,58 @@ che in generale differisce dall'operazione $\mathbb{T} \cdot \bh{n}$, la cui $i$
 \newline \noindent
 \textbf{Osservazione 5.} \'E possibile utilizzare altre convenzioni nella definizione delle componenti dei vettori sforzo agenti sulle facce del tetraedro di Cauchy, che portano a una diversa interpretazione degli indici e alla rappresentazione della relazione di Cauchy.
 
+\paragraph{Bilancio della quantità di moto.} Dal bilancio del momento della quantità di moto in forma differenziale, è possibile ricavare la condizione di simmetria del tensore degli sforzi. Per ricavare il bilancio in forma differenziale, si parte dal bilancio integrale del momento della quantità di moto per un volume di controllo $V$ fisso nello spazio,
+\begin{equation}
+ \f{d}{dt} \int_V \rho \bm{r} \times \bm{u} + \oint_{\partial V} \rho \bm{r} \times \bm{u} \bm{u} \cdot \bh{n} = \int_{V} \rho \bm{r} \times \bm{g} + \oint_{\partial V} \bm{r} \times \bm{t_n} \ ,
+\end{equation}
+dove $\bm{r}$ è il raggio vettore tra il punto del fluido e il polo, qui fisso nello spazio, rispetto al quale è definito il momento della quantità di moto. Si trasformano i due termini di superficie in integrali di volume. Il termine di flusso diventa,
+\begin{equation}
+\begin{aligned}
+  \oint_{\partial V} \rho \bm{r} \times \bm{u} \bm{u} \cdot \bh{n} & =
+  \oint_{\partial V} \rho \epsilon_{ijk} r_j u_k u_l n_l = \\
+ & = \int_{V} \partial_l \left( \rho \epsilon_{ijk} r_j u_k u_l \right) =
+     \int_{V} \bm{\nabla} \cdot \left( \rho \bm{u} \,\,  \bm{r} \times \bm{u} \right) \ ,
+\end{aligned}
+\end{equation}
+mentre il termine degli sforzi di superficie diventa,
+\begin{equation}
+\begin{aligned}
+  \oint_{\partial V} \bm{r} \times \bm{t_n} = \oint_{\partial V} \bm{r} \times \left( \bm{\hat{n}} \cdot \mathbb{T} \right) & = \oint_{\partial V} \epsilon_{ijk} r_j n_l T_{lk} \\
+   & = \int_{V} \partial_l \left( \epsilon_{ijk} r_j T_{lk} \right) \ .
+\end{aligned}
+\end{equation}
+Dopo aver trasformato gli integrali di superfici in integrali di volume, sotto l'ipotesi che i campi siano sufficientemente regolari, si ricava il bilancio in forma differenziale sfruttando l'arbitrarietà del volume $V$,
+\begin{equation}
+ \p{}{t} \left( \rho \bm{r} \times \bm{u} \right) + \bm{\nabla} \cdot \left( \rho \bm{u} \,\,  \bm{r} \times \bm{u} \right) = \rho \bm{r} \times \bm{g} + \partial_l \left( \epsilon_{ijk} r_j T_{lk} \right) \ ,
+\end{equation}
+avendo utilizzato una ``notazione mista'', per esprimere nella maniera meno ambigua possibile la componente $i$-esima del termine degli sforzi.
 
+\noindent
+Si usa ora la formula per la derivata del prodotto di funzioni per manipolare il secondo termine dell'equazione,
+\begin{equation}
+\begin{aligned}
+  \bm{\nabla} \cdot \left( \rho \bm{u} \,\,  \bm{r} \times \bm{u} \right) & =
+  \partial_l \left( \rho u_l \epsilon_{ijk} r_j u_k \right) \\
+  & = \epsilon_{ijk} r_j \partial_l \left( \rho u_l u_k \right) +
+      \underbrace{\epsilon_{ijk} \partial_l r_j}_{\epsilon_{ijk} \delta_{lj}} \left( \rho u_l u_k \right) \\
+  & = \epsilon_{ijk} r_j \partial_l \left( \rho u_l u_k \right) +
+      \underbrace{\epsilon_{ilk} \left( \rho u_l u_k \right)}_{ = 0 } 
+  = \bm{r} \times \left( \rho \bm{u} \bm{u} \right)
+\end{aligned}
+\end{equation}
+dove è nullo il termine $\epsilon_{ilk} \left(rho u_l u_k \right)$, poiché il contenuto della parentesi è un tensore del secondo ordine simmetrico. Si usa ancora la formula per la derivata del prodotto di funzioni per manipolare l'ultimo termine,
+\begin{equation}
+ \partial_l( \epsilon_{ijk} r_j T_{lk} ) = \epsilon_{ijk} r_j \partial_l T_{lk} + 
+  \epsilon_{ijk} T_{jk} \ ,
+\end{equation}
+e poter scrivere il bilancio della quantità di moto in forma differenziale come
+\begin{equation}
+ \bm{r} \times \left[ \p{}{t} \left( \rho \bm{u} \right) + \bm{\nabla} \cdot \left( \rho \bm{u} \bm{u} \right) - \rho \bm{g} - \bm{\nabla} \cdot \mathbb{T} \right] = \epsilon_{ijk} T_{jk} \ .
+\end{equation}
+Il contenuto della parentesi quadra è identicamente nullo, poiché coincide con il bilancio della quantità di moto. Questo implica che,
+\begin{equation}
+  \epsilon_{ijk} T_{jk} = 0 \ ,
+\end{equation}
+e che quindi $T_{jk} = T_{kj}$, cioè che il tensore degli sforzi sia simmetrico.
 
 

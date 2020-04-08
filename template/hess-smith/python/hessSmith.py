@@ -3,7 +3,7 @@
 #
 
 import numpy as np
-import naca4digit as naca4
+import build_geometry as geo
 import matplotlib.pyplot as plt
 
 deg2rad = np.pi/180.
@@ -35,9 +35,16 @@ bodies['Airfoil_1'] = { 'id':1, 'airfoil':'NACA0012', 'chord':1., \
                       'ref_point':np.array([ 0., 0. ]), \
                       'n_chord_pan':30 }
 
-rr = naca4.naca4digit(0, 0, 12, 1., 30)
+elems, rr, ee, ee_te = geo.build_geometry( bodies['Airfoil_1'] )
+
+print(' ee   : '); print(ee)
+print(' ee_te: '); print(ee_te)
+print(' elems: ')
+for i in np.arange(len(elems)):
+  print(i, ': ', elems[i])
+# rr = naca4.naca4digit(0, 0, 12, 1., 30)
 print(' rr: '); print(rr)
-plt.plot(rr[0,:], rr[1,:])
+plt.plot(rr[0,:], rr[1,:], '-o')
 plt.axis('equal')
 
 plt.show()

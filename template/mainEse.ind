@@ -1,7 +1,36 @@
 \begin{theindex}
 \nopagebreak
+\tikz\node at (0pt,0pt) [draw=none,fill=ocre!50,line width=1pt,inner sep=5pt]{\parbox{\linewidth-2\fboxsep-2\fboxrule-2pt}{\centering\large\sffamily\bfseries\textcolor{white}{A}}};\vspace*{0.2cm}\nopagebreak
+
+  \item Aerodinamica\dotfill \hyperpage{181}
+
+  \indexspace
+\nopagebreak
+\tikz\node at (0pt,0pt) [draw=none,fill=ocre!50,line width=1pt,inner sep=5pt]{\parbox{\linewidth-2\fboxsep-2\fboxrule-2pt}{\centering\large\sffamily\bfseries\textcolor{white}{B}}};\vspace*{0.2cm}\nopagebreak
+
+  \item Bilanci\dotfill \hyperpage{49}
+
+  \indexspace
+\nopagebreak
+\tikz\node at (0pt,0pt) [draw=none,fill=ocre!50,line width=1pt,inner sep=5pt]{\parbox{\linewidth-2\fboxsep-2\fboxrule-2pt}{\centering\large\sffamily\bfseries\textcolor{white}{C}}};\vspace*{0.2cm}\nopagebreak
+
+  \item Cinematica\dotfill \hyperpage{31}
+
+  \indexspace
+\nopagebreak
 \tikz\node at (0pt,0pt) [draw=none,fill=ocre!50,line width=1pt,inner sep=5pt]{\parbox{\linewidth-2\fboxsep-2\fboxrule-2pt}{\centering\large\sffamily\bfseries\textcolor{white}{S}}};\vspace*{0.2cm}\nopagebreak
 
-  \item Strato limite\dotfill \hyperpage{7}
+  \item Similitudine\dotfill \hyperpage{145}
+  \item Soluzioni esatte\dotfill \hyperpage{121}
+  \item Statica\dotfill \hyperpage{7}
+  \item Strato limite\dotfill \hyperpage{211}
+
+  \indexspace
+\nopagebreak
+\tikz\node at (0pt,0pt) [draw=none,fill=ocre!50,line width=1pt,inner sep=5pt]{\parbox{\linewidth-2\fboxsep-2\fboxrule-2pt}{\centering\large\sffamily\bfseries\textcolor{white}{T}}};\vspace*{0.2cm}\nopagebreak
+
+  \item Tensione superficiale\dotfill \hyperpage{23}
+  \item Teorema di Bernoulli\dotfill \hyperpage{107}
+  \item Turbolenza\dotfill \hyperpage{225}
 
 \end{theindex}

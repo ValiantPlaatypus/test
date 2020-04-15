@@ -3,7 +3,7 @@ import sys
 import numpy as np
 
 
-def naca4digit(M, P, SS, c, n, spacing='half-cosine'):
+def naca4digit(M, P, SS, c, n, spacing='cosine'):
 
   m  =  M / 100.;  p  =  P / 10.;  t  = SS / 100.;
   if ( m == 0 ): p = 1.

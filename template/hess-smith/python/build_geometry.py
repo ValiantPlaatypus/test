@@ -26,13 +26,13 @@ def build_geometry( body ):
   n_e = np.size(ee, 1)
   ee_te = np.array( [ 0, n_e-1 ] )
 
-  print(' n_e: ', n_e )
+  # print(' n_e: ', n_e )
   elems = [];
   for ie in np.arange(n_e):
     e = {}
     e['id'] = ie
-    e['ver1'] = rr[ :, ee[0,ie] ] ; print(e['ver1'])
-    e['ver2'] = rr[ :, ee[1,ie] ] ; print(e['ver2'])
+    e['ver1'] = rr[ :, ee[0,ie] ] ; # print(e['ver1'])
+    e['ver2'] = rr[ :, ee[1,ie] ] ; # print(e['ver2'])
     e['cen']  = 0.5 * ( e['ver1'] + e['ver2'] )
     e['len']  = np.linalg.norm( e['ver1'] - e['ver2'] )
     e['tan']  = ( e['ver2'] - e['ver1'] ) / e['len']

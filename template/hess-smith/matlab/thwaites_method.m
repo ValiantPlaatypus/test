@@ -55,7 +55,7 @@ cf        = zeros(nelems,1) ;
 UeThetaH1 = zeros(nelems,1) ; % for turbulent b.l.
 H1        = zeros(nelems,1) ; % for turbulent b.l.
 % pressure and its derivative along the surface
-Res    = Ue .* s / freeStream.kin_visc ;
+Res    = Ue' .* s / freeStream.kin_visc ;
 P      = cP .* ( 0.5 * freeStream.rho * freeStream.v^2.0 ) ;
 dPdx   = zeros(nelems,1) ;
 dUedx  = zeros(nelems,1) ;
@@ -78,6 +78,8 @@ theta2Ue6(i_stg+1) = 0.45 * freeStream.kin_visc * ...
 theta2Ue6(i_stg  ) = 0.45 * freeStream.kin_visc * ...
                      Ue(i_stg  )^5.0 * ...
                    ( 0.25 * (1.0-csi_stg) * ( len(i_stg) + len(i_stg+1) ) ) ;
+% theta2Ue6(i_stg+1) = 0.0 ;
+% theta2Ue6(i_stg  ) = 0.0 ;
 theta(i_stg+1)  = ( theta2Ue6(i_stg+1) / Ue(i_stg+1)^6.0 )^0.5 ;
 theta(i_stg  )  = ( theta2Ue6(i_stg  ) / Ue(i_stg  )^6.0 )^0.5 ;
 ReTheta(i_stg+1) = Ue(i_stg+1) * theta(i_stg+1) / freeStream.kin_visc ;
@@ -121,8 +123,14 @@ for i = i_stg+2 : nelems
       delta(i) = theta(i) * H(i) ;
       cf( i) = 2.0 * ell(i) / ReTheta(i) ;
 
+      %%%% % Granville's method (WRONG) 
+      %%%% ReThetaTr = ( 54.2124/(H(i)*(H(i)-2.48)) + 31.6 / H(i) ) * ( H(i) >= 2.591 ) + ...
+      %%%%             ( 520.0/H(i) + 2.5e+6/H(i) * ( 1/H(i)-1/2.591 )^1.95 ) * ( H(i) < 2.591 ) ;
       % Michel's criterion for transition ---
-      if ( ReTheta(i) > 1.174 * ( 1.0 + 22400.0 / Res(i) ) * Res(i) ^ 0.46 )
+      % ReThetaTr = 1.174 * ( 1.0 + 22400.0 / Res(i) ) * Res(i) ^ 0.46 ;
+      ReThetaTr = 1.35 * ( 1.0 + 22400.0 / Res(i) ) * Res(i) ^ 0.46 ;
+
+      if ( ReTheta(i) > ReThetaTr )
           regime     = 'turbulent' ;
           transition = 'transition' ;
           H(i) = 1.35 ;
@@ -183,8 +191,14 @@ for i = i_stg-1 : -1 : 1
       delta(i) = theta(i) * H(i) ;
       cf( i) = 2.0 * ell(i) / ReTheta(i) ;
 
+      %%%% % Granville's method (WRONG) 
+      %%%% ReThetaTr = ( 54.2124/(H(i)*(H(i)-2.48)) + 31.6 / H(i) ) * ( H(i) >= 2.591 ) + ...
+      %%%%             ( 520.0/H(i) + 2.5e+6/H(i) * ( 1/H(i)-1/2.591 )^1.95 ) * ( H(i) < 2.591 ) ;
       % Michel's criterion for transition ---
-      if ( ReTheta(i) > 1.174 * ( 1.0 + 22400.0 / Res(i) ) * Res(i) ^ 0.46 )
+      % ReThetaTr = 1.174 * ( 1.0 + 22400.0 / Res(i) ) * Res(i) ^ 0.46 ;
+      ReThetaTr = 1.35 * ( 1.0 + 22400.0 / Res(i) ) * Res(i) ^ 0.46 ;
+
+      if ( ReTheta(i) > ReThetaTr )
           regime     = 'turbulent' ;
           transition = 'transition' ;
           H(i) = 1.35 ;
@@ -220,10 +234,10 @@ end
 
 
 %  Drag ---
-tauW = 0.5 * freeStream.rho * freeStream.v^2 * cf ;
+tauW = 0.5 * freeStream.rho * (Ue').^2 .* cf ;
 
 dF_visc = ( ( tauW .* len .* vTi'./Ue' ) * ones(1,2) )' .* tvers ;
-F_visc = sum(dF_visc) ;
+F_visc = sum(dF_visc') ;
 
 L_visc = - F_visc(1) * sin(freeStream.alpha) + F_visc(2) * cos(freeStream.alpha) ;
 D_visc =   F_visc(1) * cos(freeStream.alpha) + F_visc(2) * sin(freeStream.alpha) ;
@@ -256,7 +270,8 @@ subplot(1,2,1), plot(rrc(:,1),lambda,'-','LineWidth',1), ylabel('\lambda') , gri
 subplot(1,2,2), plot(rrc(:,1),   ell,'-','LineWidth',1), ylabel('l')       , grid on , xlabel('x')
 
 figure
-plot(rrc(:,1),cf ,'-','LineWidth',1), ylabel('C_F'), xlabel('x'), grid on
+subplot(1,2,1), plot(rrc(:,1),cf  ,'-','LineWidth',1), ylabel('C_F')   , xlabel('x'), grid on
+subplot(1,2,2), plot(rrc(:,1),tauW,'-','LineWidth',1), ylabel('\tau_W'), xlabel('x'), grid on
 
 
 [ delta(1) , delta(end) ]

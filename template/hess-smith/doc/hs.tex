@@ -1,0 +1,110 @@
+\documentclass[11pt,fleqn]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[italian]{babel}
+
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{bm}
+\usepackage[colorlinks]{hyperref}
+
+\newcommand{\ul}[1]{\underline{#1}}
+\newcommand{\uul}[1]{\ul{\ul{#1}}}
+\newcommand{\p}[2]{\dfrac{\partial{#1}}{\partial{#2}}}
+\newcommand{\f}[2]{\frac{#1}{#2}}
+\newcommand{\bh}[1]{\bm{\hat{#1}}}
+\newcommand{\remark}{}  % Dummy definition
+
+\title{H--S}
+\begin{document}
+
+\section{Geometria e strutture dati}
+
+Vogliamo creare la geometria di un profilo aerodinamico, ad esempio un profilo della serie NACA. La forma di questi profili viene definita da alcune espressioni analitiche della \textit{linea media del profilo} e dello \textit{spessore} in funzione della coordinata che descrive la direzione della corda, il segmento che congiunge il bordo d'attacco e il bordo di uscita.
+Le funzioni analitiche della linea media $y_m(x)$ e dello spessore $t(x)$ di solito definiscono un profilo di corda unitaria in un sistema di riferimento che ha l'asse $x$ coincidente con la corda: in questo sistema di riferimento il bordo di attacco ha coordinate $(0.0,\ 0.0)$, il bordo di uscita $(1.0,\ 0.0)$. Non vi riporto qui le formule, che sono facilmente reperibili con una ricerca su internet.
+
+Si ricavano i punti del dorso, muovendosi in direzione perpendicolare alla linea media di una distanza uguale allo spessore. Dato un punto della linea media di coordinate $(x, \, y_m(x))$, i punti sul ventre e sul dorso hanno coordinate
+\begin{equation}
+\begin{aligned}
+  P_v & = \left( x + t(x) \sin\theta(x), \, y_m(x) - t(x) \cos\theta(x) \right) \\
+  P_d & = \left( x - t(x) \sin\theta(x), \, y_m(x) + t(x) \cos\theta(x) \right) \ , \\
+\end{aligned}
+\end{equation}
+dove $\theta(x)$ è l'angolo tra la tangente alla linea media e l'asse $x$, $\theta(x) = \text{atan} y'_m(x)$.
+
+\subsection{Discretizzazione del profilo}
+Dividiamo la corda in \texttt{nel\_c} segmenti, con \texttt{np\_c = nel\_c + 1} punti.
+Si può scegliere una discretizzazione uniforme non uniforme dell'intervallo $x \in (0,1)$ dei punti sulla corda del profilo, 
+\begin{equation}
+\begin{aligned}
+  x_i & = \dfrac{i-1}{\texttt{np\_c}-1} \\
+  x_i & = \dfrac{1}{2}\left[ 1 - \cos\left(\dfrac{i-1}{\texttt{np\_c}-1} \pi \right) \right] \qquad , \qquad i = 1:\texttt{np\_c} \\
+  x_i & = 1 - \cos\left(\dfrac{i-1}{\texttt{np\_c}-1} \dfrac{\pi}{2} \right) \\
+  \dots \ ,
+\end{aligned}
+\end{equation}
+dove la seconda discretizzazione infittisce i punti nei pressi sia del bordo di attacco sia del bordo di uscita, mentre la terza espressione infittisce i punti nei pressi del bordo di attacco, dove la curvatura della superficie è maggiore.
+
+A ogni punto sulla corda, ad eccezione del bordo di attacco del profilo dove la funzione dello spessore è nulla, sono associati due punti sulla superficie del profilo, uno sul dorso e uno sul ventre. Si può quindi descrivere il profilo con \texttt{np = 2*nel\_c + 1} punti. Questi punti dividono la superficie in \texttt{nel = 2*nel\_c} segmenti (o elementi).
+
+Ad esempio, si possono numerare i punti con una numerazione consecutiva partendo dal punto al bordo di uscita sul ventre, precorrendo il ventre fino al bordo di attacco, e percorrendo poi il dorso fino al bordo di uscita.
+\begin{verbatim}
+rr = [ x1, x2, x3, ..., xnp ; ...
+       y1, y2, y3, ..., ynp ] ;
+\end{verbatim}
+
+Ci servirà anche identificare i segmenti che compongono la superficie del profilo e i punti che delimitano i singoli segmenti. Ad esempio, numerando i segmenti dal segmento che si trova al bordo di uscita sul ventre in maniera consecutiva percorrendo il ventre fino al bordo di attacco e poi perdorrendo il dorso fino al bordo di uscita (si segue lo stesso verso di numerazione adottato per i punti), potremo associare i nodi 1 e 2 al primo segmento, 2 e 3 al secondo segmento e così via, fino all'ultimo elemento. Gli indici dei due nodi associati all'$i$-esimo elemento possono essere inseriti nella $i$-esima colonna della matrice \texttt{ee}. Usando la logica descritta sopra, la matrice \texttt{ee} ha la forma
+\begin{verbatim}
+ee = [ 1, 2, 3, ..., np-1 ; ...
+       2, 3, 4, ..., np   ] ;
+\end{verbatim}
+
+Infine ci serve identificare l'indice dei segmenti che si trovano al bordo di uscita. Usando la numerazione descritta sopra, questi due segmenti sono il primo e l'ultimo elemento. Raccogliamo questi due indici degli elementi nel vettore \texttt{ii\_te},
+\begin{verbatim}
+ii_te = [  1 ; ...
+         nel ];
+\end{verbatim}
+
+\subsection{Dimensione e disposizione nello spazio del profilo}
+Le coordinate dei punti nella matrice \texttt{rr} per ora sono le coordinate di un profilo unitario con la corda orientata lungo l'asse $x$. Per rappresentare un profilo con una corda data $c$, posizionato in un punto desiderato nello spazio, con un angolo desiderato, occorre trasformare queste coordinate con una scalatura, una traslazione e una rotazione.
+
+\subsection{Altri dati utili}
+Una volta ottenuto il profilo desiderato, con la dimensione e la disposizione nello spazio desiderate, si possono calcolare altri dati geometrici che torneranno utili, come
+\begin{itemize}
+  \item il centro dei segmenti, come la media dei due punti del segmento;
+  \item la lungezza dei segmenti;
+  \item i versori tangenti ai segmenti;
+  \item i versori normali ai segmenti.
+\end{itemize}
+
+\subsection{Funzione \texttt{build\_geometry.m}}
+La funzione ha come ingresso una struttura che contiene alcune informazioni sul profilo. Queste informazioni vanno lette e usate per costruire le matrici \texttt{rr}, \texttt{ee}, \texttt{ii\_te}, riempiendo le righe che contengono i \dots: avete piena libertà, purché le matrici richiste contengano i dati desiderati nella forma descritta qui e nell'intestazione della funzione.
+
+Una volta costruite queste informazioni, ci si può appoggiare ad esse per riempire gli elementi della struttura \texttt{elems} che viene costruita nel ciclo \texttt{for} alla fine della funzione. L'elemento $i$-esimo della struttura $\texttt{elems}$ contiene tutte le informazioni che ci serviranno di quell'elemento:
+\begin{itemize}
+ \item \texttt{.airfoilId}: identificativo del profilo (dovrebbe essere ininfluente per quello che serve a noi; basta togliere il commento e lasciarlo uguale al dato in ingresso)
+ \item \texttt{.id}: indice dell'elemento
+ \item \texttt{.ver1}(dimensioni (2,1), ``vettore colonna''): coordinate del primo punto dell'elemento 
+ \item \texttt{.ver2}(dimensioni (2,1), ``vettore colonna''): coordinate del secondo punto dell'elemento
+ \item \texttt{.cen}(dimensioni(2,1)): coordinate del centro dell'elemento
+ \item \texttt{.len}: lunghezza dell'elemento
+ \item \texttt{.tver}(dimensioni(2,1)): versore tangente all'elemento, che punta dal primo punto verso il secondo punto
+ \item \texttt{.nver}(dimensioni(2,1)): versore normale all'elemento, che punta verso l'esterno
+\end{itemize}
+
+Come esempio, se si segue la numerazione degli elementi suggerita e adottata sopra per costruire le matrici \texttt{rr}, \texttt{ee}, il primo elemento sarà
+\begin{verbatim}
+  ie = 1;
+  elems(ie).airfoilId = airfoil.id;
+  elems(ie).id = ie;
+  elems(ie).ver1 = rr(:,ee(1,ie));
+  elems(ie).ver2 = rr(:,ee(2,ie));
+  elems(ie).cen  = 0.5 * ( elems(ie).ver1 + elems(ie).ver2 );
+  elems(ie).len  =   norm( elems(ie).ver2 - elems(ie).ver1 );
+  elems(ie).tver = ( elems(ie).ver2 - elems(ie).ver1 ) / elems(ie).len ;
+  elems(ie).nver = [-elems(ie).tver(2); elems(ie).tver1 ] ;
+\end{verbatim}
+
+\end{document}

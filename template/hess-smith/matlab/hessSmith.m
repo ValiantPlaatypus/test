@@ -14,11 +14,11 @@ viscous_corrections = true; false ; % Thwaites(laminar)+Head(turbulent) b.l. com
 
 % === Free-stream conditions ===
 freeStream.P        = 0.0   ;          % free-stream pressure
-freeStream.rho      = 1.225 ;          % free-stream density
-freeStream.v        = 10.0  ;          %             velocity absolute value
-freeStream.alpha    = 2.0 * deg2rad ;  %             velocity direction
+freeStream.rho      = 1.0   ;          % free-stream density
+freeStream.v        = 1.0   ;          %             velocity absolute value
+freeStream.alpha    = 0.0 * deg2rad ;  %             velocity direction
 freeStream.vvec     = freeStream.v * [ cos(freeStream.alpha) ; sin(freeStream.alpha) ] ;
-Re_c1 = 5.e+6;
+Re_c1 = 1.e+5;
 freeStream.dyn_visc = freeStream.rho * freeStream.v / Re_c1 ;         % free-stream dynamic viscosity
 % freeStream.dyn_visc = 1.8e-5 ;         % free-stream dynamic viscosity
 freeStream.kin_visc = ...              % free-stream kinematic viscosity
@@ -32,7 +32,7 @@ airfoil(1).chord        = 1.0 ;
 airfoil(1).theta        = 0.0 * deg2rad ;
 airfoil(1).xcRefPoint   = 0.25 ;
 airfoil(1).refPoint     = [ 0.0 ; 0.0 ] ;
-airfoil(1).nChordPanels = 30  ;
+airfoil(1).nChordPanels = 30 ;
 
 % Reference Reynolds number
 Reynolds = freeStream.rho * freeStream.v * airfoil(1).chord / freeStream.dyn_visc ;
@@ -96,6 +96,13 @@ vNi =  sum( uvec' .* nvers ) ;
 % !!! check that cP is approximately equal to 1.0 at the stagnation point    !!!
 % !!! close to the leading edge                                              !!!
 cP = 1 - vTi.^2 ./freeStream.v^2;
+
+fprintf('Inviscid forces \n')
+cF = -sum( ( ones(2,1)*( cP .* len' ) ) .* nvers, 2) ;
+al = freeStream.alpha;
+cA = [ cos(al) , sin(al) ; -sin(al) , cos(al) ] * cF ;
+fprintf(' cfx, cfy = %12.6f, %12.6f \n', cF(1), cF(2))
+fprintf(' cd , cl  = %12.6f, %12.6f \n', cA(1), cA(2))
 
 % Plot cP -----
 figure ; hold on

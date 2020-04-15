@@ -1,0 +1,63 @@
+\section{Equazioni di Prandtl dello strato limite}
+
+\section{Spessori integrali dello strato limite}
+
+\section{Equazione integrale di Von Karman}
+
+\subsection{Integrazione dell'equazione integrale di Von Karman}
+\subsubsection{Metodo di Thwaites}
+Il metodo di Thwaites permette di integrare l'equazione integrale di Von Karman,
+\begin{equation}
+\dfrac{d \theta}{dx} + \left( 2 + H \right) \dfrac{\theta}{U} \dfrac{d U}{dx} = \dfrac{c_f}{2} \ ,
+\end{equation}
+utilizzando alcune correlazioni di dati sperimentali. Utilizzando la definizione del coefficiente di attrito,
+\begin{equation}
+ c_f := \dfrac{\tau_w}{\frac{1}{2}\rho U^2} = 2 \dfrac{\nu}{U^2} \p{u}{y}\bigg|_{y=0} \ ,
+\end{equation}
+e la componente parallela alla parete della quantità di moto, valutata a parete,
+\begin{equation}
+0 = \left[ u\p{u}{x} + v\p{u}{y} - \nu \dfrac{\partial^2 u}{\partial y^2} - U \f{dU}{dx}\right]\bigg|_{y=0} \qquad \rightarrow \qquad \nu \dfrac{\partial^2 u}{\partial y^2}\bigg|_{y=0} = - U \f{dU}{dx}  \ ,
+\end{equation}
+si può riscrivere l'equazione di Von Karman,
+\begin{equation}
+ \f{d\theta}{dx} - (2+H) \f{\theta}{U^2} \nu \dfrac{\partial^2 u}{\partial y^2}\bigg|_{y=0} =
+ \dfrac{\nu}{U^2} \p{u}{y}\bigg|_{y=0} \ ,
+\end{equation}
+e moltiplicando per il fattore $U \theta / \nu$,
+\begin{equation}
+ \f{U \theta}{\nu} \f{d\theta}{dx} =
+ \f{\theta}{U}\p{u}{y}\bigg|_{y=0} + (2+H) \f{\theta^2}{U} \dfrac{\partial^2 u}{\partial y^2}\bigg|_{y=0} \ .
+\end{equation}
+Seguendo Thwaites, vengono definiti due parametri adimensionali,
+\begin{equation}
+ \ell := \f{\theta}{U}\p{u}{y}\bigg|_{y=0} 
+ \qquad , \qquad
+    m := \f{\theta^2}{U} \dfrac{\partial^2 u}{\partial y^2}\bigg|_{y=0}
+       = - \dfrac{\theta^2}{\nu}\dfrac{dU}{dx} \ ,
+\end{equation}
+e l'equazione integrale di Von Karman diventa
+\begin{equation}
+ \f{U}{\nu} \f{d}{dx}\f{\theta^2}{2} = \ell + ( 2 + H ) m =: L(m) \ ,
+\end{equation}
+avendo introdotto la funzione $L(m)$, per la quale si può trovare una correlazione di dati sperimentali,
+\begin{equation}
+ L(m) = 0.45 + 6 \, m  \ .
+\end{equation}
+Utilizzando questa espressione della funzione $L(m)$ e la definizione di $m$ in termini della derivata della velocità esterna, l'equazione di Von Karman diventa
+\begin{equation}
+ \f{U}{\nu} \f{d}{dx}\f{\theta^2}{2} = 0.45 - 6 \f{\theta^2}{\nu}\f{dU}{dx} \ ,
+\end{equation}
+Portando a sinistra dell'uguale l'ultimo termine, moltiplicando tutti i termini dell'equazione per $U^5$, e sfruttando la regola di derivazione del prodotto, si può scrivere
+\begin{equation}
+ \f{d}{dx} \left( U^6 \theta^2 \right) = 0.45 \nu U^5 \ ,
+\end{equation}
+il cui integrale vale
+\begin{equation}
+ U^6(x)\theta^2(x) - U^6(x_0)\theta^2(x_0) = 0.45 \nu \int_{\xi=0}^{x} U^5(\xi) d\xi \ .
+\end{equation}
+Se si integra questa equazione a partire da un punto $x_0$ dove la velocità esterna è nulla, $U(x_0)^2$, si può trovare l'andamento dello spessore integrale della quantità di moto,
+\begin{equation}
+ \theta^2(x) = 0.45 \nu \f{1}{U^5(x)} \int_{\xi=0}^{x} U^5(\xi) d\xi \ .
+\end{equation}
+
+\section{Strato limite laminare su lamina piana: soluzione di Blasius}

@@ -1,89 +1,72 @@
-function [ A , b , Au , Av ] = build_linsys( freeStream , elems , ii_te )
+function [ A , b , Au , Av ] = build_linsys( freeStream , elems , ee_te )
 
 nelems    = length(elems) ;   % n. of panels
+n_te      = 1 ;               % n. of te = n. of Kutta conditions to be assigned
 
-% === Initialise matrices to zero ===
-% --- matrix and rhs vector of the linsys, A*x = b ----------------------------- 
-A  = zeros(nelems+1   ) ; 
-b  = zeros(nelems+1,1 ) ;
-% --- matrices to retrieve velocity vectors at the control points with       ---
-% ---  mat*vec multiplication:   u = Au*x , v = Av*x                         ---
-Au = zeros(nelems,nelems+1) ; Av = Au ;
+% === Initialize matrices ===
+%> Linear system
+A  = zeros(nelems+n_te   ) ; 
+b  = zeros(nelems+n_te,1 ) ;
+%> Auxiliary matrices for computing on-body velocity
+Au = zeros(nelems,nelems+n_te) ; Av = Au ;
 
 % === Fill A matrix and RHS b vector ===
-% 1. assign the non-penetration b.c. ( u.n = 0 ) -------------------------------
+%> 1. assign non-penetration b.c. ( u.n = 0 )
 % rows = 1:nelems, cols = 1:nelems+nTe 
-%
-for ii = 1 : nelems    % elems where velocity is induced
+for ii = 1 : nelems    % "passive" elem
 
-    for jj = 1 : nelems    % inducing elems
+    for jj = 1 : nelems    % "active" elem
+
+      %> === A matrix of the linear system ===
 
       % Velocity induced by unitary intensity singularities of the j-th elem on
       %  the centre of the i-th elem
-      % ( save the velocity AIC to "arrays of vectors" vs(:,:).v , vv(:,:).v, so
-      %   that the vectors vs(ii,jj).v and vv(ii,jj).v are the velocity induced
-      %   by the jj-th source and vortex of unitary intensity on the control pt
-      %   of the ii-th elem, elems(ii).cen )
-      vs = compute_velocity_source( elems(jj) , elems(ii).cen ) ;  % sources
-      vv = compute_velocity_vortex( elems(jj) , elems(ii).cen ) ;  % vortices
+      vs(ii,jj).v = compute_velocity_source( elems(jj), elems(ii) );
+      vv(ii,jj).v = compute_velocity_vortex( elems(jj), elems(ii) );
 
-      % === Fill b.c. block of the matrix A with source AIC ===
-      A (ii,jj)   = elems(ii).nver' * vs ;
-      % === Accumulate vortex AIC in the b.c. block of the matrix A === 
-      A( ii,nelems+1 ) =  ...
-          A( ii,nelems+1 ) + elems(ii).nver' * vv ; 
+      % Fill source to elems matrix elements
+      %  A(i,j) = ni' * vs_j(r_i)
+      A(ii,jj) = elems(ii).nver' * vs(ii,jj).v ;
+      % Update vortex to elems matrix elements (accumulation)
+      %  A(i,j) += ni . vv_j(r_i)
+      A(ii,nelems+1) = ...
+         A(ii,nelems+1) + elems(ii).nver' * vv(ii,jj).v; % #####
 
-      % === Fill matrices to retrieve the velocity field ===
-      % as before, fill sources block, accumulate vortex contributions
-      % -> component x of the velocity field
-      Au(ii,jj)   = vs(1) ;                            % sources
-      Au(ii,nelems+1 ) = ...
-          Au(ii,nelems+1 ) + vv(1) ; % vortices
-      % -> component y of the velocity field
-      Av(ii,jj)   = vs(2) ;                            % sources
-      Av(ii,nelems+1 ) = ...
-          Av(ii,nelems+1 ) + vv(2) ; % vortices
-
+      %> === Auxiliary matrices ===
+      % Matrices to retrieve on-body velocity
+      Au(ii,jj)   = vs(ii,jj).v(1) ;    % sources
+      Av(ii,jj)   = vs(ii,jj).v(2) ;
+      Au(ii,nelems+elems(jj).airfoilId ) = ...
+         Au(ii,nelems+elems(jj).airfoilId ) + vv(ii,jj).v(1) ; % vortices
+      Av(ii,nelems+elems(jj).airfoilId ) = ...
+         Av(ii,nelems+elems(jj).airfoilId ) + vv(ii,jj).v(2) ;
 
     end
 
-    % === Fill the b.c. block of the rhs vector b ===
+    % 
     b(ii) = - elems(ii).nver' * freeStream.vvec ;
 
 end
 
-% 2. assign Kutta condition at all the trailing edges -------------------------
+%> 2. assign Kutta condition at all the trailing edges
 % Kutta condition is approximated as:
 %
 %  U_TE_upper . tTE_upper + U_TE_lower . tTE_lower = 0
 %
 % rows = nelems+1:nelems+nTe, cols = 1:nelems+nTe 
-%
 
-% indices of the elems at the te
-i_te_1 = ii_te(1,1) ;
-i_te_N = ii_te(1,2) ;
+for ia = 1 : n_te
 
-for jj = 1  : nelems
+  for jj = 1  : nelems
 
-  vs_1 = compute_velocity_source( elems(jj) , elems(i_te_1).cen ) ;  % sources
-  vv_1 = compute_velocity_vortex( elems(jj) , elems(i_te_1).cen ) ;  % vortices
-  vs_N = compute_velocity_source( elems(jj) , elems(i_te_N).cen ) ;  % sources
-  vv_N = compute_velocity_vortex( elems(jj) , elems(i_te_N).cen ) ;  % vortices
+  A(nelems+ia, jj ) = elems(ee_te(ia,1)).tver' * vs(ee_te(ia,1),jj).v + ...
+                      elems(ee_te(ia,2)).tver' * vs(ee_te(ia,2),jj).v ;
+  A(nelems+ia,nelems+elems(jj).airfoilId) = A(nelems+ia,nelems+elems(jj).airfoilId) + ...
+                             elems(ee_te(ia,1)).tver' * vv(ee_te(ia,1),jj).v +  ...
+                             elems(ee_te(ia,2)).tver' * vv(ee_te(ia,2),jj).v ; 
+  end
 
-  % fill the Kutta condition row with the source contributions 
-  A(nelems+1, jj ) = elems(i_te_1).tver' * vs_1 + ...
-                     elems(i_te_N).tver' * vs_N ;
-  % accumulate the contribution of the vortex in the last elem of the Kutta
-  % condition row
-  A(nelems+1,nelems+1) = ...
-         A(nelems+1,nelems+1) + ...
-            elems(i_te_1).tver' * vv_1 +  ...
-            elems(i_te_N).tver' * vv_N ; 
+  b(nelems+ia) = - ( elems( ee_te(ia,1) ).tver + elems( ee_te(ia,2) ).tver )' * freeStream.vvec ;
+
 end
-
-% fill the last component of the rhs ( -(t1+tN).U_inf )
-b(nelems+1) = - ( elems( i_te_1 ).tver + elems( i_te_N ).tver )' * ...
-                   freeStream.vvec ;
-
 

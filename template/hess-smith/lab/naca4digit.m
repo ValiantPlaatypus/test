@@ -8,16 +8,19 @@ if ( m == 0 ) % p must be .ne. 0 !!!
   p = 1 ;
 end
 
-xv = linspace(0,c,n+1);
-xv = c/2 .*(1-cos(pi.*xv./c));
+%> === Chord discretization ===
+xv = linspace(0.0,c,n+1);            % uniform
+% xv = c/2.0 .*(1.0-cos(pi.*xv./c));   % cosine
+xv = c .*(1.0-cos(0.5*pi.*xv./c));   % half-cosine
 
-% Spessore
+%> === Thickness ===
 ytfcn = @(x) 5.*t.*c.*(0.2969.*(x./c).^0.5 - 0.1260.*(x./c) ...
     - 0.3516.*(x./c).^2 + 0.2843.*(x./c).^3 - 0.1015.*(x./c).^4);
-% 1015 1036
+% 1015: open TE
+% 1036: closed TE
 yt = ytfcn(xv);
 
-% Linea Media
+%> === Mean line ===
 yc = zeros(size(xv));
 
 for ii = 1 : n+1
@@ -28,7 +31,7 @@ for ii = 1 : n+1
     end
 end
 
-% Derivata della Linea Media
+%> === Mean line slope ===
 dyc = zeros(size(xv));
 
 for ii = 1 : n+1
@@ -39,13 +42,14 @@ for ii = 1 : n+1
     end
 end
 
-% Ventre e Dorso
+%> === Upper and lower sides ===
 th = atan2(dyc,1);
 xU = xv - yt.*sin(th);
 yU = yc + yt.*cos(th);
 xL = xv + yt.*sin(th);
 yL = yc - yt.*cos(th);
 
+%> Sort points
 x = zeros(1,2*n+1);
 y = zeros(1,2*n+1);
 for ii = 1 : n

@@ -1,0 +1,51 @@
+# +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ #
+# Import data provided by Towne et al. and perform Spectral-POD       #
+#                                                                     #
+# do it in Python and train yourself                                  #
+#                                                                     #
+# +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ #
+
+# import libraries -----
+#import sys
+#import scipy.io   # it should be enough to import scipy.io
+import h5py
+import numpy as np
+
+
+# beginning of the program -----
+print('\n Start of the program.\n')
+
+# read input file from command line
+# filen for Towne's example is:
+# filen = '/home/davide/Software/spod-towne/spod_matlab-master/jet_data/jetLES.mat
+# filen = sys.argv[1]
+filen = '/home/davide/Software/spod-towne/spod_matlab-master/jet_data/jetLES.mat'
+
+f = h5py.File(filen, 'r') # h5py.File acts like a Python dictionary
+#print('len(f):', len(f))
+#print('f.keys():', f.keys())
+print('list(f.keys()):', list(f.keys()))
+print('f:', f)
+for i1 in range(0,len(f)):
+  print(' field', i1,': ',list(f.keys())[i1])
+  print(f[list(f.keys())[i1]].shape)
+
+## test with dictionary
+#my_dict = {
+#    'xx':0.1,
+#    'yy':0.2,
+#    'zz':0.3,
+#    'uu':0.4,
+#    'vv':0.5,
+#    'ww':0.6,
+#    'pp':0.7,
+#}
+#print('len(my_dict):', len(my_dict))
+#print('my_dict:',my_dict)
+#print('my_dict.keys():', my_dict.keys())
+#
+#print('my_dict["uu"]:', my_dict['uu'])
+
+
+print('\n End of the program. Bye!\n')
+# end of the program -----

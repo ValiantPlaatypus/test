@@ -1,0 +1,132 @@
+
+In questo paragrafo viene ripreso il concetto di \textbf{scala caratteristica} (di lunghezza, di tempo, \dots) di un sistema nell'ambito della similitudine, per determinare il numero di parametri adimensionali caratteristici del problema, grazie al teorema di Buckingham.
+Cerchiamo di raccordare il processo rigoroso di adimensionalizzazione delle equazioni con un approccio più euristico che valuta ``intuitivamente'' quali sono le grandezze significative indipendenti che influenzano il problema.
+
+\subsection{Adimensionalizzazione delle equazioni di Navier--Stokes}
+L'adimensionalizzazione delle equazioni di Navier--Stokes per una corrente incomprimibile, a densità e viscosità uniforme,
+\begin{equation}
+\begin{cases}
+ \rho\p{\bm{u}}{t} + \rho ( \bm{u} \cdot \bm{\nabla} ) \bm{u} 
+ - \mu\Delta \bm{u} - \bm{\nabla} p = 0 \ , \\
+ \bm{\nabla} \cdot \bm{u} = 0 \ ,
+\end{cases}
+\end{equation}
+viene svolta esprimendo ogni grandezza fisica che compare nelle equazioni come prodotto di una grandezza dimensionale di riferimento e la grandezza adimensionalizzata,
+\begin{equation}
+\begin{aligned}
+ \bm{x} & = L \bm{x}^* \\  
+     t  & = T    {t}^* \\
+ \bm{u} & = U \bm{u}^* \\
+     p  & = P    {p}^* \\
+ \mu    & = \mu  \mu^* \ , \quad  \mu^* = 1 \\
+ \rho   & = \rho\rho^* \ , \quad \rho^* = 1 \ ,
+\end{aligned}
+\end{equation}
+avendo scelto come grandezza dimensionale di riferimento per i parametri uniformi (densità e viscosità dinamica) la grandezza stessa, poiché non ha senso (o almeno, io non ne vedo il motivo) scegliere un altro valore di riferimento. Con questa scelta, la densità e la viscosità dinamica adimensionali hanno valore unitario.
+L'operatore nabla viene infine espresso come,
+\begin{equation}
+ \bm{\nabla} = \dfrac{1}{L} \bm{\nabla}^* \ ,
+\end{equation}
+ricordandosi che contiene le derivate spaziali. Le equazioni di Navier--Stokes contengono $A=6$ grandezze fisiche,
+\begin{equation}
+ \bm{u}, \ p, \ \bm{x}, \ t, \ \rho, \ \mu \ ,
+\end{equation}
+e $B=3$ dimensioni fisiche,
+\begin{equation}
+ \text{massa, lunghezza, tempo} \ ,
+\end{equation}
+quindi il problema è completamente caratterizzato da $C=A-B = 3$ numeri adimensionali per il teorema $\pi$ di Buckingham.
+
+\vspace{0.2cm}
+\noindent
+Le equazioni di Navier--Stokes diventano
+\begin{equation}
+\begin{cases}
+ \dfrac{U}{T} \p{\bm{u}^*}{t^*} + \dfrac{U^2}{L} ( \bm{u}^* \cdot \bm{\nabla}^* ) \bm{u}^* 
+ - \dfrac{\mu U}{\rho L^2} \Delta^* \bm{u}^* - \dfrac{P}{\rho L} \bm{\nabla}^* p^* = 0 \ , \\
+ \dfrac{U}{L} \bm{\nabla}^* \cdot \bm{u}^* = 0 \ .
+\end{cases}
+\end{equation}
+Si può moltiplicare l'equazione della quantità di moto per $L/U^2$ e il vincolo di incomprimibilità per $L/U$ per ottenere,
+\begin{equation}
+\begin{cases}
+ \dfrac{L}{U T} \p{\bm{u}^*}{t^*} + ( \bm{u}^* \cdot \bm{\nabla}^* ) \bm{u}^* 
+ - \dfrac{\mu}{\rho U L} \Delta^* \bm{u}^* - \dfrac{P}{\rho U^2} \bm{\nabla}^* p^* = 0 \ , \\
+ \bm{\nabla}^* \cdot \bm{u}^* = 0 \ .
+\end{cases}
+\end{equation}
+e mettere in evidenza i 3 numeri adimensionali che caratterizzano completamente il problema,
+\begin{equation}
+\begin{aligned}
+ \pi_1 & = \dfrac{\mu}{\rho UL}= \dfrac{1}{Re} \\
+ \pi_2 & = \dfrac{L}{U T} = St \\
+ \pi_3 & = \dfrac{P}{\rho U^2} = Eu \ ,
+\end{aligned}
+\end{equation}
+stretti parenti del numero di Strouhal, del numero di Reynolds e del numero di Eulero.
+
+\subsection{Analisi dimensionale}
+Utilizzando l'analisi dimensionale si possono identificare i parametri adimensionali che caratterizzano un problema anche se non si conoscono le equazioni che governano il sistema, o si conoscono ma non si sanno/vogliono risolvere.
+
+Il punto di contatto tra le conclusioni dell'analisi dimensionale e dell'adimensionalizzazione rigorosa delle equazioni si trova usando un \textbf{criterio di ``significatività''} delle grandezze fisiche: qualitativamente, possiamo definire una grandezza fisica come significativa, se ha una diretta influenza sul problema, e non è una conseguenza di altre grzndezze fisiche significative.
+
+Utilizziamo due esempi per comprendere l'applicazione dell'analisi dimensionale per costruire i \textbf{numeri adimensionali significativi} del problema, utilizzando le \textbf{grandezze fisiche significative} del problema (le scale di lunghezza, tempo, massa, ... caratteristiche del problema).
+
+Il primo esempio è costituito da un profilo aerodinamico fermo di corda $c$, investito da una corrente incomprimibile con velocità asintotica $\bm{U}$, densità $\rho$, viscosità dinamica $\mu$.
+Il secondo esempio è costituito dallo stesso profilo del primo esempio, il cui angolo di calettamento varia con una frequenza $f$ nota, e periodo $T = 1/f$.
+Il primo esempio è caratterizzato quindi da $A^{(1)} = 4$ grandezze fisiche significative, il secondo esempio da $A^{(2)} = 5$. Entrambi gli esempi coinvolgono le $B=3$ dimensionifisiche di massa, lunghezza e tempo. Il teorema di Buckingham implica l'esistenza di $C^{(1)} = 1$ e $C^{(2)}=2$ numeri adimensionali significativi per i due problemi.
+
+Il teorema di Buckingham non ci suggerisce quali grandezze significative (più significative delle altre) per adimensionalizzare quelle rimanenti e ottenere i numeri adimensionali, purché siano sufficienti per adimensionalizzare tutte le altre grandezze fisiche. Utilizzeremo qui la densità $\rho$, il modulo della velocità $U_{\infty}$ e la corda del profilo $c$ come grandezze ``più significative'', scelta tipica dell'adimensionalizzazione per le correnti ad alti numeri di Reynolds.
+
+Nel primo esempio, l'unico numero adimensionale significativo è il numero di Reynolds che si ottiene dall'adimensionalizzazione della viscosità dinamica,
+\begin{equation}
+ \pi^{(1)}_1 = \dfrac{\mu}{\rho U L} = \dfrac{1}{Re} \ .
+\end{equation}
+
+Nel secondo esempio, i due numeri adimensionali significativi sono il numero di Reynolds che si ottiene dall'adimensionalizzazione della viscosità dinamica, e il numero di Strouhal che si ottiene dall'adimensionalizzazione della frequenza di oscillazione del profilo aerodinamico,
+\begin{equation}
+\begin{aligned}
+ \pi^{(2)}_1 & = \dfrac{\mu}{\rho U L} = \dfrac{1}{Re} \\
+ \pi^{(2)}_2 & = \dfrac{f L}{ U }      =\dfrac{L}{T U} = St \ .
+\end{aligned}
+\end{equation}
+Nel secondo esempio, avendo una scala di tempo $T$ caratteristica significativa per problema associata all'oscillazione del profilo, compaiono due numeri adimensionali significativi.
+
+\subsection{Visione ``unificata'' di adimenisonalizzazione rigorosa e analisi dimensionale}
+I numeri adimensionali significativi dei problemi ottenuti nel paragrafo precedente sono un sottoinsieme dei 3 numeri adimensionali ottenuti dal procedimento rigoroso di adimensionalizzazione delle equazioni, in particolare sono il sottoinsieme dei ``numeri adimensionali significativi''.
+\footnote{
+ Diverse scelte delle grandezze ``più'' caratteristiche utilizzate per adimensionalizzare le grandezze fisiche rimanenti, potrebbero a portare a diverse definizione dei numeri adimensionali caratteristici del problema, come abbimao visto durante l'adimensionalizzazione delle equazioni di Boussinesq con i numeri di Grashof, Prandlt e Rayleigh,
+\begin{equation}
+  Ra = Gr \, Pr \ .
+\end{equation}
+}
+
+A questo punto ci si potrebbe chiedere che fine hanno fatto gli altri numeri adimensionali, quelli ``insignificanti'' ai fini della caratterizzazione del problema, quelli che non sono associati a scale caratteristiche del problema.
+Ci si può chiedere anche qual è l'espressione più semplice delle equazioni in forma adimensionale.
+
+Prendendo il primo esempio, abbiamo visto che l'unico numero adimensionale significativo (nel quale compaiono solo grandezze significative del problema) è il numero $\pi_1 = 1/Re$. Nei numeri adimenionali $\pi_2$, $\pi_3$ compare la scala dei tempi $T$ e la scala delle pressioni $P$. Poiché, nel primo problema non ci sono scale dei tempi e delle pressioni caratteristiche (o ``significative''), si possono definire queste scale, in funzione delle grandezze significative in modo da assegnare un valore unitario ai numeri adimensionali ``insignificanti''
+\begin{equation}
+\begin{aligned}
+ St = 1 \quad & \rightarrow \quad T = \dfrac{L}{U} \\
+ Eu = 1 \quad & \rightarrow \quad P = \rho U^ 2    \ ,
+\end{aligned}
+\end{equation}
+in modo tale che compaiano solo i numeri adimenisonali significativi (costituiti da grandezze fisiche significative, ai quali non si può assegnare il valore unitario senza stravolgere il regime del sistema),
+\begin{equation}
+\begin{cases}
+ \p{\bm{u}^*}{t^*} + ( \bm{u}^* \cdot \bm{\nabla}^* ) \bm{u}^* 
+ - \dfrac{1}{Re} \Delta^* \bm{u}^* - \bm{\nabla}^* p^* = 0 \ , \\
+ \bm{\nabla}^* \cdot \bm{u}^* = 0 \ .
+\end{cases}
+\end{equation}
+
+Nel secondo esempio, sia il numero di Strouhal sia il numero di Reynolds sono numeri adimensionali significativi, e le equazioni diventano,
+\begin{equation}
+\begin{cases}
+ St \, \p{\bm{u}^*}{t^*} + ( \bm{u}^* \cdot \bm{\nabla}^* ) \bm{u}^* 
+ - \dfrac{1}{Re} \Delta^* \bm{u}^* - \bm{\nabla}^* p^* = 0 \ , \\
+ \bm{\nabla}^* \cdot \bm{u}^* = 0 \ .
+\end{cases}
+\end{equation}
+
+Per completezza, si ricorda che il campo di ``pressione'' svolge un ruolo particolare nelle equazioni di di Navier--Stokes per correnti incomprimibili, perdendo il significato di variabile termodinamica e assumendo un'interpretazione matematica di moltiplicatore di Lagrange necessaria all'applicazione del vincolo di incomprimibilità. Abbiamo anche visto duante alcuni esercizi che lo stato del sistema non dipende dal valore assoluto della pressione, ma dal suo gradiente o dalla differenza di pressione in diverse parti del dominio (pensate agli esercizi sul manometro differenziale o ogni volta che ci mancava la costante di integrazione per il campo di pressione), avendo perso qualsiasi legame con la termodinamica e lo stato termodinamico del fluiod. Difficilmente quindi si avrà una scala di pressione caratteristica (``significativa'' e indipendente) in un problema con una corrente incomprimibile, e quindi potrà (quasi)sempre essere assegnato un valore unitario al numero di Eulero, $Eu = 1$, definendo la scala di pressione come $P = \rho U^2$.

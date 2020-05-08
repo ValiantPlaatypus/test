@@ -39,7 +39,7 @@ freeStream.kin_visc = freeStream.dyn_visc / freeStream.rho ;
 airfoil.id           = 1 ;
 airfoil.airfoil_str  = 'NACA0012' ;
 airfoil.chord        = 1.0 ;
-airfoil.theta        =10.0 * deg2rad ;
+airfoil.theta        = 4.0 * deg2rad ;
 airfoil.xcRefPoint   = 0.25 ;
 airfoil.refPoint     = [ 0.0 ; 0.0 ] ;
 airfoil.nChordPanels = 20 ;
@@ -125,6 +125,13 @@ cA = [ cos(al) , sin(al) ; -sin(al) , cos(al) ] * cF ;
 fprintf('Inviscid forces \n')
 fprintf(' cfx, cfy = %12.6f, %12.6f \n', cF(1), cF(2))
 fprintf(' cd , cl  = %12.6f, %12.6f \n', cA(1), cA(2))
+
+%> Lift using Kutta-Jukowski theorem
+Gam = sing_intensity(end) * sum(len);
+lKJ = -freeStream.rho * freeStream.v * Gam;
+clKJ = lKJ / (0.5*freeStream.rho*freeStream.v^2*airfoil.chord);
+fprintf(' Kutta Jukowski \n')
+fprintf(' KJ   cl  =               %12.6f \n', clKJ)
 
 %> Plot cP
 figure ; hold on

@@ -1,17 +1,22 @@
 \babel@toc {italian}{}
 \babel@toc {italian}{}
 \contentsline {section}{\numberline {1}Traslazione, rotazione e deformazione e deformazione di un elemento di fluido}{1}{section.1}
-\contentsline {subsection}{\numberline {1.1}Esempio: corrente di Newton}{4}{subsection.1.1}
-\contentsline {section}{\numberline {2}Legame tra le linee di corrente e le linee di livello della funzione di corrente $\psi $: problema 2D}{6}{section.2}
-\contentsline {section}{\numberline {3}Tensore degli sforzi}{9}{section.3}
-\contentsline {paragraph}{Bilancio di massa.}{10}{section*.2}
-\contentsline {paragraph}{Bilancio della quantit\IeC {\`a} di moto.}{10}{section*.3}
-\contentsline {paragraph}{Bilancio della quantit\IeC {\`a} di moto.}{12}{section*.4}
-\contentsline {section}{\numberline {4}Equazione della quantit\IeC {\`a} di moto e curvatura delle linee di corrente}{14}{section.4}
-\contentsline {paragraph}{Richiami di geometria delle curve nello spazio.}{14}{section*.5}
-\contentsline {paragraph}{Ritorno al bilancio della quantit\IeC {\`a} di moto.}{16}{section*.6}
-\contentsline {section}{\numberline {5}Teoremi di Bernoulli ed equazione della vorticit\IeC {\`a}}{18}{section.5}
-\contentsline {paragraph}{Prima forma del teorema di Bernoulli}{18}{section*.7}
-\contentsline {paragraph}{Seconda forma del teorema di Bernoulli}{18}{section*.8}
-\contentsline {paragraph}{Terza forma del teorema di Bernoulli}{19}{section*.9}
-\contentsline {paragraph}{Teoremi di Bernoulli per fluidi viscosi incomprimibili}{19}{section*.10}
+\contentsline {subsection}{\numberline {1.1}Esempio: corrente di Newton}{5}{subsection.1.1}
+\contentsline {section}{\numberline {2}Legame tra le linee di corrente e le linee di livello della funzione di corrente $\psi $: problema 2D}{7}{section.2}
+\contentsline {section}{\numberline {3}Tensore degli sforzi}{10}{section.3}
+\contentsline {paragraph}{Bilancio di massa.}{11}{section*.2}
+\contentsline {paragraph}{Bilancio della quantit\IeC {\`a} di moto.}{11}{section*.3}
+\contentsline {paragraph}{Bilancio della quantit\IeC {\`a} di moto.}{13}{section*.4}
+\contentsline {section}{\numberline {4}Equazione della quantit\IeC {\`a} di moto e curvatura delle linee di corrente}{15}{section.4}
+\contentsline {paragraph}{Richiami di geometria delle curve nello spazio.}{15}{section*.5}
+\contentsline {paragraph}{Ritorno al bilancio della quantit\IeC {\`a} di moto.}{17}{section*.6}
+\contentsline {section}{\numberline {5}Teoremi di Bernoulli ed equazione della vorticit\IeC {\`a}}{19}{section.5}
+\contentsline {paragraph}{Prima forma del teorema di Bernoulli}{19}{section*.7}
+\contentsline {paragraph}{Seconda forma del teorema di Bernoulli}{19}{section*.8}
+\contentsline {paragraph}{Terza forma del teorema di Bernoulli}{20}{section*.9}
+\contentsline {paragraph}{Teoremi di Bernoulli per fluidi viscosi incomprimibili}{20}{section*.10}
+\contentsline {section}{\numberline {6}Teorema di Kutta--Jukowski}{21}{section.6}
+\contentsline {section}{\numberline {7}Cenni sulla similitudine}{24}{section.7}
+\contentsline {subsection}{\numberline {7.1}Adimensionalizzazione delle equazioni di Navier--Stokes}{24}{subsection.7.1}
+\contentsline {subsection}{\numberline {7.2}Analisi dimensionale}{25}{subsection.7.2}
+\contentsline {subsection}{\numberline {7.3}Visione ``unificata'' di adimenisonalizzazione rigorosa e analisi dimensionale}{27}{subsection.7.3}

@@ -34,16 +34,29 @@ for ii = 1 : nelems    % "passive" elem
     Au(ii,nelems+1) = Au(ii,nelems+1) + vv_ij(1);
     Av(ii,nelems+1) = Av(ii,nelems+1) + vv_ij(2);
 
+    %> Kutta condition
+    if ( any(ee_te == ii) )
+      % Sources
+      A(nelems+1,jj      ) =                        elems(ii).tver' * vs_ij;
+      % Vortex
+      A(nelems+1,nelems+1) = A(nelems+1,nelems+1) + elems(ii).tver' * vv_ij;
+    end
+
   end
 
   %> RHS
   b(ii) = - elems(ii).nver' * freeStream.vvec ;
 
+  %> Kutta condition
+  if ( any(ee_te == ii) )
+    b(nelems+1) = b(nelems+1) - elems(ii).tver' * freeStream.vvec;
+  end
+
 end
 
-% Kutta condition ????
-A(end,:) = 0.0; A(end,end) = 1.0;
-b(end,:) = 0.0;
+% % Kutta condition ????
+% A(end,:) = 0.0; A(end,end) = 1.0;
+% b(end,:) = 0.0;
 % 
 % 
 % 

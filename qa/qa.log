@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.3.29)  8 APR 2020 14:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.3.29)  8 MAY 2020 19:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -706,26 +706,25 @@ Overfull \hbox (10.46556pt too wide) detected at line 78
  $[][]$  
  []
 
-
+[3]
 Overfull \hbox (1.32878pt too wide) detected at line 107
  $[][]$  
  []
 
-[3]
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 115.
 
- (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+(/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 115.
  [4]
-<./rotdef.pdf, id=100, 585.03812pt x 253.73921pt>
+<./rotdef.pdf, id=124, 585.03812pt x 253.73921pt>
 File: ./rotdef.pdf Graphic file (type pdf)
 <use ./rotdef.pdf>
 Package pdftex.def Info: ./rotdef.pdf  used on input line 205.
 (pdftex.def)             Requested size: 341.9989pt x 148.33035pt.
-) [5 <./rotdef.pdf>]
+ [5]) [6 <./rotdef.pdf>]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 33.
@@ -738,10 +737,10 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 33.
 
-(./psi_streamlines.tex [6
+(./psi_streamlines.tex [7
 
 ]
-<./psi_streamlines.pdf, id=132, 284.52756pt x 284.52756pt>
+<./psi_streamlines.pdf, id=164, 284.52756pt x 284.52756pt>
 File: ./psi_streamlines.pdf Graphic file (type pdf)
 <use ./psi_streamlines.pdf>
 Package pdftex.def Info: ./psi_streamlines.pdf  used on input line 43.
@@ -750,28 +749,28 @@ Package pdftex.def Info: ./psi_streamlines.pdf  used on input line 43.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-) [7] [8 <./psi_streamlines.pdf>] (./stressTensor.tex
+) [8] [9 <./psi_streamlines.pdf>] (./stressTensor.tex
 
 pdfTeX warning: pdflatex (file ./fig/cauchy.pdf): PDF inclusion: found PDF vers
 ion <1.7>, but at most version <1.5> allowed
-<./fig/cauchy.pdf, id=148, 407.5225pt x 380.42125pt>
+<./fig/cauchy.pdf, id=179, 407.5225pt x 380.42125pt>
 File: ./fig/cauchy.pdf Graphic file (type pdf)
 <use ./fig/cauchy.pdf>
 Package pdftex.def Info: ./fig/cauchy.pdf  used on input line 10.
 (pdftex.def)             Requested size: 216.0022pt x 201.63971pt.
-[9
+[10
 
  <./fig/cauchy.pdf>]
 Overfull \hbox (12.71762pt too wide) detected at line 57
  $[][]$  
  []
 
-[10]
+[11]
 Overfull \hbox (86.63727pt too wide) detected at line 95
  $[][]$  
  []
 
-[11] [12]) [13] (./../template/capitoli/04_bilanci/0410momentum.tex [14
+[12] [13]) [14] (./../template/capitoli/04_bilanci/0410momentum.tex [15
 
 ]
 Package epstopdf Info: Source file: <./fig/frenet.eps>
@@ -784,7 +783,7 @@ Package epstopdf Info: Source file: <./fig/frenet.eps>
 -to.pdf ./fig/frenet.eps>
 (epstopdf)             \includegraphics on input line 138.
 Package epstopdf Info: Output file is already uptodate.
-<./fig/frenet-eps-converted-to.pdf, id=214, 377.41pt x 442.65375pt>
+<./fig/frenet-eps-converted-to.pdf, id=244, 377.41pt x 442.65375pt>
 File: ./fig/frenet-eps-converted-to.pdf Graphic file (type pdf)
 <use ./fig/frenet-eps-converted-to.pdf>
 Package pdftex.def Info: ./fig/frenet-eps-converted-to.pdf  used on input line 
@@ -795,71 +794,94 @@ Overfull \hbox (2.42162pt too wide) in paragraph at lines 117--141
 $[]$  $[]$ 
  []
 
-[15] [16 <./fig/frenet-eps-converted-to.pdf>]) [17]
+[16] [17 <./fig/frenet-eps-converted-to.pdf>]) [18]
 (./../template/capitoli/05_bernoulli/05teoria.tex
 Overfull \hbox (45.2264pt too wide) detected at line 13
  $[][]$  
  []
 
-[18
+[19
 
-]) [19]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 52.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 52.
+]) [20] (./kj.tex
+<./fig/kj.pdf, id=293, 569.05513pt x 569.05513pt>
+File: ./fig/kj.pdf Graphic file (type pdf)
+<use ./fig/kj.pdf>
+Package pdftex.def Info: ./fig/kj.pdf  used on input line 28.
+(pdftex.def)             Requested size: 270.0pt x 232.06686pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[21
+
+] [22 <./fig/kj.pdf>]) [23] (./sim.tex [24
+
+] [25] [26] [27]) [28]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 58.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 58.
  (./qa.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 52.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 52.
-Package rerunfilecheck Info: File `qa.out' has not changed.
-(rerunfilecheck)             Checksum: 462D0DD95FA798CEA70251F9AAF04EB4;565.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 58.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 58.
 
+
+Package rerunfilecheck Warning: File `qa.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `qa.out':
+(rerunfilecheck)             Before: C9298DDE33D49AE338052B6E81E0098F;1001
+(rerunfilecheck)             After:  661F7448212B356F03B75183B80C33A6;991.
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 7625 strings out of 494839
- 104388 string characters out of 6178684
- 210365 words of memory out of 5000000
- 10692 multiletter control sequences out of 15000+600000
+ 7689 strings out of 494839
+ 105178 string characters out of 6178684
+ 211571 words of memory out of 5000000
+ 10705 multiletter control sequences out of 15000+600000
  31297 words of font info for 96 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
- 28i,16n,31p,982b,397s stack positions out of 5000i,500n,10000p,200000b,80000s
- </home/davide/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0900.60
+ 28i,16n,31p,1094b,400s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{subsubsection.7.2.1} has been referenced but does
+ not exist, replaced by a fixed one
+
+ </home/davide/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1200.600p
+k> </home/davide/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0900.60
 0pk> </home/davide/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0600.
-600pk> </home/davide/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx120
-0.600pk> </home/davide/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0
-800.600pk> </home/davide/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ect
-i1095.600pk> </home/davide/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/e
-crm1095.600pk> </home/davide/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec
-/ecbx1095.600pk> </home/davide/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/
-ec/ecbx1440.600pk> </home/davide/.texlive2017/texmf-var/fonts/pk/ljfour/jknappe
-n/ec/ecrm1200.600pk> </home/davide/.texlive2017/texmf-var/fonts/pk/ljfour/jknap
-pen/ec/ecrm1728.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmbsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cme
-xtra/cmbsy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.p
-fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex9.pfb></usr/share/
-texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmmib10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
-amsfonts/cmextra/cmmib8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
-msfonts/cmextra/cmmib9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.
-pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on qa.pdf (19 pages, 378960 bytes).
+600pk> </home/davide/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm080
+0.600pk> </home/davide/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecti1
+095.600pk> </home/davide/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecr
+m1095.600pk> </home/davide/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/e
+cbx1095.600pk> </home/davide/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec
+/ecbx1440.600pk> </home/davide/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/
+ec/ecrm1200.600pk> </home/davide/.texlive2017/texmf-var/fonts/pk/ljfour/jknappe
+n/ec/ecrm1728.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmbsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmext
+ra/cmbsy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmb
+x10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb
+></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/
+share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/
+texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex9.pfb></usr/share/te
+xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmmib10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
+sfonts/cmextra/cmmib8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
+fonts/cmextra/cmmib9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pf
+b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/
+share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/
+texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texlive/texmf-
+dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on qa.pdf (28 pages, 427014 bytes).
 PDF statistics:
- 660 PDF objects out of 1000 (max. 8388607)
- 336 compressed objects within 4 object streams
- 103 named destinations out of 1000 (max. 500000)
- 69 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 831 PDF objects out of 1000 (max. 8388607)
+ 441 compressed objects within 5 object streams
+ 149 named destinations out of 1000 (max. 500000)
+ 120 words of extra memory for PDF output out of 10000 (max. 10000000)
 

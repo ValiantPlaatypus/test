@@ -1,10 +1,12 @@
 
-xmin = -2.0; xmax =  3.0; nxp = 30;
-ymin = -2.5; ymax =  2.5; nyp = 30;
+% xmin = -2.0; xmax =  3.0; nxp = 30;
+% ymin = -2.5; ymax =  2.5; nyp = 30;
 % xmin = -4.0; xmax =  5.0; nxp = 40;
 % ymin = -4.5; ymax =  4.5; nyp = 40;
 % xmin = -1.0; xmax =  2.0; nxp = 30;
 % ymin = -1.5; ymax =  1.5; nyp = 30;
+xmin = -9.0; xmax = 10.0; nxp = 60;
+ymin = -9.5; ymax =  9.5; nyp = 60;
 
 xv = linspace(xmin,xmax,nxp);
 yv = linspace(ymin,ymax,nyp);
@@ -71,7 +73,7 @@ cf_p   = I_p   / ( 0.5 * freeStream.rho * freeStream.v^2 * airfoil.chord );
 cf_vel = I_vel / ( 0.5 * freeStream.rho * freeStream.v^2 * airfoil.chord );
 cf_box = cf_p + cf_vel;
 fprintf('Integral balance \n')
-fprintf(' cf_p   = %12.6f, %12.6f \n', cf_p  (1), cf_p  (2))
-fprintf(' cf_vel = %12.6f, %12.6f \n', cf_vel(1), cf_vel(2))
-fprintf(' cf_box = %12.6f, %12.6f \n', cf_box(1), cf_box(2))
+fprintf(' cf_box   = %12.6f, %12.6f \n', cf_box(1), cf_box(2))
+fprintf(' cf_box_p = %12.6f, %12.6f \n', cf_p  (1), cf_p  (2))
+fprintf(' cf_box_v = %12.6f, %12.6f \n', cf_vel(1), cf_vel(2))
 

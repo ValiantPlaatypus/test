@@ -1,6 +1,6 @@
 \babel@toc {italian}{}
 \babel@toc {italian}{}
-\contentsline {section}{\numberline {1}Traslazione, rotazione e deformazione e deformazione di un elemento di fluido}{1}{section.1}
+\contentsline {section}{\numberline {1}Traslazione, rotazione e deformazione e deformazione di un elemento di fluido}{2}{section.1}
 \contentsline {subsection}{\numberline {1.1}Esempio: corrente di Newton}{5}{subsection.1.1}
 \contentsline {section}{\numberline {2}Legame tra le linee di corrente e le linee di livello della funzione di corrente $\psi $: problema 2D}{7}{section.2}
 \contentsline {section}{\numberline {3}Tensore degli sforzi}{10}{section.3}
@@ -20,3 +20,10 @@
 \contentsline {subsection}{\numberline {7.1}Adimensionalizzazione delle equazioni di Navier--Stokes}{24}{subsection.7.1}
 \contentsline {subsection}{\numberline {7.2}Analisi dimensionale}{25}{subsection.7.2}
 \contentsline {subsection}{\numberline {7.3}Visione ``unificata'' di adimenisonalizzazione rigorosa e analisi dimensionale}{27}{subsection.7.3}
+\contentsline {section}{\numberline {8}Equazione integrale di Von Karman per lo strato limite}{29}{section.8}
+\contentsline {subsection}{\numberline {8.1}Metodo di Thwaites per lo strato limite laminare}{30}{subsection.8.1}
+\contentsline {paragraph}{Analisi dimensionale dello strato limite.}{31}{section*.11}
+\contentsline {paragraph}{Metodo di Thwaites.}{32}{section*.12}
+\contentsline {paragraph}{Metodo di Thwaites ed equazione integrale di Von Karman.}{33}{section*.13}
+\contentsline {paragraph}{Linearizzazione di $L(m)$.}{34}{section*.14}
+\contentsline {paragraph}{Ricostruzione delle altre grandezze fisiche.}{34}{section*.15}

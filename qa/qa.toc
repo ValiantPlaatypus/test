@@ -23,7 +23,7 @@
 \contentsline {section}{\numberline {8}Equazione integrale di Von Karman per lo strato limite}{29}{section.8}
 \contentsline {subsection}{\numberline {8.1}Metodo di Thwaites per lo strato limite laminare}{30}{subsection.8.1}
 \contentsline {paragraph}{Analisi dimensionale dello strato limite.}{31}{section*.11}
-\contentsline {paragraph}{Metodo di Thwaites.}{32}{section*.12}
+\contentsline {paragraph}{Metodo di Thwaites: alcune ipotesi.}{32}{section*.12}
 \contentsline {paragraph}{Metodo di Thwaites ed equazione integrale di Von Karman.}{34}{section*.13}
 \contentsline {paragraph}{Linearizzazione di $L(m)$.}{36}{section*.14}
 \contentsline {paragraph}{Ricostruzione delle altre grandezze fisiche.}{37}{section*.15}

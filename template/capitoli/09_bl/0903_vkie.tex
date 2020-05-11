@@ -37,19 +37,19 @@ Inserendo le espressioni (\ref{eqn:VKc}), (\ref{eqn:VKb}) nell'equazione (\ref{e
     - \dfrac{dU}{dx} \int_{0}^{\infty} \left[ U - u \right]dy + \dfrac{\tau_w}{\rho} = \\
    & = - \dfrac{d}{d x} \left( U^2(x) \int_{0}^{\infty}  \dfrac{u}{U}  \left[ 1 -  \dfrac{u}{U} \right] dy \right)
     - \dfrac{dU}{dx} U \int_{0}^{\infty} \left[ 1 - \dfrac{u}{U} \right] dy + \dfrac{\tau_w}{\rho} = \\
-   & = - \dfrac{d}{d x} \left[ U^2(x) \delta_2(x) \right] - U (x)U' (x)\delta_1(x)+ \dfrac{\tau_w(x)}{\rho} \\
+   & = - \dfrac{d}{d x} \left[ U^2(x) \theta(x) \right] - U (x)U' (x)\delta^*(x)+ \dfrac{\tau_w(x)}{\rho} \\
   \end{aligned}
  \end{equation}
 e quindi
  \begin{equation}
-  \dfrac{d}{d x} \left[ U^2(x) \delta_2(x) \right] + U (x)U' (x)\delta_1(x) = \dfrac{\tau_w(x)}{\rho}
+  \dfrac{d}{d x} \left[ U^2(x) \theta(x) \right] + U (x)U' (x)\delta^*(x) = \dfrac{\tau_w(x)}{\rho}
  \end{equation}
- Infine espandendo i termini, ricordando la definizione di rapporto di forma $H = \delta_1 / \delta_2$, coefficiente di attrito $c_f = \dfrac{\tau_w}{\frac{1}{2}\rho U^2}$
+ Infine espandendo i termini, ricordando la definizione di rapporto di forma $H = \delta^* / \theta$, coefficiente di attrito $c_f = \dfrac{\tau_w}{\frac{1}{2}\rho U^2}$
  \begin{equation}
  \begin{aligned}
-  & 2 U U' \delta_2 + U^2 \delta'_2 + U U' \delta_1(x) = \dfrac{\tau_w(x)}{\rho} \\
-  & [ 2 \delta_2 + \delta_1] U U' + U^2 \delta'_2 = \dfrac{\tau_w(x)}{\rho} \\
-  & [ 2 + H ]\delta_2 \dfrac{U'}{U}  + \delta'_2 = \dfrac{\tau_w}{\rho U^2} = \dfrac{c_f}{2}
+  & 2 U U' \theta + U^2 \theta' + U U' \delta^*(x) = \dfrac{\tau_w(x)}{\rho} \\
+  & [ 2 \theta + \delta^*] U U' + U^2 \theta' = \dfrac{\tau_w(x)}{\rho} \\
+  & [ 2 + H ]\theta \dfrac{U'}{U}  +  \theta' = \dfrac{\tau_w}{\rho U^2} = \dfrac{c_f}{2}
  \end{aligned}
  \end{equation}
 

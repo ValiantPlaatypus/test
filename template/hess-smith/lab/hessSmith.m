@@ -19,8 +19,8 @@ check_velocity = false; stop_after_check_velocity = false;
 deg2rad = pi/180.0 ;
 
 % Viscous corrections
-viscous_corrections = false; % Thwaites(laminar)+Head(turbulent) b.l. computation
-integral_balance    = true;
+viscous_corrections = true ; % Thwaites(laminar)+Head(turbulent) b.l. computation
+integral_balance    = false;
 
 % === Free-stream conditions ===
 freeStream.P        = 0.0   ;          % freestream pressure
@@ -30,7 +30,7 @@ freeStream.alpha    = 0.0 * deg2rad ;  % freestream velocity direction
 freeStream.vvec     = freeStream.v * [ cos(freeStream.alpha) ; ...
                                        sin(freeStream.alpha) ] ;
 %> Reynolds number and viscosity for viscous corrections
-Re_c1 = 1.e+5;
+Re_c1 = 1.e+6;
 freeStream.dyn_visc = freeStream.rho * freeStream.v / Re_c1 ;
 freeStream.kin_visc = freeStream.dyn_visc / freeStream.rho ;
 
@@ -39,10 +39,10 @@ freeStream.kin_visc = freeStream.dyn_visc / freeStream.rho ;
 airfoil.id           = 1 ;
 airfoil.airfoil_str  = 'NACA0012' ;
 airfoil.chord        = 1.0 ;
-airfoil.theta        = 4.0 * deg2rad ;
+airfoil.theta        = 2.0 * deg2rad ;
 airfoil.xcRefPoint   = 0.25 ;
 airfoil.refPoint     = [ 0.0 ; 0.0 ] ;
-airfoil.nChordPanels = 20 ;
+airfoil.nChordPanels = 30 ;
 
 % Reference Reynolds number
 Reynolds = freeStream.rho * freeStream.v * airfoil.chord / freeStream.dyn_visc ;

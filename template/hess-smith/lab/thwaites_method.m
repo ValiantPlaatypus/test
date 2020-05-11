@@ -236,13 +236,13 @@ end
 %  Drag ---
 tauW = 0.5 * freeStream.rho * (Ue').^2 .* cf ;
 
-dF_visc = ( ( tauW .* len .* vTi'./Ue' ) * ones(1,2) )' .* tvers ;
+dF_visc = ( ones(2,1) * ( tauW' .* len .* vTi./Ue ) ) .* tvers ;
 F_visc = sum(dF_visc') ;
 
 L_visc = - F_visc(1) * sin(freeStream.alpha) + F_visc(2) * cos(freeStream.alpha) ;
 D_visc =   F_visc(1) * cos(freeStream.alpha) + F_visc(2) * sin(freeStream.alpha) ;
 
-dF_pres = - ( ( P' .* len ) * ones(1,2) )' .* nvers ;
+dF_pres = - ( ( P' .* len' ) * ones(1,2) )' .* nvers ;
 F_pres  = sum(dF_pres') ;
 
 L_pres = - F_pres(1) * sin(freeStream.alpha) + F_pres(2) * cos(freeStream.alpha) ;
@@ -256,9 +256,9 @@ cD = D / ( 0.5 * freeStream.rho * freeStream.v^2 )
 
  
 figure 
-subplot(3,1,1), plot(rrc(:,1),delta,'-','LineWidth',1), ylabel('\delta') , grid on 
-subplot(3,1,2), plot(rrc(:,1),theta,'-','LineWidth',1), ylabel('\theta') , grid on
-subplot(3,1,3), plot(rrc(:,1),    H,'-','LineWidth',1), ylabel('H')      , grid on , xlabel('x')
+subplot(3,1,1), plot(rrc(1,:),delta,'-','LineWidth',1), ylabel('\delta') , grid on 
+subplot(3,1,2), plot(rrc(1,:),theta,'-','LineWidth',1), ylabel('\theta') , grid on
+subplot(3,1,3), plot(rrc(1,:),    H,'-','LineWidth',1), ylabel('H')      , grid on , xlabel('x')
   
 % figure ; hold on
 % plot(rrc(:,1),dPdx ,'LineWidth',2)
@@ -266,12 +266,12 @@ subplot(3,1,3), plot(rrc(:,1),    H,'-','LineWidth',1), ylabel('H')      , grid 
 % grid on, hold off
  
 figure
-subplot(1,2,1), plot(rrc(:,1),lambda,'-','LineWidth',1), ylabel('\lambda') , grid on , xlabel('x')
-subplot(1,2,2), plot(rrc(:,1),   ell,'-','LineWidth',1), ylabel('l')       , grid on , xlabel('x')
+subplot(1,2,1), plot(rrc(1,:),lambda,'-','LineWidth',1), ylabel('\lambda') , grid on , xlabel('x')
+subplot(1,2,2), plot(rrc(1,:),   ell,'-','LineWidth',1), ylabel('l')       , grid on , xlabel('x')
 
 figure
-subplot(1,2,1), plot(rrc(:,1),cf  ,'-','LineWidth',1), ylabel('C_F')   , xlabel('x'), grid on
-subplot(1,2,2), plot(rrc(:,1),tauW,'-','LineWidth',1), ylabel('\tau_W'), xlabel('x'), grid on
+subplot(1,2,1), plot(rrc(1,:),cf  ,'-','LineWidth',1), ylabel('C_F')   , xlabel('x'), grid on
+subplot(1,2,2), plot(rrc(1,:),tauW,'-','LineWidth',1), ylabel('\tau_W'), xlabel('x'), grid on
 
 
 [ delta(1) , delta(end) ]

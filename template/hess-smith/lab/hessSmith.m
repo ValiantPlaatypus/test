@@ -13,6 +13,10 @@ close all ; clear all ; clc
 check_geometry = false; stop_after_check_geometry = false;
 check_velocity = false; stop_after_check_velocity = false;
 
+filen_cp    = './output/re+1e6_al+0_cp.dat'; 
+filen_bl    = './output/re+1e6_al+0_bl.dat';
+filen_polar = './output/re+1e6_al+0_polar.dat';
+
 % ===============================================================
 % Input
 % ===============================================================
@@ -39,7 +43,7 @@ freeStream.kin_visc = freeStream.dyn_visc / freeStream.rho ;
 airfoil.id           = 1 ;
 airfoil.airfoil_str  = 'NACA0012' ;
 airfoil.chord        = 1.0 ;
-airfoil.theta        = 2.0 * deg2rad ;
+airfoil.theta        = 0.0 * deg2rad ;
 airfoil.xcRefPoint   = 0.25 ;
 airfoil.refPoint     = [ 0.0 ; 0.0 ] ;
 airfoil.nChordPanels = 30 ;
@@ -139,7 +143,6 @@ plot(rr(1,:),rr(2,:),'-','LineWidth',2)
 plot(rrc(1,:),cP,'-o','LineWidth',2)
 grid on, axis equal, hold off
 
-
 % ===============================================================
 % Integral balance
 % ===============================================================
@@ -154,3 +157,15 @@ end
 if ( viscous_corrections )
   thwaites_method
 end
+
+% ===
+% Save to files
+% ===
+matcp = [ rrc(1,:)' , cP' ] ;
+matbl = [ rrc(1,:)' , cf, tauW, delta, theta, H ] ;
+matcf = [ cL, cD, ...
+          delta([1,size(delta,1)])' , ...
+          theta([1,size(theta,1)])'  ];  
+
+save(filen_cp, 'matcp', '-ascii')
+save(filen_bl, 'matbl', '-ascii')

@@ -3,11 +3,18 @@
 {\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {9.3}Equazione integrale di Von Karman}{\reset@font\mtcSfont 213}{section.9.3}}
 {\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {9.3.1}Integrazione dell'equazione integrale di Von Karman}{\reset@font\mtcSSfont 213}{subsection.9.3.1}}
 {\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode Metodo di Thwaites}{\reset@font\mtcSSSfont 213}{section*.136}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {9.4}Strato limite laminare su lamina piana: soluzione di Blasius}{\reset@font\mtcSfont 214}{section.9.4}}
-{\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode Dalle equazioni di Prantdl per lo strato limite all'equazione integrale di VK.}{\reset@font\mtcPfont 218}{section*.140}}
-{\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode Dalle equazioni di Prandtl al modello di Blasius.}{\reset@font\mtcPfont 220}{section*.142}}
-{\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode Sforzo viscoso a parete.}{\reset@font\mtcPfont 221}{section*.143}}
-{\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode Spessori integrali dello strato limite.}{\reset@font\mtcPfont 221}{section*.144}}
-{\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode Soluzione numerica: shooting method.}{\reset@font\mtcPfont 222}{section*.146}}
-{\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode Resistenza minima, ad area $A$ fissata.}{\reset@font\mtcPfont 224}{section*.148}}
-{\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode Commento.}{\reset@font\mtcPfont 224}{section*.149}}
+{\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode Analisi dimensionale dello strato limite.}{\reset@font\mtcPfont 213}{section*.138}}
+{\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode Metodo di Thwaites: alcune ipotesi.}{\reset@font\mtcPfont 215}{section*.139}}
+{\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode Metodo di Thwaites ed equazione integrale di Von Karman.}{\reset@font\mtcPfont 216}{section*.144}}
+{\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode Linearizzazione di $L(m)$.}{\reset@font\mtcPfont 218}{section*.145}}
+{\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode Ricostruzione delle altre grandezze fisiche.}{\reset@font\mtcPfont 218}{section*.146}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {9.3.2}Criteri di transizione}{\reset@font\mtcSSfont 218}{subsection.9.3.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {9.3.3}Metodo di Head per lo strato limite turbolento}{\reset@font\mtcSSfont 218}{subsection.9.3.3}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {9.4}Strato limite laminare su lamina piana: soluzione di Blasius}{\reset@font\mtcSfont 218}{section.9.4}}
+{\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode Dalle equazioni di Prantdl per lo strato limite all'equazione integrale di VK.}{\reset@font\mtcPfont 222}{section*.150}}
+{\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode Dalle equazioni di Prandtl al modello di Blasius.}{\reset@font\mtcPfont 224}{section*.152}}
+{\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode Sforzo viscoso a parete.}{\reset@font\mtcPfont 225}{section*.153}}
+{\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode Spessori integrali dello strato limite.}{\reset@font\mtcPfont 225}{section*.154}}
+{\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode Soluzione numerica: shooting method.}{\reset@font\mtcPfont 226}{section*.156}}
+{\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode Resistenza minima, ad area $A$ fissata.}{\reset@font\mtcPfont 228}{section*.158}}
+{\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode Commento.}{\reset@font\mtcPfont 228}{section*.159}}

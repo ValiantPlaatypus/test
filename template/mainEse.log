@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.3.29)  15 APR 2020 12:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.3.29)  21 MAY 2020 18:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1802,7 +1802,7 @@ Package mdframed Info: mdframed detected package amsthm
  changed the theorem header of amsthm
 (mdframed)              on input line 77.
 [11]
-<./fig/archimede_01.pdf, id=447, 340.57288pt x 254.36238pt>
+<./fig/archimede_01.pdf, id=453, 340.57288pt x 254.36238pt>
 File: ./fig/archimede_01.pdf Graphic file (type pdf)
 <use ./fig/archimede_01.pdf>
 Package pdftex.def Info: ./fig/archimede_01.pdf  used on input line 108.
@@ -1829,7 +1829,7 @@ Package epstopdf Info: Source file: <./fig/recipientesfera.eps>
 converted-to.pdf ./fig/recipientesfera.eps>
 (epstopdf)             \includegraphics on input line 19.
 Package epstopdf Info: Output file is already uptodate.
-<./fig/recipientesfera-eps-converted-to.pdf, id=493, 193.72375pt x 176.66pt>
+<./fig/recipientesfera-eps-converted-to.pdf, id=499, 193.72375pt x 176.66pt>
 File: ./fig/recipientesfera-eps-converted-to.pdf Graphic file (type pdf)
 <use ./fig/recipientesfera-eps-converted-to.pdf>
 Package pdftex.def Info: ./fig/recipientesfera-eps-converted-to.pdf  used on in
@@ -1863,7 +1863,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 pdfTeX warning: pdflatex (file ./fig/recipientiariaolio-eps-converted-to.pdf): 
 PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<./fig/recipientiariaolio-eps-converted-to.pdf, id=519, 379.4175pt x 222.8325pt
+<./fig/recipientiariaolio-eps-converted-to.pdf, id=525, 379.4175pt x 222.8325pt
 >
 File: ./fig/recipientiariaolio-eps-converted-to.pdf Graphic file (type pdf)
 <use ./fig/recipientiariaolio-eps-converted-to.pdf>
@@ -1893,7 +1893,7 @@ Package epstopdf Info: Source file: <./fig/diga2.eps>
 to.pdf ./fig/diga2.eps>
 (epstopdf)             \includegraphics on input line 23.
 Package epstopdf Info: Output file is already uptodate.
-<./fig/diga2-eps-converted-to.pdf, id=537, 403.5075pt x 347.2975pt>
+<./fig/diga2-eps-converted-to.pdf, id=543, 403.5075pt x 347.2975pt>
 File: ./fig/diga2-eps-converted-to.pdf Graphic file (type pdf)
 <use ./fig/diga2-eps-converted-to.pdf>
 Package pdftex.def Info: ./fig/diga2-eps-converted-to.pdf  used on input line 2
@@ -1921,7 +1921,7 @@ Package epstopdf Info: Source file: <./fig/tubimultipli.eps>
 verted-to.pdf ./fig/tubimultipli.eps>
 (epstopdf)             \includegraphics on input line 19.
 Package epstopdf Info: Output file is already uptodate.
-<./fig/tubimultipli-eps-converted-to.pdf, id=571, 287.0725pt x 319.1925pt>
+<./fig/tubimultipli-eps-converted-to.pdf, id=577, 287.0725pt x 319.1925pt>
 File: ./fig/tubimultipli-eps-converted-to.pdf Graphic file (type pdf)
 <use ./fig/tubimultipli-eps-converted-to.pdf>
 Package pdftex.def Info: ./fig/tubimultipli-eps-converted-to.pdf  used on input
@@ -1955,7 +1955,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 pdfTeX warning: pdflatex (file ./fig/leva_idraulica1-eps-converted-to.pdf): PDF
  inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<./fig/leva_idraulica1-eps-converted-to.pdf, id=585, 499.8675pt x 409.53pt>
+<./fig/leva_idraulica1-eps-converted-to.pdf, id=591, 499.8675pt x 409.53pt>
 File: ./fig/leva_idraulica1-eps-converted-to.pdf Graphic file (type pdf)
 <use ./fig/leva_idraulica1-eps-converted-to.pdf>
 Package pdftex.def Info: ./fig/leva_idraulica1-eps-converted-to.pdf  used on in
@@ -1984,7 +1984,7 @@ Package epstopdf Info: Source file: <./fig/manometro.eps>
 ted-to.pdf ./fig/manometro.eps>
 (epstopdf)             \includegraphics on input line 22.
 Package epstopdf Info: Output file is already uptodate.
-<./fig/manometro-eps-converted-to.pdf, id=609, 404.51125pt x 544.0325pt>
+<./fig/manometro-eps-converted-to.pdf, id=615, 404.51125pt x 544.0325pt>
 File: ./fig/manometro-eps-converted-to.pdf Graphic file (type pdf)
 <use ./fig/manometro-eps-converted-to.pdf>
 Package pdftex.def Info: ./fig/manometro-eps-converted-to.pdf  used on input li
@@ -2015,7 +2015,7 @@ df>
 s-converted-to.pdf ./fig/laplaceYoung2Ddim.eps>
 (epstopdf)             \includegraphics on input line 12.
 Package epstopdf Info: Output file is already uptodate.
-<./fig/laplaceYoung2Ddim-eps-converted-to.pdf, id=637, 376.40625pt x 393.47pt>
+<./fig/laplaceYoung2Ddim-eps-converted-to.pdf, id=643, 376.40625pt x 393.47pt>
 File: ./fig/laplaceYoung2Ddim-eps-converted-to.pdf Graphic file (type pdf)
 <use ./fig/laplaceYoung2Ddim-eps-converted-to.pdf>
 Package pdftex.def Info: ./fig/laplaceYoung2Ddim-eps-converted-to.pdf  used on 
@@ -2050,7 +2050,7 @@ Package epstopdf Info: Source file: <./fig/cap01.eps>
 to.pdf ./fig/cap01.eps>
 (epstopdf)             \includegraphics on input line 22.
 Package epstopdf Info: Output file is already uptodate.
-<./fig/cap01-eps-converted-to.pdf, id=660, 348.30125pt x 324.21124pt>
+<./fig/cap01-eps-converted-to.pdf, id=666, 348.30125pt x 324.21124pt>
 File: ./fig/cap01-eps-converted-to.pdf Graphic file (type pdf)
 <use ./fig/cap01-eps-converted-to.pdf>
 Package pdftex.def Info: ./fig/cap01-eps-converted-to.pdf  used on input line 2
@@ -2061,7 +2061,7 @@ Overfull \hbox (23.99998pt too wide) in paragraph at lines 1--26
 [] 
  []
 
-<./fig/menisco.jpg, id=661, 361.35pt x 250.9375pt>
+<./fig/menisco.jpg, id=667, 361.35pt x 250.9375pt>
 File: ./fig/menisco.jpg Graphic file (type jpg)
 <use ./fig/menisco.jpg>
 Package pdftex.def Info: ./fig/menisco.jpg  used on input line 91.
@@ -2076,7 +2076,7 @@ Package epstopdf Info: Source file: <./fig/cap02.eps>
 to.pdf ./fig/cap02.eps>
 (epstopdf)             \includegraphics on input line 95.
 Package epstopdf Info: Output file is already uptodate.
-<./fig/cap02-eps-converted-to.pdf, id=662, 342.27875pt x 184.69pt>
+<./fig/cap02-eps-converted-to.pdf, id=668, 342.27875pt x 184.69pt>
 File: ./fig/cap02-eps-converted-to.pdf Graphic file (type pdf)
 <use ./fig/cap02-eps-converted-to.pdf>
 Package pdftex.def Info: ./fig/cap02-eps-converted-to.pdf  used on input line 9
@@ -2096,7 +2096,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 pdfTeX warning: pdflatex (file ./fig/equil-eps-converted-to.pdf): PDF inclusion
 : found PDF version <1.7>, but at most version <1.5> allowed
-<./fig/equil-eps-converted-to.pdf, id=663, 541.02126pt x 413.545pt>
+<./fig/equil-eps-converted-to.pdf, id=669, 541.02126pt x 413.545pt>
 File: ./fig/equil-eps-converted-to.pdf Graphic file (type pdf)
 <use ./fig/equil-eps-converted-to.pdf>
 Package pdftex.def Info: ./fig/equil-eps-converted-to.pdf  used on input line 1
@@ -2123,7 +2123,7 @@ Package epstopdf Info: Source file: <./fig/Plates4.eps>
 d-to.pdf ./fig/Plates4.eps>
 (epstopdf)             \includegraphics on input line 14.
 Package epstopdf Info: Output file is already uptodate.
-<./fig/Plates4-eps-converted-to.pdf, id=691, 254.9525pt x 296.10625pt>
+<./fig/Plates4-eps-converted-to.pdf, id=697, 254.9525pt x 296.10625pt>
 File: ./fig/Plates4-eps-converted-to.pdf Graphic file (type pdf)
 <use ./fig/Plates4-eps-converted-to.pdf>
 Package pdftex.def Info: ./fig/Plates4-eps-converted-to.pdf  used on input line
@@ -2144,7 +2144,7 @@ Package epstopdf Info: Source file: <./fig/sup01.eps>
 to.pdf ./fig/sup01.eps>
 (epstopdf)             \includegraphics on input line 55.
 Package epstopdf Info: Output file is already uptodate.
-<./fig/sup01-eps-converted-to.pdf, id=692, 389.455pt x 286.06876pt>
+<./fig/sup01-eps-converted-to.pdf, id=698, 389.455pt x 286.06876pt>
 File: ./fig/sup01-eps-converted-to.pdf Graphic file (type pdf)
 <use ./fig/sup01-eps-converted-to.pdf>
 Package pdftex.def Info: ./fig/sup01-eps-converted-to.pdf  used on input line 5
@@ -2160,7 +2160,7 @@ Package mdframed Info: mdframed detected package amsthm
 (mdframed)              on input line 3.
 Package mdframed Info: mdframed inside a box 
  mdframed uses option nobreak mdframed on input line 5.
-<./fig/freeSurfaceShape.pdf, id=708, 298.75392pt x 298.75392pt>
+<./fig/freeSurfaceShape.pdf, id=714, 298.75392pt x 298.75392pt>
 File: ./fig/freeSurfaceShape.pdf Graphic file (type pdf)
 <use ./fig/freeSurfaceShape.pdf>
 Package pdftex.def Info: ./fig/freeSurfaceShape.pdf  used on input line 9.
@@ -2413,7 +2413,7 @@ Package epstopdf Info: Source file: <./fig/elem_velocity.eps>
 nverted-to.pdf ./fig/elem_velocity.eps>
 (epstopdf)             \includegraphics on input line 27.
 Package epstopdf Info: Output file is already uptodate.
-<./fig/elem_velocity-eps-converted-to.pdf, id=1006, 400.49625pt x 416.55624pt>
+<./fig/elem_velocity-eps-converted-to.pdf, id=1012, 400.49625pt x 416.55624pt>
 File: ./fig/elem_velocity-eps-converted-to.pdf Graphic file (type pdf)
 <use ./fig/elem_velocity-eps-converted-to.pdf>
 Package pdftex.def Info: ./fig/elem_velocity-eps-converted-to.pdf  used on inpu
@@ -2429,7 +2429,7 @@ Package epstopdf Info: Source file: <./fig/elem_stress.eps>
 erted-to.pdf ./fig/elem_stress.eps>
 (epstopdf)             \includegraphics on input line 29.
 Package epstopdf Info: Output file is already uptodate.
-<./fig/elem_stress-eps-converted-to.pdf, id=1007, 338.26375pt x 339.2675pt>
+<./fig/elem_stress-eps-converted-to.pdf, id=1013, 338.26375pt x 339.2675pt>
 File: ./fig/elem_stress-eps-converted-to.pdf Graphic file (type pdf)
 <use ./fig/elem_stress-eps-converted-to.pdf>
 Package pdftex.def Info: ./fig/elem_stress-eps-converted-to.pdf  used on input 
@@ -2453,7 +2453,7 @@ Package epstopdf Info: Source file: <./fig/frenet.eps>
 -to.pdf ./fig/frenet.eps>
 (epstopdf)             \includegraphics on input line 138.
 Package epstopdf Info: Output file is already uptodate.
-<./fig/frenet-eps-converted-to.pdf, id=1071, 377.41pt x 442.65375pt>
+<./fig/frenet-eps-converted-to.pdf, id=1077, 377.41pt x 442.65375pt>
 File: ./fig/frenet-eps-converted-to.pdf Graphic file (type pdf)
 <use ./fig/frenet-eps-converted-to.pdf>
 Package pdftex.def Info: ./fig/frenet-eps-converted-to.pdf  used on input line 
@@ -2494,7 +2494,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 pdfTeX warning: pdflatex (file ./fig/rete-eps-converted-to.pdf): PDF inclusion:
  found PDF version <1.7>, but at most version <1.5> allowed
-<./fig/rete-eps-converted-to.pdf, id=1142, 292.09125pt x 346.29375pt>
+<./fig/rete-eps-converted-to.pdf, id=1148, 292.09125pt x 346.29375pt>
 File: ./fig/rete-eps-converted-to.pdf Graphic file (type pdf)
 <use ./fig/rete-eps-converted-to.pdf>
 Package pdftex.def Info: ./fig/rete-eps-converted-to.pdf  used on input line 35
@@ -2548,7 +2548,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 pdfTeX warning: pdflatex (file ./fig/coanda-eps-converted-to.pdf): PDF inclusio
 n: found PDF version <1.7>, but at most version <1.5> allowed
-<./fig/coanda-eps-converted-to.pdf, id=1167, 355.3275pt x 543.02875pt>
+<./fig/coanda-eps-converted-to.pdf, id=1173, 355.3275pt x 543.02875pt>
 File: ./fig/coanda-eps-converted-to.pdf Graphic file (type pdf)
 <use ./fig/coanda-eps-converted-to.pdf>
 Package pdftex.def Info: ./fig/coanda-eps-converted-to.pdf  used on input line 
@@ -2588,7 +2588,7 @@ Package epstopdf Info: Source file: <./fig/gettoPiattello.eps>
 onverted-to.pdf ./fig/gettoPiattello.eps>
 (epstopdf)             \includegraphics on input line 26.
 Package epstopdf Info: Output file is already uptodate.
-<./fig/gettoPiattello-eps-converted-to.pdf, id=1200, 377.41pt x 264.99pt>
+<./fig/gettoPiattello-eps-converted-to.pdf, id=1206, 377.41pt x 264.99pt>
 File: ./fig/gettoPiattello-eps-converted-to.pdf Graphic file (type pdf)
 <use ./fig/gettoPiattello-eps-converted-to.pdf>
 Package pdftex.def Info: ./fig/gettoPiattello-eps-converted-to.pdf  used on inp
@@ -2622,7 +2622,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 pdfTeX warning: pdflatex (file ./fig/motore_a_getto-eps-converted-to.pdf): PDF 
 inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<./fig/motore_a_getto-eps-converted-to.pdf, id=1222, 315.1775pt x 142.5325pt>
+<./fig/motore_a_getto-eps-converted-to.pdf, id=1228, 315.1775pt x 142.5325pt>
 File: ./fig/motore_a_getto-eps-converted-to.pdf Graphic file (type pdf)
 <use ./fig/motore_a_getto-eps-converted-to.pdf>
 Package pdftex.def Info: ./fig/motore_a_getto-eps-converted-to.pdf  used on inp
@@ -2656,7 +2656,7 @@ Package epstopdf Info: Source file: <./fig/gomito_01.eps>
 ted-to.pdf ./fig/gomito_01.eps>
 (epstopdf)             \includegraphics on input line 19.
 Package epstopdf Info: Output file is already uptodate.
-<./fig/gomito_01-eps-converted-to.pdf, id=1251, 254.9525pt x 229.85875pt>
+<./fig/gomito_01-eps-converted-to.pdf, id=1257, 254.9525pt x 229.85875pt>
 File: ./fig/gomito_01-eps-converted-to.pdf Graphic file (type pdf)
 <use ./fig/gomito_01-eps-converted-to.pdf>
 Package pdftex.def Info: ./fig/gomito_01-eps-converted-to.pdf  used on input li
@@ -2685,7 +2685,7 @@ Package epstopdf Info: Source file: <./fig/gomito_galleria.eps>
 converted-to.pdf ./fig/gomito_galleria.eps>
 (epstopdf)             \includegraphics on input line 23.
 Package epstopdf Info: Output file is already uptodate.
-<./fig/gomito_galleria-eps-converted-to.pdf, id=1271, 179.67125pt x 258.9675pt>
+<./fig/gomito_galleria-eps-converted-to.pdf, id=1277, 179.67125pt x 258.9675pt>
 
 File: ./fig/gomito_galleria-eps-converted-to.pdf Graphic file (type pdf)
 <use ./fig/gomito_galleria-eps-converted-to.pdf>
@@ -2722,7 +2722,7 @@ Package epstopdf Info: Source file: <./fig/wings.eps>
 to.pdf ./fig/wings.eps>
 (epstopdf)             \includegraphics on input line 22.
 Package epstopdf Info: Output file is already uptodate.
-<./fig/wings-eps-converted-to.pdf, id=1297, 478.78876pt x 368.37625pt>
+<./fig/wings-eps-converted-to.pdf, id=1303, 478.78876pt x 368.37625pt>
 File: ./fig/wings-eps-converted-to.pdf Graphic file (type pdf)
 <use ./fig/wings-eps-converted-to.pdf>
 Package pdftex.def Info: ./fig/wings-eps-converted-to.pdf  used on input line 2
@@ -2750,7 +2750,7 @@ Package epstopdf Info: Source file: <./fig/airfoil.eps>
 d-to.pdf ./fig/airfoil.eps>
 (epstopdf)             \includegraphics on input line 26.
 Package epstopdf Info: Output file is already uptodate.
-<./fig/airfoil-eps-converted-to.pdf, id=1306, 520.94624pt x 310.15875pt>
+<./fig/airfoil-eps-converted-to.pdf, id=1312, 520.94624pt x 310.15875pt>
 File: ./fig/airfoil-eps-converted-to.pdf Graphic file (type pdf)
 <use ./fig/airfoil-eps-converted-to.pdf>
 Package pdftex.def Info: ./fig/airfoil-eps-converted-to.pdf  used on input line
@@ -2773,12 +2773,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 78--80
  []
 
 [88] [89] [90]
-<./fig/base-functions.pdf, id=1403, 419.33841pt x 116.31947pt>
+<./fig/base-functions.pdf, id=1409, 419.33841pt x 116.31947pt>
 File: ./fig/base-functions.pdf Graphic file (type pdf)
 <use ./fig/base-functions.pdf>
 Package pdftex.def Info: ./fig/base-functions.pdf  used on input line 269.
 (pdftex.def)             Requested size: 234.73654pt x 65.1136pt.
-<./fig/base-functions-ref.pdf, id=1404, 246.15225pt x 153.32666pt>
+<./fig/base-functions-ref.pdf, id=1410, 246.15225pt x 153.32666pt>
 File: ./fig/base-functions-ref.pdf Graphic file (type pdf)
 <use ./fig/base-functions-ref.pdf>
 Package pdftex.def Info: ./fig/base-functions-ref.pdf  used on input line 270.
@@ -2802,7 +2802,7 @@ Package mdframed Info: mdframed detected package amsthm
 (mdframed)              on input line 4.
 Package mdframed Info: mdframed inside a box 
  mdframed uses option nobreak mdframed on input line 6.
-<./fig/wt.pdf, id=1458, 597.50786pt x 298.75392pt>
+<./fig/wt.pdf, id=1464, 597.50786pt x 298.75392pt>
 File: ./fig/wt.pdf Graphic file (type pdf)
 <use ./fig/wt.pdf>
 Package pdftex.def Info: ./fig/wt.pdf  used on input line 10.
@@ -2819,7 +2819,7 @@ LaTeX Warning: Command \textdegree invalid in math mode on input line 9.
 
 Package mdframed Info: mdframed inside a box 
  mdframed uses option nobreak mdframed on input line 16.
-<./fig/otto_cycle.pdf, id=1495, 287.37285pt x 287.37285pt>
+<./fig/otto_cycle.pdf, id=1501, 287.37285pt x 287.37285pt>
 File: ./fig/otto_cycle.pdf Graphic file (type pdf)
 <use ./fig/otto_cycle.pdf>
 Package pdftex.def Info: ./fig/otto_cycle.pdf  used on input line 21.
@@ -2839,7 +2839,7 @@ Package mdframed Info: mdframed detected package amsthm
 (mdframed)              on input line 4.
 Package mdframed Info: mdframed inside a box 
  mdframed uses option nobreak mdframed on input line 20.
-<./fig/jet_engine.pdf, id=1541, 514.99487pt x 202.01457pt>
+<./fig/jet_engine.pdf, id=1547, 514.99487pt x 202.01457pt>
 File: ./fig/jet_engine.pdf Graphic file (type pdf)
 <use ./fig/jet_engine.pdf>
 Package pdftex.def Info: ./fig/jet_engine.pdf  used on input line 25.
@@ -2884,7 +2884,7 @@ Package epstopdf Info: Source file: <./fig/venturi.eps>
 d-to.pdf ./fig/venturi.eps>
 (epstopdf)             \includegraphics on input line 21.
 Package epstopdf Info: Output file is already uptodate.
-<./fig/venturi-eps-converted-to.pdf, id=1617, 671.50874pt x 628.3475pt>
+<./fig/venturi-eps-converted-to.pdf, id=1623, 671.50874pt x 628.3475pt>
 File: ./fig/venturi-eps-converted-to.pdf Graphic file (type pdf)
 <use ./fig/venturi-eps-converted-to.pdf>
 Package pdftex.def Info: ./fig/venturi-eps-converted-to.pdf  used on input line
@@ -2906,7 +2906,7 @@ Package epstopdf Info: Source file: <./fig/venturiDomain.eps>
 nverted-to.pdf ./fig/venturiDomain.eps>
 (epstopdf)             \includegraphics on input line 57.
 Package epstopdf Info: Output file is already uptodate.
-<./fig/venturiDomain-eps-converted-to.pdf, id=1632, 669.50125pt x 622.325pt>
+<./fig/venturiDomain-eps-converted-to.pdf, id=1638, 669.50125pt x 622.325pt>
 File: ./fig/venturiDomain-eps-converted-to.pdf Graphic file (type pdf)
 <use ./fig/venturiDomain-eps-converted-to.pdf>
 Package pdftex.def Info: ./fig/venturiDomain-eps-converted-to.pdf  used on inpu
@@ -2926,7 +2926,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 pdfTeX warning: pdflatex (file ./fig/Discont-eps-converted-to.pdf): PDF inclusi
 on: found PDF version <1.7>, but at most version <1.5> allowed
-<./fig/Discont-eps-converted-to.pdf, id=1633, 351.3125pt x 325.215pt>
+<./fig/Discont-eps-converted-to.pdf, id=1639, 351.3125pt x 325.215pt>
 File: ./fig/Discont-eps-converted-to.pdf Graphic file (type pdf)
 <use ./fig/Discont-eps-converted-to.pdf>
 Package pdftex.def Info: ./fig/Discont-eps-converted-to.pdf  used on input line
@@ -2964,7 +2964,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 pdfTeX warning: pdflatex (file ./fig/serbatoio-eps-converted-to.pdf): PDF inclu
 sion: found PDF version <1.7>, but at most version <1.5> allowed
-<./fig/serbatoio-eps-converted-to.pdf, id=1669, 456.70625pt x 365.365pt>
+<./fig/serbatoio-eps-converted-to.pdf, id=1675, 456.70625pt x 365.365pt>
 File: ./fig/serbatoio-eps-converted-to.pdf Graphic file (type pdf)
 <use ./fig/serbatoio-eps-converted-to.pdf>
 Package pdftex.def Info: ./fig/serbatoio-eps-converted-to.pdf  used on input li
@@ -2999,7 +2999,7 @@ Package epstopdf Info: Source file: <./fig/canale.eps>
 -to.pdf ./fig/canale.eps>
 (epstopdf)             \includegraphics on input line 22.
 Package epstopdf Info: Output file is already uptodate.
-<./fig/canale-eps-converted-to.pdf, id=1689, 379.4175pt x 116.435pt>
+<./fig/canale-eps-converted-to.pdf, id=1695, 379.4175pt x 116.435pt>
 File: ./fig/canale-eps-converted-to.pdf Graphic file (type pdf)
 <use ./fig/canale-eps-converted-to.pdf>
 Package pdftex.def Info: ./fig/canale-eps-converted-to.pdf  used on input line 
@@ -3039,7 +3039,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 pdfTeX warning: pdflatex (file ./fig/condottocircolare-eps-converted-to.pdf): P
 DF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<./fig/condottocircolare-eps-converted-to.pdf, id=1726, 343.2825pt x 211.79124p
+<./fig/condottocircolare-eps-converted-to.pdf, id=1732, 343.2825pt x 211.79124p
 t>
 File: ./fig/condottocircolare-eps-converted-to.pdf Graphic file (type pdf)
 <use ./fig/condottocircolare-eps-converted-to.pdf>
@@ -3061,7 +3061,7 @@ Package epstopdf Info: Source file: <./fig/Canale01.eps>
 ed-to.pdf ./fig/Canale01.eps>
 (epstopdf)             \includegraphics on input line 42.
 Package epstopdf Info: Output file is already uptodate.
-<./fig/Canale01-eps-converted-to.pdf, id=1727, 396.48125pt x 280.04625pt>
+<./fig/Canale01-eps-converted-to.pdf, id=1733, 396.48125pt x 280.04625pt>
 File: ./fig/Canale01-eps-converted-to.pdf Graphic file (type pdf)
 <use ./fig/Canale01-eps-converted-to.pdf>
 Package pdftex.def Info: ./fig/Canale01-eps-converted-to.pdf  used on input lin
@@ -3098,7 +3098,7 @@ Package epstopdf Info: Source file: <./fig/getto_vert.eps>
 rted-to.pdf ./fig/getto_vert.eps>
 (epstopdf)             \includegraphics on input line 26.
 Package epstopdf Info: Output file is already uptodate.
-<./fig/getto_vert-eps-converted-to.pdf, id=1754, 189.70876pt x 357.335pt>
+<./fig/getto_vert-eps-converted-to.pdf, id=1760, 189.70876pt x 357.335pt>
 File: ./fig/getto_vert-eps-converted-to.pdf Graphic file (type pdf)
 <use ./fig/getto_vert-eps-converted-to.pdf>
 Package pdftex.def Info: ./fig/getto_vert-eps-converted-to.pdf  used on input l
@@ -3123,7 +3123,7 @@ l.3   I
        n un gioco d'acqua ($\rho=999\ kg/m^3$), un disco di diametro $D=35\ ...
 Package mdframed Info: mdframed inside a box 
  mdframed uses option nobreak mdframed on input line 18.
-<./fig/jet.png, id=1767, 401.5pt x 466.74374pt>
+<./fig/jet.png, id=1773, 401.5pt x 466.74374pt>
 File: ./fig/jet.png Graphic file (type png)
 <use ./fig/jet.png>
 Package pdftex.def Info: ./fig/jet.png  used on input line 24.
@@ -3156,7 +3156,7 @@ Package epstopdf Info: Source file: <./fig/jet_angle.eps>
 ted-to.pdf ./fig/jet_angle.eps>
 (epstopdf)             \includegraphics on input line 28.
 Package epstopdf Info: Output file is already uptodate.
-<./fig/jet_angle-eps-converted-to.pdf, id=1777, 356.33125pt x 388.45125pt>
+<./fig/jet_angle-eps-converted-to.pdf, id=1783, 356.33125pt x 388.45125pt>
 File: ./fig/jet_angle-eps-converted-to.pdf Graphic file (type pdf)
 <use ./fig/jet_angle-eps-converted-to.pdf>
 Package pdftex.def Info: ./fig/jet_angle-eps-converted-to.pdf  used on input li
@@ -3205,7 +3205,7 @@ l.5 I
      n un canale piano, di lunghezza e apertura infinita,
 Package mdframed Info: mdframed inside a box 
  mdframed uses option nobreak mdframed on input line 15.
-<./fig/slnEsatte-newton-couette.pdf, id=1846, 597.50786pt x 845.04686pt>
+<./fig/slnEsatte-newton-couette.pdf, id=1852, 597.50786pt x 845.04686pt>
 File: ./fig/slnEsatte-newton-couette.pdf Graphic file (type pdf)
 <use ./fig/slnEsatte-newton-couette.pdf>
 Package pdftex.def Info: ./fig/slnEsatte-newton-couette.pdf  used on input line
@@ -3244,7 +3244,7 @@ o.pdf>
 -eps-converted-to.pdf ./fig/manometro_Poiseuille.eps>
 (epstopdf)             \includegraphics on input line 25.
 Package epstopdf Info: Output file is already uptodate.
-<./fig/manometro_Poiseuille-eps-converted-to.pdf, id=1864, 361.35pt x 234.8775p
+<./fig/manometro_Poiseuille-eps-converted-to.pdf, id=1870, 361.35pt x 234.8775p
 t>
 File: ./fig/manometro_Poiseuille-eps-converted-to.pdf Graphic file (type pdf)
 <use ./fig/manometro_Poiseuille-eps-converted-to.pdf>
@@ -3270,7 +3270,7 @@ l.5 S
      i consideri una corrente d'acqua a pelo libero, laminare e stazionaria,...
 Package mdframed Info: mdframed inside a box 
  mdframed uses option nobreak mdframed on input line 10.
-<./fig/slnEsatte-scivolo.pdf, id=1891, 225.93095pt x 128.41759pt>
+<./fig/slnEsatte-scivolo.pdf, id=1897, 225.93095pt x 128.41759pt>
 File: ./fig/slnEsatte-scivolo.pdf Graphic file (type pdf)
 <use ./fig/slnEsatte-scivolo.pdf>
 Package pdftex.def Info: ./fig/slnEsatte-scivolo.pdf  used on input line 14.
@@ -3305,7 +3305,7 @@ l.5 U
      n manometro a mercurio ($\rho_{hg} = 13610 \  kg/m^3$)
 Package mdframed Info: mdframed inside a box 
  mdframed uses option nobreak mdframed on input line 18.
-<./fig/slnEsatte-poiseuille.pdf, id=1942, 236.47086pt x 196.3586pt>
+<./fig/slnEsatte-poiseuille.pdf, id=1948, 236.47086pt x 196.3586pt>
 File: ./fig/slnEsatte-poiseuille.pdf Graphic file (type pdf)
 <use ./fig/slnEsatte-poiseuille.pdf>
 Package pdftex.def Info: ./fig/slnEsatte-poiseuille.pdf  used on input line 23.
@@ -3336,7 +3336,7 @@ n/10.95 (-20) ) = \OML/lmm/m/it/10.95 P[] \OMS/lmsy/m/n/10.95 ^^@ \OML/lmm/m/it
 
 Package mdframed Info: mdframed inside a box 
  mdframed uses option nobreak mdframed on input line 22.
-<./fig/slnEsatte-taylor-couette-2.pdf, id=1973, 293.4559pt x 286.31825pt>
+<./fig/slnEsatte-taylor-couette-2.pdf, id=1979, 293.4559pt x 286.31825pt>
 File: ./fig/slnEsatte-taylor-couette-2.pdf Graphic file (type pdf)
 <use ./fig/slnEsatte-taylor-couette-2.pdf>
 Package pdftex.def Info: ./fig/slnEsatte-taylor-couette-2.pdf  used on input li
@@ -3361,7 +3361,7 @@ l.5 S
      i consideri la corrente piana di un fluido di densità $\rho$ fra due c...
 Package mdframed Info: mdframed inside a box 
  mdframed uses option nobreak mdframed on input line 9.
-<./fig/slnEsatte-taylor-couette.pdf, id=1995, 318.49167pt x 286.31825pt>
+<./fig/slnEsatte-taylor-couette.pdf, id=2001, 318.49167pt x 286.31825pt>
 File: ./fig/slnEsatte-taylor-couette.pdf Graphic file (type pdf)
 <use ./fig/slnEsatte-taylor-couette.pdf>
 Package pdftex.def Info: ./fig/slnEsatte-taylor-couette.pdf  used on input line
@@ -3393,7 +3393,7 @@ Underfull \hbox (badness 2503) in paragraph at lines 10--11
 
 Package mdframed Info: mdframed inside a box 
  mdframed uses option nobreak mdframed on input line 18.
-<./fig/vessel.pdf, id=2018, 368.03217pt x 204.765pt>
+<./fig/vessel.pdf, id=2024, 368.03217pt x 204.765pt>
 File: ./fig/vessel.pdf Graphic file (type pdf)
 <use ./fig/vessel.pdf>
 Package pdftex.def Info: ./fig/vessel.pdf  used on input line 23.
@@ -3421,44 +3421,44 @@ Package pdftex.def Info: Pictures/blank_fig.pdf  used on input line 2.
 (./capitoli/07_similitudine/07nonInertial.tex [150] [151] [152]) [153] [154]
 [155] [156] [157] [158] [159] [160] [161] [162]
 (./capitoli/07_similitudine/07lorenz.tex [163] [164]
-<./fig/eq_rho+1_01.pdf, id=2275, 650.43pt x 361.35pt>
+<./fig/eq_rho+1_01.pdf, id=2281, 650.43pt x 361.35pt>
 File: ./fig/eq_rho+1_01.pdf Graphic file (type pdf)
 <use ./fig/eq_rho+1_01.pdf>
 Package pdftex.def Info: ./fig/eq_rho+1_01.pdf  used on input line 155.
 (pdftex.def)             Requested size: 192.0548pt x 126.16562pt.
-<./fig/eq_rho+1_1.pdf, id=2277, 650.43pt x 361.35pt>
+<./fig/eq_rho+1_1.pdf, id=2283, 650.43pt x 361.35pt>
 File: ./fig/eq_rho+1_1.pdf Graphic file (type pdf)
 <use ./fig/eq_rho+1_1.pdf>
 Package pdftex.def Info: ./fig/eq_rho+1_1.pdf  used on input line 159.
 (pdftex.def)             Requested size: 192.0548pt x 126.16562pt.
-<./fig/eq_rho+1_5.pdf, id=2279, 650.43pt x 361.35pt>
+<./fig/eq_rho+1_5.pdf, id=2285, 650.43pt x 361.35pt>
 File: ./fig/eq_rho+1_5.pdf Graphic file (type pdf)
 <use ./fig/eq_rho+1_5.pdf>
 Package pdftex.def Info: ./fig/eq_rho+1_5.pdf  used on input line 162.
 (pdftex.def)             Requested size: 192.0548pt x 126.16562pt.
-<./fig/eq_rho+5_0.pdf, id=2281, 650.43pt x 361.35pt>
+<./fig/eq_rho+5_0.pdf, id=2287, 650.43pt x 361.35pt>
 File: ./fig/eq_rho+5_0.pdf Graphic file (type pdf)
 <use ./fig/eq_rho+5_0.pdf>
 Package pdftex.def Info: ./fig/eq_rho+5_0.pdf  used on input line 166.
 (pdftex.def)             Requested size: 192.0548pt x 126.16562pt.
-<./fig/eq_rho+15_0.pdf, id=2283, 650.43pt x 361.35pt>
+<./fig/eq_rho+15_0.pdf, id=2289, 650.43pt x 361.35pt>
 File: ./fig/eq_rho+15_0.pdf Graphic file (type pdf)
 <use ./fig/eq_rho+15_0.pdf>
 Package pdftex.def Info: ./fig/eq_rho+15_0.pdf  used on input line 169.
 (pdftex.def)             Requested size: 192.0548pt x 126.16562pt.
-<./fig/eq_rho+24_7.pdf, id=2285, 650.43pt x 361.35pt>
+<./fig/eq_rho+24_7.pdf, id=2291, 650.43pt x 361.35pt>
 File: ./fig/eq_rho+24_7.pdf Graphic file (type pdf)
 <use ./fig/eq_rho+24_7.pdf>
 Package pdftex.def Info: ./fig/eq_rho+24_7.pdf  used on input line 173.
 (pdftex.def)             Requested size: 192.0548pt x 126.16562pt.
  [165 <./fig/eq_rho+1_01.pdf> <./fig/eq_rho+1_1.pdf> <./fig/eq_rho+1_5.pdf> <./
 fig/eq_rho+5_0.pdf> <./fig/eq_rho+15_0.pdf> <./fig/eq_rho+24_7.pdf>]
-<./fig/bif_pitchfork.pdf, id=2414, 428.5611pt x 433.62pt>
+<./fig/bif_pitchfork.pdf, id=2420, 428.5611pt x 433.62pt>
 File: ./fig/bif_pitchfork.pdf Graphic file (type pdf)
 <use ./fig/bif_pitchfork.pdf>
 Package pdftex.def Info: ./fig/bif_pitchfork.pdf  used on input line 224.
 (pdftex.def)             Requested size: 170.71393pt x 172.73035pt.
-<./fig/bif_hopf.pdf, id=2415, 392.42609pt x 346.89601pt>
+<./fig/bif_hopf.pdf, id=2421, 392.42609pt x 346.89601pt>
 File: ./fig/bif_hopf.pdf Graphic file (type pdf)
 <use ./fig/bif_hopf.pdf>
 Package pdftex.def Info: ./fig/bif_hopf.pdf  used on input line 228.
@@ -3473,13 +3473,13 @@ Overfull \hbox (3.01285pt too wide) in paragraph at lines 223--238
 pdfTeX warning: pdflatex (file ./fig/bif_hopf.pdf): PDF inclusion: multiple pdf
 s with page group included in a single page
 >]
-<./fig/ic_dependence_xt_rho+28.pdf, id=2474, 744.38098pt x 286.9119pt>
+<./fig/ic_dependence_xt_rho+28.pdf, id=2480, 744.38098pt x 286.9119pt>
 File: ./fig/ic_dependence_xt_rho+28.pdf Graphic file (type pdf)
 <use ./fig/ic_dependence_xt_rho+28.pdf>
 Package pdftex.def Info: ./fig/ic_dependence_xt_rho+28.pdf  used on input line 
 260.
 (pdftex.def)             Requested size: 277.41176pt x 110.66249pt.
-<./fig/ic_dependence_attractor_rho+28.pdf, id=2476, 477.70471pt x 490.7133pt>
+<./fig/ic_dependence_attractor_rho+28.pdf, id=2482, 477.70471pt x 490.7133pt>
 File: ./fig/ic_dependence_attractor_rho+28.pdf Graphic file (type pdf)
 <use ./fig/ic_dependence_attractor_rho+28.pdf>
 Package pdftex.def Info: ./fig/ic_dependence_attractor_rho+28.pdf  used on inpu
@@ -3492,32 +3492,32 @@ Overfull \hbox (17.76814pt too wide) in paragraph at lines 259--277
 
 [167 <./fig/ic_dependence_xt_rho+28.pdf> <./fig/ic_dependence_attractor_rho+28.
 pdf>]
-<./fig/lorenz_cm001.pdf, id=2523, 665.47203pt x 601.23204pt>
+<./fig/lorenz_cm001.pdf, id=2529, 665.47203pt x 601.23204pt>
 File: ./fig/lorenz_cm001.pdf Graphic file (type pdf)
 <use ./fig/lorenz_cm001.pdf>
 Package pdftex.def Info: ./fig/lorenz_cm001.pdf  used on input line 364.
 (pdftex.def)             Requested size: 192.0548pt x 197.70863pt.
-<./fig/lorenz_cm002.pdf, id=2525, 665.47203pt x 601.23204pt>
+<./fig/lorenz_cm002.pdf, id=2531, 665.47203pt x 601.23204pt>
 File: ./fig/lorenz_cm002.pdf Graphic file (type pdf)
 <use ./fig/lorenz_cm002.pdf>
 Package pdftex.def Info: ./fig/lorenz_cm002.pdf  used on input line 367.
 (pdftex.def)             Requested size: 192.0548pt x 197.70863pt.
-<./fig/lorenz_cm003.pdf, id=2527, 665.47203pt x 601.23204pt>
+<./fig/lorenz_cm003.pdf, id=2533, 665.47203pt x 601.23204pt>
 File: ./fig/lorenz_cm003.pdf Graphic file (type pdf)
 <use ./fig/lorenz_cm003.pdf>
 Package pdftex.def Info: ./fig/lorenz_cm003.pdf  used on input line 370.
 (pdftex.def)             Requested size: 192.0548pt x 197.70863pt.
-<./fig/lorenz_cm004.pdf, id=2529, 665.47203pt x 601.23204pt>
+<./fig/lorenz_cm004.pdf, id=2535, 665.47203pt x 601.23204pt>
 File: ./fig/lorenz_cm004.pdf Graphic file (type pdf)
 <use ./fig/lorenz_cm004.pdf>
 Package pdftex.def Info: ./fig/lorenz_cm004.pdf  used on input line 373.
 (pdftex.def)             Requested size: 192.0548pt x 197.70863pt.
-<./fig/lorenz_cm005.pdf, id=2531, 665.47203pt x 601.23204pt>
+<./fig/lorenz_cm005.pdf, id=2537, 665.47203pt x 601.23204pt>
 File: ./fig/lorenz_cm005.pdf Graphic file (type pdf)
 <use ./fig/lorenz_cm005.pdf>
 Package pdftex.def Info: ./fig/lorenz_cm005.pdf  used on input line 376.
 (pdftex.def)             Requested size: 192.0548pt x 197.70863pt.
-<./fig/lorenz_cm006.pdf, id=2533, 665.47203pt x 601.23204pt>
+<./fig/lorenz_cm006.pdf, id=2539, 665.47203pt x 601.23204pt>
 File: ./fig/lorenz_cm006.pdf Graphic file (type pdf)
 <use ./fig/lorenz_cm006.pdf>
 Package pdftex.def Info: ./fig/lorenz_cm006.pdf  used on input line 379.
@@ -3600,7 +3600,7 @@ Package epstopdf Info: Source file: <./fig/pipe.eps>
 o.pdf ./fig/pipe.eps>
 (epstopdf)             \includegraphics on input line 26.
 Package epstopdf Info: Output file is already uptodate.
-<./fig/pipe-eps-converted-to.pdf, id=2657, 379.4175pt x 320.19624pt>
+<./fig/pipe-eps-converted-to.pdf, id=2663, 379.4175pt x 320.19624pt>
 File: ./fig/pipe-eps-converted-to.pdf Graphic file (type pdf)
 <use ./fig/pipe-eps-converted-to.pdf>
 Package pdftex.def Info: ./fig/pipe-eps-converted-to.pdf  used on input line 26
@@ -3612,7 +3612,7 @@ Overfull \hbox (30.40248pt too wide) in paragraph at lines 1--28
  []
 
 [178 <./fig/pipe-eps-converted-to.pdf>] [179]
-<./fig/MoodyChart.jpg, id=2683, 1027.84pt x 701.62125pt>
+<./fig/MoodyChart.jpg, id=2689, 1027.84pt x 701.62125pt>
 File: ./fig/MoodyChart.jpg Graphic file (type jpg)
 <use ./fig/MoodyChart.jpg>
 Package pdftex.def Info: ./fig/MoodyChart.jpg  used on input line 158.
@@ -3645,7 +3645,7 @@ Package epstopdf Info: Source file: <./fig/helicopter.eps>
 rted-to.pdf ./fig/helicopter.eps>
 (epstopdf)             \includegraphics on input line 31.
 Package epstopdf Info: Output file is already uptodate.
-<./fig/helicopter-eps-converted-to.pdf, id=2689, 436.63126pt x 513.92pt>
+<./fig/helicopter-eps-converted-to.pdf, id=2695, 436.63126pt x 513.92pt>
 File: ./fig/helicopter-eps-converted-to.pdf Graphic file (type pdf)
 <use ./fig/helicopter-eps-converted-to.pdf>
 Package pdftex.def Info: ./fig/helicopter-eps-converted-to.pdf  used on input l
@@ -3706,7 +3706,7 @@ Package epstopdf Info: Source file: <./fig/piano2.eps>
 -to.pdf ./fig/piano2.eps>
 (epstopdf)             \includegraphics on input line 26.
 Package epstopdf Info: Output file is already uptodate.
-<./fig/piano2-eps-converted-to.pdf, id=2721, 271.0125pt x 235.88126pt>
+<./fig/piano2-eps-converted-to.pdf, id=2727, 271.0125pt x 235.88126pt>
 File: ./fig/piano2-eps-converted-to.pdf Graphic file (type pdf)
 <use ./fig/piano2-eps-converted-to.pdf>
 Package pdftex.def Info: ./fig/piano2-eps-converted-to.pdf  used on input line 
@@ -3800,7 +3800,7 @@ Underfull \hbox (badness 6876) in paragraph at lines 11--12
 
 Package mdframed Info: mdframed inside a box 
  mdframed uses option nobreak mdframed on input line 17.
-<./fig/Cyl.png, id=2786, 490.83376pt x 324.21124pt>
+<./fig/Cyl.png, id=2792, 490.83376pt x 324.21124pt>
 File: ./fig/Cyl.png Graphic file (type png)
 <use ./fig/Cyl.png>
 Package pdftex.def Info: ./fig/Cyl.png  used on input line 22.
@@ -3898,7 +3898,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmtt' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-<./fig/Aileron.pdf, id=2816, 614.295pt x 794.97pt>
+<./fig/Aileron.pdf, id=2822, 614.295pt x 794.97pt>
 File: ./fig/Aileron.pdf Graphic file (type pdf)
 <use ./fig/Aileron.pdf>
 Package pdftex.def Info: ./fig/Aileron.pdf  used on input line 189.
@@ -3911,7 +3911,7 @@ Overfull \hbox (41.00002pt too wide) in paragraph at lines 160--193
 
 LaTeX Warning: Command \textdegree invalid in math mode on input line 195.
 
-<./fig/vanes.pdf, id=2818, 614.295pt x 794.97pt>
+<./fig/vanes.pdf, id=2824, 614.295pt x 794.97pt>
 File: ./fig/vanes.pdf Graphic file (type pdf)
 <use ./fig/vanes.pdf>
 Package pdftex.def Info: ./fig/vanes.pdf  used on input line 201.
@@ -3940,7 +3940,7 @@ Package epstopdf Info: Source file: <./fig/Ese75contour.eps>
 verted-to.pdf ./fig/Ese75contour.eps>
 (epstopdf)             \includegraphics on input line 66.
 Package epstopdf Info: Output file is already uptodate.
-<./fig/Ese75contour-eps-converted-to.pdf, id=2838, 902.37125pt x 289.08pt>
+<./fig/Ese75contour-eps-converted-to.pdf, id=2844, 902.37125pt x 289.08pt>
 File: ./fig/Ese75contour-eps-converted-to.pdf Graphic file (type pdf)
 <use ./fig/Ese75contour-eps-converted-to.pdf>
 Package pdftex.def Info: ./fig/Ese75contour-eps-converted-to.pdf  used on input
@@ -3956,7 +3956,7 @@ Package epstopdf Info: Source file: <./fig/Ese75quiver.eps>
 erted-to.pdf ./fig/Ese75quiver.eps>
 (epstopdf)             \includegraphics on input line 72.
 Package epstopdf Info: Output file is already uptodate.
-<./fig/Ese75quiver-eps-converted-to.pdf, id=2840, 848.16875pt x 426.59375pt>
+<./fig/Ese75quiver-eps-converted-to.pdf, id=2846, 848.16875pt x 426.59375pt>
 File: ./fig/Ese75quiver-eps-converted-to.pdf Graphic file (type pdf)
 <use ./fig/Ese75quiver-eps-converted-to.pdf>
 Package pdftex.def Info: ./fig/Ese75quiver-eps-converted-to.pdf  used on input 
@@ -3975,7 +3975,7 @@ Package epstopdf Info: Source file: <./fig/Ese75u.eps>
 -to.pdf ./fig/Ese75u.eps>
 (epstopdf)             \includegraphics on input line 78.
 Package epstopdf Info: Output file is already uptodate.
-<./fig/Ese75u-eps-converted-to.pdf, id=2842, 817.0525pt x 497.86pt>
+<./fig/Ese75u-eps-converted-to.pdf, id=2848, 817.0525pt x 497.86pt>
 File: ./fig/Ese75u-eps-converted-to.pdf Graphic file (type pdf)
 <use ./fig/Ese75u-eps-converted-to.pdf>
 Package pdftex.def Info: ./fig/Ese75u-eps-converted-to.pdf  used on input line 
@@ -4011,12 +4011,12 @@ has been already used, duplicate ignored
 l.2  U
       tilizzando l'espressione dela velocità indotta da una sorgente puntif...
 Package mdframed Info: Not enough space on this page on input line 12.
-<./fig/pointSource.pdf, id=2890, 474.57881pt x 407.6472pt>
+<./fig/pointSource.pdf, id=2896, 474.57881pt x 407.6472pt>
 File: ./fig/pointSource.pdf Graphic file (type pdf)
 <use ./fig/pointSource.pdf>
 Package pdftex.def Info: ./fig/pointSource.pdf  used on input line 17.
 (pdftex.def)             Requested size: 170.71393pt x 146.64091pt.
-<./fig/lineSource.pdf, id=2891, 576.16475pt x 433.35791pt>
+<./fig/lineSource.pdf, id=2897, 576.16475pt x 433.35791pt>
 File: ./fig/lineSource.pdf Graphic file (type pdf)
 <use ./fig/lineSource.pdf>
 Package pdftex.def Info: ./fig/lineSource.pdf  used on input line 18.
@@ -4037,12 +4037,12 @@ has been already used, duplicate ignored
 l.2  U
       tilizzando l'espressione dela velocità indotta da un vortice irrotazi...
 Package mdframed Info: Not enough space on this page on input line 12.
-<./fig/pointVortex.pdf, id=2926, 429.892pt x 405.43582pt>
+<./fig/pointVortex.pdf, id=2932, 429.892pt x 405.43582pt>
 File: ./fig/pointVortex.pdf Graphic file (type pdf)
 <use ./fig/pointVortex.pdf>
 Package pdftex.def Info: ./fig/pointVortex.pdf  used on input line 17.
 (pdftex.def)             Requested size: 170.71393pt x 161.00221pt.
-<./fig/lineVortex.pdf, id=2927, 576.16469pt x 433.35791pt>
+<./fig/lineVortex.pdf, id=2933, 576.16469pt x 433.35791pt>
 File: ./fig/lineVortex.pdf Graphic file (type pdf)
 <use ./fig/lineVortex.pdf>
 Package pdftex.def Info: ./fig/lineVortex.pdf  used on input line 18.
@@ -4087,7 +4087,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [209]
 [210]
-<./capitoli/08_aerodinamica/build_geometry.pdf, id=2995, 600.35315pt x 847.8921
+<./capitoli/08_aerodinamica/build_geometry.pdf, id=3001, 600.35315pt x 847.8921
 4pt>
 File: ./capitoli/08_aerodinamica/build_geometry.pdf Graphic file (type pdf)
 <use ./capitoli/08_aerodinamica/build_geometry.pdf>
@@ -4099,7 +4099,7 @@ File: ./capitoli/08_aerodinamica/build_geometry.pdf Graphic file (type pdf)
 Package pdftex.def Info: ./capitoli/08_aerodinamica/build_geometry.pdf  used on
  input line 303.
 (pdftex.def)             Requested size: 600.35168pt x 847.89006pt.
-<./capitoli/08_aerodinamica/build_geometry.pdf, id=2998, page=1, 600.35315pt x 
+<./capitoli/08_aerodinamica/build_geometry.pdf, id=3004, page=1, 600.35315pt x 
 847.89214pt>
 File: ./capitoli/08_aerodinamica/build_geometry.pdf Graphic file (type pdf)
 <use ./capitoli/08_aerodinamica/build_geometry.pdf, page 1>
@@ -4139,10 +4139,57 @@ File: Pictures/blank_fig.pdf Graphic file (type pdf)
 <use Pictures/blank_fig.pdf>
 Package pdftex.def Info: Pictures/blank_fig.pdf  used on input line 2.
 (pdftex.def)             Requested size: 597.50787pt x 298.7509pt.
-(./capitoli/09_bl/09teoria.tex [213
+(./capitoli/09_bl/09teoria.tex (./capitoli/09_bl/09_thwaites.tex
+<./../template/fig/bl_dim_an.pdf, id=3016, 597.50786pt x 398.3386pt>
+File: ./../template/fig/bl_dim_an.pdf Graphic file (type pdf)
+<use ./../template/fig/bl_dim_an.pdf>
+Package pdftex.def Info: ./../template/fig/bl_dim_an.pdf  used on input line 10
+.
+(pdftex.def)             Requested size: 405.45047pt x 195.37839pt.
+ [213
 
 
-]) [214] (./capitoli/09_bl/0901in.tex
+] [214 <./../template/fig/bl_dim_an.pdf>]
+<./../template/fig/cfr_ell_m_neg.pdf, id=3041, 845.04686pt x 597.50786pt>
+File: ./../template/fig/cfr_ell_m_neg.pdf Graphic file (type pdf)
+<use ./../template/fig/cfr_ell_m_neg.pdf>
+Package pdftex.def Info: ./../template/fig/cfr_ell_m_neg.pdf  used on input lin
+e 97.
+(pdftex.def)             Requested size: 405.45047pt x 233.70636pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<./../template/fig/cfr_ell_m_pos.pdf, id=3043, 845.04686pt x 597.50786pt>
+File: ./../template/fig/cfr_ell_m_pos.pdf Graphic file (type pdf)
+<use ./../template/fig/cfr_ell_m_pos.pdf>
+Package pdftex.def Info: ./../template/fig/cfr_ell_m_pos.pdf  used on input lin
+e 103.
+(pdftex.def)             Requested size: 405.45047pt x 209.62653pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<./../template/fig/cfr_H_m_neg.pdf, id=3045, 845.04686pt x 597.50786pt>
+File: ./../template/fig/cfr_H_m_neg.pdf Graphic file (type pdf)
+<use ./../template/fig/cfr_H_m_neg.pdf>
+Package pdftex.def Info: ./../template/fig/cfr_H_m_neg.pdf  used on input line 
+109.
+(pdftex.def)             Requested size: 405.45047pt x 180.73073pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<./../template/fig/cfr_H_m_pos.pdf, id=3047, 845.04686pt x 597.50786pt>
+File: ./../template/fig/cfr_H_m_pos.pdf Graphic file (type pdf)
+<use ./../template/fig/cfr_H_m_pos.pdf>
+Package pdftex.def Info: ./../template/fig/cfr_H_m_pos.pdf  used on input line 
+115.
+(pdftex.def)             Requested size: 405.45047pt x 195.17863pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[215] [216 <./../template/fig/cfr_ell_m_neg.pdf> <./../template/fig/cfr_ell_m_p
+os.pdf>] [217 <./../template/fig/cfr_H_m_neg.pdf> <./../template/fig/cfr_H_m_po
+s.pdf>])) [218] (./capitoli/09_bl/0901in.tex
 Package mdframed Info: mdframed works in twoside mode on input line 2.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
@@ -4153,7 +4200,7 @@ as been already used, duplicate ignored
                    \relax 
 l.3 D
      ato il profilo di velocità, determinare il rapporto di forma $H$.)
-[215] (./capitoli/09_bl/0902in.tex
+[219] (./capitoli/09_bl/0902in.tex
 Package mdframed Info: mdframed works in twoside mode on input line 2.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
@@ -4164,7 +4211,7 @@ as been already used, duplicate ignored
                    \relax 
 l.3 D
      ato il profilo di velocità, determinare il rapporto di forma $H$.)
-[216] (./capitoli/09_bl/0903in.tex
+[220] (./capitoli/09_bl/0903in.tex
 Package mdframed Info: mdframed works in twoside mode on input line 2.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
@@ -4175,12 +4222,8 @@ as been already used, duplicate ignored
                    \relax 
 l.3 D
      ati $\rho = 1.225 kg/m^3$, $\nu = 10^{-5} m^2/s$ e velocità esterna $U...
-[217]
-Overfull \hbox (85.2167pt too wide) detected at line 90
- $[][]$  
- []
-
-[218]) [219] (./capitoli/09_bl/0904in.tex
+[221] (./capitoli/09_bl/0903_vkie.tex [222])) [223]
+(./capitoli/09_bl/0904in.tex
 Package mdframed Info: mdframed works in twoside mode on input line 2.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
@@ -4191,7 +4234,7 @@ as been already used, duplicate ignored
                    \relax 
 l.3 P
      artendo dalle equazioni di Prandtl per lo strato limite bidimensionale ...
-[220] [221]
+[224] [225]
 Package epstopdf Info: Source file: <./fig/BlasiusShooting/g.eps>
 (epstopdf)                    date: 2020-03-23 17:00:23
 (epstopdf)                    size: 100748 bytes
@@ -4203,7 +4246,7 @@ df>
 s-converted-to.pdf ./fig/BlasiusShooting/g.eps>
 (epstopdf)             \includegraphics on input line 157.
 Package epstopdf Info: Output file is already uptodate.
-<./fig/BlasiusShooting/g-eps-converted-to.pdf, id=3109, 385.44pt x 289.08pt>
+<./fig/BlasiusShooting/g-eps-converted-to.pdf, id=3203, 385.44pt x 289.08pt>
 File: ./fig/BlasiusShooting/g-eps-converted-to.pdf Graphic file (type pdf)
 <use ./fig/BlasiusShooting/g-eps-converted-to.pdf>
 Package pdftex.def Info: ./fig/BlasiusShooting/g-eps-converted-to.pdf  used on 
@@ -4220,7 +4263,7 @@ pdf>
 ps-converted-to.pdf ./fig/BlasiusShooting/dg.eps>
 (epstopdf)             \includegraphics on input line 161.
 Package epstopdf Info: Output file is already uptodate.
-<./fig/BlasiusShooting/dg-eps-converted-to.pdf, id=3110, 385.44pt x 289.08pt>
+<./fig/BlasiusShooting/dg-eps-converted-to.pdf, id=3204, 385.44pt x 289.08pt>
 File: ./fig/BlasiusShooting/dg-eps-converted-to.pdf Graphic file (type pdf)
 <use ./fig/BlasiusShooting/dg-eps-converted-to.pdf>
 Package pdftex.def Info: ./fig/BlasiusShooting/dg-eps-converted-to.pdf  used on
@@ -4237,14 +4280,14 @@ Package epstopdf Info: Source file: <./fig/BlasiusShooting/ddg.eps>
 eps-converted-to.pdf ./fig/BlasiusShooting/ddg.eps>
 (epstopdf)             \includegraphics on input line 165.
 Package epstopdf Info: Output file is already uptodate.
-<./fig/BlasiusShooting/ddg-eps-converted-to.pdf, id=3111, 385.44pt x 289.08pt>
+<./fig/BlasiusShooting/ddg-eps-converted-to.pdf, id=3205, 385.44pt x 289.08pt>
 File: ./fig/BlasiusShooting/ddg-eps-converted-to.pdf Graphic file (type pdf)
 <use ./fig/BlasiusShooting/ddg-eps-converted-to.pdf>
 Package pdftex.def Info: ./fig/BlasiusShooting/ddg-eps-converted-to.pdf  used o
 n input line 165.
 (pdftex.def)             Requested size: 132.30428pt x 99.22543pt.
- [222 <./fig/BlasiusShooting/g-eps-converted-to.pdf> <./fig/BlasiusShooting/dg-
-eps-converted-to.pdf> <./fig/BlasiusShooting/ddg-eps-converted-to.pdf>]) [223] 
+ [226 <./fig/BlasiusShooting/g-eps-converted-to.pdf> <./fig/BlasiusShooting/dg-
+eps-converted-to.pdf> <./fig/BlasiusShooting/ddg-eps-converted-to.pdf>]) [227] 
 (./capitoli/09_bl/0905in.tex
 Package mdframed Info: mdframed works in twoside mode on input line 2.
 Package mdframed Info: mdframed detected package amsthm 
@@ -4256,7 +4299,7 @@ as been already used, duplicate ignored
                    \relax 
 l.3     U
          na lamina piana molto sottile viene investita parallelamente su ent...
-) [224] (./capitoli/09_bl/0906in.tex
+) [228] (./capitoli/09_bl/0906in.tex
 Package mdframed Info: mdframed works in twoside mode on input line 2.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
@@ -4269,7 +4312,7 @@ l.3   N
        ella figura accanto una lastra piana di corda $c=30\ cm$, apertura $b...
 Package mdframed Info: mdframed inside a box 
  mdframed uses option nobreak mdframed on input line 26.
-<./fig/sheet.png, id=3163, 473.77pt x 403.5075pt>
+<./fig/sheet.png, id=3257, 473.77pt x 403.5075pt>
 File: ./fig/sheet.png Graphic file (type png)
 <use ./fig/sheet.png>
 Package pdftex.def Info: ./fig/sheet.png  used on input line 32.
@@ -4279,7 +4322,7 @@ Overfull \hbox (30.40247pt too wide) in paragraph at lines 1--34
 []$[]$   $[]$ 
  []
 
-[225 <./fig/sheet.png>]) [226])
+[229 <./fig/sheet.png>]) [230])
 \openout2 = `./capitoli/10_turbolenza/turbolenza.aux'.
 
  (./capitoli/10_turbolenza/turbolenza.tex
@@ -4293,7 +4336,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 13--23
 
  []
 
-[227
+[231
 
 
 
@@ -4301,8 +4344,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 13--23
 ]
 Underfull \vbox (badness 2856) has occurred while \output is active []
 
- [228]
-[229]
+ [232]
+[233]
 File: ./fig/eq_rho+1_01.pdf Graphic file (type pdf)
 <use ./fig/eq_rho+1_01.pdf>
 Package pdftex.def Info: ./fig/eq_rho+1_01.pdf  used on input line 151.
@@ -4327,13 +4370,13 @@ File: ./fig/eq_rho+24_7.pdf Graphic file (type pdf)
 <use ./fig/eq_rho+24_7.pdf>
 Package pdftex.def Info: ./fig/eq_rho+24_7.pdf  used on input line 169.
 (pdftex.def)             Requested size: 192.0548pt x 126.16562pt.
-<./fig/eq1_rho+24p7_heat_flux.pdf, id=3214, 433.62pt x 433.62pt>
+<./fig/eq1_rho+24p7_heat_flux.pdf, id=3308, 433.62pt x 433.62pt>
 File: ./fig/eq1_rho+24p7_heat_flux.pdf Graphic file (type pdf)
 <use ./fig/eq1_rho+24p7_heat_flux.pdf>
 Package pdftex.def Info: ./fig/eq1_rho+24p7_heat_flux.pdf  used on input line 2
 36.
 (pdftex.def)             Requested size: 192.0548pt x 206.38847pt.
-<./fig/eq2_rho+24p7_heat_flux_manyl.pdf, id=3216, 433.62pt x 433.62pt>
+<./fig/eq2_rho+24p7_heat_flux_manyl.pdf, id=3310, 433.62pt x 433.62pt>
 File: ./fig/eq2_rho+24p7_heat_flux_manyl.pdf Graphic file (type pdf)
 <use ./fig/eq2_rho+24p7_heat_flux_manyl.pdf>
 Package pdftex.def Info: ./fig/eq2_rho+24p7_heat_flux_manyl.pdf  used on input 
@@ -4344,7 +4387,7 @@ Overfull \hbox (4.84181pt too wide) in paragraph at lines 235--250
  [][] 
  []
 
-[230] [231]
+[234] [235]
 File: ./fig/bif_pitchfork.pdf Graphic file (type pdf)
 <use ./fig/bif_pitchfork.pdf>
 Package pdftex.def Info: ./fig/bif_pitchfork.pdf  used on input line 283.
@@ -4358,11 +4401,11 @@ Overfull \hbox (3.01285pt too wide) in paragraph at lines 282--297
  [][] 
  []
 
-[232 <./fig/eq1_rho+24p7_heat_flux.pdf> <./fig/eq2_rho+24p7_heat_flux_manyl.pdf
+[236 <./fig/eq1_rho+24p7_heat_flux.pdf> <./fig/eq2_rho+24p7_heat_flux_manyl.pdf
 >]
 Underfull \vbox (badness 1043) has occurred while \output is active []
 
- [233]
+ [237]
 File: ./fig/ic_dependence_xt_rho+28.pdf Graphic file (type pdf)
 <use ./fig/ic_dependence_xt_rho+28.pdf>
 Package pdftex.def Info: ./fig/ic_dependence_xt_rho+28.pdf  used on input line 
@@ -4378,7 +4421,7 @@ Overfull \hbox (19.2985pt too wide) in paragraph at lines 346--364
  [][] 
  []
 
-[234]
+[238]
 File: ./fig/lorenz_cm001.pdf Graphic file (type pdf)
 <use ./fig/lorenz_cm001.pdf>
 Package pdftex.def Info: ./fig/lorenz_cm001.pdf  used on input line 408.
@@ -4410,7 +4453,7 @@ LaTeX Warning: Float too large for page by 9.03418pt on input line 434.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[235] [236]) [237
+[239] [240]) [241
 
 ] (./capitoli/10_turbolenza/1001in.tex
 Package mdframed Info: mdframed works in twoside mode on input line 2.
@@ -4425,7 +4468,7 @@ l.3   C
        alcolare la soluzione in similitudine per un getto turbolento piano.
 Package mdframed Info: mdframed inside a box 
  mdframed uses option nobreak mdframed on input line 5.
-<./fig/turbulentJet.png, id=3341, 803.0pt x 486.81876pt>
+<./fig/turbulentJet.png, id=3436, 803.0pt x 486.81876pt>
 File: ./fig/turbulentJet.png Graphic file (type png)
 <use ./fig/turbulentJet.png>
 Package pdftex.def Info: ./fig/turbulentJet.png  used on input line 20.
@@ -4438,7 +4481,7 @@ Overfull \hbox (30.40247pt too wide) in paragraph at lines 1--22
 
 Underfull \vbox (badness 2035) has occurred while \output is active []
 
- [238 <./fig/turbulentJet.png>] [239] [240] [241] [242]) [243]) [244
+ [242 <./fig/turbulentJet.png>] [243] [244] [245] [246]) [247]) [248
 
 
 ]
@@ -4481,10 +4524,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 49593 strings out of 494839
- 1074706 string characters out of 6178684
- 1422034 words of memory out of 5000000
- 49734 multiletter control sequences out of 15000+600000
+ 49660 strings out of 494839
+ 1076312 string characters out of 6178684
+ 1422694 words of memory out of 5000000
+ 49762 multiletter control sequences out of 15000+600000
  746977 words of font info for 365 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
  75i,25n,105p,10506b,2366s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -4524,10 +4567,10 @@ exmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/te
 xmf-dist/fonts/type1/public/amsfonts/symbols/msam7.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf
 -dist/fonts/type1/public/rsfs/rsfs10.pfb>
-Output written on mainEse.pdf (244 pages, 5669409 bytes).
+Output written on mainEse.pdf (248 pages, 5855813 bytes).
 PDF statistics:
- 3957 PDF objects out of 4296 (max. 8388607)
- 3136 compressed objects within 32 object streams
- 1383 named destinations out of 1440 (max. 500000)
- 63445 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 4057 PDF objects out of 4296 (max. 8388607)
+ 3211 compressed objects within 33 object streams
+ 1410 named destinations out of 1440 (max. 500000)
+ 63500 words of extra memory for PDF output out of 74296 (max. 10000000)
 

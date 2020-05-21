@@ -14,9 +14,17 @@
 \newcommand{\ul}[1]{\underline{#1}}
 \newcommand{\uul}[1]{\ul{\ul{#1}}}
 \newcommand{\p}[2]{\dfrac{\partial{#1}}{\partial{#2}}}
-\newcommand{\f}[2]{\frac{#1}{#2}}
+\newcommand{\f}[2]{\dfrac{#1}{#2}}
 \newcommand{\bh}[1]{\bm{\hat{#1}}}
 \newcommand{\remark}{}  % Dummy definition
+\newcommand{\vel}{\bm{u}}
+\newcommand{\avg}[1]{\overline{#1}}
+\newcommand{\va}{\avg{\vel}}
+\newcommand{\vp}{\vel'}
+\newcommand{\pa}{\avg{p}}
+\newcommand{\pp}{p'}
+\newcommand{\grad}{\bm{\nabla}}
+\newcommand{\dive}{\grad \cdot}
 
 \title{Alcuni chiarimenti su argomenti vari ed eventuali}
 
@@ -61,6 +69,9 @@
 \subsection{Metodo di Thwaites per lo strato limite laminare}
 \input{./../template/capitoli/09_bl/09_thwaites.tex}
 \clearpage \newpage
+
+\section{Introduzione alla turbolenza}
+\input{./turbulence.tex}
 
 
 \end{document}

@@ -13,3 +13,17 @@
 \BOOKMARK [2][-]{subsection.8.1}{Metodo di Thwaites per lo strato limite laminare}{section.8}% 13
 \BOOKMARK [2][-]{subsection.8.2}{Criteri di transizione}{section.8}% 14
 \BOOKMARK [2][-]{subsection.8.3}{Metodo di Head per lo strato limite turbolento}{section.8}% 15
+\BOOKMARK [1][-]{section.9}{Introduzione alla turbolenza}{}% 16
+\BOOKMARK [2][-]{subsection.9.1}{Equazioni mediate di Reynolds \205 RANS}{section.9}% 17
+\BOOKMARK [3][-]{subsubsection.9.1.1}{\(U\)RANS.}{subsection.9.1}% 18
+\BOOKMARK [2][-]{subsection.9.2}{Equazioni dell'energia cinetica}{section.9}% 19
+\BOOKMARK [3][-]{subsubsection.9.2.1}{Equazione dell'energia cinetica del moto medio}{subsection.9.2}% 20
+\BOOKMARK [3][-]{subsubsection.9.2.2}{Equazione dell'energia cinetica turbolenta}{subsection.9.2}% 21
+\BOOKMARK [2][-]{subsection.9.3}{Analisi statistica delle correnti turbolente}{section.9}% 22
+\BOOKMARK [2][-]{subsection.9.4}{Correnti turbolente}{section.9}% 23
+\BOOKMARK [3][-]{subsubsection.9.4.1}{Turbolenza omogena isotropa}{subsection.9.4}% 24
+\BOOKMARK [3][-]{subsubsection.9.4.2}{Correnti di taglio \(Shear flow\)}{subsection.9.4}% 25
+\BOOKMARK [3][-]{subsubsection.9.4.3}{Turbolenza di parete}{subsection.9.4}% 26
+\BOOKMARK [2][-]{subsection.9.5}{Modelli numerici}{section.9}% 27
+\BOOKMARK [3][-]{subsubsection.9.5.1}{Modelli basati sulla viscosit\340 turbolenta}{subsection.9.5}% 28
+\BOOKMARK [3][-]{subsubsection.9.5.2}{LES}{subsection.9.5}% 29

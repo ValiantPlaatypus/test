@@ -29,3 +29,18 @@
 \contentsline {paragraph}{Ricostruzione delle altre grandezze fisiche.}{37}{section*.15}
 \contentsline {subsection}{\numberline {8.2}Criteri di transizione}{37}{subsection.8.2}
 \contentsline {subsection}{\numberline {8.3}Metodo di Head per lo strato limite turbolento}{37}{subsection.8.3}
+\contentsline {section}{\numberline {9}Introduzione alla turbolenza}{38}{section.9}
+\contentsline {subsection}{\numberline {9.1}Equazioni mediate di Reynolds -- RANS}{38}{subsection.9.1}
+\contentsline {subsubsection}{\numberline {9.1.1}(U)RANS.}{38}{subsubsection.9.1.1}
+\contentsline {subsection}{\numberline {9.2}Equazioni dell'energia cinetica}{39}{subsection.9.2}
+\contentsline {subsubsection}{\numberline {9.2.1}Equazione dell'energia cinetica del moto medio}{39}{subsubsection.9.2.1}
+\contentsline {subsubsection}{\numberline {9.2.2}Equazione dell'energia cinetica turbolenta}{39}{subsubsection.9.2.2}
+\contentsline {subsection}{\numberline {9.3}Analisi statistica delle correnti turbolente}{39}{subsection.9.3}
+\contentsline {subsection}{\numberline {9.4}Correnti turbolente}{39}{subsection.9.4}
+\contentsline {subsubsection}{\numberline {9.4.1}Turbolenza omogena isotropa}{39}{subsubsection.9.4.1}
+\contentsline {subsubsection}{\numberline {9.4.2}Correnti di taglio (Shear flow)}{39}{subsubsection.9.4.2}
+\contentsline {subsubsection}{\numberline {9.4.3}Turbolenza di parete}{39}{subsubsection.9.4.3}
+\contentsline {paragraph}{Corrente turbolenta in canale piano infinito.}{39}{section*.16}
+\contentsline {subsection}{\numberline {9.5}Modelli numerici}{40}{subsection.9.5}
+\contentsline {subsubsection}{\numberline {9.5.1}Modelli basati sulla viscosit\IeC {\`a} turbolenta}{40}{subsubsection.9.5.1}
+\contentsline {subsubsection}{\numberline {9.5.2}LES}{40}{subsubsection.9.5.2}

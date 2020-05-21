@@ -1,0 +1,69 @@
+In molte applicazioni ingegneristiche non è possibile risolvere direttamente le equazioni di Navier-Stokes per descrivere l'evoluzione della corrente, per limitazioni. Mentre i moti di grande scala della corrente hanno la dimensione dell'ordine di una lunghezza caratteristica del problema, la dimensione spaziale delle dei dettagli, le ``piccole scale'', da risolvere per avere una descrizione completa della corrente diminuisce all'aumentare del numero di Reynolds del problema.
+
+In molti problemi le grandezze di interesse ingegneristico sono grandezze integrali (come ad esempio i coefficienti della forza di natura aerodinamica generata da un corpo investito da una corrente, o il coefficiente di perdite di carico di un tubo o flusso di calore scambiato attraverso le sue pareti) dipendono principalmente dal moto medio della corrente, o dal moto delle grandi scale spaziali, mentre le scale di piccole dimensioni causano oscillazioni di ampiezza limitata attorno al valore medio. Inoltre, nel calcolo delle grandezze integrali, l'operazione di somma dei contributi elementari opera come una media delle fluttuazioni, tendendo ad annullare l'effetto di oscillazioni di piccola ampiezza non coerenti.
+
+Quanto detto non deve fare pensare che i moti della corrente con scale spaziali e temporali più piccole possano essere del tutto trascurati, poiché questi influenzano la dinamica del moto medio.
+
+In questo documento, ci limiteremo al caso di correnti incomprimibili, governate dalle equazioni di NAvier--Stokes.
+
+\subsection{Equazioni mediate di Reynolds -- RANS}
+Seguendo Reynolds, si può introdurre la scomposizione dei campi di velocità e pressione,
+\begin{equation}
+ \bm{u} = \overline{\bm{u}} + \bm{u}' \qquad , \qquad  p = \overline{p} + p' \ ,
+\end{equation}
+come somma del campo medio e della fluttuazione attorno ad esso.
+
+\subsubsection{(U)RANS.}
+\begin{equation}\label{eqn:urans}
+\begin{cases}
+ \p{\va}{t} + ( \va \cdot \grad ) \va + \dive \avg{\vp \otimes \vp} - \dive ( \mu \grad \va ) + \f{1}{\rho} \grad \pa = 0 \\
+ \dive \va = 0 \ .
+\end{cases}
+\end{equation}
+L'unica differenza con le equazioni di Navier--Stokes per i campi di velocità e pressione è la presenza del termine $\dive \avg{\vp \otimes \vp}$.
+Questo termine è la divergenza di un tensore simmetrico del secondo ordine, che viene definito tensore degli sforzi di Reynolds, e può essere interpretato come un termine di sforzo aggiuntivo che si manifesta sul moto medio a causa delle fluttuazioni turbolente.
+\newline
+La comparsa di questo termine è all'origine della questione sulla \textbf{chiusura del problema}, poiché si aggiunge alle incognite rappresentate dai campi medi di velocità e di pressione. Il problema è sottodeterminato, poiché abbiamo più incognite che equazioni, rendendo necessario la \textbf{modellazione} del tensore degli sforzi di Reynolds, per esprimerlo come funzione di grandezze fisiche che vengono risolte.
+{\color{red}TODO: Si può scrivere un'equazione (tensoriale, o tante equazioni scalari quante sono le sue componenti) per il tensore degli sforzi di Reynolds, ma si otterrebbero ulteriori nuove incognite.}
+
+\subsection{Equazioni dell'energia cinetica}
+\subsubsection{Equazione dell'energia cinetica del moto medio}
+\subsubsection{Equazione dell'energia cinetica turbolenta}
+
+\subsection{Analisi statistica delle correnti turbolente}
+Costruzione di statistiche per
+\begin{itemize}
+ \item dare una descrizione del fenomeno fisico
+ \item costruire dei modelli matematici delle equazioni delle correnti turbolente, basati sulla fisica del fenomeno
+\end{itemize}
+
+\subsection{Correnti turbolente}
+\subsubsection{Turbolenza omogena isotropa}
+\subsubsection{Correnti di taglio (Shear flow)}
+\subsubsection{Turbolenza di parete}
+\paragraph{Corrente turbolenta in canale piano infinito.}
+Si studia la corrente turbolenta un canale piano infinito in due dimensioni. Si scrivono le equazioni mediate di Reynolds, utilizzando un sistema di coordinate cartesiane $(x,y,z)$, con l'asse $x$ allineata con la velocità media, $y$ nella direzione perpendicolare alle pareti, e $z$ nella direzione perpendicolare alle altre due. Ipotizziamo l'omogeneità della corrente media e delle statistiche della turbolenza rispetto alle coordinate $x$, $z$, nelle quali il canale ha dimensione infinita.
+
+\begin{equation}
+\begin{cases}
+ \avg{u} \p{\avg{u}}{x} + \avg{v} \p{\avg{u}}{y} + \p{}{x}\avg{u'u'} + \p{}{y}\avg{u'v'} - \nu \left[ \p{^2 \avg u}{x^2} + \p{^2 \avg u}{y^2} \right] + \f{1}{\rho} \p{\pa}{x} = 0  \vspace{0.3cm} \\
+ \avg{u} \p{\avg{v}}{x} + \avg{v} \p{\avg{v}}{y} + \p{}{x}\avg{v'u'} + \p{}{y}\avg{v'v'} - \nu \left[ \p{^2 \avg v}{x^2} + \p{^2 \avg v}{y^2} \right] + \f{1}{\rho} \p{\pa}{y} = 0  \vspace{0.3cm} \\
+ \p{\avg{u}}{x} + \p{\avg{v}}{y} = 0 \ .
+\end{cases}
+\end{equation}
+Sfruttando le condizioni al contorno a parete e l'omogeneità della coordinata $x$ per il campo di velocità $\va(y)$, si possono semplificare le equazioni
+\begin{equation}
+\begin{cases}
+ \p{}{y}\avg{u'v'} - \nu \p{^2 \avg u}{y^2}  + \f{1}{\rho} \p{\pa}{x} = 0  \vspace{0.3cm} \\
+ \p{}{y}\avg{v'v'}                           + \f{1}{\rho} \p{\pa}{y} = 0  \vspace{0.3cm} \\
+\end{cases}
+\end{equation}
+\dots
+\begin{equation}
+  \p{}{y}\left( - \avg{u'v'} + \nu \p{\avg{u}}{y} \right) = \f{1}{\rho}\p{\pa}{x} = \text{cost.} \ .
+\end{equation}
+
+
+\subsection{Modelli numerici}
+\subsubsection{Modelli basati sulla viscosità turbolenta}
+\subsubsection{LES}
